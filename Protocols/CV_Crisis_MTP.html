@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Massive Transfusion Protocol — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Resuscitation / Hemorrhage</div>
+    <h1>Massive Transfusion Protocol</h1>
+    <p class="subtitle">Ratio-based resuscitation built to mimic whole blood, the lethal triad it's designed to break, and why TEG/ROTEM complements the protocol instead of replacing it.</p>
+    <div class="badges">
+      <span class="badge red">HEMORRHAGE / RESUSCITATION EMERGENCY</span>
+      <span class="badge teal">1:1:1 BALANCED RATIO</span>
+      <span class="badge amber">TXA WITHIN 3 HOURS OR NOT AT ALL</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Activation Criteria</a>
+    <a class="qn" href="#prevention">Set-Up / Readiness</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Transfusion buys time — it doesn't stop the bleeding. Activate the protocol and pursue source control in parallel, not sequentially.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Activate the MTP, call for help</div><div class="step-desc">Notify the blood bank immediately once criteria are met (see Activation Criteria below) — don't wait for confirmatory labs. Activation itself triggers pre-packaged, ratio-matched coolers to start moving.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Start with universal products, transition to type-specific</div><div class="step-desc">O-negative PRBCs with AB plasma (or low-titer group A plasma if AB is unavailable) until type-specific or crossmatched products are ready.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Give products in a balanced ratio</div><div class="step-desc">Empiric <span class="d">1:1:1</span> (PRBC : FFP : platelets), extending to <span class="d">1:1:1:1</span> with cryoprecipitate for prolonged/repeated rounds. Platelets ideally run through a separate IV, not through a rapid infuser — infuser shear can damage platelet function. RBCs and plasma can run simultaneously through the same line.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Tranexamic acid — early, or not at all</div><div class="step-desc"><span class="d">1 g IV bolus over 10 minutes</span>, then <span class="d">1 g over 8 hours</span>. Give within <span class="d">3 hours</span> of injury — CRASH-2 data shows benefit specifically in this window; later administration hasn't shown the same mortality benefit and isn't the default move.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Replace calcium proactively</div><div class="step-desc">Citrate in stored blood products chelates ionized calcium — check it and replace early and often rather than waiting for it to become critically low; hypocalcemia independently worsens coagulopathy on top of dilution.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Actively prevent hypothermia and acidosis</div><div class="step-desc">Warm fluids/blood, use active external warming, minimize exposure. Avoid excess crystalloid — it dilutes clotting factors and doesn't carry oxygen. Permissive hypotension (accepting a lower-than-normal blood pressure target) is appropriate in the actively hemorrhaging trauma patient before definitive hemostasis, to avoid disrupting early clot formation.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Reassess with labs and, where available, viscoelastic testing</div><div class="step-desc">Check CBC, PT/PTT, fibrinogen after every ~5 units of PRBCs. TEG/ROTEM, when available, helps target specific deficiencies — hyperfibrinolysis needing more TXA, or a low fibrinogen needing cryoprecipitate — rather than continuing to transfuse blindly on ratio alone.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Pursue source control in parallel, not after</div><div class="step-desc">Surgery, interventional radiology, or endoscopic hemostasis — whatever stops the bleeding definitively. REBOA or resuscitative thoracotomy are options in extremis. No transfusion ratio substitutes for actually stopping the hemorrhage.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Hemoglobin is a lagging indicator</div><p>Hemoglobin concentration doesn't fall immediately with acute blood loss — relying on it as an early marker of severity underestimates how much blood has actually been lost. Treat the clinical picture and activation criteria, not a normal-looking hemoglobin on an early sample.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Massive transfusion protocols exist to deliver blood components rapidly, in a pre-determined balanced ratio, to a patient in life-threatening hemorrhage — replacing the older practice of resuscitating primarily with crystalloid and PRBCs alone, which produces a dilutional coagulopathy that makes bleeding worse, not better. Modern MTPs grew out of military damage control resuscitation: rapid hemorrhage control, permissive hypotension, minimized crystalloid, and early balanced blood product use, rather than treating bleeding and coagulopathy as separate, sequential problems.</p>
+    <p>The classic definition of massive transfusion — 10 or more units of PRBCs in 24 hours — is arbitrary (chosen because it approximates one blood volume) and often too slow to guide real-time decisions. More clinically useful dynamic definitions include ≥4 units of PRBCs in 1 hour with ongoing need, ≥3 units in any 1-hour period in the first 24 hours, or replacing ≥50% of blood volume within 3 hours. Ultra-massive transfusion — more than 20 units of PRBCs within 24–48 hours — represents an even more extreme resuscitation tier with its own outcomes literature.</p>
+  </div>
+
+  <!-- 03 ACTIVATION CRITERIA -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Activation Criteria (In Place of "Signs and Symptoms")</h2></div>
+  <table class="rt">
+    <tr><th>Tool / Sign</th><th>Details</th></tr>
+    <tr><td>Assessment of Blood Consumption (ABC) score</td><td>One point each for: penetrating mechanism, positive FAST exam, systolic BP ≤90 mmHg, heart rate ≥120 bpm. A score ≥2 suggests likely need for massive transfusion — a simple, fast bedside tool usable before labs return.</td></tr>
+    <tr><td>Dynamic bleeding criteria</td><td>≥4 units PRBC in 1 hour with ongoing need, or ≥3 units in any 1-hour period — more responsive to real-time deterioration than the classic 10-units-in-24-hours definition.</td></tr>
+    <tr><td>Clinical gestalt</td><td>Rapid, pattern-based recognition by the treating team remains a legitimate and commonly used activation trigger — don't wait for a formal score to confirm what's clinically obvious.</td></tr>
+    <tr><td>Physiologic markers</td><td>Persistent hypotension, tachycardia, rising lactate, and worsening base deficit despite initial resuscitation all support activation, independent of any single scoring tool.</td></tr>
+  </table>
+
+  <!-- 04 SETUP / READINESS -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Set-Up &amp; Institutional Readiness (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Pre-packaged, ratio-matched coolers</b> ready for immediate release on activation — most level 1 trauma centers maintain these specifically to avoid the delay of assembling individual components under pressure.</li>
+      <li><b>Rapid infuser and large-bore access ready</b> — but keep platelets off the rapid infuser specifically, running them through a separate line to preserve platelet function.</li>
+      <li><b>Clear communication pathway with the blood bank</b> established in advance — who calls, what's said, how products get delivered — this is exactly the kind of process that fails under stress if it hasn't been rehearsed.</li>
+      <li><b>Whole blood availability where possible</b> — increasingly preferred over reconstructed component ratios where logistics allow, since it more closely mimics what was actually lost; over 80% of surveyed level 1 trauma centers currently still approximate this with component ratios rather than true whole blood.</li>
+      <li><b>Viscoelastic testing capability (TEG/ROTEM)</b> available within the first hour of admission where resources allow, to complement — not replace — the initial empiric ratio-based approach.</li>
+      <li><b>Regular MTP simulation/drills</b> for the full team (trauma, anesthesia, blood bank, nursing) — activation is rare enough at most institutions that unpracticed teams lose critical time on process alone.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Classic massive transfusion definition</td><td>≥10 units PRBC in 24 hours</td></tr>
+    <tr><td>Dynamic massive transfusion definition</td><td>≥4 units in 1 hour with ongoing need, or ≥3 units in any 1-hour period</td></tr>
+    <tr><td>Ultra-massive transfusion</td><td>&gt;20 units PRBC within 24–48 hours</td></tr>
+    <tr><td>Balanced product ratio</td><td>1:1:1 to 1:1:2 (PRBC : FFP : platelets)</td></tr>
+    <tr><td>TXA dosing</td><td>1 g bolus over 10 min, then 1 g over 8 hours — within 3 hours of injury</td></tr>
+    <tr><td>Fibrinogen critical threshold</td><td>&lt;150–200 mg/dL — triggers cryoprecipitate/fibrinogen concentrate consideration</td></tr>
+    <tr><td>Cryoprecipitate effect</td><td>10 units raises fibrinogen by roughly 75 mg/dL</td></tr>
+    <tr><td>Lab recheck interval</td><td>After every ~5 units of PRBCs: CBC, PT/PTT, fibrinogen</td></tr>
+    <tr><td>ABC score activation threshold</td><td>≥2 points</td></tr>
+    <tr><td>VTE risk with MTP</td><td>Increased odds (OR ~2.65) — factor into timing of VTE prophylaxis once bleeding is controlled</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for MTP Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why the 1:1:1 ratio replaced RBC-heavy resuscitation:</b> transfusing PRBCs alone (or with disproportionate crystalloid) restores oxygen-carrying capacity but dilutes clotting factors and platelets that were never replaced — actively worsening the coagulopathy driving ongoing hemorrhage. A balanced ratio approximates whole blood's composition, treating the anemia and the coagulopathy simultaneously rather than sequentially.</p>
+    <p><b>Why TXA's benefit is time-locked to the first 3 hours:</b> TXA works by inhibiting fibrinolysis at a point in the injury response when hyperfibrinolysis is actively contributing to bleeding. Given later, after the coagulation system has shifted toward a more prothrombotic state, the same antifibrinolytic effect no longer targets an active problem and instead just adds thrombotic risk without the offsetting hemostatic benefit — which is exactly what CRASH-2's time-stratified results showed.</p>
+    <p><b>Why calcium replacement is proactive, not reactive:</b> citrate — the anticoagulant in stored blood products — binds ionized calcium, and large-volume transfusion delivers citrate faster than the liver can metabolize it. Since calcium is a required cofactor in the coagulation cascade, citrate-induced hypocalcemia directly impairs clot formation on top of dilutional coagulopathy — checking and replacing it early prevents a second, iatrogenic driver of the same bleeding problem you're trying to treat.</p>
+    <p><b>Why permissive hypotension and minimized crystalloid matter before definitive hemostasis:</b> a higher blood pressure target can disrupt a fragile early clot before surgical or interventional control is achieved, effectively "popping the clot" and restarting hemorrhage. Excess crystalloid compounds the dilutional coagulopathy problem the balanced-ratio strategy is specifically designed to avoid — both practices exist to protect the clot you're trying to help the body form, not just to raise a number on the monitor.</p>
+    <p><b>Why TEG/ROTEM complements rather than replaces the empiric protocol:</b> trial evidence (iTACTIC) found no significant outcome difference between viscoelastic-guided and conventional-coagulation-test-guided transfusion when both used immediate empiric transfusion up front — meaning the real value of viscoelastic testing shows up in identifying specific deficits (hyperfibrinolysis needing more TXA, isolated fibrinogen depletion needing cryoprecipitate) in a patient who continues bleeding despite standard MTP, not in replacing the initial ratio-based approach entirely.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis — Why Isn't This Working?</h2></div>
+  <table class="rt">
+    <tr><th>Consideration</th><th>Key clues / distinguishing features</th></tr>
+    <tr><td>Ongoing surgical/anatomic bleeding source not yet controlled</td><td>Persistent transfusion requirement despite adequate ratio and normalizing labs — this is a source-control problem, not a transfusion-ratio problem; escalate to OR/IR rather than transfusing further.</td></tr>
+    <tr><td>Pre-existing anticoagulant use</td><td>History of warfarin, DOACs, or antiplatelet therapy — needs specific reversal (vitamin K/PCC for warfarin, agent-specific reversal for DOACs) on top of the standard MTP, since balanced-ratio products don't reverse a pharmacologic anticoagulant.</td></tr>
+    <tr><td>Underlying hemophilia or von Willebrand disease</td><td>Disproportionate bleeding relative to injury severity, prior bleeding history — needs factor-specific replacement, not just ratio-based component transfusion.</td></tr>
+    <tr><td>DIC from a non-traumatic cause (sepsis, AFE, malignancy)</td><td>Bleeding out of proportion to a mechanical injury, with a clinical context (infection, peripartum collapse) pointing toward a primary consumptive coagulopathy rather than dilutional trauma-induced coagulopathy.</td></tr>
+    <tr><td>Isolated severe thrombocytopenia from another cause</td><td>Platelet count disproportionately low relative to the degree of hemodilution — consider immune thrombocytopenia or another primary hematologic process if the pattern doesn't fit simple dilution.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Ongoing labs:</b> continue serial CBC, coagulation panel, fibrinogen, ionized calcium, blood gas/lactate/base deficit roughly every 30–60 minutes through active resuscitation, and after every ~5 units of PRBCs specifically.</p>
+    <p><b>Stand-down criteria:</b> deactivate the MTP once bleeding is controlled and the patient is hemodynamically stable — continuing ratio-based transfusion past the point of active hemorrhage risks unnecessary product use and volume overload (see the Transfusion Reactions crisis file for TACO specifically).</p>
+    <p><b>VTE prophylaxis timing:</b> massive transfusion independently raises VTE risk, but prophylaxis has to be balanced against ongoing bleeding risk — this is a genuine timing judgment call made once hemostasis is achieved, not a fixed protocol step.</p>
+    <p><b>Disposition:</b> ICU admission is standard for any patient who required massive transfusion, given the need for continued monitoring of coagulation status, electrolytes, and end-organ function.</p>
+    <p><b>Documentation and debrief:</b> record total products given, ratio achieved, TXA timing, and viscoelastic results if obtained — both for this patient's ongoing care and for institutional review of MTP performance and blood product stewardship.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Massive Transfusion. <i>StatPearls,</i> NCBI Bookshelf, updated 2025.</li>
+    <li><span class="tier">PRIMARY</span>Dutton RP, et al. Massive Transfusion/Hemorrhage Protocol. EMCrit Project IBCC, updated 2025.</li>
+    <li><span class="tier">GUIDELINE</span>Damage Control Resuscitation in Patients with Severe Traumatic Hemorrhage. Eastern Association for the Surgery of Trauma (EAST) Practice Management Guideline.</li>
+    <li><span class="tier">GUIDELINE</span>ISBT. Massive Bleeding Protocols — The Transfusion Service Perspective. isbtweb.org, updated January 2026.</li>
+    <li><span class="tier">EVIDENCE</span>CRASH-2 Trial Collaborators. Effects of Tranexamic Acid on Death, Vascular Occlusive Events, and Blood Transfusion in Trauma Patients with Significant Haemorrhage. <i>Lancet.</i> 2010.</li>
+    <li><span class="tier">EVIDENCE</span>Baksaas-Aasen K, et al. (iTACTIC Trial) Viscoelastic Haemostatic Assay-Augmented Protocols for Major Trauma Haemorrhage. <i>Intensive Care Med.</i> 2021.</li>
+    <li><span class="tier">REFERENCE</span>Current Controversies and Advances in Massive Transfusion: Balancing Evidence and Practice. 2025.</li>
+    <li><span class="tier">REFERENCE</span>Massive Transfusion Protocols. <i>Int J Clin Transfus Med.</i> Dove Medical Press.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and ratios against your own institutional blood bank protocol before clinical use.</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyperkalemic Cardiac Arrest — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Resuscitation / Electrolyte</div>
+    <h1>Hyperkalemic Cardiac Arrest</h1>
+    <p class="subtitle">Calcium doesn't lower potassium — it buys the 20–30 minutes the shifting therapies need to work. ROSC here comes from correcting the potassium, not from more epinephrine.</p>
+    <div class="badges">
+      <span class="badge red">RESUSCITATION EMERGENCY</span>
+      <span class="badge teal">ILCOR 2025 / AHA-ALIGNED</span>
+      <span class="badge amber">DON'T WAIT FOR THE LAB VALUE</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">ECG Progression</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Standard ACLS runs in parallel, but the actual path to ROSC here is stabilizing the membrane and correcting the potassium — plan for a longer resuscitation than usual.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Calcium chloride immediately — don't wait for lab confirmation</div><div class="step-desc"><span class="d">1 g IV</span> (10 mL of 10% solution) through a well-running peripheral line or central line. If hyperkalemia is clinically suspected (dialysis patient, renal failure, crush injury, known history) with arrest or malignant ECG findings, give it on suspicion — repeat every 5 minutes until the QRS narrows or ECG changes resolve.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Insulin plus dextrose — the most reliable shifting agent</div><div class="step-desc">Regular insulin <span class="d">10 units IV</span> with dextrose <span class="d">25 g</span> (50 mL of D50W) if the patient isn't already hyperglycemic. This is the single most potent, most evidence-supported intervention for actually lowering serum potassium acutely — expect a drop of roughly <span class="d">0.5–1.5 mEq/L</span> over 15–60 minutes.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Nebulized albuterol — after insulin/glucose, not before</div><div class="step-desc"><span class="d">10–20 mg</span> nebulized (far above a standard bronchodilator dose) as an additive shifting agent. Give it after insulin/glucose — a beta-agonist given first, before the insulin effect is underway, can transiently worsen serum potassium in some patients.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Sodium bicarbonate — situational, not routine</div><div class="step-desc"><span class="d">50–100 mEq IV</span> if concurrent metabolic acidosis is documented or strongly suspected. Do not give bicarbonate reflexively just because an arrest has been prolonged and acidosis is presumed — that specific practice has no proven benefit and can worsen intracellular acidosis.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Continue standard ACLS in parallel — but expect a longer code</div><div class="step-desc">Epinephrine 1 mg IV/IO every 3–5 minutes per standard protocol, defibrillation for shockable rhythms. Continue high-quality CPR until the hyperkalemia is actually corrected — this may take considerably longer than a typical resuscitation, and ROSC when it occurs will be driven primarily by calcium's membrane-stabilizing effect and the shifting agents, not by additional epinephrine.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Activate emergency dialysis</div><div class="step-desc">The only intervention that actually removes potassium from the body rather than shifting or buffering it. Involve nephrology immediately in any known or suspected renal failure patient — this is the definitive fix everything else is bridging toward.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Reassess and redose calcium as needed</div><div class="step-desc">Calcium's stabilizing effect wears off in roughly 20–30 minutes (up to an hour by some estimates) — if ECG changes recur or the QRS re-widens, redose rather than assuming a single dose was sufficient for the duration of the resuscitation.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Suspected digoxin toxicity — avoid calcium</div><div class="step-desc">If digitalis toxicity is a concern, avoid calcium (historically linked to a "stone heart" phenomenon in this specific combination) and use magnesium sulfate <span class="d">2 g over 5 minutes</span> instead for arrhythmias in this setting.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Treat the ECG and the clinical picture, not just a lab number</div><p>A prior blood gas, known dialysis status, or crush injury mechanism is enough to start treatment before a confirmatory potassium level returns. Waiting for lab confirmation in a patient with malignant ECG changes or arrest wastes the exact minutes the myocardium doesn't have.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Hyperkalemia is defined as serum potassium above roughly 5.0–5.5 mEq/L, present in about 2% of hospitalized patients. Mild elevation is usually asymptomatic; severe elevation (commonly cited around 6.5–7 mEq/L or higher, especially with an acute rate of rise) narrows the gap between resting and threshold membrane potential in cardiac myocytes, slowing conduction and predisposing to life-threatening arrhythmias, including cardiac arrest.</p>
+    <p>Common causes include chronic kidney disease or acute kidney injury with impaired excretion, medications (NSAIDs, ACE inhibitors/ARBs, potassium-sparing diuretics), cellular potassium release (burns, hemolysis, rhabdomyolysis, tumor lysis), acidosis-driven extracellular shift, and endocrine causes such as adrenal insufficiency. Cardiac arrest from hyperkalemia is one of the few arrest etiologies where the underlying cause is both rapidly identifiable and directly, pharmacologically reversible — which is exactly why it gets its own dedicated management pathway distinct from standard ACLS.</p>
+  </div>
+
+  <!-- 03 ECG PROGRESSION -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>ECG Progression (In Place of "Signs and Symptoms")</h2></div>
+  <table class="rt">
+    <tr><th>Stage</th><th>Finding</th></tr>
+    <tr><td>Early</td><td>Peaked, narrow-based T waves — often the first visible change.</td></tr>
+    <tr><td>Progressive</td><td>PR interval prolongation, flattened or absent P waves.</td></tr>
+    <tr><td>Worsening</td><td>QRS widening — a key treatment target; calcium redosing is often guided by watching this narrow back down.</td></tr>
+    <tr><td>Severe / pre-terminal</td><td>Sine wave pattern — QRS and T wave merging into a smooth, undulating waveform. A harbinger of imminent VF or asystole.</td></tr>
+    <tr><td>Terminal</td><td>Ventricular fibrillation or asystole.</td></tr>
+    <tr><td>Neuromuscular (non-ECG)</td><td>Weakness, paresthesias, areflexia, ascending paralysis — can precede cardiac findings and is easy to miss if the presentation is mistaken for another neurologic process.</td></tr>
+  </table>
+  <div class="xref"><b>ECG severity doesn't track cleanly with the absolute potassium number.</b> Some patients with dramatic lab values show minimal ECG change, while others decompensate at more moderate levels — treat the ECG and clinical trajectory in front of you, not a number in isolation.</div>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Point-of-care potassium testing availability</b> for dialysis patients, renal failure patients, or anyone with a mechanism (crush injury, burns, rhabdomyolysis) that predisposes to rapid hyperkalemia.</li>
+      <li><b>Continuous cardiac monitoring</b> for any patient with known or suspected hyperkalemia, even before ECG changes are visible.</li>
+      <li><b>Avoid succinylcholine</b> in patients with renal failure, burns, prolonged immobility, or other conditions predisposing to an exaggerated hyperkalemic response — see the Difficult/Failed Airway and general anesthesia-specific crisis files for related detail.</li>
+      <li><b>Medication review</b> in at-risk patients (ACE inhibitors/ARBs, potassium-sparing diuretics, NSAIDs, potassium supplements) — identifying and holding contributing medications is part of both prevention and ongoing management.</li>
+      <li><b>Have calcium chloride, insulin, dextrose, and albuterol immediately accessible</b> in any unit managing dialysis or renal failure patients regularly, rather than treating this as a rare-event kit to be located under pressure.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter / Drug</th><th>Value</th></tr>
+    <tr><td>Normal serum potassium</td><td>3.5–5.0 mEq/L</td></tr>
+    <tr><td>Hyperkalemia threshold</td><td>&gt;5.0–5.5 mEq/L</td></tr>
+    <tr><td>Severe/life-threatening range</td><td>~6.5–7 mEq/L or higher, especially with acute rise</td></tr>
+    <tr><td>Calcium chloride</td><td>1 g IV (10 mL of 10%), repeat q5min as needed</td></tr>
+    <tr><td>Regular insulin + dextrose</td><td>10 units IV + 25 g dextrose (50 mL D50W)</td></tr>
+    <tr><td>Expected potassium drop from insulin/glucose</td><td>0.5–1.5 mEq/L over 15–60 minutes</td></tr>
+    <tr><td>Nebulized albuterol</td><td>10–20 mg (well above standard bronchodilator dosing)</td></tr>
+    <tr><td>Sodium bicarbonate</td><td>50–100 mEq IV, only with documented/suspected concurrent acidosis</td></tr>
+    <tr><td>Calcium's effect duration</td><td>~20–30 minutes, up to ~1 hour</td></tr>
+    <tr><td>Hospitalized-patient hyperkalemia prevalence</td><td>~2%</td></tr>
+    <tr><td>Glucose monitoring window post-insulin</td><td>Every 30–60 minutes for at least 4–6 hours (delayed hypoglycemia risk)</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Hyperkalemic Arrest Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why calcium is given first despite not lowering potassium at all:</b> hyperkalemia narrows the gap between a myocyte's resting membrane potential and its threshold potential, making the cell dangerously easy to depolarize inappropriately. Calcium raises that threshold back toward normal, directly counteracting the arrhythmogenic mechanism within minutes — independent of, and much faster than, anything that actually changes the serum potassium level. It's cardiac membrane protection, not potassium treatment, which is exactly why it has to be paired with a shifting agent rather than used alone.</p>
+    <p><b>Why the COCA trial's findings on calcium don't overturn this specific indication:</b> recent evidence (including a 2021 trial and a 2025 systematic review) has questioned routine calcium administration in undifferentiated cardiac arrest, with some data suggesting possible harm. That evidence base is about calcium given empirically in arrests of unknown cause — the hyperkalemia-specific indication, where a clear mechanistic rationale and consistent clinical experience support rapid ECG improvement, remains distinct and is why expert guidance continues to favor calcium specifically when hyperkalemia is the suspected or confirmed driver.</p>
+    <p><b>Why insulin/glucose is the preferred shifting agent over albuterol alone:</b> insulin directly stimulates the Na⁺/K⁺-ATPase pump, driving potassium into cells through the same mechanism the body normally uses — it's more potent and more predictable than beta-agonism alone. Albuterol works through a related but weaker pathway and requires a much larger-than-bronchodilator dose to have a meaningful potassium-shifting effect, which is why it's used as an addition to, not a substitute for, insulin/glucose.</p>
+    <p><b>Why albuterol specifically follows insulin rather than preceding it:</b> beta-agonist stimulation can transiently increase serum potassium before its shifting effect takes hold, related to an initial catecholamine-driven potassium efflux. Giving it after insulin/glucose is already underway avoids stacking a transient worsening on top of a still-elevated potassium level during the most dangerous part of the timeline.</p>
+    <p><b>Why the resuscitation should run longer than a typical arrest:</b> in most cardiac arrests, prolonged CPR without ROSC signals a poor trajectory. In hyperkalemic arrest specifically, the underlying cause is actively being corrected in real time by calcium, insulin/glucose, and (if activated) dialysis — ROSC is expected to follow correction of the potassium, not simply more time or more epinephrine. This is the clearest example in this crisis series of why "diagnosis-driven" resuscitation (see the Perioperative Cardiac Arrest file) changes not just the drugs given but the entire decision about how long to continue.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic / consideration</th><th>Key distinguishing features</th></tr>
+    <tr><td>Sodium channel blocker toxicity (TCA, cocaine, other)</td><td>Also produces QRS widening, but the mechanism and treatment differ — sodium bicarbonate is central to management here (not just situational), and calcium's role is different; history of ingestion/exposure is the key clue.</td></tr>
+    <tr><td>Hypocalcemia</td><td>Can independently prolong QT and predispose to arrhythmia; check ionized calcium directly rather than assuming hyperkalemia explains all ECG changes.</td></tr>
+    <tr><td>Hypermagnesemia</td><td>Can cause bradyarrhythmias and conduction delay; often coexists with renal failure and hyperkalemia, so consider checking magnesium in the same patient population.</td></tr>
+    <tr><td>Digoxin toxicity</td><td>Can present with hyperkalemia (in acute toxicity) but changes the treatment approach — avoid calcium, treat arrhythmias with magnesium, and consider digoxin-specific antibody fragments.</td></tr>
+    <tr><td>Pseudohyperkalemia</td><td>Artificially elevated lab value from a hemolyzed sample or severe leukocytosis/thrombocytosis — send a repeat, non-hemolyzed sample once treatment is underway, but don't delay treatment for confirmation if the ECG and clinical picture already support true hyperkalemia.</td></tr>
+    <tr><td>Hyperacute T waves from early STEMI</td><td>Can superficially resemble the peaked T waves of hyperkalemia; look for reciprocal changes, regional distribution, and clinical context (chest pain, risk factors) to distinguish.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Confirm and trend:</b> a repeat, non-hemolyzed potassium level, along with glucose, renal function, and an ABG/VBG for acid-base status. Recheck potassium at defined intervals (commonly around 1, 2, 4, 6, and 24 hours) after treatment to confirm the trajectory and catch rebound as insulin's effect wears off (typically 2–4 hours).</p>
+    <p><b>Glucose monitoring:</b> finger-stick glucose every 30–60 minutes for at least 4–6 hours post-insulin, given the well-documented risk of delayed hypoglycemia.</p>
+    <p><b>Identify and treat the underlying cause:</b> renal function assessment, medication reconciliation (hold ACE inhibitors/ARBs, potassium-sparing diuretics, NSAIDs, potassium supplements), and workup for rhabdomyolysis, tumor lysis, or endocrine causes as clinically indicated.</p>
+    <p><b>Definitive potassium removal:</b> dialysis remains the definitive treatment for refractory or renal-failure-associated hyperkalemia; potassium binders (patiromer, sodium zirconium cyclosilicate) or diuretics may have a role in less acute management but shouldn't be relied on for the acute, arrest-level presentation.</p>
+    <p><b>Disposition:</b> ICU admission for any patient who arrested or had malignant ECG changes from hyperkalemia, with continuous cardiac monitoring until the potassium is clearly trending down and stable.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>American Red Cross / ILCOR 2025. Pharmacologic Interventions for Severe Hyperkalemia and Cardiac Arrest Associated with Hyperkalemia. guidelines.redcross.org.</li>
+    <li><span class="tier">PRIMARY</span>American Heart Association. Part 9: Adult Advanced Life Support, 2025 Guidelines for CPR and ECC. cpr.heart.org.</li>
+    <li><span class="tier">EVIDENCE</span>Pharmacological Interventions for the Acute Treatment of Hyperkalaemia: A Systematic Review and Meta-Analysis. <i>Resuscitation.</i> 2025.</li>
+    <li><span class="tier">EVIDENCE</span>Calcium for Out-of-Hospital Cardiac Arrest — trial protocol summarizing COCA trial context and current guideline positioning on calcium.</li>
+    <li><span class="tier">REFERENCE</span>Lahouti S. Hyperkalemia Revisited. RECAPEM, last updated July 2026.</li>
+    <li><span class="tier">REFERENCE</span>EM Cases. Emergency Management of Hyperkalemia (podcast/summary). emergencymedicinecases.com.</li>
+    <li><span class="tier">REFERENCE</span>EM Cases. Cardiac Arrest Update: Beyond the 2025 ACLS Guidelines. 2026.</li>
+    <li><span class="tier">GUIDELINE</span>Alfonzo A, Soar J, MacTier R, et al. Clinical Practice Guidelines: Treatment of Acute Hyperkalaemia in Adults. UK Renal Association, 2014 (referenced in current synthesis reviews).</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

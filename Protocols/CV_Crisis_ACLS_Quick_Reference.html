@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACLS Quick Reference — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Resuscitation / Core Algorithm</div>
+    <h1>ACLS Quick Reference</h1>
+    <p class="subtitle">The circular algorithm skeleton every other file in this category plugs into — 2025 AHA drug timing, the "don't give this routinely" list, and the H's and T's as a live differential, each one linked to its own deep dive.</p>
+    <div class="badges">
+      <span class="badge red">RESUSCITATION CORE ALGORITHM</span>
+      <span class="badge teal">2025 AHA/ILCOR-ALIGNED</span>
+      <span class="badge amber">COMPRESSIONS AND SHOCKS ARE THE HIGHEST-VALUE ACTIONS</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Shockable vs. Non-Shockable</a>
+    <a class="qn" href="#prevention">CPR Quality Standards</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">The H's and T's — Linked</a>
+    <a class="qn" href="#disposition">Post-ROSC &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>The Circular Algorithm</h2></div>
+  <div class="tagline">Compressions and defibrillation are the highest-value actions in the whole algorithm — everything else is built around minimizing interruptions to them.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Start high-quality CPR immediately, attach the monitor/defibrillator</div><div class="step-desc">Begin compressions before the monitor is even on. Check rhythm as soon as available.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Shockable (VF/pVT) — shock immediately, then resume CPR with minimal pause</div><div class="step-desc">Single-shock approach preferred over stacked shocks. Prefer biphasic waveform. Use the device's recommended energy, escalating for later shocks if the defibrillator supports it. CPR for 2 minutes, then recheck rhythm.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Non-shockable (asystole/PEA) — epinephrine as soon as feasible</div><div class="step-desc">Give the first dose of epinephrine as early as possible in non-shockable rhythms — this is a specific 2025 emphasis point, distinct from the shockable pathway.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Shockable — give epinephrine after initial defibrillation attempts fail</div><div class="step-desc">The updated 2025 sequencing: prioritize rapid defibrillation over medication for shockable rhythms — epinephrine follows once shocks alone haven't converted the rhythm, commonly after the second shock.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Continue epinephrine every 3–5 minutes throughout</div><div class="step-desc"><span class="d">1 mg IV/IO</span>, regardless of rhythm, once the pathway-specific timing above has been triggered.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Refractory VF/pVT after the third shock — add an antiarrhythmic</div><div class="step-desc">Amiodarone or lidocaine — see Numbers to Know for dosing. Neither is clearly favored over the other in current guidance; choose based on availability and institutional protocol.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Actively search for and treat reversible causes throughout — don't wait for a lull</div><div class="step-desc">The H's and T's aren't a checklist to run once things stall; they're a live differential to be working through continuously, especially in PEA and asystole where there's no shockable rhythm to anchor on. See the dedicated table below with links to full crisis files.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Consider advanced airway and capnography without delaying compressions</div><div class="step-desc">Airway placement should never come at the cost of compression quality or timing. Waveform capnography helps confirm placement, monitor CPR quality, and detect ROSC (a sustained PETCO₂ jump &gt;25 mmHg, or &gt;40 mmHg, suggests ROSC).</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">The "don't give this routinely" list — 2025 emphasis</div><p>Do not substitute or add vasopressin to epinephrine (no benefit). Do not use high-dose epinephrine routinely. Do not give calcium, sodium bicarbonate, magnesium, or steroids routinely during undifferentiated arrest — each has a role, but only for a specific indication (see Numbers to Know), not as a default add-on.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>ACLS is the general-purpose algorithm for adult cardiac arrest — a cycle-based approach combining high-quality CPR, timely defibrillation for shockable rhythms, epinephrine, and a continuous search for reversible causes. The 2025 AHA update kept the overall structure stable while sharpening specifics: earlier epinephrine in non-shockable rhythms, epinephrine deliberately delayed until after initial defibrillation in shockable rhythms, and a clearer "don't add extras without a specific indication" stance on calcium, bicarbonate, magnesium, and steroids.</p>
+    <p>This file is the algorithm skeleton the rest of this crisis series plugs into. Where a trigger-specific pathway diverges meaningfully from standard ACLS — LAST, MH, hyperkalemia, tension pneumothorax, tamponade, PE, traumatic arrest, refractory VF/ECPR — that divergence is covered in its own dedicated file, cross-linked from the H's and T's table below rather than duplicated here.</p>
+  </div>
+
+  <!-- 03 SHOCKABLE VS NON-SHOCKABLE -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Shockable vs. Non-Shockable — The First Branch Point</h2></div>
+  <table class="rt">
+    <tr><th>Rhythm</th><th>Pathway</th></tr>
+    <tr><td>VF / pulseless VT</td><td>Shockable — immediate defibrillation, epinephrine after initial shocks fail, antiarrhythmic after 3 shocks if still refractory.</td></tr>
+    <tr><td>Asystole</td><td>Non-shockable — no defibrillation; epinephrine as early as possible; CPR and reversible-cause search are the entire treatment.</td></tr>
+    <tr><td>Pulseless electrical activity (PEA)</td><td>Non-shockable — organized rhythm without a pulse; treatment is entirely dependent on identifying and fixing the underlying cause (see H's and T's below) — echo is invaluable here.</td></tr>
+    <tr><td>Refractory VF/pVT (persists after ≥3 shocks)</td><td>See the dedicated Refractory VF/pVT &amp; ECPR crisis file for vector-change defibrillation, DSED, and early ECPR candidacy assessment.</td></tr>
+    <tr><td>Asystole with P-waves</td><td>A distinct entity from flatline asystole — consider emergency transcutaneous/transvenous pacing rather than the standard non-shockable pathway alone.</td></tr>
+  </table>
+
+  <!-- 04 CPR QUALITY -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>CPR Quality Standards (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Rate:</b> 100–120 compressions per minute.</li>
+      <li><b>Depth:</b> at least 2 inches (5 cm), up to 2.4 inches (6 cm).</li>
+      <li><b>Full chest recoil</b> between compressions — leaning on the chest between compressions measurably reduces effectiveness.</li>
+      <li><b>Minimize interruptions</b> — every pause reduces coronary and cerebral perfusion pressure, which then takes multiple subsequent compressions to rebuild.</li>
+      <li><b>Change compressor every 2 minutes</b>, or sooner if fatigued — compression quality degrades with fatigue well before the compressor consciously feels tired.</li>
+      <li><b>Ventilation ratio:</b> 30:2 without an advanced airway; 1 breath every 6 seconds (10/min) with continuous compressions once an advanced airway is placed. Avoid excessive ventilation — hyperventilation raises intrathoracic pressure and reduces venous return.</li>
+      <li><b>IV access preferred over IO</b> for drug delivery, though IO is reasonable if IV can't be obtained quickly without delaying other key interventions.</li>
+    </ul>
+  </div>
+
+  <!-- 05 DRUG DOSES -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Drug</th><th>Dose</th><th>Indication / notes</th></tr>
+    <tr><td>Epinephrine</td><td>1 mg IV/IO every 3–5 min</td><td>The only vasopressor used in the algorithm; timing differs by pathway (see Treatment above).</td></tr>
+    <tr><td>Amiodarone</td><td>300 mg IV/IO first dose; 150 mg second dose if VF/pVT persists</td><td>For refractory VF/pVT after 3 shocks. Do not use for torsades (worsens QT prolongation — see the Torsades crisis file).</td></tr>
+    <tr><td>Lidocaine</td><td>1–1.5 mg/kg first dose; 0.5–0.75 mg/kg subsequent doses; max 3 mg/kg or 3 doses total</td><td>Reasonable alternative to amiodarone for refractory VF/pVT.</td></tr>
+    <tr><td>Calcium chloride</td><td>Not routine — specific-indication dosing only</td><td>Hyperkalemia, CCB overdose, hypocalcemia, hypermagnesemia — see the Hyperkalemic Cardiac Arrest crisis file.</td></tr>
+    <tr><td>Sodium bicarbonate</td><td>Not routine — specific-indication dosing only</td><td>TCA overdose, severe hyperkalemia with documented acidosis. Not for presumed acidosis from arrest duration alone.</td></tr>
+    <tr><td>Magnesium sulfate</td><td>Not routine — specific-indication dosing only</td><td>Torsades de pointes / suspected hypomagnesemia — see the Torsades crisis file for full dosing.</td></tr>
+    <tr><td>Naloxone</td><td>Per opioid-overdose-specific protocol</td><td>Only if opioid overdose is suspected as the cause of arrest.</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for the 2025 Algorithm Changes</h2></div>
+  <div class="box t-purple">
+    <p><b>Why epinephrine timing now diverges by rhythm:</b> in non-shockable rhythms, there's no competing intervention (no shock to prioritize) — early epinephrine gives the best chance of restoring perfusion, and pediatric data specifically shows shorter time-to-first-dose correlates with better outcomes. In shockable rhythms, the highest-value action is defibrillation itself; giving epinephrine first (or simultaneously) doesn't improve on rapid, uninterrupted shock delivery, and current evidence supports letting defibrillation attempts run their course first before adding the drug.</p>
+    <p><b>Why vasopressin was formally dropped:</b> multiple systematic reviews and meta-analyses consistently found no survival advantage for vasopressin alone or in combination with epinephrine — a rare case of a once-common ACLS drug being explicitly removed rather than just deprioritized, based on accumulated null results rather than new harm data.</p>
+    <p><b>Why calcium, bicarbonate, magnesium, and steroids are "not routine" rather than "never":</b> each has a real, evidence-supported role in a specific reversible-cause scenario (hyperkalemia for calcium, TCA toxicity for bicarbonate, torsades for magnesium) but no demonstrated benefit — and some plausible harm — when given reflexively in undifferentiated arrest. This is the clearest expression of the "diagnosis-driven resuscitation" theme running through this whole crisis series: the same drug is right or wrong depending entirely on whether the specific indication is actually present.</p>
+    <p><b>Why the H's and T's search happens continuously, not as a fallback:</b> in PEA and asystole specifically, there's no rhythm-based intervention (no shock) doing any of the work — the entire treatment is finding and fixing the actual cause. Treating the differential search as something to start only after "standard measures fail" wastes the exact window where a reversible cause is still reversible.</p>
+  </div>
+
+  <!-- THE H'S AND T'S -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>The H's and T's — Linked to Full Crisis Files</h2></div>
+  <table class="rt">
+    <tr><th>Cause</th><th>Where to go for the full workup</th></tr>
+    <tr><td>Hypovolemia</td><td>See the Massive Transfusion Protocol and Traumatic Cardiac Arrest crisis files.</td></tr>
+    <tr><td>Hypoxia</td><td>Airway-focused — see the Difficult/Failed Airway and Laryngospasm crisis files.</td></tr>
+    <tr><td>Hydrogen ion (acidosis)</td><td>Rarely treated directly (see bicarbonate note above); address the underlying driver of the acidosis instead.</td></tr>
+    <tr><td>Hypo/Hyperkalemia</td><td>See the dedicated Hyperkalemic Cardiac Arrest crisis file.</td></tr>
+    <tr><td>Hypothermia</td><td>Changes resuscitation duration and ECPR thresholds entirely — see the Refractory VF/pVT &amp; ECPR crisis file for the hypothermia-specific exception.</td></tr>
+    <tr><td>Tension pneumothorax</td><td>See the dedicated Tension Pneumothorax crisis file.</td></tr>
+    <tr><td>Tamponade (cardiac)</td><td>See the dedicated Pericardial Tamponade crisis file.</td></tr>
+    <tr><td>Toxins</td><td>LAST, MH, and specific overdose syndromes each have or will have their own crisis file — see LAST and Malignant Hyperthermia for the two currently live.</td></tr>
+    <tr><td>Thrombosis — pulmonary</td><td>See the dedicated Peri-Arrest Pulmonary Embolism crisis file.</td></tr>
+    <tr><td>Thrombosis — coronary</td><td>Treat as ACS once ROSC achieved; urgent coronary angiography per post-ROSC care below.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Post-ROSC Care &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Immediate targets:</b> MAP ≥65 mmHg (fluids first, then vasopressor infusion if needed), PaCO₂ 35–40 mmHg avoiding both hyper- and hypoventilation, SpO₂ 90–98% using the lowest FiO₂ that achieves it.</p>
+    <p><b>12-lead ECG and continuous monitoring</b> to assess for STEMI; urgent coronary angiography with transfer to a cath-capable facility if indicated.</p>
+    <p><b>Continue searching for and treating reversible causes</b> in the post-ROSC window — hypovolemia, hypoxia, acidosis, electrolyte derangement, hypothermia, tension pneumothorax, tamponade, toxins, and thrombosis all remain relevant after circulation returns, not just during the arrest.</p>
+    <p><b>Targeted temperature management</b> per standard post-arrest protocol.</p>
+    <p><b>Disposition:</b> ICU admission is standard for any resuscitated arrest, with close coordination between the resuscitation team and ICU on ongoing management. Institutions should have a standard of care in place to evaluate cardiac arrest survivors — including those unlikely to have a favorable outcome — for organ donation potential, per the 2025 update's new Class 1 recommendation, and to provide ongoing disability support for survivors.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care — Part 9: Adult Advanced Life Support. <i>Circulation.</i> 2025.</li>
+    <li><span class="tier">PRIMARY</span>AHA. Adult Cardiac Arrest Algorithm (2025 Algorithms). cpr.heart.org.</li>
+    <li><span class="tier">GUIDELINE</span>EMCrit 412 — 2025 AHA ACLS Guidelines with Shel Cheskes (Class of Recommendation / Level of Evidence breakdown). emcrit.org, 2025.</li>
+    <li><span class="tier">REFERENCE</span>2025 Adult Cardiac Arrest Algorithm Changes. acls-algorithms.com, 2026.</li>
+    <li><span class="tier">REFERENCE</span>Project Heartbeat. 2025 AHA Guidelines: BLS, ACLS &amp; PALS Changes. projectheartbeat.com.</li>
+    <li><span class="tier">REFERENCE</span>ACLS.net. Cardiac Arrest Circular Algorithm. acls.net.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

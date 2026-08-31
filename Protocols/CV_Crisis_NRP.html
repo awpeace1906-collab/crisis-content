@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neonatal Resuscitation (NRP) — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{position:static !important;background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Pediatric / Neonatal</div>
+    <h1>Neonatal Resuscitation (NRP)</h1>
+    <p class="subtitle">Ventilation is the single most important intervention — heart rate is the readout, not a separate problem. Real delivery-room data shows epinephrine timing lags guideline targets by minutes, which is exactly why anticipation and pre-drawn doses matter.</p>
+    <div class="badges">
+      <span class="badge red">NEONATAL RESUSCITATION EMERGENCY</span>
+      <span class="badge teal">AHA/AAP NRP 9TH EDITION (OCT 2025)</span>
+      <span class="badge amber">PPV BEFORE COMPRESSIONS, COMPRESSIONS BEFORE EPINEPHRINE</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Assessment — The Golden Minute</a>
+    <a class="qn" href="#prevention">Set-Up / Readiness</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Reversible Causes of Persistent Bradycardia</a>
+    <a class="qn" href="#disposition">Post-Resuscitation &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>The NRP Algorithm</h2></div>
+  <div class="tagline">Ventilation, then compressions, then epinephrine — in that order, and never skip ahead. Reassess heart rate at every step before escalating.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Ask three questions at birth</div><div class="step-desc">Term gestation? Good tone? Breathing or crying? If yes to all — routine care, skin-to-skin, deferred cord clamping ≥60 seconds. If no to any — move to the warmer and begin initial steps.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Initial steps, within the Golden Minute</div><div class="step-desc">Warm, dry, stimulate, position the airway, suction only if needed. Complete this within the first 60 seconds of life. If apneic, gasping, or heart rate &lt;100 bpm — begin positive pressure ventilation (PPV) immediately, without waiting for the full minute to elapse if the baby clearly needs it sooner.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">PPV — the single most important intervention</div><div class="step-desc"><span class="d">40–60 breaths/min</span>, reassess heart rate and chest movement after 30 seconds. If the chest isn't moving, work through the <b>MR SOPA</b> corrective steps: Mask adjustment, Reposition airway, Suction mouth/nose, Open mouth, Pressure increase, Alternate airway — in that order, before assuming ventilation has failed.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Chest compressions if HR &lt;60 after 30 seconds of effective PPV</div><div class="step-desc">Secure an alternate airway (ETT or laryngeal mask) first if not already in place. Compressions at a <span class="d">3:1</span> ratio with ventilation (90 compressions : 30 breaths per minute — 120 total events/min), 100% oxygen. Continue for a full 60 seconds of coordinated compressions and ventilation before reassessing.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Epinephrine if HR remains &lt;60 after 60 seconds of coordinated compressions + PPV</div><div class="step-desc">IV/IO <span class="d">0.01–0.03 mg/kg</span> of 1:10,000 solution (a simplified <span class="d">0.02 mg/kg</span> starting dose is commonly taught for speed and consistency), preferably via umbilical venous catheter. Repeat every 3–5 minutes if heart rate remains &lt;60. If IV/IO access isn't yet available, endotracheal epinephrine at a higher dose (<span class="d">0.05–0.1 mg/kg</span>) is reasonable as a bridge — less reliably absorbed, so don't treat it as equivalent to the IV route once access is achieved.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Anticipate epinephrine need before you reach the threshold</div><div class="step-desc">If the trajectory suggests epinephrine may be needed, one team member should begin placing a UVC while others continue PPV and compressions — don't wait until the 60-second mark to start line placement.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Volume expansion for suspected blood loss unresponsive to epinephrine</div><div class="step-desc">Normal saline <span class="d">10 mL/kg</span> IV/IO when there's a history or exam consistent with blood loss (placental abruption, cord accident, twin-twin transfusion) and no response to epinephrine.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">No heart rate response by 20 minutes — discuss redirection of care</div><div class="step-desc">A specific, evidence-anchored threshold for having the conversation with the team and family about continuing versus redirecting care, once every step above has been executed effectively.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Guideline timing and real-world timing don't match — plan for that gap</div><p>A retrospective delivery-room study found endotracheal epinephrine given at a mean of nearly 4 minutes, and IV epinephrine at a mean of nearly 11 minutes, after chest compressions began — far beyond the roughly 90-second target implied by the algorithm. This isn't a reason to abandon the timing targets; it's the specific reason anticipatory UVC placement and pre-calculated dosing are built into current guidance.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>The Neonatal Resuscitation Program, first developed in 1987 and now in its 9th edition (jointly released by the AHA and AAP in October 2025), provides a standardized, sequential approach to supporting newborns transitioning from intrauterine to extrauterine life. Roughly 85% of term newborns transition spontaneously with little or no assistance; about 10% require some form of assistance (typically PPV); and only about 1% require intensive measures — intubation, chest compressions, or epinephrine.</p>
+    <p>The physiology here is fundamentally different from adult cardiac arrest: neonatal bradycardia is almost always a downstream consequence of inadequate lung aeration or hypoxemia, not a primary cardiac electrical or structural problem. This is why the entire algorithm is built around establishing effective ventilation first — heart rate serves as the readout of whether ventilation is working, not a separate parameter to be fixed independently with drugs.</p>
+  </div>
+
+  <!-- 03 ASSESSMENT -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Assessment — The Golden Minute</h2></div>
+  <table class="rt">
+    <tr><th>Element</th><th>Notes</th></tr>
+    <tr><td>Heart rate</td><td>The single most important indicator of adequate resuscitation response — assessed by auscultation, with ECG monitoring placed early for any resuscitation beyond routine care, since it's faster and more reliable than pulse oximetry for rapid heart rate assessment.</td></tr>
+    <tr><td>Preductal SpO₂ targets by minute of life</td><td>1 min: 60–65% · 2 min: 65–70% · 3 min: 70–75% · 4 min: 75–80% · 5 min: 80–85% · 10 min: 85–95% — placed on the right hand/wrist specifically to reflect preductal saturation.</td></tr>
+    <tr><td>Tone and respiratory effort</td><td>Assessed alongside gestational age at the initial "three questions" step — poor tone or absent/gasping respiration triggers immediate movement to the warmer.</td></tr>
+    <tr><td>Chest movement during PPV</td><td>The direct sign that ventilation is actually effective — absence of chest movement triggers the MR SOPA corrective sequence rather than simply continuing an ineffective technique.</td></tr>
+    <tr><td>APGAR score</td><td>No longer used to determine whether to begin resuscitation, since resuscitation often starts before the 1-minute mark — it remains useful as a structured post-hoc description of status and response to resuscitation, not a decision-making trigger.</td></tr>
+  </table>
+
+  <!-- 04 SETUP / READINESS -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Set-Up &amp; Readiness (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Antenatal risk factor review and team briefing before every delivery</b> — not just anticipated high-risk ones, given how quickly an apparently low-risk delivery can change trajectory.</li>
+      <li><b>Equipment check every time:</b> preheated warmer, functioning suction, appropriately sized masks/airway equipment, pulse oximeter, ECG leads, and a UVC kit immediately accessible.</li>
+      <li><b>Identify the most qualified team member to lead and to perform intubation</b> before delivery, not in the moment.</li>
+      <li><b>Pre-calculate and, when anticipated, pre-draw the epinephrine dose</b> for the specific estimated newborn weight — this directly targets the real-world timing delay described above rather than leaving dose calculation to happen under pressure at the 60-second mark.</li>
+      <li><b>Consider laryngeal mask airway as an alternative secondary device</b> for infants &gt;34 weeks gestation when intubation isn't immediately successful — a validated, less invasive option increasingly incorporated into national guidelines.</li>
+      <li><b>Deferred cord clamping (≥60 seconds) for infants transitioning normally</b> — this applies specifically to the population not requiring immediate resuscitation; don't let it delay initiating resuscitative steps in an infant who does need them.</li>
+      <li><b>Meconium-stained fluid: no routine endotracheal suctioning of non-vigorous infants</b> — proceed directly to PPV per the standard algorithm rather than performing tracheal suctioning first, a practice reversed since 2016 and reaffirmed by more recent outcome data (see Rationale).</li>
+    </ul>
+  </div>
+
+  <!-- 05 DRUG DOSES -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter / Drug</th><th>Value</th></tr>
+    <tr><td>PPV rate</td><td>40–60 breaths/min</td></tr>
+    <tr><td>Reassessment interval after starting/adjusting PPV</td><td>30 seconds</td></tr>
+    <tr><td>Compression:ventilation ratio</td><td>3:1 (90 compressions : 30 breaths/min = 120 events/min)</td></tr>
+    <tr><td>Duration of coordinated compressions + PPV before epinephrine</td><td>60 seconds</td></tr>
+    <tr><td>Epinephrine, IV/IO</td><td>0.01–0.03 mg/kg of 1:10,000 (0.02 mg/kg often taught as a simplified starting dose)</td></tr>
+    <tr><td>Epinephrine, endotracheal (bridge only)</td><td>0.05–0.1 mg/kg — less reliably absorbed than IV/IO</td></tr>
+    <tr><td>Epinephrine repeat interval</td><td>Every 3–5 minutes if HR remains &lt;60</td></tr>
+    <tr><td>Volume expansion (normal saline)</td><td>10 mL/kg IV/IO for suspected blood loss unresponsive to epinephrine</td></tr>
+    <tr><td>Newborns needing any assistance</td><td>~10%</td></tr>
+    <tr><td>Newborns needing intensive measures (intubation/compressions/meds)</td><td>~1%</td></tr>
+    <tr><td>Real-world mean time to endotracheal epinephrine (from start of compressions)</td><td>~3.98 minutes</td></tr>
+    <tr><td>Real-world mean time to IV epinephrine (from start of compressions)</td><td>~10.87 minutes</td></tr>
+    <tr><td>Increased death/morbidity risk per 30-second delay in initiating PPV</td><td>~16%</td></tr>
+    <tr><td>No-response threshold for discussing redirection of care</td><td>20 minutes</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for NRP Sequencing</h2></div>
+  <div class="box t-purple">
+    <p><b>Why ventilation, not epinephrine or compressions, is the single most important intervention:</b> neonatal bradycardia at birth is overwhelmingly a consequence of inadequate lung aeration and resulting hypoxemia, not a primary cardiac rhythm or structural problem. Once effective ventilation is established, heart rate typically responds quickly on its own — which is exactly why heart rate is described as "the most important indicator that effective ventilation is occurring" rather than a separate target requiring its own independent fix. This is the core physiologic reason the entire algorithm is sequenced the way it is, and it's fundamentally different from adult cardiac arrest logic, where compressions and defibrillation take priority.</p>
+    <p><b>Why the real-world epinephrine timing gap matters as much as the guideline number itself:</b> the algorithm calls for epinephrine at roughly 60–90 seconds after compressions begin if there's no response — but delivery-room data shows actual administration often lags this by many minutes, largely because umbilical line placement and weight-based dose calculation both take genuine time under pressure, especially in a low-frequency, high-stakes event that individual teams may not perform often. This is precisely why current guidance specifically recommends anticipatory UVC placement and pre-calculating the dose the moment the resuscitation trajectory suggests epinephrine may become necessary — the guideline isn't naive about this gap, it's built with the gap in mind.</p>
+    <p><b>Why the meconium-suctioning reversal is a genuinely instructive example, not just a historical footnote:</b> the older practice of routine endotracheal suctioning in non-vigorous meconium-stained infants was based on a plausible mechanistic theory — removing meconium below the cords should prevent aspiration syndrome. Subsequent evidence, including more recent outcome data, found suctioned infants were actually more likely to be diagnosed with meconium aspiration syndrome and persistent pulmonary hypertension, and more likely to need surfactant — suggesting the suctioning procedure itself (via delayed PPV initiation and vagally-mediated bradycardia/trauma risk) caused net harm despite its intuitive rationale. This reinforces a theme running through the whole NRP algorithm: delaying PPV to perform an additional procedure is very rarely the right trade, even when that procedure sounds reasonable in isolation.</p>
+    <p><b>Why 20 minutes is named specifically rather than left to open-ended judgment:</b> this reflects accumulated outcomes data showing extremely poor neurologic survival beyond this duration of fully-optimized, unresponsive resuscitation. Naming a concrete, evidence-anchored number gives teams and families a specific point to have the redirection-of-care conversation, rather than leaving an inherently difficult decision to be improvised in the moment with no anchor.</p>
+    <p><b>Why deferred cord clamping is scoped specifically to the "transitioning normally" population:</b> continued placental blood flow during deferred clamping improves iron stores and reduces certain complications, but this benefit is only relevant to an infant who doesn't need immediate resuscitative steps. The guideline draws this line deliberately — prioritizing prompt initiation of resuscitation for infants who need it, rather than universally deferring clamping regardless of the infant's condition at birth.</p>
+  </div>
+
+  <!-- REVERSIBLE CAUSES -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Reversible Causes of Persistent Bradycardia (In Place of Differentials)</h2></div>
+  <table class="rt">
+    <tr><th>Cause</th><th>Notes</th></tr>
+    <tr><td>Inadequate ventilation despite belief otherwise</td><td>Reassess chest movement and airway position — work back through MR SOPA rather than assuming the airway/technique is adequate just because PPV has "been started."</td></tr>
+    <tr><td>Pneumothorax</td><td>Consider if chest movement is asymmetric or ventilation remains ineffective despite corrective steps — needle decompression per the same principles in the dedicated Tension Pneumothorax crisis file.</td></tr>
+    <tr><td>Hypovolemia (blood loss)</td><td>Placental abruption, cord accident, twin-twin transfusion — treat with volume expansion as above.</td></tr>
+    <tr><td>Congenital heart disease or other structural anomaly</td><td>Consider if the infant remains unresponsive to a well-executed resuscitation with no other identifiable cause.</td></tr>
+    <tr><td>Severe acidosis</td><td>Reflects prolonged, severe hypoxic-ischemic insult rather than a distinct primary cause — responds to continued effective ventilation and perfusion rather than a specific separate treatment.</td></tr>
+    <tr><td>Profound anemia</td><td>From significant fetomaternal hemorrhage or similar — overlaps with the hypovolemia category above and responds to the same volume expansion approach.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Post-Resuscitation Care &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Glucose monitoring:</b> hypoglycemia is a real risk after any significant resuscitation — check and correct proactively.</p>
+    <p><b>Temperature management:</b> avoid hyperthermia specifically, which worsens outcomes after a hypoxic-ischemic insult; therapeutic hypothermia should be considered per a separate dedicated protocol for infants meeting criteria for moderate-to-severe hypoxic-ischemic encephalopathy.</p>
+    <p><b>Cord gas analysis</b> to characterize the degree of acidosis at delivery, informing both immediate management and later neurologic prognostication discussions.</p>
+    <p><b>Disposition:</b> NICU admission for any infant requiring PPV beyond the initial steps, chest compressions, or epinephrine — this is not a routine well-baby-nursery trajectory once significant resuscitation has occurred.</p>
+    <p><b>Debrief:</b> team debriefing after every significant resuscitation is explicitly part of current guidance — given how infrequently individual teams perform the more advanced steps (compressions, epinephrine, UVC placement), structured post-event review is one of the few realistic ways to keep real-world execution closer to guideline-target timing.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Yamada NK, et al. Part 5: Neonatal Resuscitation: 2025 American Heart Association and American Academy of Pediatrics Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care. <i>Circulation</i> / <i>Pediatrics.</i> October 22, 2025.</li>
+    <li><span class="tier">PRIMARY</span>American Academy of Pediatrics. Neonatal Resuscitation Program, 9th Edition. aap.org/pedialink, 2025.</li>
+    <li><span class="tier">EVIDENCE</span>Neonatal Resuscitation Program (NRP) Guidelines and Timing of Major Resuscitation Events in Delivery Rooms at a Level III NICU: Understanding Deviations. <i>Resuscitation Plus.</i> 2024.</li>
+    <li><span class="tier">EVIDENCE</span>Abbasi H, et al. Impact of Change in Neonatal Resuscitation Program Guidelines for Infants Born Through Meconium-Stained Amniotic Fluid. <i>Children (Basel).</i> 2025;12(8):1072.</li>
+    <li><span class="tier">REFERENCE</span>Neonatal Assessment and Resuscitation. OpenAnesthesia.org, updated 2023.</li>
+    <li><span class="tier">REFERENCE</span>Mani S, Pinheiro JMB, Rawat M. Laryngeal Masks in Neonatal Resuscitation — A Narrative Review of Updates. <i>Children (Basel).</i> 2022;9(5):733.</li>
+    <li><span class="tier">GUIDELINE</span>2020 and 2024 Update on Neonatal Resuscitation. American Board of Emergency Medicine Clinical Policy Alert, 2024.</li>
+    <li><span class="tier">REFERENCE</span>Enhancing Neonatal Resuscitation Outcomes: Bridging Theory and Practice. <i>PMC.</i> 2025.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

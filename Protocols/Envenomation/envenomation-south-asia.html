@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — South Asia — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  .header{max-width:900px;margin:0 auto;padding:36px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  .back{font-size:11px;color:var(--text3);margin-bottom:16px;display:inline-block;}
+  .back:hover{color:var(--accent);}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:8px;}
+  .lede{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;font-style:italic;color:var(--text3);max-width:640px;margin-bottom:20px;}
+  .divider{height:1px;background:var(--border);margin:0 auto 20px;max-width:900px;}
+
+  .filter-bar{position:sticky;top:0;z-index:20;background:rgba(10,14,20,0.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:14px 24px;margin-bottom:28px;}
+  .filter-inner{max-width:900px;margin:0 auto;}
+  .search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:13px;margin-bottom:10px;}
+  .search-input:focus{outline:none;border-color:var(--accent);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .chip-group-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text4);margin-right:2px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:14px;border:1px solid var(--border);color:var(--text3);cursor:pointer;background:transparent;transition:all .15s;}
+  .chip:hover{border-color:var(--accent);color:var(--text);}
+  .chip.active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600;}
+  .results-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:10px;}
+
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin:0 0 16px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden;transition:border-color .15s;}
+  .card.hidden{display:none;}
+  .card-head{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .tag.region{background:rgba(96,165,250,0.15);color:var(--blue);}
+  .tag.class{background:rgba(167,139,250,0.15);color:var(--purple);}
+  .tag.mechanism{background:rgba(251,191,36,0.15);color:var(--amber);}
+  .card-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .card-sub{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;color:var(--text4);}
+
+  .card-body{padding:6px 22px 20px;}
+  .field{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .field:last-child{border-bottom:none;}
+  .field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .field-body{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+
+  .box.t-color{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:6px;padding:14px 18px;margin-top:4px;}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+
+  .notice{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-top:8px;}
+  .notice-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+  .notice-sub{font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--text4);margin-bottom:12px;line-height:1.6;}
+  .notice-list{list-style:none;}
+  .notice-list li{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text2);line-height:1.7;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-list strong{font-family:'Syne',sans-serif;color:var(--text);font-weight:700;}
+
+  footer{max-width:900px;margin:20px auto 0;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .filter-bar{display:none;}
+    .card{break-inside:avoid;border:1px solid #999;}
+    .card.hidden{display:block;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="envenomation.html" class="back">← Envenomation Index</a>
+    <div class="kicker">Crisis Management — Envenomation — South Asia</div>
+    <h1>South Asia</h1>
+    <p class="lede">The "Big Four" — the four species responsible for the overwhelming majority of snakebite morbidity and mortality across India, Sri Lanka, Bangladesh, Pakistan, and Nepal. All four are covered by a single Indian polyvalent antivenom, but that coverage is meaningfully uneven across the region given real venom variation between populations. Two additional critical species round out this page precisely because they fall outside that framework — one with no working antivenom, one where antivenom isn't even the primary treatment.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search species, syndrome, keyword…" oninput="filterCards()">
+      <div class="chip-row" id="classChips">
+        <span class="chip-group-label">Class:</span>
+        <button class="chip" data-facet="class" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="class" data-value="snake" onclick="toggleChip(this)">Snake</button>
+        <button class="chip" data-facet="class" data-value="scorpion" onclick="toggleChip(this)">Scorpion</button>
+      </div>
+      <div class="chip-row" id="mechChips" style="margin-top:6px;">
+        <span class="chip-group-label">Mechanism:</span>
+        <button class="chip" data-facet="mechanism" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="mechanism" data-value="hemotoxic" onclick="toggleChip(this)">Hemotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="neurotoxic" onclick="toggleChip(this)">Neurotoxic</button>
+      </div>
+      <div class="results-count" id="resultsCount">6 entries</div>
+      <div class="gs-hint" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:6px;">Critical-intervention species only — see the non-critical notice below for the rest (vine snake, non-venomous mimics).</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-head">Species — South Asia</div>
+
+    <div class="card" id="russells-viper" data-class="snake" data-mechanism="hemotoxic" data-search="russell's viper daboia russelii russell viper">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">South Asia</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC) + Neurotoxic</span>
+        </div>
+        <div class="card-title">Russell's Viper</div>
+        <div class="card-sub">Daboia russelii. The single most medically important snake in South Asia — India, Sri Lanka, Bangladesh, Pakistan, Myanmar. Responsible for over half of India's snakebite deaths</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain and swelling develop promptly at the bite site. Coagulopathy, renal dysfunction, and (in South Indian and Sri Lankan populations specifically) neuromuscular paralysis can all follow — this species doesn't stay in one mechanism lane the way most vipers do.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Local swelling, coagulopathy (VICC), acute kidney injury, and myonecrosis are the core picture. Sri Lankan and South Indian Russell's viper populations additionally cause a distinct neuromuscular paralysis not typically seen with other regional Daboia populations — ptosis and other cranial nerve findings can develop alongside the hemotoxic picture. Abdominal pain has been identified as an early feature of systemic envenoming in Sri Lankan data, appearing before more obvious bleeding signs — worth treating as a red flag rather than a nonspecific complaint.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach: immobilize, remove constricting items, transport. No tourniquet, incision, or suction.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Baseline and serial coagulation studies, renal function, and urinalysis. A 20-minute whole blood clotting test (20WBCT) is the standard regional bedside screen — recheck roughly 6 hours after antivenom, since that's the approximate time needed for the liver to replenish consumed clotting factors. Watch closely for evolving renal injury independent of the coagulopathy picture.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Covered by Indian polyvalent antivenom (VINS, Bharat, and other manufacturers), raised against all "Big Four" species — but sourced predominantly from Tamil Nadu (South India) venom. This matters clinically: documented venom composition differences across Daboia populations mean the same antivenom performs less reliably against Sri Lankan, Pakistani, and Bangladeshi Russell's vipers than against South Indian ones. Dosing protocols vary by country and product concentration rather than a single universal number — commonly an initial dose followed by reassessment against the 20WBCT and clinical picture, with escalation for persistent coagulopathy. Antivenom reliably clears free venom from the bloodstream but does NOT reliably reverse neurotoxicity that has already developed — this is a distinct failure mode from the coagulopathy response, which does respond well.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation and renal monitoring regardless of initial severity, given the AKI risk. Any neuromuscular signs warrant the same airway vigilance as a primarily neurotoxic bite.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Don't assume "polyvalent antivenom" means uniform coverage across the region — a Sri Lankan, Pakistani, or Bangladeshi patient may respond less predictably to an Indian-manufactured product raised against South Indian venom than the label alone would suggest. Renal injury can evolve on its own trajectory separate from the coagulopathy — track it independently, not just as a coagulopathy complication.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="common-krait" data-class="snake" data-mechanism="neurotoxic" data-search="common krait bungarus caeruleus indian krait blue krait">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">South Asia</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Common Krait</div>
+        <div class="card-sub">Bungarus caeruleus. Also called: Indian krait, blue krait. Nocturnal, painless bite — often called the "silent killer" because victims frequently don't realize they've been bitten until paralysis sets in overnight</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Bites classically occur indoors at night, on people sleeping on the floor. The bite itself is often painless, with minimal or no visible local findings — victims commonly wake with symptoms already progressing, or don't wake at all until paralysis is advanced. Progression to respiratory paralysis can occur within hours.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Descending neuromuscular paralysis: ptosis progressing to complete ophthalmoplegia, facial and bulbar weakness, neck weakness, and ultimately respiratory failure. Abdominal pain is a recognized early feature. Critically, this is a bite with essentially no local tissue signs — no significant swelling or necrosis — which is itself a diagnostic clue when the biting snake wasn't seen or identified.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Maintain high suspicion in anyone found with unexplained paralysis or altered consciousness after sleeping on the floor in an endemic area, even without a clear bite history. Rapid transport; airway monitoring en route.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Antivenom clears free venom from the blood but does not reliably reverse paralysis that has already developed — patients can progress to needing intubation despite timely, appropriately dosed antivenom. Don't interpret ongoing paralysis after antivenom as treatment failure requiring more antivenom; it often reflects venom already bound at the neuromuscular junction. Have ventilator support ready and do not delay intubation for respiratory compromise while waiting to see if other measures work.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Covered by Indian polyvalent antivenom. The regional national protocol includes a neostigmine/atropine trial (atropine first to blunt cholinergic side effects, then neostigmine) in many centers, but the evidence for krait specifically is genuinely mixed: at least one prospective study of 72 confirmed krait-bite patients found zero clinical improvement from neostigmine, with all patients progressing to respiratory paralysis regardless. Other case reports describe a "neostigmine responsiveness test" identifying a subset of patients who do improve. Given the low downside and established regional protocol, a trial is reasonable, but it should never delay or substitute for ventilatory support when respiratory compromise is present.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">ICU-level care with ventilator availability for any patient with neurologic signs. Recovery can be prolonged — case reports describe over a week of mechanical ventilation with eventual full recovery, so a slow response doesn't necessarily mean a poor prognosis.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">The painless, sign-free bite is the whole danger here — treat any unexplained overnight paralysis in an endemic area as a krait bite until proven otherwise, particularly if the patient was sleeping at floor level. Don't wait on neostigmine response before securing the airway.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="indian-cobra" data-class="snake" data-mechanism="neurotoxic" data-search="indian cobra naja naja spectacled cobra">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">South Asia</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic + Cytotoxic</span>
+        </div>
+        <div class="card-title">Indian Cobra</div>
+        <div class="card-sub">Naja naja. Also called: spectacled cobra. Common in both rural and urban/peri-urban settings across the subcontinent</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Unlike krait, local pain and swelling at the bite site are typically apparent early — this is a useful bedside differentiator between the two elapids when the snake wasn't identified. Neurotoxic progression follows a similar descending pattern to krait but the venom is generally considered less potent milligram-for-milligram.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Combines neurotoxic descending paralysis (ptosis, ophthalmoplegia, bulbar and respiratory weakness) with real local cytotoxic tissue effects — swelling, blistering, and potential local necrosis at the bite site, which krait does not typically produce.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard elapid approach: immobilize, remove constricting items, transport. Local wound care as findings warrant.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Same airway vigilance as any neurotoxic elapid bite. Local wound monitoring for necrosis/secondary infection, distinct from the pure neurotoxic-only picture of krait.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Covered by Indian polyvalent antivenom. Some regional protocols and case data suggest neostigmine has more consistent benefit in cobra bites than in krait bites specifically, though this should still be treated as an adjunct rather than a substitute for antivenom and ventilatory readiness.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for airway monitoring and wound care. Ventilator availability for any respiratory signs, as with krait.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Local necrosis and tissue findings are the key bedside clue distinguishing this from a krait bite when the snake is unidentified — a painful, swollen bite with neurologic signs points here; a painless, sign-free bite with new paralysis points to krait.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="south-asia-saw-scaled-viper" data-class="snake" data-mechanism="hemotoxic" data-search="saw-scaled viper echis carinatus india pakistan carpet viper">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">South Asia</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC)</span>
+        </div>
+        <div class="card-title">Saw-Scaled Viper</div>
+        <div class="card-sub">Echis carinatus. Smallest of the Big Four but disproportionately dangerous given how common bites are — high local abundance across India and Pakistan in particular. A distinct population from the Middle Eastern Echis coloratus/carinatus covered on that region's page</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain and swelling within minutes, with coagulopathy developing over the following hours.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Venom-induced consumptive coagulopathy driving systemic bleeding, alongside local pain, swelling, and occasional tissue necrosis at the bite site.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach: immobilize, remove constricting items, transport.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">20WBCT and serial coagulation studies, same framework as Russell's viper.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Covered directly by Indian polyvalent antivenom — this is one of the four species the product is raised against, so coverage here is more consistent than for some of the region's other medically significant but non-Big-Four species.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation monitoring per standard viper protocol.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Don't confuse regional Echis populations — a product effective against South Asian E. carinatus is not automatically interchangeable with antivenom for African or Middle Eastern Echis species (see the Africa and Middle East pages); the reverse also holds. This is one of the more consistent narrow-cross-reactivity teaching points across the whole Echis genus.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="hump-nosed-pit-viper" data-class="snake" data-mechanism="hemotoxic" data-search="hump-nosed pit viper hypnale hypnale merrem's hump-nosed viper">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Sri Lanka, SW India (Western Ghats/Kerala)</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC)</span>
+        </div>
+        <div class="card-title">Hump-Nosed Pit Viper</div>
+        <div class="card-sub">Hypnale hypnale (plus H. zara and H. nepa, endemic to Sri Lanka). Not part of the "Big Four" by tradition, but a genuinely major cause of snakebite in its range — and the standard antivenom does not work against it</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local swelling develops early in the large majority of bites. Blood incoagulability can appear anywhere from 15 minutes to 48 hours after the bite, and in most cases is already present by the time the patient reaches hospital.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">In the largest published Sri Lankan series (302 confirmed bites), local swelling occurred in 91% and local necrosis in 16%, with 4% requiring digit amputation and 4% needing skin grafts. Venom-induced consumption coagulopathy was detected in 39%, spontaneous systemic bleeding in 18%, and acute renal failure in 10% — with an overall case fatality rate of 1.7%. This is a genuinely small snake causing disproportionate morbidity: it was the single most common identified snakebite species in that series, ahead of every other snake in the country.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach: immobilize, remove constricting items, transport. Bites most commonly occur on the feet or ankles at night near people's homes — a distinct epidemiological pattern worth recognizing.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Serial coagulation studies and renal function monitoring, same framework as other regional vipers. Given the real necrosis and amputation risk seen in the case series, involve surgical/wound care early for significant local findings rather than treating this as a purely medical-management bite.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">This is the critical point: the standard Indian polyvalent antivenoms used across South Asia (including Bharat and Haffkine products) have been clinically and laboratory-confirmed to be NOT effective against Hypnale venom — this snake is not one of the four species the standard product is raised against, despite historically being misidentified as Russell's viper or saw-scaled viper in many cases, which likely contributed to years of under-recognition. No antivenom is currently available in India for this species. In Sri Lanka, some case reports and lab studies suggest cross-neutralization from Thai Red Cross products (Malayan pit viper monovalent, or Hemato polyvalent), but this is not a standardized, widely available clinical solution — management remains predominantly supportive.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation and renal monitoring regardless of antivenom availability, given the real fatality and complication rates in confirmed bites. Supportive management — fluid/electrolyte correction, transfusion support for significant bleeding, dialysis if renal failure develops — is the mainstay rather than antivenom-centered care.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">This is arguably the single most important teaching point on this entire regional page: "give the polyvalent antivenom" is NOT the answer for this species, unlike every other South Asian viper covered here. A snake this genuinely common causing real mortality with no working antivenom is a distinct clinical reality from the Big Four framework — don't let the "Big Four" label create a false sense that it covers the region's full risk.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="indian-red-scorpion" data-class="scorpion" data-mechanism="neurotoxic" data-search="indian red scorpion hottentotta tamulus mesobuthus tamulus prazosin">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">India, E. Pakistan, Nepal, Sri Lanka</span>
+          <span class="tag class">Scorpion</span>
+          <span class="tag mechanism">Neurotoxic / Cardiotoxic (Autonomic Storm)</span>
+        </div>
+        <div class="card-title">Indian Red Scorpion</div>
+        <div class="card-sub">Hottentotta tamulus (formerly Mesobuthus/Buthus tamulus). Widely considered among the most dangerous scorpion species globally — not because of the sting itself, but because of the autonomic cascade it triggers</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Intense local pain at the sting site is immediate. Systemic autonomic effects follow over a period of hours: hypertension typically within 1-10 hours, tachycardia within 1-24 hours, and pulmonary edema — the feared complication — within 6-24 hours in published series.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Venom delays sodium channel inactivation and inhibits potassium channels, driving a massive, sustained catecholamine release — an "autonomic storm." Mild cases show vasoconstriction and hypertension; severe cases progress to hypotension, pulmonary edema, and myocardial dysfunction. Priapism has been specifically documented in pediatric case series. ECG changes are common — ST depression, tented T waves, an acute-infarction-like pattern — reflecting real myocardial stress rather than primary cardiac disease. Children are disproportionately represented among severe and fatal cases.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Immobilize the affected limb and transport urgently — early treatment is the single most important factor in preventing progression to pulmonary edema. Do not delay for traditional or non-medical remedies; delayed presentation is a repeatedly documented factor in severe outcomes.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Recognize this as a cardiovascular emergency, not primarily a pain management problem. Serial vital signs and ECG monitoring given the real risk of evolving pulmonary edema and myocardial dysfunction over the following 24 hours.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Scorpion antivenom has shown limited clinical benefit for this species specifically and is not the primary treatment. <strong>Prazosin</strong> (an oral post-synaptic alpha-1 blocker) is the treatment that has changed outcomes here — in a landmark comparative study, mortality was 25% with conventional therapy, 3.5% with nifedipine, and 0% with prazosin; complicating pulmonary edema fell from 46% to zero across the same comparison. For prazosin-resistant cardiotoxicity, dobutamine has shown benefit in case series. Severe pulmonary edema unresponsive to first-line measures has been managed with sodium nitroprusside or inotropic support in published cases.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit any patient with systemic signs for cardiovascular monitoring — this applies especially to children, who show higher rates of severe complications. Even patients presenting late (one published case: 36 hours, with established pulmonary edema) have recovered with prazosin and supportive care, so a delayed presentation is not itself a reason to withhold treatment.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Prazosin is the single highest-yield intervention for this species and is inexpensive, widely available, and free of the anaphylaxis risk that comes with antivenom — this is genuinely one of the best-supported low-cost antidotes on this entire site, backed by a striking mortality difference in comparative data. Don't reflexively reach for antivenom as the primary answer here the way you would with most other critical entries on this page.</div></div>
+      </div>
+    </div>
+
+    <div class="notice" id="notice-south-asia">
+      <div class="notice-label">Non-Critical — Supportive Care Only</div>
+      <div class="notice-sub">Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.</div>
+      <ul class="notice-list">
+        <li><strong>Green Vine Snake</strong> (Ahaetulla nasuta and related species) — mildly venomous, rear-fanged; bites cause local swelling and mild pain only, no reported systemic envenoming of significance. <em>Care:</em> wound cleaning and reassurance; no antivenom exists or is needed.</li>
+        <li><strong>Non-Venomous Mimics</strong> (rat snake, wolf snake, checkered keelback, and others) — frequently mistaken for the Big Four given overlapping habitat and superficial resemblance, causing significant patient and family anxiety. <em>Care:</em> confirm species when possible (photo, description, or expert identification); wound care only, no antivenom, no coagulation workup needed once a non-venomous species is confirmed.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation — South Asia</footer>
+
+<script>
+  const activeFilters = { class: 'all', mechanism: 'all' };
+
+  function toggleChip(btn){
+    const facet = btn.dataset.facet;
+    const value = btn.dataset.value;
+    document.querySelectorAll(`.chip[data-facet="${facet}"]`).forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters[facet] = value;
+    filterCards();
+  }
+
+  function filterCards(){
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const matchesClass = activeFilters.class === 'all' || card.dataset.class === activeFilters.class;
+      const matchesMech = activeFilters.mechanism === 'all' || card.dataset.mechanism === activeFilters.mechanism;
+      const searchBlob = (card.dataset.search || '') + ' ' + card.innerText.toLowerCase();
+      const matchesQuery = query === '' || searchBlob.toLowerCase().includes(query);
+
+      if (matchesClass && matchesMech && matchesQuery){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('resultsCount').textContent = `${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chip[data-facet="class"][data-value="all"]').classList.add('active');
+    document.querySelector('.chip[data-facet="mechanism"][data-value="all"]').classList.add('active');
+  });
+</script>
+
+</body>
+</html>

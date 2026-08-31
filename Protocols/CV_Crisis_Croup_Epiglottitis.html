@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Croup vs. Epiglottitis — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{position:static !important;background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Pediatric / Neonatal</div>
+    <h1>Croup vs. Epiglottitis</h1>
+    <p class="subtitle">Dexamethasone goes to nearly every croup case regardless of severity — but the moment the picture looks like epiglottitis, the entire approach to the airway exam flips, since the wrong kind of look can trigger the obstruction you're trying to avoid.</p>
+    <div class="badges">
+      <span class="badge red">PEDIATRIC AIRWAY EMERGENCY</span>
+      <span class="badge teal">AAP / CPS-ALIGNED</span>
+      <span class="badge amber">DON'T EXAMINE THE THROAT IF EPIGLOTTITIS IS SUSPECTED</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — Side by Side</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Broader Differential</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Croup gets treated at the bedside. Suspected epiglottitis gets managed by keeping the child calm and untouched until the airway can be secured in a controlled setting.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">If epiglottitis is suspected — do not examine the throat or agitate the child</div><div class="step-desc">No tongue depressor, no forced supine positioning, no IV attempts that provoke crying. Keep the child calm, upright, and with a caregiver. Any of these can precipitate sudden, complete airway obstruction in a critically swollen epiglottis — this is the single most important branch point in the entire algorithm.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Suspected epiglottitis — secure the airway in a controlled setting</div><div class="step-desc">Move immediately toward controlled intubation in the OR with anesthesia and ENT/surgical airway backup immediately available — direct visualization and intubation should happen where a surgical airway (cricothyrotomy/tracheostomy) can be performed instantly if intubation fails, not at the bedside.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Confirmed/suspected epiglottitis — IV antibiotics after the airway is secured</div><div class="step-desc">Broad-spectrum coverage (e.g., ceftriaxone) targeting the historically dominant pathogen, <i>Haemophilus influenzae</i> type B, along with other possible bacterial causes. Blood cultures before antibiotics if it doesn't delay airway management.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Croup — dexamethasone for essentially all patients, regardless of severity</div><div class="step-desc"><span class="d">0.6 mg/kg</span> PO/IM/IV (max 10–12 mg), single dose — given the least invasive way possible, preferably oral. Lower doses (0.15–0.3 mg/kg) have also shown effectiveness in mild-moderate disease. Nebulized budesonide is a reasonable alternative if the child is vomiting, in severe distress, or the family declines systemic steroid.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Croup — nebulized racemic epinephrine for stridor at rest or moderate-severe distress</div><div class="step-desc">Racemic epinephrine 2.25%, <span class="d">0.05 mL/kg</span> (max 0.5 mL), or L-epinephrine 1:1,000 at <span class="d">0.5 mL/kg</span> if racemic isn't available. Clinical effect apparent within 10–30 minutes, sustained roughly 1–2 hours before dissipating.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Croup — observe 2–4 hours after epinephrine before discharge</div><div class="step-desc">Watching specifically for symptoms returning to their pre-treatment baseline as the epinephrine effect wanes — not a distinct "rebound" phenomenon, but a return to baseline severity while waiting for the slower-acting steroid to take over (see Rationale).</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Croup — hypoxia is a red flag, not an expected finding</div><div class="step-desc">Hypoxemia is uncommon in croup — its presence should prompt reconsideration of the diagnosis (bacterial tracheitis, foreign body, lower respiratory tract process) rather than being treated as simply severe croup.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Croup — mist therapy and heliox are not routinely recommended</div><div class="step-desc">Both have been studied without demonstrating a clear added benefit over standard therapy — don't substitute either for dexamethasone and epinephrine when indicated.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">The exam itself is the danger in suspected epiglottitis</div><p>A brief, gentle look with a tongue depressor is routine and safe in croup. In suspected epiglottitis, that same maneuver — or crying from an unwanted IV attempt, or lying the child flat — can trigger sudden complete obstruction of an airway that was tenuously patent seconds before. When epiglottitis is on the differential, the safest exam is often no exam at all until the airway team is ready.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p><b>Croup</b> (viral laryngotracheitis) is inflammation of the subglottic larynx, trachea, and bronchi — most commonly caused by parainfluenza virus — producing the characteristic barking cough, hoarseness, and inspiratory stridor, typically in children 6 months to 6 years, with peak incidence in October–November. Most cases are mild and self-limited; a small proportion progress to significant respiratory distress requiring more aggressive intervention.</p>
+    <p><b>Epiglottitis</b> is inflammation and swelling of the epiglottis and surrounding supraglottic structures, historically caused predominantly by <i>Haemophilus influenzae</i> type B and carrying high mortality before the Hib vaccine era. Widespread Hib vaccination has dramatically reduced incidence and produced a notable epidemiologic shift — the disease now presents more often in older children and adults, and other pathogens (Streptococcus species, Staphylococcus aureus) have become relatively more prominent among the remaining cases.</p>
+  </div>
+
+  <!-- 03 SIGNS SIDE BY SIDE -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — Side by Side</h2></div>
+  <table class="rt">
+    <tr><th>Feature</th><th>Croup</th><th>Epiglottitis</th></tr>
+    <tr><td>Onset</td><td>Gradual, over 1–2 days, often preceded by a viral prodrome (rhinorrhea, low-grade fever, sore throat)</td><td>Sudden, rapidly progressive over hours</td></tr>
+    <tr><td>Cough</td><td>Characteristic barking/seal-like cough</td><td>Notably absent — this contrast is one of the more useful bedside clues</td></tr>
+    <tr><td>Voice</td><td>Hoarse</td><td>Muffled, "hot potato" quality; may have dysphonia or aphonia</td></tr>
+    <tr><td>Fever</td><td>Low-grade, if present at all</td><td>High fever, toxic appearance</td></tr>
+    <tr><td>Positioning</td><td>No specific posturing required</td><td>Tripod/sniffing position, drooling, refusal to lie flat</td></tr>
+    <tr><td>Swallowing</td><td>Normal</td><td>Dysphagia, drooling from inability/refusal to swallow secretions</td></tr>
+    <tr><td>General appearance</td><td>Comfortable between coughing episodes in mild-moderate disease</td><td>Anxious, toxic-appearing, sitting rigidly upright</td></tr>
+    <tr><td>Age distribution</td><td>6 months–6 years, most common</td><td>Historically young children; now shifted toward older children and adults post-Hib vaccination</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Croup is a clinical diagnosis</b> — radiography and laboratory testing are not routinely needed and should be reserved for atypical presentations or when an alternate diagnosis is suspected.</li>
+      <li><b>Have both racemic and L-epinephrine nebulizer setups available</b> — L-epinephrine 1:1,000 is a reasonable substitute where racemic isn't stocked (e.g., some EMS settings), though its duration of action may run somewhat longer.</li>
+      <li><b>If epiglottitis is even moderately suspected, alert anesthesia/ENT/OR before attempting any exam</b> — the entire safety strategy depends on having a controlled airway setup ready before the child is examined or manipulated, not assembled reactively after a bedside look goes badly.</li>
+      <li><b>Hib vaccination remains the single most effective prevention strategy</b> for classic pediatric epiglottitis — confirm vaccination status as part of the history, recognizing that under-immunized children remain at meaningfully higher risk.</li>
+      <li><b>Recognize atypical/adult presentations</b> — given the epidemiologic shift, don't anchor exclusively on the classic toxic-appearing young child picture; epiglottitis in an adult or partially-vaccinated older child can be easy to miss if it isn't actively considered.</li>
+    </ul>
+  </div>
+
+  <!-- 05 DRUG DOSES -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Drug / Parameter</th><th>Value</th></tr>
+    <tr><td>Dexamethasone (croup)</td><td>0.6 mg/kg PO/IM/IV, max 10–12 mg (0.15–0.3 mg/kg also shown effective in mild-moderate disease)</td></tr>
+    <tr><td>Nebulized racemic epinephrine 2.25%</td><td>0.05 mL/kg, max 0.5 mL</td></tr>
+    <tr><td>Nebulized L-epinephrine 1:1,000</td><td>0.5 mL/kg</td></tr>
+    <tr><td>Epinephrine onset / duration</td><td>Effect apparent 10–30 min; sustained ~1–2 hours before dissipating</td></tr>
+    <tr><td>Post-epinephrine observation window</td><td>2–4 hours before considering discharge</td></tr>
+    <tr><td>Admission threshold (racemic epinephrine doses)</td><td>≥3 doses within a short period</td></tr>
+    <tr><td>Intubation rate, severe croup</td><td>&lt;1–3% of children</td></tr>
+    <tr><td>Steroid onset of clinical effect</td><td>~6 hours — bridges the gap after epinephrine's effect fades</td></tr>
+    <tr><td>Bacterial tracheitis suspicion trigger</td><td>Toxic appearance, high fever, poor response to racemic epinephrine, rapid deterioration</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Croup/Epiglottitis Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why dexamethasone goes to essentially every croup patient regardless of severity:</b> trial evidence consistently shows reduced return visits, hospitalization, and intubation rates even in mild croup — and a single dose of a well-tolerated steroid carries minimal downside compared to the chronic-exposure concerns that make clinicians reserve steroids more selectively in other conditions. The favorable risk-benefit ratio at a single low dose, combined with a consistent benefit signal even in mild disease, is why universal treatment (rather than a severity-based threshold) became the standard rather than the exception.</p>
+    <p><b>Why oral, IM, and IV dexamethasone are considered roughly equivalent despite different pharmacokinetics:</b> all three routes achieve adequate systemic drug levels to produce the anti-inflammatory effect that matters clinically — the route choice is driven by practical tolerability (a child who can swallow gets oral; one who's vomiting or can't tolerate PO gets IM) rather than by a meaningful efficacy difference between routes.</p>
+    <p><b>Why the return of symptoms after epinephrine wears off isn't a distinct "rebound" phenomenon:</b> nebulized epinephrine works through adrenergic vasoconstriction of the precapillary arterioles, reducing capillary hydrostatic pressure and pulling fluid out of the edematous laryngeal mucosa — a mechanical, physiologic effect that lasts only as long as the drug is active. It doesn't touch the underlying inflammatory process driving the edema in the first place; once the vasoconstriction fades, the mucosa simply returns to whatever degree of swelling the ongoing inflammation still supports. This is why the observation period exists — to catch a return to baseline severity, not to watch for a novel worsening — and it's also exactly why epinephrine and dexamethasone are given together: epinephrine buys the first hour or two, and dexamethasone (acting over the following several hours) is what actually resolves the underlying inflammation during that window.</p>
+    <p><b>Why the entire airway approach flips for suspected epiglottitis:</b> a croup exam — even a brief, mildly uncomfortable look with a tongue depressor — poses minimal risk to an airway with a wide margin before complete obstruction. A critically swollen epiglottis has essentially no such margin: agitation, forced positioning, or direct manipulation can trigger laryngospasm or mechanical obstruction of an already critically narrowed airway with almost no warning. This is why the entire management strategy for suspected epiglottitis is built around avoiding any exam or manipulation until the airway team, OR, and surgical airway backup are all ready — the diagnostic exam itself is treated as a controlled procedure, not a bedside assessment.</p>
+    <p><b>Why the epidemiologic shift in epiglottitis matters clinically, not just historically:</b> Hib vaccination has made the classic toxic-appearing young child with epiglottitis a genuinely rare presentation compared to the pre-vaccine era — but this means clinicians today have less frequent exposure to the diagnosis and may be more likely to encounter it in an atypical population (older children, adults, under-immunized patients) where it isn't the first thing that comes to mind. Lower baseline familiarity combined with a shifted age distribution is exactly the kind of situation where genuine diagnostic vigilance matters more, not less, even though the disease itself has become considerably rarer.</p>
+  </div>
+
+  <!-- BROADER DIFFERENTIAL -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Broader Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Bacterial tracheitis</td><td>Toxic appearance, high fever, and poor response to racemic epinephrine in a patient who otherwise looked like croup — suspect this specifically when croup-directed treatment fails or the patient deteriorates rapidly.</td></tr>
+    <tr><td>Foreign body aspiration</td><td>Sudden onset without a viral prodrome, often with a choking history; may have asymmetric breath sounds. Consider especially in a toddler with no preceding illness.</td></tr>
+    <tr><td>Retropharyngeal or peritonsillar abscess</td><td>Fever, drooling, neck stiffness, lymphadenopathy, and variable toxicity — but the characteristic barking cough of croup is usually absent.</td></tr>
+    <tr><td>Congenital airway anomalies (laryngomalacia, subglottic stenosis, vascular ring)</td><td>Consider with recurrent croup-like episodes, especially without a clear viral trigger, or stridor present from early infancy rather than an acute new onset.</td></tr>
+    <tr><td>Anaphylaxis-related airway edema</td><td>Rapid onset following an exposure/trigger, often with urticaria, hypotension, or other systemic findings — treated per the dedicated Anaphylaxis crisis file rather than the croup/epiglottitis pathway.</td></tr>
+    <tr><td>Diphtheria (rare, unvaccinated populations)</td><td>Pseudomembrane formation, distinct systemic toxicity — consider specifically in under-vaccinated populations or travel history to endemic regions.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Croup — diagnostic testing:</b> generally unnecessary; reserve radiography (lateral neck X-ray showing the classic "steeple sign") for cases with an atypical presentation or incomplete/poor response to racemic epinephrine after 2–3 doses.</p>
+    <p><b>Croup — discharge criteria:</b> no stridor at rest, normal pulse oximetry, normal color and alertness, demonstrated ability to tolerate oral fluids, and reliable caregivers with clear return precautions. Admit patients requiring ≥3 racemic epinephrine doses, those with persistent stridor at rest, poor oral tolerance, significant dehydration, or an unreliable home situation.</p>
+    <p><b>Epiglottitis — confirmation:</b> made under controlled, direct visualization during the airway-securing procedure itself — not established beforehand through bedside exam, given the risks described above. Blood cultures once the airway is secure.</p>
+    <p><b>Epiglottitis — disposition:</b> ICU admission is standard once the airway is secured, given the ongoing need for close monitoring, continued antibiotics, and staged extubation planning once swelling resolves.</p>
+    <p><b>Both conditions:</b> reassess severity at regular intervals (every 1–4 hours depending on acuity) throughout the observation period, since croup severity can fluctuate meaningfully within a single encounter.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Shlomovich M, Hyatt S, Cassel-Choudhury GN. Croup and Epiglottitis. <i>Pediatr Rev.</i> 2025;46(7):366–372.</li>
+    <li><span class="tier">PRIMARY</span>Canadian Paediatric Society. Acute Management of Croup in the Emergency Department. cps.ca, position statement (current review cycle).</li>
+    <li><span class="tier">GUIDELINE</span>Croup: Rapid Evidence Review. <i>Am Fam Physician.</i> 2026.</li>
+    <li><span class="tier">EVIDENCE</span>D'Arienzo D, et al. Dexamethasone Regime and Clinical Outcomes in Children Hospitalized with Croup: A Cohort Study. <i>J Hosp Med.</i> 2024.</li>
+    <li><span class="tier">REFERENCE</span>Bjornson C, et al. Nebulized Epinephrine for Croup in Children. <i>Cochrane Database Syst Rev.</i> 2011;(2):CD006619.</li>
+    <li><span class="tier">REFERENCE</span>SAEM CDEM Curriculum. "Croup." saem.org.</li>
+    <li><span class="tier">REFERENCE</span>Texas Children's Hospital. Croup Evidence-Based Guideline. texaschildrens.org.</li>
+    <li><span class="tier">REFERENCE</span>Laryngitis, Epiglottitis and Pharyngitis. <i>PMC.</i></li>
+    <li><span class="tier">REFERENCE</span>UCSF/Northern California Pediatric Hospital Medicine Consortium. Consensus Guidelines for Management of Croup.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

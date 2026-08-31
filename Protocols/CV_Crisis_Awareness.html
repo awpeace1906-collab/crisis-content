@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awareness Under Anesthesia — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Perioperative</div>
+    <h1>Awareness Under Anesthesia</h1>
+    <p class="subtitle">Unintended intraoperative recall — why the benzodiazepine you give after the fact can't undo it, why BIS hasn't outperformed a well-run ETAC protocol, and what the postoperative interview actually needs to accomplish.</p>
+    <div class="badges">
+      <span class="badge red">ANESTHESIA PATIENT SAFETY EVENT</span>
+      <span class="badge teal">ASA PRACTICE ADVISORY-ALIGNED</span>
+      <span class="badge amber">PREVENTION-DOMINANT</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs of Light Anesthesia</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Postop Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management — When You Suspect It's Happening</h2></div>
+  <div class="tagline">Unlike most crises in this series, the intervention window is often already closing by the time you notice — recognition itself is the hard part. Act on suspicion; don't wait for certainty.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Deepen anesthesia immediately</div><div class="step-desc">This is the single most important intervention — increase volatile agent concentration or bolus/increase IV hypnotic infusion the moment light anesthesia is suspected. Do this before troubleshooting why it happened.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Give a benzodiazepine</div><div class="step-desc">ASA guidelines suggest immediate benzodiazepine administration if awareness is suspected — but recognize its real limitation: midazolam and similar agents are unreliable at preventing <b>retrograde</b> recall. If pain, paralysis, or distress has already registered, a benzodiazepine given afterward may blunt further memory formation but won't erase what already happened.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Check the delivery system while deepening</div><div class="step-desc">Vaporizer level and function, IV line patency and connections, infusion pump function, circuit for leaks — a large share of intraoperative awareness traces back to an equipment or delivery error (empty vaporizer, disconnected IV, occluded line) rather than a dosing decision. Fix the actual cause in parallel with deepening the anesthetic.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Note the time and clinical signs that triggered concern</div><div class="step-desc">Document what was observed (movement, hemodynamic surge, BIS value if monitored) and what was done, in real time — this becomes essential for both the postoperative patient interview and the case review.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Plan for a multidisciplinary, proactive postoperative response</div><div class="step-desc">Once suspected or confirmed, a prompt, structured, multidisciplinary approach to follow-up is the standard of care — this isn't something to quietly note and move past.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Recognition is the actual bottleneck</div><p>Autonomic signs (tachycardia, hypertension, lacrimation, diaphoresis) are the classic teaching, but they're unreliable — especially in a paralyzed patient, on beta-blockers, or under high-dose opioids, where the usual physiologic tells are blunted or absent entirely.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Intraoperative awareness (also called accidental awareness during general anesthesia, AAGA) is explicit recall of sensory perceptions from a period intended to be unconsciousness under general anesthesia. It ranges from vague, non-distressing recollections to the most severe cases involving explicit memory of pain, paralysis, or a sense of impending death — the latter carrying real risk of subsequent anxiety, depression, and PTSD.</p>
+    <p>Incidence estimates vary substantially by study design and population: older literature cited roughly 0.1–0.9% in general surgical populations, while a large 2007 study of over 87,000 patients found a lower rate around 0.0068% (about 1 in 14,560). High-risk populations — cardiac surgery, cesarean delivery, trauma/emergency surgery, chronic high-dose opioid use, prior awareness history — see incidence approaching 1%, which is why risk stratification matters more than a single population-wide number.</p>
+  </div>
+
+  <!-- 03 SIGNS OF LIGHT ANESTHESIA -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs of Light Anesthesia — And Why They're Unreliable</h2></div>
+  <table class="rt">
+    <tr><th>Sign</th><th>Reliability caveat</th></tr>
+    <tr><td>Tachycardia, hypertension</td><td>Blunted or absent with beta-blockade, high-dose opioids, or autonomic dysfunction — a normal heart rate does not rule out awareness.</td></tr>
+    <tr><td>Lacrimation, diaphoresis</td><td>Nonspecific; can occur for reasons unrelated to anesthetic depth.</td></tr>
+    <tr><td>Patient movement</td><td>Absent entirely once a neuromuscular blocking agent is on board — movement as a warning sign disappears exactly in the population (paralyzed patients) where awareness risk and severity are highest.</td></tr>
+    <tr><td>End-tidal anesthetic concentration (ETAC) &lt;0.7 MAC</td><td>A useful, low-cost threshold — the APSF specifically identifies potent inhaled agent at ≥0.7 MAC as the single best line of defense against awareness in a paralyzed patient — but MAC requirements vary by individual and by co-administered drugs.</td></tr>
+    <tr><td>Processed EEG (BIS) value &gt;60</td><td>Correlates with lighter anesthetic depth in general, but the ASA task force found a specific numerical value doesn't correlate uniformly with anesthetic depth across different drugs and patient populations — treat it as one data point, not a definitive readout.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Preoperative risk review:</b> check for prior awareness history, substance use (opioids, benzodiazepines, cocaine, chronic alcohol use — all raise anesthetic requirement), history of difficult intubation, and case type — cardiac surgery, cesarean delivery, trauma/emergency surgery, and chronic high-dose-opioid patients are all recognized higher-risk categories.</li>
+      <li><b>Equipment checklist before every case:</b> vaporizer level and function, IV line patency, infusion pump programming, backflow check valves — errors in anesthetic drug delivery systems are a well-documented, preventable cause of intraoperative awareness, not just a dosing-decision problem.</li>
+      <li><b>Maintain potent inhaled agent at ≥0.7 MAC</b> whenever a neuromuscular blocking agent is used — the APSF-endorsed position is that this is the single best line of defense in a paralyzed patient specifically, since movement is no longer available as a backstop warning sign.</li>
+      <li><b>Balanced technique</b> combining IV and inhalational agents, rather than relying on a single delivery pathway, reduces the risk that one system's failure (a disconnected line, an empty vaporizer) goes completely uncompensated.</li>
+      <li><b>Brain function (BIS) monitoring — use judiciously, not as a guarantee:</b> two major randomized trials (BAG-RECALL and the Michigan Awareness Control Study) did not demonstrate BIS-guided protocols to be superior to a well-executed ETAC-alarm protocol for preventing awareness. Consider it on a case-by-case basis for higher-risk patients rather than treating it as a routine standard that eliminates risk on its own.</li>
+      <li><b>Discuss risk with substantially-increased-risk patients preoperatively</b> when appropriate — informed patients who experience a milder awareness event tend to have better psychological outcomes than those who weren't warned at all.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>General population incidence, older literature</td><td>0.1–0.9%</td></tr>
+    <tr><td>General population incidence, 2007 large study (n&gt;87,000)</td><td>~0.0068% (1 in 14,560)</td></tr>
+    <tr><td>High-risk population incidence</td><td>Approaching 1%</td></tr>
+    <tr><td>Recommended target BIS range</td><td>40–60, when used</td></tr>
+    <tr><td>APSF-endorsed minimum potent agent level (with NMBA on board)</td><td>≥0.7 MAC</td></tr>
+    <tr><td>ETAC alert thresholds used in major prevention trials</td><td>&lt;0.7 or &gt;1.3 MAC</td></tr>
+    <tr><td>Timing of awareness events</td><td>~75% occur during the maintenance phase; the remainder cluster at induction or toward the end of the procedure, often from mistimed bridging between short- and long-acting agents</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Awareness Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why the post-event benzodiazepine can't undo what's already happened:</b> benzodiazepines act on future memory consolidation, not on memories already formed. If a patient has already experienced pain or distress with intact conscious perception, giving midazolam afterward may reduce further memory encoding going forward but cannot retroactively prevent recall of what already registered — this is precisely why prevention (adequate anesthetic depth in the first place) carries so much more weight than any rescue intervention.</p>
+    <p><b>Why movement disappears as a warning sign under paralysis:</b> neuromuscular blockade doesn't affect consciousness or pain perception at all — it only removes the ability to move in response to it. This is exactly why the APSF frames adequate potent-agent dosing (≥0.7 MAC) as the primary defense specifically in paralyzed patients: the normal behavioral warning system has been deliberately disabled by the paralytic, so the anesthetic depth itself has to be trustworthy on its own.</p>
+    <p><b>Why BIS hasn't proven superior to a good ETAC protocol:</b> BIS derives an index from processed EEG signal, but the ASA task force's own review found that a given numerical value doesn't correlate consistently with anesthetic depth across different drug combinations and patient populations — a ketamine- or nitrous-heavy technique, for instance, can produce a misleadingly reassuring BIS number. Two major randomized trials tested BIS-guided care against simple ETAC-based alerting and found no statistically demonstrated superiority for BIS, which is why current guidance treats BIS as a selective tool for specific higher-risk cases (e.g., TIVA where there's no volatile agent concentration to alarm on) rather than a universal solution.</p>
+    <p><b>Why most events cluster in the maintenance phase, not induction:</b> induction is typically the most heavily and deliberately dosed part of an anesthetic, with close attention paid by the entire team. Maintenance is longer, more routine, and more vulnerable to a slow vaporizer drift, an undetected line occlusion, or attention shifting elsewhere — which is exactly why continuous, active monitoring of delivered concentration matters throughout the case, not just at the start.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic / distinct entity</th><th>Key distinguishing features</th></tr>
+    <tr><td>Dreaming under anesthesia</td><td>A recognized and generally benign phenomenon distinct from true intraoperative consciousness — the patient reports dream-like content without accurate recall of actual intraoperative events, conversations, or sensations. Not classified as awareness.</td></tr>
+    <tr><td>Recall of PACU/ICU events</td><td>Memory of events after emergence but before full lucidity is not intraoperative awareness — clarify the exact timeline with the patient, since these events are managed differently (sedation practice in recovery, not anesthetic depth in the OR).</td></tr>
+    <tr><td>Postoperative delirium or confusion misattributed as intraoperative memory</td><td>Confabulated or confused recollections, often inconsistent on repeat questioning, without the specific, verifiable event detail (a particular phrase said in the room, a specific sensation tied to a specific surgical step) that characterizes genuine explicit recall.</td></tr>
+    <tr><td>Awareness without distress ("non-distressing awareness")</td><td>Some patients recall auditory or tactile perceptions without pain, paralysis-awareness, or fear — still a true awareness event and worth taking seriously, but carries a different psychological risk profile than distressing awareness with paralysis or pain.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Postoperative Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Structured postoperative interview:</b> patients with suspected awareness should be interviewed at multiple intervals (a same-day/early interview and a follow-up interview, commonly using a structured tool like the Brice questionnaire) to assess and characterize what was recalled — a single conversation right after surgery, when the patient may still be sedated or confused, is not sufficient.</p>
+    <p><b>Multidisciplinary, proactive response:</b> once suspected or confirmed, engage the anesthesia team, surgical team, and — when distressing content is reported — psychological/psychiatric support promptly. This is described as the standard of care, not an optional escalation.</p>
+    <p><b>Screen for psychological sequelae:</b> anxiety, depression, and PTSD are documented risks after a distressing awareness event; early identification and referral improves outcomes compared to a "wait and see" approach.</p>
+    <p><b>Documentation and incident review:</b> record the case in as much detail as possible — equipment status, drug administration timeline, monitoring values, and the exact clinical trigger for suspicion — both for the patient's future anesthesia records and for institutional incident review and prevention.</p>
+    <p><b>Communicate directly with the patient:</b> acknowledge the event, explain what's known about what happened, and discuss what will be different for any future anesthetic (increased monitoring, technique changes, explicit risk discussion) — patients who feel heard and informed generally have better psychological outcomes than those who feel dismissed.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>American Society of Anesthesiologists Task Force on Intraoperative Awareness. Practice Advisory for Intraoperative Awareness and Brain Function Monitoring. <i>Anesthesiology.</i> 2006;104(4):847–864.</li>
+    <li><span class="tier">PRIMARY</span>Intraoperative and Anesthesia Awareness. <i>StatPearls,</i> NCBI Bookshelf, updated April 6, 2026.</li>
+    <li><span class="tier">EVIDENCE</span>Avidan MS, Jacobsohn E, Glick D, et al. Prevention of Intraoperative Awareness in a High-Risk Surgical Population (BAG-RECALL). <i>N Engl J Med.</i> 2011;365:591–600.</li>
+    <li><span class="tier">EVIDENCE</span>Avidan MS, Zhang L, Burnside BA, et al. Anesthesia Awareness and the Bispectral Index. <i>N Engl J Med.</i> 2008;358:1097–1108.</li>
+    <li><span class="tier">GUIDELINE</span>Anesthesia Patient Safety Foundation. APSF-Endorsed Statement on Revising Recommendations for Patient Monitoring During Anesthesia. apsf.org.</li>
+    <li><span class="tier">REFERENCE</span>WFSA. ATOTW 416 — Bispectral Index Monitoring and Intraoperative Awareness. resources.wfsahq.org, 2019.</li>
+    <li><span class="tier">REFERENCE</span>Preventive Strategies for Reducing Intraoperative Awareness Due to Errors in Anesthetic Drug Delivery Systems: A Narrative Review. <i>Front Pharmacol.</i> 2025.</li>
+    <li><span class="tier">REFERENCE</span>Sebel PS, Bowdle TA, Ghoneim MM, et al. The Incidence of Awareness During Anesthesia: A Multicenter United States Study. <i>Anesth Analg.</i> 2004.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event.</div>
+
+</div>
+</body>
+</html>

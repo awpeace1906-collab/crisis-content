@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoulder Dystocia — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Obstetric</div>
+    <h1>Shoulder Dystocia</h1>
+    <p class="subtitle">The HELPERR sequence starts with McRoberts because it's simple and fast — but posterior arm delivery has the higher success rate in the data, which is worth knowing even while following the standard escalation order.</p>
+    <div class="badges">
+      <span class="badge red">OBSTETRIC EMERGENCY</span>
+      <span class="badge teal">ACOG / RCOG-ALIGNED</span>
+      <span class="badge amber">UNPREDICTABLE AND UNPREVENTABLE — BE READY EVERY DELIVERY</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — Recognition</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Complications — Not a Differential, a Watch List</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management — The HELPERR Sequence</h2></div>
+  <div class="tagline">Try each maneuver for 30–60 seconds before moving to the next. Never apply excessive downward traction, fundal pressure, or twisting at any step.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title"><b>H</b> — Call for Help</div><div class="step-desc">Additional obstetric staff, anesthesia, neonatal team, and a dedicated timekeeper/documenter. Do this the moment the "turtle sign" is recognized (fetal head retracting tightly against the perineum after delivery) — not after the first maneuver has already failed.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title"><b>E</b> — Evaluate for Episiotomy</div><div class="step-desc">Not routinely needed, since the obstruction is bony (shoulder against pubic symphysis or sacral promontory), not soft tissue — but can be performed to create room for internal maneuvers if needed.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title"><b>L</b> — Legs: McRoberts Maneuver</div><div class="step-desc">Hyperflex the maternal hips, bringing both knees toward the chest — rotates the symphysis pubis cephalad and flattens the sacral promontory, widening the effective pelvic outlet. Attempted first because it's simple, fast, and effective as a sole maneuver in up to 42% of cases (some series report success rates above 70% for McRoberts plus suprapubic pressure combined).</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title"><b>P</b> — Suprapubic Pressure</div><div class="step-desc">Applied while maintaining McRoberts positioning — firm pressure just above the symphysis, directed to adduct and rotate the anterior shoulder out from behind the pubic bone. Combine with gentle, steady head traction only — never jerky or excessive force.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title"><b>E</b> — Enter: Internal Rotational Maneuvers</div><div class="step-desc">Wood's screw or Rubin maneuvers — internal manipulation to rotate the fetal shoulders out of the anterior-posterior alignment causing the impaction, moving them into an oblique plane that fits the pelvic diameters.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title"><b>R</b> — Remove the Posterior Arm</div><div class="step-desc">Sweep the posterior fetal arm across the chest and deliver it, effectively reducing the shoulder diameter and allowing the anterior shoulder to follow. Retrospective data shows this maneuver carries the highest success rate of any single technique (~86%) — worth knowing even while following the standard escalation order, since some clinicians move to it sooner in a severe or prolonged case.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title"><b>R</b> — Roll the Patient (Gaskin Maneuver)</div><div class="step-desc">Reposition to hands-and-knees ("all fours") — changes pelvic dimensions and uses gravity differently; effective as a later-stage option, and specifically useful when only a single birth attendant is present, since it can be combined with routine axial traction without needing multiple assistants for positioning.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">If all maneuvers fail — rescue options</div><div class="step-desc">Cleidotomy (deliberate fracture of the fetal clavicle), Zavanelli maneuver (cephalic replacement followed by cesarean delivery), or symphysiotomy — reserved for genuinely refractory cases where standard maneuvers haven't worked. If still unresolved, return to the beginning and repeat the full sequence rather than abandoning the algorithm.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">Avoid these specific actions at every step</div><p>Never apply excessive, downward, or jerky traction on the fetal head/neck, and never apply fundal pressure — both directly increase brachial plexus injury risk without improving the chance of delivery. Time each maneuver for roughly 30–60 seconds before moving to the next; urgency matters, but panic-driven force does not help.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Shoulder dystocia is diagnosed when gentle downward guidance of the fetal head fails to accomplish delivery of the anterior shoulder after the head has already delivered, requiring additional obstetric maneuvers. It complicates roughly 0.5–1% of vaginal births, with the underlying mechanism being persistent anterior-posterior alignment of the fetal shoulders as they attempt to enter the pelvic inlet — driven by increased resistance between the vaginal walls and fetus (e.g., macrosomia), a large fetal chest relative to head size (e.g., infants of diabetic mothers), or rapid descent preventing normal rotation of the shoulder diameter.</p>
+    <p>ACOG and RCOG are both explicit and consistent on a central point: shoulder dystocia is largely unpredictable and unpreventable. Known risk factors (macrosomia, maternal diabetes, prior shoulder dystocia, operative vaginal delivery, labor dystocia) have poor individual and combined predictive value — most cases occur in patients without major identifiable risk factors, and clinical pelvimetry and imaging haven't proven useful for identifying at-risk deliveries in advance. This is why every delivery, not just "high-risk" ones, needs a team prepared to execute this sequence.</p>
+  </div>
+
+  <!-- 03 SIGNS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — Recognition</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>"Turtle sign"</td><td>The fetal head retracts tightly against the perineum immediately after delivery — the classic, most recognizable presenting sign.</td></tr>
+    <tr><td>Failure of restitution</td><td>The fetal head fails to rotate to its normal post-delivery position.</td></tr>
+    <tr><td>Chin retraction</td><td>Described as a "turtle neck" appearance.</td></tr>
+    <tr><td>Slow, difficult delivery of the face and chin</td><td>An early clue preceding full presentation of the dystocia.</td></tr>
+    <tr><td>Failure of gentle downward guidance to deliver the anterior shoulder</td><td>The actual diagnostic criterion — this is what distinguishes shoulder dystocia from a routine, if slightly effortful, delivery.</td></tr>
+    <tr><td>Diagnosis and severity are subjective</td><td>There's no universally agreed objective threshold (e.g., a specific head-to-body delivery interval) — failure of the head-shoulder maneuver and the turtle sign remain the primary diagnostic criteria in practice, with the number of maneuvers required and any resulting injury serving as the better severity indicators after the fact.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Treat every vaginal delivery as a potential shoulder dystocia</b> — given the poor predictive value of risk factors, readiness has to be the default posture, not something activated only for anticipated high-risk deliveries.</li>
+      <li><b>Consider elective cesarean delivery for specific macrosomia thresholds:</b> estimated fetal weight ≥5,000 g in non-diabetic patients, or ≥4,500 g in patients with diabetes — a reasonable, evidence-based threshold for shifting delivery mode, even though macrosomia alone remains a poor individual predictor.</li>
+      <li><b>Simulation training and structured protocols measurably improve outcomes</b> — regular obstetric emergency drills (PROMPT-style training, HELPERR-specific simulation) have been shown to improve team communication, maneuver execution, and documentation quality, and are explicitly recommended by ACOG as a way to reduce brachial plexus injury incidence.</li>
+      <li><b>Have a clear plan for team roles before the emergency, not during it</b> — who calls for help, who times maneuvers, who documents in real time — this coordination is exactly what simulation training is designed to build.</li>
+      <li><b>Control maternal blood glucose and body weight where modifiable</b> — the primary evidence-supported strategy for genuinely reducing shoulder dystocia risk at the population level, since direct prediction/prevention at the individual delivery level remains elusive.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Incidence</td><td>~0.5–1% of vaginal births (some series 0.2–0.7%)</td></tr>
+    <tr><td>McRoberts maneuver success rate (as sole maneuver)</td><td>Up to 42%; combined with suprapubic pressure, &gt;70% in some series</td></tr>
+    <tr><td>Posterior arm delivery success rate</td><td>~86.1% — the highest of any single technique in retrospective comparison</td></tr>
+    <tr><td>Rotational maneuver success rate</td><td>~62.4%</td></tr>
+    <tr><td>External maneuver success rate (McRoberts + suprapubic alone)</td><td>~56.0%</td></tr>
+    <tr><td>Recommended time per maneuver attempt</td><td>~30–60 seconds before progressing</td></tr>
+    <tr><td>Fetal pH &lt;7.00 in a large case series (n=134), all delivered &lt;8 min</td><td>&lt;2% — reinforces that urgency matters, but true crisis timelines are usually measured in single-digit minutes, not seconds</td></tr>
+    <tr><td>Elective cesarean threshold, non-diabetic</td><td>EFW ≥5,000 g</td></tr>
+    <tr><td>Elective cesarean threshold, diabetic</td><td>EFW ≥4,500 g</td></tr>
+    <tr><td>NICU admission rate (UK audit series)</td><td>~3.6%, with no permanent brachial plexus injury in that cohort</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for HELPERR Sequencing</h2></div>
+  <div class="box t-purple">
+    <p><b>Why McRoberts comes first despite not having the highest success rate:</b> it requires no special equipment, no repositioning of the patient beyond leg flexion, and can be performed by the existing bedside team within seconds — the sequencing is optimized for speed-to-attempt and simplicity, not purely for probability-of-success. This is explicitly why ACOG and RCOG recommend it as the first maneuver: a fast, low-complexity intervention that resolves a meaningful share of cases immediately is worth trying before escalating to something that requires more coordination or carries more theoretical risk.</p>
+    <p><b>Why posterior arm delivery's higher success rate matters even though it's not first-line:</b> a 2023 critical evaluation found the traditional external-then-internal sequencing "is not based on scientific evidence of its success rates, technical simplicity, or complication rates" — it's a reasonable, historically-derived escalation order, not one validated by head-to-head trials. Knowing that posterior arm delivery outperforms both McRoberts alone and rotational maneuvers is useful context for a clinician managing a severe or rapidly escalating case, even while the standard teaching (and most institutional protocols) still default to the traditional order.</p>
+    <p><b>Why excessive traction and fundal pressure are avoided at every single step, not just early on:</b> the brachial plexus stretches when the fetal head and neck are pulled away from an already-fixed, impacted shoulder — force applied in this direction doesn't free the impaction, it just stretches the nerve roots further. Fundal pressure has a similar problem: it can drive the anterior shoulder further into the pubic bone rather than helping deliver it, worsening rather than resolving the impaction.</p>
+    <p><b>Why the "unpredictable and unpreventable" framing shapes the entire prevention section:</b> because prepregnancy, antepartum, and intrapartum risk factors all have poor predictive value individually and in combination, focusing preparation on "identify the high-risk patient and prepare only for them" would systematically miss most actual cases. This is exactly why ACOG's practice bulletin frames universal team readiness and simulation training — not risk stratification — as the primary actionable prevention strategy.</p>
+    <p><b>Why documentation gets its own dedicated emphasis in every major guideline:</b> the head-to-body delivery interval, the specific sequence and duration of maneuvers attempted, and the team members involved are all medicolegally and clinically significant after the fact — both for understanding what happened if a complication occurred and for informing counseling about future deliveries. This is why ACOG has a specific documentation checklist for this diagnosis rather than leaving it to general delivery note conventions.</p>
+  </div>
+
+  <!-- COMPLICATIONS (in place of pure differentials) -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Complications — Not a Differential, a Watch List</h2></div>
+  <table class="rt">
+    <tr><th>Complication</th><th>Notes</th></tr>
+    <tr><td>Transient brachial plexus palsy (Erb palsy)</td><td>The most frequent neonatal complication — results from overstretching of the C5–6 nerve roots. Most cases are transient; permanent injury is uncommon with prompt, appropriately-executed maneuvers.</td></tr>
+    <tr><td>Clavicle or humerus fracture</td><td>Can occur from the impaction itself or from maneuver-related force; generally heals well in neonates.</td></tr>
+    <tr><td>Neonatal hypoxic injury</td><td>From the delay in delivery itself — the primary driver behind the urgency of the HELPERR sequence, though most cases still resolve within minutes with low rates of significant acidemia.</td></tr>
+    <tr><td>Maternal postpartum hemorrhage</td><td>One of the most common serious maternal complications — see the dedicated PPH crisis file.</td></tr>
+    <tr><td>Complicated perineal lacerations</td><td>From the maneuvers themselves or the underlying obstruction; the other most common serious maternal complication alongside PPH.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Immediate neonatal assessment:</b> full exam for brachial plexus function, clavicle/humerus integrity, and standard newborn assessment including cord gas if there's any concern for hypoxic injury during the dystocia.</p>
+    <p><b>Maternal assessment:</b> inspect for perineal/vaginal lacerations and assess for postpartum hemorrhage — both recognized complications requiring their own management pathways (see the dedicated PPH crisis file).</p>
+    <p><b>Documentation, immediately and in detail:</b> head-to-body delivery interval, sequence and duration of maneuvers attempted, personnel present, and any complications — dictated or entered as a formal operative-style note right after delivery, not deferred. ACOG provides a specific documentation checklist for this purpose.</p>
+    <p><b>Institutional notification:</b> notify hospital risk management for any case with infant complications, and use the case (regardless of outcome) as part of ongoing simulation/drill review given how much documented evidence supports simulation training's impact on real-world outcomes.</p>
+    <p><b>Future pregnancy counseling:</b> prior shoulder dystocia is itself a risk factor for recurrence — this should be discussed in counseling for subsequent pregnancies, alongside the broader caveat that risk factors (including this one) still carry limited absolute predictive power.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>American College of Obstetricians and Gynecologists. Practice Bulletin No. 178: Shoulder Dystocia. <i>Obstet Gynecol.</i> 2017;129(5):e123–e133.</li>
+    <li><span class="tier">PRIMARY</span>Politi S, D'Emidio L, Cignini P, et al. Shoulder Dystocia: Guidelines for Clinical Practice. RCOG Green-top Guideline No. 42, 2nd ed. Royal College of Obstetricians &amp; Gynaecologists, 2012 (current review cycle 2026).</li>
+    <li><span class="tier">PRIMARY</span>Shoulder Dystocia. <i>StatPearls,</i> NCBI Bookshelf, updated 2026.</li>
+    <li><span class="tier">EVIDENCE</span>A Critical Evaluation of the External and Internal Maneuvers for Resolution of Shoulder Dystocia. <i>Am J Obstet Gynecol.</i> 2023.</li>
+    <li><span class="tier">EVIDENCE</span>Alves ALL, Nozaki AM, Polido CBA, Knobel R. Management of Shoulder Dystocia. <i>Rev Bras Ginecol Obstet.</i> 2022;44(7):e001–e007.</li>
+    <li><span class="tier">REFERENCE</span>Overview of Techniques to Manage Shoulder Dystocia During Vaginal Birth. <i>Eur J Midwifery.</i> 2021.</li>
+    <li><span class="tier">REFERENCE</span>Shoulder Dystocia: Managing an Obstetric Emergency. <i>Am Fam Physician.</i> 2020.</li>
+    <li><span class="tier">REFERENCE</span>Shoulder Dystocia: Prediction and Management. <i>PMC.</i></li>
+    <li><span class="tier">CASE DATA</span>Bharadwaj R, Abdalla M. Audit of Shoulder Dystocia Management and Outcomes at a Busy Hospital in the United Kingdom. <i>Cureus.</i> 2025;17(11):e97528.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify sequence against your own institutional protocol before clinical use.</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:960px;margin:0 auto;padding:44px 32px 64px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:32px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:16px;margin-bottom:24px;max-width:640px;}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:32px;}
+
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:40px 0 18px;position:relative;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-10px 0 16px 2px;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;}
+.card{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:18px 18px 16px;position:relative;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:border-color .15s;}
+.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;}
+.card.live{cursor:pointer;} .card.live:hover{border-color:var(--teal);}
+.card.soon{opacity:.6;}
+.card.t-red::before{background:var(--red);} .card.t-teal::before{background:var(--teal);}
+.card.t-blue::before{background:var(--blue);} .card.t-amber::before{background:var(--amber);}
+.card.t-purple::before{background:var(--purple);}
+.card-title{font-family:'Syne',sans-serif;font-weight:700;font-size:15.5px;color:var(--text);margin-bottom:6px;}
+.card-desc{font-size:13px;color:var(--text2);line-height:1.5;margin-bottom:10px;}
+.card-status{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.5px;text-transform:uppercase;padding:2px 8px;border-radius:4px;display:inline-block;}
+.status-live{background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.status-soon{background:rgba(255,255,255,.05);color:var(--text3);border:1px solid var(--border);}
+
+.footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+
+.src-tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.4px;padding:2px 7px;border-radius:4px;margin-left:6px;vertical-align:middle;}
+.src-tag.has{background:rgba(0,212,170,.13);color:var(--teal);border:1px solid rgba(0,212,170,.35);}
+.src-tag.maybe{background:rgba(245,158,11,.1);color:var(--amber);border:1px solid rgba(245,158,11,.3);}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:8px;font-size:12px;color:var(--text2);}
+.legend span.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:middle;}
+.cat-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);margin-left:auto;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="kicker">The Critical Vector · Workshop</div>
+  <h1>Crisis Management</h1>
+  <p class="subtitle">A modular reference for the emergencies that don't give you time to look things up slowly — perioperative, anesthesia, and resuscitation crises broken down the same way every time: recognize it, treat it, know why, know what mimics it, know where it goes next.</p>
+  <hr class="rule">
+
+  <div class="sec-head c-teal"><span class="sec-num">§</span><h2>Every crisis file follows the same structure</h2></div>
+  <div class="tagline">Brief review · immediate actions · signs &amp; symptoms · room/system setup · labs · rationale · differentials · workup &amp; disposition · genetics/etiology where relevant · references</div>
+  <div class="legend">
+    <span><span class="dot" style="background:var(--teal)"></span>LIVE — built and in the CV library</span>
+    <span><span class="src-tag has">SOURCE</span> = existing CV doc/post to build directly from</span>
+    <span><span class="src-tag maybe">POSSIBLE</span> = related background exists, relevance unverified</span>
+  </div>
+
+  <div class="sec-head c-red"><span class="sec-num">01</span><h2>Anesthesia &amp; Perioperative Crises</h2></div>
+  <div class="grid">
+    <a class="card live t-red" href="CV_Crisis_Malignant_Hyperthermia.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Malignant Hyperthermia</div>
+      <div class="card-desc">RYR1-mediated hypermetabolic crisis. Dantrolene, room setup for the susceptible patient, genetics, recrudescence.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_LAST.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Local Anesthetic Systemic Toxicity</div>
+      <div class="card-desc">ASRA 2020 lipid emulsion protocol, modified ACLS, max doses by agent, prevention during regional blocks.</div>
+    </a>
+    <a class="card live t-purple" href="CV_Crisis_Anaphylaxis.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Perioperative Anaphylaxis</div>
+      <div class="card-desc">NMBA/latex/chlorhexidine triggers, tryptase timing, epinephrine dosing by severity, risk-stratified observation.</div>
+    </a>
+    <a class="card live t-blue" href="CV_Crisis_Difficult_Airway.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Difficult / Failed Airway</div>
+      <div class="card-desc">CICO decision tree, ASA 2022/DAS 2025-aligned, scalpel cric technique, LEMON/RODS/SHORT assessment tools.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_Laryngospasm.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Laryngospasm</div>
+      <div class="card-desc">Escalation ladder from jaw thrust to succinylcholine, WFSA-aligned dosing, negative pressure pulmonary edema as the delayed complication.</div>
+    </a>
+    <a class="card live t-purple" href="CV_Crisis_Total_High_Spinal.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Total / High Spinal</div>
+      <div class="card-desc">Four-stage ascending recognition, "spinal after epidural" as the classic setup, airway/hemodynamic support, NYSORA/WFSA-aligned.</div>
+    </a>
+    <a class="card live t-blue" href="CV_Crisis_Venous_Air_Embolism.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Venous Air Embolism</div>
+      <div class="card-desc">Durant maneuver, precordial Doppler detection, PEEP's paradoxical-embolism trade-off, UpToDate/StatPearls-aligned.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_Awareness.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Awareness Under Anesthesia</div>
+      <div class="card-desc">Why post-event benzos can't undo recall, BIS vs. ETAC trial evidence, ASA Practice Advisory-aligned prevention and postop workup.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_Bronchospasm.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Severe Intraoperative Bronchospasm</div>
+      <div class="card-desc">Mechanical-cause rule-out, stepwise inhaled-to-IV escalation, dynamic hyperinflation as the hidden hemodynamic threat.</div>
+    </a>
+    <a class="card live t-red" href="CV_Crisis_TURP.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">TURP Syndrome</div>
+      <div class="card-desc">Acute hyponatremia treated fast on purpose, glycine CNS toxicity, hypertonic saline dosing, TURis/saline hyperchloremic acidosis variant.</div>
+    </a>
+    <a class="card live t-purple" href="CV_Crisis_Fat_Embolism.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Fat Embolism Syndrome</div>
+      <div class="card-desc">Gurd and Wilson criteria, supportive-care-only management, cerebral fat embolism as the easy-to-miss isolated-neuro variant.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_NPPE.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Negative Pressure Pulmonary Edema</div>
+      <div class="card-desc">Post-extubation laryngospasm's downstream complication, hydrostatic mechanism, why diuretics stay contested. Linked to the Laryngospasm file.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_Transfusion_Reactions.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Acute Transfusion Reactions</div>
+      <div class="card-desc">AHTR vs. TRALI vs. TACO side-by-side, why TACO and TRALI need opposite fluid strategies, StatPearls/ASH-aligned.</div>
+    </a>
+  </div>
+
+  <div class="sec-head c-blue"><span class="sec-num">02</span><h2>Resuscitation &amp; ACLS-Adjacent</h2></div>
+  <div class="grid">
+    <a class="card live t-red" href="CV_Crisis_Perioperative_Cardiac_Arrest.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Perioperative Cardiac Arrest</div>
+      <div class="card-desc">PeRLS 2025-aligned, OR-specific reversible causes in place of the standard H's and T's, early ECMO escalation, rhythm-specific notes.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_MTP.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Massive Transfusion Protocol</div>
+      <div class="card-desc">1:1:1 ratio-based resuscitation, TXA's 3-hour window, calcium/lethal-triad management, TEG/ROTEM as complement not replacement.</div>
+    </a>
+    <a class="card live t-purple" href="CV_Crisis_ACLS_Quick_Reference.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">ACLS Algorithms Quick Reference</div>
+      <div class="card-desc">The algorithm backbone every other file in this category plugs into — 2025 AHA drug timing, CPR quality, H's and T's each linked to its own deep dive.</div>
+    </a>
+    <a class="card live t-blue" href="CV_Crisis_Hyperkalemic_Arrest.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Hyperkalemic Cardiac Arrest</div>
+      <div class="card-desc">Calcium-shift-eliminate sequence, why arrest duration should be longer here, insulin-before-albuterol ordering. ILCOR 2025/AHA-aligned.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_PeriArrest_PE.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Peri-Arrest Pulmonary Embolism</div>
+      <div class="card-desc">Full-dose lysis in arrest vs. half-dose peri-arrest, echo-guided redosing, why CPR isn't a contraindication. 2026 AHA/ACC PE guideline-aligned.</div>
+    </a>
+    <a class="card live t-red" href="CV_Crisis_Traumatic_Cardiac_Arrest.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Traumatic Cardiac Arrest</div>
+      <div class="card-desc">HOTT framework, why REBOA's own trial was stopped for harm, the 10-minute thoracotomy window. ERC 2025-aligned.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_Tamponade.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Pericardial Tamponade</div>
+      <div class="card-desc">Beck's triad present in only 10–40% of cases, "last-drop" pressure-volume curve, needle vs. surgical drainage decision. StatPearls/AMBOSS-aligned.</div>
+    </a>
+    <a class="card live t-purple" href="CV_Crisis_Tension_Pneumothorax.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Tension Pneumothorax</div>
+      <div class="card-desc">2nd ICS-MCL vs 5th ICS-MAL site debate, finger thoracostomy vs needle, why nitrous oxide worsens it. StatPearls/NAEMSP-aligned.</div>
+    </a>
+    <a class="card live t-blue" href="CV_Crisis_Refractory_VF_ECPR.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Refractory VF/pVT — ECMO-CPR Pathway</div>
+      <div class="card-desc">Vector change vs. DSED, why ERC won't recommend DSED despite positive trial data, low-flow time as the real ECPR clock. ERC 2025/ELSO-aligned.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_Torsades.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Torsades de Pointes</div>
+      <div class="card-desc">Magnesium works regardless of serum level, overdrive pacing/isoproterenol, why amiodarone is contraindicated here. 2017 AHA/ACC/HRS-aligned.</div>
+    </a>
+  </div>
+
+  <div class="sec-head c-purple"><span class="sec-num">03</span><h2>Toxicologic</h2></div>
+  <div class="grid">
+    <a class="card live t-teal" href="CV_Crisis_Opioid_Overdose.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Opioid Overdose</div>
+      <div class="card-desc">Titrate to respiration not consciousness, buprenorphine's unique dosing, re-narcotization and monitoring duration. StatPearls/ACMT-AACT-aligned.</div>
+    </a>
+    <a class="card live t-red" href="CV_Crisis_Cocaine_Sympathomimetic.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Cocaine / Sympathomimetic Toxicity</div>
+      <div class="card-desc">Benzodiazepines first, the real nuance behind the beta-blocker rule, cocaine as a sodium-channel blocker. StatPearls/CorePendium-aligned.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_BB_CCB_Overdose.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Beta-Blocker / CCB Overdose</div>
+      <div class="card-desc">High-dose insulin as metabolic support not antidote, why it beats escalating vasopressors, lipid rescue for lipophilic agents. EXTRIP/HIET-aligned.</div>
+    </a>
+    <a class="card live t-blue" href="CV_Crisis_TCA_Overdose.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">TCA Overdose</div>
+      <div class="card-desc">Sodium bicarbonate's dual mechanism, why phenytoin is specifically avoided, why respiratory acidosis is a second emergency. StatPearls/EMCrit-aligned.</div>
+    </a>
+    <a class="card live t-purple" href="CV_Crisis_Digoxin_Toxicity.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Digoxin Toxicity</div>
+      <div class="card-desc">Nearly any arrhythmia except rapid SVT, why calcium avoidance is more contested than taught, hyperkalemia as a pump-poisoning severity marker.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_SS_vs_NMS.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Serotonin Syndrome vs. NMS</div>
+      <div class="card-desc">Side-by-side signs table, why cyproheptadine's evidence is weaker than its reputation, the dual-track algorithm for undifferentiated cases. IAEM 2024-aligned.</div>
+    </a>
+  </div>
+
+  <div class="sec-head c-teal"><span class="sec-num">04</span><h2>Obstetric</h2></div>
+  <div class="grid">
+    <a class="card live t-red" href="CV_Crisis_PPH.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Postpartum Hemorrhage</div>
+      <div class="card-desc">4 T's differential, why tamponade works best before shock, why quantitative blood loss measurement changed outcomes. ACOG/FIGO-aligned.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_Eclampsia.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Eclampsia / Severe Preeclampsia</div>
+      <div class="card-desc">Why magnesium and BP control are two separate tracks, clinical (not lab) toxicity monitoring, why delivery isn't delayed for magnesium. ACOG PB 222-aligned.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_Uterine_Rupture.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Uterine Rupture</div>
+      <div class="card-desc">No reliable predictor, abnormal CTG as the most consistent finding, why surgery is the only treatment. RCOG/ACOG-aligned — Continuum case cited only as illustrative.</div>
+    </a>
+    <a class="card live t-purple" href="CV_Crisis_Shoulder_Dystocia.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Shoulder Dystocia</div>
+      <div class="card-desc">HELPERR sequence, why posterior arm delivery has the highest success rate despite not being first-line, why "unpredictable and unpreventable" shapes the whole prevention section. ACOG/RCOG-aligned.</div>
+    </a>
+    <a class="card live t-blue" href="CV_Crisis_AFE.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Amniotic Fluid Embolism</div>
+      <div class="card-desc">Peripartum collapse and DIC, SMFM checklist-aligned, 4-minute resuscitative hysterotomy, 1:1:1 massive transfusion.</div>
+    </a>
+  </div>
+
+  <div class="sec-head c-blue"><span class="sec-num">05</span><h2>Pediatric / Neonatal</h2></div>
+  <div class="grid">
+    <a class="card live t-teal" href="CV_Crisis_NRP.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Neonatal Resuscitation (NRP)</div>
+      <div class="card-desc">Why ventilation, not epinephrine, is the core intervention; real-world epi timing lags guideline targets by minutes. AHA/AAP 9th edition (Oct 2025)-aligned.</div>
+    </a>
+    <a class="card live t-red" href="CV_Crisis_Pediatric_Septic_Shock.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Pediatric Septic Shock</div>
+      <div class="card-desc">Why fluid strategy genuinely diverges by resource setting, the FEAST trial's early-stopped-for-harm result, why hypotension is a late warning sign. 2026 SSC pediatric guidelines-aligned.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_Croup_Epiglottitis.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Croup vs. Epiglottitis</div>
+      <div class="card-desc">Why the airway exam itself is dangerous in suspected epiglottitis, why dexamethasone goes to nearly all croup regardless of severity, epi's rebound explained. AAP/CPS-aligned.</div>
+    </a>
+  </div>
+
+  <div class="sec-head c-purple"><span class="sec-num">06</span><h2>Environmental / Prehospital</h2></div>
+  <div class="grid">
+    <a class="card live t-blue" href="CV_Crisis_Hypothermic_Arrest.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Severe / Hypothermic Cardiac Arrest</div>
+      <div class="card-desc">Primary vs. secondary hypothermia as the key judgment call, why real-world stop-decisions lag guideline criteria, the rewarming-rate debate. ERC/ELSO 2025-aligned.</div>
+    </a>
+    <a class="card live t-teal" href="CV_Crisis_Crush_Syndrome.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Crush Syndrome</div>
+      <div class="card-desc">Why standard TCCC permissive hypotension doesn't apply here, MARCH-first sequencing, why calcium is given despite hypocalcemia. JTS/TCCC-aligned.</div>
+    </a>
+    <a class="card live t-amber" href="CV_Crisis_Heat_Stroke.html">
+      <div class="card-status status-live">LIVE</div>
+      <div class="card-title" style="margin-top:8px;">Heat Stroke</div>
+      <div class="card-desc">Why immersion is 6-10x faster than any alternative, the specific ≥0.155°C/min target, why no drug (including dantrolene) helps. 2025 SCCM guideline-aligned.</div>
+    </a>
+    <div class="card soon t-purple">
+      <div class="card-status status-soon">QUEUED</div>
+      <div class="card-title" style="margin-top:8px;">Envenomation</div>
+      <div class="card-desc">Regional-dependent — hold pending decision on scope (snake/spider/marine) before building.</div>
+    </div>
+  </div>
+
+  <div class="footer">The Critical Vector · Crisis Management series · SOURCE/POSSIBLE tags are inferred from titles in memory, not re-verified against file contents — confirm relevance before building each one out. Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event.</div>
+
+</div>
+</body>
+</html>

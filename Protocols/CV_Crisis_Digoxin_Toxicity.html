@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digoxin Toxicity — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Toxicologic</div>
+    <h1>Digoxin Toxicity</h1>
+    <p class="subtitle">Almost any arrhythmia except a rapid SVT — DigiFab dosing philosophy has shifted away from complete upfront neutralization, and the classic "never give calcium" rule is more contested than it's usually taught.</p>
+    <div class="badges">
+      <span class="badge red">TOXICOLOGIC EMERGENCY</span>
+      <span class="badge teal">STATPEARLS / 2023 EU CONSENSUS-ALIGNED</span>
+      <span class="badge amber">HYPERKALEMIA IS A SEVERITY MARKER, NOT JUST A LAB</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">DigiFab Dosing — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">DigiFab is the definitive treatment — everything else is supportive while you get it, or a bridge if it's not immediately available.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Continuous cardiac monitoring and a 12-lead ECG immediately</div><div class="step-desc">Digoxin toxicity can produce nearly any arrhythmia — the ECG drives every subsequent decision. Hold further digoxin dosing.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Atropine for symptomatic bradycardia or high-degree AV block</div><div class="step-desc"><span class="d">0.5 mg IV</span> (adults) or <span class="d">0.02 mg/kg IV</span> (children) — a reasonable first attempt, though often only partially effective given the underlying vagal-tone mechanism.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Digoxin immune Fab (DigiFab) — the definitive treatment</div><div class="step-desc">Give without delay for life-threatening manifestations: severe ventricular arrhythmias, progressive bradycardia or high-degree AV block unresponsive to atropine, or significant hyperkalemia with rapidly progressive symptoms. Dosing depends on known ingested amount, serum level, or empiric estimation — see Numbers to Know below. Clinical response typically begins within ~20 minutes, arrhythmias often improve within 30–45 minutes, complete response by 1.5–3 hours.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Hyperkalemia — treat, but know DigiFab is the actual fix</div><div class="step-desc">Standard hyperkalemia measures (insulin/glucose, bicarbonate — see the dedicated Hyperkalemic Cardiac Arrest crisis file) can be used as a bridge, but often fail to fully resolve digoxin-driven hyperkalemia until DigiFab is given, since the potassium leak is coming directly from the poisoned Na/K-ATPase pump, not a separate process.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Calcium — approach with real caution, not blanket avoidance</div><div class="step-desc">Classic teaching holds calcium is absolutely contraindicated in digoxin toxicity (the "stone heart" concern). Current toxicology sources describe more nuance: slow IV calcium chloride or gluconate has been used cautiously, under continuous ECG monitoring, specifically for membrane stabilization in digoxin-associated hyperkalemia when needed — see Rationale below before reaching for this reflexively.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Avoid electrical cardioversion where possible</div><div class="step-desc">Even low-energy DC cardioversion carries elevated risk of triggering refractory ventricular arrhythmia in a digoxin-toxic heart. Reserve for truly unstable arrhythmia with no better option, at the lowest effective energy.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Activated charcoal for acute overdose, regardless of time since ingestion</div><div class="step-desc">Digoxin undergoes enterohepatic recirculation, so charcoal retains value well beyond the usual 1–2 hour window that applies to most other ingestions.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Correct contributing electrolyte abnormalities</div><div class="step-desc">Hypokalemia and hypomagnesemia both increase myocardial sensitivity to digoxin's toxic effects and should be corrected alongside — not instead of — the steps above.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Toxicity can occur at "therapeutic" serum levels</div><p>A documented case presented with severe digoxin toxicity — bradycardia, hyperkalemia, hemodynamic instability — at a serum level of only 1.4 ng/mL, within the standard therapeutic range. Treat the clinical picture, not just the number; DigiFab resolved the case despite the reassuring level.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Digoxin inhibits the myocardial Na⁺/K⁺-ATPase pump. Therapeutically, this raises intracellular sodium, which in turn increases intracellular calcium via the sodium-calcium exchanger — improving contractility. In toxicity, the same mechanism drives dangerous calcium overload, causing afterdepolarizations and enhanced automaticity, while digoxin simultaneously increases vagal tone, suppressing SA and AV nodal conduction. The combination of enhanced automaticity plus suppressed conduction is why digoxin toxicity can produce nearly any dysrhythmia — with the classic exception of a rapidly conducted supraventricular tachycardia, which requires exactly the intact rapid AV conduction that digoxin suppresses.</p>
+    <p>Toxicity presents in two distinct patterns: acute (typically a large, often intentional single ingestion, more common in younger patients) and chronic (gradual accumulation in older patients, usually with renal impairment, drug interactions, or dose creep — now the more common clinical presentation as digoxin's role in routine cardiology practice has narrowed). Risk factors include advanced age, renal dysfunction (digoxin is renally cleared largely unchanged), hypokalemia, hypomagnesemia, hypercalcemia, dehydration, hypoxemia, and myocardial ischemia.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>GI symptoms (nausea, vomiting, anorexia)</td><td>Often the earliest presenting symptom, easy to attribute to something else in an elderly patient.</td></tr>
+    <tr><td>Bradycardia, PR/QRS prolongation</td><td>Reflects the vagally-mediated conduction suppression component.</td></tr>
+    <tr><td>Virtually any arrhythmia except rapid SVT</td><td>Frequent ventricular ectopy and bigeminy, paroxysmal atrial tachycardia with AV block, junctional tachycardia, sinus arrest, varying-degree AV block, and — in severe cases — VT/VF.</td></tr>
+    <tr><td>"Scooped" ST depression (digoxin effect)</td><td>A therapeutic ECG finding, not itself a sign of toxicity — don't mistake this for pathology in a patient without other toxic features.</td></tr>
+    <tr><td>Visual disturbances</td><td>Xanthopsia (yellow-green tinge to vision), halos around lights — classic teaching point, though not consistently present.</td></tr>
+    <tr><td>Confusion / altered mental status</td><td>Especially in elderly patients, can be the dominant or only presenting feature.</td></tr>
+    <tr><td>Hyperkalemia</td><td>A marker of acute toxicity severity and a formal indication criterion for DigiFab — see Rationale below.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Monitor renal function proactively</b> in any patient on chronic digoxin therapy — declining renal clearance is the single most common driver of chronic toxicity, since digoxin is excreted largely unchanged.</li>
+      <li><b>Check drug interactions before adding a new medication</b> to a digoxin regimen — amiodarone, verapamil, and certain macrolides (e.g., clarithromycin) are well-known to raise digoxin levels significantly.</li>
+      <li><b>Correct electrolytes proactively, not just reactively</b> — potassium, magnesium, and calcium should be checked periodically in chronic digoxin patients, since abnormalities in any of them lower the toxicity threshold.</li>
+      <li><b>Stock DigiFab and know where it is</b> — an expert consensus panel specifically recommends institutional stocking for immediate availability given how time-sensitive severe toxicity can become.</li>
+      <li><b>Draw levels at the right time</b> — a serum digoxin level obtained less than 6 hours after an oral dose can be misleadingly high, since distribution into tissue isn't yet complete; interpret early levels with real caution.</li>
+    </ul>
+  </div>
+
+  <!-- 05 DIGIFAB DOSING -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>DigiFab Dosing — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Scenario</th><th>Dose / Calculation</th></tr>
+    <tr><td>Vial equivalence</td><td>1 vial (40 mg) neutralizes ~0.5 mg digoxin</td></tr>
+    <tr><td>Acute overdose, known ingested amount</td><td>1 vial per 0.5 mg digoxin ingested</td></tr>
+    <tr><td>Acute overdose, unknown amount, life-threatening</td><td>Empiric 10–20 vials (adults)</td></tr>
+    <tr><td>Chronic toxicity, known steady-state level</td><td>[Serum digoxin (ng/mL) × weight (kg)] ÷ 100 = vials</td></tr>
+    <tr><td>Chronic toxicity, empiric</td><td>Most chronic-toxicity patients have levels &lt;5 ng/mL, so 1–2 vials is often sufficient for full neutralization; some protocols suggest a broader initial range (e.g., 3–6 vials)</td></tr>
+    <tr><td>Atropine</td><td>0.5 mg IV (adults); 0.02 mg/kg IV (children)</td></tr>
+    <tr><td>Fatal-dose threshold prompting DigiFab</td><td>≥10 mg (adults) or ≥4 mg / &gt;0.1 mg/kg (children)</td></tr>
+    <tr><td>Serum level indications for DigiFab</td><td>&gt;15 ng/mL at any time, or &gt;10 ng/mL at 6h post-ingestion; chronic steady-state &gt;6 ng/mL (adults) / &gt;4 ng/mL (children)</td></tr>
+    <tr><td>Potassium threshold indication</td><td>&gt;5.5 mEq/L (adults) or &gt;6 mEq/L (children) with rapidly progressive symptoms</td></tr>
+    <tr><td>Onset of clinical response</td><td>~20 minutes; arrhythmia improvement 30–45 minutes; complete response 1.5–3 hours</td></tr>
+    <tr><td>Post-DigiFab cardiac monitoring</td><td>Continuous ECG for at least 24 hours</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Digoxin Toxicity Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why "any arrhythmia except rapid SVT" is a genuinely useful pattern-recognition rule:</b> digoxin toxicity produces two opposing electrophysiologic effects simultaneously — enhanced automaticity/afterdepolarizations from intracellular calcium overload (driving ectopy and tachyarrhythmia) and suppressed AV nodal conduction from increased vagal tone (driving bradycardia and block). A rapidly conducted SVT specifically requires fast, intact AV conduction — exactly what digoxin is actively suppressing — which is why this one arrhythmia category is essentially excluded from the differential while nearly everything else is fair game.</p>
+    <p><b>Why hyperkalemia functions as a direct severity marker rather than an incidental electrolyte finding:</b> the Na⁺/K⁺-ATPase pump that digoxin poisons is the same pump responsible for maintaining the normal transmembrane potassium gradient. Severe pump inhibition causes potassium to leak out of cells into the serum — meaning the degree of hyperkalemia in acute digoxin toxicity is a direct readout of how completely the pump has been poisoned, which is exactly why it correlates so strongly with mortality and is written into DigiFab's formal dosing/indication criteria rather than treated as a separate problem to fix independently.</p>
+    <p><b>Why the "never give calcium" rule has become genuinely contested:</b> the historical concern — a sudden, catastrophic hypercontractile "stone heart" from adding calcium on top of digoxin's calcium-overload mechanism — traces back to older, limited case reports and animal data that haven't been robustly reproduced in modern clinical experience. Current toxicology literature describes cautious, monitored calcium use specifically for membrane stabilization in digoxin-associated hyperkalemia, under close ECG observation. The honest position is that the absolute-avoidance teaching is being revisited, not that the theoretical risk has been fully dismissed — which is why this file frames it as "approach with caution" rather than either a hard rule or an endorsement.</p>
+    <p><b>Why DigiFab dosing philosophy has shifted away from complete, immediate neutralization:</b> traditional practice aimed to bind all circulating and tissue-bound digoxin upfront. More recent analysis argues this can be counterproductive — a large upfront dose may be renally cleared before digoxin, which continues redistributing out of tissue over hours, has fully re-equilibrated into the vascular space, effectively wasting expensive antibody. Complete neutralization also isn't actually required for clinical resolution, since even partial sequestration of free digoxin is often enough to reverse life-threatening arrhythmia. This is why incremental, response-guided dosing — especially for chronic toxicity, where total body burden is typically much lower than acute massive ingestion — is increasingly favored over the older "give it all at once" approach.</p>
+    <p><b>Why activated charcoal retains value well past the usual window:</b> digoxin is excreted into bile and reabsorbed from the intestine in a repeating cycle (enterohepatic recirculation), continuously returning drug to the vascular space hours after the original ingestion. Charcoal given later than the typical 1–2 hour cutoff for most overdoses can still interrupt that ongoing recirculation loop, which is the specific pharmacokinetic reason digoxin gets an exception to the usual charcoal-timing rule.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Hyperkalemia from another cause (renal failure alone)</td><td>No digoxin exposure or dosing history; correlate potassium trend with digoxin dosing/level timing to distinguish.</td></tr>
+    <tr><td>Beta-blocker or calcium channel blocker toxicity</td><td>Can produce a similar bradycardia/AV-block picture and frequently co-occurs since these drugs are often prescribed alongside digoxin — see the dedicated Beta-Blocker/CCB Overdose crisis file; treatment approaches differ meaningfully (DigiFab is specific to digoxin).</td></tr>
+    <tr><td>Sick sinus syndrome / primary AV conduction disease</td><td>No temporal relationship to a dose change, level, or new interacting medication; baseline ECG may show pre-existing conduction abnormality.</td></tr>
+    <tr><td>Other cardiac glycoside exposure (oleander, foxglove, toad venom/bufadienolides)</td><td>Non-digoxin cardiac glycosides can produce an identical clinical picture and, notably, can cross-react on some digoxin immunoassays, giving a falsely detectable "digoxin level" — history of plant/substance exposure is the key clue; DigiFab has been used successfully for these as well.</td></tr>
+    <tr><td>Severe hypothermia</td><td>Also produces bradycardia independent of digoxin; check core temperature as part of the initial assessment.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Labs and monitoring:</b> 12-lead ECG on all suspected cases, potassium, magnesium, calcium, creatinine/renal function, and a serum digoxin level — ideally drawn ≥6 hours post-dose for accuracy. Note that DigiFab interferes with standard digoxin immunoassays, causing falsely elevated readings afterward — a free digoxin level is needed if reassessment is required post-treatment.</p>
+    <p><b>Continuous cardiac monitoring for at least 24 hours</b> after DigiFab administration, watching specifically for rebound hypokalemia as digoxin's pump-inhibiting effect is reversed, and for signs of decompensated heart failure if the patient's baseline cardiac function was relying on digoxin's inotropic support.</p>
+    <p><b>Cardiology involvement</b> given the implications for underlying atrial fibrillation or heart failure management — withdrawing digoxin affects the treatment plan for whatever it was originally prescribed for, and re-digitalization (if appropriate at all) should be postponed until Fab fragments have cleared, which can take several days to over a week in patients with renal impairment.</p>
+    <p><b>Disposition:</b> ICU-level monitoring for any patient requiring DigiFab, atropine, or presenting with significant arrhythmia or hyperkalemia; report to poison control/toxicology for case documentation and follow-up guidance.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Hassan SA, Goyal A. Digoxin Immune Fab. <i>StatPearls,</i> NCBI Bookshelf, updated June 22, 2024, reviewed against current literature 2026.</li>
+    <li><span class="tier">PRIMARY</span>Andrews P, Anseeuw K, Kotecha D, Lapostolle F, Thanacoody R. Diagnosis and Practical Management of Digoxin Toxicity: A Narrative Review and Consensus. <i>Eur J Emerg Med.</i> 2023;30(6):395–401.</li>
+    <li><span class="tier">GUIDELINE</span>DigiFab (Digoxin Immune Fab, Ovine) Prescribing Information. FDA/manufacturer label, updated April 2026.</li>
+    <li><span class="tier">EVIDENCE</span>Dijkman MA, Gresnigt FMJ, de Lange DW. Digoxin-Specific Antibodies: A Novel Dosing Strategy. <i>Neth Heart J.</i> 2024;32(2):70–73.</li>
+    <li><span class="tier">REFERENCE</span>EMCrit Project IBCC. "Digoxin &amp; Cardiac Glycosides: Toxicity &amp; Therapeutic Use." emcrit.org, updated September 2025.</li>
+    <li><span class="tier">REFERENCE</span>Pharmaceutical Journal. "Digoxin Monitoring and Toxicity Management." pharmaceutical-journal.com.</li>
+    <li><span class="tier">CASE DATA</span>Graafsma J, et al. Digoxin Toxicity with Therapeutic Serum Digoxin Concentrations. <i>Toxicol Rep.</i> 2025;15:102079.</li>
+    <li><span class="tier">REFERENCE</span>MDCalc. DigiFab Dosing for Digoxin Poisoning Calculator. mdcalc.com.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

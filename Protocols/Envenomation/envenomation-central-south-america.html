@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — Central & South America — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  .header{max-width:900px;margin:0 auto;padding:36px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  .back{font-size:11px;color:var(--text3);margin-bottom:16px;display:inline-block;}
+  .back:hover{color:var(--accent);}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:8px;}
+  .lede{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;font-style:italic;color:var(--text3);max-width:640px;margin-bottom:20px;}
+  .divider{height:1px;background:var(--border);margin:0 auto 20px;max-width:900px;}
+
+  .filter-bar{position:sticky;top:0;z-index:20;background:rgba(10,14,20,0.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:14px 24px;margin-bottom:28px;}
+  .filter-inner{max-width:900px;margin:0 auto;}
+  .search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:13px;margin-bottom:10px;}
+  .search-input:focus{outline:none;border-color:var(--accent);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .chip-group-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text4);margin-right:2px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:14px;border:1px solid var(--border);color:var(--text3);cursor:pointer;background:transparent;transition:all .15s;}
+  .chip:hover{border-color:var(--accent);color:var(--text);}
+  .chip.active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600;}
+  .results-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:10px;}
+
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin:0 0 16px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden;transition:border-color .15s;}
+  .card.hidden{display:none;}
+  .card-head{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .tag.region{background:rgba(96,165,250,0.15);color:var(--blue);}
+  .tag.class{background:rgba(167,139,250,0.15);color:var(--purple);}
+  .tag.mechanism{background:rgba(251,191,36,0.15);color:var(--amber);}
+  .card-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .card-sub{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;color:var(--text4);}
+
+  .card-body{padding:6px 22px 20px;}
+  .field{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .field:last-child{border-bottom:none;}
+  .field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .field-body{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+
+  .box.t-color{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:6px;padding:14px 18px;margin-top:4px;}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+
+  .notice{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-top:8px;}
+  .notice-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+  .notice-sub{font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--text4);margin-bottom:12px;line-height:1.6;}
+  .notice-list{list-style:none;}
+  .notice-list li{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text2);line-height:1.7;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-list strong{font-family:'Syne',sans-serif;color:var(--text);font-weight:700;}
+
+  footer{max-width:900px;margin:20px auto 0;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .filter-bar{display:none;}
+    .card{break-inside:avoid;border:1px solid #999;}
+    .card.hidden{display:block;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="envenomation.html" class="back">← Envenomation Index</a>
+    <div class="kicker">Crisis Management — Envenomation — Central &amp; South America</div>
+    <h1>Central &amp; South America</h1>
+    <p class="lede">Bothrops species cause the overwhelming majority of snakebite in this region, but three rarer entries here — bushmaster, coral snake, and the South American rattlesnake — each have a genuinely distinct clinical signature that changes management from the start.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search species, syndrome, keyword…" oninput="filterCards()">
+      <div class="chip-row" id="classChips">
+        <span class="chip-group-label">Class:</span>
+        <button class="chip" data-facet="class" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="class" data-value="snake" onclick="toggleChip(this)">Snake</button>
+        <button class="chip" data-facet="class" data-value="spider" onclick="toggleChip(this)">Spider</button>
+      </div>
+      <div class="chip-row" id="mechChips" style="margin-top:6px;">
+        <span class="chip-group-label">Mechanism:</span>
+        <button class="chip" data-facet="mechanism" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="mechanism" data-value="hemotoxic" onclick="toggleChip(this)">Hemotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="neurotoxic" onclick="toggleChip(this)">Neurotoxic</button>
+      </div>
+      <div class="results-count" id="resultsCount">5 entries</div>
+      <div class="gs-hint" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:6px;">Critical-intervention species only — see the non-critical notice below for the rest (false coral snakes, New World tarantulas).</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-head">Species — Central &amp; South America</div>
+
+    <div class="card" id="fer-de-lance" data-class="snake" data-mechanism="hemotoxic" data-search="fer-de-lance bothrops asper terciopelo lancehead">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Central America, N. South America</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC) + Cytotoxic</span>
+        </div>
+        <div class="card-title">Fer-de-Lance</div>
+        <div class="card-sub">Bothrops asper. Also called: terciopelo. The single most medically important snake across Central America and northern South America — responsible for the large majority of snakebites in the region it inhabits</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain and swelling develop rapidly and can progress aggressively over the following hours, with tissue destruction extending well beyond the immediate bite site in severe cases.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Severe local tissue damage — swelling, blistering, and necrosis, sometimes severe enough to threaten a limb — combined with systemic coagulopathy, hemorrhage, and acute kidney injury. This is a species where local destruction and systemic hemotoxicity both need active management, not just one or the other.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach: immobilize, remove constricting items, transport. No tourniquet, incision, or suction — tissue destruction risk makes additional local trauma especially costly here.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Serial limb assessment and coagulation studies. Aggressive wound care and a low threshold for surgical consultation given the real risk of extensive local necrosis and secondary infection.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Regional polyvalent antivenoms are produced across multiple countries rather than a single continent-wide product — Instituto Clodomiro Picado (Costa Rica, PoliVal-ICP) for Central America, Instituto Bioclon (Mexico, Antivipmyn/Antivipmyn-Tri), Instituto Butantan (Brazil), and national institutes in Colombia and Peru, among others. Effectiveness varies by which regional Bothrops population a given product was raised against — this is another entry in the recurring theme of narrow geographic antivenom specificity, and it means "polyvalent" here still requires confirming the product matches the local venom population.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation monitoring, wound care, and surveillance for evolving necrosis or compartment syndrome.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Local tissue destruction can be severe enough on its own to threaten the limb even when systemic coagulopathy is well controlled — don't let a reassuring coagulation panel substitute for close wound surveillance. Confirm which regional antivenom product is stocked; this genus has real population-level venom variation across its range.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="bushmaster" data-class="snake" data-mechanism="hemotoxic" data-search="bushmaster lachesis muta lachesis acrochorda lachetic">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Central/South America (forest interior)</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic + Vagal/Autonomic</span>
+        </div>
+        <div class="card-title">Bushmaster</div>
+        <div class="card-sub">Lachesis muta and L. acrochorda. The largest viper in the world. Bites are rare given the species' remote forest habitat, but carry disproportionately high mortality when they occur</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain, edema, and erythema develop similarly to a Bothrops bite, which is part of why this species is easy to misdiagnose early. The distinguishing systemic features — bradycardia, hypotension, diarrhea — can appear alongside the local picture rather than as a late finding.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Venom is necrotizing, hemorrhagic, myotoxic, and hemolytic, resembling Bothrops envenomation locally — but a distinct set of vagal/autonomic findings ("Lachesis syndrome") sets it apart: bradycardia, hypotension, diarrhea, vomiting, and blurred vision, thought to reflect a vagal or cholinergic venom effect not seen in other regional pit vipers. Severity is graded in part by the presence or absence of these vagal manifestations — their presence marks a severe envenomation.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach, with particular attention to reporting any bradycardia, diarrhea, or hypotension during transport — these findings should raise suspicion for this species over a more common Bothrops bite and shape which antivenom the receiving facility prepares.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">A documented, real diagnostic trap: because the local picture mimics Bothrops so closely, bushmaster bites have been misdiagnosed and treated with plain bothropic antivenom, delaying correct treatment — in one published case, this delay contributed to digit amputation and severe infection. Actively ask about and examine for the vagal symptom cluster in any pit-viper-pattern bite from bushmaster habitat.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">A dedicated lachetic antivenom has not been available since 1986 in some regions; current treatment relies on bothropic-lachetic combination antivenom (Brazil: Soro Antibotrópico-Laquético, Instituto Butantan) where available. Where a lachetic-specific or combination product isn't accessible, some published protocols describe using large volumes of Crotalidae polyvalent antivenom instead, reflecting how genuinely scarce dedicated product is for this rare species. Treatment is further complicated by the need for comparatively high doses even when appropriate antivenom is available.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation, cardiovascular, and wound monitoring. Given the misdiagnosis risk, reassess the working diagnosis if a "Bothrops bite" isn't responding as expected or shows vagal features.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Bradycardia and hypotension in a pit-viper-pattern bite from Central/South American forest habitat should raise bushmaster on the differential specifically — these findings run counter to the tachycardia/hypotension-from-hemorrhage pattern more typical of straightforward Bothrops envenomation, and getting the species right changes which antivenom is needed.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="south-american-coral-snake" data-class="snake" data-mechanism="neurotoxic" data-search="south american coral snake micrurus corallinus micrurus frontalis micrurus surinamensis">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Central/South America</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">South American Coral Snake</div>
+        <div class="card-sub">Micrurus corallinus, M. frontalis, and numerous other regional Micrurus species (genus spans ~80 species from the southern US to northern Argentina). Uncommon — roughly 1-2% of regional snakebites — but capable of rapid respiratory failure</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Follows the same deceptive pattern as the North American coral snake: local findings can be minimal, and neurotoxic onset is genuinely variable — one published case showed no neurotoxic signs until 14 hours after the bite, followed by respiratory failure requiring ventilation even after antivenom had been given.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Presynaptic and postsynaptic neuromuscular blockade producing progressive weakness, cranial nerve involvement, and descending paralysis that can culminate in respiratory failure and death by asphyxiation within 5-6 hours in severe untreated cases — though onset can also be markedly delayed, so a slow start doesn't guarantee a mild course.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Same principle as North American coral snake: an unimpressive bite from a confirmed or suspected elapid in this genus is not reassuring. Transport and monitor regardless of initial appearance.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Prolonged observation given the delayed-onset risk. Airway and ventilator readiness — published cases describe patients requiring multiple intubations and extended ventilatory support over several days even after appropriately timed antivenom.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Regional anti-elapidic antivenoms (Instituto Butantan in Brazil, national institutes elsewhere in the region) are raised against the more common local Micrurus species, but real species-level gaps exist — one well-documented case showed a standard Brazilian anti-elapidic antivenom unable to neutralize the lethal activity of a related Micrurus species despite venom similarity. Don't assume broad genus-level coverage; regional product selection matters as much here as with Echis or Bothrops.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">ICU-level care for any patient with neurologic signs, with an expectation that recovery may take days and require ongoing ventilatory support.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Neither a benign-looking bite nor a slow initial course rules out a severe outcome with this genus — both the local exam and the early timeline can be falsely reassuring. This mirrors the North American coral snake and African black mamba pattern: elapid neurotoxicity often doesn't announce itself the way viper local tissue effects do.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="phoneutria" data-class="spider" data-mechanism="neurotoxic" data-search="brazilian wandering spider phoneutria armed spider banana spider">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Brazil, broader South America</span>
+          <span class="tag class">Spider — Ctenidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Brazilian Wandering Spider</div>
+        <div class="card-sub">Phoneutria spp. Also called: armed spider, banana spider (for turning up in shipped banana crates). Severe systemic envenomation is uncommon (~3% of bites) but concentrates in young children and the elderly</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Immediate, severe local pain — often described as radiating — is the most consistent finding across essentially all bites. Systemic signs, when they occur, tend to develop over the following hour or so.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Local: intense pain, edema, erythema, sweating, and fasciculation at the site. Systemic (uncommon, ~3% of cases, concentrated in children under 10 and adults over 70): tachycardia, hypertension, agitation, sialorrhea, vomiting, tachypnea, and — a distinctive and well-documented finding — priapism. Shock and pulmonary edema are the rare severe complications, thought to relate to a surge in sympathetic activity.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Analgesia and transport, with lower threshold for urgency in young children and elderly patients specifically.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Most cases are managed symptomatically — local analgesia, ice. Reserve escalation for the systemic-sign subset, watching in particular for the cardiovascular and priapism findings that distinguish severe cases.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">A specific antivenom exists (produced regionally, including by Instituto Butantan) but is recommended only for patients who develop significant systemic manifestations — not for the large majority of bites, which are local-pain-only and self-limited with supportive care alone.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Outpatient management with analgesia for the typical local-only presentation. Admit and consider antivenom for systemic signs, especially in the two vulnerable age groups.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Priapism is a genuinely distinctive finding for this species among all the arachnids on this site — worth specifically asking about or noting in a male patient with systemic signs after a bite in this region. Don't reach for antivenom on pain alone; it's reserved for the systemic minority.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="south-american-rattlesnake" data-class="snake" data-mechanism="neurotoxic" data-search="south american rattlesnake crotalus durissus terrificus cascavel crotoxin">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Brazil, broader South America</span>
+          <span class="tag class">Snake — Crotalinae</span>
+          <span class="tag mechanism">Neurotoxic + Myotoxic + Hemotoxic</span>
+        </div>
+        <div class="card-title">South American Rattlesnake</div>
+        <div class="card-sub">Crotalus durissus terrificus. Also called: cascavel (Brazil). Accounts for only about 10% of Brazilian snakebites but carries the highest case-fatality rate of any snake in the country — meaningfully more dangerous per-bite than the far more common Bothrops</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">This is the opposite presentation from Bothrops (fer-de-lance): local pain and swelling at the bite site are often minimal or absent, which can be falsely reassuring. The real damage is systemic and can take time to declare itself.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Venom is dominated by crotoxin, a potent presynaptic β-neurotoxin, producing neurotoxicity (ptosis, blurred vision, myasthenia-like weakness), systemic myotoxicity (myoglobinuria, elevated CK, risk of acute renal failure from rhabdomyolysis), and some hemotoxic/hemolytic activity. Reported mortality (roughly 1.1% in Brazilian series) exceeds that of the far more frequently encountered Bothrops species, despite the much lower bite volume — this is a species where rarity does not equal low risk.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach: immobilize, remove constricting items, transport. Given how unimpressive the local bite can look, don't let a benign-appearing wound delay urgency — the systemic picture is what matters here.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Monitor for myotoxicity specifically — serial CK, urine myoglobin, and renal function — alongside the neurologic exam. In published pediatric case series, patients who received early, definitive antivenom therapy did well; the cases with major morbidity were specifically those where initial treatment was delayed or given by a suboptimal route (subcutaneous) before definitive IV antivenom followed later. Timing and route both matter.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Anti-crotalic antivenom (Instituto Butantan, Brazil, and other regional producers) is the specific regional product. Notably, a documented US case report of an escaped pet C. d. terrificus successfully treated the bite with CroFab — the standard North American product — when species-specific antivenom wasn't immediately available, based on crotoxin's structural and functional similarity to Mojave toxin (which CroFab is known to cover). This is a useful contingency fact for any exotic-pet exposure outside the snake's native range, though regional anti-crotalic antivenom remains the standard of care where available.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for neurologic, renal, and CK monitoring regardless of how mild the bite site appears. Given the documented morbidity difference between prompt IV antivenom and delayed/suboptimal-route treatment, don't let logistics substitute for getting definitive therapy started quickly.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">The core teaching point mirrors this page's coral snake and boomslang entries: an unimpressive local bite does not mean a mild envenomation for this species — it's actually closer to the rule than the exception here, unlike Bothrops where local findings are the dominant early clue. Route and timing of antivenom administration have documented real-world consequences in pediatric case data — IV, and promptly.</div></div>
+      </div>
+    </div>
+
+    <div class="notice" id="notice-central-south-america">
+      <div class="notice-label">Non-Critical — Supportive Care Only</div>
+      <div class="notice-sub">Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.</div>
+      <ul class="notice-list">
+        <li><strong>False Coral Snakes</strong> (various non-venomous and mildly venomous mimics, e.g. Erythrolamprus and related genera) — banded coloration convincingly imitates true Micrurus coral snakes, causing significant alarm on sight alone. <em>Care:</em> species confirmation when possible; wound care only for a confirmed mimic bite, no antivenom or extended observation needed once true coral snake is excluded.</li>
+        <li><strong>New World Tarantulas</strong> (Theraphosidae, e.g. Goliath birdeater and related genera) — the bite itself is generally mild in humans despite the intimidating size of these spiders; the bigger irritant is often urticating hairs flicked defensively, causing skin and eye irritation rather than systemic envenomation. <em>Care:</em> tape-strip removal of hairs from skin, eye irrigation if ocular contact, analgesia for bite-site pain; no antivenom exists or is needed.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation — Central &amp; South America</footer>
+
+<script>
+  const activeFilters = { class: 'all', mechanism: 'all' };
+
+  function toggleChip(btn){
+    const facet = btn.dataset.facet;
+    const value = btn.dataset.value;
+    document.querySelectorAll(`.chip[data-facet="${facet}"]`).forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters[facet] = value;
+    filterCards();
+  }
+
+  function filterCards(){
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const matchesClass = activeFilters.class === 'all' || card.dataset.class === activeFilters.class;
+      const matchesMech = activeFilters.mechanism === 'all' || card.dataset.mechanism === activeFilters.mechanism;
+      const searchBlob = (card.dataset.search || '') + ' ' + card.innerText.toLowerCase();
+      const matchesQuery = query === '' || searchBlob.toLowerCase().includes(query);
+
+      if (matchesClass && matchesMech && matchesQuery){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('resultsCount').textContent = `${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chip[data-facet="class"][data-value="all"]').classList.add('active');
+    document.querySelector('.chip[data-facet="mechanism"][data-value="all"]').classList.add('active');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traumatic Cardiac Arrest — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Resuscitation / Trauma</div>
+    <h1>Traumatic Cardiac Arrest</h1>
+    <p class="subtitle">Reversible causes come before compressions here, not after — the HOTT framework, why REBOA's own trial got stopped for harm, and the 10-minute window that governs the thoracotomy decision.</p>
+    <div class="badges">
+      <span class="badge red">TRAUMA RESUSCITATION EMERGENCY</span>
+      <span class="badge teal">ERC 2025 / HOTT PROTOCOL</span>
+      <span class="badge amber">CAUSES BEFORE COMPRESSIONS</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Decision Surrogates</a>
+    <a class="qn" href="#prevention">Set-Up / Readiness</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Post-ROSC &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management — The HOTT Framework</h2></div>
+  <div class="tagline">Treat all reversible causes simultaneously, not sequentially — this is context-sensitive prioritization, not a fixed step order.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Control catastrophic external hemorrhage first</div><div class="step-desc">Tourniquet, hemostatic dressing, or direct pressure — before airway if the bleeding is severe enough. A patient exsanguinating dies faster than one with a compromised but still-functioning airway.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Secure the airway and maximize oxygenation</div><div class="step-desc">Address hypoxia — the "O" in HOTT — as a parallel priority alongside hemorrhage control, not strictly after it.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Bilateral chest decompression</div><div class="step-desc">Needle or finger thoracostomy bilaterally to exclude tension pneumothorax — see the dedicated Tension Pneumothorax crisis file for site selection and technique. Do this even without clear lateralizing signs in the traumatic arrest setting, since the affected side may not be obvious under time pressure.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Restore circulating volume</div><div class="step-desc">IV/IO fluid and blood product replacement — see the Massive Transfusion Protocol crisis file for ratio-based resuscitation once products are available.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Suspected tamponade — resuscitative thoracotomy</div><div class="step-desc">Primarily indicated for penetrating chest or abdominal trauma resulting in arrest, particularly when an organized rhythm is present or arrest duration has been short — even in asystole. Allows direct tamponade relief and, via clamping the descending aorta, proximal hemorrhage control for infradiaphragmatic bleeding. Requires appropriate Expertise, Equipment, Environment, and Elapsed time (the "4 E's").</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">REBOA — consider selectively, not as a default</div><div class="step-desc">May be reasonable for exsanguinating hemorrhage below the diaphragm, prior to full cardiovascular collapse, only by appropriately trained personnel. <b>Contraindicated</b> when penetrating chest trauma is the suspected cause. The evidence is genuinely mixed — see Rationale below before reaching for this reflexively.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Run conventional CPR in parallel if resources allow</div><div class="step-desc">Chest compressions, defibrillation, and epinephrine can run simultaneously with reversible-cause treatment when staffing allows — but they do not take priority over addressing the actual mechanical/volume problem, and shouldn't delay it.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Reassess for a medical cause preceding the trauma</div><div class="step-desc">If a medical event (arrhythmia, MI, seizure) is reasonably suspected to have caused the trauma (e.g., a single-vehicle crash with no clear mechanism), switch to standard medical cardiac arrest management (full ACLS) rather than the trauma-specific pathway.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">Time-critical, not open-ended</div><p>A favorable outcome from resuscitative thoracotomy is rarely possible — even in penetrating trauma — if initiated more than 10 minutes after the onset of arrest. Prolonged CPR (&gt;10 minutes) after reversible causes have been addressed is almost never associated with a good outcome. This isn't a reason to give up early; it's a reason to move fast on the causes that are actually reversible.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Traumatic cardiac arrest (TCA) results predominantly from severe hemorrhage, hypoxia, or a mechanical cause of obstructive shock (tension pneumothorax, cardiac tamponade) — mechanisms that are frequently, at least in principle, reversible if identified and treated fast enough. This distinguishes it from most out-of-hospital cardiac arrest, where a primary arrhythmic event is the dominant cause and standard ACLS pharmacology and compressions are the mainstay.</p>
+    <p>TCA predominantly affects young males and, globally, most commonly results from blunt mechanisms, though penetrating trauma carries meaningfully better resuscitative outcomes. Reported survival is dismal overall — global rates persistently below roughly 7.5% — though individual series range from 4% to 40% depending heavily on patient selection and how survival is measured. Despite the historically grim outlook, contemporary evidence indicates that survival with good or moderate neurological recovery is genuinely possible when reversible causes are treated fast and correctly.</p>
+  </div>
+
+  <!-- 03 DECISION SURROGATES -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Decision Surrogates (In Place of "Signs and Symptoms")</h2></div>
+  <table class="rt">
+    <tr><th>Surrogate</th><th>How it's used</th></tr>
+    <tr><td>Injury location</td><td>A practical stand-in for the likely cause of arrest when the true mechanism is uncertain — a chest or upper-abdominal wound raises suspicion for tamponade and points toward thoracotomy; a pelvic or lower-body injury pattern points toward exsanguination and favors transfusion/hemorrhage control over immediate thoracotomy.</td></tr>
+    <tr><td>Presenting ECG rhythm</td><td>A rapid marker of physiological viability when exact arrest duration is unclear — an organized rhythm supports proceeding with thoracotomy even when timing is uncertain; asystole with an unclear or prolonged down-time argues against it, though a genuinely short asystolic arrest can still warrant intervention.</td></tr>
+    <tr><td>POCUS findings</td><td>Real-time identification of tamponade, pneumothorax, and hypovolemia directly guides which HOTT component to prioritize first rather than working through all four blindly.</td></tr>
+    <tr><td>Mechanism (blunt vs. penetrating)</td><td>Penetrating trauma has consistently better resuscitative outcomes than blunt — this shapes both the threshold for aggressive intervention (thoracotomy) and the honest conversation about expected outcome.</td></tr>
+  </table>
+
+  <!-- 04 SETUP / READINESS -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Set-Up &amp; Readiness (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Tourniquets and hemostatic dressings immediately accessible</b> and staff trained to apply them without hesitation for catastrophic external hemorrhage.</li>
+      <li><b>Bilateral thoracostomy as a default step</b> in traumatic arrest protocols, not something reserved for confirmed lateralizing findings — adoption of this practice has increased significantly over time in systems that track it.</li>
+      <li><b>Pelvic binder immediately available</b> for suspected pelvic fracture with hemorrhagic shock — in a patient with a stable airway, rapid binder application and transfer may be more valuable than airway intervention first.</li>
+      <li><b>Thoracotomy and REBOA capability matched to actual training level</b> — these interventions should only be performed by teams with genuine expertise, not attempted opportunistically by providers without specific training and a system built to support the intervention.</li>
+      <li><b>Prehospital blood product availability</b> where the system supports it — early blood, not just crystalloid, meaningfully changes outcomes in hemorrhagic traumatic arrest.</li>
+      <li><b>Clear futility and withdrawal criteria established in advance</b> — resuscitation of TCA is not futile by default and should generally be attempted, but injuries obviously incompatible with life are a recognized exception worth having explicit protocol guidance on before the moment arrives.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Global TCA survival</td><td>Persistently below ~7.5%</td></tr>
+    <tr><td>Survival range across series</td><td>4–40%, heavily dependent on patient selection/methodology</td></tr>
+    <tr><td>Thoracotomy futility threshold</td><td>Rarely favorable if initiated &gt;10 minutes after arrest onset</td></tr>
+    <tr><td>CPR duration after addressing reversible causes</td><td>&gt;10 minutes almost never associated with good outcome</td></tr>
+    <tr><td>TCA as share of all cardiac arrests (one prehospital system)</td><td>~15%</td></tr>
+    <tr><td>Bilateral thoracostomy — indicated vs. performed (same system)</td><td>Judged indicated in 90%, actually performed in 66%</td></tr>
+    <tr><td>UK-REBOA trial outcome</td><td>Terminated early for harm — increased mortality, increased bleeding-related deaths at 3h and 90 days, delayed definitive hemorrhage control</td></tr>
+    <tr><td>REBOA in a separate exsanguinating-pelvic-hemorrhage series</td><td>62% survival with REBOA vs. 33% without (not statistically significant, small sample); distal arterial thrombus in 77% of REBOA patients</td></tr>
+    <tr><td>Blunt TCA cases with tamponade found on thoracotomy (one series)</td><td>~15% — though none of these specific patients survived</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Trauma-Specific Prioritization</h2></div>
+  <div class="box t-purple">
+    <p><b>Why reversible causes are prioritized over conventional CPR here:</b> chest compressions on a heart that's mechanically obstructed (tamponade, tension pneumothorax) or has nothing left to pump (severe hypovolemia) generate minimal or no meaningful cardiac output — the substrate compressions need to work simply isn't present. Treating the mechanical or volume problem restores that substrate; compressions alone on an unaddressed cause are largely futile, which is why the trauma-specific algorithm inverts the usual medical-arrest priority.</p>
+    <p><b>Why external hemorrhage control comes before airway:</b> a patient actively exsanguinating from a compressible source dies from blood loss faster than from a still-functioning, if imperfect, airway. This mirrors the MARCH sequence used in prehospital/military trauma care (see the Crush Syndrome crisis file for a related discussion) — massive hemorrhage control is treated as the first, not the last, priority.</p>
+    <p><b>Why resuscitative thoracotomy is concentrated on penetrating chest/abdominal trauma:</b> this is where the intervention has the clearest mechanistic match to the problem — direct tamponade relief and aortic cross-clamping for infradiaphragmatic hemorrhage control are specific, targeted fixes for specific injury patterns. Outcomes in blunt trauma are consistently worse; one series found tamponade on thoracotomy in 15% of blunt TCA cases, yet none of those specific patients survived, underscoring that finding a "reversible" cause doesn't guarantee reversibility once combined with the broader physiological insult of blunt trauma.</p>
+    <p><b>Why REBOA's own pivotal trial is a cautionary tale, not an endorsement:</b> REBOA can raise proximal blood pressure by occluding the aorta, but that's a physiologic number, not a cure — if inflating the balloon delays the actual definitive hemorrhage control (surgery, embolization) that stops the bleeding, the net effect can be harm despite an improving monitor reading. The UK-REBOA trial's early termination for harm, with increased mortality and delayed time to definitive control, is exactly this mechanism playing out in a randomized trial — which is why REBOA is described here as selectively considered rather than a default escalation step.</p>
+    <p><b>Why injury location and rhythm are used as decision surrogates despite real uncertainty:</b> in the field, the actual cause of arrest and the precise duration of no-flow time are frequently unknowable in real time. These two proxies are pragmatic, fast substitutes that let a team make a directionally reasonable decision under genuine uncertainty rather than waiting for information that isn't going to arrive in time to matter.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis — What Kind of Arrest Is This?</h2></div>
+  <table class="rt">
+    <tr><th>Consideration</th><th>Key distinguishing features</th></tr>
+    <tr><td>Primary medical arrest preceding the trauma</td><td>No clear mechanism explaining the traumatic event itself (e.g., unexplained single-vehicle crash) — treat as standard medical cardiac arrest with full ACLS rather than the trauma-specific HOTT pathway.</td></tr>
+    <tr><td>Hemorrhagic (hypovolemic) arrest</td><td>Visible or highly suspected massive external/internal bleeding as the dominant driver — prioritize hemorrhage control and transfusion over thoracic intervention unless tamponade/tension physiology is also present.</td></tr>
+    <tr><td>Tension pneumothorax as the dominant cause</td><td>Confirmed or strongly suspected via exam/POCUS — bilateral decompression may resolve the arrest without needing thoracotomy at all.</td></tr>
+    <tr><td>Cardiac tamponade as the dominant cause</td><td>Penetrating chest wound, especially medial to the nipples/scapulae — the clearest indication for immediate thoracotomy; see the dedicated Tamponade crisis file.</td></tr>
+    <tr><td>Traumatic asphyxia / airway compromise</td><td>Direct airway injury or obstruction as the primary driver — securing the airway may be the single decisive intervention rather than a thoracic procedure.</td></tr>
+    <tr><td>Severe hypothermia (environmental trauma overlap)</td><td>Prolonged exposure/cold-water immersion changes the resuscitation calculus entirely ("not dead until warm and dead") — see the Severe/Hypothermic Cardiac Arrest crisis file when this applies.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Post-ROSC Care &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Watch for new bleeding after thoracotomy:</b> internal mammary and intercostal arteries severed by a clamshell incision can start bleeding once circulation is restored — be ready to clamp with small forceps as needed.</p>
+    <p><b>Facilitate rapid transfer without delay:</b> every post-ROSC TCA patient needs prompt movement to the operating room, angiography suite, or definitive diagnostic imaging as appropriate — don't linger at the point of resuscitation once circulation returns.</p>
+    <p><b>Minimize REBOA inflation time</b> if the balloon is in place, keeping occlusion as brief as feasible while facilitating transfer to definitive care — this directly addresses the "delayed definitive hemorrhage control" mechanism of harm identified in trial data.</p>
+    <p><b>Address metabolic derangement proactively:</b> hyperkalemia and calcium imbalances are common in this population, particularly with massive transfusion or crush mechanism — see the Hyperkalemic Cardiac Arrest and Crush Syndrome crisis files for specific management.</p>
+    <p><b>Disposition:</b> ICU/trauma team handoff with continued hemostatic resuscitation as needed. In austere or prolonged-evacuation settings, post-ROSC care of a TCA patient is recognized as extremely challenging and should prioritize evacuation to higher-level care whenever feasible rather than attempting extended stabilization in place.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>European Resuscitation Council. Traumatic Cardiac Arrest Algorithm — ERC Guidelines 2025 Special Circumstances in Resuscitation. <i>Resuscitation.</i> 2025.</li>
+    <li><span class="tier">PRIMARY</span>Carenzo L, et al. Contemporary Management of Traumatic Cardiac Arrest and Peri-Arrest States: A Narrative Review (HOTT protocol). <i>J Anesth Analg Crit Care.</i> 2024.</li>
+    <li><span class="tier">GUIDELINE</span>ANZCOR Guideline 11.10.1: Management of Cardiac Arrest Due to Trauma. anzcor.org, 2026.</li>
+    <li><span class="tier">GUIDELINE</span>Weegenaar C, Perkins Z, Lockey D. Pre-Hospital Management of Traumatic Cardiac Arrest 2024 Position Statement, Faculty of Prehospital Care, Royal College of Surgeons of Edinburgh. <i>Scand J Trauma Resusc Emerg Med.</i> 2024.</li>
+    <li><span class="tier">EVIDENCE</span>UK-REBOA Trial (terminated early for harm) — cited in 2024 RCSEd position statement above.</li>
+    <li><span class="tier">EVIDENCE</span>Perkins Z, Greenhalgh R, ter Avest E, et al. Pre-Hospital Resuscitative Thoracotomy for Traumatic Cardiac Arrest: Outcomes of 601 Cases. <i>JAMA Surg.</i> 2025;160:432–440.</li>
+    <li><span class="tier">REFERENCE</span>Unlocking Survival in Traumatic Cardiac Arrest: Global Insights, Innovations, and Unmet Needs. <i>Crit Care.</i> 2025.</li>
+    <li><span class="tier">CLASSIC</span>Lockey DJ, Lyon RM, Davies GE. A Simple Algorithm for the Treatment of Traumatic Cardiac Arrest. <i>Resuscitation.</i> 2013;84(6):738–742.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and thresholds against your own institutional/EMS protocol before clinical use.</div>
+
+</div>
+</body>
+</html>

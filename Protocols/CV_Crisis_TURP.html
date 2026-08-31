@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TURP Syndrome — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Urologic</div>
+    <h1>TURP Syndrome</h1>
+    <p class="subtitle">Hypotonic irrigant absorbed through open prostatic venous sinuses — acute dilutional hyponatremia that gets treated aggressively precisely because it's acute, plus the newer saline-irrigant variant that trades one problem for a different one.</p>
+    <div class="badges">
+      <span class="badge red">ANESTHESIA / UROLOGIC EMERGENCY</span>
+      <span class="badge teal">&lt;1% INCIDENCE, UP TO 25% MORTALITY IF SEVERE</span>
+      <span class="badge amber">ACUTE HYPONATREMIA — CORRECT FAST</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">This is acute, not chronic, hyponatremia — that distinction changes the correction-rate rules and is the single most important thing to get right.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Alert the surgeon, finish the resection quickly</div><div class="step-desc">Every additional minute of open prostatic venous sinuses is more irrigant absorption. If TURP syndrome is suspected mid-case, the surgeon should complete resection and achieve hemostasis as efficiently as possible.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">100% O₂, support airway/breathing/circulation</div><div class="step-desc">Secure the airway if consciousness is impaired. Treat hypotension and bradycardia as they arise — standard supportive measures while the diagnosis is confirmed.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Send serum sodium and electrolytes STAT</div><div class="step-desc">Check intraoperatively for any prolonged case (&gt;90 minutes) or when clinical suspicion is raised — don't wait for symptoms to develop before checking if the resection has run long.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Severe symptomatic hyponatremia — 3% hypertonic saline</div><div class="step-desc">For seizures, coma, or marked mental status change: <span class="d">100–150 mL IV bolus</span> or continuous infusion, targeting a <span class="d">6 mmol/L</span> rise in the first 6 hours. Transfer immediately to ICU with continuous monitoring. Treat active seizures with benzodiazepines in parallel.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Cap total correction — don't overshoot</div><div class="step-desc">After the initial 6 mmol/L in 6 hours, limit further correction to roughly <span class="d">2 mmol/L</span> over the next 18 hours; total correction should not exceed <span class="d">8–10 mmol/L</span> in 24 hours. Rapid correction targeting &gt;1 mmol/L/hour is appropriate specifically because this is acute (developing over hours), not chronic, hyponatremia — but the 24-hour cap still applies to avoid overshoot.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Loop diuretic — only if hemodynamically stable</div><div class="step-desc">Furosemide can help eliminate excess absorbed fluid in a volume-overloaded but stable patient. <b>Avoid diuretic therapy in a hemodynamically unstable patient</b> — it removes volume from a circulation that may already be compromised.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Refractory/severe cases — consider hemodialysis</div><div class="step-desc">Particularly when there's a large osmolal gap (significant hyperglycinemia/hyperammonemia from glycine irrigant) or renal impairment limiting other correction strategies — hemodialysis can rapidly correct both the sodium and remove the glycine metabolites simultaneously.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">If a saline-based irrigant (TURis/bipolar) was used and the picture doesn't fit classic hyponatremia</div><div class="step-desc">Check an ABG/chemistry for hyperchloremic metabolic acidosis — large-volume normal saline absorption can cause this distinct picture, which responds to bicarbonate rather than vasopressors when hypotension is present.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Acute hyponatremia gets treated differently than chronic</div><p>The traditional "correct hyponatremia slowly to avoid osmotic demyelination" rule applies to chronic hyponatremia, where the brain has already adapted. TURP syndrome develops over hours during a single procedure — there's been no time for that adaptation, so rapid initial correction of severe symptoms is appropriate and the real risk being managed is cerebral edema, not overly-fast correction.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>TURP syndrome is a systemic complication from excessive absorption of electrolyte-free irrigation fluid through open prostatic venous sinuses during transurethral resection of the prostate (also described with transurethral bladder resection, ureteroscopy, and hysteroscopy). It produces a combination of acute hypervolemia, dilutional hyponatremia, and — with glycine-based irrigants specifically — direct CNS toxicity from the glycine itself, which acts as an inhibitory GABA agonist while paradoxically potentiating NMDA receptors.</p>
+    <p>Reported incidence is under 1% (roughly 0.78–1.4% in recent series), reflecting the shift toward bipolar resectoscopes using saline irrigant, which have made the classic glycine-mediated syndrome less common than it once was. Despite the low incidence, mortality in severe cases has been reported as high as 25%, and onset can occur as early as 15 minutes into resection or be delayed up to 24 hours postoperatively.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Bradycardia with paradoxical hypertension</td><td>An early hemodynamic pattern from acute hypervolemia — hypertension may be masked or absent if there's concurrent significant surgical bleeding.</td></tr>
+    <tr><td>Progressive hypotension</td><td>Develops as the syndrome advances, sometimes with a confounding contribution from surgical blood loss.</td></tr>
+    <tr><td>Restlessness, confusion, headache</td><td>Early neurologic signs — easy to miss or attribute to sedation/anxiety in an awake patient under neuraxial anesthesia.</td></tr>
+    <tr><td>Nausea, vomiting</td><td>Common early symptom.</td></tr>
+    <tr><td>Visual disturbances, transient blindness</td><td>A relatively specific clue pointing toward glycine toxicity specifically (glycine is a retinal inhibitory neurotransmitter) — worth asking about directly in an awake regional-anesthesia patient.</td></tr>
+    <tr><td>ECG changes</td><td>T-wave depression or inversion, sometimes persisting up to 24 hours; troponin can rise even without a primary cardiac event.</td></tr>
+    <tr><td>Seizures, coma</td><td>Severe end of the spectrum — reflects cerebral edema from acute hyponatremia and/or direct glycine CNS toxicity.</td></tr>
+    <tr><td>Pulmonary edema, cardiovascular collapse</td><td>From acute volume overload; can occur with any irrigant type, not just glycine-based ones.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Limit resection time to under 90 minutes</b> where possible — the single most direct lever, since absorption is time-dependent on open venous sinuses.</li>
+      <li><b>Prefer bipolar resectoscope with isotonic saline irrigant (TURis)</b> over monopolar with glycine when available — eliminates the classic hyponatremic/glycine-toxic syndrome, though large-volume saline absorption can still cause volume overload and, less commonly, hyperchloremic acidosis.</li>
+      <li><b>Control irrigation bag height/pressure</b> — lower hydrostatic pressure reduces the driving force for absorption through open sinuses.</li>
+      <li><b>Prophylactic furosemide</b> has trial-level evidence for reducing hyponatremia incidence in monopolar TURP specifically — worth considering as an institutional protocol element for higher-risk cases, though it's not yet universal practice.</li>
+      <li><b>Consider neuraxial rather than general anesthesia</b> for TURP when feasible — an awake patient can report early neurologic symptoms (confusion, visual changes, restlessness) that would otherwise go unnoticed under general anesthesia.</li>
+      <li><b>Intraoperative monitoring options for higher-risk or prolonged cases:</b> transesophageal Doppler to detect acute hypervolemia, ethanol-tagged irrigant with breath testing as an absorption marker, or intraoperative voiding score assessment — useful adjuncts, though not universally deployed.</li>
+      <li><b>Check serum sodium intraoperatively</b> for any case running long or with a large resected gland, rather than waiting for symptoms.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Overall incidence</td><td>~0.78–1.4% (under 1% in most modern series)</td></tr>
+    <tr><td>Mortality in severe cases</td><td>Up to 25%</td></tr>
+    <tr><td>Onset window</td><td>As early as 15 minutes into resection; can be delayed up to 24 hours postop</td></tr>
+    <tr><td>Resection time threshold to limit absorption</td><td>&lt;90 minutes</td></tr>
+    <tr><td>3% hypertonic saline severe-symptom dose</td><td>100–150 mL IV bolus or infusion</td></tr>
+    <tr><td>Correction target, first 6 hours</td><td>+6 mmol/L</td></tr>
+    <tr><td>Correction cap, first 24 hours</td><td>8–10 mmol/L total</td></tr>
+    <tr><td>Prophylactic irrigant absorption reduction (standard saline 6 mL/kg/hr, cited comparator)</td><td>Still produces TURP syndrome in ~25% of patients without additional prophylaxis in some series — underscoring why irrigant choice and resection time matter more than co-fluid alone</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for TURP Syndrome Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why rapid correction is appropriate here, unlike most hyponatremia teaching:</b> the standard "correct slowly to avoid osmotic demyelination syndrome" rule exists because in chronic hyponatremia, brain cells have already adapted by extruding intracellular osmoles to match the low extracellular sodium — correcting too fast reverses that adaptation faster than the cells can respond, causing demyelination. TURP syndrome develops over the course of a single procedure; there's been no time for that cellular adaptation, so the actual immediate risk is cerebral edema from the acute drop, not overcorrection. This is why severely symptomatic acute hyponatremia is treated with deliberately faster initial correction than the classic chronic-hyponatremia teaching would suggest.</p>
+    <p><b>Why glycine causes symptoms out of proportion to the sodium number alone:</b> glycine is itself an inhibitory neurotransmitter at GABA receptors and also potentiates NMDA receptors — it has direct CNS effects independent of the sodium level. This is why some patients with only moderately low sodium can present with severe neurologic findings (visual disturbance, coma): the glycine toxicity and the hyponatremia are compounding, not the same problem measured twice. It's also why measured serum osmolality often looks less deranged than the sodium alone would predict — glycine is an osmotically active nonsodium solute, partially explaining the "pseudohyponatremia" component of the picture.</p>
+    <p><b>Why furosemide is avoided in the unstable patient specifically:</b> a volume-overloaded but hemodynamically stable patient benefits from diuresis to offload the absorbed fluid. A patient who is already hypotensive or in cardiovascular collapse from the same syndrome doesn't have volume to spare — removing more preload in that setting worsens the hemodynamic problem you're simultaneously trying to fix.</p>
+    <p><b>Why the saline-irrigant (TURis) variant needs a different antidote entirely:</b> switching to isotonic saline solves the hyponatremia/glycine-toxicity problem, but large-volume saline absorption introduces a new mechanism — dilutional hyperchloremic metabolic acidosis — that doesn't respond to the usual vasoactive-agent approach to hypotension. Recognizing which irrigant was used changes what "correcting" the picture actually requires.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>SIADH (unrelated to the procedure)</td><td>No temporal link to irrigant absorption or resection time; diagnosis of exclusion based on urine studies once TURP syndrome has been ruled out by timeline.</td></tr>
+    <tr><td>Primary CNS event (stroke, seizure disorder)</td><td>No correlation with irrigant volume/resection duration; imaging findings would support a structural cause rather than a metabolic one.</td></tr>
+    <tr><td>Sepsis / bacteremia from instrumentation</td><td>Fever and a more gradually evolving hemodynamic picture rather than the acute, procedure-timed presentation of TURP syndrome — though the two can coexist.</td></tr>
+    <tr><td>Local Anesthetic Systemic Toxicity (if regional block used)</td><td>CNS excitation/seizure pattern tied to LA administration timing rather than resection duration/irrigant volume.</td></tr>
+    <tr><td>Cardiogenic pulmonary edema (unrelated cause)</td><td>Preexisting cardiac history and a hemodynamic profile consistent with pump failure rather than acute volume absorption — though TURP-associated volume overload can also produce pulmonary edema directly.</td></tr>
+    <tr><td>Hypoglycemia</td><td>Rapid point-of-care glucose check rules this in or out quickly and should be part of the initial altered-mental-status workup regardless of TURP suspicion.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Serial labs during correction:</b> recheck serum sodium every 2–4 hours during active correction to confirm you're tracking the target rate, not over- or under-correcting. Check osmolality, and consider ammonia level if a large volume of glycine irrigant was used, since hyperammonemia can independently contribute to altered mental status.</p>
+    <p><b>Cardiac monitoring:</b> continuous ECG given the described T-wave changes and troponin elevation pattern with glycine absorption — these findings can persist up to 24 hours and don't necessarily indicate a primary cardiac event.</p>
+    <p><b>Ophthalmology follow-up</b> if visual disturbance or transient blindness occurred and doesn't resolve promptly with correction.</p>
+    <p><b>Disposition:</b> ICU admission for any symptomatic case, particularly one requiring hypertonic saline or presenting with seizure/altered consciousness — this is not a routine PACU-to-floor recovery.</p>
+    <p><b>Documentation and future planning:</b> record the irrigant type, total volume used, resection duration, and the patient's clinical course — this directly informs whether future procedures should use a saline-based bipolar system, shorter staged resections, or neuraxial rather than general anesthesia for earlier symptom detection.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>LITFL. "TURP Syndrome." litfl.com, updated 2020, reviewed against current literature 2026.</li>
+    <li><span class="tier">PRIMARY</span>Hyponatremia and Transurethral Resection of Prostate Syndrome. OpenAnesthesia.org, updated 2024.</li>
+    <li><span class="tier">EVIDENCE</span>What Is the Appropriate Management of Hyponatremia Occurring During TURP? Clinical synthesis, 2026 — including 2026 retrospective cohort (n=13,988) on correction-rate outcomes in severe hyponatremia.</li>
+    <li><span class="tier">EVIDENCE</span>Gholipour F, et al. Prophylactic Intravenous Furosemide for Reducing Hyponatremia Risk in Monopolar Transurethral Prostate Surgery: A Randomized Clinical Trial. 2025.</li>
+    <li><span class="tier">CASE DATA</span>TURP Syndrome Presenting as Severe Hyponatremia Following TURP: A Case Requiring Intensive Critical Care Management. 2025.</li>
+    <li><span class="tier">CASE DATA</span>Okuma N, et al. Symptomatic Absorption of Normal Saline During TURP: A Case Report (hyperchloremic metabolic acidosis with TURis). <i>JA Clin Rep.</i> 2022.</li>
+    <li><span class="tier">CLASSIC</span>Ayus JC, Arieff AI. The Post-Transurethral Resection of Prostate Syndrome: Therapeutic Proposals. <i>Am J Kidney Dis.</i> 1994.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and correction targets against your own institutional protocol before clinical use.</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postpartum Hemorrhage — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Obstetric</div>
+    <h1>Postpartum Hemorrhage</h1>
+    <p class="subtitle">The 4 T's as a working differential, why quantitative blood loss measurement changed outcomes at the population level, and why tamponade works best before shock — not as a last resort once it's already set in.</p>
+    <div class="badges">
+      <span class="badge red">OBSTETRIC EMERGENCY</span>
+      <span class="badge teal">ACOG / FIGO-ALIGNED</span>
+      <span class="badge amber">TXA WITHIN 3 HOURS OF BIRTH</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — Recognition</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">The 4 T's — Cause-Directed Differential</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Escalate uterotonics in rapid succession while working the 4 T's in parallel — atony is the most common cause, but don't stop looking once you've treated it.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Activate the hemorrhage protocol, call for help</div><div class="step-desc">Start quantitative blood loss measurement (calibrated drapes/canisters) rather than relying on visual estimation — this single change, bundled with structured protocol response, has been shown to meaningfully reduce severe hemorrhage and death.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Uterine massage and bimanual compression</div><div class="step-desc">First mechanical step for atony — the most common cause of PPH by a wide margin. Bimanual compression is also a reasonable temporizing measure while other therapies are mobilized.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Oxytocin — first-line uterotonic</div><div class="step-desc"><span class="d">10–40 units</span> in 500–1,000 mL IV as a continuous infusion, or <span class="d">10 units IM</span> if IV access isn't yet established.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Add a second-line uterotonic in rapid succession if bleeding continues</div><div class="step-desc">No evidence favors one over another — choice is driven by contraindication profile. Methylergonovine <span class="d">0.2 mg IM q2–4h</span> (avoid with hypertension). Carboprost (15-methyl PGF2α) <span class="d">0.25 mg IM or intramyometrial q15min</span>, up to 8 doses (avoid with asthma). Misoprostol — reserve for patients with both asthma and hypertension, given inconsistent efficacy and higher side-effect burden compared to the others.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Tranexamic acid — within 3 hours of birth</div><div class="step-desc"><span class="d">1 g IV over 10 minutes</span>, second dose if bleeding continues after 30 minutes or restarts within 24 hours of the first dose. Give when initial uterotonic therapy fails to control bleeding — associated with roughly a 30% reduction in bleeding-related mortality when given within this window.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Work the 4 T's in parallel, not just after atony treatment fails</div><div class="step-desc">Examine for retained placental tissue, genital tract lacerations, and uterine rupture while uterotonics are being given — treating atony alone in a patient actually bleeding from trauma or retained tissue wastes critical time. See the dedicated differential table below.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Uterine tamponade for bleeding refractory to uterotonics</div><div class="step-desc">Balloon device (Bakri, Foley, condom catheter, or commercial system) filled with <span class="d">250–500 mL</span> saline, or gauze packing (often thrombin- or TXA-soaked). Placed <b>before</b> advanced shock develops, tamponade controls the large majority of otherwise-refractory bleeding with near-zero mortality — this is not a last-resort measure, it's most effective used early.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Activate Massive Transfusion Protocol and escalate surgically as needed</div><div class="step-desc">See the dedicated MTP crisis file for ratio-based resuscitation. Surgical escalation — compression sutures (B-Lynch), uterine artery ligation, uterine artery embolization (interventional radiology), and hysterectomy as a last resort — should not be delayed while waiting to correct coagulopathy if there's an ongoing surgical bleeding source.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Normal vital signs can be deceptively reassuring</div><p>Pregnancy's expanded blood volume and cardiac reserve let patients compensate for substantial blood loss while heart rate and blood pressure still look normal. By the time vitals clearly deteriorate, a dangerous volume may already be lost — track quantitative blood loss and escalate on that number, not just on the monitor.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Postpartum hemorrhage is traditionally defined as blood loss exceeding 500 mL after vaginal delivery or 1,000 mL after cesarean delivery; ACOG's 2017 redefinition instead uses cumulative blood loss ≥1,000 mL with signs/symptoms of hypovolemia within 24 hours of birth, regardless of delivery mode — reflecting how consistently blood loss at delivery is underestimated visually. PPH remains the leading cause of maternal mortality worldwide, though it's substantially preventable with timely recognition and a coordinated, protocolized response.</p>
+    <p>The most common cause by far is uterine atony (roughly 70–80% of cases), followed by genital tract trauma, retained placental tissue, and coagulopathy — commonly organized under the "4 T's" mnemonic (Tone, Trauma, Tissue, Thrombin). A second uterotonic beyond oxytocin is required in an estimated 3–25% of PPH cases, underscoring that atony frequently doesn't resolve with a single intervention.</p>
+  </div>
+
+  <!-- 03 SIGNS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — Recognition</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Excessive vaginal bleeding</td><td>Quantitative measurement (calibrated drapes/canisters) is significantly more accurate than visual estimation, which reliably underestimates true loss.</td></tr>
+    <tr><td>Boggy, poorly contracted uterus on exam</td><td>Classic finding for atony — the most common underlying cause.</td></tr>
+    <tr><td>Visible laceration or hematoma</td><td>Points toward trauma as the cause; genital tract inspection is part of the initial workup, not an afterthought.</td></tr>
+    <tr><td>Incomplete placenta on inspection</td><td>Suggests retained products of conception.</td></tr>
+    <tr><td>Diffuse oozing without a clear focal source</td><td>Raises concern for coagulopathy (the "Thrombin" T) — consider DIC from an underlying cause like amniotic fluid embolism, severe preeclampsia, or placental abruption.</td></tr>
+    <tr><td>Tachycardia, hypotension</td><td>Often a late finding given pregnancy's expanded blood volume and compensatory reserve — don't wait for these to appear before escalating based on measured blood loss.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Active management of the third stage of labor (AMTSL)</b> — prophylactic uterotonic administration, controlled cord traction, and fundal massage — is the primary prevention strategy for every delivery, not just high-risk ones.</li>
+      <li><b>Identify risk factors in advance:</b> prior PPH, multiple gestation, polyhydramnios, prolonged labor, chorioamnionitis, and macrosomia all raise risk and should prompt heightened readiness, though PPH also occurs unpredictably in low-risk patients.</li>
+      <li><b>Have organized, systematic hospital-wide response processes in place</b> — ACOG specifically recommends this rather than leaving PPH response to individual provider judgment in the moment.</li>
+      <li><b>Stock uterine balloon tamponade and vacuum-induced hemorrhage-control devices</b> and keep them immediately accessible to the delivery team, per ACOG clinical guidance.</li>
+      <li><b>Adopt calibrated, quantitative blood loss measurement as standard practice</b> — the evidence supporting this as a bundle-level intervention (not just a documentation nicety) is strong enough that it's now considered a core prevention/early-detection strategy in its own right.</li>
+      <li><b>Ensure MTP readiness</b> — see the dedicated Massive Transfusion Protocol crisis file for blood bank activation pathways and ratio-based resuscitation.</li>
+    </ul>
+  </div>
+
+  <!-- 05 DRUG DOSES -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Drug / Parameter</th><th>Value</th></tr>
+    <tr><td>PPH definition (ACOG 2017)</td><td>≥1,000 mL cumulative blood loss + hypovolemia signs, any delivery mode</td></tr>
+    <tr><td>PPH definition (traditional)</td><td>&gt;500 mL vaginal / &gt;1,000 mL cesarean</td></tr>
+    <tr><td>Oxytocin</td><td>10–40 units in 500–1,000 mL IV infusion, or 10 units IM</td></tr>
+    <tr><td>Methylergonovine</td><td>0.2 mg IM q2–4h (avoid with hypertension)</td></tr>
+    <tr><td>Carboprost</td><td>0.25 mg IM or intramyometrial q15min, max 8 doses (avoid with asthma)</td></tr>
+    <tr><td>Tranexamic acid</td><td>1 g IV over 10 min; repeat 1 g if bleeding continues after 30 min or restarts within 24h; give within 3h of birth</td></tr>
+    <tr><td>TXA mortality reduction</td><td>~30% when given within the 3-hour window</td></tr>
+    <tr><td>Balloon tamponade fill volume</td><td>250–500 mL saline</td></tr>
+    <tr><td>Balloon dwell time</td><td>Typically 6–48 hours with periodic reassessment/progressive deflation</td></tr>
+    <tr><td>Tamponade success rate (placed before shock)</td><td>&gt;80% of otherwise-refractory cases, near-zero mortality</td></tr>
+    <tr><td>Second-uterotonic requirement</td><td>Needed in ~3–25% of PPH cases</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for PPH Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why quantitative blood loss measurement changed outcomes at a population level:</b> the E-MOTIVE trial demonstrated that calibrated, objective blood-loss detection combined with a structured response bundle substantially reduces severe hemorrhage, laparotomy, and bleeding-related death after vaginal birth. Visual estimation is notoriously inaccurate — blood mixes with amniotic fluid and other fluids, and providers systematically underestimate loss — meaning a purely visual approach delays the exact moment escalation should happen. This is why quantitative measurement is treated as a core intervention in its own right, not just better documentation.</p>
+    <p><b>Why TXA's benefit is time-locked to a 3-hour window:</b> this mirrors the same time-dependent antifibrinolytic principle seen in trauma resuscitation (see the MTP crisis file) — TXA works by inhibiting an actively occurring fibrinolytic process. The WOMAN trial's mortality benefit was specifically demonstrated within this window; later administration hasn't shown the same benefit, which is why "within 3 hours of birth" is written directly into the dosing guidance rather than treated as a soft suggestion.</p>
+    <p><b>Why no single second-line uterotonic is preferred over another:</b> methylergonovine, carboprost, and misoprostol all work toward the same end (myometrial contraction) through different receptor pathways, and head-to-head trial data hasn't established clear superiority among them. This is why the actual decision is driven by each patient's specific contraindications (hypertension ruling out methylergonovine, asthma ruling out carboprost) rather than by any presumed efficacy ranking.</p>
+    <p><b>Why tamponade is framed as an early intervention, not a last resort:</b> mechanical compression works best before the coagulopathy and vascular collapse of advanced shock have set in — placing a balloon while the patient is still physiologically stable gives it the best chance to actually control bleeding, which is exactly why the evidence shows such strong outcomes (near-zero mortality, over 80% success) specifically when it's used before shock develops rather than after exhausting every other option first.</p>
+    <p><b>Why pregnancy's physiologic reserve makes vital signs a lagging indicator here specifically:</b> the roughly 30–50% expansion in blood volume during pregnancy, combined with a young, otherwise healthy patient population, means compensatory mechanisms can maintain a normal-looking heart rate and blood pressure well into what would be a dangerous blood loss in a non-pregnant patient. This is the same physiologic principle that makes quantitative blood loss tracking more valuable than vital-sign trending as the primary escalation trigger — by the time the vitals clearly show trouble, the patient has already used up much of the reserve that was masking the problem.</p>
+  </div>
+
+  <!-- THE 4 T'S -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>The 4 T's — Cause-Directed Differential</h2></div>
+  <table class="rt">
+    <tr><th>Cause</th><th>Frequency / Notes</th></tr>
+    <tr><td><b>Tone</b> (uterine atony)</td><td>~70–80% of cases — by far the most common; treated with the uterotonic escalation and tamponade sequence above.</td></tr>
+    <tr><td><b>Trauma</b> (lacerations, hematoma, uterine rupture)</td><td>Requires direct visualization/exam and surgical repair rather than uterotonic therapy alone. See the dedicated Uterine Rupture crisis file for that specific etiology.</td></tr>
+    <tr><td><b>Tissue</b> (retained placenta/products, abnormal placentation)</td><td>Manual removal of retained tissue; placenta accreta spectrum may require surgical/interventional management planned in advance when suspected antenatally.</td></tr>
+    <tr><td><b>Thrombin</b> (coagulopathy)</td><td>Consider DIC from amniotic fluid embolism, severe preeclampsia/HELLP, or placental abruption; also consider inherited bleeding disorders or anticoagulant use — see the dedicated AFE crisis file for the DIC-driving mechanism overlap.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Labs:</b> CBC, coagulation panel with fibrinogen, type and crossmatch, and quantitative blood loss tracking throughout. Bedside ultrasound can help assess for retained products of conception or an evolving hematoma.</p>
+    <p><b>Escalation pathway:</b> interventional radiology consultation for uterine artery embolization when hemodynamically feasible; surgical team involvement early rather than as a delayed last resort, since delaying definitive surgical control while attempting to first correct coagulopathy can itself worsen outcomes in an ongoing surgical bleed.</p>
+    <p><b>Disposition:</b> high-acuity labor-and-delivery or ICU-level monitoring for any patient requiring more than first-line uterotonic therapy; continue close observation for delayed bleeding (uterotonic effect wearing off, retained tissue becoming apparent later) even after apparent initial control.</p>
+    <p><b>Debrief and documentation:</b> given how rapidly PPH can escalate and how much depends on early, coordinated response, structured post-event debrief helps both the immediate care team and institutional protocol refinement — treat this the same way any other high-stakes, relatively infrequent crisis in this series gets reviewed afterward.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>American College of Obstetricians and Gynecologists. Practice Bulletin No. 183: Postpartum Hemorrhage. <i>Obstet Gynecol.</i> 2017;130(4):e168–e186.</li>
+    <li><span class="tier">PRIMARY</span>Escobar MF, Nassar AH, Theron G, et al. FIGO Recommendations on the Management of Postpartum Hemorrhage 2022. <i>Int J Gynaecol Obstet.</i> 2022;157(Suppl 1):3–50.</li>
+    <li><span class="tier">GUIDELINE</span>Society of Obstetricians and Gynaecologists of Canada. Guideline No. 431: Postpartum Hemorrhage and Hemorrhagic Shock. <i>J Obstet Gynaecol Can.</i> 2022.</li>
+    <li><span class="tier">EVIDENCE</span>Gallos I, et al. (E-MOTIVE Trial) A Cluster-Randomized Trial of Blood-Loss Monitoring and Treatment Bundle for Postpartum Hemorrhage. <i>N Engl J Med.</i> 2023.</li>
+    <li><span class="tier">EVIDENCE</span>WOMAN Trial Collaborators. Effect of Early Tranexamic Acid Administration on Mortality, Hysterectomy, and Other Morbidities in Women with Post-Partum Haemorrhage. <i>Lancet.</i> 2017.</li>
+    <li><span class="tier">GUIDELINE</span>FIGO and ICM. Joint Statement of Recommendation for the Use of Tranexamic Acid for the Treatment of Postpartum Haemorrhage. figo.org, 2021.</li>
+    <li><span class="tier">REFERENCE</span>Postpartum Hemorrhage. <i>StatPearls,</i> NCBI Bookshelf, updated July 19, 2024.</li>
+    <li><span class="tier">REFERENCE</span>American Academy of Family Physicians. Management of Postpartum Hemorrhage: Recommendations from FIGO. <i>Am Fam Physician.</i> 2023.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

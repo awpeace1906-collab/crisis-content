@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRISIS Procedures &mdash; The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:960px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:32px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:700px;}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.alert{border-radius:8px;padding:12px 16px;margin:18px 0;}
+.alert.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;color:var(--teal);}
+.alert p{font-size:14px;color:var(--text);}
+.stats{display:flex;gap:10px;flex-wrap:wrap;padding:18px 0;border-bottom:1px solid var(--border);margin-bottom:8px;}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 18px;flex:1;min-width:150px;}
+.stat .n{font-family:'Syne',sans-serif;font-weight:800;font-size:24px;color:var(--teal);}
+.stat .l{font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.cards{display:grid;grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));gap:12px;margin-bottom:14px;}
+.card{display:block;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;text-decoration:none;color:var(--text);transition:border-color .15s, transform .15s;}
+.card:hover{border-color:var(--teal);transform:translateY(-1px);}
+.card .qn2{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);margin-bottom:4px;}
+.card .ct{font-family:'Syne',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:6px;line-height:1.3;}
+.card .cd{font-size:12.5px;color:var(--text2);line-height:1.45;}
+.badge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.3px;padding:2px 8px;border-radius:4px;margin-top:8px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.searchwrap{position:relative;margin:18px 0;}
+.searchwrap svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);pointer-events:none;}
+#search{
+  width:100%;padding:12px 14px 12px 40px;border-radius:10px;border:1px solid var(--border);
+  background:var(--surface);color:var(--text);font-family:'Source Serif 4',Georgia,serif;
+  font-size:14.5px;outline:none;transition:border-color .15s;
+}
+#search:focus{border-color:var(--teal);}
+#search::placeholder{color:var(--text3);}
+.searchcount{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);margin:-8px 0 4px 2px;}
+.card.hidden{display:none;}
+.sec-head.hidden{display:none;}
+.cards.hidden{display:none;}
+.no-results{display:none;color:var(--text2);font-style:italic;font-size:14px;padding:24px 0;text-align:center;}
+.no-results.show{display:block;}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector &middot; CRISIS</div>
+    <h1>CRISIS Procedures</h1>
+    <p class="subtitle">High Acuity, Low Occurrence &mdash; the hands-on interventional layer underneath
+    the CRISIS decision protocols. Every entry follows the same skeleton: indications,
+    contraindications, equipment, stepwise technique, complications &amp; pitfalls, pearls.</p>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn" href="#airway">Airway</a>
+    <a class="qn" href="#vascular-access-circulatory">Vascular Access / Circulatory</a>
+    <a class="qn" href="#thoracic">Thoracic</a>
+    <a class="qn" href="#hemorrhage-control">Hemorrhage Control</a>
+    <a class="qn" href="#cardiac-neuro">Cardiac / Neuro</a>
+    <a class="qn" href="#obstetric">Obstetric</a>
+    <a class="qn" href="#environmental">Environmental</a>
+    <a class="qn" href="#mass-casualty">Mass Casualty</a>
+  </div>
+</nav>
+
+<div class="page">
+
+<div class="stats">
+  <div class="stat"><div class="n">30</div><div class="l">Total procedures</div></div>
+  <div class="stat"><div class="n">8</div><div class="l">Clinical domains</div></div>
+</div>
+<div class="searchwrap">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8a9ab5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+  <input type="text" id="search" placeholder="Search procedures by name, category, or keyword&hellip;" autocomplete="off">
+</div>
+<div class="searchcount" id="search-count"></div>
+<div id="results-wrap">
+<div class="sec-head c-teal sec-group" id="airway" data-cat="Airway"><span class="sec-num">01</span><h2>Airway</h2></div>
+<div class="cards" data-cat-group="Airway">
+  <a class="card" href="./01-cricothyrotomy.html" data-search="cricothyrotomy surgical, percutaneous, and needle techniques for cico. airway">
+    <div class="ct">Cricothyrotomy</div>
+    <div class="cd">Surgical, percutaneous, and needle techniques for CICO.</div>
+  </a>
+  <a class="card" href="./02-awake-fiberoptic-intubation.html" data-search="awake fiberoptic intubation controlled airway access preserving spontaneous ventilation. airway">
+    <div class="ct">Awake Fiberoptic Intubation</div>
+    <div class="cd">Controlled airway access preserving spontaneous ventilation.</div>
+  </a>
+  <a class="card" href="./03-retrograde-intubation.html" data-search="retrograde intubation wire-guided backup when fiberoptic/video fails. airway">
+    <div class="ct">Retrograde Intubation</div>
+    <div class="cd">Wire-guided backup when fiberoptic/video fails.</div>
+  </a>
+  <a class="card" href="./04-front-of-neck-rescue-airway.html" data-search="front-of-neck rescue airway in cico the decision framework above the individual techniques. airway">
+    <div class="ct">Front-of-Neck Rescue Airway in CICO</div>
+    <div class="cd">The decision framework above the individual techniques.</div>
+  </a>
+  <a class="card" href="./05-percutaneous-tracheostomy.html" data-search="percutaneous / surgical tracheostomy definitive long-term airway, not a rescue technique. airway">
+    <div class="ct">Percutaneous / Surgical Tracheostomy</div>
+    <div class="cd">Definitive long-term airway, not a rescue technique.</div>
+  </a>
+</div>
+<div class="sec-head c-blue sec-group" id="vascular-access-circulatory" data-cat="Vascular Access / Circulatory"><span class="sec-num">02</span><h2>Vascular Access / Circulatory</h2></div>
+<div class="cards" data-cat-group="Vascular Access / Circulatory">
+  <a class="card" href="./06-intraosseous-access.html" data-search="intraosseous access proximal humerus, sternal, and tibial sites. vascular access / circulatory">
+    <div class="ct">Intraosseous Access</div>
+    <div class="cd">Proximal humerus, sternal, and tibial sites.</div>
+  </a>
+  <a class="card" href="./07-central-line-arrest.html" data-search="central line under arrest conditions femoral-first access without interrupting compressions. vascular access / circulatory">
+    <div class="ct">Central Line Under Arrest Conditions</div>
+    <div class="cd">Femoral-first access without interrupting compressions.</div>
+  </a>
+  <a class="card" href="./08-reboa.html" data-search="reboa zone 1/3 aortic occlusion for non-compressible torso hemorrhage. vascular access / circulatory">
+    <div class="ct">REBOA</div>
+    <div class="cd">Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.</div>
+  </a>
+  <a class="card" href="./09-ecmo-cannulation.html" data-search="ecmo cannulation prep &amp;amp; activation va/vv framework from activation call to first flow. vascular access / circulatory">
+    <div class="ct">ECMO Cannulation Prep &amp; Activation</div>
+    <div class="cd">VA/VV framework from activation call to first flow.</div>
+  </a>
+  <a class="card" href="./10-arterial-line-resus.html" data-search="arterial line placement during resuscitation real-time hemodynamics when non-invasive monitoring lags. vascular access / circulatory">
+    <div class="ct">Arterial Line Placement During Resuscitation</div>
+    <div class="cd">Real-time hemodynamics when non-invasive monitoring lags.</div>
+  </a>
+</div>
+<div class="sec-head c-amber sec-group" id="thoracic" data-cat="Thoracic"><span class="sec-num">03</span><h2>Thoracic</h2></div>
+<div class="cards" data-cat-group="Thoracic">
+  <a class="card" href="./11-finger-thoracostomy.html" data-search="finger thoracostomy / needle decompression immediate tension pneumothorax decompression. thoracic">
+    <div class="ct">Finger Thoracostomy / Needle Decompression</div>
+    <div class="cd">Immediate tension pneumothorax decompression.</div>
+  </a>
+  <a class="card" href="./12-resuscitative-thoracotomy.html" data-search="resuscitative thoracotomy (clamshell) last-resort direct cardiac and hilar access. thoracic">
+    <div class="ct">Resuscitative Thoracotomy (Clamshell)</div>
+    <div class="cd">Last-resort direct cardiac and hilar access.</div>
+  </a>
+  <a class="card" href="./13-pericardiocentesis.html" data-search="pericardiocentesis subxiphoid needle decompression of tamponade. thoracic">
+    <div class="ct">Pericardiocentesis</div>
+    <div class="cd">Subxiphoid needle decompression of tamponade.</div>
+  </a>
+  <a class="card" href="./14-chest-tube-thoracostomy.html" data-search="chest tube placement (tube thoracostomy) full open technique for hemo/pneumothorax. thoracic">
+    <div class="ct">Chest Tube Placement (Tube Thoracostomy)</div>
+    <div class="cd">Full open technique for hemo/pneumothorax.</div>
+  </a>
+</div>
+<div class="sec-head c-red sec-group" id="hemorrhage-control" data-cat="Hemorrhage Control"><span class="sec-num">04</span><h2>Hemorrhage Control</h2></div>
+<div class="cards" data-cat-group="Hemorrhage Control">
+  <a class="card" href="./15-junctional-tourniquet.html" data-search="junctional tourniquet application hemorrhage control at groin, axilla, pelvis. hemorrhage control">
+    <div class="ct">Junctional Tourniquet Application</div>
+    <div class="cd">Hemorrhage control at groin, axilla, pelvis.</div>
+  </a>
+  <a class="card" href="./16-pelvic-binder.html" data-search="pelvic binder placement circumferential stabilization at the greater trochanters. hemorrhage control">
+    <div class="ct">Pelvic Binder Placement</div>
+    <div class="cd">Circumferential stabilization at the greater trochanters.</div>
+  </a>
+  <a class="card" href="./17-wound-packing.html" data-search="wound packing with hemostatic agents direct pressure taken into the wound cavity itself. hemorrhage control">
+    <div class="ct">Wound Packing with Hemostatic Agents</div>
+    <div class="cd">Direct pressure taken into the wound cavity itself.</div>
+  </a>
+  <a class="card" href="./18-massive-transfusion-protocol.html" data-search="massive transfusion protocol activation ratio-based transfusion sequencing and logistics. hemorrhage control">
+    <div class="ct">Massive Transfusion Protocol Activation</div>
+    <div class="cd">Ratio-based transfusion sequencing and logistics.</div>
+  </a>
+</div>
+<div class="sec-head c-purple sec-group" id="cardiac-neuro" data-cat="Cardiac / Neuro"><span class="sec-num">05</span><h2>Cardiac / Neuro</h2></div>
+<div class="cards" data-cat-group="Cardiac / Neuro">
+  <a class="card" href="./19-pacing-transcutaneous-transvenous.html" data-search="transcutaneous &amp;amp; transvenous pacing bridging unstable bradycardia to a definitive rhythm. cardiac / neuro">
+    <div class="ct">Transcutaneous &amp; Transvenous Pacing</div>
+    <div class="cd">Bridging unstable bradycardia to a definitive rhythm.</div>
+  </a>
+  <a class="card" href="./20-cardioversion-defibrillation.html" data-search="synchronized cardioversion vs. defibrillation timing the shock relative to the qrs &amp;mdash; and why it matters. cardiac / neuro">
+    <div class="ct">Synchronized Cardioversion vs. Defibrillation</div>
+    <div class="cd">Timing the shock relative to the QRS &mdash; and why it matters.</div>
+  </a>
+  <a class="card" href="./21-ttm-initiation.html" data-search="targeted temperature management initiation post-rosc neuroprotection protocol. cardiac / neuro">
+    <div class="ct">Targeted Temperature Management Initiation</div>
+    <div class="cd">Post-ROSC neuroprotection protocol.</div>
+  </a>
+  <a class="card" href="./22-lateral-canthotomy.html" data-search="lateral canthotomy vision-saving orbital compartment decompression. cardiac / neuro">
+    <div class="ct">Lateral Canthotomy</div>
+    <div class="cd">Vision-saving orbital compartment decompression.</div>
+  </a>
+</div>
+<div class="sec-head c-blue sec-group" id="obstetric" data-cat="Obstetric"><span class="sec-num">06</span><h2>Obstetric</h2></div>
+<div class="cards" data-cat-group="Obstetric">
+  <a class="card" href="./23-perimortem-cesarean-resuscitative-hysterotomy.html" data-search="perimortem cesarean / resuscitative hysterotomy the 4-minute rule &amp;mdash; maternal resuscitation first. obstetric">
+    <div class="ct">Perimortem Cesarean / Resuscitative Hysterotomy</div>
+    <div class="cd">The 4-minute rule &mdash; maternal resuscitation first.</div>
+  </a>
+  <a class="card" href="./24-manual-uterine-massage-bimanual-compression.html" data-search="manual uterine massage &amp;amp; bimanual compression first-line mechanical management of uterine atony. obstetric">
+    <div class="ct">Manual Uterine Massage &amp; Bimanual Compression</div>
+    <div class="cd">First-line mechanical management of uterine atony.</div>
+  </a>
+  <a class="card" href="./25-symphysiotomy-shoulder-dystocia.html" data-search="symphysiotomy &amp;amp; shoulder dystocia maneuvers the escalation ladder, ending in a rare last resort. obstetric">
+    <div class="ct">Symphysiotomy &amp; Shoulder Dystocia Maneuvers</div>
+    <div class="cd">The escalation ladder, ending in a rare last resort.</div>
+  </a>
+</div>
+<div class="sec-head c-amber sec-group" id="environmental" data-cat="Environmental"><span class="sec-num">07</span><h2>Environmental</h2></div>
+<div class="cards" data-cat-group="Environmental">
+  <a class="card" href="./26-hyperbaric-o2-dcs-age.html" data-search="hyperbaric oxygen coordination &amp;amp; prep dcs/age &amp;mdash; 100% oxygen first, altitude avoided. environmental">
+    <div class="ct">Hyperbaric Oxygen Coordination &amp; Prep</div>
+    <div class="cd">DCS/AGE &mdash; 100% oxygen first, altitude avoided.</div>
+  </a>
+  <a class="card" href="./27-active-internal-rewarming.html" data-search="active internal rewarming (ecmo/cpb crossover) core rewarming for hypothermic cardiac instability. environmental">
+    <div class="ct">Active Internal Rewarming (ECMO/CPB Crossover)</div>
+    <div class="cd">Core rewarming for hypothermic cardiac instability.</div>
+  </a>
+  <a class="card" href="./28-escharotomy.html" data-search="escharotomy releasing constricting burn eschar from limb or chest. environmental">
+    <div class="ct">Escharotomy</div>
+    <div class="cd">Releasing constricting burn eschar from limb or chest.</div>
+  </a>
+</div>
+<div class="sec-head c-red sec-group" id="mass-casualty" data-cat="Mass Casualty"><span class="sec-num">08</span><h2>Mass Casualty</h2></div>
+<div class="cards" data-cat-group="Mass Casualty">
+  <a class="card" href="./29-mci-triage-start-salt.html" data-search="mci triage &amp;mdash; start / salt execution the initial sort when casualties outstrip resources. mass casualty">
+    <div class="ct">MCI Triage &mdash; START / SALT Execution</div>
+    <div class="cd">The initial sort when casualties outstrip resources.</div>
+  </a>
+  <a class="card" href="./30-field-amputation.html" data-search="field amputation rare last-resort extrication technique. mass casualty">
+    <div class="ct">Field Amputation</div>
+    <div class="cd">Rare last-resort extrication technique.</div>
+  </a>
+</div>
+<div class="no-results" id="no-results">No procedures match that search.</div>
+</div>
+
+<div class="footer">
+  Built for rapid recall under pressure, not as a substitute for institutional protocol or
+  real-time specialist consultation during a live event. Verify technique and equipment
+  against your own institution's protocol before clinical use.
+</div>
+</div>
+
+<script>
+(function(){
+  var input = document.getElementById('search');
+  var countEl = document.getElementById('search-count');
+  var noResults = document.getElementById('no-results');
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.cards'));
+  var secHeads = Array.prototype.slice.call(document.querySelectorAll('.sec-group'));
+
+  function filter(){
+    var q = input.value.trim().toLowerCase();
+    var totalShown = 0;
+
+    groups.forEach(function(group){
+      var cards = Array.prototype.slice.call(group.querySelectorAll('.card'));
+      var shownInGroup = 0;
+      cards.forEach(function(card){
+        var match = !q || card.getAttribute('data-search').indexOf(q) !== -1;
+        card.classList.toggle('hidden', !match);
+        if (match) { shownInGroup++; totalShown++; }
+      });
+      var cat = group.getAttribute('data-cat-group');
+      var head = secHeads.filter(function(h){ return h.getAttribute('data-cat') === cat; })[0];
+      var groupEmpty = shownInGroup === 0;
+      group.classList.toggle('hidden', groupEmpty);
+      if (head) head.classList.toggle('hidden', groupEmpty);
+    });
+
+    noResults.classList.toggle('show', totalShown === 0);
+    countEl.textContent = q ? (totalShown + ' of 30 procedures match') : '';
+  }
+
+  input.addEventListener('input', filter);
+})();
+</script>
+
+</body>
+</html>

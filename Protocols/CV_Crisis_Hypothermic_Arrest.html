@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Severe / Hypothermic Cardiac Arrest — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{position:static !important;background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Environmental / Prehospital</div>
+    <h1>Severe / Hypothermic Cardiac Arrest</h1>
+    <p class="subtitle">"Not dead until warm and dead" is real physiology, not a saying — and a validated survival-probability score outperforms bedside judgment for the hardest decision in this file: when to stop.</p>
+    <div class="badges">
+      <span class="badge red">ENVIRONMENTAL RESUSCITATION EMERGENCY</span>
+      <span class="badge teal">ERC 2025 / ELSO 2025-ALIGNED</span>
+      <span class="badge amber">PRIMARY VS. SECONDARY HYPOTHERMIA CHANGES EVERYTHING</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Staging — Swiss System</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials &amp; Complicating Conditions</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Standard ACLS pharmacology gets deliberately modified below 30°C — the drugs aren't wrong, they're just held until the body can actually metabolize them.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Handle gently — avoid triggering rescue collapse</div><div class="step-desc">A severely hypothermic myocardium is electrically unstable and can be provoked into VF by rough handling, sudden postural change, or a catecholamine surge during extraction/rescue. Move horizontally, minimize jostling, and avoid abrupt movement even in an apparently stable patient.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Begin high-quality CPR immediately, prolonged if needed</div><div class="step-desc">Mechanical compression devices are preferred, especially for extended transport. Intermittent or delayed CPR is an acceptable compromise specifically in difficult rescue settings (avalanche, technical terrain) when continuous CPR truly isn't feasible — not a routine substitute for continuous compressions.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Defibrillation — attempt once, then hold further shocks below 30°C</div><div class="step-desc">Reasonable to attempt defibrillation at any temperature for a shockable rhythm — there's no known harm in trying. But success is unlikely below 30°C given the hypothermic myocardium's altered electrophysiology; delay further shock attempts until core temperature exceeds 30°C rather than repeating shocks that aren't going to work.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Hold or space standard ACLS drugs below 30°C</div><div class="step-desc">Give epinephrine <span class="d">1 mg IV</span> once core temperature reaches 30°C, unless imminent ECPR is planned. Between 30–35°C, extend the dosing interval to <span class="d">6–10 minutes</span> (roughly double the normal interval). A 300 mg amiodarone load is reasonable if a shockable rhythm is present, but delay further doses until &gt;30°C.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Assess for ECPR/VA-ECMO candidacy immediately, in parallel with CPR</div><div class="step-desc">There is no absolute contraindication to ECLS rewarming for core temperature &lt;30°C. Between 30–32°C, or when the HOPE score estimates survival probability &lt;10%, ECLS may still be considered but only on an exceptional basis. An unwitnessed arrest with asystole as the presenting rhythm is <b>not</b>, by itself, a contraindication to ECLS rewarming.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Transport directly to an ECMO-capable center</div><div class="step-desc">Even if it means bypassing a closer non-ECMO hospital, as long as travel time is reasonable (commonly cited threshold ~6 hours). Beyond that window, initiate conventional (non-extracorporeal) rewarming instead rather than pursuing a transport that will take too long to matter.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">If securing an advanced airway, use a non-depolarizing paralytic</div><div class="step-desc">Avoid succinylcholine specifically to prevent an additional, avoidable rise in serum potassium on top of whatever the hypothermic insult itself has already produced.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Once on ECMO, rewarm at a deliberate, not maximal, rate</div><div class="step-desc">The circuit can technically warm at 7–10°C/hour, but some evidence favors a slower rate (closer to 2°C/hour) for better neurologic outcomes — see Rationale for the genuine, unresolved tension here.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Warmed fluids only — always</div><p>Room-temperature IV fluids actively worsen hypothermia. Use warmed isotonic crystalloid (38–42°C) through a rapid infuser, anticipating significant hypotension as rewarming-associated vasodilation and fluid shifts develop — often requiring large volumes.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Accidental hypothermia is an unintentional drop in core body temperature below 35°C. It causes progressive cardiovascular instability, myocardial irritability, and — at severe degrees — cardiac arrest. Critically, hypothermia developing <i>before</i> the arrest (primary hypothermia) suppresses cerebral metabolic demand ahead of any oxygen deprivation, providing genuine neuroprotection that allows for prolonged resuscitation with real potential for good neurologic outcome — the physiologic basis for "not dead until warm and dead."</p>
+    <p>This is fundamentally different from secondary hypothermia, where cardiac arrest or severe injury occurs first (trauma, drowning-related asphyxia before cooling, or another primary arrest cause) and hypothermia develops afterward as a consequence. In secondary hypothermia, the brain has already sustained a normothermic-duration ischemic insult before any protective cooling took effect — this population does not share the same favorable prognosis, and distinguishing the two is one of the most consequential early judgment calls in this entire crisis.</p>
+  </div>
+
+  <!-- 03 STAGING -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Staging — Swiss System (In Place of "Signs and Symptoms")</h2></div>
+  <table class="rt">
+    <tr><th>Stage</th><th>Core Temp</th><th>Clinical Findings</th></tr>
+    <tr><td>I — Mild</td><td>35–32°C</td><td>Conscious, shivering</td></tr>
+    <tr><td>II — Moderate</td><td>32–28°C</td><td>Impaired consciousness, no shivering</td></tr>
+    <tr><td>III — Severe</td><td>&lt;28°C</td><td>Unconscious, vital signs present</td></tr>
+    <tr><td>IV — No vital signs</td><td>Variable</td><td>Cardiac arrest or unmeasurable vital signs — clinical staging emphasizes presence/absence of vital signs over an exact temperature threshold, since field temperature measurement is often imprecise</td></tr>
+    <tr><td>V — Death from irreversible hypothermia</td><td>—</td><td>A retrospective, pathological determination — not something made prospectively in the field or ED</td></tr>
+  </table>
+  <div class="xref"><b>Fixed dilated pupils, apparent rigor mortis, and dependent lividity do not, by themselves, constitute contraindications to resuscitation</b> in a severely hypothermic patient — these findings can occur in profound hypothermia without indicating true, irreversible death.</div>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Measure core temperature with the right device for the situation:</b> esophageal probe (lower third) is most accurate once the airway is secured; an epitympanic (ear) thermometer with an isolating ear cap is the recommended field alternative when the airway isn't yet secured.</li>
+      <li><b>Prevent further heat loss actively during rescue and transport</b> — insulation, vapor barrier, warm environment where possible — rather than treating rewarming as something that only starts on arrival.</li>
+      <li><b>Pre-identify a regional ECMO-capable receiving center and build direct-transport protocols</b> — bypassing a closer non-ECMO hospital is a system-level decision that needs to be made and rehearsed in advance, not improvised mid-transport.</li>
+      <li><b>Have a mechanical CPR device available</b> for any anticipated prolonged transport, given how much longer hypothermic-arrest resuscitation efforts may need to run compared to normothermic arrest.</li>
+      <li><b>Calculate the HOPE score</b> where feasible to formally estimate survival probability and support the ECLS decision, rather than relying purely on bedside gestalt (see Rationale for why this specifically matters).</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Accidental hypothermia definition</td><td>Core temperature &lt;35°C, unintentional</td></tr>
+    <tr><td>Defibrillation success threshold</td><td>Unlikely below 30°C; hold further shocks until &gt;30°C</td></tr>
+    <tr><td>Epinephrine timing/interval</td><td>Give first dose at 30°C (unless imminent ECPR); interval 6–10 min between 30–35°C</td></tr>
+    <tr><td>Amiodarone</td><td>300 mg load for shockable rhythm; delay further doses until &gt;30°C</td></tr>
+    <tr><td>K⁺ level indicating cessation, even in hypothermia</td><td>&gt;12 mEq/L (interpret cautiously — hemolysis can falsely elevate)</td></tr>
+    <tr><td>ECLS rewarming — no absolute contraindication</td><td>Core temp &lt;30°C</td></tr>
+    <tr><td>ECLS rewarming — exceptional basis only</td><td>Core temp 30–32°C, or HOPE score-estimated survival &lt;10%</td></tr>
+    <tr><td>Transport time threshold favoring conventional (non-ECLS) rewarming</td><td>&gt;6 hours to reach an ECPR center</td></tr>
+    <tr><td>ECMO rewarming rate (maximum)</td><td>7–10°C/hour</td></tr>
+    <tr><td>Rewarming rate potentially favoring neurologic outcome</td><td>~2°C/hour — genuinely debated, not settled</td></tr>
+    <tr><td>Neurologically intact survival after mechanical CPR before ECPR (hypothermic arrest)</td><td>Documented after &gt;3 hours — far beyond normothermic-arrest tolerance</td></tr>
+    <tr><td>ECMO-treated survival across demographics</td><td>~40–50% overall; ~70% witnessed arrest vs. ~30% unwitnessed; systematic review range 20.3–67.6%</td></tr>
+    <tr><td>Neurologic outcome in ECMO survivors</td><td>~80–90% with normal neurologic function</td></tr>
+    <tr><td>Real-world guideline adherence for stop-resuscitation decisions (retrospective study)</td><td>Only ~33% compliant with international criteria; HOPE-score application would have supported ~68%</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Hypothermic Arrest Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why "not dead until warm and dead" reflects real physiology:</b> hypothermia suppresses cerebral metabolic rate substantially with each degree of core temperature drop — meaning the brain can tolerate a much longer period of reduced or absent perfusion without the degree of injury that the same duration would cause at normal temperature. This is the entire physiologic basis for prolonged resuscitation efforts and the genuinely excellent neurologic outcomes reported even after multiple hours of CPR in this population specifically.</p>
+    <p><b>Why the primary-vs-secondary hypothermia distinction is the single most important early judgment call:</b> in primary hypothermia, cooling occurs before any hypoxic insult, meaning the neuroprotective mechanism is already in place before the brain is ever deprived of oxygen. In secondary hypothermia, the arrest or injury happened first at normal temperature — the brain has already sustained ischemic injury on a normothermic timeline before cooling developed afterward as a consequence, not a protection. This is why the same "keep resuscitating for hours" approach that's appropriate for primary hypothermia doesn't carry the same favorable prognosis in secondary hypothermia, and why making this distinction early genuinely changes the entire trajectory of the resuscitation.</p>
+    <p><b>Why drugs are held or spaced below 30°C:</b> hepatic and renal drug metabolism slow substantially as core temperature drops, meaning standard-interval dosing (epinephrine every 3–5 minutes, as in normothermic ACLS) risks progressive drug accumulation that becomes toxic once the patient eventually rewarms and normal clearance resumes. Extending the interval and limiting total doses until a temperature threshold is crossed avoids stacking a large, delayed-release drug burden onto a patient who is about to regain the metabolic capacity to be affected by all of it at once.</p>
+    <p><b>Why ECMO is preferred specifically over cardiopulmonary bypass and over conventional rewarming:</b> a patient in hypothermic arrest needs circulatory support, oxygenation, and rewarming simultaneously — ECMO provides all three through a single modality, while conventional methods address rewarming without solving the underlying perfusion failure, and CPB requires more anticoagulation and is less readily sustainable over the hours a hypothermic-arrest resuscitation may require.</p>
+    <p><b>Why the rewarming-rate question remains genuinely unresolved:</b> ECMO can technically rewarm as fast as 7–10°C/hour, but some evidence suggests a slower rate (closer to 2°C/hour) may produce better neurologic outcomes — plausibly because very rapid rewarming creates a mismatch between quickly rising metabolic demand and still-recovering circulatory/oxygen-delivery capacity, alongside hemodynamic instability from rapid vasodilation. Current practice hasn't fully resolved this tension, which is why a team might reasonably choose a more conservative rewarming rate even when the circuit is technically capable of going faster — this is an honest area of ongoing clinical judgment, not a settled protocol.</p>
+    <p><b>Why the documented gap between guideline criteria and real-world stop-resuscitation decisions matters:</b> a retrospective multi-center study found only about a third of decisions not to pursue ECLS rewarming were actually compliant with international guideline criteria when checked against admission serum potassium — while applying the validated HOPE score's probability threshold would have supported roughly two-thirds of those same decisions. This suggests a structured, validated tool outperforms ad hoc bedside judgment specifically for this consequential, hard-to-reverse decision — a parallel to the documented gap between guideline-target and real-world epinephrine timing described in the NRP crisis file, and a reminder that even well-intentioned clinical judgment benefits from a formal decision aid in exactly the highest-stakes moments.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differentials &amp; Complicating Conditions</h2></div>
+  <table class="rt">
+    <tr><th>Consideration</th><th>Key distinguishing features</th></tr>
+    <tr><td>Secondary hypothermia from trauma or another primary arrest cause</td><td>The most clinically important distinction to make — see Rationale above; changes prognosis and the appropriateness of prolonged resuscitation/ECLS pursuit substantially.</td></tr>
+    <tr><td>Myxedema coma</td><td>Severe hypothyroidism can independently cause profound hypothermia with altered mental status; check TSH/free T4 if the picture seems disproportionate to a plausible cold-exposure history — treated with levothyroxine, a completely different intervention.</td></tr>
+    <tr><td>Sepsis</td><td>Can rarely present with hypothermia rather than fever, especially in elderly or immunocompromised patients — a different underlying etiology requiring antimicrobial therapy rather than rewarming alone.</td></tr>
+    <tr><td>Alcohol or sedative intoxication</td><td>A common contributing factor in urban/exposure-related hypothermia — impairs shivering thermogenesis and judgment about seeking shelter; doesn't change acute management but is relevant to disposition and harm-reduction planning.</td></tr>
+    <tr><td>Hypoglycemia</td><td>Can accompany or mimic a hypothermic presentation — check glucose as part of the standard altered-mental-status workup regardless of exposure history.</td></tr>
+    <tr><td>Adrenal insufficiency</td><td>Can contribute to hemodynamic instability disproportionate to the degree of hypothermia alone — consider in a refractory or unusually unstable presentation.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Labs on arrival:</b> serum potassium (interpret with caution given hemolysis risk on a difficult draw), ABG, glucose, coagulation panel — hypothermia itself impairs coagulation, which is directly relevant to anticoagulation decisions once on ECMO (some protocols minimize or omit anticoagulation initially given this baseline impairment).</p>
+    <p><b>HOPE score calculation</b> to formally estimate survival probability and support the ECLS decision, particularly in the 30–32°C exceptional-basis range described above.</p>
+    <p><b>Continue rewarming in-hospital</b> to normothermia even after ROSC, with close monitoring for reperfusion complications — arrhythmia, coagulopathy, and rewarming-associated hypotension from vasodilation, often requiring substantial warmed fluid volumes.</p>
+    <p><b>Disposition:</b> ICU admission is standard for any patient requiring active rewarming beyond mild cases; ECMO-treated patients need cardiothoracic/critical care co-management through decannulation.</p>
+    <p><b>Address the underlying and any secondary contributing cause once stable</b> — toxicology screening, trauma workup, or endocrine evaluation as clinically indicated, rather than treating rewarming alone as the complete course of care.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>European Resuscitation Council Guidelines 2025: Special Circumstances in Resuscitation. <i>Resuscitation.</i> October 1, 2025.</li>
+    <li><span class="tier">PRIMARY</span>ELSO 2025 Narrative Guideline on the Use of ECMO for Accidental Hypothermia. <i>ASAIO J.</i> 2025;71(11).</li>
+    <li><span class="tier">GUIDELINE</span>Resuscitation Council UK. Special Circumstances Guidelines (2025 cycle). resus.org.uk.</li>
+    <li><span class="tier">EVIDENCE</span>Paal P, Pasquier M, Darocha T, et al. Accidental Hypothermia: 2021 Update. <i>Int J Environ Res Public Health.</i> 2022;19(1):501.</li>
+    <li><span class="tier">EVIDENCE</span>Hall N, et al. Hypothermic Cardiac Arrest Patients Admitted to Hospital Who Were Not Rewarmed with Extracorporeal Life Support: A Retrospective Study. <i>Resusc Plus.</i> 2023;15:100443.</li>
+    <li><span class="tier">REFERENCE</span>Hymczak H, et al. The Role of Extracorporeal Membrane Oxygenation (ECMO) in Accidental Hypothermia and Rewarming in Out-of-Hospital Cardiac Arrest Patients — A Literature Review. <i>J Clin Med.</i> 2023;12(21):6730.</li>
+    <li><span class="tier">REFERENCE</span>Extracorporeal Life Support in Severe Accidental Hypothermia: Mechanisms, Challenges and Clinical Horizons. <i>J Clin Med.</i> 2026.</li>
+    <li><span class="tier">REFERENCE</span>EMCrit Project IBCC. "Hypothermia." emcrit.org, updated September 2025.</li>
+    <li><span class="tier">REFERENCE</span>emDocs. Hypothermic Cardiac Arrest: Pearls and Pitfalls. emdocs.net, 2024.</li>
+    <li><span class="tier">REFERENCE</span>Extracorporeal Cardiopulmonary Resuscitation in Adults: Interim Guideline Consensus Statement from ELSO. <i>ASAIO J.</i></li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and thresholds against your own institutional/EMS protocol before clinical use.</div>
+
+</div>
+</body>
+</html>

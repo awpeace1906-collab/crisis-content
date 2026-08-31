@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crush Syndrome — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{position:static !important;background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Environmental / Prehospital</div>
+    <h1>Crush Syndrome</h1>
+    <p class="subtitle">The crushing itself isn't what kills — it's what happens systemically the moment the crushing force is released. Standard TCCC permissive hypotension does not apply here, and that exception is easy to miss under pressure.</p>
+    <div class="badges">
+      <span class="badge red">PREHOSPITAL / REPERFUSION EMERGENCY</span>
+      <span class="badge teal">JOINT TRAUMA SYSTEM / TCCC-ALIGNED</span>
+      <span class="badge amber">FLUID BEFORE EXTRICATION, NOT AFTER</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — The Hidden Collapse</a>
+    <a class="qn" href="#prevention">Set-Up / Tourniquet Doctrine</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management — MARCH First, Then the Crush-Specific Cascade</h2></div>
+  <div class="tagline">The casualty has to survive the primary survey before crush syndrome itself becomes the problem. Fluid resuscitation belongs before and during extrication, not after.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">MARCH — trauma primary survey, in this exact order</div><div class="step-desc"><b>M</b>assive hemorrhage control (direct pressure, packing, tourniquets) before airway — over 90% of potentially survivable combat deaths involve hemorrhage. <b>A</b>irway. <b>R</b>espiration (tension pneumothorax, open chest wounds). <b>C</b>irculation (shock recognition, IV/IO access, blood products/fluids, TXA per protocol). <b>H</b>ypothermia/Head injury (active warming, TBI assessment) — hypothermia, acidosis, and coagulopathy form the lethal triad.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Begin fluid resuscitation before and during extrication — don't wait for release</div><div class="step-desc">Isotonic saline <span class="d">1–2 L/hour</span> during extrication is the single most important field intervention. Avoid potassium-containing fluids (lactated Ringer's) given the hyperkalemia already accumulating behind the compressed tissue.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">3</div><div class="step-body"><div class="step-title">Standard TCCC permissive hypotension does NOT apply here</div><div class="step-desc">This is a genuine, important exception to typical damage-control-resuscitation teaching — see Rationale. Crush injury requiring extrication needs earlier, more aggressive fluid than the hypotensive-resuscitation approach used for straightforward hemorrhagic shock.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">4</div><div class="step-body"><div class="step-title">Entrapment &gt;2 hours with no fluid/monitoring available — consider proximal tourniquet before extrication</div><div class="step-desc">Two tourniquets side by side, placed proximal to the injury immediately before release, if fluid resuscitation and cardiac monitoring genuinely aren't available. If not feasible before extrication, apply immediately after. This is a doctrine specifically about timing, not a routine step for every entrapment — see Set-Up below.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">5</div><div class="step-body"><div class="step-title">ECG monitoring from the moment of extrication</div><div class="step-desc">Capture serial 12-leads and continuous rhythm monitoring — peaked T waves are the earliest hyperkalemia sign, progressing toward a sine-wave pattern at severe elevation (commonly cited above ~9 mmol/L). Any ECG evidence of hyperkalemia warrants immediate treatment, not a wait for a lab-confirmed level.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">Treat ECG-evident hyperkalemia immediately</div><div class="step-desc">Calcium chloride 10% <span class="d">5 mL</span> or calcium gluconate 10% <span class="d">10 mL</span> IV over 2 minutes for cardiac membrane stabilization — this doesn't lower potassium, it protects the heart while other measures work (see Rationale for why this drug is given even when hypocalcemia, not hyperkalemia, might be the primary derangement). Then shift potassium intracellularly: regular insulin <span class="d">5–10 units</span> with D50 <span class="d">1–2 amps</span> IV, and/or nebulized albuterol. Sodium bicarbonate <span class="d">1 mEq/kg</span> slow IV push helps shift potassium and treat concurrent acidosis.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-title">Continue aggressive fluid resuscitation once extricated</div><div class="step-desc">Target urine output <span class="d">200–300 mL/hour</span> (or roughly 2.5 mL/kg/hr) with isotonic saline, monitoring closely for fluid overload in patients with cardiac comorbidity. Delaying fluid resuscitation beyond 12 hours is associated with renal failure incidence approaching 100% — this is not an intervention that can wait for a calmer moment.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">8</div><div class="step-body"><div class="step-title">Mannitol and bicarbonate for renal protection — know the evidence is genuinely mixed</div><div class="step-desc">Multiple comparative studies have failed to show a consistent benefit over saline alone for preventing acute kidney injury, dialysis, or mortality. Reasonable under specialist/nephrology guidance in select cases, but current best evidence doesn't support routine, protocolized use — don't treat this as a mandatory step.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">Decompression without preparation can convert a stable patient into cardiac arrest in minutes</div><p>A trapped limb sequesters enormous volume and toxic metabolic load behind the crush before extrication ever happens. The patient can look reasonably stable while entrapped and then crash within minutes of release — think about the moment of extrication itself as a distinct, high-risk event, not just the moment of original injury.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Crush syndrome was first described by Bywaters in patients trapped under rubble during the 1941 Blitz bombing of London. It is fundamentally a reperfusion injury: the danger isn't the crush itself, but what happens systemically the moment the crushing force is released and ischemic muscle reperfuses. It can develop after as little as one hour of entrapment with a large muscle mass involved.</p>
+    <p>The insult is biphasic. In <b>Phase 1 (ischemia)</b>, sustained compression collapses capillary flow — myocytes shift to anaerobic metabolism, ATP depletes, and the sarcolemmal membrane begins to fail, with calcium and sodium accumulating intracellularly while potassium, myoglobin, creatine kinase, phosphate, and uric acid build up behind a still-intact barrier. In <b>Phase 2 (reperfusion)</b>, releasing the crushing force restores flow and sweeps the entire toxic load into systemic circulation at once — leukocytes migrate into damaged muscle, generating cytokines, prostaglandins, and free radicals that cause further myolysis on top of the original injury.</p>
+  </div>
+
+  <!-- 03 SIGNS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — The Hidden Hemodynamic Collapse</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Third-spacing</td><td>Up to several liters can sequester into a single severely crushed extremity — injured muscle takes up fluid like a sponge, and this volume was never actually available to the central circulation while entrapped.</td></tr>
+    <tr><td>Deceptively stable pre-extrication picture</td><td>Compensated hypovolemia can mask the true deficit while the patient is still entrapped — this is the single most dangerous feature of the whole syndrome for a first-arriving provider.</td></tr>
+    <tr><td>Sudden combined distributive + hypovolemic collapse on release</td><td>Reperfusion unmasks the hidden hypovolemia while simultaneously releasing vasodilatory and toxic mediators — the deficit and the vasodilation hit at the same moment.</td></tr>
+    <tr><td>Cardiotoxicity / arrhythmia</td><td>Hyperkalemia-induced arrhythmia is the second most common cause of death immediately after extrication or reperfusion, after hemorrhage.</td></tr>
+    <tr><td>Peaked T waves → sine wave pattern</td><td>The ECG progression of worsening hyperkalemia; sine-wave morphology reflects severe, immediately life-threatening elevation.</td></tr>
+    <tr><td>Myalgia, weakness, tea-colored urine</td><td>The classic rhabdomyolysis triad — present in only a minority of patients, so its absence doesn't rule out significant muscle injury.</td></tr>
+  </table>
+
+  <!-- 04 SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Set-Up &amp; Tourniquet/Chemical Isolation Doctrine (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Entrapment under 2 hours:</b> extricate and resuscitate per standard crush protocol — early fluid resuscitation before and during extrication is the priority intervention, not tourniquet placement.</li>
+      <li><b>Entrapment over 2 hours, fluid resuscitation/monitoring not immediately available:</b> consider tourniquet placement proximal to the injury before extrication — two tourniquets side by side is the preferred technique; apply immediately after extrication if placement before isn't feasible. This recommendation is specifically about reperfusion timing changing the clinical calculus, not a default step for every entrapment.</li>
+      <li><b>Tourniquet placement before extrication remains genuinely controversial</b> — some international disaster-response guidance (Renal Disaster Relief Task Force, International Search and Rescue Advisory Group) recommends reserving tourniquet use for life-threatening hemorrhage only, rather than routine crush-syndrome prevention. Know that reasonable guidance bodies disagree here.</li>
+      <li><b>Establish telemedicine/specialist consultation as early as possible</b> — management of crush syndrome in an austere or prolonged-field-care setting is genuinely complex, and Joint Trauma System guidance specifically recommends early consult rather than managing this in isolation.</li>
+      <li><b>MARCH PAWS extension for prolonged field care</b> — adds Pain, Antibiotics, Wounds, and Splinting; a 2017 performance-improvement review of US Air Force pararescue found it functioned effectively as a treatment checklist across a full deployment cycle.</li>
+      <li><b>Have calcium, insulin/D50, and sodium bicarbonate immediately accessible</b> wherever entrapped patients are likely to be managed — the hyperkalemia cascade can move fast enough that these shouldn't need to be located reactively.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Minimum entrapment time for syndrome to develop</td><td>~1 hour, with large muscle mass involved</td></tr>
+    <tr><td>Combat deaths involving hemorrhage</td><td>&gt;90% of potentially survivable battlefield deaths</td></tr>
+    <tr><td>Tourniquet-before-extrication threshold</td><td>Entrapment &gt;2 hours without fluid resuscitation/monitoring available</td></tr>
+    <tr><td>Fluid rate during extrication</td><td>Isotonic saline 1–2 L/hour</td></tr>
+    <tr><td>Target urine output post-extrication</td><td>200–300 mL/hr (~2.5 mL/kg/hr)</td></tr>
+    <tr><td>Renal failure risk with fluid delay</td><td>Up to 50% increased incidence; approaching 100% if delayed &gt;12 hours</td></tr>
+    <tr><td>Calcium chloride 10%</td><td>5 mL IV over 2 minutes</td></tr>
+    <tr><td>Calcium gluconate 10%</td><td>10 mL IV over 2 minutes</td></tr>
+    <tr><td>Regular insulin + D50</td><td>5–10 units insulin with 1–2 amps D50 IV</td></tr>
+    <tr><td>Sodium bicarbonate</td><td>1 mEq/kg slow IV push</td></tr>
+    <tr><td>Sine-wave-pattern potassium level</td><td>Commonly cited &gt;9 mmol/L — life-threatening</td></tr>
+    <tr><td>Crush syndrome incidence among earthquake survivors</td><td>2–15%</td></tr>
+    <tr><td>Crush syndrome patients developing acute renal failure</td><td>~50%</td></tr>
+    <tr><td>Renal-failure-associated mortality</td><td>20–40%</td></tr>
+    <tr><td>Fasciotomy requirement</td><td>&gt;50% of severe crush syndrome cases</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Crush Syndrome Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why standard TCCC permissive hypotension does NOT apply to extremity crush injury requiring extrication:</b> hypotensive resuscitation in typical hemorrhagic shock accepts a lower blood pressure target to avoid disrupting clot formation at an active bleeding site. Crush injury is a fundamentally different physiologic problem — the danger isn't ongoing external hemorrhage but a hidden, massive volume deficit sequestered in the crushed tissue, about to be combined with a toxic metabolic load and vasodilatory mediators the instant the crush is released. Permissive hypotension in this specific setting doesn't protect a clot; it just leaves the patient under-resuscitated for the deficit that reperfusion is about to unmask all at once. This is exactly why Joint Trauma System guidance explicitly states the principles of hypotensive resuscitation according to TCCC do not apply in the setting of extremity crush injury requiring extrication.</p>
+    <p><b>Why the patient can look stable while entrapped and then crash within minutes of release:</b> third-spaced fluid sequestered in the crushed compartment was never part of the effective circulating volume, even though it's technically still "in the body" — compensatory mechanisms can maintain acceptable vital signs against this hidden deficit right up until the crush is released. Reperfusion does two things simultaneously: it unmasks the true hypovolemic deficit (since compressed capillaries can no longer hide it) and releases vasodilatory/toxic mediators that further drop vascular resistance — a combined hypovolemic-and-distributive collapse landing at the same moment, which is why field providers are told to think about the moment of extrication itself as a distinct, high-risk event.</p>
+    <p><b>Why calcium is given even when hypocalcemia (not hyperkalemia) might technically be the more prominent derangement:</b> injured muscle actively takes up calcium, which can produce genuine hypocalcemia in crush syndrome. But the calcium given acutely for ECG-evident hyperkalemia isn't primarily correcting that hypocalcemia — it's stabilizing the cardiac cell membrane against the arrhythmogenic effect of elevated extracellular potassium. This is why current guidance (e.g., AMBOSS) recommends a cautious, situational approach to calcium replacement generally, while still recommending calcium specifically and promptly for symptomatic hyperkalemia — two different indications for the same drug, aimed at two different problems.</p>
+    <p><b>Why mannitol and bicarbonate for renal protection remain controversial despite intuitive appeal:</b> the theoretical rationale (forced diuresis and urinary alkalinization to reduce myoglobin/uric acid deposition in renal tubules) is mechanistically plausible and supported by some animal data — but repeated human comparative studies (several summarized directly against saline-alone controls) have failed to show a consistent, reproducible benefit for preventing acute kidney injury, need for dialysis, or mortality. This is a genuine area where intuitive pathophysiology and clinical trial evidence haven't lined up, which is why current best evidence treats these as situational/specialist-guided adjuncts rather than routine, protocolized therapy.</p>
+    <p><b>Why fluid delay carries such a steep, almost binary-sounding renal failure risk:</b> the relationship between resuscitation timing and outcome in crush-associated AKI isn't gradual — multiple studies specifically link delayed initiation (particularly beyond roughly 12 hours) to renal failure incidence approaching universal, while early, vigorous fluid resuscitation begun before or during extrication substantially prevents progression to needing dialysis. This steep time-dependence is exactly why early fluid administration is framed as the single most important field intervention, ahead of any of the more specific pharmacologic hyperkalemia treatments that follow it.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic / Overlapping Condition</th><th>Key distinguishing features</th></tr>
+    <tr><td>Compartment syndrome</td><td>Can coexist with or follow crush injury independently — pain out of proportion, tense compartment, and the classic 5 P's; requires its own surgical decompression regardless of systemic crush-syndrome management.</td></tr>
+    <tr><td>Prolonged tourniquet application (&gt;2 hours) or extremity compartment syndrome without external crush</td><td>Can independently produce reperfusion-driven rhabdomyolysis by the same mechanism as true crush syndrome — management principles are the same even though the mechanism of the original injury differs.</td></tr>
+    <tr><td>Non-traumatic rhabdomyolysis (exertional, toxic, medication-induced)</td><td>No entrapment/compression mechanism; still shares the hyperkalemia and AKI management principles described here once rhabdomyolysis is established, regardless of cause.</td></tr>
+    <tr><td>Hemorrhagic shock without crush component</td><td>Standard TCCC permissive hypotension principles DO apply here — this is precisely the distinction that makes recognizing true crush physiology clinically important rather than academic.</td></tr>
+    <tr><td>Hyperkalemia from another primary cause (renal failure, DKA, medication)</td><td>No entrapment history; see the dedicated Hyperkalemic Cardiac Arrest crisis file for the broader hyperkalemia management framework that overlaps substantially with the acute treatment steps here.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Labs:</b> potassium, creatine kinase (CK), creatinine/renal function, calcium, phosphate, uric acid, coagulation panel, and urinalysis for myoglobinuria. Trend CK and renal function serially rather than relying on a single value — both continue to evolve over the following 24–72 hours.</p>
+    <p><b>Continuous cardiac monitoring</b> from extrication through resolution of hyperkalemia, given how rapidly the ECG picture can change.</p>
+    <p><b>Fasciotomy evaluation</b> for any limb with clinical concern for compartment syndrome — over half of severe crush syndrome cases ultimately require it; don't let systemic management alone substitute for the local surgical decision.</p>
+    <p><b>Renal replacement therapy planning</b> — nephrology consultation early given how common progression to dialysis-requiring AKI is in this population; don't wait for frank renal failure to involve them.</p>
+    <p><b>Disposition:</b> ICU-level care is standard for any confirmed or strongly suspected crush syndrome given the combination of hemodynamic instability, arrhythmia risk, and evolving renal injury — this is not a population managed on a general floor in the acute phase.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Joint Trauma System. Tactical Combat Casualty Care (TCCC) Handbook, Version 5. Department of Defense.</li>
+    <li><span class="tier">PRIMARY</span>Joint Trauma System. Crush Syndrome Under Prolonged Field Care (CPG ID: 58). December 28, 2016.</li>
+    <li><span class="tier">PRIMARY</span>Joint Trauma System. Prolonged Casualty Care Guidelines (CPG ID: 91). December 21, 2021.</li>
+    <li><span class="tier">PRIMARY</span>Bywaters EG, Beall D. Crush Injuries with Impairment of Renal Function. <i>Br Med J.</i> 1941;1(4185):427–432.</li>
+    <li><span class="tier">EVIDENCE</span>Odeh M. The Role of Reperfusion-Induced Injury in the Pathogenesis of the Crush Syndrome. <i>N Engl J Med.</i> 1991;324(20):1417–1422.</li>
+    <li><span class="tier">EVIDENCE</span>Eastridge BJ, Mabry RL, Seguin P, et al. Death on the Battlefield (2001–2011): Implications for the Future of Combat Casualty Care. <i>J Trauma Acute Care Surg.</i> 2012;73(6 Suppl 5):S431–437.</li>
+    <li><span class="tier">EVIDENCE</span>Butler FK, et al. Efficacy of the Mnemonic Device "MARCH PAWS" as a Checklist for Pararescuemen During Tactical Field Care and Tactical Evacuation. <i>J Spec Oper Med.</i> 2017.</li>
+    <li><span class="tier">EVIDENCE</span>Long C, et al. Cardiovascular Events in Crush Syndrome: On-Site Therapeutic Strategies and Pharmacological Investigations. <i>Front Pharmacol.</i> 2024.</li>
+    <li><span class="tier">REFERENCE</span>Crush Injury and Crush Syndrome: A Comprehensive Review. <i>EFORT Open Rev.</i> 2025;10(6):424.</li>
+    <li><span class="tier">REFERENCE</span>Crush Injury and Syndrome: A Review for Emergency Clinicians. <i>J Emerg Med.</i> 2023.</li>
+    <li><span class="tier">REFERENCE</span>Zimmerman JL, Shen MC. Rhabdomyolysis. <i>Chest.</i> 2013;144(3):1058–1065.</li>
+    <li><span class="tier">REFERENCE</span>AMBOSS. "Rhabdomyolysis and Crush Syndrome." amboss.com, updated 2026.</li>
+    <li><span class="tier">REFERENCE</span>Pathophysiology and Management of Crush Syndrome: A Narrative Review. <i>World J Clin Cases.</i> 2025;13(4):104489.</li>
+    <li><span class="tier">REFERENCE</span>UpToDate. "Severe Crush Injury in Adults." Accessed 2026.</li>
+    <li><span class="tier">REFERENCE</span>4 Things EMS Providers Must Know About Crush Syndrome. ems1.com, 2025.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary and current TCCC/JTS guidance before clinical use.</div>
+
+</div>
+</body>
+</html>

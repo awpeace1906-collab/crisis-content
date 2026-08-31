@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — Africa — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  .header{max-width:900px;margin:0 auto;padding:36px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  .back{font-size:11px;color:var(--text3);margin-bottom:16px;display:inline-block;}
+  .back:hover{color:var(--accent);}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:8px;}
+  .lede{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;font-style:italic;color:var(--text3);max-width:640px;margin-bottom:20px;}
+  .divider{height:1px;background:var(--border);margin:0 auto 20px;max-width:900px;}
+
+  .filter-bar{position:sticky;top:0;z-index:20;background:rgba(10,14,20,0.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:14px 24px;margin-bottom:28px;}
+  .filter-inner{max-width:900px;margin:0 auto;}
+  .search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:13px;margin-bottom:10px;}
+  .search-input:focus{outline:none;border-color:var(--accent);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .chip-group-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text4);margin-right:2px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:14px;border:1px solid var(--border);color:var(--text3);cursor:pointer;background:transparent;transition:all .15s;}
+  .chip:hover{border-color:var(--accent);color:var(--text);}
+  .chip.active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600;}
+  .results-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:10px;}
+
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin:0 0 16px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden;transition:border-color .15s;}
+  .card.hidden{display:none;}
+  .card-head{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .tag.region{background:rgba(96,165,250,0.15);color:var(--blue);}
+  .tag.class{background:rgba(167,139,250,0.15);color:var(--purple);}
+  .tag.mechanism{background:rgba(251,191,36,0.15);color:var(--amber);}
+  .card-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .card-sub{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;color:var(--text4);}
+
+  .card-body{padding:6px 22px 20px;}
+  .field{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .field:last-child{border-bottom:none;}
+  .field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .field-body{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+
+  .box.t-color{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:6px;padding:14px 18px;margin-top:4px;}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+
+  .notice{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-top:8px;}
+  .notice-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+  .notice-sub{font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--text4);margin-bottom:12px;line-height:1.6;}
+  .notice-list{list-style:none;}
+  .notice-list li{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text2);line-height:1.7;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-list strong{font-family:'Syne',sans-serif;color:var(--text);font-weight:700;}
+
+  footer{max-width:900px;margin:20px auto 0;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .filter-bar{display:none;}
+    .card{break-inside:avoid;border:1px solid #999;}
+    .card.hidden{display:block;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="envenomation.html" class="back">← Envenomation Index</a>
+    <div class="kicker">Crisis Management — Envenomation — Africa</div>
+    <h1>Africa</h1>
+    <p class="lede">Sub-Saharan and southern African species. Antivenom access is a genuine, ongoing logistical constraint across this region — several entries below flag current supply status rather than treating it as settled.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search species, syndrome, keyword…" oninput="filterCards()">
+      <div class="chip-row" id="classChips">
+        <span class="chip-group-label">Class:</span>
+        <button class="chip" data-facet="class" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="class" data-value="snake" onclick="toggleChip(this)">Snake</button>
+        <button class="chip" data-facet="class" data-value="scorpion" onclick="toggleChip(this)">Scorpion</button>
+      </div>
+      <div class="chip-row" id="mechChips" style="margin-top:6px;">
+        <span class="chip-group-label">Mechanism:</span>
+        <button class="chip" data-facet="mechanism" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="mechanism" data-value="hemotoxic" onclick="toggleChip(this)">Hemotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="neurotoxic" onclick="toggleChip(this)">Neurotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="cytotoxic" onclick="toggleChip(this)">Cytotoxic</button>
+      </div>
+      <div class="results-count" id="resultsCount">7 entries</div>
+      <div class="gs-hint" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:6px;">Critical-intervention species only — see the non-critical notice below for the rest (venom ophthalmia).</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-head">Species — Africa</div>
+
+    <div class="card" id="puff-adder" data-class="snake" data-mechanism="cytotoxic" data-search="puff adder bitis arietans">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Africa</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Cytotoxic / Hemotoxic</span>
+        </div>
+        <div class="card-title">Puff Adder</div>
+        <div class="card-sub">Bitis arietans. The single most medically important snake across sub-Saharan Africa by case volume — widespread, common near human dwellings, and responsible for a large share of the region's estimated 314,000+ annual envenomings</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Rapid onset of pain and swelling at the bite site, progressing over hours. This is not a snake that hides its bite the way boomslang does — local findings are immediate and obvious.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Potently cytotoxic: severe pain, swelling, extensive blistering, and tissue necrosis at the bite site, which can leave patients vulnerable to serious secondary infection. Systemically, venom also has real hemotoxic activity — hypotension, spontaneous hemorrhage, thrombocytopenia, and coagulopathy occur alongside the local picture, so don't anchor purely on "cytotoxic" and skip coagulation labs.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Immobilize the limb, remove constricting items, transport. No tourniquet, incision, or suction. Given tissue destruction potential, minimize additional trauma to the bite site.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Serial limb measurements/marking as with other viper bites. Baseline and serial coagulation studies given the hemotoxic component. Aggressive wound care and low threshold for surgical consult given necrosis risk — this is one of the African species where secondary tissue infection is a real downstream threat, not just an antivenom question.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Covered by SAIMR Polyvalent Snakebite Antiserum (South African Vaccine Producers), the regional gold standard, alongside gaboon adder, rinkhals, green/Jameson's/black mamba, and cape/forest/snouted/Mozambique spitting cobra. Recommended initial dose for serious cytotoxic bites (puff adder, gaboon adder) is 5–10 ampoules (50–100 mL) IV. A newer WHO-approved alternative, PANAF Polyvalent, covers 24 African species including puff adder but requires roughly double the volume for equivalent neutralization based on preclinical comparison data. SAIMR polyvalent has a real anaphylaxis rate — roughly 4 in 10 patients in some reporting — so treat only in a monitored setting with epinephrine ready.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for antivenom administration, wound care, and monitoring for compartment syndrome/secondary infection. Roughly 90% of hospitalized snakebite patients regionally don't end up needing antivenom — reserve it for progressive local or any systemic findings, not universally.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">SAIMR polyvalent antivenom supply is not a hypothetical concern — South Africa has had real, reported production shortages (most recently flagged in 2023–2024), and the product is also relied upon by neighboring countries with no domestic production of their own. Know your current regional supply chain before you need it, not during a shortage.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="black-mamba" data-class="snake" data-mechanism="neurotoxic" data-search="black mamba dendroaspis polylepis">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Africa</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Black Mamba</div>
+        <div class="card-sub">Dendroaspis polylepis. Sub-Saharan Africa's most feared elapid — fast-moving, potently neurotoxic, capable of rapid progression to respiratory failure</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Neurotoxic signs can progress quickly relative to other elapids — this is not the slow-burn presentation seen with North American coral snake. Local findings at the bite are typically minimal, which can be falsely reassuring.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Classic descending neurotoxic pattern: ptosis, dysarthria, dysphagia, progressing to generalized paralysis and respiratory failure if untreated.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Rapid transport is the priority — this is one of the African species where time to definitive airway/antivenom access most directly determines outcome. Immobilize, remove constricting items, do not delay for field interventions that don't change outcome.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Airway equipment ready at bedside. Antivenom given in the acute phase of neurotoxic envenoming will often NOT halt progression of neurologic effects, especially respiratory paralysis already underway — the patient may still require ventilatory support regardless of antivenom timing, and will not survive without it if paralysis has already progressed.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Covered by SAIMR Polyvalent. Recommended dose for neurotoxic bites (mambas, neurotoxic cobras) is 80–120 mL, up to 200 mL in severe mamba envenomation — meaningfully higher volume than the cytotoxic-bite dosing. A follow-up dose is occasionally required specifically in black mamba bites. Neurologic improvement after antivenom is often slow (2–6 hours) and can be unconvincing even when treatment is working — don't judge efficacy on a 30-minute window the way you might with a North American crotalid.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">ICU-level care for any patient with bulbar or respiratory signs. Ventilator support may be needed independent of antivenom response.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Minimal bite-site findings with a confirmed or strongly suspected black mamba exposure is not reassurance — treat this like the North American coral snake principle: the wound doesn't tell you the story, the timeline does. Don't wait for antivenom response to commit to airway support if respiratory signs are progressing.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="boomslang" data-class="snake" data-mechanism="hemotoxic" data-search="boomslang dispholidus typus vine snake twig snake colubrid">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Africa</span>
+          <span class="tag class">Snake — Colubridae (rear-fanged)</span>
+          <span class="tag mechanism">Hemotoxic (VICC)</span>
+        </div>
+        <div class="card-title">Boomslang</div>
+        <div class="card-sub">Dispholidus typus. Afrikaans for "tree snake" — arboreal, shy, non-aggressive. Bites are rare and almost always occur during handling. Not covered by SAIMR Polyvalent — requires its own monovalent product</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">This is the single most dangerous timeline mismatch in African envenomation. Initial local findings at the bite are minimal — mild swelling or pain, sometimes nothing at all. Venom-induced consumptive coagulopathy (VICC) can appear within 4 hours but is classically delayed up to 72 hours. A patient can look and feel completely fine for a full day or more while coagulation factors are actively being consumed.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Venom metalloproteinases activate prothrombin and factors IX/X, driving a consumptive coagulopathy that depletes fibrinogen and platelets. Untreated, this progresses to frank DIC. Bleeding ranges from minor oozing at puncture sites and epistaxis/gum bleeding to life-threatening bleeding into muscle, hemoglobinuria with acute tubular necrosis, GI hemorrhage, and CNS bleeding.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Any confirmed or strongly suspected boomslang bite requires hospital evaluation regardless of how the patient looks — this cannot be cleared in the field or dismissed because the wound is unimpressive.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">The 20-minute whole blood clotting test (draw blood into a plain glass tube, leave undisturbed 20 minutes, check for clot formation) is a fast bedside screen used widely across African snakebite care when formal coag panels are slow to return. Serial coagulation studies are essential given the delayed timeline — a normal initial PT/PTT does not clear the patient. Point-of-care viscoelastic testing (ROTEM/TEG), where available, has been used to detect subclinical coagulopathy that standard labs missed.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">SAIMR Polyvalent does NOT cover boomslang — a separate SAIMR Boomslang monovalent antivenom (South African Vaccine Producers) is required, and its supply is even more limited and expensive (roughly R6,800/vial domestically, or cited as high as US$6,000/vial internationally) than the polyvalent product. Dose: 20 mL (2 ampoules) IV in isotonic fluid over 30 minutes; a follow-up 10 mL dose is sometimes needed. When given, it reliably normalizes coagulation factors. There is no cross-coverage from polyvalent antivenom — don't substitute it here.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit and monitor coagulation status for at least the full 72-hour window even if the patient is asymptomatic and initial labs are normal, given how delayed onset can be. Any confirmed bite warrants hospitalization on this basis alone.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">The core teaching point: an unimpressive bite plus a real snake (or a plausible history of handling one) is not a benign combination here — it's the expected presentation before the coagulopathy declares itself. Confirm which antivenom your facility actually stocks; assuming polyvalent covers this species is a documented, repeated real-world error given the two products are so easily confused.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="spitting-cobra" data-class="snake" data-mechanism="cytotoxic" data-search="spitting cobra naja nigricollis naja mossambica naja pallida mozambique red spitting cobra black-necked cobra bite">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Africa</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Cytotoxic</span>
+        </div>
+        <div class="card-title">Spitting Cobras — Bite</div>
+        <div class="card-sub">Naja nigricollis (black-necked spitting cobra), N. mossambica (Mozambique spitting cobra), N. pallida (red spitting cobra), among others. This card covers the bite; venom spat into the eyes is a separate, non-critical problem — see the notice at the end of this page.</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain and swelling develop rapidly, similar in character to other cytotoxic African vipers/cobras, with potential for significant local tissue necrosis.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Predominantly cytotoxic: pain, swelling, blistering, and tissue destruction at the bite site. Systemic neurotoxicity is possible but the local tissue damage is usually the dominant clinical problem, distinguishing these from the primarily neurotoxic mambas.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard cytotoxic snakebite approach: immobilize, remove constricting items, transport. No tourniquet, incision, or suction.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Standard cytotoxic snakebite wound care, monitoring for necrosis and secondary infection, serial limb assessment.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Mozambique spitting cobra is covered by SAIMR Polyvalent (dosed as for other cytotoxic bites, 5–10 ampoules). Black-necked spitting cobra (N. nigricollis) is covered by EchiTAb-Plus-ICP in West Africa alongside Echis and puff adder.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Managed per standard cytotoxic snakebite admission criteria — admit for antivenom, wound care, and necrosis/infection monitoring.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Confirm which antivenom product your facility stocks actually covers the specific Naja species in your area — coverage varies by product and region (SAIMR Polyvalent vs. EchiTAb-Plus-ICP), unlike the more uniform coverage for puff adder.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="carpet-viper" data-class="snake" data-mechanism="hemotoxic" data-search="saw-scaled viper carpet viper echis ocellatus west african echitab">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Africa (West)</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC)</span>
+        </div>
+        <div class="card-title">West African Carpet Viper (Saw-Scaled Viper)</div>
+        <div class="card-sub">Echis ocellatus (and related Echis spp.). Small snake, huge burden — the single most important cause of snakebite death and disability across the West African savannah</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain, swelling, and bleeding from the bite site develop early. Systemic coagulopathy — the dominant threat — can be detected on bedside clotting tests within hours of a significant bite.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Systemic hemorrhage and incoagulable blood are the defining features: bleeding from the gums, nose, old wounds, and IV sites, with the potential for hemorrhagic shock, and occasional local tissue necrosis. This is the species responsible for the bulk of the region's snakebite mortality and morbidity — estimated incidence as high as ~500 per 100,000 population per year in some Nigerian savanna communities, with historically 10–20% of victims dying untreated.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Get the patient to a facility that can run a 20-minute whole blood clotting test and has antivenom on hand — in this region, that access question is often the actual determinant of survival, more than any specific field maneuver.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">20-minute whole blood clotting test (20WBCT) is the primary bedside diagnostic tool used across West African snakebite care to confirm venom-induced coagulopathy when formal lab turnaround is too slow. Treat any confirmed incoagulable blood as an indication for antivenom.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Two purpose-built products developed specifically for this species given historic antivenom supply crises in the region: <strong>EchiTAb-G</strong> (MicroPharm, ovine, monospecific for E. ocellatus, initial dose 1 vial/10 mL) and <strong>EchiTAb-Plus-ICP</strong> (Instituto Clodomiro Picado, equine, covers E. ocellatus plus Naja nigricollis and Bitis arietans, initial dose 3 vials/30 mL). Head-to-head trial data: both restored blood clotting in the large majority of patients within 6 hours (76% EchiTAb-G, 83% EchiTAb-Plus-ICP in the pivotal trial), with EchiTAb-Plus-ICP slightly more effective but EchiTAb-G associated with fewer and less severe early reactions. Specific antivenom confers roughly 75% protection against death compared to no/inappropriate antivenom in meta-analysis, and mortality has more than doubled during periods when antivenom stocks ran out regionally — this is a supply chain issue with a directly measurable body count, not an abstraction.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit any patient with confirmed incoagulable blood for antivenom and serial coagulation monitoring. Pregnant patients have been successfully treated with EchiTAb IgG antivenom with good maternal outcomes when treatment isn't delayed — delayed presentation is the main driver of fetal loss, not the antivenom itself.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Antivenom raised against the Asian species Echis carinatus is NOT reliably effective against West African E. ocellatus — regional specificity matters here more than in most snakebite scenarios, and using the wrong product has been a documented real-world problem. Don't assume any "Echis antivenom" is interchangeable across regions.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="thick-tailed-scorpion" data-class="scorpion" data-mechanism="neurotoxic" data-search="thick-tailed scorpion fat-tail scorpion parabuthus southern african scorpion">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Africa (Southern)</span>
+          <span class="tag class">Scorpion</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Thick-Tailed (Fat-Tail) Scorpion</div>
+        <div class="card-sub">Parabuthus spp. The medically significant scorpion genus across southern Africa, covered by a dedicated SAIMR antivenom</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Immediate significant pain at the sting site; systemic neurotoxic signs can follow within a similar timeframe to Centruroides envenomation in North America — faster progression and greater severity in children.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Neurotoxic picture: pain out of proportion to visible findings, potential for cranial nerve and neuromuscular dysfunction in significant envenomation, autonomic signs. Severity is greatest in young children and the elderly.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Analgesia, transport, lower threshold for urgency in pediatric patients.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Grade severity based on local vs. systemic/neurologic findings, similar framework to Centruroides grading. Supportive care (analgesia, benzodiazepines for agitation/neuromuscular symptoms) alongside antivenom decision-making.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">SAIMR Scorpion Antivenom (South African Vaccine Producers, equine) is produced specifically for Parabuthus species and is the regional product of record, produced by the same manufacturer as the SAIMR snake antivenoms.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Outpatient management for mild local envenomation; admit for systemic/neurologic signs, especially pediatric patients.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">As with Centruroides in North America, pediatric patients are disproportionately represented among severe envenomations — maintain a lower threshold for concern and antivenom consideration in children compared with adults presenting with the same sting history.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="egyptian-cobra" data-class="snake" data-mechanism="neurotoxic" data-search="egyptian cobra naja haje">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">North &amp; East Africa</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic + Cytotoxic</span>
+        </div>
+        <div class="card-title">Egyptian Cobra</div>
+        <div class="card-sub">Naja haje. One of Africa's largest true cobras, widespread across North and East Africa. Comparative toxicity studies rank its venom as considerably more lethal than the region's major vipers, consistent with the generally greater severity of cobra envenomation</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain develops promptly at the bite site; neurotoxic progression follows a similar descending pattern and timeline to other true cobras.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Combines significant neurotoxicity — ptosis, bulbar weakness, progressive descending paralysis — with real local cytotoxic tissue effects (swelling, blistering, potential necrosis) at the bite site, similar in character to the spitting cobra bite picture already covered on this page but from a non-spitting true cobra.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard elapid approach: immobilize, remove constricting items, transport. Given the potency profile, don't delay transport waiting to see how the local picture develops.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Airway readiness given real neurotoxic potential. Local wound care and monitoring for necrosis alongside the neurologic picture, the same dual-track approach used for the region's other cytotoxic-plus-neurotoxic cobras.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Covered by SAIMR Polyvalent in southern/eastern parts of its range. In Egypt and neighboring North African countries, VACSERA polyvalent antivenom (Egypt) is the regional product, produced specifically against Naja haje, Cerastes cerastes, and other locally significant species — don't assume SAIMR is the only or default option across this species' full range; confirm which product is actually stocked regionally.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for airway monitoring and wound care per standard cytotoxic-plus-neurotoxic elapid protocol.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">This species spans a huge range across North and East Africa where antivenom supply chains genuinely differ by country — the product available in Egypt is not necessarily the same one stocked further south or east within this snake's range.</div></div>
+      </div>
+    </div>
+
+    <div class="notice" id="notice-africa">
+      <div class="notice-label">Non-Critical — Supportive Care Only</div>
+      <div class="notice-sub">Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.</div>
+      <ul class="notice-list">
+        <li><strong>Spitting Cobra — Venom Ophthalmia</strong> (eyes only, not a bite) — venom spat into the eyes causing burning pain, conjunctivitis, possible corneal erosion. <em>Care:</em> immediate copious irrigation (tap water/saline) is the entire treatment — no antivenom indicated; fluorescein exam and ophthalmology follow-up if corneal findings.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation — Africa</footer>
+
+<script>
+  const activeFilters = { class: 'all', mechanism: 'all' };
+
+  function toggleChip(btn){
+    const facet = btn.dataset.facet;
+    const value = btn.dataset.value;
+    document.querySelectorAll(`.chip[data-facet="${facet}"]`).forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters[facet] = value;
+    filterCards();
+  }
+
+  function filterCards(){
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const matchesClass = activeFilters.class === 'all' || card.dataset.class === activeFilters.class;
+      const matchesMech = activeFilters.mechanism === 'all' || card.dataset.mechanism === activeFilters.mechanism;
+      const searchBlob = (card.dataset.search || '') + ' ' + card.innerText.toLowerCase();
+      const matchesQuery = query === '' || searchBlob.toLowerCase().includes(query);
+
+      if (matchesClass && matchesMech && matchesQuery){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('resultsCount').textContent = `${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chip[data-facet="class"][data-value="all"]').classList.add('active');
+    document.querySelector('.chip[data-facet="mechanism"][data-value="all"]').classList.add('active');
+  });
+</script>
+
+</body>
+</html>

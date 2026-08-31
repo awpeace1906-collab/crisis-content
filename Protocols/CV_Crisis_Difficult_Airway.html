@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Difficult / Failed Airway — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Airway</div>
+    <h1>Difficult &amp; Failed Airway</h1>
+    <p class="subtitle">The CICO decision tree, why "wake the patient" was removed from the emergency pathway, scalpel cricothyrotomy technique, and the assessment tools that predict trouble before you ever pick up a blade.</p>
+    <div class="badges">
+      <span class="badge red">ANESTHESIA / AIRWAY EMERGENCY</span>
+      <span class="badge teal">ASA 2022 / DAS 2025-ALIGNED</span>
+      <span class="badge amber">OXYGENATION &gt; INTUBATION</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Predicting the Ugly</a>
+    <a class="qn" href="#prevention">Plan Before You Touch</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">After the Tube / Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management — The Failed Airway Sequence</h2></div>
+  <div class="tagline">The decision that matters most is made before the laryngoscope goes in. Once you're in trouble, the goal shifts from "get the tube" to "keep oxygenating" — the tube can wait.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Declare it and call for help</div><div class="step-desc">The moment you recognize a failed attempt or failed oxygenation, say so out loud. Most airway deaths occur after the third attempt — task fixation and the "ego tube" (pushing repeated attempts instead of pivoting) are the actual killers, not anatomy.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Optimize and reattempt once, with a change</div><div class="step-desc">Reposition (RAMP/ear-to-sternal-notch in obesity), try a bougie with video laryngoscopy, try a hyperangulated blade — change something rather than repeating the identical attempt. No view at all? Come out and bag.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Can you bag them? — the branch point that matters most</div><div class="step-desc">Good BVM seal and ventilation present: you have time. Adjust variables, consider a flexible/rigid intubating scope or an intubating SGA. <b>Cannot bag effectively:</b> place a supraglottic airway immediately — SGA placement is the standard next rescue step before jumping to a surgical airway, and restores oxygenation faster than repeated laryngoscopy.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">SGA also fails to oxygenate → this is CICO, act now</div><div class="step-desc">Can't Intubate, Can't Oxygenate. This is the true emergency pathway. <b>Do not attempt to "wake the patient"</b> — that option was deliberately removed from the 2022 ASA emergency pathway, since a non-patent airway isn't reliably reversible by simply stopping drugs.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">5</div><div class="step-body"><div class="step-title">Surgical cricothyrotomy — the definitive adult rescue</div><div class="step-desc">Scalpel cricothyrotomy is preferred over needle cricothyrotomy for adult CICO per ASA 2022 / current DAS guidance — needle cric with jet ventilation is temporizing only; CO₂ accumulates fast and it's easy to lose the airway again. <b>Technique:</b> palpate the cricothyroid membrane between thyroid and cricoid cartilage (ultrasound if landmarks are unclear); vertical stab incision, horizontal extension through the membrane, bougie-guided ETT placement — bougie-assisted open technique is fastest to teach and perform under pressure. <b>Pediatrics:</b> no surgical cric under age 8–12 — needle cric only until then.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">6</div><div class="step-body"><div class="step-title">Watch elapsed time and saturation throughout — not just attempt count</div><div class="step-desc">The 2022 ASA guidelines emphasize continuous oxygenation and time-awareness over a strict attempt-count rule. "Three attempts" isn't a protocol — it's an ego limit. Have your next move planned after attempt one, not after attempt three.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">The surgical airway is not a failure — not doing it when you should is</div><p>CICO incidence is low (roughly 0.002–0.04% of general anesthetics) but accounts for a disproportionate share of anesthetic mortality when it happens. Hesitation, not the procedure itself, is what kills people in this scenario.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>A difficult airway is any clinical situation where a trained provider experiences difficulty with face mask ventilation, supraglottic airway ventilation, laryngoscopy, intubation, or extubation — the 2022 ASA guidelines explicitly broadened the definition beyond just "hard to intubate" to include SGA and extubation problems as well.</p>
+    <p>The truly emergent version — Can't Intubate, Can't Oxygenate (CICO) — occurs in roughly 0.0019–0.04% of cases but represents close to 25% of anesthesia-related mortality, making it the most common lethal respiratory emergency in perioperative practice. The problem is almost never that the anatomy was impossible; it's that the failure to oxygenate wasn't recognized and acted on quickly enough.</p>
+  </div>
+
+  <!-- 03 PREDICTING THE UGLY -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Predicting the Ugly — Assessment Tools</h2></div>
+  <table class="rt">
+    <tr><th>Tool</th><th>What it screens for</th></tr>
+    <tr><td>LEMON</td><td><b>L</b>ook externally · <b>E</b>valuate 3-3-2 (3 finger-breadths mouth opening, 3 chin-to-hyoid, 2 hyoid-to-thyroid notch) · <b>M</b>allampati · <b>O</b>bstruction · <b>N</b>eck mobility — the core difficult-laryngoscopy screen.</td></tr>
+    <tr><td>RODS</td><td><b>R</b>estricted mouth opening · <b>O</b>bstruction · <b>D</b>istorted airway · <b>S</b>tiff lungs/cervical spine — predicts difficult supraglottic airway ventilation specifically.</td></tr>
+    <tr><td>SHORT</td><td><b>S</b>urgery (prior neck surgery/radiation changes anatomy) · <b>H</b>ematoma · <b>O</b>besity · <b>R</b>adiation · <b>T</b>umor — predicts a difficult surgical airway, worth assessing even when you don't expect to need one.</td></tr>
+    <tr><td>Physiologic predictors</td><td>Hypoxemia, hypotension, and metabolic acidosis predict a bad outcome on induction independent of anatomy — "the crash." A physiologically hostile patient can die on induction with a perfectly normal-looking airway.</td></tr>
+  </table>
+  <div class="xref"><b>The ugly airway is usually ugly before you touch it — look harder.</b> Trauma-specific red flags: blood in the oropharynx, restricted mouth opening, an expanding neck hematoma (the airway you see now may not be the airway in 10 minutes — Zone II penetrating trauma with a growing hematoma means the surgical airway decision comes earlier than feels comfortable).</div>
+
+  <!-- 04 PLAN BEFORE YOU TOUCH -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Plan Before You Touch the Patient (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Name your primary, backup, and bailout before induction — all three, every time.</b> If you don't have a bailout, you don't have a plan. Know explicitly who performs the surgical airway and under what trigger.</li>
+      <li><b>Consider awake intubation</b> when difficulty is anticipated plus any of: known/suspected difficult airway on exam, high aspiration risk, poor tolerance of an apneic period, or a predicted CICO scenario — awake technique carries far lower risk than inducing first and finding out.</li>
+      <li><b>Difficult airway cart immediately available</b> and stocked: video laryngoscope, bougie, multiple SGA sizes, surgical airway kit, and the cricothyroid membrane marked/identified in advance (palpation, or ultrasound if landmarks are unclear) for any anticipated-difficult case.</li>
+      <li><b>Preoxygenate as treatment, not prep</b> — see Numbers to Know below. A 100% SpO₂ on the monitor is a margin, not a guarantee; it reflects reservoir oxygen, not whether the airway is currently patent.</li>
+      <li><b>Use nasal cannula apneic oxygenation during laryngoscopy</b> (15 L/min, Levitan's NODESAT technique) — low-cost, no-harm, use it routinely. Evidence for meaningful benefit is stronger in healthy well-preoxygenated patients than in critically ill ones (the FELLOW trial showed no benefit in ICU patients specifically) — treat it as a helpful adjunct, not a substitute for real preoxygenation.</li>
+      <li><b>State the difficult-airway status explicitly during time-out</b>, and document the specific findings (grade of view, device that worked, number of attempts) in the chart for every future anesthetic.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value / significance</th></tr>
+    <tr><td>Nitrogen washout preoxygenation</td><td>Tight-seal BVM at 15 L/min for 3–5 minutes replaces alveolar nitrogen with O₂ — roughly 3,000 mL of O₂ reservoir in the lungs vs. ~450 mL on room air. This is the actual intervention that extends safe apnea time, not the pulse ox reading.</td></tr>
+    <tr><td>Apneic oxygenation (NODESAT)</td><td>Nasal cannula at 15 L/min left running through laryngoscopy. Extends safe apnea time in healthy, well-preoxygenated patients; benefit not demonstrated in critically ill ICU populations (FELLOW trial). Use it — it doesn't replace nitrogen washout.</td></tr>
+    <tr><td>CICO incidence</td><td>~0.0019–0.04% of general anesthetics — rare per case, but accounts for a large share of airway-related mortality when it occurs.</td></tr>
+    <tr><td>Cannot-oxygenate share of anesthetic mortality</td><td>Roughly 25% — the single most common lethal respiratory emergency in perioperative medicine.</td></tr>
+    <tr><td>Attempt-time discipline</td><td>No fixed number of attempts is "the rule" — the 2022 ASA guidance emphasizes continuous awareness of elapsed time and oxygen saturation over any specific attempt count. Most airway deaths occur after the third attempt because providers keep trying the same thing instead of escalating.</td></tr>
+    <tr><td>Post-intubation tidal volume</td><td>6–8 mL/kg <b>ideal body weight</b>, not actual weight — obese patients have the same lung, bigger body; dosing on actual weight risks volutrauma.</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Airway Management Decisions</h2></div>
+  <div class="box t-purple">
+    <p><b>Why "wake the patient" was removed from the emergency pathway:</b> the option assumes that stopping drugs restores a patent airway and spontaneous ventilation quickly enough to prevent hypoxic injury. In a true CICO scenario the airway itself may not be patent regardless of anesthetic depth, so waiting for the patient to wake up wastes the exact time that oxygenation rescue needs. The non-emergency pathway (can ventilate, can't intubate) still reasonably includes waking the patient as an option — the distinction is whether oxygenation, not just intubation, has failed.</p>
+    <p><b>Why oxygenation is monitored separately from intubation success:</b> pulse oximetry reflects the oxygen already bound to hemoglobin and stored in a preoxygenated lung — it can stay reassuring for a period of time after the airway has actually become non-patent. Treating SpO₂ as a real-time "is the airway open" signal is a common and dangerous misread; it's a lagging indicator, not a live one.</p>
+    <p><b>Why SGA rescue comes before surgical airway, but doesn't delay it if it fails:</b> supraglottic airway placement restores oxygenation faster than repeated laryngoscopy attempts and is successful in the large majority of "can't intubate" scenarios, which is why it's the standard next step. But if it doesn't restore oxygenation, that failure defines true CICO — the moment SGA also fails, further attempts at anything other than a surgical airway are wasting the same limited oxygen reserve that killed the "wake the patient" option above.</p>
+    <p><b>Why scalpel cricothyrotomy is preferred over needle cric in adults:</b> needle techniques with jet ventilation are genuinely temporizing — CO₂ clearance is poor, barotrauma risk is real, and the airway can be lost again quickly. A scalpel-bougie-tube approach delivers a cuffed, definitive airway in comparable or faster time in trained hands, which is why current guidelines designate it the preferred adult CICO rescue rather than a last resort.</p>
+    <p><b>Why nitrogen washout matters more than people give it credit for:</b> a "100% SpO₂" on a patient who was only briefly preoxygenated with a loose mask seal still has a small functional oxygen reserve, because most of the reservoir gain comes from actually displacing alveolar nitrogen with oxygen over several minutes of tight-seal breathing — not from the number on the monitor at the moment of induction.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis — Airway-Threatening Swelling</h2></div>
+  <table class="rt">
+    <tr><th>Condition</th><th>Key distinguishing features</th></tr>
+    <tr><td>Anaphylaxis</td><td>IgE-mediated, fast onset (minutes), systemic — skin, cardiovascular, and airway together. Epinephrine 0.3–0.5 mg IM (adult) is first-line and works well.</td></tr>
+    <tr><td>Angioedema — allergic (mast-cell mediated)</td><td>Slower onset than anaphylaxis but faster than HAE; airway edema without the full systemic pattern; responds to epinephrine/antihistamines similarly to anaphylaxis.</td></tr>
+    <tr><td>Angioedema — hereditary (HAE) or ACE-inhibitor-induced</td><td>Bradykinin-mediated, not histamine-mediated. Slow onset over hours. Airway edema dominant, <b>no hives</b>, no hypotension. Epinephrine may slow it but does <b>not</b> reverse it — definitive treatment is C1-esterase inhibitor concentrate or icatibant, both hospital-level.</td></tr>
+    <tr><td>Epiglottitis</td><td>Bacterial (H. influenzae, S. aureus), onset over hours to days. Classic triad: drooling, dysphagia, distress ("tripod" positioning). <b>Do not examine the throat</b> or force the patient supine — either can trigger complete obstruction. Position of comfort, transport to a controlled airway setting (OR).</td></tr>
+    <tr><td>Peritonsillar / retropharyngeal abscess</td><td>Trismus, muffled "hot potato" voice, unilateral tonsillar deviation (peritonsillar) — differentiate from diffuse angioedema by the asymmetric, localized exam finding.</td></tr>
+    <tr><td>Expanding neck hematoma (post-surgical or traumatic)</td><td>Clear temporal link to a procedure or trauma mechanism; progressive, exam-visible swelling rather than diffuse edema — decompression (opening the wound at bedside if post-surgical) may be needed before any airway attempt.</td></tr>
+  </table>
+  <div class="xref"><b>The voice is an early warning most people miss.</b> A muffled, "hot potato" voice quality in an ambulatory, normally-saturating patient reflects airway narrowing before saturation ever drops — by the time SpO₂ falls or stridor appears, the window to secure the airway electively may already be closing.</div>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>After the Tube — Confirmation &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Confirmation:</b> waveform capnography is the only reliable confirmation of correct tube placement — pulse oximetry and chest rise are not sufficient on their own. Loss of the waveform at any point should be treated as a displaced tube until proven otherwise, not an equipment glitch.</p>
+    <p><b>Depth and positioning:</b> mark and document tube depth at the teeth/lips, confirm bilateral breath sounds — right mainstem intubation is a common and easy-to-miss complication, especially after a rushed attempt in a bloody or distorted airway.</p>
+    <p><b>Post-intubation sedation:</b> a paralyzed, unsedated patient is a sentinel event — plan sedation before the paralytic wears off, not after. Reasonable options: ketamine infusion, midazolam plus fentanyl, or propofol if hemodynamically stable.</p>
+    <p><b>Disposition:</b> ICU-level monitoring for any difficult or failed airway case, regardless of how the eventual airway was secured. Do not extubate a documented difficult airway in an uncontrolled setting — plan extubation as deliberately as the original intubation, ideally with the same difficult-airway equipment immediately available.</p>
+    <p><b>Documentation:</b> record the specific difficulty encountered, what worked, what didn't, and grade of view — this becomes the single most valuable piece of information for every subsequent anesthetic this patient ever has.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31–81.</li>
+    <li><span class="tier">PRIMARY</span>Difficult Airway Society. 2025 Guidelines for Management of Unanticipated Difficult Intubation in Adults. das.uk.com.</li>
+    <li><span class="tier">GUIDELINE</span>Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 Guidelines for Management of Unanticipated Difficult Intubation in Adults. <i>Br J Anaesth.</i> 2015;115(6):827–848.</li>
+    <li><span class="tier">EVIDENCE</span>Semler MW, et al. (FELLOW Trial) Randomized Trial of Apneic Oxygenation During Endotracheal Intubation of the Critically Ill. <i>Am J Respir Crit Care Med.</i> 2016;193(3):273–280.</li>
+    <li><span class="tier">EVIDENCE</span>Weingart SD, Levitan RM. Preoxygenation and Prevention of Desaturation During Emergency Airway Management. <i>Ann Emerg Med.</i> 2012;59(3):165–175.</li>
+    <li><span class="tier">EVIDENCE</span>Driver BE, et al. Effect of Use of a Bougie vs Endotracheal Tube on First-Attempt Intubation Success. <i>JAMA.</i> 2018;319(21):2179–2189.</li>
+    <li><span class="tier">REFERENCE</span>Brown CA III, Sakles JC, Mick NW. <i>The Walls Manual of Emergency Airway Management,</i> 5th ed. Wolters Kluwer; 2018.</li>
+    <li><span class="tier">REFERENCE</span>NYSORA. "Difficult Airway Management." nysora.com, updated 2026.</li>
+    <li><span class="tier">INTERNAL</span>"Blade, Backup, Bailout" — A. Peace, EMS Expo teaching deck (NM EMS SOP-referenced field content, cross-checked against ASA/DAS above).</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and technique against your own institutional protocol before clinical use.</div>
+
+</div>
+</body>
+</html>

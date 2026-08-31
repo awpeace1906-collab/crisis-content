@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uterine Rupture — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.sources .tier.case{background:var(--amber-tint);color:var(--amber);border-color:rgba(245,158,11,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Obstetric</div>
+    <h1>Uterine Rupture</h1>
+    <p class="subtitle">No reliable predictor and no unequivocal sign — abnormal fetal heart tracing plus abdominal pain is the pattern to catch, and emergency laparotomy is the only definitive treatment once it's suspected.</p>
+    <div class="badges">
+      <span class="badge red">OBSTETRIC EMERGENCY</span>
+      <span class="badge teal">RCOG GREEN-TOP 45 / ACOG PB 205-ALIGNED</span>
+      <span class="badge amber">ABNORMAL CTG IS THE MOST CONSISTENT FINDING</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — No Single Reliable Predictor</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">There is no medical treatment for uterine rupture — this is a surgical emergency from the moment it's suspected, and resuscitation runs in parallel with getting to the OR, not before it.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Recognize the pattern and act on suspicion — don't wait for confirmation</div><div class="step-desc">Abnormal fetal heart tracing (present in roughly two-thirds to three-quarters of cases) combined with new abdominal pain, loss of station, cessation of previously effective contractions, or vaginal bleeding in a patient with a uterine scar or other risk factor should trigger emergency response immediately. There is no reliable single predictor or unequivocal sign — the diagnosis is often made only at emergency laparotomy itself.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Call for immediate emergency cesarean delivery / laparotomy</div><div class="step-desc">This is the only definitive treatment. Every minute of delay worsens both maternal hemorrhage and fetal hypoxic injury — activate the full emergency obstetric team (obstetrics, anesthesia, neonatal) without waiting for further confirmatory findings.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Resuscitate in parallel with mobilizing to the OR, not before it</div><div class="step-desc">Large-bore IV access, type and crossmatch, activate the Massive Transfusion Protocol early given the potential for rapid, severe hemorrhage — see the dedicated MTP crisis file. Do not delay surgical delivery to "finish" resuscitation first; the bleeding source needs surgical control.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Damage control resuscitation principles apply</div><div class="step-desc">Favor blood products over crystalloid, accept permissive hypotension until surgical hemostasis is achieved, and avoid over-resuscitating with fluid — particularly if the patient has any concurrent respiratory compromise, where aggressive volume can precipitate transfusion-associated circulatory overload (TACO — see the dedicated Transfusion Reactions crisis file).</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Surgical decision: repair vs. hysterectomy</div><div class="step-desc">Made intraoperatively based on the extent of the rupture, ongoing hemorrhage control, and the patient's desire for future fertility where feasible — hysterectomy may be necessary for extensive rupture or uncontrollable hemorrhage.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Neonatal resuscitation team should be present at delivery</div><div class="step-desc">Given the fetal hypoxic risk from placental separation/rupture, the newborn frequently requires immediate resuscitation and NICU-level care.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">In an incidental, asymptomatic dehiscence found after successful VBAC</div><div class="step-desc">Routine uterine exploration after an uncomplicated VBAC is not recommended in a hemodynamically stable patient with no abnormal bleeding. If dehiscence is identified incidentally and the patient is stable, blood analysis to exclude intraperitoneal bleeding is reasonable; surgical repair of an asymptomatic dehiscence found this way is not recommended, since it hasn't been shown to improve outcomes. This is a genuinely different clinical scenario from a symptomatic, actively bleeding rupture — don't conflate the two.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">This isn't the version of the emergency that always happens in a hospital</div><p>A 2026 case report described catastrophic hemorrhage from uterine rupture managed entirely by a critical care transport team — simultaneously hypotensive and hypoxemic, with damage control resuscitation principles applied en route and REBOA considered (though not deployed) as a bridge option. That single case doesn't establish transport-specific standard of care, but it's a useful reminder that the same principles above — hemorrhage control priority, permissive hypotension, TACO vigilance — apply even when the OR isn't thirty seconds away.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Uterine rupture is a complete separation through all three layers of the uterine wall (endometrium, myometrium, serosa), most often occurring during labor in a patient with a prior cesarean scar attempting trial of labor after cesarean (TOLAC). It's distinct from uterine dehiscence — an incomplete separation with intact serosa that may be found incidentally and doesn't carry the same acute hemorrhagic risk. The two are frequently conflated in older literature, which is worth knowing when interpreting historical rupture-rate statistics.</p>
+    <p>Two risk populations exist with different mechanisms: those with a prior myometrial scar (from cesarean delivery or other uterine surgery — the dominant modern population, given roughly 90% of ruptures occur in a scarred uterus) and those with an unscarred uterus (much rarer, associated with obstructed labor, uterine overdistension, grand multiparity, or trauma). Uterine rupture carries genuine mortality risk — maternal mortality under 1% and perinatal mortality in the range of 3–6% of cases in the TOLAC population specifically.</p>
+  </div>
+
+  <!-- 03 SIGNS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — No Single Reliable Predictor</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Abnormal cardiotocography (CTG)</td><td>The single most consistent finding, present in roughly 66–76% of confirmed cases — variable or late decelerations, bradycardia, or loss of previously reassuring tracing.</td></tr>
+    <tr><td>New or worsening abdominal pain</td><td>Often occurs alongside abnormal CTG rather than in isolation — over half of cases present with a combination of findings, most commonly abnormal CTG plus abdominal pain.</td></tr>
+    <tr><td>Loss of fetal station / presenting part</td><td>The fetus receding from a previously engaged position on exam.</td></tr>
+    <tr><td>Cessation of previously effective uterine contractions</td><td>A labor that was progressing suddenly stalling or the contraction pattern changing abnormally.</td></tr>
+    <tr><td>Vaginal bleeding</td><td>Can be present or notably absent — bleeding may be entirely intraperitoneal, which is part of why this diagnosis is so easy to miss until frank hemodynamic instability develops.</td></tr>
+    <tr><td>Maternal tachycardia / hypotension</td><td>Can be a late finding — don't wait for hemodynamic collapse to act on the CTG and pain pattern above.</td></tr>
+    <tr><td>Timing</td><td>More than 90% of ruptures occur during labor, with peak incidence around 4–5 cm cervical dilation; roughly 18% occur in the second stage, and about 8% are identified only after vaginal delivery.</td></tr>
+  </table>
+  <div class="xref"><b>There are no reliable predictors and no unequivocal clinical sign.</b> Physicians must maintain a high index of suspicion in any at-risk patient — particularly with fetal bradycardia or other fetal distress — because the diagnosis is frequently confirmed only at emergency laparotomy itself, not established beforehand by any specific test or finding.</div>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>TOLAC should only be offered where immediate emergency cesarean and blood transfusion capability exist</b> — ACOG specifically recommends Level 1 obstetric centers with a clinician capable of performing emergency cesarean immediately available throughout active labor, along with anesthesia support.</li>
+      <li><b>Careful patient selection and counseling before TOLAC:</b> prior uterine incision type matters enormously — classical (vertical) and T-shaped incisions carry meaningfully higher rupture risk than the standard low-transverse incision, and a prior classical incision is generally a contraindication to TOLAC altogether.</li>
+      <li><b>Induction and augmentation raise risk further:</b> studies show three to five times more ruptures among induced TOLAC patients compared to spontaneous labor onset; prostaglandin agents (misoprostol, dinoprostone) carry additional risk and require particular caution in this population.</li>
+      <li><b>Continuous fetal monitoring throughout TOLAC labor</b> — given that abnormal CTG is the most consistent early warning finding, continuous rather than intermittent monitoring is standard practice.</li>
+      <li><b>Know the modifying risk factors:</b> interpregnancy interval &lt;12–18 months, unknown previous uterine incision type, poor healing of a prior scar, prior preterm cesarean, and multiple previous cesareans all raise risk further and should factor into the TOLAC counseling conversation.</li>
+      <li><b>Ensure MTP and hemorrhage protocol readiness</b> on any unit offering TOLAC — see the dedicated MTP and Postpartum Hemorrhage crisis files for the resuscitation infrastructure this diagnosis can suddenly demand.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Uterine rupture risk, planned VBAC (one prior low-transverse cesarean)</td><td>~0.2–1.0% (commonly cited as ~0.5%, or 1 in 200)</td></tr>
+    <tr><td>Uterine rupture risk, unscarred uterus / spontaneous vaginal delivery</td><td>~0.02% (roughly 1 in 5,000)</td></tr>
+    <tr><td>Rupture risk with a prior classical (vertical) incision</td><td>~4–9% — generally considered a contraindication to TOLAC</td></tr>
+    <tr><td>Rupture risk with a prior low-vertical incision</td><td>~1–7%</td></tr>
+    <tr><td>Rupture risk, twin gestation VBAC vs. planned repeat cesarean</td><td>~0.87% vs. ~0.09% (meaningfully elevated odds, though absolute risk remains low in both groups)</td></tr>
+    <tr><td>Rupture with prostaglandin use in TOLAC</td><td>Reported in ~2.5% of cases in some series (roughly 1 in 40) — a real elevation over baseline</td></tr>
+    <tr><td>Proportion of ruptures occurring during labor</td><td>&gt;90%, peak incidence at 4–5 cm dilation</td></tr>
+    <tr><td>Abnormal CTG sensitivity</td><td>Present in ~66–76% of confirmed ruptures</td></tr>
+    <tr><td>Maternal mortality (TOLAC-associated rupture)</td><td>&lt;1%</td></tr>
+    <tr><td>Perinatal mortality (TOLAC-associated rupture)</td><td>~3–6%</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Uterine Rupture Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why there's no medical treatment and surgery is the entire answer:</b> a complete separation through all three uterine layers is a mechanical, structural problem — no drug closes the defect or stops the hemorrhage it produces. This is fundamentally different from most obstetric hemorrhage causes (atony, for instance) that respond to pharmacologic escalation before surgery becomes necessary; here, surgical control is the first-line and only definitive treatment from the moment the diagnosis is seriously entertained.</p>
+    <p><b>Why abnormal CTG is weighted so heavily despite not being universally present:</b> fetal heart rate directly reflects placental perfusion, which is immediately compromised when the uterine wall separates and disrupts the maternal-fetal interface. This makes CTG change one of the fastest available signals of a process that otherwise has no reliable external sign — which is exactly why continuous monitoring during TOLAC labor is standard practice rather than an optional add-on.</p>
+    <p><b>Why vaginal bleeding can be absent even in a severe rupture:</b> if the rupture communicates primarily with the peritoneal cavity rather than the vaginal canal, blood accumulates intra-abdominally rather than presenting externally — meaning the absence of visible bleeding provides false reassurance rather than ruling out a severe, ongoing hemorrhage. This is part of why the diagnosis leans so heavily on the CTG-plus-pain pattern rather than waiting for visible blood loss.</p>
+    <p><b>Why induction/augmentation and prior classical incisions both raise risk through a related mechanism:</b> a classical (vertical) incision crosses the more actively contractile upper uterine segment, while induction/augmentation increases the force and frequency of contractions across the entire uterine wall — both increase mechanical stress specifically at the weakest point (the scar, or an already more vulnerable upper-segment incision), which is the direct physical basis for why these are the dominant modifiable and structural risk factors identified across every major society's guidance.</p>
+    <p><b>Why the dehiscence-vs-rupture distinction genuinely changes management, not just terminology:</b> a dehiscence with intact serosa doesn't carry the same acute hemorrhage risk as a full-thickness rupture, since the outer layer is still containing the uterine contents. This is why an incidentally found, asymptomatic dehiscence in a stable patient doesn't need surgical repair — the intervention wouldn't improve an outcome that's already benign, whereas the same finding with active bleeding or hemodynamic instability represents a genuinely different, surgical emergency.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Placental abruption</td><td>Can produce a similar picture of abdominal pain and abnormal CTG; ultrasound and the absence of a prior uterine scar/TOLAC context can help distinguish, though the two can be difficult to separate acutely and both may require emergency delivery regardless.</td></tr>
+    <tr><td>Normal labor pain / contraction pattern</td><td>The key distinguishing feature is a change from the patient's baseline pattern — new, different, or unusually severe pain, or contractions abruptly stopping, rather than expected labor discomfort.</td></tr>
+    <tr><td>Uterine dehiscence (incomplete, serosa intact)</td><td>See Rationale above — a fundamentally lower-acuity finding when asymptomatic and hemodynamically stable, though the distinction is sometimes only made at surgical exploration.</td></tr>
+    <tr><td>Vasa previa</td><td>Painless vaginal bleeding with fetal heart rate abnormality, typically at rupture of membranes — a different mechanism (fetal, not maternal, hemorrhage) but a similarly acute fetal emergency.</td></tr>
+    <tr><td>Amniotic fluid embolism</td><td>Sudden collapse with DIC-driven coagulopathy rather than a mechanical uterine wall defect — see the dedicated AFE crisis file; can be difficult to distinguish acutely from a severely hemorrhaging rupture.</td></tr>
+    <tr><td>Postpartum hemorrhage from atony/trauma/retained tissue (after vaginal delivery)</td><td>See the dedicated PPH crisis file and its 4 T's framework — uterine rupture identified after vaginal delivery specifically falls under the "Trauma" category there.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Confirmation is intraoperative:</b> there is no reliable preoperative test that confirms the diagnosis with certainty — emergency laparotomy serves as both the diagnostic and therapeutic step simultaneously.</p>
+    <p><b>Postoperative monitoring:</b> ICU-level care for significant hemorrhage or hemodynamic instability; ongoing hemoglobin/coagulation monitoring given the massive transfusion potential.</p>
+    <p><b>Neonatal disposition:</b> NICU admission is common given the hypoxic risk from acute placental separation; the neonatal team's presence at delivery should be anticipated, not arranged reactively.</p>
+    <p><b>Future pregnancy counseling:</b> a history of uterine rupture significantly changes counseling for future pregnancies — repeat cesarean delivery before labor onset is generally recommended rather than attempting TOLAC again, given the elevated recurrence risk in a uterus that has already ruptured once.</p>
+    <p><b>Debrief:</b> given how rapidly this diagnosis can move from subtle CTG change to major hemorrhage, structured post-event review helps refine institutional TOLAC monitoring protocols and reinforces the recognition pattern for the next case.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Royal College of Obstetricians and Gynaecologists. Birth After Previous Caesarean Birth, Green-top Guideline No. 45. rcog.org.uk, October 2015 (current as of 2026 review cycle).</li>
+    <li><span class="tier">PRIMARY</span>American College of Obstetricians and Gynecologists. Practice Bulletin No. 205: Vaginal Birth After Cesarean Delivery. <i>Obstet Gynecol.</i> 2019;133(2):e110–e127.</li>
+    <li><span class="tier">PRIMARY</span>Togioka BM, Tonismae T. Uterine Rupture. <i>StatPearls,</i> NCBI Bookshelf, updated 2026.</li>
+    <li><span class="tier">EVIDENCE</span>Trial of Labor After Cesarean, Vaginal Birth After Cesarean, and the Risk of Uterine Rupture: An Expert Review. <i>Am J Obstet Gynecol.</i> 2023.</li>
+    <li><span class="tier">EVIDENCE</span>Barnea ER, et al. FIGO Good Practice Recommendations for Vaginal Birth After Cesarean Section. <i>Int J Gynaecol Obstet.</i> 2025.</li>
+    <li><span class="tier">GUIDELINE</span>Habak PJ, Khaparde G, Vadakekut ES. Vaginal Birth After Cesarean Delivery. <i>StatPearls,</i> NCBI Bookshelf, updated 2026.</li>
+    <li><span class="tier">REFERENCE</span>Uterine Rupture: What Family Physicians Need to Know. <i>Am Fam Physician.</i></li>
+    <li><span class="tier case">CASE REPORT — not a guideline</span>Guyther JE, Omidvar AA, Smith JJ, Winniford C, Lawner BJ. Refractory Hypoxemia and Resuscitation in the Setting of Catastrophic Hemorrhage From Uterine Rupture: A Case Study. <i>Air Med J.</i> 2026;45(3):278–282. Reviewed narratively in The Critical Vector's Continuum (May 2026) — cited here as a single illustrative case, not as established standard of care.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. The case report cited above informs the transport-specific note only; core management reflects RCOG/ACOG society guidance.</div>
+
+</div>
+</body>
+</html>

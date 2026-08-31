@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refractory VF/pVT &amp; ECPR — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Resuscitation / Refractory Arrest</div>
+    <h1>Refractory VF/pVT &amp; ECPR</h1>
+    <p class="subtitle">Vector change and double sequential defibrillation, why ERC still won't recommend DSED despite a positive trial, and why low-flow time — not a fixed clock — is the number that actually determines the ECPR decision.</p>
+    <div class="badges">
+      <span class="badge red">REFRACTORY ARREST EMERGENCY</span>
+      <span class="badge teal">ERC 2025 / ELSO / AHA 2025-ALIGNED</span>
+      <span class="badge amber">ASSESS FOR ECPR EARLY, NOT AFTER STANDARD CARE FAILS</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Recognition &amp; Selection Criteria</a>
+    <a class="qn" href="#prevention">Program Set-Up / Readiness</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">What's Driving the Refractory Rhythm?</a>
+    <a class="qn" href="#disposition">Post-ECPR &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Escalate defibrillation strategy while simultaneously starting the ECPR candidacy clock — these run in parallel, not sequentially.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Confirm refractory VF/pVT and continue standard care</div><div class="step-desc">Defined as persistent VF/pVT after <span class="d">≥3</span> full shocks with appropriate CPR, vasopressors, and antiarrhythmics. Continue epinephrine every 3–5 minutes; give amiodarone or lidocaine after the third failed shock per standard ACLS.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Vector change (VC) defibrillation — the lower-barrier next step</div><div class="step-desc">Reposition pads from anterolateral to anteroposterior using the <b>same</b> defibrillator. No additional equipment needed. The DOSE-VF pilot and subsequent trial showed higher termination-of-VF and ROSC rates with VC compared to standard defibrillation.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Double sequential defibrillation (DSED) — consider, but know the guideline stance</div><div class="step-desc">Two defibrillators, pads in combined anterolateral + anteroposterior positions, discharged in close succession. The pivotal DOSE-VF trial (NEJM 2022) showed improved survival with DSED and VC versus standard defibrillation — but <b>ERC 2025 does not recommend routine use</b> given the practical challenges of coordinating two defibrillators and residual uncertainty in the broader evidence base. Reasonable to use where your system has trained for it; not yet a default step everywhere.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Start ECPR candidacy assessment immediately — don't wait to see if defibrillation strategy changes work</div><div class="step-desc">Time to ECMO flow (low-flow duration) is the dominant prognostic variable — assess candidacy from the moment refractory VF/pVT is recognized, in parallel with ongoing resuscitation, not as a fallback after everything else has failed.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Apply mechanical CPR if available</div><div class="step-desc">Frees hands for defibrillator coordination and cannulation, and provides consistent compressions during transport or the cannulation process itself.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Begin cannulation once ECPR candidacy criteria are met</div><div class="step-desc">Reasonable to consider commencing cannulation after <span class="d">10–20 minutes</span> of failed resuscitation. Cannulation itself can be achieved in as little as 10 minutes with an experienced team, though it often takes longer. Continue high-quality CPR throughout.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Target ECMO flow within 60 minutes of arrest onset</div><div class="step-desc">The overall goal per current ELSO consensus. Some dedicated prehospital ECPR systems target roughly 45 minutes from collapse. Survival drops substantially with each additional interval of low-flow time — this is a genuine race against a continuous, not stepwise, decline in probability of good outcome.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Recognize CPR-induced consciousness</div><div class="step-desc">Signs of consciousness (eye opening, purposeful movement, resistance) during ongoing compressions reflect good cerebral perfusion and are a favorable sign — pause briefly for a pulse check when this occurs, but don't mistake it for ROSC without confirmation.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Hypothermic arrest is a genuine exception to normal time limits</div><p>In hypothermic cardiac arrest specifically, cold dramatically reduces metabolic demand — neurologically intact survival has been reported after more than 3 hours of mechanical CPR before ECPR in this population. The usual low-flow time thresholds simply don't apply the same way when the patient is cold; "not dead until warm and dead" reflects real physiology, not just a saying.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Refractory VF/pVT — persistent shockable rhythm despite three or more defibrillation attempts plus appropriate CPR, vasopressors, and antiarrhythmics — occurs in roughly 10–25% of out-of-hospital cardiac arrests presenting with an initial shockable rhythm, with about 20% of all VF-presenting patients eventually going refractory. Survival to discharge with standard care alone is dismal, roughly 2–12%.</p>
+    <p>Extracorporeal cardiopulmonary resuscitation (ECPR) — initiating veno-arterial ECMO during ongoing, refractory arrest — offers a mechanism to restore circulation and oxygen delivery when conventional resuscitation can't. The landmark ARREST trial (University of Minnesota) was stopped early after showing a clear survival benefit for ECPR over standard ACLS in appropriately selected refractory VF patients, and subsequent series report neurologically intact survival up to roughly 54% in selected refractory VF populations — a dramatic improvement over conventional outcomes when the system, patient selection, and timing all align.</p>
+  </div>
+
+  <!-- 03 RECOGNITION & SELECTION -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Recognition &amp; ECPR Selection Criteria</h2></div>
+  <table class="rt">
+    <tr><th>Factor</th><th>Notes</th></tr>
+    <tr><td>Witnessed arrest</td><td>A core, near-universal selection criterion — reflects a shorter, more reliably known no-flow interval.</td></tr>
+    <tr><td>Bystander CPR</td><td>Also core — early compressions limit ischemic injury before EMS/ECPR team arrival.</td></tr>
+    <tr><td>Initial shockable rhythm (or PEA in some protocols)</td><td>The strongest single predictor across most published criteria; some centers additionally include PEA if other criteria are strongly met.</td></tr>
+    <tr><td>Age (commonly 18–65, varies by center)</td><td>Younger patients with fewer comorbidities are consistently favored — reflects both baseline physiologic reserve and post-arrest recovery potential.</td></tr>
+    <tr><td>No-flow time</td><td>Some protocols specifically exclude candidates with no-flow (time to start of any CPR) exceeding 5 minutes.</td></tr>
+    <tr><td>Suspected reversible cause</td><td>ECPR is intended as a bridge to treating the underlying problem (coronary occlusion, PE, toxicological arrest, hypothermia) — not a rescue for an irreversible process.</td></tr>
+    <tr><td>Time to cannulation / brief down-time</td><td>Along with the above, factors directly into scoring tools like the SAVE score, used to predict survival for ECMO in refractory cardiogenic shock/arrest.</td></tr>
+  </table>
+
+  <!-- 04 PROGRAM SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Program Set-Up &amp; Readiness (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>A well-defined, rapidly deployable ECPR protocol is essential</b> — outcomes in the absence of a clear protocol have been shown to be highly unfavorable. Candidate selection criteria, cannulation approach, and post-cannulation management should all be pre-specified, not improvised.</li>
+      <li><b>Preprimed ECMO circuits</b> meaningfully reduce time to initiation — a core operational lever for hitting the 60-minute (or tighter) flow target.</li>
+      <li><b>Choose a cannulation strategy model matched to your system's geography:</b> on-site cannulation when significant transport time is expected; a "rendezvous at initiation hospital" (Minnesota model) approach in more remote areas, where the patient and a dedicated ECPR team converge at a pre-designated site.</li>
+      <li><b>Regionalization is now a 2025 AHA recommendation:</b> concentrating ECPR capability at designated centers, with defined intra-arrest transport protocols to reach them, rather than every facility attempting to build independent capability.</li>
+      <li><b>Train specifically for VC and DSED techniques</b> if your system plans to use them — pad placement, timing, and defibrillator coordination all need deliberate practice, not improvisation mid-code.</li>
+      <li><b>Build a standard of care spanning inpatient and outpatient domains</b> for cardiac arrest survivors, including ECPR recipients — a new Class 1 recommendation area given the substantial disability burden even among survivors.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Refractory VF definition</td><td>Persistent VF/pVT after ≥3 shocks + appropriate CPR/vasopressors/antiarrhythmics</td></tr>
+    <tr><td>Refractory VF incidence among shockable-rhythm OHCA</td><td>~10–25%</td></tr>
+    <tr><td>Share of all VF-presenting patients who go refractory</td><td>~20%</td></tr>
+    <tr><td>Survival to discharge, standard care only</td><td>~2–12%</td></tr>
+    <tr><td>ECPR survival, selected refractory VF series</td><td>Up to ~54% neurologically intact in favorable series</td></tr>
+    <tr><td>Time to consider commencing cannulation</td><td>After 10–20 minutes of failed resuscitation</td></tr>
+    <tr><td>Fastest reported cannulation time</td><td>~10 minutes (experienced team)</td></tr>
+    <tr><td>ELSO target for ECMO flow establishment</td><td>Within 60 minutes of arrest onset</td></tr>
+    <tr><td>Dedicated prehospital ECPR system target</td><td>~45 minutes from collapse</td></tr>
+    <tr><td>Survival decline with low-flow duration (IHCA data)</td><td>~20% drop in survival-to-discharge over the first 35 minutes of low-flow time</td></tr>
+    <tr><td>Hypothermic arrest exception</td><td>Neurologically intact survival reported after &gt;3 hours mechanical CPR before ECPR</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Refractory VF/ECPR Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why ERC declines to recommend DSED despite a positive pivotal trial:</b> the DOSE-VF trial showed a real survival benefit, but implementing it reliably requires coordinating two synchronized defibrillators under extreme time pressure, with genuine device-safety and equipment-damage considerations that a single trial hasn't fully resolved. Guideline bodies weigh not just "does it work in a trial" but "can it be implemented safely and consistently across diverse real-world systems" — DSED currently sits in the gap between promising trial data and guideline-level confidence in routine, widespread deployment.</p>
+    <p><b>Why vector change is a more accessible next step:</b> it requires no additional equipment, only repositioning the pads already in use — this removes the logistical and safety barriers that keep DSED from being universally adopted, while still drawing on the same underlying evidence base (both interventions were tested together in DOSE-VF) suggesting altered current pathways through the myocardium can succeed where standard vectors fail.</p>
+    <p><b>Why low-flow time, not a fixed clock, drives the ECPR decision:</b> even excellent manual CPR generates only a fraction of normal cardiac output, so ischemic injury to the brain and heart accrues continuously throughout the arrest, not just during pauses. This is why "early assessment for ECPR candidacy" is emphasized rather than waiting to exhaust standard measures first — every minute of low-flow time before ECMO flow is established is a minute of accumulating, largely irreversible injury, which is also why the operational target is expressed as total time from collapse (not time from arrival, or time from decision) to actual ECMO flow.</p>
+    <p><b>Why witnessed arrest, bystander CPR, and initial shockable rhythm dominate selection criteria:</b> each is a proxy for the same underlying variable — a shorter effective interval of inadequate perfusion before meaningful intervention began. A witnessed arrest with immediate bystander CPR and a shockable rhythm signals a heart and brain that likely haven't yet sustained the degree of injury that makes ECPR futile, which is why these factors consistently outperform other candidate variables across different ECPR selection protocols.</p>
+    <p><b>Why hypothermia changes the entire calculus:</b> metabolic demand — and therefore the rate of ischemic injury accumulation — falls steeply with core temperature. The same 90-minute low-flow duration that predicts poor outcomes in a normothermic arrest can be survived intact in a sufficiently cold patient, which is the direct physiologic basis for extending resuscitation efforts and ECPR consideration far beyond normal thresholds specifically in this population.</p>
+  </div>
+
+  <!-- WHAT'S DRIVING THE RHYTHM (in place of pure differentials) -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>What's Driving the Refractory Rhythm?</h2></div>
+  <table class="rt">
+    <tr><th>Cause</th><th>Notes</th></tr>
+    <tr><td>Acute coronary ischemia/occlusion</td><td>The most common underlying driver — a strong argument for early coronary angiography/PCI once circulation is restored (including peri-ECMO in appropriate systems).</td></tr>
+    <tr><td>Electrolyte derangement</td><td>Hypokalemia, hyperkalemia, or hypomagnesemia can each sustain a shock-refractory rhythm — see the dedicated Hyperkalemic Cardiac Arrest crisis file; magnesium is specifically useful if torsades-type polymorphic VT is contributing.</td></tr>
+    <tr><td>Toxicological causes</td><td>Sodium channel blocker toxicity (TCA, cocaine), digoxin toxicity, and other cardiotoxic ingestions can all produce refractory arrhythmia — case reports describe ECPR permitting recovery even after prolonged low-flow time (up to 4 hours) in poisoning-induced arrest.</td></tr>
+    <tr><td>Hypothermia</td><td>Both a cause of arrest and a reason to extend resuscitation duration — see above.</td></tr>
+    <tr><td>Ongoing mechanical obstruction</td><td>Tension pneumothorax or tamponade preventing effective defibrillation/perfusion — address per the dedicated crisis files for each; a shock can't fix a heart that can't fill or eject.</td></tr>
+    <tr><td>Recurrent/refibrillating VF (distinct from truly refractory VF)</td><td>Converts to an organized rhythm then reoccurs — may reflect ongoing ischemia or an unstable substrate rather than failure to convert in the first place; worth distinguishing from persistent, unresponsive VF when planning next steps.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Post-ECPR Care &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Identify and treat the precipitating cause immediately:</b> coronary angiography for suspected ACS, CT for PE/other structural causes — ECPR buys time and circulation, but doesn't fix the underlying problem on its own.</p>
+    <p><b>Watch for differential hypoxia (North-South/Harlequin syndrome):</b> in peripheral VA-ECMO, if native cardiac function recovers before native lung function, poorly oxygenated blood from the native heart can preferentially perfuse the upper body/coronary circulation while the ECMO circuit oxygenates the lower body — a recognized complication requiring specific monitoring (right upper extremity SpO₂) and, if present, circuit modification.</p>
+    <p><b>Monitor for cannulation-site vascular complications:</b> limb ischemia is a real risk with femoral cannulation — a distal perfusion catheter is frequently placed proactively rather than reactively.</p>
+    <p><b>Targeted temperature management</b> per standard post-arrest care protocols, adapted to the ECMO circuit's thermal management capability.</p>
+    <p><b>Disposition and trajectory planning:</b> ICU-level, multidisciplinary care (critical care, cardiology, cardiac surgery, neurology) — the goal is full cardiac recovery where possible, with bridge-to-durable-device or transplant as a secondary pathway in select cases, and appropriately delayed neuroprognostication before any withdrawal-of-care discussion.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>European Resuscitation Council Guidelines 2025: Adult Advanced Life Support. <i>Resuscitation.</i> 2025.</li>
+    <li><span class="tier">PRIMARY</span>Richardson ASC, Tonna JE, Nanjayya V, et al. Extracorporeal Cardiopulmonary Resuscitation in Adults: Interim Guideline Consensus Statement from the Extracorporeal Life Support Organization (ELSO). <i>ASAIO J.</i></li>
+    <li><span class="tier">PRIMARY</span>2025 American Heart Association Guidelines for CPR and Emergency Cardiovascular Care — Part 1 Executive Summary (new ECPR standard-of-care recommendations). <i>Circulation.</i> 2025.</li>
+    <li><span class="tier">EVIDENCE</span>Cheskes S, et al. Defibrillation Strategies for Refractory Ventricular Fibrillation (DOSE-VF Trial). <i>N Engl J Med.</i> 2022;387(21):1947–1956.</li>
+    <li><span class="tier">EVIDENCE</span>Yannopoulos D, et al. (ARREST Trial) Advanced Reperfusion Strategies for Refractory Cardiac Arrest. Terminated early for clear ECPR benefit; University of Minnesota.</li>
+    <li><span class="tier">REFERENCE</span>Extracorporeal Cardiopulmonary Resuscitation for Refractory Cardiac Arrest. <i>Lancet Respir Med.</i> 2025.</li>
+    <li><span class="tier">REFERENCE</span>PRECARE Pilot Feasibility Study — Prehospital ECPR system design. <i>Resuscitation.</i> 2025.</li>
+    <li><span class="tier">REFERENCE</span>EMRA. Extracorporeal Cardiopulmonary Resuscitation: The Golden Hour. emra.org.</li>
+    <li><span class="tier">CASE DATA</span>Ng M, et al. Extracorporeal Cardio-Pulmonary Resuscitation in Poisoning: A Scoping Review. <i>Resusc Plus.</i> 2023.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. ECPR requires an established institutional program — verify local activation criteria and capability before applying this framework.</div>
+
+</div>
+</body>
+</html>

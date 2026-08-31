@@ -1,0 +1,17 @@
+{
+  "name": "crisis-content",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "extract:protocols": "node scripts/extract-protocols.mjs",
+    "extract:envenomation": "node scripts/extract-envenomation.mjs",
+    "extract:procedures": "node scripts/extract-procedures.mjs",
+    "extract": "npm run extract:protocols && npm run extract:envenomation && npm run extract:procedures",
+    "build": "npm run extract && node scripts/write-manifest.mjs",
+    "check-staleness": "node scripts/check-staleness.mjs"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

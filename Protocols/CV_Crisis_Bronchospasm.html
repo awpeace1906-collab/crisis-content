@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Severe Intraoperative Bronchospasm — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Perioperative</div>
+    <h1>Severe Intraoperative Bronchospasm</h1>
+    <p class="subtitle">Rule out the mechanical mimics first, deepen anesthesia, escalate through inhaled to IV bronchodilators — and watch for the dynamic hyperinflation that can quietly turn a respiratory problem into a hemodynamic one.</p>
+    <div class="badges">
+      <span class="badge red">ANESTHESIA EMERGENCY</span>
+      <span class="badge teal">MULTIMODAL / STEPWISE</span>
+      <span class="badge amber">90% OF CLOSED CLAIMS: DEATH/BRAIN INJURY</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Rule out the mimics before you commit to "bronchospasm" — treating a kinked tube with albuterol wastes the time you don't have.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">100% O₂, disconnect from the ventilator, hand-ventilate</div><div class="step-desc">Squeezing the bag yourself lets you feel resistance directly and assess whether this is truly high-resistance bronchospasm versus a mechanical problem.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Rule out mechanical and other causes fast</div><div class="step-desc">Check for ETT kink or mucus obstruction, endobronchial (mainstem) intubation, tension pneumothorax, aspiration, pulmonary edema, and pulmonary embolism — all can mimic bronchospasm and none respond to bronchodilators. Reposition/pull back the tube and confirm placement by auscultation if endobronchial intubation is possible. If anaphylaxis is on the differential, check for rash and BP and stop any newly-given agent.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Deepen anesthesia</div><div class="step-desc">The first pharmacologic step. Increase inhaled volatile concentration — sevoflurane is a potent direct bronchodilator and a good choice here — or bolus/increase an IV agent (propofol, or ketamine specifically for its bronchodilating properties).</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">4</div><div class="step-body"><div class="step-title">Inhaled beta-2 agonist</div><div class="step-desc">Albuterol <span class="d">8–10 puffs</span> via an MDI adapter in the circuit (a larger-than-usual dose is needed because a large fraction deposits on the ETT and circuit rather than reaching the lungs) or nebulized <span class="d">2.5 mg</span>. Add ipratropium, especially if a recent viral URI is a likely contributor.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">5</div><div class="step-body"><div class="step-title">Severe or unresponsive — IV epinephrine</div><div class="step-desc"><span class="d">1–2 mcg/kg IV</span>, or titrated boluses of <span class="d">10–100 mcg</span>. Reach for this early rather than persisting with inhaled therapy alone if SpO₂ is critically low or the chest is silent — inhaled drug often can't reach the alveoli through a severely obstructed airway, while IV epinephrine works systemically regardless.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">6</div><div class="step-body"><div class="step-title">Refractory — add multimodal adjuncts</div><div class="step-desc">IV magnesium sulfate, ketamine bolus/infusion, IV lidocaine, or dexmedetomidine. Corticosteroids (methylprednisolone) help reduce recurrence/prolonged course but take 4–8 hours to act — give early anyway, but don't expect it to break the acute event.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">7</div><div class="step-body"><div class="step-title">Watch for dynamic hyperinflation ("breath stacking")</div><div class="step-desc">Severe obstruction can prevent full exhalation before the next breath is delivered, progressively raising intrathoracic pressure, reducing venous return, and causing hypotension or even PEA. If hypotension develops during severe bronchospasm, briefly <b>disconnect the circuit</b> to allow full passive exhalation — both diagnostic and therapeutic. Reduce respiratory rate and extend expiratory time; permissive hypercapnia is an acceptable trade-off.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">If reversing neuromuscular blockade</div><div class="step-desc">Use sugammadex rather than neostigmine if the patient is actively wheezing — neostigmine's muscarinic activity can worsen bronchoconstriction.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Small share of claims, disproportionate severity</div><p>Bronchospasm accounts for only about 2% of anesthesia closed-claims cases, but roughly 90% of those specific claims involve severe brain injury or death — this is a low-incidence, high-lethality event when it goes wrong.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Bronchospasm is smooth-muscle-mediated narrowing of the bronchioles, producing airflow obstruction concentrated in the expiratory phase. Perioperative causes include reactive airway disease (asthma), COPD, anaphylaxis, direct mechanical/chemical airway irritation (ETT stimulating the carina or a mainstem bronchus, aspiration of gastric acid), and drug-related histamine release.</p>
+    <p>A large retrospective review found combined intraoperative bronchospasm and laryngospasm incidence around 1.7%, more frequent in older patients and those with active asthma. Even though it's a fairly infrequent event overall, its severity profile in closed-claims data (above) makes rapid, correct management disproportionately important relative to its incidence.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Expiratory wheeze on auscultation</td><td>Classic finding — but a truly silent chest can mean the airways are so severely obstructed that no air movement is audible at all, which is a worse sign, not a reassuring one.</td></tr>
+    <tr><td>Rising peak inspiratory pressure</td><td>Reflects increasing airway resistance during mechanical ventilation.</td></tr>
+    <tr><td>Capnography waveform change ("shark-fin")</td><td>An upsloping expiratory limb replacing the normal plateau reflects delayed, obstructed exhalation — a fast, readily-available clue even before auscultating.</td></tr>
+    <tr><td>Desaturation</td><td>From worsening ventilation-perfusion mismatch as obstruction progresses.</td></tr>
+    <tr><td>Difficulty hand-ventilating</td><td>High felt resistance when bagging manually — a direct, immediate way to assess severity once disconnected from the ventilator.</td></tr>
+    <tr><td>Hypotension (late)</td><td>Suggests dynamic hyperinflation with impaired venous return rather than a primary cardiovascular event — treat by allowing exhalation, not just with fluids/pressors alone.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Preoperative optimization</b> for known reactive airway disease: confirm the patient is on their routine inhaled beta-agonist/steroid regimen, consider having them use their inhaler the morning of surgery, and postpone elective cases with poorly-controlled asthma when feasible.</li>
+      <li><b>Risk history matters more than exam findings the day of surgery</b> — a history of frequent exacerbations, hospital visits, or prior intubation/mechanical ventilation for a severe asthma attack signals real risk even in a patient who looks and sounds fine at preop assessment.</li>
+      <li><b>Consider a supraglottic airway instead of an ETT</b> when the case allows it, to reduce direct tracheal/carinal stimulation in a hyperreactive airway.</li>
+      <li><b>Ensure an adequate depth of anesthesia before airway manipulation</b> — laryngoscopy and intubation performed too lightly are a well-recognized trigger.</li>
+      <li><b>Be cautious with histamine-releasing drugs</b> (e.g., older-generation neuromuscular blockers like atracurium, morphine) in higher-risk patients.</li>
+      <li><b>Plan extubation deliberately</b> — either fully awake or under a genuinely deep plane, avoiding the intermediate ("stage 2") depth that raises airway reactivity risk; IV lidocaine before extubation can help blunt reflex bronchoconstriction.</li>
+      <li><b>Reoccurrence on emergence is common</b> once volatile anesthetic is turned off — keep an albuterol nebulizer and IV bronchodilator options accessible through emergence and early recovery, not just during the case itself.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Drug / route</th><th>Dose</th><th>Notes</th></tr>
+    <tr><td>Albuterol, MDI via circuit adapter</td><td>8–10 puffs (up to 5–15 in some regimens)</td><td>Larger than the outpatient dose — most deposits on the ETT/circuit before reaching the lung.</td></tr>
+    <tr><td>Albuterol, nebulized</td><td>2.5 mg</td><td>Alternative delivery if in-line MDI adapter isn't available.</td></tr>
+    <tr><td>Epinephrine IV, weight-based</td><td>1–2 mcg/kg</td><td>For severe/refractory bronchospasm not responding to inhaled therapy.</td></tr>
+    <tr><td>Epinephrine IV, titrated boluses</td><td>10–100 mcg</td><td>Titrate to response; keep separate from any sodium bicarbonate line (incompatible).</td></tr>
+    <tr><td>Magnesium sulfate IV</td><td>Bolus ± infusion</td><td>Useful multimodal adjunct in refractory cases; watch for muscle weakness/CNS depression at higher doses.</td></tr>
+    <tr><td>Methylprednisolone / corticosteroid</td><td>Institution-dependent dosing</td><td>Onset 4–8 hours — give early for the recurrence-prevention benefit, not as acute rescue.</td></tr>
+    <tr><td>Incidence, combined bronchospasm + laryngospasm</td><td>~1.7%</td><td>Higher in older patients and active asthmatics.</td></tr>
+    <tr><td>Closed-claims severity</td><td>~2% of claims, ~90% of those involve severe brain injury or death</td><td>Low frequency, high stakes when it happens.</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Bronchospasm Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why ruling out mechanical causes comes before treating "bronchospasm":</b> a kinked tube, mainstem intubation, or tension pneumothorax can produce an identical clinical picture — high airway pressure, desaturation, difficulty ventilating — without any bronchodilator having a chance of helping. Time spent nebulizing albuterol into a mechanically obstructed circuit is time not spent fixing the actual problem.</p>
+    <p><b>Why deepening anesthesia is the first pharmacologic step:</b> a light anesthetic plane during airway stimulation is one of the most common precipitants of reflex bronchoconstriction, and volatile agents (sevoflurane in particular) are themselves direct bronchodilators — this single intervention can address both the trigger and the treatment simultaneously.</p>
+    <p><b>Why IV epinephrine gets used even though inhaled therapy is first-line in outpatient asthma care:</b> inhaled drug delivery depends on the drug actually reaching distal airways, which becomes progressively less reliable as obstruction worsens — in a genuinely severe or "silent chest" presentation, systemic (IV) epinephrine bypasses that delivery problem entirely and acts through the same beta-2 mechanism regardless of how obstructed the airways are.</p>
+    <p><b>Why neostigmine is avoided when the patient is wheezing:</b> neostigmine inhibits acetylcholinesterase non-selectively, increasing muscarinic as well as nicotinic cholinergic tone — the muscarinic effect promotes bronchoconstriction, directly working against what you're trying to treat. Sugammadex reverses rocuronium/vecuronium by direct encapsulation rather than through the cholinergic system, so it doesn't carry this risk.</p>
+    <p><b>Why dynamic hyperinflation causes hypotension that looks cardiac but isn't:</b> when expiratory time is inadequate relative to the degree of obstruction, each subsequent breath adds volume on top of air that hasn't fully left the lungs. The resulting rise in intrathoracic pressure compresses the great veins and reduces venous return to the heart — a mechanical, not a primary cardiac, cause of hypotension. This is exactly why briefly disconnecting the circuit (allowing full passive exhalation) is both the diagnostic test and the treatment, rather than reaching first for fluids or vasopressors.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>ETT obstruction (kink, mucus plug, cuff herniation)</td><td>Passing a suction catheter fails to advance freely, or direct visualization/fiberoptic check reveals the obstruction — doesn't respond to bronchodilators.</td></tr>
+    <tr><td>Endobronchial (mainstem) intubation</td><td>Unilateral breath sounds, asymmetric chest rise; resolves immediately with pulling the tube back to correct depth.</td></tr>
+    <tr><td>Tension pneumothorax</td><td>Unilateral absent breath sounds, tracheal deviation, hypotension, distended neck veins — a distinct mechanical emergency, not bronchospasm.</td></tr>
+    <tr><td>Pulmonary aspiration</td><td>Often a known event (witnessed regurgitation) or occurs in a high-risk patient; gastric acid causes irritant-mediated bronchoconstriction that responds less reliably to epinephrine than immune-mediated bronchospasm — focus on suctioning and supportive care alongside bronchodilator therapy.</td></tr>
+    <tr><td>Pulmonary edema</td><td>Pink frothy secretions, diffuse crackles rather than wheeze predominating, different hemodynamic picture (often volume-overloaded rather than obstructed).</td></tr>
+    <tr><td>Pulmonary embolism</td><td>Sudden desaturation and hypotension without a clear airway-pressure/wheeze pattern; consider especially with new hypotension out of proportion to apparent respiratory findings.</td></tr>
+    <tr><td>Anaphylaxis</td><td>Bronchospasm can be a component of anaphylaxis itself — check for rash, angioedema, and hypotension out of proportion to a pure airway problem, and treat as anaphylaxis (epinephrine, stop the trigger) if those features are present.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Confirm resolution before proceeding:</b> reassess airway pressures, breath sounds, and capnography waveform once treatment is given — don't assume resolution just because the immediate crisis feels over.</p>
+    <p><b>Chest imaging if there's any residual concern:</b> a chest X-ray can rule out a missed pneumothorax or confirm tube position if endobronchial intubation was in the differential.</p>
+    <p><b>Emergence and extubation planning:</b> anticipate recurrence as volatile anesthetic is discontinued; have bronchodilator therapy immediately available through extubation and early recovery, and plan a deep or fully-awake extubation deliberately rather than defaulting to routine timing.</p>
+    <p><b>Disposition:</b> a severe or refractory episode — especially one involving dynamic hyperinflation with hemodynamic compromise, or requiring IV epinephrine/multimodal rescue — warrants postoperative ICU-level monitoring rather than routine PACU-to-floor progression.</p>
+    <p><b>Documentation and future planning:</b> record the trigger if identifiable, treatments given and response, and flag the chart for anesthesia technique adjustments (SGA over ETT, avoidance of a specific drug, more aggressive preoperative optimization) on future anesthetics.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Looseley A. Management of Bronchospasm During General Anaesthesia. WFSA Update in Anaesthesia. resources.wfsahq.org.</li>
+    <li><span class="tier">PRIMARY</span>Anesth. Mgmt: Asthma. OpenAnesthesia.org, updated 2026.</li>
+    <li><span class="tier">GUIDELINE</span>Anesthesia Management in Patients with Asthma. <i>StatPearls,</i> NCBI Bookshelf, updated 2025.</li>
+    <li><span class="tier">REFERENCE</span>Looseley A, Baxendale B, et al. Perioperative Considerations for the Patient With Asthma and Bronchospasm. <i>Br J Anaesth.</i></li>
+    <li><span class="tier">REFERENCE</span>Bohringer C, Copeland D, Liu H. A Contemporary Approach to the Treatment of Perioperative Bronchospasm. 2020.</li>
+    <li><span class="tier">REFERENCE</span>Du J, Tobias JD. Intraoperative Care of Severe Bronchospasm. <i>Perioper Anesth Crit Care Consult.</i></li>
+    <li><span class="tier">CASE DATA</span>Liu, et al. Successful Adrenaline Treatment of Perioperative Severe Bronchospasm Combined With a Silent Lung: Two Case Reports. <i>Transl Cancer Res.</i> 2022.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peri-Arrest Pulmonary Embolism — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Resuscitation / Obstructive Shock</div>
+    <h1>Peri-Arrest Pulmonary Embolism</h1>
+    <p class="subtitle">Full-dose thrombolysis in arrest, half-dose otherwise — why ongoing CPR isn't a contraindication to lysis, and why the evidence supporting this is honestly weaker than the confidence with which it's practiced.</p>
+    <div class="badges">
+      <span class="badge red">OBSTRUCTIVE SHOCK EMERGENCY</span>
+      <span class="badge teal">2026 AHA/ACC PE GUIDELINE-ALIGNED</span>
+      <span class="badge amber">ONGOING CPR IS NOT A LYSIS CONTRAINDICATION</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — Recognizing It Under CPR</a>
+    <a class="qn" href="#prevention">Set-Up / Readiness</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">The dosing calculus flips between peri-arrest and true arrest — know which one you're in before you draw up the drug.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Cardiac arrest with suspected/known PE as the cause — full-dose systemic thrombolysis</div><div class="step-desc">Continue high-quality CPR and give thrombolytics without delay. The most consistently applied regimen is <span class="d">alteplase (tPA) 50 mg IV bolus</span>. Ongoing CPR is <b>not</b> a contraindication — international resuscitation guidance is explicit that compressions should continue through and after administration.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Peri-arrest (not yet arrested), high-risk PE with cardiogenic shock — half-dose thrombolysis preferred when no absolute contraindication</div><div class="step-desc"><b>Half-dose alteplase:</b> <span class="d">0.5 mg/kg</span> (max 50 mg) — 10–20 mg bolus, remainder infused over 2 hours. <b>Half-dose tenecteplase:</b> <span class="d">0.25 mg/kg</span> single bolus (max 25 mg). Systemic thrombolytics are favored over catheter-based options specifically in the peri-arrest patient with no absolute contraindication, given the time-critical nature.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Guide redosing with bedside echocardiography</div><div class="step-desc">If ROSC is achieved but right ventricular dysfunction persists on echo, a second bolus (case reports describe a repeat 50 mg alteplase dose roughly 20 minutes after the first) has been used successfully to address ongoing clot burden — let the echo, not a fixed protocol alone, guide whether more is needed.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Continue CPR for an extended period after thrombolysis</div><div class="step-desc">The drug needs time to work — hemodynamic improvement may not be immediate. There's no firm consensus duration in the literature, but extending resuscitation efforts well beyond a typical arrest timeline (commonly practiced in the 60–90 minute range post-lytic) before considering termination is standard practice specifically because of this delayed-effect pharmacology.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Consider nebulized pulmonary vasodilators as an adjunct</div><div class="step-desc">Nebulized nitroglycerin (50 mg/50 mL, 5 mL nebulized over 15 min) or nebulized milrinone (10 mg/mL, 5 mL over 15 min) have been used in cardiac arrest and peri-arrest PE based on limited data — reasonable adjuncts, not a substitute for thrombolysis or definitive therapy.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Escalate to mechanical/surgical options if thrombolysis fails or is contraindicated</div><div class="step-desc">Aspiration/mechanical thrombectomy, surgical embolectomy, or VA-ECMO as a bridge — all documented rescue options in refractory cases, particularly when a contraindication (e.g., recent major surgery, active bleeding) rules out lysis.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Activate a Pulmonary Embolism Response Team (PERT) if available</div><div class="step-desc">Now a Class 1 recommendation in the 2026 AHA/ACC guideline specifically to improve timeliness of care — involve them early rather than after initial stabilization attempts have already run their course.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">The evidence is honestly weaker than the confidence it's given</div><p>ILCOR's 2020 consensus lists thrombolysis for suspected PE-caused arrest as a weak recommendation with very low-certainty evidence. A large blinded RCT of rescue thrombolysis in undifferentiated PEA arrest showed no benefit — but PE-specific registries and case series suggest real benefit when the diagnosis is genuinely likely. The practice is followed because the alternative, in a patient who is otherwise going to die, carries little additional downside — not because the evidence is strong.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Acute pulmonary embolism causes a sudden rise in pulmonary vascular resistance, producing right ventricular pressure overload, dilation, and impaired systolic function. The failing right ventricle reduces left ventricular filling (via septal shift and reduced venous return through the pulmonary circuit), causing a fall in cardiac output that can progress to cardiogenic/obstructive shock and cardiac arrest — most commonly presenting as pulseless electrical activity.</p>
+    <p>The first dedicated AHA/ACC clinical practice guideline for acute PE (2026) replaces the older, blunt "massive/submassive" terminology with a new A-through-E severity classification based on the most severe clinical, laboratory, and imaging finding — Category E1 (cardiopulmonary failure with recurrent or persistent hypotension/cardiogenic shock) corresponds roughly to the old "massive" category and carries a Class 2a recommendation for systemic thrombolysis; Category D represents incipient cardiopulmonary failure. PE is estimated to be a contributing cause in a meaningful share of cardiac arrests overall, alongside acute MI.</p>
+  </div>
+
+  <!-- 03 SIGNS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — Recognizing It Under CPR</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Pulseless electrical activity as the initial rhythm</td><td>The dominant presentation in PE-caused arrest across multiple case series (roughly 78–83% of cases) — a strong pattern-recognition clue even before imaging.</td></tr>
+    <tr><td>Extremely low EtCO₂</td><td>Suggests massive PE specifically — with pulmonary blood flow obstructed, little CO₂ reaches the alveoli regardless of ventilation quality, producing a disproportionately low reading relative to compression quality.</td></tr>
+    <tr><td>Bedside echo: right ventricular dilation/dysfunction</td><td>A supportive finding, but its absence doesn't reliably exclude PE — one case series specifically noted the absence of RV dilation "argued against, but not conclusively" the diagnosis.</td></tr>
+    <tr><td>S1Q3T3 ECG pattern</td><td>Classic but insensitive; useful when present, not reliable enough to exclude PE when absent.</td></tr>
+    <tr><td>Risk factor context</td><td>Recent surgery, prolonged immobilization, active malignancy, known hypercoagulable state, or recent long-bone fracture (cross-reference the Fat Embolism differential) — all raise pretest probability significantly when arrest occurs in this context.</td></tr>
+    <tr><td>Sudden collapse with a preceding history of dyspnea, pleuritic pain, or leg swelling</td><td>When collateral history is available (family, EMS report), these are the classic pre-arrest PE symptoms.</td></tr>
+  </table>
+
+  <!-- 04 SETUP / READINESS -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Set-Up &amp; Readiness (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Have a thrombolytic immediately accessible</b> in any resuscitation area — the time to locate and reconstitute the drug is time the patient doesn't have once arrest occurs.</li>
+      <li><b>Bedside echo capability</b> for real-time diagnostic support and to guide redosing decisions after an initial bolus.</li>
+      <li><b>Know your institution's PERT activation pathway</b> before you need it — a Class 1 recommendation now, meaning this should be a routine reflex for high-risk PE, not a rare escalation.</li>
+      <li><b>Label thrombolytic doses clearly for indication</b> — institutions using tenecteplase across stroke, STEMI, and PE indications benefit from clear dose labeling on the drug itself, since the correct dose varies meaningfully by indication and getting it wrong under pressure is a real risk.</li>
+      <li><b>Identify high-risk patients proactively</b> — recent surgery, malignancy, prolonged immobilization — so that a sudden collapse in this population triggers PE-specific suspicion immediately rather than defaulting to a generic arrest workup.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Cardiac arrest thrombolytic dose (alteplase)</td><td>50 mg IV bolus, most consistently applied regimen</td></tr>
+    <tr><td>Half-dose alteplase (peri-arrest, high-risk PE)</td><td>0.5 mg/kg (max 50 mg): 10–20 mg bolus + remainder over 2 hours</td></tr>
+    <tr><td>Half-dose tenecteplase (peri-arrest, high-risk PE)</td><td>0.25 mg/kg single bolus (max 25 mg)</td></tr>
+    <tr><td>Repeat-bolus interval described in case reports</td><td>~20 minutes after first dose, guided by persistent RV dysfunction on echo</td></tr>
+    <tr><td>PEA as initial rhythm in PE-caused arrest</td><td>~78–83% of cases</td></tr>
+    <tr><td>Only ~1/3 of eligible high-risk PE patients actually receive systemic thrombolytics</td><td>Observational data — a real, documented care gap</td></tr>
+    <tr><td>2026 AHA/ACC classification for full-dose lysis recommendation (Class 2a)</td><td>Category E1 (cardiopulmonary failure, recurrent/persistent hypotension/shock)</td></tr>
+    <tr><td>Major bleeding rates in arrest-thrombolysis series</td><td>Roughly 10–25% across reported case series — real, but weighed against near-certain mortality without intervention</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Peri-Arrest PE Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why the dose flips from half to full between peri-arrest and true arrest:</b> half-dose regimens exist specifically to reduce bleeding risk in a patient who is still perfusing and has time for a more conservative approach. Once circulation has actually stopped, the calculus changes entirely — the patient is going to die imminently without rapid, maximal clot dissolution, and the marginal bleeding risk of a full dose becomes a secondary concern relative to the near-certainty of death without aggressive intervention.</p>
+    <p><b>Why ongoing CPR isn't a contraindication to giving the drug:</b> a natural instinct is to worry that chest compressions during or after thrombolysis increase bleeding or trauma risk. Current resuscitation guidance explicitly rejects this concern for PE-suspected arrest — compressions may even mechanically help fragment and distribute the thrombus, and stopping CPR to "protect" against a theoretical bleeding risk guarantees the more immediate risk of death from ongoing circulatory arrest.</p>
+    <p><b>Why extended CPR duration after thrombolysis is standard practice despite no formal consensus number:</b> thrombolytic drugs take time to actually dissolve the obstructing clot and restore pulmonary blood flow — a resuscitation that looks unsuccessful in the first several minutes after the bolus may simply not have had enough time yet. This is conceptually similar to hyperkalemic arrest (see that crisis file): the underlying cause is being actively treated in real time, which justifies continuing well past when a typical arrest would prompt termination.</p>
+    <p><b>Why the negative TROICA trial result doesn't overturn the PE-specific approach:</b> TROICA tested rescue thrombolysis in undifferentiated PEA arrest of unknown cause — a population where the large majority didn't actually have PE, diluting any true PE-specific benefit into statistical noise. Subsequent registries and case series specifically selecting patients with known or strongly suspected PE (like the French National Cardiac Arrest Registry) show a real survival signal. The lesson isn't "thrombolysis doesn't work for arrest" — it's that diagnostic specificity is what determines whether the intervention actually helps, which is exactly the diagnosis-driven framing this whole crisis series is built around.</p>
+    <p><b>Why bedside echo drives redosing rather than a fixed protocol:</b> a single 50 mg bolus dissolves a variable amount of thrombus depending on clot burden and time since embolization — persistent RV dysfunction after apparent ROSC is direct evidence that meaningful obstruction remains, which is a more physiologically grounded trigger for a second dose than an arbitrary fixed-protocol cutoff.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Acute myocardial infarction / cardiogenic shock</td><td>Focal regional wall motion abnormality on echo rather than the global RV strain/dilation pattern of PE; troponin and ECG changes point toward coronary occlusion; treated with reperfusion (PCI/thrombolysis for STEMI) rather than PE-specific dosing.</td></tr>
+    <tr><td>Tension pneumothorax</td><td>Unilateral absent breath sounds, tracheal deviation — a mechanical rather than embolic obstructive process; see the dedicated Tension Pneumothorax crisis file.</td></tr>
+    <tr><td>Cardiac tamponade</td><td>Pericardial effusion with chamber compression on echo rather than isolated RV strain; see the dedicated Tamponade crisis file.</td></tr>
+    <tr><td>Hemorrhagic/hypovolemic shock</td><td>Collapsed, not distended, cardiac chambers on echo; look for an obvious bleeding source.</td></tr>
+    <tr><td>Amniotic fluid embolism (peripartum)</td><td>DIC-driven coagulopathy and a peripartum clinical context distinguish this from thrombotic PE, though both can present with sudden collapse and obstructive-shock physiology.</td></tr>
+    <tr><td>Anaphylaxis</td><td>Skin findings and a clear temporal trigger (drug, exposure) point away from PE; treated with epinephrine, not thrombolysis.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Confirm once stabilized:</b> CT pulmonary angiography as soon as the patient is stable enough to transport, since thrombolysis in the acute setting is typically given on clinical/echo suspicion rather than confirmed imaging.</p>
+    <p><b>Anticoagulation after thrombolysis:</b> transition to a heparin infusion for ongoing anticoagulation once the acute lytic phase is complete, per standard PE management principles.</p>
+    <p><b>Monitor for bleeding:</b> close neurologic and hemodynamic monitoring for the bleeding complications inherent to thrombolytic therapy, particularly intracranial hemorrhage.</p>
+    <p><b>Escalation if incomplete response:</b> catheter-directed therapy, mechanical thrombectomy, or surgical embolectomy for persistent right heart strain or hemodynamic compromise despite systemic lysis — increasingly available and structured under the 2026 guideline's risk-stratified framework.</p>
+    <p><b>Disposition:</b> ICU admission for any patient post-arrest or post-thrombolysis for PE, with PERT/multidisciplinary involvement continuing through the acute and subacute phases, including decisions about IVC filter placement if anticoagulation is later contraindicated.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Creager MA, et al. 2026 AHA/ACC/ACCP/ACEP/CHEST/SCAI/SHM/SIR/SVM/SVN Guideline for the Evaluation and Management of Acute Pulmonary Embolism in Adults. <i>Circulation.</i> 2026;153(12):e977–e1051.</li>
+    <li><span class="tier">PRIMARY</span>High Risk Pulmonary Embolism Management. EM Cases, emergencymedicinecases.com, 2025.</li>
+    <li><span class="tier">EVIDENCE</span>Javaudin F, et al. Thrombolysis During Resuscitation for Out-of-Hospital Cardiac Arrest Caused by Pulmonary Embolism Increases 30-Day Survival: Findings From the French National Cardiac Arrest Registry. <i>Chest.</i> 2019;156(6):1167–1175.</li>
+    <li><span class="tier">EVIDENCE</span>Böttiger BW, et al. (TROICA Trial). Thrombolysis During Resuscitation for Out-of-Hospital Cardiac Arrest. <i>N Engl J Med.</i> 2008;359(25):2651–2662.</li>
+    <li><span class="tier">EVIDENCE</span>Usefulness of Thrombolysis in Cardiac Arrest Secondary to Suspected or Confirmed Pulmonary Embolism. Multicenter retrospective chart review.</li>
+    <li><span class="tier">REFERENCE</span>Mahboob HB, Denney BW. Double Bolus Alteplase Therapy During CPR for Cardiac Arrest Due to Massive PE Guided by Focused Bedside Echocardiography. <i>Case Rep Emerg Med.</i> 2018.</li>
+    <li><span class="tier">REFERENCE</span>LITFL. "Goodbye 'Massive' and 'Submassive'" — 2026 AHA/ACC PE Classification Summary. litfl.com.</li>
+    <li><span class="tier">REFERENCE</span>emDocs. 2026 Guideline: Evaluation and Management of Acute PE. emdocs.net.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

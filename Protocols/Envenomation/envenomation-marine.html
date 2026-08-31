@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — Marine (Global) — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  .header{max-width:900px;margin:0 auto;padding:36px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  .back{font-size:11px;color:var(--text3);margin-bottom:16px;display:inline-block;}
+  .back:hover{color:var(--accent);}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:8px;}
+  .lede{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;font-style:italic;color:var(--text3);max-width:640px;margin-bottom:20px;}
+  .divider{height:1px;background:var(--border);margin:0 auto 20px;max-width:900px;}
+
+  .filter-bar{position:sticky;top:0;z-index:20;background:rgba(10,14,20,0.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:14px 24px;margin-bottom:28px;}
+  .filter-inner{max-width:900px;margin:0 auto;}
+  .search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:13px;margin-bottom:10px;}
+  .search-input:focus{outline:none;border-color:var(--accent);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .chip-group-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text4);margin-right:2px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:14px;border:1px solid var(--border);color:var(--text3);cursor:pointer;background:transparent;transition:all .15s;}
+  .chip:hover{border-color:var(--accent);color:var(--text);}
+  .chip.active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600;}
+  .results-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:10px;}
+
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin:0 0 16px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden;transition:border-color .15s;}
+  .card.hidden{display:none;}
+  .card-head{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .tag.region{background:rgba(96,165,250,0.15);color:var(--blue);}
+  .tag.class{background:rgba(167,139,250,0.15);color:var(--purple);}
+  .tag.mechanism{background:rgba(251,191,36,0.15);color:var(--amber);}
+  .card-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .card-sub{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;color:var(--text4);}
+
+  .card-body{padding:6px 22px 20px;}
+  .field{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .field:last-child{border-bottom:none;}
+  .field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .field-body{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+
+  .box.t-color{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:6px;padding:14px 18px;margin-top:4px;}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+
+  .notice{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-top:8px;}
+  .notice-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+  .notice-sub{font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--text4);margin-bottom:12px;line-height:1.6;}
+  .notice-list{list-style:none;}
+  .notice-list li{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text2);line-height:1.7;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-list strong{font-family:'Syne',sans-serif;color:var(--text);font-weight:700;}
+
+  footer{max-width:900px;margin:20px auto 0;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .filter-bar{display:none;}
+    .card{break-inside:avoid;border:1px solid #999;}
+    .card.hidden{display:block;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="envenomation.html" class="back">← Envenomation Index</a>
+    <div class="kicker">Crisis Management — Envenomation — Marine (Global)</div>
+    <h1>Marine (Global)</h1>
+    <p class="lede">Grouped by mechanism rather than geography, since the species that matter cluster around the Indo-Pacific but the decontamination step you pick first — vinegar, hot water, or neither — is the single most consequential decision on this page and it varies dangerously by species.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search species, syndrome, keyword…" oninput="filterCards()">
+      <div class="chip-row" id="classChips">
+        <span class="chip-group-label">Class:</span>
+        <button class="chip" data-facet="class" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="class" data-value="jellyfish" onclick="toggleChip(this)">Jellyfish</button>
+        <button class="chip" data-facet="class" data-value="fish" onclick="toggleChip(this)">Fish</button>
+        <button class="chip" data-facet="class" data-value="mollusk" onclick="toggleChip(this)">Mollusk / Octopus</button>
+        <button class="chip" data-facet="class" data-value="snake" onclick="toggleChip(this)">Sea Snake</button>
+      </div>
+      <div class="chip-row" id="mechChips" style="margin-top:6px;">
+        <span class="chip-group-label">Mechanism:</span>
+        <button class="chip" data-facet="mechanism" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="mechanism" data-value="cardiotoxic" onclick="toggleChip(this)">Cardiotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="neurotoxic" onclick="toggleChip(this)">Neurotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="cytotoxic" onclick="toggleChip(this)">Cytotoxic</button>
+      </div>
+      <div class="results-count" id="resultsCount">7 entries</div>
+      <div class="gs-hint" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:6px;">Critical-intervention species only — see the non-critical notice below for the rest (stingray, sea urchin).</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-head">Species — Marine (Global)</div>
+
+    <div class="card" id="box-jellyfish" data-class="jellyfish" data-mechanism="cardiotoxic" data-search="box jellyfish chironex fleckeri cubozoan sea wasp">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">N. Australia, Indo-Pacific</span>
+          <span class="tag class">Jellyfish (Cubozoa)</span>
+          <span class="tag mechanism">Cardiotoxic</span>
+        </div>
+        <div class="card-title">Box Jellyfish</div>
+        <div class="card-sub">Chironex fleckeri. Also called: sea wasp. Widely described as the most venomous marine animal — a severe sting is one of the fastest-acting lethal envenomations known, with fatal cardiac arrest documented within 15-20 minutes</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Sudden, severe pain on contact. Stings covering more than roughly 10% of body surface area can progress to cardiorespiratory arrest within 5-10 minutes — this is described in the literature as among the most explosive envenomation processes known in humans. Most stings, however, are far less severe and respond to first aid alone.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Immediate severe pain with characteristic whip-like linear tentacle marks. Severe envenomation causes direct toxic effects on the myocardium and cell membranes broadly — myocardial irritability, arrhythmia, pulmonary edema, hypotension, and cardiac arrest, described as toxic rather than allergic in mechanism.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Douse generously with vinegar (4-6% acetic acid) to inactivate any undischarged nematocysts still on the skin — this does not relieve pain from venom already injected, but prevents further envenomation from adherent tentacles, which are present in roughly 30% of stings. If vinegar isn't available, diluted acidic alternatives (even cola) have been suggested, though effectiveness is debated; alcohol-based products must be avoided, as they trigger further nematocyst firing. Do NOT apply a pressure immobilization bandage — pressure itself can trigger nematocyst discharge and the venom acts too fast for PBI to meaningfully slow systemic spread. Begin CPR immediately for any cardiac arrest; vigorous, sustained resuscitation is explicitly the best prehospital survival factor for a massive sting.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Continue vinegar decontamination and remove remaining tentacles. Cardiorespiratory monitoring for any patient with significant sting area or pain refractory to first aid. IV magnesium sulfate has evidence for pain and cardiovascular control, particularly when response to antivenom is inadequate. Verapamil has been used in refractory circulatory arrest based on case data.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Box Jellyfish Antivenom (CSL, ovine) exists but its clinical effectiveness is genuinely disputed — animal studies conflict, and deaths have occurred despite antivenom administration in northern Australia. It remains indicated for pain refractory to IV opioids (1 ampoule) and for systemic envenoming with collapse, hypotension, or significant arrhythmia (3 ampoules IV over 20 minutes, repeatable). In cardiac arrest, give all immediately available antivenom (at least 6 ampoules) as a rapid undiluted IV push alongside standard resuscitation and magnesium.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Most stings, once decontaminated, are managed with analgesia and discharge. Any patient with systemic signs or a large-surface-area sting needs cardiorespiratory monitoring in a resuscitation-capable setting.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Vinegar is a decontamination step, not a treatment for pain or systemic symptoms already underway — don't let its application create false reassurance. Antivenom's real-world effectiveness for cardiac arrest is unresolved in the literature; giving it in that scenario is reasonable and recommended, but shouldn't replace aggressive standard resuscitation as the primary intervention.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="irukandji" data-class="jellyfish" data-mechanism="cardiotoxic" data-search="irukandji syndrome carukia barnesi carybdeid jellyfish">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">N. Australia, Indo-Pacific</span>
+          <span class="tag class">Jellyfish (Carybdeid)</span>
+          <span class="tag mechanism">Cardiotoxic (Delayed)</span>
+        </div>
+        <div class="card-title">Irukandji Syndrome</div>
+        <div class="card-sub">Caused by Carukia barnesi and several related small carybdeid jellyfish species. The sting itself is often trivial or unnoticed — the danger is a delayed, severe systemic catecholamine crisis that follows</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">The initial sting is frequently minor — mild local pain, sometimes barely noticed, from a jellyfish that can be nearly invisible in the water. Systemic Irukandji syndrome develops 20-30 minutes later, which is the core diagnostic trap: patients and even early clinicians can dismiss the initial contact as inconsequential before the real syndrome announces itself.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Severe generalized pain (back, limbs, abdomen), profuse sweating, nausea and vomiting, anxiety and a sense of impending doom, hypertension, and tachycardia from a massive catecholamine surge. Severe cases can progress to pulmonary edema, cardiac dysfunction (including stress cardiomyopathy), and rarely fatal intracerebral hemorrhage from the hypertensive crisis. Most patients recover within 24-48 hours with supportive care, but the acute phase is genuinely dangerous.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Vinegar decontamination of the sting site as for box jellyfish. Transport for any patient with delayed severe pain or systemic symptoms after a jellyfish contact in endemic waters — do not be reassured by an initially trivial-seeming sting.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Aggressive analgesia (opioids are often required and may need high doses given the severity of pain). Manage hypertension actively — this is a hypertensive emergency risk, not just a pain syndrome. IV magnesium has trial evidence for symptom control, though a randomized trial found it did not reduce opioid requirement. Monitor for evolving cardiac dysfunction and pulmonary edema; echocardiography is reasonable in more severe presentations.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">No antivenom exists for the carybdeid species causing this syndrome — management is entirely supportive, centered on pain and blood pressure control.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for monitoring given the hypertensive crisis and cardiac risk; most patients recover fully within 24-48 hours, but the acute window needs real cardiorespiratory monitoring capability.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">The name-brand danger here is the mismatch between a forgettable sting and a genuinely life-threatening syndrome 20-30 minutes later — treat any patient in endemic waters with delayed severe pain, sweating, and a sense of dread as Irukandji until proven otherwise, even without a clear jellyfish sighting.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="stonefish" data-class="fish" data-mechanism="cytotoxic" data-search="stonefish synanceia">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Indo-Pacific</span>
+          <span class="tag class">Fish (Scorpaenidae)</span>
+          <span class="tag mechanism">Cytotoxic + Cardiotoxic</span>
+        </div>
+        <div class="card-title">Stonefish</div>
+        <div class="card-sub">Synanceia spp. The most venomous of the spine-bearing fish — venom potency has been compared to cobra venom. Camouflaged on the seafloor; nearly all injuries occur from stepping directly on one</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Venom is released mechanically from dorsal spines under pressure — immediate, severe pain out of proportion to the visible wound, often described as among the most painful stings a person can experience.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Severe local pain and edema, headache, and a distinctively painful cyanotic puncture wound that can progress to necrotic ulceration if untreated. Systemic effects in severe cases can include hypotension and cardiac dysfunction, given cardiotoxic components in the venom.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Hot water immersion (42-45°C, as hot as tolerated without scalding) for 30-90 minutes, or until pain doesn't recur on removal from the water — the venom is heat-labile, making this genuinely effective rather than just comfort care. This is the opposite first-aid principle from jellyfish, which is a common source of confusion in mixed reef environments.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Continue hot water immersion; imaging (X-ray or ultrasound) to check for retained spine fragments, since these are a real source of ongoing pain and infection if missed. Watch for compartment syndrome with significant hand or foot edema — this is a documented complication of severe spine-fish envenomation. Tetanus update and consideration of antibiotics given the puncture mechanism and marine organism exposure.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Stonefish Antivenom (CSL, ovine) exists and is one of the few marine antivenoms with reasonably established use — indicated for severe pain unresponsive to hot water immersion and analgesia, or for systemic envenomation. This is a meaningfully better-supported antivenom situation than box jellyfish or Irukandji.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Most cases resolve with hot water immersion and analgesia alone. Admit for systemic signs, evidence of compartment syndrome, or pain refractory to first aid and antivenom.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Hot water, not vinegar — mixing up the marine decontamination protocols between fish-spine stings and jellyfish stings is a real and consequential error given how different the two mechanisms are. Always image or explore the wound for retained spine material before calling the local injury fully addressed.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="blue-ringed-octopus" data-class="mollusk" data-mechanism="neurotoxic" data-search="blue-ringed octopus hapalochlaena tetrodotoxin">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Indo-Pacific (Australia, Japan)</span>
+          <span class="tag class">Octopus (Cephalopoda)</span>
+          <span class="tag mechanism">Neurotoxic (Tetrodotoxin)</span>
+        </div>
+        <div class="card-title">Blue-Ringed Octopus</div>
+        <div class="card-sub">Hapalochlaena spp. Small, docile, and easily overlooked — bites almost always occur when the animal is picked up or handled, often after being mistaken for an empty shell or curious tide-pool find</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">The bite itself is frequently painless and may go unnoticed at the moment it happens. Symptoms typically begin within minutes to about an hour: perioral numbness and tingling, followed by progressive weakness.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Tetrodotoxin blocks voltage-gated sodium channels, producing a descending flaccid paralysis: perioral paresthesia, excessive salivation, dysarthria, dysphagia, sweating, dizziness, progressing to muscle weakness, incoordination, and potentially complete flaccid paralysis with respiratory failure. Critically, patients can remain fully conscious and aware throughout complete paralysis — this is a real and psychologically significant feature to communicate and manage for.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Pressure immobilization bandaging is recommended for this bite, unlike jellyfish — wrap firmly from the bite site proximally over the whole limb, since this is a slower-acting neurotoxin where local venom containment genuinely helps, more like a snakebite than a jellyfish sting. Heat does NOT help — tetrodotoxin is heat-stable, so hot water immersion (correct for stonefish) is ineffective here. Be prepared to provide rescue breathing or bag-valve-mask ventilation; this can become necessary quickly and the patient may be unable to signal distress once paralysis sets in.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Intubate for respiratory paralysis or airway compromise from altered consciousness — severe cases typically require assisted ventilation for 2-5 days while the toxin clears. Atropine for symptomatic bradycardia. No antidote exists; this is entirely a supportive-care, buy-time-with-the-ventilator problem.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">None exists. Tetrodotoxin is not an enzyme-based venom in the way most entries on this site are, and there is no product that neutralizes it — full recovery depends on ventilatory support until the toxin is metabolized and cleared.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">ICU admission with ventilator readiness for any patient with paralysis or bulbar signs. Full neurological recovery is the expected outcome with adequate supportive care, even after complete paralysis.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">A patient with complete flaccid paralysis from this bite may be fully conscious and able to hear and understand everything happening around them — communicate accordingly. Don't reach for hot water immersion out of habit from stonefish management; it does nothing for a heat-stable toxin like this one.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="cone-snail" data-class="mollusk" data-mechanism="neurotoxic" data-search="cone snail conus geographer cone geography cone">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Indo-Pacific, tropical/subtropical reefs</span>
+          <span class="tag class">Mollusk (Conidae)</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Cone Snail</div>
+        <div class="card-sub">Conus spp., with the geographer cone (Conus geographus) the most notorious for human fatalities. Injury occurs via a venomous harpoon-like radular tooth, often when a shell is picked up by hand</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Immediate to rapid onset of local pain at the sting site, with numbness and paresthesia that can spread quickly. Severe cases progress to generalized weakness and paralysis within a similar timeframe to blue-ringed octopus envenomation.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Venom is a complex cocktail of conotoxins (plus tetrodotoxin in some species), producing intense local pain, swelling, numbness, and progressive paralysis that can extend to full respiratory failure in severe cases. Historical fatality rates for the most dangerous species are cited at roughly 25% of significant stings, though modern respiratory support has changed outcomes considerably where available.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Pressure immobilization bandaging, same rationale as blue-ringed octopus — this is a slower-progressing, containable neurotoxin unlike jellyfish venom. Clean the wound with fresh water and watch closely for progressive weakness. Be prepared to provide bag-valve-mask ventilation if paralysis progresses; heat is not an effective decontamination measure for this venom.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Serial neurologic and respiratory assessment. Intubate proactively for any evidence of progressive respiratory muscle weakness rather than waiting for frank failure — the same buy-time-with-ventilation principle as blue-ringed octopus applies here.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">None exists. Management is entirely supportive, centered on airway and ventilatory support until the venom's effects resolve.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">ICU admission with ventilator readiness for any patient with paralysis or significant systemic symptoms. Full recovery is achievable with adequate supportive care.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">These shells are strikingly beautiful and are the classic reason people pick them up by hand — that's the actual mechanism of injury in the overwhelming majority of cases, not an unprovoked attack. The management principle mirrors blue-ringed octopus closely enough that the two are often taught together: PBI, no heat, ventilate as needed, no antivenom exists for either.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="sea-snake" data-class="snake" data-mechanism="neurotoxic" data-search="sea snake enhydrina schistosa beaked sea snake hydrophiidae">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Indo-Pacific, Persian Gulf</span>
+          <span class="tag class">Snake — Hydrophiidae (marine elapids)</span>
+          <span class="tag mechanism">Neurotoxic + Myotoxic</span>
+        </div>
+        <div class="card-title">Sea Snakes</div>
+        <div class="card-sub">Multiple genera (Hydrophis, Enhydrina, Aipysurus, Laticauda, and others). Marine elapids — closely related to terrestrial cobras and kraits — with potent venom, but bites are uncommon and a large share are "dry" (no venom injected)</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">The bite itself is often painless or minimally painful, and local findings are typically minimal — genuinely easy to underestimate at first contact, similar in spirit to the elapid pattern seen with coral snakes and kraits on land. When envenomation occurs, systemic signs typically develop within 30 minutes to a few hours.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Neurotoxic descending paralysis (ptosis, dysphagia, progressive weakness, respiratory failure in severe cases) combined with a prominent myotoxic component — muscle pain and stiffness, myoglobinuria, and elevated CK, with risk of renal failure from rhabdomyolysis. This myotoxic emphasis is a genuine distinguishing feature from most terrestrial elapids covered elsewhere on this site.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Pressure immobilization bandaging, consistent with the general approach to elapid neurotoxin envenomation — immobilize the limb and transport. Many sea snake encounters (fishing net entanglement is the classic mechanism) result in bites without significant envenomation, but this can't be assumed in the field.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Observation for a reasonable window given how often bites are "dry" — a substantial proportion of sea snake bites do not result in clinically significant envenomation. Serial CK and renal function monitoring given the myotoxic risk, alongside standard neurologic assessment for any signs of progressive weakness.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">CSL Sea Snake Antivenom (Australia, raised primarily against Enhydrina schistosa venom) shows cross-reactivity against venom from multiple other sea snake species and genera. Where sea snake antivenom isn't available, tiger snake antivenom has demonstrated cross-protective activity against sea snake venom in comparative studies and has been used as an alternative.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Observe any confirmed bite for a period sufficient to exclude delayed envenomation, given how often initial presentation is misleadingly benign. Admit for neurologic or myotoxic signs.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">A painless bite with minimal local findings is not reassuring for this group any more than it is for terrestrial elapids — the "dry bite" phenomenon is real and common, but it can't be assumed at first contact, so observation still matters. The myotoxic/rhabdomyolysis angle is worth specifically screening for here, since it's less emphasized in most terrestrial elapid teaching.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="portuguese-man-o-war" data-class="jellyfish" data-mechanism="cardiotoxic" data-search="portuguese man o war physalia physalis bluebottle">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Global (warm oceanic waters)</span>
+          <span class="tag class">Siphonophore (not a true jellyfish)</span>
+          <span class="tag mechanism">Cytotoxic + Systemic Allergic Risk</span>
+        </div>
+        <div class="card-title">Portuguese Man o' War</div>
+        <div class="card-sub">Physalia physalis (Atlantic), P. utriculus / "bluebottle" (Pacific). Not a jellyfish at all — a colonial siphonophore — but managed as a marine sting emergency given documented fatalities and a genuine, actively debated first-aid controversy</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Immediate, intense pain on contact with the trailing tentacles, which can extend many meters from the visible floating body — contact doesn't require touching the obvious part of the animal. Pain typically peaks early and fades over 1-3 hours in uncomplicated stings, though systemic reactions can develop over a similar window.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Intense local pain with a whip-like linear sting pattern. Systemic reactions are less common but real: severe muscle cramping, breathing difficulty, nausea, vomiting, dizziness, and altered consciousness can indicate a systemic allergic-type reaction requiring prompt medical attention — patients with insect-sting allergies (bees, wasps) may be at elevated risk for a severe reaction here as well. Documented fatalities exist, though they are rare relative to the very high overall sting volume worldwide.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">This is a genuinely unsettled area of first aid, and it's worth knowing both sides rather than treating it as fully resolved. Most current mainstream clinical guidance (dive medicine organizations, several recent case reports) recommends AGAINST vinegar for Physalia specifically — unlike box jellyfish — and instead favors seawater or hot-water rinsing, on the basis that vinegar may trigger further nematocyst discharge for this genus. However, a 2017 peer-reviewed study directly testing this question found vinegar effective and safe for Physalia, and found that seawater rinsing actually spread stinging cells over more area and made stings worse in their model — directly contradicting the historical seawater recommendation. Given genuinely conflicting evidence, follow current regional/institutional protocol rather than assuming either approach is settled; whichever fluid is used, avoid rubbing the area, fresh water, alcohol, and ammonia, which are more consistently identified as harmful across studies. After decontamination, 45°C hot water immersion for about 45 minutes has support for inactivating already-injected venom and reducing pain.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Continue pain control with hot water immersion; regional nerve blocks (case reports describe erector spinae plane blocks) have been used for severe, extensive stings refractory to standard analgesia. Monitor for and treat systemic allergic-type reactions per standard anaphylaxis management if they develop — antihistamines and corticosteroids for milder systemic symptoms, escalating per usual allergic-reaction protocols for severe presentations.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">None exists. The only jellyfish/cnidarian antivenom in existence worldwide is the CSL box jellyfish product, which does not cover Physalia — management here is entirely decontamination and supportive/symptomatic care.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Most stings resolve with first aid and analgesia alone. Any patient with systemic symptoms — especially breathing difficulty, chest pain, or a sting covering a large body surface area — needs prompt medical evaluation and monitoring.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Don't reflexively apply the box jellyfish vinegar protocol here without knowing this is a live, unresolved debate specific to Physalia — this is exactly the kind of cross-species first-aid mix-up this page is trying to prevent elsewhere (see stonefish vs. jellyfish, blue-ringed octopus vs. stonefish). Detached tentacles washed up on the beach can still sting effectively even after the animal has died — treat beached specimens as live hazards.</div></div>
+      </div>
+    </div>
+
+    <div class="notice" id="notice-marine">
+      <div class="notice-label">Non-Critical — Supportive Care Only</div>
+      <div class="notice-sub">Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.</div>
+      <ul class="notice-list">
+        <li><strong>Stingray</strong> — venom itself is not typically life-threatening; the danger from this animal is almost entirely mechanical trauma from the barb, which can rarely be fatal with deep penetrating chest or abdominal injury (treat that scenario as trauma, not envenomation). <em>Care:</em> hot water immersion for pain (venom is heat-labile, same principle as stonefish), wound exploration and imaging for retained barb fragments, tetanus update.</li>
+        <li><strong>Sea Urchin</strong> — spine puncture wounds cause pain and local irritation; retained spine fragments are the main real complication, not the mild venom itself. <em>Care:</em> spine removal (may require imaging to locate fragments), hot water immersion for pain, watch for delayed granuloma formation around retained fragments.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation — Marine (Global)</footer>
+
+<script>
+  const activeFilters = { class: 'all', mechanism: 'all' };
+
+  function toggleChip(btn){
+    const facet = btn.dataset.facet;
+    const value = btn.dataset.value;
+    document.querySelectorAll(`.chip[data-facet="${facet}"]`).forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters[facet] = value;
+    filterCards();
+  }
+
+  function filterCards(){
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const matchesClass = activeFilters.class === 'all' || card.dataset.class === activeFilters.class;
+      const matchesMech = activeFilters.mechanism === 'all' || card.dataset.mechanism === activeFilters.mechanism;
+      const searchBlob = (card.dataset.search || '') + ' ' + card.innerText.toLowerCase();
+      const matchesQuery = query === '' || searchBlob.toLowerCase().includes(query);
+
+      if (matchesClass && matchesMech && matchesQuery){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('resultsCount').textContent = `${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chip[data-facet="class"][data-value="all"]').classList.add('active');
+    document.querySelector('.chip[data-facet="mechanism"][data-value="all"]').classList.add('active');
+  });
+</script>
+
+</body>
+</html>

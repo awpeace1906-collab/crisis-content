@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eclampsia &amp; Severe Preeclampsia — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Obstetric</div>
+    <h1>Eclampsia &amp; Severe Preeclampsia</h1>
+    <p class="subtitle">Magnesium sulfate is neuroprotective, not an antihypertensive — the two goals need different drugs, and the toxicity monitoring is bedside clinical exam, not a lab value you wait on.</p>
+    <div class="badges">
+      <span class="badge red">OBSTETRIC EMERGENCY</span>
+      <span class="badge teal">ACOG PRACTICE BULLETIN 222-ALIGNED</span>
+      <span class="badge amber">SEVERE HTN IS TREATED AS ITS OWN EMERGENCY</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — Severe Features</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Two parallel tracks, not one: stop/prevent seizures with magnesium, and treat severe hypertension as its own time-critical emergency with a different drug entirely.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Active seizure — magnesium sulfate first-line</div><div class="step-desc"><span class="d">4–6 g IV loading dose</span> over 20–30 minutes (or 4 g over 5–10 minutes specifically for active seizure per some protocols), then maintenance infusion <span class="d">1–2 g/hr</span>. If IV access can't be obtained/maintained: <span class="d">10 g IM</span> (5 g in each buttock), then <span class="d">5 g IM q4h</span>. Magnesium is dramatically more effective than benzodiazepines or phenytoin for this specific indication — see Rationale.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Protect the airway during the seizure itself</div><div class="step-desc">Position to prevent aspiration, supplemental O₂. Most eclamptic seizures are self-limited — don't reach for a benzodiazepine reflexively if magnesium is already running and the seizure is resolving on its own.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Severe hypertension (SBP ≥160 or DBP ≥110) — treat as a separate, time-critical emergency</div><div class="step-desc">This is not the same problem magnesium is solving. Labetalol <span class="d">20 mg IV bolus</span>, then <span class="d">40 mg</span> at 10 min if inadequate, then <span class="d">80 mg</span> q10min (max total <span class="d">220 mg</span>). Alternative: hydralazine <span class="d">5–10 mg IV</span>, repeated until target reached. Goal is prompt, controlled reduction — not a specific target number achieved instantly, and not overcorrection.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Monitor for magnesium toxicity clinically, at the bedside</div><div class="step-desc">Check deep tendon reflexes, respiratory rate, and urine output at regular intervals — this is a clinical exam, not something to wait on a lab level for. Absent patellar reflex, respiratory rate &lt;12/min, or urine output &lt;25–30 mL/hr are hold/toxicity criteria.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Calcium gluconate immediately available as the magnesium antidote</div><div class="step-desc"><span class="d">10 mL of 10% calcium gluconate IV</span> (1 g total) over 3 minutes if toxicity develops — have this drawn up and at the bedside for any patient on a magnesium infusion, not something to locate after signs appear.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Do not delay delivery to "complete" magnesium administration</div><div class="step-desc">Delivery is the only definitive treatment for preeclampsia/eclampsia. Continue the magnesium infusion through delivery — including cesarean, despite theoretical interactions with muscle relaxants used in general anesthesia — rather than pausing it to finish a course first.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Foley catheter, strict input/output</div><div class="step-desc">Hourly urine output monitoring is both a magnesium-toxicity safety check and a marker of renal perfusion/severity — place early rather than reactively.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Continue magnesium 12–24 hours postpartum</div><div class="step-desc">Most institutions continue for 24 hours after delivery or after the last seizure, though evidence suggests 12 hours performs comparably for seizure prevention, reflex depression, respiratory depression, and pulmonary edema — reasonable practice variation exists here.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">Magnesium and antihypertensives are two different jobs</div><p>Magnesium sulfate does not reliably lower blood pressure and is not an antihypertensive agent. A patient can be appropriately loaded on magnesium and still be in a hypertensive emergency requiring a completely separate drug — treat both tracks in parallel, not sequentially.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Preeclampsia is new-onset hypertension after 20 weeks' gestation with proteinuria, or — in the absence of proteinuria — new-onset thrombocytopenia, renal insufficiency, impaired liver function with right-upper-quadrant/epigastric pain, pulmonary edema, new headache unresponsive to treatment, or visual disturbance. Severe features (SBP ≥160 or DBP ≥110 mmHg on two occasions ≥4 hours apart, thrombocytopenia &lt;100,000/mm³, impaired LFTs, renal insufficiency, pulmonary edema, or new cerebral/visual symptoms) mark a meaningfully higher-risk category. Eclampsia is a new-onset generalized seizure in this setting not attributable to another cause — one of preeclampsia's most severe manifestations.</p>
+    <p>Magnesium sulfate is the first-line agent for both preventing and treating eclamptic seizures — a Cochrane review found it reduces eclampsia risk by roughly 92% compared to phenytoin (relative risk 0.08), with significantly reduced pneumonia, mechanical ventilation, and ICU admission compared to that alternative. ACOG restricts routine magnesium use to preeclampsia with severe features or eclampsia; use in milder disease remains a genuine area of practice variation, discussed further below.</p>
+  </div>
+
+  <!-- 03 SIGNS — SEVERE FEATURES -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — Severe Features &amp; Warning Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>SBP ≥160 or DBP ≥110 mmHg</td><td>On two occasions at least 4 hours apart (unless antihypertensive therapy is started before that interval) — defines severe-range hypertension.</td></tr>
+    <tr><td>Thrombocytopenia &lt;100,000/mm³</td><td>A severe feature; also raises concern for evolving HELLP syndrome.</td></tr>
+    <tr><td>Impaired liver function</td><td>Transaminases ≥2× normal, or RUQ/epigastric pain unresponsive to medication and not otherwise explained.</td></tr>
+    <tr><td>Renal insufficiency</td><td>Creatinine &gt;1.1 mg/dL or doubling of baseline.</td></tr>
+    <tr><td>Pulmonary edema</td><td>A severe feature in its own right.</td></tr>
+    <tr><td>New headache unresponsive to treatment</td><td>Not attributable to another cause — a warning symptom that shouldn't be dismissed as routine.</td></tr>
+    <tr><td>Visual disturbance</td><td>Scotomata, blurred vision — another warning symptom preceding seizure in some patients.</td></tr>
+    <tr><td>Generalized tonic-clonic seizure</td><td>Defines eclampsia once other causes (epilepsy, other structural/metabolic cause) are excluded.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Magnesium sulfate is recommended for preeclampsia with severe features or eclampsia</b> — for milder disease (gestational hypertension or preeclampsia without severe features), the decision is genuinely unsettled. An estimated 100–129 women need treatment to prevent one eclampsia case in this lower-risk group, and ACOG explicitly leaves the decision to physician/institution judgment and patient preference rather than mandating it.</li>
+      <li><b>Have calcium gluconate immediately at the bedside</b> for any patient on a magnesium infusion — not something to send for once toxicity signs appear.</li>
+      <li><b>Antihypertensive threshold for treatment varies by society</b> — ACOG initiates treatment at severe-range hypertension, while NICE, SOGC, ISSHP, and SOMANZ recommend treating milder hypertension, several targeting 135/85 mmHg. Know your institution's specific threshold rather than assuming a single universal number.</li>
+      <li><b>Don't withhold or interrupt magnesium for operative delivery</b> — continuing through cesarean, including with general anesthesia, is the current recommendation despite interaction considerations with neuromuscular blocking agents.</li>
+      <li><b>Place a Foley early</b> in any patient started on magnesium — hourly urine output is both a safety monitor and a severity marker.</li>
+      <li><b>Contraindications to magnesium:</b> myasthenia gravis, hypocalcemia, moderate-to-severe renal failure, cardiac ischemia, heart block, myocarditis — know these before reflexively loading every hypertensive obstetric patient.</li>
+    </ul>
+  </div>
+
+  <!-- 05 DRUG DOSES -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Drug / Parameter</th><th>Value</th></tr>
+    <tr><td>Magnesium sulfate loading dose</td><td>4–6 g IV over 20–30 min (4 g over 5–10 min for active seizure)</td></tr>
+    <tr><td>Magnesium sulfate maintenance</td><td>1–2 g/hr continuous IV infusion</td></tr>
+    <tr><td>Magnesium sulfate IM regimen (no IV access)</td><td>10 g IM (5 g each buttock) loading, then 5 g IM q4h</td></tr>
+    <tr><td>Duration</td><td>Continue until 24h after delivery or last seizure (12h shown comparably effective in meta-analysis)</td></tr>
+    <tr><td>Labetalol</td><td>20 mg IV bolus → 40 mg at 10 min → 80 mg q10min, max total 220 mg</td></tr>
+    <tr><td>Hydralazine</td><td>5–10 mg IV, repeat until response achieved</td></tr>
+    <tr><td>Calcium gluconate (magnesium antidote)</td><td>10 mL of 10% solution (1 g) IV over 3 min</td></tr>
+    <tr><td>Toxicity/hold criteria</td><td>Absent patellar reflex; RR &lt;12/min; urine output &lt;25–30 mL/hr</td></tr>
+    <tr><td>Serum magnesium levels — areflexia</td><td>~8–10 mEq/L</td></tr>
+    <tr><td>Serum magnesium levels — respiratory paralysis</td><td>&gt;13 mEq/L (cardiac arrest at higher levels still)</td></tr>
+    <tr><td>NNT to prevent 1 eclampsia case (mild disease)</td><td>~100–129 women treated</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Eclampsia/Preeclampsia Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why magnesium outperforms benzodiazepines and phenytoin for this specific indication:</b> unlike phenytoin or diazepam, which act as general anticonvulsants via unrelated mechanisms, magnesium's benefit in eclampsia is thought to work through NMDA receptor blockade, calcium channel modulation, and — based on animal model data — protection of the blood-brain barrier against the neuroinflammation that lowers seizure threshold in preeclampsia specifically. This mechanistic specificity is likely why a Cochrane review found such a dramatic relative risk reduction (0.08) against phenytoin, alongside significantly less respiratory depression, pneumonia, and ICU admission — benzodiazepines and phenytoin work reasonably well for generic seizures but aren't targeting the actual pathophysiology at play here.</p>
+    <p><b>Why magnesium and antihypertensive therapy are treated as two separate problems, not one:</b> magnesium's mechanism (NMDA/calcium channel modulation, primarily central) doesn't reliably or predictably lower systemic blood pressure — it's not pharmacologically built to be an antihypertensive, despite both being given in the same patient for the same underlying disease. Severe hypertension carries its own acute stroke/hemorrhage risk independent of seizure risk, which is why it gets a dedicated, parallel treatment track (labetalol or hydralazine) rather than being assumed to resolve once magnesium is running.</p>
+    <p><b>Why toxicity monitoring is clinical, not lab-based, in real time:</b> serum magnesium levels take time to result, and the toxicity progression (areflexia at lower levels, respiratory paralysis at higher levels, cardiac arrest beyond that) is well-characterized enough that bedside deep tendon reflex, respiratory rate, and urine output checks catch impending toxicity faster and more practically than waiting on a lab draw. This is why the standard protocol is built around a physical exam checklist rather than serial magnesium levels as the primary safety mechanism.</p>
+    <p><b>Why calcium gluconate works as the specific antidote:</b> magnesium's toxic effects are largely mediated through its action at the same neuromuscular junction and calcium-channel-related pathways that produce its therapeutic anticonvulsant effect — calcium directly competes with and antagonizes magnesium's physiologic action at these sites, which is why it reverses toxicity relatively quickly when given, rather than simply providing generic supportive correction.</p>
+    <p><b>Why delivery isn't delayed to "finish" a magnesium course:</b> magnesium is neuroprotective and seizure-preventive, but it doesn't address the underlying placental/vascular pathophysiology driving preeclampsia — delivery is the only intervention that does. Treating magnesium administration as a prerequisite to complete before proceeding to delivery inverts the actual priority; the drug is meant to support the patient safely through the process of delivery, not to be finished before delivery can happen.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Epilepsy / primary seizure disorder</td><td>Known seizure history predating pregnancy, or a seizure pattern/EEG inconsistent with eclampsia; eclampsia is specifically a diagnosis of exclusion once other causes are ruled out.</td></tr>
+    <tr><td>Posterior reversible encephalopathy syndrome (PRES)</td><td>Overlaps substantially with eclampsia's presentation and imaging findings; may coexist, and management principles (BP control, magnesium, delivery) largely overlap regardless of the exact label.</td></tr>
+    <tr><td>Intracranial hemorrhage</td><td>Focal neurologic deficits, severe headache with a different character; imaging is warranted for atypical presentation, focal findings, or failure to improve as expected.</td></tr>
+    <tr><td>Cerebral venous sinus thrombosis</td><td>Can present with seizure and headache in the peripartum period; consider particularly with a prothrombotic history or atypical imaging.</td></tr>
+    <tr><td>Thrombotic thrombocytopenic purpura (TTP) / HELLP overlap</td><td>Thrombocytopenia and hemolysis overlap with HELLP syndrome (itself a preeclampsia variant); distinguishing features include the degree of schistocytosis and organ involvement pattern.</td></tr>
+    <tr><td>Metabolic seizure causes (hyponatremia, hypoglycemia)</td><td>Check basic metabolic panel and glucose as part of the standard seizure workup regardless of obstetric context.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Labs:</b> CBC with platelets, LFTs, creatinine/renal function, uric acid, urine protein-to-creatinine ratio or 24-hour collection, coagulation panel if HELLP is a concern. Fetal monitoring (NST, growth assessment) as clinically indicated.</p>
+    <p><b>Neuroimaging</b> for atypical presentation — focal deficits, failure to improve as expected, or diagnostic uncertainty about the seizure etiology.</p>
+    <p><b>Delivery planning:</b> delivery is recommended at or beyond 34 0/7 weeks for preeclampsia with severe features, after maternal stabilization; delivery should not be delayed for steroid administration in the late preterm period given the acuity. Expectant management before 34 weeks is reserved for carefully selected candidates under close monitoring.</p>
+    <p><b>Postpartum continuation:</b> continue magnesium 12–24 hours postpartum per institutional protocol; monitor for late-postpartum severe hypertension, which can present up to several days after delivery and warrants its own evaluation rather than being assumed resolved once delivery has occurred.</p>
+    <p><b>Disposition:</b> ICU or high-acuity obstetric monitoring for any patient with eclampsia or severe-feature preeclampsia requiring magnesium and/or IV antihypertensive therapy; continued close monitoring through the postpartum window given ongoing seizure and hypertensive risk.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>American College of Obstetricians and Gynecologists. Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia. <i>Obstet Gynecol.</i> 2020;135(6):e237–e260.</li>
+    <li><span class="tier">EVIDENCE</span>Duley L, Henderson-Smart DJ. Magnesium Sulphate Versus Diazepam for Eclampsia. <i>Cochrane Database Syst Rev.</i> 2003;(4):CD000127.</li>
+    <li><span class="tier">EVIDENCE</span>Shaheen RS, et al. Efficacy and Safety of 12-Hour Versus 24-Hour Magnesium Sulfate in Management of Patients with Pre-Eclampsia and Eclampsia: A Systematic Review and Meta-Analysis. <i>BMC Womens Health.</i> 2024;24:410.</li>
+    <li><span class="tier">REFERENCE</span>Preeclampsia Treatment &amp; Management. Medscape/emedicine, updated July 2026.</li>
+    <li><span class="tier">REFERENCE</span>Hypertension and Pregnancy Treatment &amp; Management. Medscape/emedicine.</li>
+    <li><span class="tier">REFERENCE</span>The ObG Project. "Eclampsia and Role of Magnesium Sulfate." obgproject.com, updated May 2025.</li>
+    <li><span class="tier">REFERENCE</span>Magnesium Sulfate Pharmacology for Maternal and Critical Care Applications — narrative review. <i>Front Pharmacol.</i> 2026.</li>
+    <li><span class="tier">REFERENCE</span>The Management of Preeclampsia: A Comprehensive Review of Current Practices and Future Directions. <i>PMC.</i> 2024.</li>
+    <li><span class="tier">CASE DATA</span>Shibata M, et al. Treatment of Severe Preeclampsia with Eclamptic Seizures in Cesarean Delivery with Postoperative Ionized Magnesium Monitoring. <i>Cureus.</i> 2024.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

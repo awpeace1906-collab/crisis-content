@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opioid Overdose — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Toxicologic</div>
+    <h1>Opioid Overdose</h1>
+    <p class="subtitle">The goal is restored breathing, not a fully awake patient — go low, go slow when the history allows, and remember naloxone's half-life is shorter than most of the opioids it's reversing.</p>
+    <div class="badges">
+      <span class="badge red">TOXICOLOGIC EMERGENCY</span>
+      <span class="badge teal">STATPEARLS / ACMT-AACT-ALIGNED</span>
+      <span class="badge amber">TITRATE TO RESPIRATION, NOT CONSCIOUSNESS</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Drug Doses — Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Ventilate first, reverse second — naloxone treats respiratory depression, not unconsciousness, and bag-mask ventilation buys time regardless of dose or route available.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Support the airway and ventilation immediately</div><div class="step-desc">100% FiO₂ with bag-valve-mask ventilation before or alongside naloxone administration — this is the actual life-saving intervention while naloxone takes effect, and matters even if naloxone is delayed or unavailable.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Opioid-naive or unknown history — standard dosing</div><div class="step-desc">Naloxone <span class="d">0.4 mg IV/IM/SC</span> (or <span class="d">2–4 mg intranasal</span>), repeated every 2–3 minutes as needed. Higher intranasal formulations (8 mg) exist but aren't associated with better outcomes than 4 mg — only more severe withdrawal when it does occur.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Known or suspected chronic opioid use — go low and slow</div><div class="step-desc"><span class="d">0.04–0.1 mg IV</span> initial dose, titrated upward every 1–3 minutes only as needed to restore adequate respiration. The goal is reversing respiratory depression, not fully waking the patient — overshooting risks severe, distressing precipitated withdrawal without added clinical benefit.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Cardiac arrest — standard resuscitation, naloxone if pulse status uncertain</div><div class="step-desc">Follow standard ACLS for pulseless patients; give naloxone if there's genuine uncertainty about pulse presence, but don't let naloxone delay chest compressions in a confirmed arrest — see the ACLS Quick Reference crisis file.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Suspected buprenorphine overdose — higher dose needed</div><div class="step-desc">Buprenorphine's high mu-receptor affinity and slow dissociation resist standard reversal. Bolus <span class="d">2–3 mg IV</span>, followed by a continuous infusion of <span class="d">4 mg/hr</span> — expect complete reversal within 40–60 minutes with this approach, and expect delayed onset compared to a typical full-agonist overdose.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Repeated re-sedation — start an infusion</div><div class="step-desc">A continuous naloxone infusion at roughly two-thirds the bolus dose that achieved arousal, per hour, is appropriate for patients requiring repeated boluses — common with longer-acting opioids (methadone, fentanyl patches, buprenorphine) whose duration outlasts naloxone's own half-life.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Manage precipitated withdrawal if it occurs</div><div class="step-desc">Uncomfortable but not typically life-threatening — supportive care (IV fluids for nausea/vomiting/diarrhea, benzodiazepines for anxiety, alpha-2 agonists like clonidine or dexmedetomidine, antiemetics). Rare severe cases (stress cardiomyopathy, significant dehydration) may need higher-acuity monitoring.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Watch for non-cardiogenic pulmonary edema</div><div class="step-desc">A recognized, uncommon complication of naloxone administration, possibly related to a sympathetic surge/catecholamine release from abrupt reversal — supportive management (oxygen, positioning, diuresis if genuinely fluid-overloaded) rather than withholding further naloxone if respiratory depression recurs.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">The goal is breathing, not a fully alert patient</div><p>Titrating naloxone until someone is wide awake and irritated overshoots the actual clinical target. Enough naloxone to restore adequate respiration and airway protection is the endpoint — additional dose beyond that only raises the risk and severity of precipitated withdrawal without added safety benefit.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Opioid overdose produces a classic triad of CNS depression, respiratory depression, and miosis (though some opioids — meperidine, propoxyphene — don't reliably cause pinpoint pupils). Death results from respiratory depression progressing to apnea and hypoxic arrest, not from a direct cardiotoxic effect in most cases. Naloxone is a competitive mu-, kappa-, and delta-opioid receptor antagonist with no intrinsic opioid activity of its own — it displaces the causative opioid from receptors rather than metabolically clearing it, which is why it can be overwhelmed by ongoing opioid presence once naloxone itself wears off.</p>
+    <p>Naloxone's own half-life (roughly 30–80 minutes in adults) is shorter than many of the opioids it's used to reverse — methadone, fentanyl (including transdermal formulations), and buprenorphine in particular can all outlast a single naloxone dose, producing re-sedation once the antagonist effect fades. This mismatch is the single most important pharmacokinetic fact governing post-reversal monitoring.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Decreased/absent respiratory rate</td><td>The actual life-threatening finding, and the target naloxone is meant to reverse.</td></tr>
+    <tr><td>Miosis (pinpoint pupils)</td><td>Classic but not universal — absent with meperidine, propoxyphene, and in mixed ingestions.</td></tr>
+    <tr><td>Depressed level of consciousness</td><td>Ranges from sedation to unresponsiveness; unresponsive to sternal rub in severe cases.</td></tr>
+    <tr><td>Hypotension</td><td>Can accompany severe overdose; resuscitate as any other hypotensive patient in parallel with reversal.</td></tr>
+    <tr><td>Bradycardia (variable)</td><td>Not universal but seen with some agents and severe overdose.</td></tr>
+    <tr><td>Track marks / paraphernalia / fentanyl patches</td><td>Physical exam clues supporting the diagnosis, especially in an unknown-history presentation.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Have naloxone immediately accessible</b> in any setting where opioids are administered or where overdose presentations are plausible — IV, IM, and intranasal formulations all have a role depending on access and setting.</li>
+      <li><b>Default to low-dose titration when chronic opioid use is likely</b> — a quick history (pain management, known OUD, visible fentanyl patch) should shift the starting dose before the first bolus, not after a bad reaction to a standard dose.</li>
+      <li><b>Nalmefene is not a routine substitute for naloxone</b> — the American College of Medical Toxicology and American Academy of Clinical Toxicology have taken a position statement against replacing naloxone as the primary antidote given its longer half-life (4–8 hours) and less-established safety profile in synthetic-opioid overdose, despite recent post-marketing data suggesting the precipitated-withdrawal signal may be lower than initially feared.</li>
+      <li><b>Plan monitoring duration around the causative opioid's half-life</b>, not naloxone's — a patient reversed after a long-acting opioid needs a substantially longer observation window than naloxone's own duration of action would suggest.</li>
+      <li><b>Offer buprenorphine initiation after reversal</b> where systems support it (e.g., the "ODNaloxoneBup" protocol model) — early medication-assisted treatment engagement immediately post-overdose has shown promise for reducing recurrence, using a mixed-agonist transition strategy rather than waiting for a separate visit.</li>
+    </ul>
+  </div>
+
+  <!-- 05 DRUG DOSES -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Drug Doses — Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Scenario</th><th>Dose</th></tr>
+    <tr><td>Opioid-naive, standard reversal</td><td>0.4–2 mg IV initial; 2–4 mg intranasal</td></tr>
+    <tr><td>Suspected chronic use, titrated approach</td><td>0.04–0.1 mg IV, repeat q1–3min to effect</td></tr>
+    <tr><td>Pediatric</td><td>0.01 mg/kg IV/IM/SC (neonates); 0.1 mg/kg starting dose in children</td></tr>
+    <tr><td>Buprenorphine overdose</td><td>2–3 mg IV bolus, then 4 mg/hr infusion</td></tr>
+    <tr><td>Repeat dosing interval</td><td>Every 2–3 minutes as needed</td></tr>
+    <tr><td>Maintenance infusion (repeated re-sedation)</td><td>~2/3 of the arousal-achieving bolus dose, per hour</td></tr>
+    <tr><td>Naloxone half-life</td><td>30–80 minutes (adults) — shorter than methadone, fentanyl, buprenorphine</td></tr>
+    <tr><td>Post-reversal observation window</td><td>6–12 hours minimum, longer for long-acting opioids</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Opioid Overdose Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why the endpoint is respiration, not consciousness:</b> naloxone's job is displacing opioid from mu-receptors enough to restore adequate ventilatory drive — full reversal of all opioid binding isn't necessary and isn't the target. Pushing dose further than that specifically to "wake the patient up" only increases receptor displacement further, which is exactly what triggers precipitated withdrawal in someone physically dependent on opioids.</p>
+    <p><b>Why low-and-slow titration matters specifically in chronic users:</b> a patient with ongoing physical dependence has receptor and downstream adaptations calibrated to continuous opioid exposure. Abrupt, complete receptor displacement removes that exposure instantly rather than gradually, producing an acute withdrawal syndrome the body hasn't had time to buffer — titrating slowly gives just enough antagonism to restore breathing while minimizing the abruptness of that displacement.</p>
+    <p><b>Why the naloxone-outlasted-by-the-opioid problem drives monitoring duration:</b> because naloxone is a competitive antagonist with its own pharmacokinetic clearance, once naloxone's blood level falls below the causative opioid's, that opioid re-occupies receptors and respiratory depression can recur — a phenomenon called re-narcotization. This is a pharmacokinetic mismatch problem, not a treatment failure, and it's the entire basis for extended observation after reversal with long-acting agents.</p>
+    <p><b>Why buprenorphine needs a fundamentally different dosing strategy:</b> buprenorphine binds mu-receptors with unusually high affinity and dissociates slowly — a standard naloxone dose simply can't out-compete it at the receptor the way it can displace a typical full agonist. The higher bolus-plus-infusion approach is specifically calibrated to overcome that binding characteristic rather than being an arbitrary "give more because it's a stronger drug" escalation.</p>
+    <p><b>Why higher-dose naloxone/nalmefene products aren't simply "better":</b> real-world data comparing naloxone doses hasn't shown improved reversal outcomes with higher doses — what it has shown is more frequent and more severe precipitated withdrawal. This is why current expert consensus (reflected in "compassionate overdose response" guidance) favors the lowest effective dose rather than defaulting to the highest available formulation, even as synthetic opioids have grown more potent.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Sedative-hypnotic overdose (benzodiazepines, barbiturates, GHB)</td><td>Respiratory depression without reliable pupillary miosis; no response to naloxone since these act on different receptor systems — flumazenil is a distinct and higher-risk consideration for benzodiazepines specifically, not routinely recommended in undifferentiated overdose.</td></tr>
+    <tr><td>Alcohol intoxication</td><td>Characteristic odor, no pinpoint pupils typically, no response to naloxone alone — though co-ingestion with opioids is common and naloxone should still be given if opioid use is plausible.</td></tr>
+    <tr><td>Traumatic brain injury / intracranial event</td><td>Focal neurologic findings, unequal pupils, or a clear trauma mechanism should raise this alternative, especially if naloxone produces no response despite adequate dosing.</td></tr>
+    <tr><td>Hypoglycemia</td><td>Check a point-of-care glucose in any depressed-consciousness presentation regardless of suspected opioid involvement — cheap, fast, and treatable.</td></tr>
+    <tr><td>Clonidine or other alpha-2 agonist overdose</td><td>Can mimic opioid toxicity closely (sedation, respiratory depression, sometimes miosis) — history and lack of full naloxone response are the distinguishing clues.</td></tr>
+    <tr><td>Carbon monoxide poisoning</td><td>Altered mental status without the reliable respiratory-depression-plus-miosis pattern; check carboxyhemoglobin if suspected, especially with multiple simultaneous patients from the same environment.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Confirm and characterize:</b> point-of-care glucose, pulse oximetry/ABG for oxygenation status, ECG if a specific agent (e.g., methadone with QT effects) is suspected. Urine toxicology can support the diagnosis but shouldn't delay treatment and often doesn't change acute management.</p>
+    <p><b>Observation duration:</b> minimum 6–12 hours post-reversal, extended further for known long-acting opioid exposure (methadone, fentanyl patches, buprenorphine) given the re-narcotization risk described above.</p>
+    <p><b>Harm reduction and treatment engagement:</b> every reversed overdose is an opportunity — take-home naloxone kits, discussion of medication-assisted treatment (buprenorphine, methadone), and connection to substance use treatment resources meaningfully reduce future overdose risk and are increasingly considered standard of care at the point of reversal, not a separate referral to arrange later.</p>
+    <p><b>Disposition:</b> ED/observation-level monitoring is standard for any reversed overdose; ICU-level care for those requiring a naloxone infusion, experiencing significant complications (aspiration, pulmonary edema), or with a co-ingestion complicating the picture.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Opioid Toxicity. <i>StatPearls,</i> NCBI Bookshelf, updated January 22, 2025.</li>
+    <li><span class="tier">PRIMARY</span>Jordan MR, Patel P, Morrisonponce D. Naloxone. <i>StatPearls,</i> NCBI Bookshelf, updated May 5, 2024.</li>
+    <li><span class="tier">GUIDELINE</span>Stolbach AI, Mazer-Amirshahi ME, Nelson LS, et al. American College of Medical Toxicology and American Academy of Clinical Toxicology Position Statement: Nalmefene Should Not Replace Naloxone as the Primary Opioid Antidote at This Time. <i>Clin Toxicol (Phila).</i> 2023;61(11):952–955.</li>
+    <li><span class="tier">REFERENCE</span>Opioid Antagonists. <i>StatPearls,</i> NCBI Bookshelf, updated January 31, 2026.</li>
+    <li><span class="tier">REFERENCE</span>University of Utah Poison Control. Naloxone Dosing Strategies. poisoncontrol.utah.edu, 2026.</li>
+    <li><span class="tier">REFERENCE</span>ACEP Now. A Unified Naloxone-Guideline Graph. acepnow.com.</li>
+    <li><span class="tier">EVIDENCE</span>Systematic Review of Naloxone Dosing and Adverse Events in the Emergency Department. 2023.</li>
+    <li><span class="tier">REFERENCE</span>Buprenorphine. <i>StatPearls,</i> NCBI Bookshelf, updated 2024.</li>
+    <li><span class="tier">REFERENCE</span>A Call for Compassionate Opioid Overdose Response. 2024.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

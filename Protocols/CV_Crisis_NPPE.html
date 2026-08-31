@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Negative Pressure Pulmonary Edema — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Airway</div>
+    <h1>Negative Pressure Pulmonary Edema</h1>
+    <p class="subtitle">Post-extubation laryngospasm's downstream complication — forceful inspiration against a closed airway pulls fluid into the lungs by pure hydrostatic mechanism, which is exactly why it resolves as fast as it appears once the obstruction is fixed.</p>
+    <div class="badges">
+      <span class="badge red">ANESTHESIA / AIRWAY EMERGENCY</span>
+      <span class="badge teal">CHEST / OPENANESTHESIA-ALIGNED</span>
+      <span class="badge amber">NOT VOLUME OVERLOAD — DIURETICS CONTROVERSIAL</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Fix the obstruction first — the edema is downstream of the airway problem, not a separate crisis to treat in parallel.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Relieve the upper airway obstruction</div><div class="step-desc">Reintubate or address laryngospasm directly (see the Laryngospasm crisis file for that escalation ladder). If intubation fails and the airway can't otherwise be secured, cricothyrotomy is the next step — same CICO logic as any other failed airway.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">100% O₂, assess severity</div><div class="step-desc">Mild cases: supplemental oxygen and noninvasive ventilation (CPAP/NIV) to maintain airway patency and oxygenation may be sufficient.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Severe cases: intubate and ventilate with PEEP</div><div class="step-desc">Lung-protective positive-pressure ventilation with PEEP is the mainstay for significant NPPE — recruits flooded alveoli and improves oxygenation while the edema clears.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">4</div><div class="step-body"><div class="step-title">Diuretics — use judiciously, not reflexively</div><div class="step-desc">Guidance here is genuinely mixed: some sources recommend diuresis unless the patient is in shock, while others explicitly advise against it since NPPE isn't caused by volume overload and diuresis can worsen a perioperative patient who may already be relatively volume-depleted. Reasonable default: reserve diuretics for cases with clear additional volume overload, not as a routine first-line step.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">5</div><div class="step-body"><div class="step-title">Consider beta-agonist therapy</div><div class="step-desc">Nebulized beta-agonists (e.g., albuterol) may accelerate alveolar fluid clearance independent of any bronchospastic component — a reasonable adjunct even though bronchospasm isn't the primary mechanism here.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">6</div><div class="step-body"><div class="step-title">Refractory severe cases</div><div class="step-desc">Prone positioning and advanced ventilatory strategies (e.g., airway pressure release ventilation) have been used successfully in unusually severe cases resembling ARDS. ECMO is a documented rescue option for refractory hypoxemia.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">7</div><div class="step-body"><div class="step-title">Steroids — not currently recommended</div><div class="step-desc">Historically used, but current understanding is that corticosteroids don't address the actual hydrostatic mechanism driving NPPE and aren't supported by current evidence.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">Resolution is usually fast if the obstruction is fixed</div><p>Most NPPE resolves within 12–48 hours with appropriate supportive care, in part because alveolar fluid clearance mechanisms remain structurally intact — this is fundamentally different from ARDS, where the alveolar-capillary membrane itself is damaged.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Negative pressure pulmonary edema (also called postobstructive pulmonary edema, POPE) is non-cardiogenic pulmonary edema caused by intense inspiratory effort against an obstructed upper airway. Forceful attempts to breathe against a closed or nearly closed glottis generate markedly negative intrathoracic pressure, which increases venous return and right ventricular preload while simultaneously lowering extramural alveolar pressure — the resulting pressure gradient pulls fluid out of the pulmonary capillaries into the interstitium and alveoli. Edema fluid collected from these patients is characteristically low in protein, supporting a hydrostatic (not permeability/inflammatory) mechanism.</p>
+    <p>NPPE is classified as <b>Type I</b> — occurring immediately after acute airway obstruction, most commonly post-extubation laryngospasm in adults or croup/epiglottitis in children — or <b>Type II</b>, developing after relief of a chronic obstruction (e.g., adenotonsillar hypertrophy). Reported overall incidence is roughly 0.1% of anesthetics; among cases specifically tied to post-extubation laryngospasm, estimates range from 0.1–3.0%.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Rapid-onset respiratory distress</td><td>Type I develops within minutes of the obstructing event (e.g., post-extubation laryngospasm).</td></tr>
+    <tr><td>Hypoxemia</td><td>Can be severe and rapid — a well-documented cause of dramatic post-extubation desaturation.</td></tr>
+    <tr><td>Pink, frothy sputum</td><td>Classic finding, identical in appearance to cardiogenic pulmonary edema — this overlap is exactly why the two are frequently confused initially.</td></tr>
+    <tr><td>Tachypnea, tachycardia, rales</td><td>Nonspecific but consistently present.</td></tr>
+    <tr><td>Bilateral infiltrates on chest X-ray</td><td>Appear rapidly, again indistinguishable in appearance from cardiogenic edema on plain imaging alone.</td></tr>
+    <tr><td>Preceding airway obstruction signs</td><td>Stridor, paradoxical chest/abdominal breathing before the edema develops — recognizing these early, before frank pulmonary edema sets in, is the actual prevention window.</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Avoid premature extubation</b> — this is the single highest-leverage prevention step, since post-extubation laryngospasm is the dominant adult cause.</li>
+      <li><b>Ensure at-risk patients are genuinely awake before extubation</b> — an intermediate ("stage 2") depth of anesthesia is the highest-risk window for triggering laryngospasm.</li>
+      <li><b>Suction secretions before extubation</b> and limit the number of laryngoscopy attempts if reintubation becomes necessary — both reduce airway irritation that can trigger or prolong spasm.</li>
+      <li><b>Use airway adjuncts</b> (oral/nasopharyngeal airways) to help maintain patency through emergence.</li>
+      <li><b>Consider deep or fully-awake extubation deliberately</b> in higher-risk patients rather than defaulting to routine timing; IV lidocaine can help blunt the reflex that triggers laryngospasm.</li>
+      <li><b>Recognize early signs of obstruction</b> (stridor, paradoxical breathing) and intervene before the patient generates the sustained negative pressure that produces edema — CPAP or noninvasive ventilation applied at this stage, for partial obstruction, can prevent the excessive negative intrathoracic pressure from ever developing.</li>
+      <li><b>Staff education</b> specifically on this syndrome improves recognition — NPPE is easy to misattribute to aspiration or cardiogenic edema if the preceding airway event isn't kept in mind.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Overall incidence in anesthetic cases</td><td>~0.1%</td></tr>
+    <tr><td>Incidence tied to post-extubation laryngospasm specifically</td><td>~0.1–3.0%</td></tr>
+    <tr><td>Type I incidence after acute post-extubation airway obstruction</td><td>~9–12%</td></tr>
+    <tr><td>Type II incidence after relief of chronic obstruction</td><td>Up to 44%</td></tr>
+    <tr><td>Typical resolution window with appropriate treatment</td><td>12–48 hours (some sources cite up to 24–72 hours)</td></tr>
+    <tr><td>Edema fluid protein content</td><td>Low — supports hydrostatic rather than permeability mechanism</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for NPPE Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why NPPE looks cardiogenic on imaging despite being non-cardiogenic:</b> the negative intrathoracic pressure increases right ventricular preload, causing RV dilation and a leftward septal shift that impairs left ventricular diastolic filling. This mimics the hemodynamic picture of heart failure closely enough that chest X-ray findings alone can't distinguish the two — but the low-protein character of the edema fluid, and the clear temporal link to an airway obstruction event, both point away from a primary cardiac cause.</p>
+    <p><b>Why it resolves so much faster than typical ARDS:</b> the alveolar-capillary membrane itself isn't structurally damaged in NPPE the way it is in inflammatory/permeability-mediated lung injury — the problem is a transient hydrostatic pressure gradient, not membrane injury. Because the lung's normal alveolar fluid clearance machinery remains intact, resolution can happen within 12–48 hours once the obstruction is relieved, versus the much longer course typical of true ARDS.</p>
+    <p><b>Why diuretic use is genuinely contested rather than settled:</b> the pathophysiology isn't fluid overload, so diuresis doesn't address the actual mechanism generating the edema. But a perioperative surgical patient may also carry some genuine volume load from intraoperative fluids, and clearing existing edema fluid faster has plausible benefit — this tension is exactly why recommendations diverge across sources, and why judgment based on the individual patient's volume status (not a blanket rule) is the more defensible approach.</p>
+    <p><b>Why beta-agonists can help despite bronchospasm not being the primary problem:</b> beta-2 agonism upregulates active sodium transport across the alveolar epithelium, which drives alveolar fluid clearance independent of any bronchodilating effect — this is the same fluid-clearance mechanism exploited in other forms of pulmonary edema management, not a treatment aimed at a bronchospastic component that isn't actually present in most NPPE cases.</p>
+    <p><b>Why prevention concentrates so heavily on the extubation moment:</b> because post-extubation laryngospasm is the dominant precipitant in adults, essentially every prevention strategy (avoiding light-plane extubation, suctioning first, considering deep or fully-awake extubation, lidocaine) is really laryngospasm prevention wearing NPPE's name — treat this file and the Laryngospasm crisis file as a linked pair rather than two unrelated problems.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Cardiogenic pulmonary edema</td><td>Echo typically shows preserved ejection fraction in NPPE versus reduced function in true cardiogenic edema; look for the preceding airway obstruction event as the key historical clue in NPPE.</td></tr>
+    <tr><td>Aspiration pneumonitis</td><td>Witnessed or suspected aspiration event, often with a more localized/dependent infiltrate pattern rather than the diffuse bilateral pattern of NPPE.</td></tr>
+    <tr><td>Anaphylaxis-related pulmonary edema/ARDS</td><td>Accompanied by hypotension, skin findings, and a drug-administration trigger rather than an airway-obstruction trigger; treat as anaphylaxis if those features are present.</td></tr>
+    <tr><td>TRALI / TACO (if a transfusion was given)</td><td>Clear temporal link to transfusion rather than to an airway event; TACO specifically reflects genuine volume overload, unlike NPPE.</td></tr>
+    <tr><td>Fluid overload from intraoperative resuscitation</td><td>Review the fluid balance and administration timeline — genuine volume overload responds to diuresis in a way NPPE fundamentally does not.</td></tr>
+    <tr><td>Venous air embolism</td><td>Can also produce sudden hypoxemia perioperatively, but the mechanism (right heart air lock, Doppler/EtCO₂ changes) and clinical setting (open venous site above the heart) are distinct from an airway-obstruction trigger.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Imaging and confirmation:</b> chest X-ray to characterize the bilateral infiltrate pattern; echocardiography is useful specifically to help exclude a cardiogenic cause by demonstrating preserved cardiac function.</p>
+    <p><b>Monitoring:</b> continuous pulse oximetry and close observation through the expected resolution window; most patients improve substantially within 12–48 hours with appropriate airway management and ventilatory support.</p>
+    <p><b>Disposition:</b> extended PACU or ICU-level monitoring depending on severity — a mild, rapidly-improving case may not require ICU admission, while any case needing reintubation, PEEP-dependent ventilation, or advanced rescue therapy (prone positioning, ECMO) clearly does.</p>
+    <p><b>Documentation and future anesthetics:</b> record the precipitating event (laryngospasm, extubation timing, any contributing factors) — this directly informs extubation planning for any future anesthetic in the same patient, given how strongly this syndrome clusters around the same precipitating pattern.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Bhattacharya M, Kallet RH, Ware LB, Matthay MA. Negative-Pressure Pulmonary Edema. <i>Chest.</i> 2016;150(4):927–933.</li>
+    <li><span class="tier">PRIMARY</span>Postobstructive Pulmonary Edema. OpenAnesthesia.org, updated 2025.</li>
+    <li><span class="tier">REFERENCE</span>Ma J, et al. Negative Pressure Pulmonary Edema (Review). <i>Exp Ther Med.</i> 2023;26(3):455.</li>
+    <li><span class="tier">REFERENCE</span>Negative-Pressure Pulmonary Edema: A Perioperative Emergency. <i>PMC review,</i> 2025/2026.</li>
+    <li><span class="tier">REFERENCE</span>Lemyze M, Mallat J. Understanding Negative Pressure Pulmonary Edema. <i>Intensive Care Med.</i> 2014;40(8):1140–1143.</li>
+    <li><span class="tier">CASE DATA</span>Omuro PK, et al. Severe Postoperative Negative Pressure Pulmonary Edema: A Case Report. <i>BMC Anesthesiol.</i> 2024.</li>
+    <li><span class="tier">CASE DATA</span>Negative Pressure Pulmonary Edema Following Post-Extubation Laryngospasm: A Case Report. <i>Karnataka Anaesth J.</i> 2026.</li>
+    <li><span class="tier">CASE DATA</span>Samadi Takaldani AH, et al. Negative Pressure Pulmonary Edema Following Laryngospasm After Dental Abscess: A Case Report. <i>Heliyon.</i> 2024.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify management choices, particularly around diuretic use, against your own institutional protocol.</div>
+
+</div>
+</body>
+</html>

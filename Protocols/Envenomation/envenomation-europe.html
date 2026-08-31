@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — Europe — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  .header{max-width:900px;margin:0 auto;padding:36px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  .back{font-size:11px;color:var(--text3);margin-bottom:16px;display:inline-block;}
+  .back:hover{color:var(--accent);}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:8px;}
+  .lede{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;font-style:italic;color:var(--text3);max-width:640px;margin-bottom:20px;}
+  .divider{height:1px;background:var(--border);margin:0 auto 20px;max-width:900px;}
+
+  .filter-bar{position:sticky;top:0;z-index:20;background:rgba(10,14,20,0.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:14px 24px;margin-bottom:28px;}
+  .filter-inner{max-width:900px;margin:0 auto;}
+  .search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:13px;margin-bottom:10px;}
+  .search-input:focus{outline:none;border-color:var(--accent);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .chip-group-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text4);margin-right:2px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:14px;border:1px solid var(--border);color:var(--text3);cursor:pointer;background:transparent;transition:all .15s;}
+  .chip:hover{border-color:var(--accent);color:var(--text);}
+  .chip.active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600;}
+  .results-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:10px;}
+
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin:0 0 16px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden;transition:border-color .15s;}
+  .card.hidden{display:none;}
+  .card-head{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .tag.region{background:rgba(96,165,250,0.15);color:var(--blue);}
+  .tag.class{background:rgba(167,139,250,0.15);color:var(--purple);}
+  .tag.mechanism{background:rgba(251,191,36,0.15);color:var(--amber);}
+  .card-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .card-sub{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;color:var(--text4);}
+
+  .card-body{padding:6px 22px 20px;}
+  .field{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .field:last-child{border-bottom:none;}
+  .field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .field-body{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+
+  .box.t-color{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:6px;padding:14px 18px;margin-top:4px;}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+
+  .notice{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-top:8px;}
+  .notice-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+  .notice-sub{font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--text4);margin-bottom:12px;line-height:1.6;}
+  .notice-list{list-style:none;}
+  .notice-list li{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text2);line-height:1.7;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-list strong{font-family:'Syne',sans-serif;color:var(--text);font-weight:700;}
+
+  footer{max-width:900px;margin:20px auto 0;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .filter-bar{display:none;}
+    .card{break-inside:avoid;border:1px solid #999;}
+    .card.hidden{display:block;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="envenomation.html" class="back">← Envenomation Index</a>
+    <div class="kicker">Crisis Management — Envenomation — Europe</div>
+    <h1>Europe</h1>
+    <p class="lede">The lowest-acuity region in this build overall, but "low-severity" is a population-level statement, not a guarantee for the patient in front of you — a genuine minority of European viper bites and false widow bites still need real intervention.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search species, syndrome, keyword…" oninput="filterCards()">
+      <div class="chip-row" id="classChips">
+        <span class="chip-group-label">Class:</span>
+        <button class="chip" data-facet="class" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="class" data-value="snake" onclick="toggleChip(this)">Snake</button>
+      </div>
+      <div class="chip-row" id="mechChips" style="margin-top:6px;">
+        <span class="chip-group-label">Mechanism:</span>
+        <button class="chip" data-facet="mechanism" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="mechanism" data-value="hemotoxic" onclick="toggleChip(this)">Hemotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="neurotoxic" onclick="toggleChip(this)">Neurotoxic</button>
+      </div>
+      <div class="results-count" id="resultsCount">1 entry</div>
+      <div class="gs-hint" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:6px;">Critical-intervention species only — see the non-critical notice below for the rest (false widow spider, European scorpion).</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-head">Species — Europe</div>
+
+    <div class="card" id="european-vipers" data-class="snake" data-mechanism="hemotoxic" data-search="european adder vipera berus asp viper vipera aspis nose-horned viper vipera ammodytes horned viper sand viper">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Continental Europe, UK, Balkans</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic + Neurotoxic (variable)</span>
+        </div>
+        <div class="card-title">European Vipers</div>
+        <div class="card-sub">Vipera berus (common European adder — the only venomous snake native to the UK), V. aspis (asp viper — France, Italy, Switzerland), and V. ammodytes (nose-horned viper — the Balkans, most dangerous of the three). One antivenom family covers all three, but severity differs meaningfully by species and geography</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain and swelling develop over the first hours. Most bites across this genus stay mild-to-moderate; a genuine minority progress to systemic involvement, and that minority is meaningfully larger and more severe for V. ammodytes than for V. berus.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Progressive local swelling, vomiting, tachycardia, hypotension, and — in more severe cases — acute kidney injury, hemorrhage, angioedema, pulmonary edema, and rarely cardiac arrest or neurotoxicity. V. ammodytes stands apart within the genus: in the largest published case series (Croatia, >500 confirmed bites), roughly 16-22% of victims developed local or systemic complications, with neurotoxic findings (ptosis, ophthalmoplegia, dysphagia, dysphonia, neuromuscular weakness) in about 15-16% of cases — genuinely uncommon for a European viper but well short of rare. Fatalities from V. ammodytes are documented, though concentrated in children and hypersensitive individuals rather than typical healthy adults.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach: immobilize the limb, remove constricting items, transport. No tourniquet, incision, or suction.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Serial limb assessment and monitoring for systemic signs. In the UK, decisions on antivenom are guided by the National Poison Information Service via TOXBASE rather than a fixed local protocol — involve regional poison control early given how genuinely uncommon these bites are for most clinicians to have direct experience with.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">ViperaTAb (MicroPharm, UK, ovine Fab, monospecific against V. berus) and Viperfav (MicroPharm/France, similar Fab product) both show cross-reactivity across European Vipera species in animal models and supporting clinical data, including published use for V. aspis and V. ammodytes envenomation. In UK audit data, 20-60 of an estimated 50-200 annual V. berus bites are treated with antivenom, given IV, with better outcomes reported for IV Fab products (ViperaTAb, Viperfav) compared with older intramuscular antivenoms (Zagreb, Biomed, Bulbio) still used in parts of continental Europe. A single IV dose of Viperfav has shown good efficacy and pharmacokinetics for V. ammodytes specifically when given within hours of the bite.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for observation and antivenom consideration per regional poison control guidance for any bite with progressive local swelling or systemic signs. Given the neurotoxic minority within V. ammodytes bites specifically, maintain a lower threshold for airway/respiratory monitoring with confirmed or suspected bites from that species and geography.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">"Low severity" describes the population, not the individual patient — a genuine subset of bites from any of these three species need real antivenom and monitoring, and V. ammodytes in particular should not be mentally filed alongside the milder V. berus. Older intramuscular antivenoms (Zagreb, Biomed, Bulbio) still in regional use have weaker outcome data than the newer IV Fab products — know which product your local supply chain actually carries.</div></div>
+      </div>
+    </div>
+
+    <div class="notice" id="notice-europe">
+      <div class="notice-label">Non-Critical — Supportive Care Only</div>
+      <div class="notice-sub">Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.</div>
+      <ul class="notice-list">
+        <li><strong>Noble False Widow Spider</strong> (Steatoda nobilis) — the only medically significant spider in the UK/Ireland, frequently sensationalized in local media as "flesh-eating." Confirmed case series show sharp local pain, erythema, and swelling resolving fully within 48-72 hours with no lasting complications; venom does share Latrodectus-like toxin components but at far lower potency than true widows. <em>Care:</em> analgesia, ice, wound hygiene; the rare reports of severe necrosis or sepsis are almost always secondary bacterial infection from a dirty wound, not the venom itself — clean the bite site and this risk drops accordingly.</li>
+        <li><strong>European Scorpion</strong> (Euscorpius spp.) — small, low-potency scorpions found across Southern Europe; sting severity is comparable to a bee sting for the overwhelming majority of cases. <em>Care:</em> ice, analgesia, reassurance; no antivenom exists or is needed.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation — Europe</footer>
+
+<script>
+  const activeFilters = { class: 'all', mechanism: 'all' };
+
+  function toggleChip(btn){
+    const facet = btn.dataset.facet;
+    const value = btn.dataset.value;
+    document.querySelectorAll(`.chip[data-facet="${facet}"]`).forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters[facet] = value;
+    filterCards();
+  }
+
+  function filterCards(){
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const matchesClass = activeFilters.class === 'all' || card.dataset.class === activeFilters.class;
+      const matchesMech = activeFilters.mechanism === 'all' || card.dataset.mechanism === activeFilters.mechanism;
+      const searchBlob = (card.dataset.search || '') + ' ' + card.innerText.toLowerCase();
+      const matchesQuery = query === '' || searchBlob.toLowerCase().includes(query);
+
+      if (matchesClass && matchesMech && matchesQuery){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('resultsCount').textContent = `${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chip[data-facet="class"][data-value="all"]').classList.add('active');
+    document.querySelector('.chip[data-facet="mechanism"][data-value="all"]').classList.add('active');
+  });
+</script>
+
+</body>
+</html>

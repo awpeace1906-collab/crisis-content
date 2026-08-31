@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — North America — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  .header{max-width:900px;margin:0 auto;padding:36px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  .back{font-size:11px;color:var(--text3);margin-bottom:16px;display:inline-block;}
+  .back:hover{color:var(--accent);}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:20px;}
+  .divider{height:1px;background:var(--border);margin:0 auto 20px;max-width:900px;}
+
+  /* ---- sticky filter bar ---- */
+  .filter-bar{position:sticky;top:0;z-index:20;background:rgba(10,14,20,0.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:14px 24px;margin-bottom:28px;}
+  .filter-inner{max-width:900px;margin:0 auto;}
+  .search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:13px;margin-bottom:10px;}
+  .search-input:focus{outline:none;border-color:var(--accent);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .chip-group-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text4);margin-right:2px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:14px;border:1px solid var(--border);color:var(--text3);cursor:pointer;background:transparent;transition:all .15s;}
+  .chip:hover{border-color:var(--accent);color:var(--text);}
+  .chip.active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600;}
+  .chip-sep{width:1px;height:16px;background:var(--border);margin:0 4px;}
+  .results-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:10px;}
+
+  /* ---- species card ---- */
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin:0 0 16px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden;transition:border-color .15s;}
+  .card.hidden{display:none;}
+  .card-head{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .tag.region{background:rgba(96,165,250,0.15);color:var(--blue);}
+  .tag.class{background:rgba(167,139,250,0.15);color:var(--purple);}
+  .tag.mechanism{background:rgba(251,191,36,0.15);color:var(--amber);}
+  .card-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .card-sub{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;color:var(--text4);}
+
+  .card-body{padding:6px 22px 20px;}
+  .field{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .field:last-child{border-bottom:none;}
+  .field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .field-body{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+  .todo{color:var(--text4);font-style:italic;}
+
+  .box.t-color{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:6px;padding:14px 18px;margin-top:4px;}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+
+  .notice{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-top:8px;}
+  .notice-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+  .notice-sub{font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--text4);margin-bottom:12px;line-height:1.6;}
+  .notice-list{list-style:none;}
+  .notice-list li{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text2);line-height:1.7;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-list strong{font-family:'Syne',sans-serif;color:var(--text);font-weight:700;}
+
+  footer{max-width:900px;margin:20px auto 0;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .filter-bar{display:none;}
+    .card{break-inside:avoid;border:1px solid #999;}
+    .card.hidden{display:block;} /* show everything in print regardless of filter state */
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="envenomation.html" class="back">← Envenomation Index</a>
+    <div class="kicker">Crisis Management — Envenomation — North America</div>
+    <h1>North America</h1>
+    <p class="lede">Pit vipers cause the overwhelming majority of US snakebite, but this page also covers the one species where local swelling actively misleads (Mojave rattlesnake) and the two arthropods where antivenom decisions carry real tradeoffs of their own (black widow, bark scorpion).</p>
+  </div>
+
+  <!-- ================= FILTER BAR ================= -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search species, syndrome, keyword…" oninput="filterCards()">
+      <div class="chip-row" id="classChips">
+        <span class="chip-group-label">Class:</span>
+        <button class="chip" data-facet="class" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="class" data-value="snake" onclick="toggleChip(this)">Snake</button>
+        <button class="chip" data-facet="class" data-value="spider" onclick="toggleChip(this)">Spider</button>
+        <button class="chip" data-facet="class" data-value="scorpion" onclick="toggleChip(this)">Scorpion</button>
+      </div>
+      <div class="chip-row" id="mechChips" style="margin-top:6px;">
+        <span class="chip-group-label">Mechanism:</span>
+        <button class="chip" data-facet="mechanism" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="mechanism" data-value="hemotoxic" onclick="toggleChip(this)">Hemotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="neurotoxic" onclick="toggleChip(this)">Neurotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="cytotoxic" onclick="toggleChip(this)">Cytotoxic</button>
+      </div>
+      <div class="results-count" id="resultsCount">5 entries</div>
+      <div class="gs-hint" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:6px;">Critical-intervention species only — see the non-critical notice below for the rest. Slang/common names are searchable too — try "rattler"</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-head">Species — North America</div>
+
+    <!-- ============ CARD TEMPLATE — repeat per species ============ -->
+    <!-- data-search should contain lowercase keywords: common name, latin name, synonyms -->
+
+    <div class="card" id="pit-vipers" data-class="snake" data-mechanism="hemotoxic" data-search="pit viper crotalinae rattlesnake copperhead cottonmouth rattler diamondback sidewinder highland moccasin chunk head water moccasin gapper crofab anavip">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">North America</span>
+          <span class="tag class">Snake — Crotalinae</span>
+          <span class="tag mechanism">Hemotoxic / Cytotoxic</span>
+        </div>
+        <div class="card-title">Pit Vipers (Rattlesnake, Copperhead, Cottonmouth)</div>
+        <div class="card-sub">Crotalinae — ~98% of US venomous snakebites. Also called: rattler, diamondback, sidewinder (rattlesnake) · highland moccasin, chunk head (copperhead) · water moccasin, gapper (cottonmouth)</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Pain and local swelling begin within minutes. Copperhead and cottonmouth bites are dominated by local tissue effects; rattlesnake bites more often produce early, late, and recurrent coagulopathy layered on top of local injury. Coagulopathy can lag the local exam by hours and can recur after initial control.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Progressive edema, ecchymosis, and hemorrhagic bullae at the bite site. Hematologic effects: thrombocytopenia, hypofibrinogenemia, elevated PT/PTT. Systemic signs when significant: hypotension, perioral or extremity paresthesias, metallic or rubbery taste, nausea.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Remove rings, watches, and constricting clothing before swelling progresses. Immobilize the extremity at heart level. Mark and time the leading edge of swelling/erythema for serial comparison. Do not use tourniquets, ice, incision, suction, or electrical shock — none are proven and several cause harm. Avoid NSAIDs given bleeding risk. Rapid transport; no field antivenom.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Baseline CBC, platelets, PT/PTT, fibrinogen. Re-mark leading edge every 15–30 minutes until progression stops. True compartment syndrome from crotalid envenomation is rare — most tense swelling is subcutaneous, not compartmental; prophylactic fasciotomy is not recommended and compartment pressure measurement should be reserved for exam findings inconsistent with venom effect alone.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Two FDA-approved products, both effective for all three US pit viper genera. <strong>CroFab (FabAV)</strong>: initial dose 4–6 vials (4 vials for isolated copperhead bites), often needs scheduled maintenance dosing (2 vials q6h × 3 doses after initial control) to prevent recurrence. <strong>Anavip (Fab2AV)</strong>: fixed initial dose of 10 vials regardless of age, longer half-life associated with lower rates of late/recurrent coagulopathy, no standard maintenance dose but more patients need repeat initial-control dosing (registry data: median 18 vials Anavip vs 10 vials CroFab to reach control). Reassess q1h against exam and labs; redose either product until initial control achieved — arrest of local progression, improving systemic signs, correcting coagulopathy.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Observe a minimum of 18–24 hours after initial control regardless of antivenom used. Recheck coagulation labs 6–12 hours after control, again prior to discharge, and twice after discharge given recurrence risk — this applies to both products but especially CroFab.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">No prehospital intervention has ever been proven to change outcome — the job in the field is removing constricting items and getting the patient to antivenom, nothing else. Watch for alpha-gal (galactose-α-1,3-galactose) sensitization causing anaphylactoid reactions to CroFab, which is sheep-derived — regionally more relevant in the southeastern US where tick-associated alpha-gal allergy is common. Recurrent coagulopathy after apparent control is a real phenomenon, not a monitoring failure — this is why the discharge lab schedule exists.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="coral-snake" data-class="snake" data-mechanism="neurotoxic" data-search="coral snake elapidae micrurus candy stick candy snake nacsa">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">North America</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Coral Snake</div>
+        <div class="card-sub">Micrurus fulvius (Eastern), M. tener (Texas). Also called: candy stick, candy snake. Delayed neurotoxicity — distinct course from pit vipers</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Deceptive. Local findings at the bite are often minimal or absent — no significant pain or swelling like a pit viper bite. Neurologic signs can be delayed several hours before appearing, and once they start, progression can be rapid and does not reliably reverse with antivenom once established.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Bulbar findings first: ptosis, dysarthria, dysphagia, diplopia. Progresses to generalized skeletal muscle weakness and paralysis, then respiratory failure if untreated. The mismatch between an unimpressive bite site and the eventual severity is the core danger.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Same general principles as pit viper — immobilize, remove constricting items, transport. The critical field task is not under-triaging a bite just because it looks unremarkable.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Extended observation is mandatory even in asymptomatic patients, given delayed onset — historically 24 hours. Frequent neurologic and respiratory checks (cranial nerves, vital capacity/NIF if any bulbar signs appear). Have airway equipment ready; these patients can progress to needing prolonged ventilator support.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">North American Coral Snake Antivenin (NACSA, Wyeth/Pfizer) is the only FDA-approved product and production stopped in 2003. Remaining stock has run on serial FDA expiration-date extensions of a single lot (CL6814) for years; check current lot status with poison control (1-800-222-1222) since availability is not guaranteed and changes. Dose 3–5 vials in adults, decreased in small children per response. There is no other FDA-approved alternative in the US; Mexican Coralmyn (Bioclon) has been used via special arrangement in some shortage situations. Historic practice was empiric treatment of any suspected bite given irreversible neurotoxicity risk; more recent data suggest a symptom-triggered approach doesn't worsen outcomes and avoids adverse events from treating asymptomatic patients — but this is a genuine access-driven tradeoff, not just a clinical preference, given how scarce the product is.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Minimum 12–24 hour observation even if asymptomatic at presentation, given delayed onset. Any neurologic sign warrants ICU-level monitoring.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">"Red touch yellow, kill a fellow; red touch black, venom lack" distinguishes coral snake from mimics like the scarlet kingsnake in the US — this rhyme does not reliably apply outside North America and should never be used to clear a bite in another region. Minimal local findings are not reassurance — they are the expected presentation. Antivenom scarcity is a real operational constraint here, not a hypothetical; know your hospital's and region's current supply before you need it.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="black-widow" data-class="spider" data-mechanism="neurotoxic" data-search="black widow latrodectus latrodectism hourglass spider shoe button spider lyovac">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">North America</span>
+          <span class="tag class">Spider — Theridiidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Black Widow</div>
+        <div class="card-sub">Latrodectus mactans and related spp. Also called: hourglass spider, shoe button spider. Syndrome: latrodectism</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Sharp pinprick pain at the bite site, then local cramping that spreads over 15 minutes to a few hours. Untreated, the syndrome typically runs 1–3 days.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Severe muscle cramping and rigidity — abdominal wall can become boardlike and mimic a surgical abdomen, but without true peritoneal tenderness. Autonomic findings: diaphoresis, tachycardia, hypertension. Bite site itself is often unremarkable, so the exam and history carry more weight than the wound.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Supportive — analgesia as tolerated, transport. No field-specific antidote or intervention beyond comfort measures.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Opioids and benzodiazepines are the mainstay for pain and rigidity control, though often only partially effective. Calcium gluconate has been used historically for muscle cramping but evidence is weak and it is not a substitute for antivenom in severe cases.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Merck's Lyovac Antivenin (Latrodectus mactans) — whole equine IgG — remains the product available in North America, though manufacturer low-inventory periods occur and current stock should be confirmed with poison control. Reserved for severe or refractory envenomation: seizures, hypertensive crisis, respiratory compromise, or intractable pain unresponsive to opioids and benzodiazepines. Dose: 1 vial diluted in 50 mL NS, IV over 15–30 minutes. Skin or conjunctival sensitivity testing is required first given real anaphylaxis risk (reported up to ~5%); history of asthma or atopy is a relative contraindication. Fear of this reaction is the main reason antivenom is underused in the US relative to how effective it is.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Most cases are managed with supportive care and observation without antivenom. Admit for antivenom administration or refractory symptoms.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Consider latrodectism in unexplained abdominal rigidity without true peritoneal signs, especially with autonomic findings and a plausible exposure — garages, woodpiles, outdoor storage. The bite site will often not help you; the history and autonomic picture will. Antivenom underuse in US practice reflects genuine reluctance around the anaphylaxis rate, not a lack of efficacy — know the skin-test protocol before you need it.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="bark-scorpion" data-class="scorpion" data-mechanism="neurotoxic" data-search="centruroides bark scorpion arizona sculptured scorpion anascorp">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">North America</span>
+          <span class="tag class">Scorpion</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Bark Scorpion</div>
+        <div class="card-sub">Centruroides sculpturatus. Clinically significant scorpion in the US, concentrated in the Southwest (Arizona and neighboring states)</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Pain at the sting site is immediate and often out of proportion to visible findings — there's usually no significant local lesion. Systemic neurotoxic signs, when they occur, can develop within 30 minutes to a few hours, especially in young children.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Graded severity. Grade I–II: local pain and paresthesias only. Grade III–IV: either cranial nerve dysfunction (roving/abnormal eye movements, blurred vision, slurred speech, dysphagia) or somatic skeletal neuromuscular dysfunction (jerking, restlessness) — or both. The somatic findings in kids can look like seizure activity but are not epileptic.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Analgesia and transport, with lower threshold for urgency in pediatric patients or anyone with early cranial nerve or neuromuscular signs.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Grade the envenomation on cranial nerve and somatic findings to decide on antivenom. Prior to antivenom availability, severe cases were managed with benzodiazepines, sedation, and occasionally intubation for supportive control — that approach is now reserved for cases where antivenom is unavailable or as an adjunct.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Anascorp (equine F(ab')2) — initial dose is a fixed 3 vials IV over 10 minutes regardless of age or weight, for any patient with Grade III–IV signs. Additional 1-vial doses may be given every 30–60 minutes based on symptom resolution. Mean time to symptom resolution after treatment is roughly 1.4 hours. Distribution is exclusive through AnovoRx rather than standard pharmacy wholesale — a stocking/logistics point worth knowing before a shortage-of-time situation, not during one.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Patients typically can be discharged home once symptoms resolve after antivenom, often within a few hours of treatment.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">The "tap test" — light tapping over the sting site reproducing severe pain with no visible lesion — is a useful bedside clue that distinguishes this from other bites/stings. There's active debate over whether the fixed 3-vial initial dose is necessary versus a 1-vial-then-reassess strategy for Grade III–IV envenomation; this is evolving practice, not settled. Pediatric patients remain the population most likely to progress to severe neurotoxicity.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="mojave-rattlesnake" data-class="snake" data-mechanism="neurotoxic" data-search="mojave rattlesnake crotalus scutulatus mojave green mojave toxin">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">SW United States, N. Mexico</span>
+          <span class="tag class">Snake — Crotalinae</span>
+          <span class="tag mechanism">Neurotoxic (variable)</span>
+        </div>
+        <div class="card-title">Mojave Rattlesnake</div>
+        <div class="card-sub">Crotalus scutulatus. Also called: Mojave green (though color varies — green, brown, yellow, gray). The pit viper that breaks the "pit vipers are hemotoxic" rule taught for every other species on this page</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain and swelling on bite, similar to other pit vipers initially — but this species carries a real risk of a very different second act, depending on which venom phenotype delivered the bite.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">This species has at least two distinct venom phenotypes, and telling them apart matters clinically. <strong>Type A</strong> venom is dominated by Mojave toxin (MTX), a potent presynaptic β-neurotoxin with little hemorrhagic activity — bites can progress to weakness, ptosis, and respiratory compromise with deceptively unimpressive local swelling, genuinely unusual for a North American pit viper. <strong>Type B</strong> venom lacks MTX and instead is rich in hemorrhagic metalloproteinases — a more typical crotalid picture of significant local tissue damage and coagulopathy. Mixed Type A+B individuals also exist, and some populations additionally carry a distinct myotoxin (Type M). Geography offers only a rough guide: Type A predominates in California, southern Nevada, southwest Utah, and parts of Arizona/New Mexico/Texas, while Type B is concentrated in central Arizona — but populations overlap and mix, so the venom type of any individual snake can't be assumed from location alone.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard pit viper approach: immobilize, remove constricting items, transport. Given the neurotoxic risk, monitor for early bulbar or respiratory signs even if local swelling looks unimpressive — don't let a mild-looking bite site delay transport.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Assess for both pictures — coagulation studies as for any pit viper bite, AND close neurologic/respiratory monitoring given the real possibility of a Type A envenomation. A bite with minimal local swelling but early neurologic complaints should raise this species specifically, especially in its range.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">CroFab and Anavip are both derived from venom pools that include Mojave rattlesnake venom and are considered effective against this species, including the Type A neurotoxic component — this is not a species requiring a separate antivenom, unlike several other regional-specificity cases on this site. Standard pit viper dosing and initial-control principles apply.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Extend the standard pit-viper observation window with a lower threshold for prolonged neurologic monitoring, given that significant neurotoxicity can develop despite modest local findings.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">This is the one North American pit viper where "mild local swelling" is not reassuring on its own — a Type A envenomation can be doing its real damage neurologically while the bite site looks unremarkable. Don't apply the general crotalid teaching point (local findings track severity) uncritically to a confirmed or suspected Mojave rattlesnake bite.</div></div>
+      </div>
+    </div>
+
+    <div class="notice" id="notice-na">
+      <div class="notice-label">Non-Critical — Supportive Care Only</div>
+      <div class="notice-sub">These North American species cause real pain/reaction but are not typically life-threatening and do not require antivenom or critical-care level intervention. Not a full workup — just enough to recognize and reassure.</div>
+      <ul class="notice-list">
+        <li><strong>Brown Recluse</strong> (fiddleback, violin spider) — most bites self-limited; minority progress to local necrotic lesion over days. <em>Care:</em> conservative wound care, no early debridement; rare pediatric systemic hemolysis is the exception — admit if it occurs.</li>
+        <li><strong>Hymenoptera</strong> (bee/wasp/hornet/fire ant) — local pain and, with fire ants, a sterile pustule. <em>Care:</em> ice, analgesia; systemic/allergic reaction routes to <a href="anaphylaxis.html" style="color:var(--accent);">Anaphylaxis</a>, not this page.</li>
+        <li><strong>Gila Monster</strong> — tenacious chewing bite, painful, occasional hypotension/anaphylactoid reaction; no US deaths reported in 70+ years. <em>Care:</em> wound irrigation, remove retained teeth, supportive care; observe ~6h.</li>
+        <li><strong>Puss Caterpillar</strong> (asp, tree asp) — severe burning contact pain from hidden spines, resolves within hours. <em>Care:</em> tape-strip spine removal (don't scrape), ice, antihistamines.</li>
+        <li><strong>Velvet Ant</strong> ("cow killer") — dramatic pain, minimal actual severity. <em>Care:</em> reassurance, ice, analgesia.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation — North America</footer>
+
+<script>
+  const activeFilters = { class: 'all', mechanism: 'all' };
+
+  function toggleChip(btn){
+    const facet = btn.dataset.facet;
+    const value = btn.dataset.value;
+    document.querySelectorAll(`.chip[data-facet="${facet}"]`).forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters[facet] = value;
+    filterCards();
+  }
+
+  function filterCards(){
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const matchesClass = activeFilters.class === 'all' || card.dataset.class === activeFilters.class;
+      const matchesMech = activeFilters.mechanism === 'all' || card.dataset.mechanism === activeFilters.mechanism;
+      const searchBlob = (card.dataset.search || '') + ' ' + card.innerText.toLowerCase();
+      const matchesQuery = query === '' || searchBlob.toLowerCase().includes(query);
+
+      if (matchesClass && matchesMech && matchesQuery){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('resultsCount').textContent = `${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+  }
+
+  // set default active chips on load
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chip[data-facet="class"][data-value="all"]').classList.add('active');
+    document.querySelector('.chip[data-facet="mechanism"][data-value="all"]').classList.add('active');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricothyrotomy - Surgical, Percutaneous and Needle &mdash; CRISIS Procedures | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:640px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+.badge.blue{background:var(--blue-tint);border:1px solid rgba(37,99,235,.3);color:var(--blue);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector &middot; CRISIS &middot; Airway</div>
+    <h1>Cricothyrotomy &mdash; Surgical, Percutaneous &amp; Needle</h1>
+    <p class="subtitle">Three techniques for one problem: Can't Intubate, Can't Oxygenate. Adapted from the author's original &ldquo;Introduction to Surgical Airways&rdquo; teaching deck, used with permission.</p>
+    <div class="badges">
+      <span class="badge blue">AIRWAY</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#technique">&#9889; TECHNIQUE</a>
+    <a class="qn" href="#indications">Indications</a>
+    <a class="qn" href="#contraindications">Contraindications</a>
+    <a class="qn" href="#equipment">Equipment</a>
+    <a class="qn" href="#complications">Complications &amp; Pitfalls</a>
+    <a class="qn" href="#pearls">Pearls</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+<div class="sec-head c-teal" id="indications"><span class="sec-num">01</span><h2>Indications</h2></div>
+<div class="box t-teal">
+<ul>
+      <li>Cannot Intubate, Cannot Oxygenate (CICO)</li>
+      <li>Artificial airway obstruction (device failure, blocked ETT/trach)</li>
+      <li>Pathologic airway obstruction (angioedema, trauma, burns, abnormal anatomy) not amenable to oral/nasal intubation</li>
+      <li>Failure of primary and rescue airway techniques when oxygenation cannot otherwise be achieved</li>
+</ul>
+</div>
+<div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications</h2></div>
+<div class="box t-red">
+<ul>
+      <li>A viable, faster alternative airway exists (relative &mdash; in true CICO there are no absolute contraindications to a front-of-neck airway)</li>
+      <li>Pediatric patients under ~1 year for needle/surgical cricothyrotomy &mdash; anatomy strongly favors alternative approaches where any other option exists</li>
+      <li>Distorted or unidentifiable anterior neck anatomy (relative &mdash; may require the scalpel-finger-bougie approach over needle-based techniques)</li>
+</ul>
+</div>
+<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment</h2></div>
+<div class="box t-blue">
+<p><b>Needle cricothyrotomy</b></p>
+<ul>
+      <li>Large-bore needle/angiocath (12&ndash;14 ga)</li>
+      <li>3 mm ID ETT connector/BVM adaptor</li>
+      <li>3-way stopcock, jet insufflation source</li>
+</ul>
+</div>
+<div class="box t-blue">
+<p><b>Percutaneous (Seldinger) cricothyrotomy</b></p>
+<ul>
+      <li>Introducer needle, flexible guidewire, dilator</li>
+      <li>Cricothyrotomy tube or ETT</li>
+</ul>
+</div>
+<div class="box t-blue">
+<p><b>Surgical (open) cricothyrotomy</b></p>
+<ul>
+      <li>#10 scalpel, bougie</li>
+      <li>Cuffed ETT or cricothyrotomy tube</li>
+</ul>
+</div>
+<div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Stepwise Technique</h2></div>
+<div class="tagline">Needle cricothyrotomy</div>
+<div class="box" style="padding:4px 18px;">
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-desc">Palpate and stabilize the cricothyroid membrane.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-desc">Insert large-bore needle/angiocath through the membrane at a caudad angle, aspirating for air to confirm tracheal placement.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-desc">Advance catheter, remove needle, secure.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-desc">Connect 3 mm ID ETT adaptor and 3-way stopcock to an oxygen/jet insufflation source.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-desc">Ventilate via jet insufflation &mdash; expect a prolonged expiratory phase due to narrow-lumen exhalation limitation.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-desc">Treat as a temporizing measure only &mdash; plan definitive airway within ~45 minutes to avoid progressive hypercarbia; this is the primary technique of choice in pediatric patients due to small anatomy.</div></div></div>
+</div>
+<div class="tagline">Percutaneous (Seldinger) cricothyrotomy</div>
+<div class="box" style="padding:4px 18px;">
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-desc">Palpate and stabilize the cricothyroid membrane.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-desc">Insert introducer needle through the membrane, confirm tracheal entry (air aspiration).</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">9</div><div class="step-body"><div class="step-desc">Thread flexible guidewire through the needle into the trachea; remove needle, leaving wire in place.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">10</div><div class="step-body"><div class="step-desc">Make a small vertical skin incision superficial to the membrane.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">11</div><div class="step-body"><div class="step-desc">Advance dilator over the guidewire to expand the tract through the membrane.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">12</div><div class="step-body"><div class="step-desc">Remove dilator; advance cricothyrotomy tube or ETT over the wire into the trachea.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">13</div><div class="step-body"><div class="step-desc">Remove wire, confirm placement, secure tube.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">14</div><div class="step-body"><div class="step-desc">Slower than the surgical technique &mdash; not the preferred choice when seconds matter most in a true CICO emergency.</div></div></div>
+</div>
+<div class="tagline">Surgical (open) cricothyrotomy</div>
+<div class="box" style="padding:4px 18px;">
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">15</div><div class="step-body"><div class="step-desc">Palpate and stabilize the cricothyroid membrane with non-dominant hand, maintaining laryngeal control throughout.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">16</div><div class="step-body"><div class="step-desc">Make a vertical skin incision superficial to the membrane.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">17</div><div class="step-body"><div class="step-desc">Insert the scalpel laterally through the cricothyroid membrane itself, then rotate/withdraw to open the tract.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">18</div><div class="step-body"><div class="step-desc">Insert a finger along the blunt side of the scalpel to maintain the opening and confirm tracheal entry by feel.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">19</div><div class="step-body"><div class="step-desc">Insert a bougie alongside the finger into the trachea.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">20</div><div class="step-body"><div class="step-desc">Railroad a cuffed ETT or cricothyrotomy tube over the bougie into the trachea.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">21</div><div class="step-body"><div class="step-desc">Remove bougie, inflate cuff, confirm placement (chest rise, EtCO2, auscultation), secure tube.</div></div></div>
+</div>
+<div class="alert red"><div class="alert-t">Declare it, then commit</div><p>The biggest driver of a bad CICO outcome is hesitation to escalate, not technique failure &mdash; once the front-of-neck decision is made, further attempts at oral intubation or mask ventilation only cost the time the procedure needs.</p></div>
+<div class="sec-head c-red" id="complications"><span class="sec-num">05</span><h2>Complications &amp; Pitfalls</h2></div>
+<div class="box t-red">
+<ul>
+      <li>Delayed recognition of CICO &mdash; the biggest driver of bad outcomes is hesitation to escalate, not technique failure</li>
+      <li>Needle cricothyrotomy: hypercarbia beyond the ~45-minute usable window due to inadequate exhalation through a narrow lumen</li>
+      <li>False passage (paratracheal placement) &mdash; confirm with air aspiration/tactile feel before committing to dilation or tube passage</li>
+      <li>Percutaneous technique speed &mdash; the Seldinger sequence costs time that may not exist in true CICO; know when to default to open technique</li>
+      <li>Pediatric anatomy makes the open surgical technique disproportionately difficult for inexperienced providers &mdash; needle technique is the default in this population</li>
+      <li>Bleeding obscuring the field, especially with vascular anterior neck anatomy</li>
+</ul>
+</div>
+<div class="sec-head c-purple" id="pearls"><span class="sec-num">06</span><h2>Pearls</h2></div>
+<div class="box t-purple">
+<p>If you're doing a front-of-neck airway, you've already failed two other airway plans &mdash; commit fully and move fast, don't second-guess the decision mid-procedure.</p>
+<p>The finger-bougie technique in open cricothyrotomy is what actually confirms you're in the trachea &mdash; trust tactile feel over visual confirmation in a bloody or dark field.</p>
+<p>Needle technique buys time in kids and true emergencies; it is not a destination airway. Know your institution's definitive airway plan before you start.</p>
+<p>Practice the open technique on a model regularly &mdash; this is a low-frequency, high-stakes skill where muscle memory under stress is the entire game.</p>
+</div>
+<div class="sec-head c-amber" id="refs"><span class="sec-num">07</span><h2>References</h2></div>
+<ul class="sources">
+  <li><span class="tier">GUIDELINE</span>Frerk C, Mitchell VS, McNarry AF, et al.; Difficult Airway Society intubation guidelines working group. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. <i>Br J Anaesth.</i> 2015;115(6):827-848.</li>
+  <li><span class="tier">REFERENCE</span>Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 &mdash; Cricothyrotomy chapter.</li>
+</ul>
+<div class="footer">Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and equipment against your own institution's protocol before clinical use. Technique content adapted from the author's original teaching presentation, &ldquo;An Introduction to Surgical Airways&rdquo; (2025), used with the author's explicit permission. Third-party reference images from that deck are not reproduced here.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amniotic Fluid Embolism — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Obstetric</div>
+    <h1>Amniotic Fluid Embolism</h1>
+    <p class="subtitle">Sudden peripartum cardiorespiratory collapse and DIC — why "embolism" is a misleading name, why the cesarean can save the mother as much as the baby, and the massive-transfusion math behind the coagulopathy.</p>
+    <div class="badges">
+      <span class="badge red">OBSTETRIC EMERGENCY</span>
+      <span class="badge teal">SMFM CHECKLIST-ALIGNED</span>
+      <span class="badge amber">CLINICAL DIAGNOSIS — NO CONFIRMATORY TEST</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Diagnostic Criteria</a>
+    <a class="qn" href="#prevention">Readiness / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">High-quality CPR and rapid delivery are the two interventions proven to matter most — everything else is supportive around those two pillars.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Call for help, start high-quality CPR immediately if arrested</div><div class="step-desc">Standard BLS/ACLS protocols apply — vasopressor and antiarrhythmic dosing, and defibrillation, are not different from the nonpregnant patient. Don't let fetal monitor leads delay defibrillation; remove them if convenient, but never at the cost of delaying the shock.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Airway and 100% oxygen, intubate as needed</div><div class="step-desc">Secure the airway early given the frequent, rapid progression to respiratory failure.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Left lateral tilt / manual uterine displacement if undelivered</div><div class="step-desc">Improves venous return and CPR effectiveness by relieving aortocaval compression — do this throughout resuscitation, not just as an afterthought.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Resuscitative hysterotomy within 4 minutes of arrest</div><div class="step-desc">"Resuscitative hysterotomy" is now the preferred term over "perimortem cesarean delivery," reflecting that this is a maternal resuscitation intervention, not just a fetal-rescue one. If undelivered and circulation isn't restored: begin within <span class="d">4 minutes</span> of arrest, performed wherever the patient is located — do not delay by moving to the OR. Transfer to the OR should be considered only if achievable within 1–2 minutes. Operative vaginal delivery is reasonable only if the cervix is fully dilated and the head is crowning; otherwise it will just delay delivery compared to immediate cesarean.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Assess right ventricular function early</div><div class="step-desc">Bedside TTE or TEE as soon as feasible — right ventricular dysfunction supports the diagnosis and directly changes treatment. If RV failure is present, treat with inotropes and pulmonary vasodilators rather than volume.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Prefer vasopressors over fluid boluses for hypotension</div><div class="step-desc">In the setting of significant right ventricular compromise, excess fluid over-distends an already-failing right ventricle and can precipitate right-sided ischemia — avoid excessive fluid administration and lean on pressor support instead.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Anticipate and treat coagulopathy aggressively</div><div class="step-desc">DIC accompanies more than 80% of AFE cases — its rapid appearance is usually the clinical finding that confirms the diagnosis. Activate massive transfusion protocol early, but favor <b>cryoprecipitate over fresh/frozen plasma</b> specifically in AFE, to address the coagulopathy while limiting volume-overload risk to an already-strained right heart — a deliberate departure from the standard 1:1:1 MTP ratio used elsewhere. Give tranexamic acid if hemorrhage or DIC develops. ROTEM/TEG-guided correction, where available, helps target the specific factor deficits rather than transfusing blindly. Assign a dedicated timekeeper and blood-product documentation role from the outset.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Anticipate uterine atony after delivery</div><div class="step-desc">Start IV oxytocin prophylaxis immediately once the infant is delivered; have a low threshold for methylergonovine, carboprost, or misoprostol — atony compounds the coagulopathy-driven hemorrhage risk that's already elevated in AFE.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">9</div><div class="step-body"><div class="step-title">Escalate to ECMO if refractory — even with coagulopathy present</div><div class="step-desc">VA-ECMO can be considered for hemodynamically refractory AFE even in the context of ongoing coagulopathy — a 2025 systematic review of 79 cases found 72% maternal survival with only 6% incidence of major neurologic sequelae. ROTEM-guided management has allowed some teams to forgo initial anticoagulation given the concurrent coagulopathy. Availability-limited, but worth involving a capable center early if the patient isn't responding.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">The AOK regimen (atropine, ondansetron, ketorolac) is now actively recommended against</div><p>This isn't just "unproven" — as of the 2026 SMFM checklist update, both the AHA and a 2026 expert panel specifically recommend <b>against</b> routine AOK use. The AHA recommends against atropine in the absence of bradycardia, and potential harms of the regimen include worsening renal function, bleeding coagulopathy, cardiac arrhythmia, and myocardial injury. Evidence supporting it remains limited to case reports — don't reach for this reflexively.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Amniotic fluid embolism is a rare, often catastrophic syndrome of sudden cardiorespiratory collapse during labor or shortly after delivery. Despite its name, current understanding holds that it isn't primarily a mechanical obstructive process — amniotic fluid is fully soluble in blood and doesn't cause obstruction the way a thromboembolism or air embolism does. The prevailing model instead describes a complex proinflammatory and hemostatic cascade triggered by maternal intravasation of fetal/pregnancy material (trophoblast, thromboplastins, fetal cells), which is why some clinicians prefer the older alternate name "anaphylactoid syndrome of pregnancy," though that terminology hasn't been universally adopted.</p>
+    <p>Incidence is roughly 2–6 per 100,000 births. Classically reported maternal mortality exceeds 50%, though more recent series suggest improving outcomes — attributed to better critical care delivery, increased recognition of milder/atypical cases without full cardiorespiratory collapse, and likely some inclusion of misclassified conditions in older administrative-database series.</p>
+  </div>
+
+  <!-- 03 SIGNS & DIAGNOSTIC CRITERIA -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs &amp; Diagnostic Criteria</h2></div>
+  <table class="rt">
+    <tr><th>Category</th><th>Findings</th></tr>
+    <tr><td>Classic triad</td><td>Sudden hypoxia + hypotension, followed in many cases by coagulopathy — all occurring in temporal relation to labor and delivery.</td></tr>
+    <tr><td>Premonitory signs (proposed, not universal)</td><td>Seizures, agitation, anxiety, a sense of impending death, confusion, fainting — can precede the full collapse in some cases.</td></tr>
+    <tr><td>SMFM structured research criteria (4-part)</td><td>(1) Sudden cardiac arrest, or hypotension with respiratory compromise; (2) overt DIC following the cardiovascular collapse; (3) clinical onset during labor or within ~30 minutes of placental delivery; (4) no fever during labor.</td></tr>
+    <tr><td>Echocardiographic finding</td><td>Right ventricular dysfunction on bedside echo favors the diagnosis and directly guides treatment (inotropes/pulmonary vasodilators vs. volume).</td></tr>
+  </table>
+  <div class="xref"><b>No lab test confirms or refutes the diagnosis.</b> SMFM explicitly does not recommend relying on any specific diagnostic test — AFE remains a clinical diagnosis made by pattern and exclusion, in real time, under pressure.</div>
+
+  <!-- 04 READINESS / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Readiness &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>There is no true prevention</b> — AFE isn't reliably predictable or avoidable, so readiness replaces prevention as the operative concept here.</li>
+      <li><b>Keep a printed or posted checklist on every labor and delivery unit</b> — because of its rarity, most obstetric providers may go their entire career without seeing a case, making a cognitive aid genuinely useful rather than redundant. The SMFM sample checklist is designed as a single printable page, deliberately excluding steps unlikely to be forgotten (calling a code, initial O2, IV access) to keep it focused on the parts teams actually miss under pressure.</li>
+      <li><b>Have massive transfusion protocol immediately activatable</b> from L&D, with the blood bank pre-alerted to the possibility given how quickly DIC develops.</li>
+      <li><b>Multidisciplinary team readiness:</b> anesthesia, respiratory therapy, critical care, and maternal-fetal medicine should all be part of the response plan, not brought in only after things have already gone badly.</li>
+      <li><b>Run simulation/drills specifically for AFE</b> — given how rarely any individual provider encounters a real case, simulation is one of the only ways to build genuine team fluency with the checklist and sequence before it's needed for real.</li>
+      <li><b>Know your institution's threshold and process for resuscitative hysterotomy</b> in advance — deciding this in the moment costs time you don't have.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Incidence</td><td>~2–6 per 100,000 births</td></tr>
+    <tr><td>Classic maternal mortality (older literature)</td><td>&gt;50%</td></tr>
+    <tr><td>Time to resuscitative hysterotomy after arrest</td><td>Within 4 minutes</td></tr>
+    <tr><td>Gestational age threshold for delivery consideration</td><td>≥23 weeks</td></tr>
+    <tr><td>Massive transfusion ratio</td><td>1:1:1 (PRBC : FFP : platelets)</td></tr>
+    <tr><td>Key echo finding</td><td>Right ventricular dysfunction</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for AFE Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why "embolism" is a somewhat misleading name for what's actually happening:</b> amniotic fluid dissolves fully in blood — there's no discrete embolus mechanically blocking a vessel the way a clot or air bubble does. The clinical picture instead reflects an inflammatory, anaphylactoid-like cascade triggered by fetal/pregnancy material reaching the maternal circulation, which better explains why DIC and multi-organ dysfunction develop so rapidly and diffusely rather than following a single-vessel obstructive pattern.</p>
+    <p><b>Why the cesarean helps the mother, not just the baby:</b> in a pregnant patient at or beyond mid-gestation, the gravid uterus compresses the aorta and vena cava in the supine position, independently impairing venous return and cardiac output during CPR. Delivering the fetus removes that mechanical compression, which is why the 4-minute resuscitative hysterotomy timeline is framed as a maternal resuscitation intervention as much as a fetal-rescue one.</p>
+    <p><b>Why fluid is restricted and pressors preferred when RV failure is present:</b> AFE frequently produces acute pulmonary hypertension and right ventricular strain early in its course. A failing right ventricle is exquisitely sensitive to volume — additional fluid over-distends it further, can shift the interventricular septum and compromise left ventricular filling, and risks right-sided ischemia. Vasopressor support addresses blood pressure without adding to that specific mechanical burden.</p>
+    <p><b>Why the 1:1:1 transfusion ratio matters here specifically:</b> AFE-associated DIC consumes clotting factors and platelets essentially simultaneously with red cell loss from any associated hemorrhage. Transfusing red cells alone (without matched plasma and platelets) dilutes remaining clotting capacity further — the balanced ratio approach, borrowed from trauma and massive obstetric hemorrhage protocols, replaces what's actually being lost rather than correcting only the anemia.</p>
+    <p><b>Why no lab test is recommended for diagnosis:</b> AFE's presentation overlaps substantially with several other causes of peripartum collapse (PE, LAST, cardiomyopathy, sepsis, hemorrhagic shock), and no biomarker or imaging finding has proven specific enough to rule the diagnosis in or out reliably. Treating it as a clinical, pattern-based diagnosis avoids the trap of waiting for a test result that isn't going to definitively answer the question anyway — time better spent on resuscitation than on diagnostic certainty.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <div class="xref">SMFM's updated checklist names five core differentials — pulmonary embolism, myocardial infarction, air embolism, high spinal block, and sepsis — and notes that initial management of all of them converges on the same ABC (airway, breathing, circulation) approach regardless of which is ultimately confirmed. <b>The rapid appearance of DIC is usually the clinical finding that confirms AFE</b> over these alternatives.</div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Pulmonary thromboembolism</td><td>No coagulopathy typically develops as rapidly or as severely as in AFE; CT angiography, when time allows, can differentiate.</td></tr>
+    <tr><td>Local Anesthetic Systemic Toxicity</td><td>Collapse timing usually relates directly to LA injection; CNS excitation/seizure pattern often precedes cardiovascular findings.</td></tr>
+    <tr><td>Total / High Spinal</td><td>Ascending sensory/motor block pattern following neuraxial dosing — a mechanical, not inflammatory, process; no DIC develops.</td></tr>
+    <tr><td>Anaphylaxis (true IgE-mediated)</td><td>Clear temporal link to a specific drug/antigen exposure; skin findings (urticaria, angioedema) more prominent; no DIC as a defining feature.</td></tr>
+    <tr><td>Peripartum cardiomyopathy / myocardial infarction</td><td>Look for cardiac risk factors, troponin elevation, echo findings of dilated cardiomyopathy rather than isolated RV dysfunction; onset is typically less abrupt than AFE.</td></tr>
+    <tr><td>Septic shock</td><td>Fever is present (AFE's structured criteria specifically require its absence), more gradual hemodynamic decline, identifiable infectious source.</td></tr>
+    <tr><td>Eclampsia</td><td>Preceding hypertension/proteinuria; seizure-predominant picture without the same DIC/RV-failure signature.</td></tr>
+    <tr><td>Hemorrhagic shock (e.g., undiagnosed placental abruption or uterine rupture)</td><td>Visible or suspected significant blood loss as the primary driver; coagulopathy here is typically dilutional/consumptive from massive hemorrhage rather than a primary inflammatory DIC process — though the two can be difficult to separate acutely.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Once stabilized:</b> transthoracic or transesophageal echocardiography to characterize ongoing cardiac function, coagulation panel (with ROTEM/TEG if available) to guide continued factor replacement, CBC and renal/hepatic function to assess multi-organ involvement.</p>
+    <p><b>Disposition:</b> ICU admission is essentially universal for any suspected AFE case, with continued multidisciplinary involvement (obstetrics, anesthesia, critical care, maternal-fetal medicine) through the acute phase.</p>
+    <p><b>Anticipate ongoing hemorrhage risk:</b> uterine atony and continued coagulopathy remain active threats well past the initial collapse — maintain a low threshold for additional uterotonics and blood product support in the following hours, not just during the acute resuscitation.</p>
+    <p><b>Documentation and debrief:</b> given the rarity of AFE and the intensity of the response, a structured debrief soon after ICU transfer (or as soon as feasible if the patient dies) supports both clinical learning and accurate documentation. Explicitly address the need for psychological/emotional support for the patient, family, and staff — clinicians can experience genuine "second victim" trauma after an event like this, and that needs to be recognized, not just the clinical debrief.</p>
+    <p><b>Submit the case to the AFE Foundation's international registry</b> (afesupport.org) — registry data is what's actually generating the field's understanding of risk factors and outcomes, and comprehensive reporting (including poor-outcome cases) is what makes future management improvements possible.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Society for Maternal-Fetal Medicine, Martinez-King LC, Combs CA, Montgomery DM, Toner LE, Dildy GA. Special Statement: Checklist for Initial Management of Amniotic Fluid Embolism—Updated 2026. <i>Pregnancy.</i> 2026;2:e70364.</li>
+    <li><span class="tier">PRIMARY</span>Pacheco LD, Clark SL, Klassen M, Hankins GD. Amniotic Fluid Embolism: Principles of Early Clinical Management. <i>Am J Obstet Gynecol.</i> 2020;222(1):48–52.</li>
+    <li><span class="tier">GUIDELINE</span>Society for Maternal-Fetal Medicine Clinical Guideline #9. Amniotic Fluid Embolism: Diagnosis and Management. <i>Am J Obstet Gynecol.</i> 2016;215(2):B16–24.</li>
+    <li><span class="tier">GUIDELINE</span>American Heart Association. 2025 AHA Guidelines for CPR and ECC — Recommendations for Peripartum Patients with Life-Threatening Suspected Amniotic Fluid Embolism. cpr.heart.org, 2025.</li>
+    <li><span class="tier">GUIDELINE</span>Pacheco LD, Clark SM, Fox K, Bauer ME, Clark SL. Use of Atropine, Ondansetron, and Ketorolac in Suspected Amniotic Fluid Embolism. <i>Obstet Gynecol.</i> 2026;147(6):780–784.</li>
+    <li><span class="tier">EVIDENCE</span>Trieu NHK, Nguyen NN, Pham HM, Huynh DQ, Mai AT. Extracorporeal Membrane Oxygenation in Amniotic Fluid Embolism: A Systematic Review of Case Reports. <i>ASAIO J.</i> 2025;71(2):143–148.</li>
+    <li><span class="tier">EVIDENCE</span>Rose CH, Faksh A, Traynor KD, Cabrera D, Arendt KW, Brost BC. Challenging the 4- to 5-Minute Rule: From Perimortem Cesarean to Resuscitative Hysterotomy. <i>Am J Obstet Gynecol.</i> 2015;213(5):653.e1.</li>
+    <li><span class="tier">REFERENCE</span>Amniotic Fluid Embolism. <i>StatPearls,</i> NCBI Bookshelf, updated March 2026.</li>
+    <li><span class="tier">REFERENCE</span>Andonotopo W, et al. Amniotic Fluid Embolism: A Comprehensive Review of Diagnosis and Management. <i>J Perinat Med.</i> 2025.</li>
+    <li><span class="tier">REFERENCE</span>AWHONN. Management of Amniotic Fluid Embolism. awhonn.org.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event.</div>
+
+</div>
+</body>
+</html>

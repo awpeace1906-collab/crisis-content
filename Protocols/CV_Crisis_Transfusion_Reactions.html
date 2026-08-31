@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acute Transfusion Reactions — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Perioperative</div>
+    <h1>Acute Transfusion Reactions</h1>
+    <p class="subtitle">AHTR, TRALI, and TACO can look nearly identical at the bedside within the first hour — and TACO's treatment (diuresis) is close to the opposite of what TRALI needs. Getting the differential right is the whole game.</p>
+    <div class="badges">
+      <span class="badge red">TRANSFUSION EMERGENCY</span>
+      <span class="badge teal">STATPEARLS / ASH-ALIGNED</span>
+      <span class="badge amber">STOP THE TRANSFUSION FIRST, ALWAYS</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs — Telling Them Apart</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Step 1 is universal. Steps after that diverge hard depending on which reaction you're actually looking at — misreading TACO as TRALI (or vice versa) means giving the wrong treatment entirely.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Stop the transfusion immediately, keep the IV open</div><div class="step-desc">Universal first step regardless of which reaction is suspected. Maintain venous access with normal saline through a separate line/port — don't flush the suspect unit's tubing into the patient.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Verify identity and notify the blood bank</div><div class="step-desc">Recheck patient and unit ID for a clerical mismatch — the leading cause of ABO-incompatible AHTR is human error, not a lab failure. Send the remaining unit, tubing, and a fresh patient sample back to the blood bank for repeat type and crossmatch.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Full ABCDE assessment, determine which reaction this actually is</div><div class="step-desc">Fever + flank/back pain + hemoglobinuria points toward AHTR. Hypoxia + hypotension/normotension without hypertension points toward TRALI. Hypoxia + hypertension + rales + a positive fluid balance points toward TACO. These can overlap early — reassess as more information (BNP, imaging) comes in rather than committing to one diagnosis prematurely.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Suspected AHTR</div><div class="step-desc">Aggressive IV crystalloid to maintain urine output (targeting a diuresis around <span class="d">500 mL/hr of 0.9% NaCl</span> as tolerated) to protect the kidneys from hemoglobin-mediated injury. Anticipate hypotension, AKI, and DIC. If DIC with clinically significant bleeding develops, give FFP, cryoprecipitate (for fibrinogen), and platelets as indicated — don't wait for bleeding to become severe before treating the coagulopathy.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">5</div><div class="step-body"><div class="step-title">Suspected TRALI</div><div class="step-desc">Supportive oxygenation; escalate to mechanical ventilation with <b>low tidal volume</b> (ARDS-protective strategy) if needed. <b>Diuretics are not indicated</b> in the absence of clear concurrent volume overload — TRALI is permeability edema, not hydrostatic, and unnecessary diuresis can worsen an already hypotensive patient. No evidence supports steroids or antihistamines.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">6</div><div class="step-body"><div class="step-title">Suspected TACO</div><div class="step-desc">Sit the patient upright, give oxygen, and <b>diurese</b> — the most specific and effective treatment is stopping the transfusion and actively removing the excess volume. This is close to the opposite instinct from TRALI management, which is exactly why correctly distinguishing the two matters so much in the first few minutes.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Allergic / anaphylactic reactions</div><div class="step-desc">Urticaria alone: diphenhydramine, and the transfusion may be restarted after ~20 minutes if symptoms resolve. Multi-system involvement (hypotension, angioedema, respiratory compromise): treat as full anaphylaxis with epinephrine — see the Anaphylaxis crisis file. Fever is characteristically <b>absent</b> in allergic/anaphylactic reactions, which is one of the more useful bedside clues separating this from AHTR.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Suspected septic/bacterial contamination reaction</div><div class="step-desc">High fever is the hallmark. Start broad-spectrum empiric antibiotics immediately, with antipseudomonal coverage specifically if red cells were the product transfused. Culture the remaining unit and the patient.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">In an anesthetized or unconscious patient, the usual warning signs are hidden</div><p>Fever, pain, and dyspnea — the symptoms that usually flag AHTR — are masked under general anesthesia. Unexplained hypotension, oozing in the surgical field, hemoglobinuria in the Foley bag, or an unexplained rise in temperature may be the only available clues. A high index of suspicion has to substitute for the symptoms the patient can't report.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Acute transfusion reactions occur within 24 hours of starting a transfusion (as opposed to delayed reactions, which occur 24 hours to 30 days out) and range from benign to fatal. The clinically important severe ones are acute hemolytic transfusion reaction (AHTR), transfusion-related acute lung injury (TRALI), and transfusion-associated circulatory overload (TACO) — together with anaphylaxis and septic/bacterial contamination reactions, these account for essentially all transfusion-related morbidity and mortality, even though the much more common reactions (febrile non-hemolytic, mild allergic) are far more frequently encountered day to day.</p>
+    <p>AHTR is antibody-mediated destruction of transfused red cells, most often from ABO incompatibility — usually the result of a clerical/identification error rather than a laboratory failure, and most severe when type A donor blood is given to a type O recipient. TRALI is noncardiogenic (permeability) pulmonary edema, historically the leading cause of transfusion-related death in FDA fatality data. TACO is cardiogenic (hydrostatic) pulmonary edema from volume or rate of transfusion exceeding the recipient's cardiac reserve — now recognized as one of the two leading causes of transfusion-related death alongside TRALI.</p>
+  </div>
+
+  <!-- 03 SIGNS — TELLING THEM APART -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs — Telling Them Apart</h2></div>
+  <table class="rt">
+    <tr><th>Feature</th><th>AHTR</th><th>TRALI</th><th>TACO</th></tr>
+    <tr><td>Timing</td><td>Within 24 hr, often within minutes</td><td>During or within 6 hr of transfusion</td><td>During or within 6 hr of transfusion</td></tr>
+    <tr><td>Fever</td><td>Common, often with rigors</td><td>Can occur</td><td>Not a primary feature</td></tr>
+    <tr><td>Blood pressure</td><td>Hypotension, can progress to shock</td><td>Normotensive or hypotensive</td><td><b>Hypertension</b> — a key distinguishing clue</td></tr>
+    <tr><td>Respiratory findings</td><td>Dyspnea possible with severe hemolysis</td><td>Acute hypoxemia, bilateral infiltrates (permeability edema)</td><td>Dyspnea, rales, bilateral infiltrates (hydrostatic edema)</td></tr>
+    <tr><td>Other clues</td><td>Flank/back/chest pain, hemoglobinuria (or hematuria as the first sign under anesthesia), nausea, wheezing</td><td>No response to diuretics; BNP not typically elevated</td><td>Elevated BNP; positive fluid balance; improves with diuresis</td></tr>
+    <tr><td>Underlying mechanism</td><td>Immune-mediated hemolysis (antibody destroying donor RBCs)</td><td>Donor anti-HLA/anti-HNA antibodies (or biologically active lipids) activating recipient neutrophils in the pulmonary microvasculature</td><td>Recipient's cardiac/renal reserve can't handle the transfused volume/rate</td></tr>
+  </table>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Positive patient identification at every step</b> — bedside verification against the unit tag by two providers, since clerical/ID error is the dominant cause of ABO-incompatible AHTR, not a lab typing failure.</li>
+      <li><b>TRALI mitigation is a donor-side strategy:</b> using plasma from male donors, or from female donors who are nulliparous or have tested negative for HLA antibodies, meaningfully reduces TRALI incidence — this is a blood-bank-level intervention, not something adjusted at the bedside. Prophylactic antihistamine or acetaminophen before transfusion has no proven role in preventing TRALI specifically.</li>
+      <li><b>TACO prevention is rate- and volume-focused:</b> decrease the transfusion rate, especially in patients with heart failure, renal dysfunction, hypoalbuminemia, or an already-positive fluid balance. Prophylactic diuretic co-administration can be considered in higher-risk patients.</li>
+      <li><b>Leukoreduction</b> helps prevent febrile non-hemolytic reactions specifically, and is now standard for most blood products at many institutions.</li>
+      <li><b>Know your patient's risk factors before transfusing</b> — pre-existing cardiac/renal disease and volume status change both the TACO risk calculus and the transfusion rate you should be using.</li>
+      <li><b>Monitor vital signs at defined intervals</b> through and after transfusion (commonly hourly through several hours post-transfusion) — early detection shortens the interval between reaction onset and stopping the unit.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Overall transfusion reaction rate</td><td>~1–3% of all transfusions</td></tr>
+    <tr><td>Febrile non-hemolytic reaction rate</td><td>~1% of all transfusions</td></tr>
+    <tr><td>Transfusion-associated anaphylaxis incidence</td><td>~1:13,843 (2011 US data)</td></tr>
+    <tr><td>TRALI incidence, historical vs. after male-donor-plasma mitigation</td><td>Fell from ~2.57 to 0.81 per 10,000 transfusions with reduced use of female-donor plasma</td></tr>
+    <tr><td>Share of transfusion-related deaths from TRALI (FDA data)</td><td>~43%</td></tr>
+    <tr><td>Share of transfusion-related deaths from ABO/non-ABO hemolytic reactions</td><td>~23% combined (10% ABO, 13% non-ABO)</td></tr>
+    <tr><td>TRALI hypoxemia diagnostic threshold</td><td>PaO₂/FiO₂ &lt;300 mmHg, or SpO₂ &lt;90% on room air</td></tr>
+    <tr><td>AHTR fluid resuscitation target</td><td>~500 mL/hr 0.9% NaCl as tolerated, titrated to urine output</td></tr>
+    <tr><td>TRALI resolution window with supportive care</td><td>Typically 1–3 days after stopping the transfusion</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Transfusion Reaction Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why TACO and TRALI need opposite fluid strategies despite looking similar:</b> TACO is fundamentally a volume problem — the recipient's heart can't handle the transfused load, so hydrostatic pressure pushes fluid into the lungs; removing volume (diuresis) directly treats the mechanism. TRALI is fundamentally a permeability problem — donor antibodies or lipid mediators activate recipient neutrophils, which damage the pulmonary capillary endothelium and let fluid leak out regardless of intravascular volume status; removing volume here doesn't address damaged capillaries and can push an already-hypotensive TRALI patient into worse shock. The "2-hit" model helps explain why the same transfused product can trigger either picture depending on the recipient's baseline condition (cardiac/renal reserve for TACO vs. an already-primed inflammatory state for TRALI).</p>
+    <p><b>Why aggressive fluids protect the kidney in AHTR specifically:</b> free hemoglobin released from lysed red cells is directly nephrotoxic and can precipitate in renal tubules under low-flow, concentrated-urine conditions. Maintaining a brisk diuresis dilutes the free hemoglobin and keeps tubular flow high enough to reduce the risk of acute kidney injury — this is a mechanical flushing strategy, not a treatment aimed at the antibody-antigen reaction itself (there's no way to stop hemolysis that's already underway once incompatible cells have been transfused).</p>
+    <p><b>Why low tidal volume ventilation is used for TRALI even though it's not classic ARDS:</b> TRALI's pathophysiology — neutrophil-mediated capillary endothelial injury leading to permeability edema — closely resembles ARDS mechanistically, so a lung-protective ventilation strategy (lower tidal volumes, avoiding additional stretch injury to already-damaged alveolar-capillary membranes) is extrapolated from ARDS management and applied here, even without TRALI-specific trial data proving the same mortality benefit.</p>
+    <p><b>Why donor-side mitigation, not bedside intervention, is the primary TRALI prevention lever:</b> the antibodies responsible for immune-mediated TRALI come from the donor's plasma, most often a multiparous woman who developed anti-HLA antibodies through prior pregnancy exposure to fetal antigens. No amount of bedside premedication changes that donor-plasma risk factor, which is why restricting high-plasma-volume products to male or nulliparous donors produced a measurable, real-world drop in TRALI incidence, while prophylactic antihistamines/acetaminophen have not been shown to help.</p>
+    <p><b>Why hematuria can be the first sign of AHTR under anesthesia:</b> the classic AHTR symptoms — fever, flank pain, chest discomfort — all depend on a conscious patient reporting subjective sensations, which general anesthesia eliminates entirely. Hemoglobinuria (visible as pink/red urine in the Foley bag) is one of the few objective findings that persists regardless of consciousness, which is why it functions as a critical, easily-missed warning sign in the anesthetized surgical patient specifically.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Sepsis (unrelated to the transfused product)</td><td>Can present similarly to AHTR (fever, hypotension) — send blood cultures on both the patient and the remaining unit to help distinguish septic transfusion reaction from unrelated sepsis versus AHTR.</td></tr>
+    <tr><td>Anaphylaxis</td><td>Can be difficult to differentiate from AHTR acutely, since AHTR doesn't always present with fever. Look for urticaria/angioedema and a faster, more purely allergic timeline; IgA-deficient patients with anti-IgA antibodies are at particular risk and should receive washed red cells for future transfusions.</td></tr>
+    <tr><td>Cardiogenic pulmonary edema from a primary cardiac event (unrelated to transfusion)</td><td>Look for a temporal relationship to the transfusion itself and pre-existing cardiac risk factors; overlaps substantially with TACO by definition, so the distinction is sometimes more about attribution than a different clinical picture.</td></tr>
+    <tr><td>Pulmonary embolism or amniotic fluid embolism (if applicable clinical context)</td><td>No temporal link to the transfusion; different risk factor profile and typically a different mechanism of hypoxemia (obstructive vs. edema-driven).</td></tr>
+    <tr><td>Delayed hemolytic transfusion reaction</td><td>Onset beyond 24 hours (up to several weeks), typically milder, from an alloantibody the recipient developed from a prior transfusion or pregnancy rather than the current unit.</td></tr>
+    <tr><td>Febrile non-hemolytic transfusion reaction</td><td>Fever/chills without hemolysis, hypotension, or respiratory compromise — a diagnosis of exclusion after ruling out AHTR, TRALI, and sepsis; benign and self-limited.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Immediate labs:</b> repeat ABO type and crossmatch on a fresh sample, direct antiglobulin (Coombs) test, CBC, haptoglobin/LDH/indirect bilirubin (hemolysis markers), coagulation panel if DIC is a concern, BNP (helps favor TACO over TRALI when elevated), blood and unit cultures if a septic reaction is suspected.</p>
+    <p><b>Imaging:</b> chest X-ray for both TRALI and TACO — the infiltrate pattern alone often can't distinguish the two, which is why BNP, fluid balance history, and blood pressure trend all get weighed together rather than relying on imaging in isolation.</p>
+    <p><b>Blood bank involvement:</b> the remaining unit, attached tubing, and a post-reaction patient sample all get sent back for investigation — for AHTR/hemolytic workup and, for suspected TRALI, specifically to screen the donor unit for anti-HLA/anti-HNA antibodies.</p>
+    <p><b>Disposition:</b> ICU-level monitoring for any severe reaction — AHTR with hemodynamic instability or DIC, TRALI requiring ventilatory support, or TACO requiring more than straightforward diuresis. Milder, rapidly-resolving reactions may be manageable with closer floor-level monitoring depending on institutional protocol.</p>
+    <p><b>Reporting:</b> all significant transfusion reactions get reported through institutional hemovigilance processes (and nationally, e.g., CDC NHSN Biovigilance in the US) — this isn't optional paperwork, it's how donor-level risk factors (like the plasma-donor sex restriction that reduced TRALI incidence) get identified and acted on across the whole blood supply.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Transfusion Reactions. <i>StatPearls,</i> NCBI Bookshelf, updated 2023, reviewed against current literature 2026.</li>
+    <li><span class="tier">PRIMARY</span>Transfusion-Related Acute Lung Injury. <i>StatPearls,</i> NCBI Bookshelf, updated 2023.</li>
+    <li><span class="tier">PRIMARY</span>Semple JW, Rebetz J, Kapur R. Transfusion-Associated Circulatory Overload and Transfusion-Related Acute Lung Injury. <i>Blood.</i> 2019;133(17):1840–1853.</li>
+    <li><span class="tier">GUIDELINE</span>Approach to the Patient with a Suspected Acute Transfusion Reaction. <i>UpToDate,</i> literature review current through July 2026.</li>
+    <li><span class="tier">REFERENCE</span>Transfusion Reactions. AMBOSS Knowledge, updated 2026.</li>
+    <li><span class="tier">REFERENCE</span>Blood Transfusion Reactions, TRALI, and TACO. OpenAnesthesia.org, updated 2025.</li>
+    <li><span class="tier">REFERENCE</span>Transfusion-Associated Circulatory Overload and Transfusion-Related Acute Lung Injury. <i>Am J Clin Pathol.</i> 2021;156(4):529.</li>
+    <li><span class="tier">REFERENCE</span>Hemolytic Transfusion Reaction. <i>StatPearls,</i> NCBI Bookshelf, updated 2023.</li>
+    <li><span class="tier">REFERENCE</span>Noninfectious Complications of Blood Transfusion. <i>StatPearls,</i> NCBI Bookshelf, updated 2025.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and protocols against your own institutional blood bank policy before clinical use.</div>
+
+</div>
+</body>
+</html>

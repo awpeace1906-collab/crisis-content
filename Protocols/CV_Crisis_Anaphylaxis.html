@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perioperative Anaphylaxis — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Perioperative</div>
+    <h1>Perioperative Anaphylaxis</h1>
+    <p class="subtitle">NMBA, latex, and chlorhexidine as the leading intraoperative triggers — epinephrine dosing by severity, why it's the only drug that matters acutely, and how to work up the trigger afterward.</p>
+    <div class="badges">
+      <span class="badge red">ANESTHESIA EMERGENCY</span>
+      <span class="badge teal">AAAAI 2023-ALIGNED</span>
+      <span class="badge amber">EPI-ONLY, FIRST-LINE</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#triggers">OR Triggers &amp; Setup</a>
+    <a class="qn" href="#labs">Labs — Tryptase Timing</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Epinephrine is the only first-line drug. Everything else on this list is adjunct or supportive — delay in epinephrine, not lack of antihistamine, is what kills people.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Stop the suspected trigger, call for help</div><div class="step-desc">Discontinue the last agent given if a specific trigger is suspected (NMBA, antibiotic, colloid, chlorhexidine, latex). Continue the case only if hemodynamically safe to do so.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">2</div><div class="step-body"><div class="step-title">Epinephrine — immediately, no absolute contraindication</div><div class="step-desc"><b>Awake/non-arrested, IM:</b> <span class="d">0.3–0.5 mg</span> (0.3–0.5 mL of 1:1,000) adults, into the vastus lateralis; <span class="d">0.01 mg/kg</span> (max 0.5 mg) children. Repeat q5–15min as needed. <b>Intraoperative/IV access already present, hypotensive or arrested:</b> small IV boluses <span class="d">10–100 mcg</span> titrated to effect, or an infusion <span class="d">1–10 mcg/min</span> for refractory hypotension — do not push a full IM-equivalent dose IV outside cardiac arrest (risk of malignant arrhythmia). There is no absolute contraindication to epinephrine in anaphylaxis, including in patients with coronary disease — anaphylaxis will kill first.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">3</div><div class="step-body"><div class="step-title">Positioning and volume</div><div class="step-desc">Supine with leg elevation unless respiratory distress prevents it. Large-bore IV access, <span class="d">1–2 L</span> crystalloid bolus for hypotension — distributive shock from massive vasodilation and capillary leak often needs aggressive volume on top of epinephrine.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">4</div><div class="step-body"><div class="step-title">Airway and oxygen</div><div class="step-desc">100% O₂. Laryngeal edema/stridor is an airway emergency — secure early rather than waiting for complete obstruction; angioedema of the airway can progress fast and make later intubation difficult.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Adjuncts — not first-line, don't substitute for epinephrine</div><div class="step-desc">H1 antihistamine (diphenhydramine <span class="d">25–50 mg IV</span>) for urticaria/pruritus only — doesn't stop the systemic reaction. H2 blocker as adjunct. Corticosteroid (methylprednisolone <span class="d">1–2 mg/kg IV</span>) may reduce biphasic reaction risk (not proven) but has no acute effect — hours to work. Nebulized albuterol for bronchospasm refractory to epinephrine.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">Refractory anaphylaxis / vasoplegic shock</div><div class="step-desc">Continues despite appropriate epinephrine dosing and fluids. Escalate to IV epinephrine infusion, add norepinephrine, consider methylene blue as a last-resort vasoplegia rescue (inhibits nitric oxide synthase), and involve ICU/consider ECMO if truly refractory.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">7</div><div class="step-body"><div class="step-title">Glucagon if the patient is on a beta-blocker</div><div class="step-desc"><span class="d">1–5 mg IV</span> — beta-blockade can blunt the response to epinephrine; glucagon works through a non-adrenergic pathway and bypasses the blocked beta-receptor.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">Antihistamines and steroids do not abort anaphylaxis</div><p>They're adjuncts for symptom control and (unproven) biphasic-reaction reduction. Epinephrine is the only drug shown to reverse the acute reaction — delaying it to give diphenhydramine first is a preventable cause of death.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Anaphylaxis is a severe, life-threatening systemic hypersensitivity reaction — IgE-mediated (type I) in most cases, though some perioperative reactions (particularly to neuromuscular blocking agents) can occur via IgE-independent mast cell/basophil activation with a clinically identical presentation. Under anesthesia, the classic cutaneous warning signs are frequently hidden under drapes and surgical positioning, so cardiovascular collapse or a sudden rise in airway pressure may be the first thing anyone notices.</p>
+    <p>By NIAID/FAAN criteria, anaphylaxis is likely when any one of three patterns is met: (1) acute skin/mucosal involvement plus respiratory compromise or hypotension; (2) two or more of skin/mucosal signs, respiratory compromise, hypotension, or GI symptoms occurring rapidly after a likely exposure; or (3) hypotension after exposure to a known allergen, even without skin signs — the third pattern is exactly the perioperative presentation, since drapes hide the skin findings that would otherwise make this obvious.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Initial Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>System</th><th>Findings</th></tr>
+    <tr><td>Skin (~90% of cases, often absent/hidden intraop)</td><td>Urticaria, angioedema, flushing, pruritus — may be entirely absent or unseen under drapes in the OR, especially in rapid/severe reactions.</td></tr>
+    <tr><td>Respiratory (~70%)</td><td>Bronchospasm (rising peak airway pressures on the vent), stridor, hoarseness from laryngeal edema, rhinorrhea.</td></tr>
+    <tr><td>Cardiovascular (~45%)</td><td>Hypotension, tachycardia, dysrhythmia, syncope — often the first and only sign an anesthesia team sees under drapes.</td></tr>
+    <tr><td>GI (~30–45%)</td><td>Nausea, vomiting, cramping, diarrhea — not observable under general anesthesia but relevant if the reaction starts pre-induction.</td></tr>
+    <tr><td>CNS</td><td>Anxiety, sense of impending doom (awake patients), altered mental status.</td></tr>
+    <tr><td>Intraoperative-specific</td><td>Sudden hypotension refractory to usual pressor doses, unexplained rise in airway pressures, and unexplained tachycardia are frequently the presenting triad — treat as anaphylaxis until proven otherwise rather than waiting for skin signs that may never be visible.</td></tr>
+  </table>
+
+  <!-- 04 OR TRIGGERS & SETUP -->
+  <div class="sec-head c-blue" id="triggers"><span class="sec-num">04</span><h2>OR Triggers &amp; Set-Up for the At-Risk Patient</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Neuromuscular blocking agents</b> are the most frequently implicated perioperative trigger in most large series, followed by <b>latex</b> and <b>chlorhexidine</b> (chlorhexidine allergy is increasingly recognized and easy to miss since it's used on skin, catheters, and mucosal antiseptic prep alike).</li>
+      <li><b>Antibiotics</b> (especially beta-lactams given at induction) and <b>blood products</b> are also common triggers — timing relative to induction is a key clue: a reaction minutes after NMBA/induction agents points one direction, a reaction after the surgical antibiotic timeout points another.</li>
+      <li><b>Known latex allergy:</b> latex-free room setup (gloves, catheters, tourniquets, drains), first case of the day if possible to reduce airborne latex particle load from prior cases.</li>
+      <li><b>Known chlorhexidine allergy:</b> alternate skin prep (e.g., povidone-iodine), alternate central line/catheter coatings, flag on all vascular access supplies.</li>
+      <li><b>Prior perioperative anaphylaxis, unclear trigger:</b> anesthesia record should specify exactly what was given and in what order at the time of the prior event — this timeline is the single most useful piece of information for the allergist who eventually works it up.</li>
+      <li><b>Epinephrine immediately available</b> at the anesthesia workstation in a familiar concentration/dilution — under stress, drawing up and diluting epinephrine correctly is a common point of error.</li>
+    </ul>
+  </div>
+
+  <!-- 05 LABS / TRYPTASE -->
+  <div class="sec-head c-teal" id="labs"><span class="sec-num">05</span><h2>Labs — Tryptase Timing</h2></div>
+  <table class="rt">
+    <tr><th>Test</th><th>Pattern / timing</th></tr>
+    <tr><td>Serum tryptase</td><td>Peaks 1–2 hours post-reaction — draw a sample in this window if anaphylaxis is suspected intraoperatively; this is the single most useful confirmatory lab.</td></tr>
+    <tr><td>Baseline tryptase</td><td>Draw &gt;24 hours after the event (or at a routine follow-up visit) for comparison. An elevated baseline (not just peak) suggests mastocytosis, which raises future anaphylaxis severity risk and changes long-term management.</td></tr>
+    <tr><td>Blood pressure trend</td><td>Not a lab, but the earliest and most actionable intraoperative signal — sudden, pressor-refractory hypotension is often the first data point available.</td></tr>
+  </table>
+  <div class="xref"><b>Baseline tryptase &gt;8 ng/mL</b> should prompt evaluation for hereditary alpha-tryptasemia or clonal mast cell disease — relevant for planning anesthesia in a patient with a history of severe or recurrent perioperative anaphylaxis.</div>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Anaphylaxis Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why epinephrine and only epinephrine reverses the acute reaction:</b> anaphylaxis involves both alpha and beta receptor-mediated effects that need simultaneous correction — alpha-agonism reverses vasodilation and mucosal edema, beta-1 agonism supports cardiac output, and beta-2 agonism reverses bronchospasm and, critically, inhibits further mediator release from mast cells and basophils. No other single agent hits all three targets at once, which is why antihistamines and steroids can't substitute for it.</p>
+    <p><b>Why IM, not IV, is the default route:</b> IM injection into the vastus lateralis achieves faster peak plasma concentration than IM deltoid or subcutaneous routes, and is dramatically safer than IV push outside of arrest — IV push epinephrine in a non-arrested patient risks precipitating malignant ventricular arrhythmia. IV infusion becomes appropriate specifically for refractory cases already under continuous monitoring, which describes the OR.</p>
+    <p><b>Why glucagon matters specifically in beta-blocked patients:</b> beta-blockade can blunt or completely block the response to epinephrine, since epinephrine's mechanism runs through the same receptors the beta-blocker occupies. Glucagon raises cAMP through a separate, non-adrenergic receptor pathway, restoring some inotropic/chronotropic support even when beta-receptors are blocked.</p>
+    <p><b>Why the observation-period recommendation has moved away from a flat 4–6 hours:</b> older guidance treated biphasic-reaction risk as roughly uniform across all anaphylaxis presentations. Current (2023 practice-parameter and subsequent) evidence shows biphasic reactions cluster heavily in patients with a severe initial presentation, more than one epinephrine dose required, or an unknown/non-food trigger — patients without those risk factors who are symptom-free after roughly 1 hour of observation have a very low subsequent biphasic-reaction rate. This matters directly for perioperative cases, since the patient is typically going to a monitored PACU/ICU setting regardless, which changes the calculus versus discharging someone from an ED.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Hereditary angioedema (HAE)</td><td>No urticaria (critical distinguisher), bradykinin-mediated, does <b>not</b> respond to epinephrine, antihistamines, or steroids. Treatment is C1-esterase inhibitor concentrate, icatibant, or ecallantide.</td></tr>
+    <tr><td>ACE-inhibitor–induced angioedema</td><td>Bradykinin-mediated like HAE; no urticaria; face/tongue/larynx involvement; does not respond to epi/antihistamines/steroids; risk persists up to 3 months after stopping the ACEi.</td></tr>
+    <tr><td>Local Anesthetic Systemic Toxicity</td><td>CNS-first pattern (tinnitus, perioral numbness, seizure) rather than skin/respiratory/GI pattern; clear temporal link to LA administration rather than antibiotic/NMBA timing.</td></tr>
+    <tr><td>Vasovagal reaction</td><td>Bradycardia (not tachycardia) with hypotension, no bronchospasm or skin findings, resolves with positioning alone.</td></tr>
+    <tr><td>Simple bronchospasm (asthma exacerbation, light anesthesia, mechanical tube issue)</td><td>Isolated respiratory finding without the hypotension/skin/GI multi-system pattern; check tube position and depth of anesthesia before assuming anaphylaxis.</td></tr>
+    <tr><td>Scombroid poisoning (histamine toxicity from spoiled fish, pre-op context)</td><td>Flushing and urticaria without true IgE-mediated systemic involvement; tryptase stays normal.</td></tr>
+    <tr><td>Mast cell activation from direct drug effect (opioids, vancomycin "red man syndrome")</td><td>Cutaneous flushing/pruritus from direct, non-IgE mast cell degranulation — usually milder, tryptase typically not significantly elevated, doesn't require full anaphylaxis protocol though epinephrine is still appropriate if hemodynamically significant.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Observation:</b> risk-stratify rather than applying a blanket window. Low-risk (rapid, complete response to a single epinephrine dose; no hypotension/hypoxia; known/likely trigger) can reasonably be observed on the shorter end. Higher-risk (multiple epinephrine doses required, hypotension, hypoxia, unknown trigger, wide pulse pressure at presentation) warrants extended observation — commonly 4–6+ hours — or ICU admission. Given a perioperative patient is already headed to a monitored PACU/ICU setting, err toward the longer end of that range as a practical default.</p>
+    <p><b>Timed tryptase:</b> draw during the 1–2 hour post-reaction window, plus a baseline sample &gt;24 hours later for comparison — this pairing is what makes the diagnosis retrospectively confirmable and is frequently missed if not ordered proactively at the time of the event.</p>
+    <p><b>Allergy referral:</b> every patient gets referred to allergy/immunology for trigger identification (skin testing, sometimes graded challenge) before their next anesthetic — the anesthesia record's exact timeline of what was given, in what order, is the single most useful document for that workup.</p>
+    <p><b>Documentation and future anesthetics:</b> flag the chart, prescribe/discuss an epinephrine autoinjector if there's any risk of non-perioperative re-exposure to the trigger, and plan future anesthetics around a confirmed or presumed trigger (e.g., latex-free room, NMBA-avoidance technique) even before allergy workup is complete.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Shaker MS, Wallace DV, Golden DBK, et al. Anaphylaxis — A 2023 Practice Parameter Update. <i>Ann Allergy Asthma Immunol.</i> 2023.</li>
+    <li><span class="tier">PRIMARY</span>AAAAI. Anaphylaxis Diagnosis and Management Guideline, 2026 update. reference.medscape.com summary.</li>
+    <li><span class="tier">GUIDELINE</span>Shaker MS et al. Anaphylaxis — A 2020 Practice Parameter Update, Systematic Review, and GRADE Analysis. <i>J Allergy Clin Immunol.</i> 2020;145(4):1082–1123.</li>
+    <li><span class="tier">REFERENCE</span>Post-anaphylaxis observation in the ED: a decade of data challenging the traditional 24-hour rule. <i>Int J Emerg Med.</i> 2026.</li>
+    <li><span class="tier">REFERENCE</span>The Waiting Game: Rethinking Anaphylaxis Observation. American Academy of Pediatrics Journal Blogs, 2026.</li>
+    <li><span class="tier">REFERENCE</span>Emergency physician perspectives on anaphylaxis observation times. <i>Ann Allergy Asthma Immunol.</i> 2023.</li>
+    <li><span class="tier">REFERENCE</span>Timing of repeat epinephrine to inform paediatric anaphylaxis observation periods. <i>Lancet Child Adolesc Health.</i> 2025.</li>
+    <li><span class="tier">INTERNAL</span>The Critical Vector DDx Master, §11 Anaphylaxis — Diagnosis &amp; Management (base clinical framework, cross-checked against current literature above).</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

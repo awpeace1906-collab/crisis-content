@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — SE Asia & Oceania — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  .header{max-width:900px;margin:0 auto;padding:36px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  .back{font-size:11px;color:var(--text3);margin-bottom:16px;display:inline-block;}
+  .back:hover{color:var(--accent);}
+  h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:8px;}
+  .lede{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;font-style:italic;color:var(--text3);max-width:640px;margin-bottom:20px;}
+  .divider{height:1px;background:var(--border);margin:0 auto 20px;max-width:900px;}
+
+  .filter-bar{position:sticky;top:0;z-index:20;background:rgba(10,14,20,0.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:14px 24px;margin-bottom:28px;}
+  .filter-inner{max-width:900px;margin:0 auto;}
+  .search-input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:13px;margin-bottom:10px;}
+  .search-input:focus{outline:none;border-color:var(--accent);}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .chip-group-label{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text4);margin-right:2px;}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 10px;border-radius:14px;border:1px solid var(--border);color:var(--text3);cursor:pointer;background:transparent;transition:all .15s;}
+  .chip:hover{border-color:var(--accent);color:var(--text);}
+  .chip.active{background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600;}
+  .results-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:10px;}
+
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin:0 0 16px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden;transition:border-color .15s;}
+  .card.hidden{display:none;}
+  .card-head{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+  .tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;}
+  .tag.region{background:rgba(96,165,250,0.15);color:var(--blue);}
+  .tag.class{background:rgba(167,139,250,0.15);color:var(--purple);}
+  .tag.mechanism{background:rgba(251,191,36,0.15);color:var(--amber);}
+  .card-title{font-size:19px;font-weight:700;color:var(--text);margin-bottom:4px;}
+  .card-sub{font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:13px;color:var(--text4);}
+
+  .card-body{padding:6px 22px 20px;}
+  .field{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .field:last-child{border-bottom:none;}
+  .field-label{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .field-body{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+
+  .box.t-color{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:6px;padding:14px 18px;margin-top:4px;}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:6px;}
+
+  .notice{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin-top:8px;}
+  .notice-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
+  .notice-sub{font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--text4);margin-bottom:12px;line-height:1.6;}
+  .notice-list{list-style:none;}
+  .notice-list li{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text2);line-height:1.7;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+  .notice-list li:last-child{border-bottom:none;}
+  .notice-list strong{font-family:'Syne',sans-serif;color:var(--text);font-weight:700;}
+
+  footer{max-width:900px;margin:20px auto 0;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .filter-bar{display:none;}
+    .card{break-inside:avoid;border:1px solid #999;}
+    .card.hidden{display:block;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="envenomation.html" class="back">← Envenomation Index</a>
+    <div class="kicker">Crisis Management — Envenomation — SE Asia &amp; Oceania</div>
+    <h1>SE Asia &amp; Oceania</h1>
+    <p class="lede">Australian elapids carry some of the most potent venoms in the world by laboratory measures, but clinical importance tracks bite frequency and human contact more than raw toxicity — the snake that bites people most often, not the one with the scariest LD50, drives regional mortality. Four distinct Australian elapid genera are covered here since their management differs enough to matter clinically.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search species, syndrome, keyword…" oninput="filterCards()">
+      <div class="chip-row" id="classChips">
+        <span class="chip-group-label">Class:</span>
+        <button class="chip" data-facet="class" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="class" data-value="snake" onclick="toggleChip(this)">Snake</button>
+        <button class="chip" data-facet="class" data-value="spider" onclick="toggleChip(this)">Spider</button>
+      </div>
+      <div class="chip-row" id="mechChips" style="margin-top:6px;">
+        <span class="chip-group-label">Mechanism:</span>
+        <button class="chip" data-facet="mechanism" data-value="all" onclick="toggleChip(this)">All</button>
+        <button class="chip" data-facet="mechanism" data-value="hemotoxic" onclick="toggleChip(this)">Hemotoxic</button>
+        <button class="chip" data-facet="mechanism" data-value="neurotoxic" onclick="toggleChip(this)">Neurotoxic</button>
+      </div>
+      <div class="results-count" id="resultsCount">7 entries</div>
+      <div class="gs-hint" style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:6px;">Critical-intervention species only — see the non-critical notice below for the rest (redback spider, white-tailed spider).</div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="sec-head">Species — SE Asia &amp; Oceania</div>
+
+    <div class="card" id="coastal-taipan" data-class="snake" data-mechanism="neurotoxic" data-search="coastal taipan oxyuranus scutellatus papuan taipan inland taipan">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Australia / Papua New Guinea</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic + Hemotoxic (VICC)</span>
+        </div>
+        <div class="card-title">Coastal Taipan</div>
+        <div class="card-sub">Oxyuranus scutellatus. Widely cited as having one of the most toxic venoms of any land snake by laboratory LD50. The related inland taipan (O. microlepidotus) is even more toxic per bite but lives in remote desert with almost no human contact — coastal taipan is the one that actually bites people</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">The majority of significant bites develop systemic envenoming — this is not a species where "wait and see" is a reasonable default. Clinical or laboratory evidence of envenoming is usually apparent within 2 hours, though effective pressure immobilization can delay this.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Combines neurotoxicity, myotoxicity, venom-induced consumption coagulopathy, acute kidney injury, and thrombocytopenia — a genuinely multi-system envenomation rather than one dominant mechanism. In a large case series, roughly two-thirds of systemically envenomed patients had neurotoxicity and about 40% had complete or partial VICC.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Pressure bandage with immobilisation (PBI) is the standard Australian first-aid approach for all elapid bites — firm elastic bandage over the bite site, then the entire limb, plus a rigid splint, with the whole patient kept still. This is a materially different approach from North American snakebite first aid (no tourniquet or bandaging there) — know which region's protocol applies.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Leave the PBI in place until antivenom and resuscitation facilities are ready — removal can precipitate rapid systemic deterioration as sequestered venom releases. The Snake Venom Detection Kit (SVDK) can help select which monovalent antivenom to use when more than one species is possible, but it is not a diagnostic test for envenoming itself and produces both false positives and negatives.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">CSL monovalent Taipan Antivenom (equine). One vial has been shown to bind all measurable venom in confirmed bites, and early antivenom administration is associated with better outcomes — this is a species where speed matters more than dose escalation. Typical dosing is 1 vial diluted in saline, IV over 20–30 minutes (undiluted rapid push if hemodynamically unstable or in arrest); total doses in case series have ranged 1–9 vials depending on severity. CSL polyvalent antivenom is an alternative when species identification is uncertain, at the cost of higher volume and anaphylaxis risk.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit any patient with confirmed or strongly suspected envenoming for coagulation, renal, and neurologic monitoring. Ventilator support may be needed for significant neurotoxicity.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Don't confuse "most toxic venom in the world" (inland taipan, by lab measures) with "most clinically important" — coastal taipan and eastern brown snake account for the overwhelming majority of actual severe Australian envenomations because they're the ones people encounter. Taipan and brown snake antivenoms are species-specific with little cross-protection — the right monovalent product matters.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="eastern-brown-snake" data-class="snake" data-mechanism="hemotoxic" data-search="eastern brown snake pseudonaja textilis">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Australia</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC)</span>
+        </div>
+        <div class="card-title">Eastern Brown Snake</div>
+        <div class="card-sub">Pseudonaja textilis. The single most medically important snake in Australia by case volume — widespread, common near farmland and urban fringes, and responsible for the majority of Australian snakebite deaths despite venom that is less exotic-sounding than taipan's</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">A distinctive and dangerous feature: sudden collapse can occur very early after the bite, sometimes before any other envenoming signs are apparent — this is thought to reflect a rapid, direct cardiovascular effect distinct from the coagulopathy that develops afterward.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Early collapse and, in about 5% of envenomed patients, frank cardiac arrest — a genuine outlier among snakebites for how early cardiovascular collapse can occur. Venom-induced consumption coagulopathy follows in most systemically envenomed patients, presenting as bleeding gums or IV-site oozing, rarely progressing to intracerebral or intra-abdominal hemorrhage. Thrombotic microangiopathy (thrombocytopenia, microangiopathic hemolytic anemia, acute renal failure) occurs in roughly 10% of envenomings. Significant neurotoxicity is uncommon despite a neurotoxin being present in the venom — mild diplopia or ptosis can occur but frank paralysis is rare, unlike taipan or tiger snake.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Same PBI approach as other Australian elapids — firm bandage over the bite site, then the whole limb, plus splinting and immobilization of the entire patient.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Watch specifically for early collapse and be ready to manage cardiac arrest even before coagulopathy has had time to develop — this can be the first sign of envenoming, not a late complication. If arrest occurs, undiluted antivenom should be given as a rapid IV push alongside standard resuscitation, rather than the slower diluted-infusion approach used for stable patients.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">CSL monovalent Brown Snake Antivenom, indicated for systemic symptoms, collapse, cardiac arrest, or laboratory evidence of complete or partial VICC, within roughly 12 hours of the bite. Dosing has genuine ongoing controversy in the Australian toxinology literature — some data support higher doses than historically used, while also flagging that unnecessarily high doses may not add benefit; this is an area of active study rather than a settled protocol.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation monitoring and cardiovascular observation given the early-collapse risk. Watch for evolving thrombotic microangiopathy independent of the coagulopathy picture.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Don't be reassured by an early, otherwise well-appearing patient — the sudden collapse phenomenon means brown snake envenoming can announce itself with cardiac arrest before any bleeding sign has developed. This is the Australian species where "looks fine right now" carries the least reassurance.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="tiger-snake" data-class="snake" data-mechanism="hemotoxic" data-search="tiger snake notechis scutatus notechis ater">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Australia (esp. Victoria, Tasmania)</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC) + Neurotoxic + Myotoxic</span>
+        </div>
+        <div class="card-title">Tiger Snake</div>
+        <div class="card-sub">Notechis scutatus (mainland tiger snake) and N. ater (black tiger snake). The most important venomous snake in Tasmania and among the most frequent causes of envenoming in Victoria</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">A genuinely multi-system envenomation, similar in breadth to taipan. In a large prospective series, venom-induced consumption coagulopathy was near-universal (53 of 56 confirmed cases), with systemic symptoms, myotoxicity, and neurotoxicity all occurring at meaningful rates in the same population.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">VICC, systemic symptoms, myotoxicity (with substantial creatine kinase elevation and rhabdomyolysis risk), and neurotoxicity. The principal neurotoxin, notexin, acts presynaptically and physically destroys synaptic terminals and vesicles — this is a structural injury, not a reversible receptor blockade, which matters directly for treatment (see below). Post-bite collapse can occur and its significance is easily under-recognized.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Pressure bandage with immobilisation (PBI), same as other Australian elapids.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Watch for rhabdomyolysis-driven renal injury given the myotoxic component — this is more prominent here than in brown snake envenoming. Because notexin destroys presynaptic terminals rather than blocking them reversibly, neostigmine will not restore acetylcholine release the way it might for a purely postsynaptic block — if used at all, it should be paired with atropine to prevent bradycardia, but don't expect it to meaningfully reverse established paralysis.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">CSL monovalent Tiger Snake Antivenom. One vial has been shown sufficient to bind all circulating venom in confirmed bites, matching the dose originally recommended when the product was first released. Notably, case data show clinical benefit from antivenom even when given after a substantial delay (one case report documents recovery after a 48-hour delay) — don't withhold treatment on the assumption that "too much time has passed."</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation, renal, and neurologic monitoring given the multi-system involvement. CK trend matters as much as coagulation labs here.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Don't treat a period of apparent stability after the bite as reassurance — post-bite collapse is a recognized and sometimes under-appreciated feature. The structural (not receptor-blocking) nature of notexin's neurotoxicity is the key mechanistic reason neostigmine underperforms here relative to death adder, where postsynaptic blockade is more prominent.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="death-adder" data-class="snake" data-mechanism="neurotoxic" data-search="death adder acanthophis antarcticus">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Australia, Papua New Guinea, eastern Indonesia</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Death Adder</div>
+        <div class="card-sub">Acanthophis antarcticus and related species. An ambush predator, unlike the actively foraging brown and tiger snakes — bites often happen when the snake is stepped on or disturbed rather than encountered moving</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Neurotoxicity develops in roughly half of definite bites in case series, typically presenting over hours. This is the one Australian elapid where a genuinely important lab caveat applies (see below).</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Predominantly neurotoxic: ptosis, diplopia, bulbar weakness, and intercostal muscle weakness in a descending pattern similar in character to krait or coral snake. Critically, death adder venom is NOT significantly coagulopathic — this breaks the general Australian-elapid rule that a normal coagulation screen argues against significant envenoming. A normal 20WBCT or coag panel does not clear a death adder bite the way it would for brown, tiger, or taipan.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">PBI as for other Australian elapid bites. Given the ambush-predator bite mechanism, consider this diagnosis even without a clear "snake encounter" history — a bite from stepping near or on a motionless snake fits this species' pattern.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Do not rely on coagulation studies to rule this out. One vial of antivenom is effective at binding circulating venom, but — much like krait and black mamba — this does not reliably reverse neurotoxicity that has already developed; average time to resolution of neurotoxicity is about a day regardless of treatment. Some case reports describe neostigmine response, reflecting a real postsynaptic component to this venom's neurotoxicity (in contrast to tiger snake's more structural, presynaptic damage) — a trial is reasonable but should never substitute for airway readiness.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">CSL monovalent Death Adder Antivenom, raised against Acanthophis antarcticus and effective across the death adder species found in Australia and Papua New Guinea.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for neurologic and respiratory monitoring regardless of coagulation results. Ventilator readiness for any bulbar or respiratory signs.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">The single most important teaching point for this species: normal clotting studies do not rule out significant death adder envenoming, unlike every other major Australian elapid on this page. Base the treatment decision on the clinical neurologic exam, not the coagulation panel.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="funnel-web-spider" data-class="spider" data-mechanism="neurotoxic" data-search="sydney funnel-web spider atrax robustus hadronyche">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Australia (NSW, SE Qld)</span>
+          <span class="tag class">Spider — Atracidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">Sydney Funnel-Web Spider</div>
+        <div class="card-sub">Atrax robustus and related genus Hadronyche. The only spider in the world managed with the same pressure-immobilization first aid as a venomous snakebite — a genuine exception among spider envenomations</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Severe systemic envenoming develops fast — median onset around 28 minutes, usually within 2 hours, and death can occur within about 15 minutes in small children if untreated. Only male spiders cause serious envenomation; the toxin (δ-hexatoxin) has no equivalent effect in other mammals, which is part of why this genus is so specifically dangerous to humans.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">A two-phase picture. Phase 1: local pain (fang marks present, but notably little local swelling or redness), then perioral paresthesias and fasciculations prominent in the tongue, face, and intercostal muscles, progressing to autonomic storm — sweating, salivation, lacrimation, piloerection, hypertension, tachycardia — with airway compromise possible from muscle spasm and, in some cases, pulmonary edema causing death in this phase. Phase 2: adrenergic/cholinergic effects subside, followed by a deceptively calm period, then refractory hypotension, apnea, and cardiac arrest can follow if untreated. Children may present atypically with sudden inconsolable crying, salivation, vomiting, or collapse rather than the adult symptom pattern.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Pressure immobilization bandage — identical technique to snakebite. This is one of the few spider bites where PBI is indicated; do not extrapolate this to other spiders (see the non-critical notice below for the exception this creates with redback bites). Funnel-web venom is unusual in that local tissue inactivation of venom occurs with sustained pressure, so effective PBI genuinely buys time — laboratory data suggest up to 2 mg of venom can be inactivated over 24 hours of maintained pressure, well above what a bite typically delivers.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Do not remove the PBI until antivenom and resuscitation capability are ready — removal can precipitate rapid symptom onset. Observe for at least 4–6 hours post-envenomation and at least 2 hours after bandage removal before ruling out significant envenoming; only 1 in 5 to 1 in 10 bites become seriously ill, so mild presentations are genuinely common and don't all need antivenom. Aggressive supportive care (analgesia, blood pressure control, non-invasive or invasive ventilation) may be needed while antivenom is sourced or the patient remains critical.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">CSL Funnel-Web Spider Antivenom (rabbit-derived IgG), introduced in 1981 — no confirmed deaths have occurred since its introduction when appropriately administered, a genuinely dramatic before/after given 13+ known deaths in the pre-antivenom era. Effective against the broader funnel-web group beyond just Atrax robustus, and also used for mouse spider (Missulena spp.) envenomation. Initial dose 2 ampoules IV for systemic signs (4 ampoules for severe signs like ARDS or altered mental status); repeat 2 ampoules at 15 minutes if incompletely reversed; cardiac arrest warrants at least 4 ampoules as a rapid undiluted IV push alongside resuscitation. Severe allergic reaction occurs in roughly 1.3% of recipients.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">ICU-level observation for any patient with systemic signs. Even confirmed severe envenoming carries a good prognosis with timely antivenom and supportive care.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Any large black spider bite in NSW or southern Queensland should be treated as a possible funnel-web until proven otherwise, given how much this changes the first-aid approach (PBI, unlike almost every other spider bite). Absent local swelling with severe local pain is a notable feature — don't expect visible inflammation to match the severity of the pain.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="king-cobra" data-class="snake" data-mechanism="neurotoxic" data-search="king cobra ophiophagus hannah">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">SE Asia, S. China, parts of India</span>
+          <span class="tag class">Snake — Elapidae</span>
+          <span class="tag mechanism">Neurotoxic</span>
+        </div>
+        <div class="card-title">King Cobra</div>
+        <div class="card-sub">Ophiophagus hannah. The world's longest venomous snake. Venom is only moderately toxic drop-for-drop compared to many smaller elapids, but the volume delivered per bite is enormous — up to 400–600 mg — which is what makes bites so dangerous</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Can progress to fatality within 30 minutes in severe cases. This snake tends to "bite and hold," delivering more venom the longer contact is maintained — a distinct behavioral risk factor compared to snakes that strike and release.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Local findings can include dusky discoloration, swelling, and pain, with severe cases extending to proximal swelling, necrosis, and tissue sloughing that may require amputation. Systemically: blurred vision, vertigo, drowsiness, and progressive descending paralysis, potentially reaching cardiovascular collapse and respiratory failure. Reported mortality in some case series runs as high as 50–60% without prompt treatment — genuinely higher than most other elapid bites, reflecting the combination of high venom volume and rarity of clinical experience treating it.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Bites are rare in the wild (the species avoids humans and mostly preys on other snakes) but occur disproportionately among reptile handlers, zookeepers, and collectors — most documented cases are occupational or captive-animal exposures rather than wild encounters. Rapid transport is critical given the fast progression.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Airway support and ventilation are frequently required — case reports describe rapid intubation for bulbar and respiratory paralysis. If treating a king cobra bite outside its native range (e.g., an exotic pet or zoo exposure), contact the regional poison control center or a zoo with exotic antivenom access immediately; sourcing the correct product is a genuine logistical race against time in these cases.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">The Thai Red Cross Society (Queen Saovabha Memorial Institute, Bangkok) produces the only species-specific King Cobra monovalent antivenom in the world, raised against Thai-origin venom. A Thai Neuro-Polyvalent antivenom (covering king cobra, monocled cobra, banded krait, and Malayan krait) is a reasonable alternative when the monospecific product isn't available, though at generally lower potency against king cobra specifically. Documented case reports show recovery with doses ranging widely — from single digits up to 33 vials — reflecting real variability in venom load and presentation severity; expect to titrate against clinical response rather than anchor to one number. Antivenom raised against Thai-origin venom shows reduced effectiveness against king cobra populations from other geographic regions (Indonesia, China) given documented venom composition differences — another entry in this page's recurring geographic-variation theme.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">ICU admission with ventilator readiness for any confirmed bite. Recovery with adequate, timely antivenom and supportive care — including prolonged ventilation where needed — is achievable even in severe cases, per multiple published full-recovery case reports.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Local necrosis can be significant enough to require surgical debridement or amputation — this isn't a purely neurotoxic bite the way krait is; treat the wound as seriously as the airway. Given how rare confirmed bites are worldwide, involving a toxinologist or exotic-animal-experienced poison center early is genuinely valuable rather than optional.</div></div>
+      </div>
+    </div>
+
+    <div class="card" id="malayan-pit-viper" data-class="snake" data-mechanism="hemotoxic" data-search="malayan pit viper calloselasma rhodostoma">
+      <div class="card-head">
+        <div class="card-tags">
+          <span class="tag region">Thailand, Malaysia, Java</span>
+          <span class="tag class">Snake — Viperidae</span>
+          <span class="tag mechanism">Hemotoxic (VICC)</span>
+        </div>
+        <div class="card-title">Malayan Pit Viper</div>
+        <div class="card-sub">Calloselasma rhodostoma. The species responsible for the largest share of snakebite poisoning cases in Thailand (roughly 38% in national data) — bad-tempered, quick to strike, and known for staying in place at the bite scene rather than fleeing</div>
+      </div>
+      <div class="card-body">
+        <div class="field"><div class="field-label">Onset / Timeline</div><div class="field-body">Local pain and swelling develop rapidly at the bite site. Systemic coagulopathy follows over the subsequent hours, consistent with the hemotoxic classification this species carries in regional snakebite frameworks.</div></div>
+        <div class="field"><div class="field-label">Clinical Syndrome</div><div class="field-body">Local tissue effects (swelling, blistering, necrosis risk) combined with venom-induced consumption coagulopathy and systemic bleeding — the same general hemotoxic viper picture seen elsewhere on this site, occurring here in one of the region's most frequently encountered venomous snakes.</div></div>
+        <div class="field"><div class="field-label">Field / Prehospital Management</div><div class="field-body">Standard viper approach: immobilize, remove constricting items, transport. Because this species has a documented behavioral tendency to remain near the bite location rather than retreat, there's a real secondary-bite risk to bystanders or rescuers attempting to identify or move the snake — leave that to trained personnel.</div></div>
+        <div class="field"><div class="field-label">ED / Resuscitation Management</div><div class="field-body">Serial coagulation studies and limb assessment per standard hemotoxic viper protocol.</div></div>
+        <div class="field"><div class="field-label">Antivenom</div><div class="field-body">Purified monovalent equine antivenin is manufactured locally in Thailand (Thai Red Cross Society, Queen Saovabha Memorial Institute) specifically for this species, alongside the country's other medically important snakes. This is a well-supported, well-supplied antivenom situation relative to several other entries on this site — competent treatment is described as widely available throughout Thailand, contributing to serious morbidity being far more common than death in the country's modern snakebite data.</div></div>
+        <div class="field"><div class="field-label">Disposition</div><div class="field-body">Admit for coagulation monitoring and wound care per standard viper protocol.</div></div>
+        <div class="box t-color"><div class="box-label">Pearls / Pitfalls</div><div class="field-body">Volume matters here more than exotic severity — this is the single largest contributor to Thailand's snakebite burden, so competence with this species specifically has outsized practical value in the region compared with rarer but more dramatic entries elsewhere on this page.</div></div>
+      </div>
+    </div>
+
+    <div class="notice" id="notice-sea-oceania">
+      <div class="notice-label">Non-Critical — Supportive Care Only</div>
+      <div class="notice-sub">Not life-threatening and doesn't require antivenom or critical-care intervention. Not a full workup — just enough to recognize and reassure.</div>
+      <ul class="notice-list">
+        <li><strong>Redback Spider</strong> (Latrodectus hasselti — Australia's relative of the North American black widow) — intense local, radiating, and sometimes generalized pain with sweating; not life-threatening, and no confirmed death since antivenom was introduced in 1956. <em>Care:</em> standard analgesia is first-line; two placebo-controlled RCTs (RAVE, RAVE-II) found antivenom no better than placebo for pain or systemic effects, so routine antivenom use is now discouraged in Australian guidance — reserve it for severe pain unresponsive to analgesics. Do NOT use pressure immobilization here — unlike funnel-web, this venom acts slowly and PBI tends to worsen local pain rather than help.</li>
+        <li><strong>White-Tailed Spider</strong> (Lampona spp.) — the "flesh-eating bite" reputation is a thoroughly debunked myth; a prospective study of 130 confirmed bites found zero cases of necrotic ulcers. <em>Care:</em> ice for pain, reassurance; no antibiotics or debridement indicated on this basis alone.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation — SE Asia &amp; Oceania</footer>
+
+<script>
+  const activeFilters = { class: 'all', mechanism: 'all' };
+
+  function toggleChip(btn){
+    const facet = btn.dataset.facet;
+    const value = btn.dataset.value;
+    document.querySelectorAll(`.chip[data-facet="${facet}"]`).forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilters[facet] = value;
+    filterCards();
+  }
+
+  function filterCards(){
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const matchesClass = activeFilters.class === 'all' || card.dataset.class === activeFilters.class;
+      const matchesMech = activeFilters.mechanism === 'all' || card.dataset.mechanism === activeFilters.mechanism;
+      const searchBlob = (card.dataset.search || '') + ' ' + card.innerText.toLowerCase();
+      const matchesQuery = query === '' || searchBlob.toLowerCase().includes(query);
+
+      if (matchesClass && matchesMech && matchesQuery){
+        card.classList.remove('hidden');
+        visible++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('resultsCount').textContent = `${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chip[data-facet="class"][data-value="all"]').classList.add('active');
+    document.querySelector('.chip[data-facet="mechanism"][data-value="all"]').classList.add('active');
+  });
+</script>
+
+</body>
+</html>

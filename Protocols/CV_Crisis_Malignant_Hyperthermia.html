@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malignant Hyperthermia — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+
+/* HEADER */
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+
+/* QUICK-JUMP NAV — sticky, treatment pinned first */
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+
+/* SECTION HEAD */
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+
+/* BOX */
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+
+/* ALERT */
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+
+/* STEP CARD (sequential/procedural) */
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+
+/* TABLE */
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+
+/* XREF / PEDS */
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+
+/* SOURCES */
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+
+/* FOOTER */
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Anesthesiology / Perioperative</div>
+    <h1>Malignant Hyperthermia</h1>
+    <p class="subtitle">Recognition, immediate treatment, and the physiology behind every step of an MH crisis — from room setup for the susceptible patient through disposition and family counseling.</p>
+    <div class="badges">
+      <span class="badge red">ANESTHESIA EMERGENCY</span>
+      <span class="badge teal">MHAUS-ALIGNED</span>
+      <span class="badge amber">DANTROLENE-TIME-CRITICAL</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#setup">Room Set-Up</a>
+    <a class="qn" href="#labs">Labs</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#genetics">Genetics</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 IMMEDIATE ACTIONS — TREATMENT LEADS THE PAGE -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Sequence matters less than speed — get help, stop the trigger, and get dantrolene running. Steps below are typically executed in parallel by a full team, not strictly serially.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Stop all triggering agents</div><div class="step-desc">Turn off volatile agent, switch to TIVA (propofol), do not give further succinylcholine. Continue the case only if it must be finished; convert to IV anesthesia.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Call for help and the MH cart</div><div class="step-desc">Declare the emergency, get extra hands (dantrolene reconstitution is labor-intensive), and call the <span class="d">MHAUS Hotline 1-800-644-9737</span> for real-time consultation.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Hyperventilate with 100% O₂</div><div class="step-desc">Flows of <span class="d">10 L/min</span>, high minute ventilation to flush residual volatile agent and blow off CO₂. Change to a clean circuit or insert activated-charcoal filters on inspiratory and expiratory limbs if immediately available; replace filters hourly.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Dantrolene 2.5 mg/kg IV, rapid bolus</div><div class="step-desc">Through the largest available IV. Repeat <span class="d">2.5 mg/kg</span> boluses every 5–10 minutes until ETCO₂, rigidity, and heart rate improve. No fixed ceiling — doses of <span class="d">10–20+ mg/kg</span> are occasionally required; reassess the diagnosis if no response at all after ~10 mg/kg.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">5</div><div class="step-body"><div class="step-title">Cool the patient</div><div class="step-desc">Cold IV crystalloid, surface ice packs to axillae/groin/neck, cold lavage of open cavities if surgical field allows. Stop active cooling around <span class="d">38–38.5°C</span> to avoid overshoot. Cooling is adjunctive — dantrolene is the priority.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">6</div><div class="step-body"><div class="step-title">Treat hyperkalemia</div><div class="step-desc">IV calcium chloride <span class="d">10–30 mg/kg</span> for membrane stabilization if arrhythmia/ECG changes; insulin <span class="d">10 U regular</span> in <span class="d">50 mL D50</span>, titrated; hyperventilation and bicarbonate <span class="d">1–2 mEq/kg</span> if no ABG available. <b>Avoid calcium channel blockers</b> — case reports describe fatal interaction with dantrolene.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">7</div><div class="step-body"><div class="step-title">Treat arrhythmias with standard agents</div><div class="step-desc">Most arrhythmias resolve as acidosis and hyperkalemia correct. Use standard antiarrhythmics for persistent/life-threatening rhythms; again, avoid CCBs.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">8</div><div class="step-body"><div class="step-title">Protect the kidneys</div><div class="step-desc">Target urine output <span class="d">&gt;2 mL/kg/hr</span> with hydration ± mannitol/furosemide — each dantrolene vial already contains 3 g mannitol, so track cumulative dose before adding more. Send urine for myoglobin.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">9</div><div class="step-body"><div class="step-title">Monitor and reassess</div><div class="step-desc">Arterial line, core temperature probe, Foley. Serial ABG, CK, K⁺, lactate, coagulation panel roughly every 15 minutes during the acute phase.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">10</div><div class="step-body"><div class="step-title">Admit to ICU</div><div class="step-desc">Minimum 24 hours of observation for recrudescence, with maintenance dantrolene continuing through that window (see Rationale, below).</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">Do not delay dantrolene for confirmation</div><p>MH is a clinical diagnosis made in real time. Waiting on labs before treating measurably worsens outcomes — treat first on the pattern of rising ETCO₂, rigidity, and tachycardia.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Malignant hyperthermia (MH) is a rare, life-threatening pharmacogenetic disorder of skeletal muscle. In susceptible individuals, exposure to a volatile anesthetic and/or succinylcholine triggers uncontrolled calcium release from the sarcoplasmic reticulum through a defective ryanodine receptor (RYR1), producing sustained muscle contraction, a hypermetabolic state, and progressive heat production.</p>
+    <p>Reported incidence of a clinical MH event ranges roughly from 1 in 5,000 to 1 in 50,000–100,000 general anesthetics using triggering agents, with wide variation by population and genetic background; the true prevalence of MH susceptibility (genotype) is higher than the rate of clinical events, since not every exposure in a susceptible patient produces a full crisis. Untreated, MH is fatal in the majority of cases; with early dantrolene, mortality drops to under 5%.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Initial Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Sign</th><th>Why it happens / significance</th></tr>
+    <tr><td>Unexplained rise in ETCO₂</td><td>Earliest and most sensitive sign — often &gt;55 mmHg despite unchanged minute ventilation; reflects the hypermetabolic CO₂ load before temperature changes.</td></tr>
+    <tr><td>Masseter muscle rigidity</td><td>Trismus after succinylcholine; a subset of these patients go on to a full MH episode. Not universal, but a strong red flag when generalized rigidity follows.</td></tr>
+    <tr><td>Generalized muscle rigidity</td><td>Persists despite adequate neuromuscular blockade — a key discriminator from other causes of rigidity, which typically resolve with a nondepolarizer.</td></tr>
+    <tr><td>Tachycardia (often out of proportion)</td><td>Early and nonspecific but frequently the first vital-sign change noted by the team.</td></tr>
+    <tr><td>Rapid core temperature rise</td><td>Can climb 1–2°C every 5 minutes once established, sometimes exceeding 40°C — but temperature is often a late finding, not an early one.</td></tr>
+    <tr><td>Mixed respiratory + metabolic acidosis</td><td>CO₂ overproduction plus anaerobic metabolism from sustained contraction.</td></tr>
+    <tr><td>Cola-colored urine</td><td>Myoglobinuria from rhabdomyolysis; a marker of muscle breakdown severity and a driver of downstream renal injury.</td></tr>
+    <tr><td>Peaked/tented T waves</td><td>ECG correlate of hyperkalemia released from breaking-down muscle.</td></tr>
+    <tr><td>Diaphoresis, mottling</td><td>Seen in a minority (~20%) — supportive but not required for diagnosis.</td></tr>
+  </table>
+
+  <!-- 04 ROOM SETUP -->
+  <div class="sec-head c-blue" id="setup"><span class="sec-num">04</span><h2>Room Set-Up for the MH-Susceptible Patient</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Non-triggering technique:</b> total IV anesthesia (propofol-based), no volatile agents, no succinylcholine. Regional/neuraxial anesthesia is not a trigger and is a reasonable option when the case allows it.</li>
+      <li><b>Prepare the machine:</b> either use a machine with no history of volatile agent, or flush thoroughly with high-flow O₂ per your machine's specific washout protocol, or place activated-charcoal filters (e.g. Vapor-Clean) on inspiratory and expiratory limbs — filters saturate after roughly an hour and need hourly replacement.</li>
+      <li><b>Dantrolene immediately available:</b> confirm the MH cart is stocked and physically nearby before induction — MHAUS recommends a minimum of 36 vials of Dantrium/Revonto (20 mg each) or 3 vials of Ryanodex (250 mg each) on hand.</li>
+      <li><b>Monitoring:</b> standard ASA monitors plus continuous core temperature from induction — temperature is not routinely monitored in every case, but is mandatory here.</li>
+      <li><b>Cooling supplies staged:</b> cold IV fluids and ice readily accessible, not something to send for after a crisis starts.</li>
+      <li><b>Scheduling:</b> first case of the day when possible, to minimize residual volatile agent contamination in the room and give the team maximum bandwidth if a crisis develops.</li>
+      <li><b>Team briefing:</b> state the MH-susceptible status explicitly during the pre-induction time-out, not just in the chart.</li>
+    </ul>
+  </div>
+
+  <!-- 05 LABS -->
+  <div class="sec-head c-teal" id="labs"><span class="sec-num">05</span><h2>Lab Values Suggestive of MH</h2></div>
+  <table class="rt">
+    <tr><th>Test</th><th>Expected pattern</th></tr>
+    <tr><td>ETCO₂</td><td>Rising, often &gt;55 mmHg, disproportionate to ventilation settings</td></tr>
+    <tr><td>ABG</td><td>Mixed respiratory and metabolic acidosis, often with a significant base deficit</td></tr>
+    <tr><td>Potassium</td><td>Elevated, sometimes rapidly and severely — the dominant early cardiac risk</td></tr>
+    <tr><td>CK (creatine kinase)</td><td>Markedly elevated, rises over hours as rhabdomyolysis progresses — often the highest single lab value seen in medicine</td></tr>
+    <tr><td>Myoglobin / urine myoglobin</td><td>Elevated, correlates with cola-colored urine and renal risk</td></tr>
+    <tr><td>Lactate</td><td>Elevated from anaerobic metabolism in sustained contraction</td></tr>
+    <tr><td>Coagulation panel</td><td>Can progress to DIC in severe/delayed cases — check if the crisis is prolonged</td></tr>
+    <tr><td>Core temperature trend</td><td>Rate of rise (up to 1–2°C/5 min) is more diagnostic than any single value</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for MH Management Steps</h2></div>
+  <div class="tagline">The "why" behind the protocol — the physiology that makes each step non-negotiable.</div>
+  <div class="box t-purple">
+    <p><b>Root cause:</b> a defective RYR1 (or, less commonly, CACNA1S) channel allows uncontrolled calcium efflux from the sarcoplasmic reticulum into the myoplasm. Free calcium drives continuous actin-myosin cross-bridging — this is what produces rigidity, and it is also what produces heat: sustained muscle work is enormously energy-inefficient, and essentially all of that energy dissipates as heat and CO₂.</p>
+    <p><b>Why dantrolene works when nothing else does:</b> dantrolene binds RYR1 directly and reduces calcium release from the sarcoplasmic reticulum, uncoupling excitation from contraction at the source. Cooling, hyperventilation, and hyperkalemia treatment all manage downstream consequences; dantrolene is the only intervention that turns off the underlying process.</p>
+    <p><b>Why cooling is secondary, not first:</b> aggressive thermal management without adequate dantrolene and correction of hypercarbia/acidosis treats a symptom while the metabolic engine keeps running. Current expert opinion (echoed in MHAUS guidance) is to prioritize dantrolene and ventilation/acid-base correction before investing heavily in cooling logistics.</p>
+    <p><b>Why calcium channel blockers are avoided:</b> case reports describe severe hyperkalemia and cardiovascular collapse when CCBs are combined with dantrolene, plausibly via interaction with calcium handling that dantrolene itself is trying to correct — the mechanism isn't fully settled, but the clinical signal is consistent enough that CCBs are avoided as a category.</p>
+    <p><b>Why maintenance dosing continues for 24 hours:</b> recrudescence — recurrence of MH signs after apparent initial control — occurs in roughly 20% of treated patients. Median time to recrudescence is around 9 hours, with 80% occurring by 16 hours, which is why observation and maintenance dantrolene extend well past the point the crisis appears resolved.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Neuroleptic malignant syndrome</td><td>Develops over days on antipsychotics, not minutes-to-hours after a trigger agent; CK rise is slower; doesn't respond as rapidly to dantrolene as true MH.</td></tr>
+    <tr><td>Serotonin syndrome</td><td>Clonus and hyperreflexia more prominent than sustained rigidity; history of serotonergic drugs; rigidity itself is comparatively rare.</td></tr>
+    <tr><td>Thyroid storm</td><td>No temporal link to anesthetic trigger; look for known thyroid disease, exophthalmos, prior labs.</td></tr>
+    <tr><td>Sepsis / occult infection</td><td>Slower onset, hemodynamics more distributive (warm, vasodilated) than the hypermetabolic picture of MH.</td></tr>
+    <tr><td>Pheochromocytoma crisis</td><td>Extreme, labile hypertension is more dominant than in MH; catecholamine surge pattern.</td></tr>
+    <tr><td>Inadequate anesthesia / light plane</td><td>Rigidity resolves promptly with deepening anesthesia or a nondepolarizing paralytic — true MH rigidity does not.</td></tr>
+    <tr><td>Sympathomimetic toxicity (e.g. cocaine)</td><td>History/exposure driven, no relationship to volatile agent or succinylcholine administration.</td></tr>
+    <tr><td>Anesthesia machine or environmental overheating</td><td>Rare, but check warming devices, ambient temperature, and drapes before assuming MH if the rest of the picture doesn't fit.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Confirmatory Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Acute phase:</b> no lab confirms MH in real time — treatment is empiric. Once stabilized, definitive diagnosis requires referral to an MH testing center for the caffeine-halothane contracture test (CHCT), the current gold standard, performed on a fresh muscle biopsy.</p>
+    <p><b>Genetic testing:</b> targeted RYR1 (and CACNA1S) panel testing can identify a causative variant in known MH families and spares relatives an invasive biopsy if a familial variant is confirmed; a negative genetic panel does not exclude susceptibility, since not all causative variants are known.</p>
+    <p><b>Disposition:</b> ICU admission for a minimum of 24 hours with continuous monitoring; maintenance dantrolene 1 mg/kg IV every 4–6 hours (or infusion around 0.25 mg/kg/hr in fulminant cases) continued until the patient has been stable and improving for 24 hours.</p>
+    <p><b>Longitudinal care:</b> patient and family education, referral for CHCT/genetic testing, MedicAlert bracelet, documentation in the anesthesia record and problem list, and cascade screening discussion for first-degree relatives.</p>
+  </div>
+  <div class="xref"><b>MHAUS Hotline — 1-800-644-9737</b> (outside the U.S.: 001-209-417-3722). Available for real-time crisis consultation and post-event guidance; call during the event, not just after.</div>
+
+  <!-- 09 GENETICS -->
+  <div class="sec-head c-purple" id="genetics"><span class="sec-num">09</span><h2>MH Genetics</h2></div>
+  <div class="box t-purple">
+    <p>MH susceptibility is inherited in an autosomal dominant pattern with variable and incomplete penetrance — a positive family history matters even without a documented prior event, and a negative family history does not exclude risk (de novo variants occur).</p>
+    <ul>
+      <li><b>RYR1</b> (ryanodine receptor 1, chromosome 19q13.1) accounts for the large majority of identified causative variants in MH-susceptible families.</li>
+      <li><b>CACNA1S</b> (the skeletal muscle L-type calcium channel α1 subunit) accounts for a smaller minority of cases.</li>
+      <li>Over 200 RYR1 variants have been described; only a subset are considered functionally confirmed as causative, which is part of why genetic testing complements — but doesn't replace — the CHCT.</li>
+      <li>MH susceptibility overlaps genetically and clinically with certain congenital myopathies, most notably <b>central core disease</b>, which also maps to RYR1.</li>
+      <li>First-degree relatives of a confirmed or strongly suspected MH patient should be counseled as presumptively susceptible until tested, and managed with a non-triggering technique for any anesthetic in the meantime.</li>
+    </ul>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-teal" id="refs"><span class="sec-num">10</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Malignant Hyperthermia Association of the United States (MHAUS). "Managing a Crisis" &amp; "How Much Dantrolene Should Be Kept on Hand." mhaus.org, accessed 2026.</li>
+    <li><span class="tier">PRIMARY</span>MHAUS. "What Evidence-Based Interventions Are Recommended to Alleviate Hyperthermia Associated with MH?" — dantrolene-first, cooling-adjunct rationale.</li>
+    <li><span class="tier">PRIMARY</span>MHAUS. "Dantrolene Administration After an MH Event" and "Dantrolene Dosing Frequency" — recrudescence data (Burkman JM, Posner KL, Domino KB. <i>Anesthesiology.</i> 2007;106:901–906).</li>
+    <li><span class="tier">GUIDELINE</span>Tsutsumi YM et al. JSA Guideline for Management of Malignant Hyperthermia in 2025. <i>J Anesth.</i> 2026.</li>
+    <li><span class="tier">GUIDELINE</span>World Federation of Societies of Anaesthesiologists. Guidelines for the Management of a Malignant Hyperthermia Crisis. resources.wfsahq.org.</li>
+    <li><span class="tier">REFERENCE</span>StatPearls. "Malignant Hyperthermia." NCBI Bookshelf, updated June 2026.</li>
+    <li><span class="tier">REFERENCE</span>EMCrit / IBCC. "Malignant Hyperthermia (MH)." emcrit.org, 2025.</li>
+    <li><span class="tier">REFERENCE</span>Cho D et al. Dantrolene use across surgical and medical care at Mayo Clinic 2010–2024. <i>Biomol Biomed.</i> 2025.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or MHAUS consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.</div>
+
+</div>
+</body>
+</html>

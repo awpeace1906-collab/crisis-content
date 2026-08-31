@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Envenomation — The Critical Vector</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0a0e14; --surface:#111720; --border:rgba(255,255,255,0.08);
+    --accent:#00d4aa; --text:#ffffff; --text2:#dce8f5;
+    --text3:#a0b4c8; --text4:#8a9ab5;
+    --red:#f87171; --blue:#60a5fa; --amber:#fbbf24; --purple:#a78bfa;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Syne',Arial,sans-serif;background:var(--bg);color:var(--text2);line-height:1.6;min-height:100vh;padding:0 0 60px;}
+  a{text-decoration:none;color:inherit;}
+  .page{max-width:900px;margin:0 auto;padding:0 24px;}
+
+  /* ---- header / kicker, matches CV pattern ---- */
+  .header{max-width:900px;margin:0 auto;padding:44px 24px 0;}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+  .kicker::before{content:'';display:inline-block;width:20px;height:1px;background:var(--accent);flex-shrink:0;}
+  h1{font-size:34px;font-weight:800;letter-spacing:-0.02em;color:var(--text);margin-bottom:10px;}
+  .lede{font-family:'Source Serif 4',Georgia,serif;font-size:15px;font-weight:300;font-style:italic;color:var(--text3);max-width:640px;margin-bottom:28px;}
+  .divider{height:1px;background:var(--border);margin-bottom:32px;}
+
+  /* ---- region selector grid ---- */
+  .sec-head{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin-bottom:16px;}
+  .region-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:40px;}
+  .region-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;transition:border-color .2s,transform .2s;display:block;}
+  .region-card:hover{border-color:rgba(0,212,170,0.35);transform:translateY(-2px);}
+  .region-tag{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;}
+  .region-name{font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px;}
+  .region-desc{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-weight:300;color:var(--text3);line-height:1.6;}
+  .region-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text4);margin-top:12px;}
+
+  /* status states — build tracker, remove once all regions live */
+  .region-card.live{opacity:1;}
+  .region-card.pending{opacity:0.45;pointer-events:none;position:relative;}
+  .region-card.pending::after{content:'IN PROGRESS';position:absolute;top:14px;right:14px;font-size:9px;font-weight:700;letter-spacing:.08em;color:var(--amber);}
+
+  /* ---- quick nav / cross-link box, mirrors .box.t-color pattern ---- */
+  .box{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:6px;padding:18px 20px;margin-bottom:32px;}
+  .box.t-color{border-left-color:var(--blue);}
+  .box-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:8px;}
+  .box p{font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-weight:300;color:var(--text2);line-height:1.7;}
+  .box a{color:var(--accent);font-weight:600;border-bottom:1px solid rgba(0,212,170,0.4);}
+
+  /* ---- global species search (don't know the region) ---- */
+  .global-search{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:36px;}
+  .gs-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;}
+  .gs-sub{font-family:'Source Serif 4',Georgia,serif;font-size:13px;font-style:italic;color:var(--text3);margin-bottom:12px;}
+  .gs-input{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:12px 14px;color:var(--text);font-family:'Syne',sans-serif;font-size:14px;}
+  .gs-input:focus{outline:none;border-color:var(--accent);}
+  .gs-results{margin-top:10px;}
+  .gs-result{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:6px;background:var(--bg);border:1px solid var(--border);margin-bottom:6px;}
+  .gs-result:hover{border-color:var(--accent);}
+  .gs-result-name{font-size:13px;font-weight:700;color:var(--text);}
+  .gs-result-meta{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);}
+  .gs-result-region{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap;}
+  .gs-empty{font-size:12px;color:var(--text4);padding:6px 2px;font-style:italic;}
+  .gs-hint{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text4);margin-top:8px;}
+
+  footer{max-width:900px;margin:0 auto;padding:24px;font-size:11px;color:var(--text4);border-top:1px solid var(--border);}
+
+  @media print{
+    body{background:#fff;color:#111;}
+    :root{--bg:#fff;--surface:#f4f4f4;--border:#ccc;--text:#111;--text2:#222;--text3:#444;--text4:#666;}
+    .region-card{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="kicker">Crisis Management — Envenomation</div>
+    <h1>Envenomation</h1>
+    <p class="lede">Select a region to filter species, mechanism, and management by what's actually relevant in that geography. Marine envenomation is grouped separately since it cuts across regions.</p>
+  </div>
+  <div class="divider" style="max-width:900px;margin:0 auto 32px;"></div>
+
+  <div class="page">
+
+    <div class="global-search">
+      <div class="gs-label">Don't Know The Region?</div>
+      <div class="gs-sub">Search by species, common name, or slang — jumps straight to the entry regardless of geography.</div>
+      <input type="text" class="gs-input" id="globalSearch" placeholder="e.g. fiddleback, rattler, hourglass spider, bark scorpion…" oninput="runGlobalSearch()" autocomplete="off">
+      <div class="gs-results" id="globalResults"></div>
+      <div class="gs-hint" id="globalHint">All 8 regions indexed. Critical-intervention species link straight to a full card; non-critical species (marked "non-critical") link to a short supportive-care notice instead.</div>
+    </div>
+
+    <div class="sec-head">Select Region</div>
+    <div class="region-grid">
+
+      <a href="envenomation-north-america.html" class="region-card live">
+        <div class="region-tag">Region</div>
+        <div class="region-name">North America</div>
+        <div class="region-desc">Pit vipers, coral snake, black widow, Centruroides scorpion.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+      <a href="envenomation-central-south-america.html" class="region-card live">
+        <div class="region-tag">Region</div>
+        <div class="region-name">Central &amp; South America</div>
+        <div class="region-desc">Fer-de-lance, bushmaster, S. American rattlesnake, coral snakes, Phoneutria wandering spiders.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+      <a href="envenomation-africa.html" class="region-card live">
+        <div class="region-tag">Region</div>
+        <div class="region-name">Africa</div>
+        <div class="region-desc">Puff adder, black mamba, Egyptian cobra, boomslang, carpet viper, spitting cobra.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+      <a href="envenomation-middle-east.html" class="region-card live">
+        <div class="region-tag">Region</div>
+        <div class="region-name">Middle East</div>
+        <div class="region-desc">Saw-scaled viper, Levant viper, Deathstalker scorpion.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+      <a href="envenomation-south-asia.html" class="region-card live">
+        <div class="region-tag">Region</div>
+        <div class="region-name">South Asia</div>
+        <div class="region-desc">Big Four (India): Russell's viper, krait, cobra, saw-scaled viper — plus hump-nosed pit viper, red scorpion.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+      <a href="envenomation-sea-oceania.html" class="region-card live">
+        <div class="region-tag">Region</div>
+        <div class="region-name">SE Asia &amp; Oceania</div>
+        <div class="region-desc">Australian elapids (taipan, brown, tiger, death adder), funnel-web spider, king cobra, Malayan pit viper.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+      <a href="envenomation-europe.html" class="region-card live">
+        <div class="region-tag">Region</div>
+        <div class="region-name">Europe</div>
+        <div class="region-desc">Vipera species, low-severity endemic exposures.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+      <a href="envenomation-marine.html" class="region-card live">
+        <div class="region-tag">Region — Global</div>
+        <div class="region-name">Marine</div>
+        <div class="region-desc">Box jellyfish, Irukandji, stonefish, cone snail, sea snake, blue-ringed octopus.</div>
+        <div class="region-count">LIVE</div>
+      </a>
+
+    </div>
+
+    <div class="box t-color">
+      <div class="box-label">Cross-Link</div>
+      <p>Hymenoptera stings presenting with systemic allergic reaction route to the existing <a href="anaphylaxis.html">Anaphylaxis</a> deep-dive rather than duplicating management here. This page covers direct venom toxicity, not IgE-mediated reaction.</p>
+    </div>
+  </div>
+
+  <footer>The Critical Vector — Crisis Management — Envenomation Index</footer>
+
+<script>
+  /* ================= GLOBAL SPECIES INDEX =================
+     Extend this array as each region file goes live. One entry per
+     species card, aliases pulled from common/slang names so a person
+     who doesn't know taxonomy (or region) still finds it. */
+  const speciesIndex = [
+    {
+      name: "Pit Vipers (Rattlesnake, Copperhead, Cottonmouth)",
+      aliases: ["rattlesnake","rattler","diamondback","sidewinder","copperhead","highland moccasin","chunk head","cottonmouth","water moccasin","gapper","crotalinae","crotalus","agkistrodon","pit viper"],
+      region: "North America",
+      url: "envenomation-north-america.html#pit-vipers",
+      critical: true
+    },
+    {
+      name: "Mojave Rattlesnake",
+      aliases: ["mojave rattlesnake","crotalus scutulatus","mojave green","mojave toxin"],
+      region: "North America",
+      url: "envenomation-north-america.html#mojave-rattlesnake",
+      critical: true
+    },
+    {
+      name: "Coral Snake",
+      aliases: ["coral snake","candy stick","candy snake","micrurus","elapid"],
+      region: "North America",
+      url: "envenomation-north-america.html#coral-snake",
+      critical: true
+    },
+    {
+      name: "Black Widow",
+      aliases: ["black widow","hourglass spider","shoe button spider","latrodectus","widow spider"],
+      region: "North America",
+      url: "envenomation-north-america.html#black-widow",
+      critical: true
+    },
+    {
+      name: "Bark Scorpion",
+      aliases: ["bark scorpion","centruroides","arizona scorpion","sculptured scorpion"],
+      region: "North America",
+      url: "envenomation-north-america.html#bark-scorpion",
+      critical: true
+    },
+    {
+      name: "Brown Recluse",
+      aliases: ["brown recluse","fiddleback","violin spider","brown fiddler","loxosceles"],
+      region: "North America",
+      url: "envenomation-north-america.html#notice-na",
+      critical: false
+    },
+    {
+      name: "Hymenoptera (Bees, Wasps, Hornets, Fire Ants)",
+      aliases: ["bee","wasp","hornet","yellowjacket","fire ant","honeybee","bumblebee","paper wasp","hymenoptera","solenopsis"],
+      region: "North America",
+      url: "envenomation-north-america.html#notice-na",
+      critical: false
+    },
+    {
+      name: "Gila Monster",
+      aliases: ["gila monster","heloderma","beaded lizard","venomous lizard"],
+      region: "North America",
+      url: "envenomation-north-america.html#notice-na",
+      critical: false
+    },
+    {
+      name: "Puss Caterpillar",
+      aliases: ["puss caterpillar","asp caterpillar","tree asp","fire caterpillar","megalopyge","flannel moth caterpillar","woolly slug"],
+      region: "North America",
+      url: "envenomation-north-america.html#notice-na",
+      critical: false
+    },
+    {
+      name: "Velvet Ant (Cow Killer)",
+      aliases: ["velvet ant","cow killer","dasymutilla","mutillidae"],
+      region: "North America",
+      url: "envenomation-north-america.html#notice-na",
+      critical: false
+    },
+    {
+      name: "Puff Adder",
+      aliases: ["puff adder","bitis arietans"],
+      region: "Africa",
+      url: "envenomation-africa.html#puff-adder",
+      critical: true
+    },
+    {
+      name: "Egyptian Cobra",
+      aliases: ["egyptian cobra","naja haje"],
+      region: "Africa",
+      url: "envenomation-africa.html#egyptian-cobra",
+      critical: true
+    },
+    {
+      name: "Black Mamba",
+      aliases: ["black mamba","dendroaspis polylepis","mamba"],
+      region: "Africa",
+      url: "envenomation-africa.html#black-mamba",
+      critical: true
+    },
+    {
+      name: "Boomslang",
+      aliases: ["boomslang","dispholidus typus","tree snake"],
+      region: "Africa",
+      url: "envenomation-africa.html#boomslang",
+      critical: true
+    },
+    {
+      name: "Spitting Cobra — Bite",
+      aliases: ["spitting cobra","naja nigricollis","naja mossambica","naja pallida","mozambique spitting cobra","black-necked cobra","red spitting cobra"],
+      region: "Africa",
+      url: "envenomation-africa.html#spitting-cobra",
+      critical: true
+    },
+    {
+      name: "West African Carpet Viper (Saw-Scaled Viper)",
+      aliases: ["carpet viper","saw-scaled viper","echis ocellatus","echis"],
+      region: "Africa",
+      url: "envenomation-africa.html#carpet-viper",
+      critical: true
+    },
+    {
+      name: "Thick-Tailed (Fat-Tail) Scorpion",
+      aliases: ["thick-tailed scorpion","fat-tail scorpion","parabuthus"],
+      region: "Africa",
+      url: "envenomation-africa.html#thick-tailed-scorpion",
+      critical: true
+    },
+    {
+      name: "Spitting Cobra — Venom Ophthalmia (Eyes Only)",
+      aliases: ["venom ophthalmia","spitting cobra eyes","cobra spit eyes"],
+      region: "Africa",
+      url: "envenomation-africa.html#notice-africa",
+      critical: false
+    },
+    {
+      name: "Saw-Scaled Viper (Middle East)",
+      aliases: ["saw-scaled viper","echis coloratus","echis carinatus","carpet viper"],
+      region: "Middle East",
+      url: "envenomation-middle-east.html#saw-scaled-viper",
+      critical: true
+    },
+    {
+      name: "Levant Viper",
+      aliases: ["levant viper","blunt-nosed viper","macrovipera lebetina"],
+      region: "Middle East",
+      url: "envenomation-middle-east.html#levant-viper",
+      critical: true
+    },
+    {
+      name: "Camel Spider",
+      aliases: ["camel spider","solifugae","wind scorpion"],
+      region: "Middle East",
+      url: "envenomation-middle-east.html#notice-middle-east",
+      critical: false
+    },
+    {
+      name: "Field Scorpion",
+      aliases: ["field scorpion","buthus occitanus","common scorpion"],
+      region: "Middle East",
+      url: "envenomation-middle-east.html#notice-middle-east",
+      critical: false
+    },
+    {
+      name: "Deathstalker Scorpion",
+      aliases: ["deathstalker","leiurus quinquestriatus","palestine yellow scorpion","omdurman scorpion","israeli desert scorpion","naqab desert scorpion"],
+      region: "Middle East",
+      url: "envenomation-middle-east.html#deathstalker-scorpion",
+      critical: true
+    },
+    {
+      name: "Russell's Viper",
+      aliases: ["russell's viper","daboia russelii","russell viper"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#russells-viper",
+      critical: true
+    },
+    {
+      name: "Common Krait",
+      aliases: ["common krait","bungarus caeruleus","indian krait","blue krait"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#common-krait",
+      critical: true
+    },
+    {
+      name: "Indian Cobra",
+      aliases: ["indian cobra","naja naja","spectacled cobra"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#indian-cobra",
+      critical: true
+    },
+    {
+      name: "Saw-Scaled Viper (South Asia)",
+      aliases: ["saw-scaled viper","echis carinatus","carpet viper"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#south-asia-saw-scaled-viper",
+      critical: true
+    },
+    {
+      name: "Hump-Nosed Pit Viper",
+      aliases: ["hump-nosed pit viper","hypnale hypnale","merrem's hump-nosed viper"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#hump-nosed-pit-viper",
+      critical: true
+    },
+    {
+      name: "Indian Red Scorpion",
+      aliases: ["indian red scorpion","hottentotta tamulus","mesobuthus tamulus"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#indian-red-scorpion",
+      critical: true
+    },
+    {
+      name: "Green Vine Snake",
+      aliases: ["vine snake","ahaetulla nasuta","whip snake"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#notice-south-asia",
+      critical: false
+    },
+    {
+      name: "Non-Venomous Snake Mimics (South Asia)",
+      aliases: ["rat snake","wolf snake","checkered keelback","non-venomous snake"],
+      region: "South Asia",
+      url: "envenomation-south-asia.html#notice-south-asia",
+      critical: false
+    },
+    {
+      name: "Coastal Taipan",
+      aliases: ["coastal taipan","oxyuranus scutellatus","papuan taipan","taipan"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#coastal-taipan",
+      critical: true
+    },
+    {
+      name: "Eastern Brown Snake",
+      aliases: ["eastern brown snake","pseudonaja textilis","brown snake"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#eastern-brown-snake",
+      critical: true
+    },
+    {
+      name: "Tiger Snake",
+      aliases: ["tiger snake","notechis scutatus","notechis ater"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#tiger-snake",
+      critical: true
+    },
+    {
+      name: "Death Adder",
+      aliases: ["death adder","acanthophis antarcticus","acanthophis"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#death-adder",
+      critical: true
+    },
+    {
+      name: "Sydney Funnel-Web Spider",
+      aliases: ["funnel-web spider","atrax robustus","hadronyche","sydney funnel-web"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#funnel-web-spider",
+      critical: true
+    },
+    {
+      name: "King Cobra",
+      aliases: ["king cobra","ophiophagus hannah"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#king-cobra",
+      critical: true
+    },
+    {
+      name: "Malayan Pit Viper",
+      aliases: ["malayan pit viper","calloselasma rhodostoma"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#malayan-pit-viper",
+      critical: true
+    },
+    {
+      name: "Redback Spider",
+      aliases: ["redback spider","latrodectus hasselti","australian redback"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#notice-sea-oceania",
+      critical: false
+    },
+    {
+      name: "White-Tailed Spider",
+      aliases: ["white-tailed spider","white-tail spider","lampona"],
+      region: "SE Asia & Oceania",
+      url: "envenomation-sea-oceania.html#notice-sea-oceania",
+      critical: false
+    },
+    {
+      name: "Fer-de-Lance",
+      aliases: ["fer-de-lance","bothrops asper","terciopelo","lancehead"],
+      region: "Central & South America",
+      url: "envenomation-central-south-america.html#fer-de-lance",
+      critical: true
+    },
+    {
+      name: "South American Rattlesnake",
+      aliases: ["south american rattlesnake","crotalus durissus terrificus","cascavel","crotoxin"],
+      region: "Central & South America",
+      url: "envenomation-central-south-america.html#south-american-rattlesnake",
+      critical: true
+    },
+    {
+      name: "Bushmaster",
+      aliases: ["bushmaster","lachesis muta","lachesis acrochorda","lachetic"],
+      region: "Central & South America",
+      url: "envenomation-central-south-america.html#bushmaster",
+      critical: true
+    },
+    {
+      name: "South American Coral Snake",
+      aliases: ["south american coral snake","micrurus corallinus","micrurus frontalis","micrurus"],
+      region: "Central & South America",
+      url: "envenomation-central-south-america.html#south-american-coral-snake",
+      critical: true
+    },
+    {
+      name: "Brazilian Wandering Spider",
+      aliases: ["brazilian wandering spider","phoneutria","armed spider","banana spider"],
+      region: "Central & South America",
+      url: "envenomation-central-south-america.html#phoneutria",
+      critical: true
+    },
+    {
+      name: "False Coral Snake",
+      aliases: ["false coral snake","coral snake mimic","erythrolamprus"],
+      region: "Central & South America",
+      url: "envenomation-central-south-america.html#notice-central-south-america",
+      critical: false
+    },
+    {
+      name: "New World Tarantula",
+      aliases: ["tarantula","goliath birdeater","theraphosidae"],
+      region: "Central & South America",
+      url: "envenomation-central-south-america.html#notice-central-south-america",
+      critical: false
+    },
+    {
+      name: "Box Jellyfish",
+      aliases: ["box jellyfish","chironex fleckeri","sea wasp","cubozoan"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#box-jellyfish",
+      critical: true
+    },
+    {
+      name: "Portuguese Man o' War",
+      aliases: ["portuguese man o war","physalia physalis","bluebottle"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#portuguese-man-o-war",
+      critical: true
+    },
+    {
+      name: "Irukandji Syndrome",
+      aliases: ["irukandji","carukia barnesi","irukandji syndrome"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#irukandji",
+      critical: true
+    },
+    {
+      name: "Stonefish",
+      aliases: ["stonefish","synanceia"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#stonefish",
+      critical: true
+    },
+    {
+      name: "Sea Snake",
+      aliases: ["sea snake","enhydrina schistosa","hydrophiidae"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#sea-snake",
+      critical: true
+    },
+    {
+      name: "Blue-Ringed Octopus",
+      aliases: ["blue-ringed octopus","hapalochlaena","tetrodotoxin octopus"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#blue-ringed-octopus",
+      critical: true
+    },
+    {
+      name: "Cone Snail",
+      aliases: ["cone snail","conus geographus","geographer cone","geography cone"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#cone-snail",
+      critical: true
+    },
+    {
+      name: "Stingray",
+      aliases: ["stingray","stingray barb"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#notice-marine",
+      critical: false
+    },
+    {
+      name: "Sea Urchin",
+      aliases: ["sea urchin","urchin spine"],
+      region: "Marine (Global)",
+      url: "envenomation-marine.html#notice-marine",
+      critical: false
+    },
+    {
+      name: "European Vipers",
+      aliases: ["european adder","vipera berus","asp viper","vipera aspis","nose-horned viper","vipera ammodytes","horned viper","sand viper"],
+      region: "Europe",
+      url: "envenomation-europe.html#european-vipers",
+      critical: true
+    },
+    {
+      name: "Noble False Widow Spider",
+      aliases: ["false widow spider","steatoda nobilis","noble false widow"],
+      region: "Europe",
+      url: "envenomation-europe.html#notice-europe",
+      critical: false
+    },
+    {
+      name: "European Scorpion",
+      aliases: ["european scorpion","euscorpius"],
+      region: "Europe",
+      url: "envenomation-europe.html#notice-europe",
+      critical: false
+    }
+  ];
+
+  function runGlobalSearch(){
+    const query = document.getElementById('globalSearch').value.trim().toLowerCase();
+    const resultsEl = document.getElementById('globalResults');
+    resultsEl.innerHTML = '';
+    if (query.length < 2) return;
+
+    const matches = speciesIndex.filter(s =>
+      s.name.toLowerCase().includes(query) ||
+      s.aliases.some(a => a.includes(query))
+    );
+
+    if (matches.length === 0){
+      resultsEl.innerHTML = '<div class="gs-empty">No match yet in the indexed regions — try the region grid below, or check spelling/common name.</div>';
+      return;
+    }
+
+    matches.forEach(m => {
+      const row = document.createElement('a');
+      row.href = m.url;
+      row.className = 'gs-result';
+      const badge = m.critical ? m.region : `${m.region} · non-critical`;
+      row.innerHTML = `
+        <div>
+          <div class="gs-result-name">${m.name}</div>
+          <div class="gs-result-meta">${m.aliases.slice(0,3).join(' · ')}</div>
+        </div>
+        <div class="gs-result-region">${badge} →</div>
+      `;
+      resultsEl.appendChild(row);
+    });
+  }
+</script>
+
+</body>
+</html>

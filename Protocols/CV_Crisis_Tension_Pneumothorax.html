@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tension Pneumothorax — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Resuscitation / Trauma</div>
+    <h1>Tension Pneumothorax</h1>
+    <p class="subtitle">A clinical diagnosis, not a radiographic one — the site-selection debate between 2nd ICS midclavicular and 5th ICS midaxillary, why needle decompression alone is never the last step, and why nitrous oxide makes it worse.</p>
+    <div class="badges">
+      <span class="badge red">RESUSCITATION / TRAUMA EMERGENCY</span>
+      <span class="badge teal">STATPEARLS / NAEMSP-ALIGNED</span>
+      <span class="badge amber">DECOMPRESS ON CLINICAL SUSPICION — DON'T WAIT FOR IMAGING</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Symptoms</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">Decompress based on the clinical picture. Waiting for a chest X-ray to confirm what the exam already told you is how this becomes a fatal delay.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Recognize it clinically and act immediately</div><div class="step-desc">Hemodynamic instability plus unilateral absent/diminished breath sounds and clinical suspicion is enough — do not delay decompression to obtain a chest X-ray in an unstable patient.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Needle decompression — choose your site deliberately</div><div class="step-desc"><b>2nd intercostal space, midclavicular line (2nd ICS-MCL):</b> the traditional, most widely taught site. <b>5th intercostal space, anterior/midaxillary line (5th ICS-MAL):</b> increasingly favored when time and anatomy allow — chest wall is measurably thinner here across multiple studies, translating to a lower reported failure rate (~16.7% vs. ~42.5% for 2nd ICS-MCL with a short needle in one cadaveric comparison). <b>Left-sided tension:</b> the 2nd ICS-MCL is the safer choice given proximity of the heart to the 5th ICS-MAL on that side.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Use an adequately long needle/catheter</div><div class="step-desc">A catheter <span class="d">≥7–8 cm</span> is recommended to reliably reach the pleural space, especially in patients with a thicker chest wall — shorter needles (5 cm) have documented high failure rates on CT-based chest wall thickness studies.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Consider finger (simple/open) thoracostomy instead, especially in trauma/peri-arrest</div><div class="step-desc">Several EMS and trauma bodies now favor finger thoracostomy over needle decompression given needle decompression's high real-world failure rate (catheter kinking, inadequate length, clotting). Performed at the <span class="d">4th–5th ICS, anterior axillary line</span> — the same site used for the definitive chest tube that follows. Incise, blunt-dissect with forceps down to pleura, and sweep a finger through to confirm entry and break up adhesions.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Discontinue nitrous oxide immediately if it's running</div><div class="step-desc">N₂O diffuses into the gas-filled pleural space faster than nitrogen leaves, actively enlarging the pneumothorax and worsening tension physiology.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">6</div><div class="step-body"><div class="step-title">Reassess immediately after decompression</div><div class="step-desc">Expect a rush of air, improving breath sounds, and hemodynamic improvement. If there's no improvement, reconsider the diagnosis, check catheter position/patency, or escalate to finger thoracostomy.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">7</div><div class="step-body"><div class="step-title">Always follow with definitive tube thoracostomy</div><div class="step-desc">Needle or finger decompression is a temporizing bridge, not a cure — the lung remains collapsed and the air leak persists until a formal chest tube is placed and connected to a drainage/seal system.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Cardiac arrest / peri-arrest with suspected tension</div><div class="step-desc">Bilateral finger thoracostomy is reasonable in traumatic arrest with suspected bilateral tension physiology or when the affected side is uncertain — don't let uncertainty about laterality delay decompression in extremis.</div></div></div>
+  </div>
+  <div class="alert red"><div class="alert-t">Positive-pressure ventilation can create or worsen this</div><p>A ventilated patient who suddenly becomes hard to bag, desaturates, and develops rising peak airway pressures should be assumed to have tension pneumothorax until proven otherwise — barotrauma from positive-pressure ventilation is a well-recognized cause, not just a complication of trauma.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Tension pneumothorax results from a one-way valve mechanism: air enters the pleural space but cannot exit, progressively raising intrapleural pressure. The expanding air collapses the ipsilateral lung, shifts the mediastinum away from the affected side, and — critically — kinks the vena cava and reduces venous return, producing obstructive shock that progresses to PEA cardiac arrest if not decompressed.</p>
+    <p>Causes include blunt or penetrating chest trauma, iatrogenic injury (central line placement, thoracentesis, mechanical ventilation with barotrauma in a patient with an undetected simple pneumothorax or bronchopleural fistula), and rarely spontaneous pneumothorax progressing to tension physiology. Pneumothorax of some form is present in up to 20% of major trauma victims found alive; missed or delayed tension pneumothorax specifically is estimated to account for a meaningful share (roughly 5%) of preventable deaths from serious thoracic injury.</p>
+  </div>
+
+  <!-- 03 SIGNS AND SYMPTOMS -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs and Symptoms</h2></div>
+  <table class="rt">
+    <tr><th>Finding</th><th>Notes</th></tr>
+    <tr><td>Diminished or absent unilateral breath sounds</td><td>The single most-cited finding driving field decompression decisions.</td></tr>
+    <tr><td>Hypotension, hemodynamic instability</td><td>Reflects the obstructive-shock mechanism — reduced venous return from vena caval compression.</td></tr>
+    <tr><td>Tachypnea, respiratory distress, cyanosis</td><td>From the collapsed lung and worsening V/Q mismatch.</td></tr>
+    <tr><td>Tracheal deviation</td><td>A classic teaching point, but unreliable and often a late or absent finding — don't wait for it before acting.</td></tr>
+    <tr><td>Jugular venous distension</td><td>Reflects elevated central venous pressure from impaired venous return — can be absent if the patient is also significantly hypovolemic from associated hemorrhage.</td></tr>
+    <tr><td>Hyperresonance to percussion, subcutaneous emphysema</td><td>Supportive findings when present, though not always elicited reliably in the field or under time pressure.</td></tr>
+    <tr><td>Ventilated patient: rising peak airway pressures, difficulty bagging, desaturation</td><td>Often the first and most reliable clue in an intubated patient, where auscultation alone may be harder to interpret.</td></tr>
+  </table>
+  <div class="xref"><b>The "classic" exam is often incomplete.</b> In one retrospective EMS series, diminished/absent breath sounds and hypoxia were the dominant documented indications for decompression — not the full textbook constellation of tracheal deviation and JVD. Build clinical suspicion from whatever combination of findings is actually present, not from waiting for every textbook sign to appear.</div>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Post-procedure imaging after central line placement</b> — a chest X-ray specifically to rule out an iatrogenic pneumothorax before it has a chance to progress to tension physiology.</li>
+      <li><b>Point-of-care ultrasound</b> for rapid bedside diagnosis (absence of lung sliding) in any patient with sudden desaturation or hemodynamic instability where pneumothorax is plausible — faster than waiting for a portable film.</li>
+      <li><b>Avoid unnecessarily high peak airway pressures</b> during mechanical ventilation, and maintain a high index of suspicion for barotrauma in any ventilated patient with known or suspected lung pathology (COPD, asthma, prior pneumothorax).</li>
+      <li><b>Have decompression equipment immediately accessible</b> in any setting where the risk is elevated (trauma bay, thoracic surgery, central line procedures) — long (≥8 cm) angiocatheters specifically, given the documented failure rate of shorter needles.</li>
+      <li><b>Individualize site selection to the patient</b> rather than defaulting reflexively to one taught site — chest wall thickness varies significantly by age, sex, BMI, and COPD status, all of which affect which site is actually reachable with standard equipment.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Pneumothorax prevalence in major trauma (found alive)</td><td>Up to 20%</td></tr>
+    <tr><td>Missed/delayed tension pneumothorax as a cause of preventable thoracic trauma death</td><td>~5%</td></tr>
+    <tr><td>Needle decompression failure rate, 2nd ICS-MCL (5 cm needle, cadaveric CT study)</td><td>~42.5%</td></tr>
+    <tr><td>Needle decompression failure rate, 5th ICS-MAL</td><td>~16.7%</td></tr>
+    <tr><td>Recommended needle/catheter length</td><td>≥7–8 cm</td></tr>
+    <tr><td>EMS needle thoracostomy frequency</td><td>Performed in up to 5% of adult trauma cases; far less common in pediatric trauma (~0.03%)</td></tr>
+    <tr><td>Finger thoracostomy site</td><td>4th–5th ICS, anterior axillary line — same as definitive chest tube placement</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for Tension Pneumothorax Management</h2></div>
+  <div class="box t-purple">
+    <p><b>Why 5th ICS-MAL is gaining favor over the traditional 2nd ICS-MCL site:</b> CT-based chest wall thickness measurements consistently show the 5th ICS-MAL is thinner across most body habitus categories, which is why real-world failure rates run lower there — a needle simply has a better chance of actually reaching the pleural space. The tradeoff is proximity to the heart on the left side, which is why left-sided tension pneumothorax still favors the 2nd ICS-MCL specifically, even though it has a documented higher overall failure rate.</p>
+    <p><b>Why needle decompression is inherently a temporary fix, not a treatment:</b> the catheter is thin, can kink, clot, or become dislodged, and does nothing to address the underlying air leak causing the tension in the first place. Every successful needle decompression still needs a formal chest tube to follow — treating the needle as "done" rather than as a bridge is a recognized failure mode.</p>
+    <p><b>Why finger thoracostomy is increasingly preferred in trauma/peri-arrest settings specifically:</b> it creates a large, direct opening into the pleural space that a provider can physically confirm with a finger sweep — bypassing the failure modes (wrong depth, kinked catheter, inadequate length) that plague needle decompression. It also happens to be performed at the exact site the definitive chest tube will go, so it doubles as the first step of definitive management rather than a separate procedure.</p>
+    <p><b>Why clinical diagnosis takes priority over imaging:</b> the physiology driving deterioration — progressive vena caval compression reducing venous return — worsens continuously and can progress from hemodynamic compromise to full arrest within minutes. Waiting for a portable chest X-ray in a hemodynamically unstable patient converts a survivable, rapidly treatable condition into a resuscitation.</p>
+    <p><b>Why nitrous oxide is a specific, avoidable aggravating factor:</b> N₂O's high blood:gas solubility means it diffuses into any closed gas space (a pneumothorax, an air embolus, a bowel loop) faster than the nitrogen already there can diffuse out — the same principle that makes it dangerous in venous air embolism. In a patient with any suspected or confirmed pneumothorax, this converts a background anesthetic gas into an active contributor to the emergency.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Cardiac tamponade</td><td>Breath sounds typically symmetric bilaterally (unlike the unilateral finding in tension pneumothorax); JVD present in both, but percussion/auscultation of the chest is the key differentiator — echo confirms.</td></tr>
+    <tr><td>Massive pulmonary embolism</td><td>No unilateral breath sound change; look for a clear PE risk factor profile and, where available, echo findings of acute right heart strain rather than a mediastinal shift.</td></tr>
+    <tr><td>Myocardial infarction / cardiogenic shock</td><td>ECG ischemic changes, troponin elevation; breath sounds equal bilaterally, no hyperresonance.</td></tr>
+    <tr><td>Simple (non-tension) pneumothorax</td><td>Hemodynamically stable — the defining distinction. Doesn't require emergency decompression; managed with observation or elective chest tube depending on size and symptoms.</td></tr>
+    <tr><td>Hemothorax</td><td>Dull, not hyperresonant, to percussion on the affected side — blood rather than air filling the pleural space; may coexist with pneumothorax as a hemopneumothorax.</td></tr>
+    <tr><td>Esophageal rupture</td><td>Can present with chest pain, subcutaneous emphysema, and hemodynamic instability; history (recent instrumentation, forceful vomiting) and mediastinal air on imaging point toward this rather than a primary pleural process.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Confirm and formalize:</b> chest X-ray or point-of-care ultrasound after decompression to confirm re-expansion and correct chest tube position; watch specifically for reexpansion pulmonary edema after rapid decompression of a significantly collapsed lung.</p>
+    <p><b>Persistent air leak:</b> if the chest tube continues bubbling well beyond the expected window, evaluate for bronchopleural fistula or ongoing parenchymal injury — this may need surgical or interventional pulmonology involvement rather than continued observation alone.</p>
+    <p><b>Disposition:</b> ICU or trauma monitoring for any patient who required emergency decompression, given both the underlying injury severity and the need to confirm re-expansion and rule out recurrence.</p>
+    <p><b>Documentation:</b> record which site was used, needle/catheter length, and the clinical response — useful for the immediate chest tube placement that follows and for any subsequent procedures in the same patient.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Sahota R, et al. Tension Pneumothorax. <i>StatPearls,</i> NCBI Bookshelf, updated July 7, 2025.</li>
+    <li><span class="tier">PRIMARY</span>Ahmad SJS, et al. Meta-Analysis of the Optimal Needle Length and Decompression Site for Tension Pneumothorax and Consensus Recommendations on Current ATLS and ETC Guidelines. <i>World J Emerg Surg.</i> 2025.</li>
+    <li><span class="tier">GUIDELINE</span>Prehospital Trauma Compendium: Traumatic Pneumothorax Care — Position Statement and Resource Document of NAEMSP. 2024.</li>
+    <li><span class="tier">EVIDENCE</span>Inaba K, et al. Cadaveric Comparison of the Optimal Site for Needle Decompression of Tension Pneumothorax by Prehospital Care Providers. <i>J Trauma Acute Care Surg.</i></li>
+    <li><span class="tier">REFERENCE</span>LITFL. "Tension Pneumothorax — Time to Change the Old Mantra?" litfl.com.</li>
+    <li><span class="tier">CASE DATA</span>Parikh S, et al. A Retrospective Analysis of Needle Thoracostomies at a Tertiary Level 2 Trauma Center. <i>Cureus.</i> 2024;16(3):e55736.</li>
+    <li><span class="tier">REFERENCE</span>Merck Manual Professional Edition. "How to Do Needle Thoracostomy." Updated 2025.</li>
+    <li><span class="tier">REFERENCE</span>Wang Y, et al. Safety and Risk Factors of Needle Thoracentesis Decompression in Tension Pneumothorax in Patients Over 75 Years Old. <i>Can Respir J.</i> 2023.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and site selection against your own institutional/EMS protocol before clinical use.</div>
+
+</div>
+</body>
+</html>

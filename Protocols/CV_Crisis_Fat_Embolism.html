@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fat Embolism Syndrome — Crisis Management | The Critical Vector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --surface:#111720; --surface2:#182030; --border:rgba(255,255,255,.08);
+  --teal:#00d4aa; --blue:#2563eb; --red:#e84c4c; --amber:#f59e0b; --purple:#a78bfa;
+  --text:#e8edf5; --text2:#8a9ab5; --text3:#4a5670;
+  --teal-tint:rgba(0,212,170,.09); --blue-tint:rgba(37,99,235,.10); --red-tint:rgba(232,76,76,.09);
+  --amber-tint:rgba(245,158,11,.09); --purple-tint:rgba(167,139,250,.10);
+}
+@media print{
+  :root{
+    --bg:#f4f5f7; --surface:#fff; --surface2:#eef0f3; --border:rgba(15,25,35,.12);
+    --teal:#00a688; --blue:#1d4ed8; --red:#c53030; --amber:#b45309; --purple:#7c3aed;
+    --text:#0f1923; --text2:#4a5670; --text3:#6b7690;
+    --teal-tint:rgba(0,166,136,.08); --blue-tint:rgba(29,78,216,.07); --red-tint:rgba(197,48,48,.07);
+    --amber-tint:rgba(180,83,9,.08); --purple-tint:rgba(124,58,237,.07);
+  }
+  .quicknav{position:static !important;}
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.page{max-width:880px;margin:0 auto;padding:0 32px 64px;}
+.hdr-block{padding-top:44px;}
+.kicker{font-family:'Syne',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;color:var(--text);letter-spacing:-.3px;margin-bottom:8px;}
+.subtitle{font-style:italic;color:var(--text2);font-size:15.5px;margin-bottom:16px;max-width:620px;}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;padding:3px 9px;border-radius:4px;letter-spacing:.3px;}
+.badge.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);color:var(--red);}
+.badge.teal{background:var(--teal-tint);border:1px solid rgba(0,212,170,.3);color:var(--teal);}
+.badge.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);color:var(--amber);}
+hr.rule{border:none;border-top:1px solid var(--border);margin-bottom:0;}
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:10px 0;margin-bottom:8px;}
+@media print{.quicknav{background:var(--bg);backdrop-filter:none;}}
+.quicknav-inner{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 2px;}
+.quicknav-inner::-webkit-scrollbar{display:none;}
+.qn{flex-shrink:0;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:6px 11px;border-radius:6px;text-decoration:none;white-space:nowrap;border:1px solid var(--border);color:var(--text2);transition:border-color .15s,color .15s;}
+.qn:hover{color:var(--text);border-color:var(--text3);}
+.qn.pinned{background:var(--red-tint);border-color:rgba(232,76,76,.4);color:var(--red);font-weight:600;}
+.qn.pinned:hover{border-color:var(--red);}
+.sec-head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-radius:8px;margin:34px 0 16px;position:relative;scroll-margin-top:64px;}
+.sec-head::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sec-head.c-teal{background:linear-gradient(90deg,var(--teal-tint),transparent);} .sec-head.c-teal::before{background:var(--teal);}
+.sec-head.c-blue{background:linear-gradient(90deg,var(--blue-tint),transparent);} .sec-head.c-blue::before{background:var(--blue);}
+.sec-head.c-red{background:linear-gradient(90deg,var(--red-tint),transparent);} .sec-head.c-red::before{background:var(--red);}
+.sec-head.c-amber{background:linear-gradient(90deg,var(--amber-tint),transparent);} .sec-head.c-amber::before{background:var(--amber);}
+.sec-head.c-purple{background:linear-gradient(90deg,var(--purple-tint),transparent);} .sec-head.c-purple::before{background:var(--purple);}
+.sec-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text3);}
+.sec-head h2{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--text);}
+.tagline{font-style:italic;color:var(--text2);font-size:13px;margin:-8px 0 14px 2px;}
+.box{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
+.box.t-teal{border-left:3px solid var(--teal);}
+.box.t-blue{border-left:3px solid var(--blue);}
+.box.t-amber{border-left:3px solid var(--amber);}
+.box.t-purple{border-left:3px solid var(--purple);}
+.box.t-red{border-left:3px solid var(--red);background:var(--red-tint);}
+.box p{margin-bottom:8px;} .box p:last-child{margin-bottom:0;}
+.box ul{padding-left:18px;} .box li{margin-bottom:6px;}
+.alert{border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert.red{background:var(--red-tint);border:1px solid rgba(232,76,76,.3);}
+.alert.amber{background:var(--amber-tint);border:1px solid rgba(245,158,11,.3);}
+.alert-t{font-family:'Syne',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:4px;}
+.alert.red .alert-t{color:var(--red);} .alert.amber .alert-t{color:var(--amber);}
+.alert p{font-size:14px;color:var(--text);}
+.step-row{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.step-row:last-child{border-bottom:none;}
+.step-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:#0a0e14;}
+.step-body{flex:1;padding-top:2px;}
+.step-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--text);margin-bottom:2px;}
+.step-desc{color:var(--text2);font-size:13.5px;line-height:1.55;}
+.step-desc .d{font-family:'IBM Plex Mono',monospace;color:var(--text);background:rgba(255,255,255,.06);padding:1px 5px;border-radius:3px;font-size:12.5px;}
+table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px;}
+.rt th{background:var(--surface2);color:var(--text);font-family:'Syne',sans-serif;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.rt td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top;}
+.rt td:first-child{color:var(--text);font-weight:600;}
+.rt tr:last-child td{border-bottom:none;}
+.xref{border-left:3px solid var(--blue);background:var(--blue-tint);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:14px;font-size:13.5px;color:var(--text2);}
+.xref b{color:var(--text);}
+.sources{list-style:none;font-size:12.5px;color:var(--text2);}
+.sources li{padding:6px 0;border-bottom:1px solid var(--border);}
+.sources li:last-child{border-bottom:none;}
+.sources .tier{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;padding:1px 6px;border-radius:3px;margin-right:8px;background:var(--teal-tint);color:var(--teal);border:1px solid rgba(0,212,170,.3);}
+.footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-style:italic;color:var(--text3);font-size:12px;line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="hdr-block">
+    <div class="kicker">The Critical Vector · Crisis Management · Orthopedic Trauma / Critical Care</div>
+    <h1>Fat Embolism Syndrome</h1>
+    <p class="subtitle">Marrow fat entering the circulation after a long-bone fracture — a diagnosis of exclusion made by pattern recognition, treated entirely with support since nothing pharmacologic has proven itself.</p>
+    <div class="badges">
+      <span class="badge red">TRAUMA / ORTHOPEDIC EMERGENCY</span>
+      <span class="badge teal">GURD &amp; WILSON CRITERIA</span>
+      <span class="badge amber">SUPPORTIVE CARE ONLY — NO PROVEN DRUG</span>
+    </div>
+  </div>
+  <hr class="rule">
+</div>
+
+<nav class="quicknav">
+  <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
+    <a class="qn pinned" href="#treatment">⚡ TREATMENT</a>
+    <a class="qn" href="#review">Brief Review</a>
+    <a class="qn" href="#signs">Signs &amp; Diagnostic Criteria</a>
+    <a class="qn" href="#prevention">Prevention / Set-Up</a>
+    <a class="qn" href="#numbers">Numbers to Know</a>
+    <a class="qn" href="#rationale">Rationale</a>
+    <a class="qn" href="#ddx">Differentials</a>
+    <a class="qn" href="#disposition">Workup &amp; Disposition</a>
+    <a class="qn" href="#refs">References</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- 01 TREATMENT -->
+  <div class="sec-head c-red" id="treatment"><span class="sec-num">01</span><h2>Emergency Management &amp; Immediate Actions</h2></div>
+  <div class="tagline">There is no proven pharmacologic cure — management is early recognition plus aggressive, organ-by-organ support while the syndrome runs its course.</div>
+  <div class="box">
+    <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Maintain a high index of suspicion</div><div class="step-desc">In any patient with a long-bone or pelvic fracture developing new hypoxemia, altered mental status, or a petechial rash in the 24–72 hour post-injury (or post-fixation) window — FES is a clinical diagnosis, and no single test confirms it, so suspicion has to drive early action.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Support oxygenation aggressively</div><div class="step-desc">Supplemental O₂ titrated to maintain adequate saturation; escalate to mechanical ventilation early if hypoxemia is significant (PaO₂ &lt;60 mmHg is a commonly cited threshold). High levels of PEEP are the recommended ventilatory approach for the acute pulmonary presentation, similar in principle to other causes of capillary-leak lung injury.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Hemodynamic support and fluid management</div><div class="step-desc">IV fluids and drugs to maintain adequate blood volume and perfusion — help support end-organ perfusion and may assist in diluting/removing circulating free fatty acids, though this specific mechanism isn't proven to change outcomes on its own.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">ICU-level monitoring</div><div class="step-desc">Admit to a critical care environment for detailed physiological observation, with early institution of invasive support (ventilation, vasopressors) if the patient deteriorates — most series describe favorable outcomes when this escalation happens promptly rather than reactively.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Neurologic monitoring and seizure management</div><div class="step-desc">CNS involvement (agitation, confusion, progressing to stupor or seizures) is common and frequently doesn't improve simply by correcting hypoxia — treat seizures with standard anticonvulsant management and pursue neuroimaging (MRI is more sensitive than CT for cerebral fat embolism) if focal or persistent deficits are present.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--purple)">6</div><div class="step-body"><div class="step-title">Definitive fracture fixation, timed thoughtfully</div><div class="step-desc">Early stabilization of the fracture is generally beneficial and is the main prevention lever, but in a severely traumatized or already-deteriorating patient, damage control orthopedics (external fixation first, definitive fixation delayed) may be preferred over immediate intramedullary instrumentation, which itself can worsen embolic load.</div></div></div>
+    <div class="step-row"><div class="step-num" style="background:var(--teal)">7</div><div class="step-body"><div class="step-title">Consider corticosteroids on a case-by-case basis</div><div class="step-desc">Some case series describe a short course of IV methylprednisolone; the evidence base is not conclusive, and steroids, heparin, and albumin have all been studied without demonstrating clear, reproducible benefit. Reasonable to consider in select cases, not a default reflex.</div></div></div>
+  </div>
+  <div class="alert amber"><div class="alert-t">No definitive treatment exists</div><p>Despite decades of study, no pharmacologic therapy — steroids, heparin, albumin — has demonstrated conclusive efficacy for FES. Management is supportive care, done well and started early, not a specific rescue drug.</p></div>
+
+  <!-- 02 BRIEF REVIEW -->
+  <div class="sec-head c-teal" id="review"><span class="sec-num">02</span><h2>Brief Review</h2></div>
+  <div class="box t-teal">
+    <p>Fat embolism syndrome is a systemic condition caused by fat globules — most often bone marrow fat — entering the venous circulation, typically after a long bone or pelvic fracture, orthopedic instrumentation (intramedullary nailing, arthroplasty), or less commonly after severe burns, liposuction, pancreatitis, or CPR. Fat first embolizes to the pulmonary capillary bed, and can subsequently reach the systemic circulation via a patent foramen ovale, arteriovenous shunts, or passage through the pulmonary bed itself — producing the classic multi-organ pattern of pulmonary, neurologic, and dermatologic injury.</p>
+    <p>Two proposed mechanisms operate together: a mechanical theory (fat droplets physically obstructing small vessels) and a biochemical theory (free fatty acids triggering a profound inflammatory response that increases capillary permeability). Reported incidence varies enormously by diagnostic method and population — roughly 0.5–2% after an isolated long-bone fracture, rising to 5–10% with multiple long-bone or pelvic fractures, while fat globules are detectable in blood in the majority of orthopedic trauma patients if specifically looked for (a landmark study found clinical FES by Gurd's criteria in 19% of trauma patients). Reported mortality ranges widely (3–67% across older literature) but more consistent modern series cite roughly 5–15%.</p>
+  </div>
+
+  <!-- 03 SIGNS & DIAGNOSTIC CRITERIA -->
+  <div class="sec-head c-amber" id="signs"><span class="sec-num">03</span><h2>Signs &amp; Diagnostic Criteria (Gurd and Wilson)</h2></div>
+  <table class="rt">
+    <tr><th>Category</th><th>Findings</th></tr>
+    <tr><td>Major criteria</td><td>Respiratory insufficiency (hypoxemia, tachypnea, bilateral infiltrates), cerebral involvement unrelated to head trauma or other cause, petechial rash — classically axillary, conjunctival, over the upper body, appearing 24–36 hours after injury and resolving quickly.</td></tr>
+    <tr><td>Minor criteria</td><td>Tachycardia, pyrexia (low-grade), retinal changes (fat globules/hemorrhages on fundoscopy), renal changes (fat in urine, oliguria), sudden unexplained drop in hemoglobin, thrombocytopenia, elevated ESR, fat globules in sputum.</td></tr>
+    <tr><td>Diagnostic threshold</td><td>1 major + 4 minor criteria (Gurd and Wilson), though other schemes (Lindeque, Schonfeld, modified Gurd) exist and none are fully validated — diagnosis remains clinical and is ultimately one of exclusion.</td></tr>
+    <tr><td>Typical timing</td><td>Symptoms usually appear 24–72 hours after trauma or intraoperatively during fracture repair; the classic teaching "24–72h window" is where most nursing/monitoring protocols concentrate observation.</td></tr>
+  </table>
+  <div class="xref"><b>Cerebral fat embolism (CFE)</b> is an incomplete variant with isolated or predominant neurologic involvement, without the full respiratory/dermatologic picture — occurs in roughly 0.9–11% of long-bone fracture patients depending on the series, carries a mortality around 10%, and is easy to misattribute to a primary stroke or seizure disorder if the orthopedic context isn't kept in mind.</div>
+
+  <!-- 04 PREVENTION / SETUP -->
+  <div class="sec-head c-blue" id="prevention"><span class="sec-num">04</span><h2>Prevention &amp; Set-Up (In Place of "Room Setup")</h2></div>
+  <div class="box t-blue">
+    <ul>
+      <li><b>Early fracture stabilization</b> is the most consistently cited prevention strategy, though definitive comparative data proving it reduces FES incidence specifically (rather than just improving overall trauma outcomes) remains limited.</li>
+      <li><b>Minimize additional surgical trauma to the marrow cavity</b> during fixation — technique matters, since more fat globule release corresponds to a higher embolic load.</li>
+      <li><b>Damage control orthopedics in severely traumatized or physiologically unstable patients:</b> external fixation to control the injury acutely, with definitive intramedullary fixation delayed until the patient is more stable — reduces the additional embolic insult of reaming/instrumentation during an already-vulnerable window.</li>
+      <li><b>Vigilant monitoring in every at-risk patient</b> regardless of whether fixation is delayed or immediate — FES can occur even after appropriate fixation, so prevention reduces but doesn't eliminate risk.</li>
+      <li><b>Standardized early-warning observation</b> (e.g., pulse oximetry trends, structured early warning scoring) correlates well with catching unrecognized hypoxemia in these patients before it becomes a crisis.</li>
+    </ul>
+  </div>
+
+  <!-- 05 NUMBERS TO KNOW -->
+  <div class="sec-head c-teal" id="numbers"><span class="sec-num">05</span><h2>Numbers to Know (In Place of "Labs")</h2></div>
+  <table class="rt">
+    <tr><th>Parameter</th><th>Value</th></tr>
+    <tr><td>Incidence, isolated long-bone fracture</td><td>~0.5–2%</td></tr>
+    <tr><td>Incidence, multiple long-bone/pelvic fractures</td><td>~5–10%</td></tr>
+    <tr><td>Incidence by strict clinical criteria in a landmark trauma cohort (Gurd)</td><td>19%</td></tr>
+    <tr><td>Fat globules detectable in blood (asymptomatic subclinical fat embolism)</td><td>Up to 67% of orthopedic trauma patients in some studies</td></tr>
+    <tr><td>Reported mortality range (older/wide literature)</td><td>3–67%</td></tr>
+    <tr><td>Reported mortality, more consistent modern series</td><td>~5–15%</td></tr>
+    <tr><td>Cerebral fat embolism incidence (long-bone fracture patients)</td><td>~0.9–11%</td></tr>
+    <tr><td>Cerebral fat embolism mortality</td><td>~10%</td></tr>
+    <tr><td>Typical symptom onset window</td><td>24–72 hours post-injury (occasionally intraoperative)</td></tr>
+    <tr><td>Diagnostic criteria threshold (Gurd and Wilson)</td><td>1 major + 4 minor criteria</td></tr>
+  </table>
+
+  <!-- 06 RATIONALE -->
+  <div class="sec-head c-purple" id="rationale"><span class="sec-num">06</span><h2>Rationale for FES Management Steps</h2></div>
+  <div class="box t-purple">
+    <p><b>Why treatment is purely supportive:</b> the injury has two overlapping mechanisms — mechanical vessel obstruction by fat droplets, and a biochemical inflammatory cascade from free fatty acids damaging capillary membranes. No drug reverses either process once it's underway; the biology behaves more like a self-limited inflammatory insult than a condition with a specific antidote, which is why decades of trials on steroids, heparin, and albumin have failed to establish clear benefit.</p>
+    <p><b>Why high-PEEP ventilation is favored for the pulmonary presentation:</b> the biochemical injury pattern in FES resembles other forms of capillary-leak-mediated lung injury (ARDS-like physiology) more than it resembles simple mechanical vascular obstruction — PEEP recruits collapsed alveoli and improves oxygenation in this pattern the same way it does in ARDS from other causes.</p>
+    <p><b>Why CNS symptoms often don't track cleanly with hypoxia correction:</b> the systemic (biochemical) mechanism means that fat and inflammatory mediators can reach the brain independently through a shunt pathway or the pulmonary bed itself — correcting oxygenation addresses one input to cerebral dysfunction but not necessarily the direct embolic/inflammatory injury already present in cerebral vessels, which is why neurologic findings can persist or evolve even as respiratory status improves.</p>
+    <p><b>Why intramedullary reaming/instrumentation is handled cautiously in unstable patients:</b> the fixation procedure itself pressurizes the marrow cavity and can push additional fat into the venous system — reasonable in a stable patient where the benefit of definitive fixation outweighs this added embolic load, but a real consideration for delaying definitive fixation (damage control orthopedics) in someone already physiologically compromised.</p>
+    <p><b>Why diagnosis stays clinical despite decades of proposed criteria systems:</b> no imaging or lab test has proven sufficiently sensitive and specific on its own — fat globules in blood are common even in patients who never develop the syndrome, and radiographic/CT findings are often normal or nonspecific early on. This is why Gurd and Wilson (and its competitors) remain pattern-recognition tools rather than confirmatory tests, and why a high index of suspicion in the right clinical context still does most of the diagnostic work.</p>
+  </div>
+
+  <!-- DIFFERENTIALS -->
+  <div class="sec-head c-blue" id="ddx"><span class="sec-num">07</span><h2>Differential Diagnosis</h2></div>
+  <table class="rt">
+    <tr><th>Mimic</th><th>Key distinguishing features</th></tr>
+    <tr><td>Pulmonary thromboembolism</td><td>Often the first thing considered in a post-fracture/post-op patient with new hypoxemia — CT angiography differentiates the two; FES lacks a discrete filling defect and instead shows diffuse, often ground-glass changes if imaging is abnormal at all.</td></tr>
+    <tr><td>ARDS from another cause (aspiration, sepsis, transfusion-related)</td><td>Look for a clear alternative trigger and the absence of the petechial rash/neurologic pattern; timing relative to fracture is a key clue for FES specifically.</td></tr>
+    <tr><td>Primary traumatic brain injury</td><td>Imaging (CT/MRI) findings consistent with direct trauma rather than the diffuse, small-vessel pattern seen on MRI in cerebral fat embolism; mechanism and head-strike history matter.</td></tr>
+    <tr><td>Hemorrhagic or thrombotic stroke</td><td>Vascular territory-specific findings on imaging rather than the diffuse pattern of cerebral fat embolism; FES-related neurologic findings are often more diffuse/global than focal.</td></tr>
+    <tr><td>Sepsis</td><td>Fever and hemodynamic instability with an identifiable infectious source; can coexist with FES in a trauma patient and complicate the picture.</td></tr>
+    <tr><td>Disseminated intravascular coagulation</td><td>Petechiae/purpura present in both, but DIC has a distinct coagulation panel derangement (prolonged PT/PTT, low fibrinogen) not typical of FES alone.</td></tr>
+  </table>
+
+  <!-- WORKUP & DISPOSITION -->
+  <div class="sec-head c-teal" id="disposition"><span class="sec-num">08</span><h2>Workup &amp; Disposition</h2></div>
+  <div class="box t-teal">
+    <p><b>Supportive labs/imaging:</b> ABG for hypoxemia severity, CBC (thrombocytopenia, sudden hemoglobin drop), coagulation panel to help exclude DIC, chest imaging (often normal early; CT may show bilateral ground-glass opacities), brain MRI if neurologic findings are present (more sensitive than CT for the diffuse "starfield" pattern of cerebral fat embolism).</p>
+    <p><b>Serial monitoring:</b> continuous pulse oximetry with structured early-warning scoring, given how easily early hypoxemia is missed; serial neurologic exams given the sometimes-delayed or evolving nature of CNS involvement.</p>
+    <p><b>Disposition:</b> ICU admission for any suspected or confirmed case — this is standard given the potential for rapid deterioration and the need for close observation and rapid escalation to mechanical ventilation if respiratory status worsens.</p>
+    <p><b>Course and recovery:</b> most patients who survive the acute phase recover fully, though prolonged mechanical ventilation is common in severe cases; the petechial rash itself typically resolves within days regardless of overall trajectory.</p>
+    <p><b>Documentation:</b> record which Gurd/Wilson (or alternative) criteria were met and when, imaging findings, and the clinical course — useful both for this admission's ongoing management and for future reference given how often FES remains a retrospective, pattern-based diagnosis.</p>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="sec-head c-amber" id="refs"><span class="sec-num">09</span><h2>References</h2></div>
+  <ul class="sources">
+    <li><span class="tier">PRIMARY</span>Luff D, Hewson DW. Fat Embolism Syndrome. <i>BJA Education.</i> 2021;21(9).</li>
+    <li><span class="tier">PRIMARY</span>Fat Embolism. <i>StatPearls,</i> NCBI Bookshelf, updated 2022, reviewed against current literature 2026.</li>
+    <li><span class="tier">GUIDELINE</span>Gurd AR, Wilson RI. The Fat Embolism Syndrome. <i>J Bone Joint Surg Br.</i> 1974;56-B(3).</li>
+    <li><span class="tier">REFERENCE</span>Alrasheed AS, et al. Pathophysiology, Clinical Manifestations, and Prognostic Insights of Cerebral Fat Embolism: A Literature Review. <i>Front Neurol.</i> 2026.</li>
+    <li><span class="tier">REFERENCE</span>Tsai SHL, et al. Fat Embolism Syndrome and In-Hospital Mortality Rates According to Patient Age: A Large Nationwide Retrospective Study. <i>Clin Epidemiol.</i> 2022;14:985–996.</li>
+    <li><span class="tier">CASE DATA</span>Clinical Characteristics and Management of Patients with Fat Embolism Syndrome in a Level I Apex Trauma Centre. 2019.</li>
+    <li><span class="tier">CASE DATA</span>The Spectrum of Neurological Derangement Due to Fat Embolism: A Case Series. <i>Front Neurol.</i> 2026.</li>
+    <li><span class="tier">REFERENCE</span>Orthobullets. "Fat Embolism Syndrome." orthobullets.com.</li>
+  </ul>
+
+  <div class="footer">The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event.</div>
+
+</div>
+</body>
+</html>
