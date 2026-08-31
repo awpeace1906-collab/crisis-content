@@ -48,11 +48,25 @@ jobs:
           fi
 
       - name: Purge jsDelivr cache
+        # Observed live (2026-08-31): purging immediately after push can race
+        # GitHub's own propagation of the new commit to raw.githubusercontent.com
+        # — jsDelivr's purge triggers an immediate origin re-fetch, and if that
+        # lands before raw.githubusercontent.com has the new content, it
+        # re-caches the *old* version and the purge looks like it worked but
+        # didn't. Purge twice, a few seconds apart, so the second pass catches
+        # it even if the first raced. Belt-and-suspenders, not a real fix for
+        # the underlying race — a manual purge is always the fallback if
+        # content still looks stale a few minutes after a push.
         if: steps.commit.outputs.changed == 'true'
         run: |
-          for f in protocols.json procedures.json envenomation.json manifest.json; do
-            curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/dist/$f" || true
-          done
+          purge() {
+            for f in protocols.json procedures.json envenomation.json manifest.json; do
+              curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/dist/$f" || true
+            done
+          }
+          purge
+          sleep 15
+          purge
 
       - name: Staleness check
         id: staleness
