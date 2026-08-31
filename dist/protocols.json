@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T21:49:43.196Z",
+  "generatedAt": "2026-08-31T21:51:47.416Z",
   "categories": [
     {
       "id": "anesthesia-perioperative-crises",
@@ -73,8 +73,8 @@
       "description": "AHTR vs. TRALI vs. TACO side-by-side, why TACO and TRALI need opposite fluid strategies, StatPearls/ASH-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -433,8 +433,8 @@
       "description": "Why post-event benzos can't undo recall, BIS vs. ETAC trial evidence, ASA Practice Advisory-aligned prevention and postop workup.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -737,8 +737,8 @@
       "description": "CICO decision tree, ASA 2022/DAS 2025-aligned, scalpel cric technique, LEMON/RODS/SHORT assessment tools.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -1059,8 +1059,8 @@
       "description": "Gurd and Wilson criteria, supportive-care-only management, cerebral fat embolism as the easy-to-miss isolated-neuro variant.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -1395,8 +1395,8 @@
       "description": "Escalation ladder from jaw thrust to succinylcholine, WFSA-aligned dosing, negative pressure pulmonary edema as the delayed complication.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -1740,8 +1740,8 @@
       "description": "ASRA 2020 lipid emulsion protocol, modified ACLS, max doses by agent, prevention during regional blocks.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -2072,10 +2072,10 @@
       "categoryOrder": 1,
       "color": "blue",
       "description": "RYR1-mediated hypermetabolic crisis. Dantrolene, room setup for the susceptible patient, genetics, recrudescence.",
-      "reviewTier": 2,
-      "reviewTierIsDefault": true,
+      "reviewTier": 1,
+      "reviewTierIsDefault": false,
       "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "reviewDue": "2027-03-03",
       "sections": [
         {
           "id": "treatment",
@@ -2462,8 +2462,8 @@
       "description": "Post-extubation laryngospasm's downstream complication, hydrostatic mechanism, why diuretics stay contested. Linked to the Laryngospasm file.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -2786,8 +2786,8 @@
       "description": "NMBA/latex/chlorhexidine triggers, tryptase timing, epinephrine dosing by severity, risk-stratified observation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -3106,8 +3106,8 @@
       "description": "Mechanical-cause rule-out, stepwise inhaled-to-IV escalation, dynamic hyperinflation as the hidden hemodynamic threat.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -3453,8 +3453,8 @@
       "description": "Four-stage ascending recognition, \"spinal after epidural\" as the classic setup, airway/hemodynamic support, NYSORA/WFSA-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -3777,8 +3777,8 @@
       "description": "Acute hyponatremia treated fast on purpose, glycine CNS toxicity, hypertonic saline dosing, TURis/saline hyperchloremic acidosis variant.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -4119,8 +4119,8 @@
       "description": "Durant maneuver, precordial Doppler detection, PEEP's paradoxical-embolism trade-off, UpToDate/StatPearls-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-20",
+      "reviewDue": "2027-08-20",
       "sections": [
         {
           "id": "treatment",
@@ -4467,8 +4467,8 @@
       "description": "The algorithm backbone every other file in this category plugs into — 2025 AHA drug timing, CPR quality, H's and T's each linked to its own deep dive.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -4813,8 +4813,8 @@
       "description": "Calcium-shift-eliminate sequence, why arrest duration should be longer here, insulin-before-albuterol ordering. ILCOR 2025/AHA-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -5167,8 +5167,8 @@
       "description": "Full-dose lysis in arrest vs. half-dose peri-arrest, echo-guided redosing, why CPR isn't a contraindication. 2026 AHA/ACC PE guideline-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -5499,8 +5499,8 @@
       "description": "Beck's triad present in only 10–40% of cases, \"last-drop\" pressure-volume curve, needle vs. surgical drainage decision. StatPearls/AMBOSS-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -5837,8 +5837,8 @@
       "description": "PeRLS 2025-aligned, OR-specific reversible causes in place of the standard H's and T's, early ECMO escalation, rhythm-specific notes.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -6203,8 +6203,8 @@
       "description": "Vector change vs. DSED, why ERC won't recommend DSED despite positive trial data, low-flow time as the real ECPR clock. ERC 2025/ELSO-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -6561,8 +6561,8 @@
       "description": "2nd ICS-MCL vs 5th ICS-MAL site debate, finger thoracostomy vs needle, why nitrous oxide worsens it. StatPearls/NAEMSP-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -6903,8 +6903,8 @@
       "description": "Magnesium works regardless of serum level, overdrive pacing/isoproterenol, why amiodarone is contraindicated here. 2017 AHA/ACC/HRS-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -7237,8 +7237,8 @@
       "description": "HOTT framework, why REBOA's own trial was stopped for harm, the 10-minute thoracotomy window. ERC 2025-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -7571,8 +7571,8 @@
       "description": "High-dose insulin as metabolic support not antidote, why it beats escalating vasopressors, lipid rescue for lipophilic agents. EXTRIP/HIET-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -7925,8 +7925,8 @@
       "description": "Benzodiazepines first, the real nuance behind the beta-blocker rule, cocaine as a sodium-channel blocker. StatPearls/CorePendium-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -8272,8 +8272,8 @@
       "description": "Nearly any arrhythmia except rapid SVT, why calcium avoidance is more contested than taught, hyperkalemia as a pump-poisoning severity marker.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -8622,8 +8622,8 @@
       "description": "Titrate to respiration not consciousness, buprenorphine's unique dosing, re-narcotization and monitoring duration. StatPearls/ACMT-AACT-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -8964,8 +8964,8 @@
       "description": "Side-by-side signs table, why cyproheptadine's evidence is weaker than its reputation, the dual-track algorithm for undifferentiated cases. IAEM 2024-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -9341,8 +9341,8 @@
       "description": "Sodium bicarbonate's dual mechanism, why phenytoin is specifically avoided, why respiratory acidosis is a second emergency. StatPearls/EMCrit-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -9695,8 +9695,8 @@
       "description": "Peripartum collapse and DIC, SMFM checklist-aligned, 4-minute resuscitative hysterotomy, 1:1:1 massive transfusion.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -10047,8 +10047,8 @@
       "description": "Why magnesium and BP control are two separate tracks, clinical (not lab) toxicity monitoring, why delivery isn't delayed for magnesium. ACOG PB 222-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -10409,8 +10409,8 @@
       "description": "4 T's differential, why tamponade works best before shock, why quantitative blood loss measurement changed outcomes. ACOG/FIGO-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
@@ -10751,8 +10751,8 @@
       "description": "HELPERR sequence, why posterior arm delivery has the highest success rate despite not being first-line, why \"unpredictable and unpreventable\" shapes the whole prevention section. ACOG/RCOG-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -11097,8 +11097,8 @@
       "description": "No reliable predictor, abnormal CTG as the most consistent finding, why surgery is the only treatment. RCOG/ACOG-aligned — Continuum case cited only as illustrative.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -11445,8 +11445,8 @@
       "description": "Why the airway exam itself is dangerous in suspected epiglottitis, why dexamethasone goes to nearly all croup regardless of severity, epi's rebound explained. AAP/CPS-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -11808,8 +11808,8 @@
       "description": "Why ventilation, not epinephrine, is the core intervention; real-world epi timing lags guideline targets by minutes. AHA/AAP 9th edition (Oct 2025)-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -12166,8 +12166,8 @@
       "description": "Why fluid strategy genuinely diverges by resource setting, the FEAST trial's early-stopped-for-harm result, why hypotension is a late warning sign. 2026 SSC pediatric guidelines-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -12516,8 +12516,8 @@
       "description": "Why standard TCCC permissive hypotension doesn't apply here, MARCH-first sequencing, why calcium is given despite hypocalcemia. JTS/TCCC-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -12906,8 +12906,8 @@
       "description": "Why immersion is 6-10x faster than any alternative, the specific ≥0.155°C/min target, why no drug (including dantrolene) helps. 2025 SCCM guideline-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -13287,8 +13287,8 @@
       "description": "Primary vs. secondary hypothermia as the key judgment call, why real-world stop-decisions lag guideline criteria, the rewarming-rate debate. ERC/ELSO 2025-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-24",
+      "reviewDue": "2027-08-24",
       "sections": [
         {
           "id": "treatment",
@@ -13663,8 +13663,8 @@
       "description": "1:1:1 ratio-based resuscitation, TXA's 3-hour window, calcium/lethal-triad management, TEG/ROTEM as complement not replacement.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-31",
-      "reviewDue": "2027-08-31",
+      "lastVerified": "2026-08-21",
+      "reviewDue": "2027-08-21",
       "sections": [
         {
           "id": "treatment",
