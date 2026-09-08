@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T18:14:54.317Z",
+  "generatedAt": "2026-09-08T11:40:04.852Z",
   "regions": [
     {
       "id": "africa",
@@ -47,10 +47,10 @@
             "label": "Pearls / Pitfalls",
             "html": "SAIMR polyvalent antivenom supply is not a hypothetical concern — South Africa has had real, reported production shortages (most recently flagged in 2023–2024), and the product is also relied upon by neighboring countries with no domestic production of their own. Know your current regional supply chain before you need it, not during a shortage."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "black-mamba",
@@ -92,10 +92,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Minimal bite-site findings with a confirmed or strongly suspected black mamba exposure is not reassurance — treat this like the North American coral snake principle: the wound doesn't tell you the story, the timeline does. Don't wait for antivenom response to commit to airway support if respiratory signs are progressing."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "boomslang",
@@ -137,10 +137,10 @@
             "label": "Pearls / Pitfalls",
             "html": "The core teaching point: an unimpressive bite plus a real snake (or a plausible history of handling one) is not a benign combination here — it's the expected presentation before the coagulopathy declares itself. Confirm which antivenom your facility actually stocks; assuming polyvalent covers this species is a documented, repeated real-world error given the two products are so easily confused."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "spitting-cobra",
@@ -182,10 +182,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Confirm which antivenom product your facility stocks actually covers the specific Naja species in your area — coverage varies by product and region (SAIMR Polyvalent vs. EchiTAb-Plus-ICP), unlike the more uniform coverage for puff adder."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "carpet-viper",
@@ -227,10 +227,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Antivenom raised against the Asian species Echis carinatus is NOT reliably effective against West African E. ocellatus — regional specificity matters here more than in most snakebite scenarios, and using the wrong product has been a documented real-world problem. Don't assume any \"Echis antivenom\" is interchangeable across regions."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "thick-tailed-scorpion",
@@ -272,10 +272,10 @@
             "label": "Pearls / Pitfalls",
             "html": "As with Centruroides in North America, pediatric patients are disproportionately represented among severe envenomations — maintain a lower threshold for concern and antivenom consideration in children compared with adults presenting with the same sting history."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "egyptian-cobra",
@@ -317,10 +317,10 @@
             "label": "Pearls / Pitfalls",
             "html": "This species spans a huge range across North and East Africa where antivenom supply chains genuinely differ by country — the product available in Egypt is not necessarily the same one stocked further south or east within this snake's range."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         }
       ],
       "nonCritical": {
@@ -380,10 +380,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Local tissue destruction can be severe enough on its own to threaten the limb even when systemic coagulopathy is well controlled — don't let a reassuring coagulation panel substitute for close wound surveillance. Confirm which regional antivenom product is stocked; this genus has real population-level venom variation across its range."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "bushmaster",
@@ -425,10 +425,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Bradycardia and hypotension in a pit-viper-pattern bite from Central/South American forest habitat should raise bushmaster on the differential specifically — these findings run counter to the tachycardia/hypotension-from-hemorrhage pattern more typical of straightforward Bothrops envenomation, and getting the species right changes which antivenom is needed."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "south-american-coral-snake",
@@ -470,10 +470,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Neither a benign-looking bite nor a slow initial course rules out a severe outcome with this genus — both the local exam and the early timeline can be falsely reassuring. This mirrors the North American coral snake and African black mamba pattern: elapid neurotoxicity often doesn't announce itself the way viper local tissue effects do."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "phoneutria",
@@ -515,10 +515,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Priapism is a genuinely distinctive finding for this species among all the arachnids on this site — worth specifically asking about or noting in a male patient with systemic signs after a bite in this region. Don't reach for antivenom on pain alone; it's reserved for the systemic minority."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "south-american-rattlesnake",
@@ -560,10 +560,10 @@
             "label": "Pearls / Pitfalls",
             "html": "The core teaching point mirrors this page's coral snake and boomslang entries: an unimpressive local bite does not mean a mild envenomation for this species — it's actually closer to the rule than the exception here, unlike Bothrops where local findings are the dominant early clue. Route and timing of antivenom administration have documented real-world consequences in pediatric case data — IV, and promptly."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         }
       ],
       "nonCritical": {
@@ -627,10 +627,10 @@
             "label": "Pearls / Pitfalls",
             "html": "\"Low severity\" describes the population, not the individual patient — a genuine subset of bites from any of these three species need real antivenom and monitoring, and V. ammodytes in particular should not be mentally filed alongside the milder V. berus. Older intramuscular antivenoms (Zagreb, Biomed, Bulbio) still in regional use have weaker outcome data than the newer IV Fab products — know which product your local supply chain actually carries."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         }
       ],
       "nonCritical": {
@@ -694,10 +694,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Vinegar is a decontamination step, not a treatment for pain or systemic symptoms already underway — don't let its application create false reassurance. Antivenom's real-world effectiveness for cardiac arrest is unresolved in the literature; giving it in that scenario is reasonable and recommended, but shouldn't replace aggressive standard resuscitation as the primary intervention."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "irukandji",
@@ -741,8 +741,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-09-08"
         },
         {
           "id": "stonefish",
@@ -784,10 +784,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Hot water, not vinegar — mixing up the marine decontamination protocols between fish-spine stings and jellyfish stings is a real and consequential error given how different the two mechanisms are. Always image or explore the wound for retained spine material before calling the local injury fully addressed."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "blue-ringed-octopus",
@@ -831,8 +831,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-09-08"
         },
         {
           "id": "cone-snail",
@@ -876,8 +876,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-09-08"
         },
         {
           "id": "sea-snake",
@@ -919,10 +919,10 @@
             "label": "Pearls / Pitfalls",
             "html": "A painless bite with minimal local findings is not reassuring for this group any more than it is for terrestrial elapids — the \"dry bite\" phenomenon is real and common, but it can't be assumed at first contact, so observation still matters. The myotoxic/rhabdomyolysis angle is worth specifically screening for here, since it's less emphasized in most terrestrial elapid teaching."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "portuguese-man-o-war",
@@ -966,8 +966,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-09-08"
         }
       ],
       "nonCritical": {
@@ -1031,10 +1031,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Echis antivenoms have documented narrow cross-reactivity — a product developed against one regional population (e.g., West African E. ocellatus, or Indian E. carinatus) is not reliably interchangeable with what's needed here, and mismatched antivenom has caused real treatment failures. Confirm the specific regional product your facility stocks. Serum sickness occurs in a notable share of antivenom-treated patients (reported as high as 44% in one series) — this is a real cost of treatment that factors into the symptom-triggered approach rather than treating everyone empirically."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "deathstalker-scorpion",
@@ -1076,10 +1076,10 @@
             "label": "Pearls / Pitfalls",
             "html": "The core danger here is age-dependent, not dose-dependent in the way many envenomations are — a sting that's \"just very painful\" in an adult can be genuinely life-threatening in a child from the same scorpion. Don't extrapolate reassurance from an adult presentation to a pediatric one. Confirm which regional antivenom product (if any) is actually accessible before it's needed — availability varies significantly by country."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "levant-viper",
@@ -1121,10 +1121,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Don't underestimate this species relative to the smaller, more frequently discussed saw-scaled viper on this page — Levant viper bites carry real severity from sheer venom volume alone, and antivenom sourcing needs to be confirmed for the specific country/region rather than assumed."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         }
       ],
       "nonCritical": {
@@ -1188,10 +1188,10 @@
             "label": "Pearls / Pitfalls",
             "html": "No prehospital intervention has ever been proven to change outcome — the job in the field is removing constricting items and getting the patient to antivenom, nothing else. Watch for alpha-gal (galactose-α-1,3-galactose) sensitization causing anaphylactoid reactions to CroFab, which is sheep-derived — regionally more relevant in the southeastern US where tick-associated alpha-gal allergy is common. Recurrent coagulopathy after apparent control is a real phenomenon, not a monitoring failure — this is why the discharge lab schedule exists."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "coral-snake",
@@ -1233,10 +1233,10 @@
             "label": "Pearls / Pitfalls",
             "html": "\"Red touch yellow, kill a fellow; red touch black, venom lack\" distinguishes coral snake from mimics like the scarlet kingsnake in the US — this rhyme does not reliably apply outside North America and should never be used to clear a bite in another region. Minimal local findings are not reassurance — they are the expected presentation. Antivenom scarcity is a real operational constraint here, not a hypothetical; know your hospital's and region's current supply before you need it."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "black-widow",
@@ -1278,10 +1278,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Consider latrodectism in unexplained abdominal rigidity without true peritoneal signs, especially with autonomic findings and a plausible exposure — garages, woodpiles, outdoor storage. The bite site will often not help you; the history and autonomic picture will. Antivenom underuse in US practice reflects genuine reluctance around the anaphylaxis rate, not a lack of efficacy — know the skin-test protocol before you need it."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "bark-scorpion",
@@ -1323,10 +1323,10 @@
             "label": "Pearls / Pitfalls",
             "html": "The \"tap test\" — light tapping over the sting site reproducing severe pain with no visible lesion — is a useful bedside clue that distinguishes this from other bites/stings. There's active debate over whether the fixed 3-vial initial dose is necessary versus a 1-vial-then-reassess strategy for Grade III–IV envenomation; this is evolving practice, not settled. Pediatric patients remain the population most likely to progress to severe neurotoxicity."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "mojave-rattlesnake",
@@ -1368,10 +1368,10 @@
             "label": "Pearls / Pitfalls",
             "html": "This is the one North American pit viper where \"mild local swelling\" is not reassuring on its own — a Type A envenomation can be doing its real damage neurologically while the bite site looks unremarkable. Don't apply the general crotalid teaching point (local findings track severity) uncritically to a confirmed or suspected Mojave rattlesnake bite."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         }
       ],
       "nonCritical": {
@@ -1447,10 +1447,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Don't confuse \"most toxic venom in the world\" (inland taipan, by lab measures) with \"most clinically important\" — coastal taipan and eastern brown snake account for the overwhelming majority of actual severe Australian envenomations because they're the ones people encounter. Taipan and brown snake antivenoms are species-specific with little cross-protection — the right monovalent product matters."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "eastern-brown-snake",
@@ -1492,10 +1492,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Don't be reassured by an early, otherwise well-appearing patient — the sudden collapse phenomenon means brown snake envenoming can announce itself with cardiac arrest before any bleeding sign has developed. This is the Australian species where \"looks fine right now\" carries the least reassurance."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "tiger-snake",
@@ -1537,10 +1537,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Don't treat a period of apparent stability after the bite as reassurance — post-bite collapse is a recognized and sometimes under-appreciated feature. The structural (not receptor-blocking) nature of notexin's neurotoxicity is the key mechanistic reason neostigmine underperforms here relative to death adder, where postsynaptic blockade is more prominent."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "death-adder",
@@ -1582,10 +1582,10 @@
             "label": "Pearls / Pitfalls",
             "html": "The single most important teaching point for this species: normal clotting studies do not rule out significant death adder envenoming, unlike every other major Australian elapid on this page. Base the treatment decision on the clinical neurologic exam, not the coagulation panel."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "funnel-web-spider",
@@ -1627,10 +1627,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Any large black spider bite in NSW or southern Queensland should be treated as a possible funnel-web until proven otherwise, given how much this changes the first-aid approach (PBI, unlike almost every other spider bite). Absent local swelling with severe local pain is a notable feature — don't expect visible inflammation to match the severity of the pain."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "king-cobra",
@@ -1672,10 +1672,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Local necrosis can be significant enough to require surgical debridement or amputation — this isn't a purely neurotoxic bite the way krait is; treat the wound as seriously as the airway. Given how rare confirmed bites are worldwide, involving a toxinologist or exotic-animal-experienced poison center early is genuinely valuable rather than optional."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "malayan-pit-viper",
@@ -1717,10 +1717,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Volume matters here more than exotic severity — this is the single largest contributor to Thailand's snakebite burden, so competence with this species specifically has outsized practical value in the region compared with rarer but more dramatic entries elsewhere on this page."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         }
       ],
       "nonCritical": {
@@ -1784,10 +1784,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Don't assume \"polyvalent antivenom\" means uniform coverage across the region — a Sri Lankan, Pakistani, or Bangladeshi patient may respond less predictably to an Indian-manufactured product raised against South Indian venom than the label alone would suggest. Renal injury can evolve on its own trajectory separate from the coagulopathy — track it independently, not just as a coagulopathy complication."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "common-krait",
@@ -1829,10 +1829,10 @@
             "label": "Pearls / Pitfalls",
             "html": "The painless, sign-free bite is the whole danger here — treat any unexplained overnight paralysis in an endemic area as a krait bite until proven otherwise, particularly if the patient was sleeping at floor level. Don't wait on neostigmine response before securing the airway."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "indian-cobra",
@@ -1874,10 +1874,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Local necrosis and tissue findings are the key bedside clue distinguishing this from a krait bite when the snake is unidentified — a painful, swollen bite with neurologic signs points here; a painless, sign-free bite with new paralysis points to krait."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "south-asia-saw-scaled-viper",
@@ -1919,10 +1919,10 @@
             "label": "Pearls / Pitfalls",
             "html": "Don't confuse regional Echis populations — a product effective against South Asian E. carinatus is not automatically interchangeable with antivenom for African or Middle Eastern Echis species (see the Africa and Middle East pages); the reverse also holds. This is one of the more consistent narrow-cross-reactivity teaching points across the whole Echis genus."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "hump-nosed-pit-viper",
@@ -1964,10 +1964,10 @@
             "label": "Pearls / Pitfalls",
             "html": "This is arguably the single most important teaching point on this entire regional page: \"give the polyvalent antivenom\" is NOT the answer for this species, unlike every other South Asian viper covered here. A snake this genuinely common causing real mortality with no working antivenom is a distinct clinical reality from the Big Four framework — don't let the \"Big Four\" label create a false sense that it covers the region's full risk."
           },
-          "reviewTier": 2,
-          "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "reviewTier": 1,
+          "reviewTierIsDefault": false,
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-03-08"
         },
         {
           "id": "indian-red-scorpion",
@@ -2011,8 +2011,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-07",
-          "reviewDue": "2027-09-07"
+          "lastVerified": "2026-09-08",
+          "reviewDue": "2027-09-08"
         }
       ],
       "nonCritical": {
