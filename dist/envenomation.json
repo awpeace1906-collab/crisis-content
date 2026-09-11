@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T17:00:15.102Z",
+  "generatedAt": "2026-09-11T17:01:11.125Z",
   "regions": [
     {
       "id": "africa",
@@ -49,8 +49,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "black-mamba",
@@ -94,8 +94,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "boomslang",
@@ -139,8 +139,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "spitting-cobra",
@@ -184,8 +184,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "carpet-viper",
@@ -229,8 +229,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "thick-tailed-scorpion",
@@ -274,8 +274,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "egyptian-cobra",
@@ -319,8 +319,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         }
       ],
       "nonCritical": {
@@ -382,8 +382,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "bushmaster",
@@ -427,8 +427,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "south-american-coral-snake",
@@ -472,8 +472,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "phoneutria",
@@ -517,8 +517,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "south-american-rattlesnake",
@@ -562,8 +562,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         }
       ],
       "nonCritical": {
@@ -629,8 +629,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         }
       ],
       "nonCritical": {
@@ -696,8 +696,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "irukandji",
@@ -741,8 +741,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-09-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-09-11"
         },
         {
           "id": "stonefish",
@@ -786,8 +786,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "blue-ringed-octopus",
@@ -831,8 +831,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-09-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-09-11"
         },
         {
           "id": "cone-snail",
@@ -876,8 +876,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-09-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-09-11"
         },
         {
           "id": "sea-snake",
@@ -921,8 +921,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "portuguese-man-o-war",
@@ -966,8 +966,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-09-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-09-11"
         }
       ],
       "nonCritical": {
@@ -1033,8 +1033,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "deathstalker-scorpion",
@@ -1078,8 +1078,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "levant-viper",
@@ -1123,8 +1123,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         }
       ],
       "nonCritical": {
@@ -1190,8 +1190,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "coral-snake",
@@ -1235,8 +1235,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "black-widow",
@@ -1280,8 +1280,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "bark-scorpion",
@@ -1325,8 +1325,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "mojave-rattlesnake",
@@ -1370,8 +1370,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         }
       ],
       "nonCritical": {
@@ -1449,8 +1449,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "eastern-brown-snake",
@@ -1494,8 +1494,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "tiger-snake",
@@ -1539,8 +1539,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "death-adder",
@@ -1584,8 +1584,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "funnel-web-spider",
@@ -1629,8 +1629,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "king-cobra",
@@ -1674,8 +1674,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "malayan-pit-viper",
@@ -1719,8 +1719,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         }
       ],
       "nonCritical": {
@@ -1786,8 +1786,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "common-krait",
@@ -1831,8 +1831,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "indian-cobra",
@@ -1876,8 +1876,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "south-asia-saw-scaled-viper",
@@ -1921,8 +1921,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "hump-nosed-pit-viper",
@@ -1966,8 +1966,8 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-03-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-03-11"
         },
         {
           "id": "indian-red-scorpion",
@@ -2011,8 +2011,8 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-09-10",
-          "reviewDue": "2027-09-10"
+          "lastVerified": "2026-09-11",
+          "reviewDue": "2027-09-11"
         }
       ],
       "nonCritical": {
