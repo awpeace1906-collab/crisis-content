@@ -100,6 +100,27 @@ function parseSteps($, $box) {
   return { type: 'steps', steps };
 }
 
+/**
+ * A figure is an inline <svg> plus an optional <figcaption>. The `id` is
+ * derived from the figure's own id attribute when present, else from the
+ * aria-label — it's what the rasterizer names the PNG, so it must be stable
+ * across builds.
+ */
+function parseFigure($, $fig) {
+  const $svg = $fig.find('svg').first();
+  const alt = $svg.attr('aria-label') || '';
+  const id = $fig.attr('id') || slugify(alt.split(/[:.]/)[0] || 'figure').slice(0, 60);
+  return {
+    type: 'figure',
+    // Deliberately NOT `id`: ContentBlock on iOS already has a computed
+    // `id` for Identifiable, and a stored `id` would collide with it.
+    figureId: id,
+    svg: $.html($svg) ?? '',
+    alt,
+    caption: htmlOf($, $fig.find('figcaption').first()),
+  };
+}
+
 function parseSources($, $ul) {
   const items = [];
   $ul.find('li').each((_, li) => {
@@ -147,6 +168,13 @@ function parseSection($, $secHead) {
       });
     } else if ($node.is('table.rt')) {
       section.blocks.push(parseTable($, $node));
+    } else if ($node.is('figure.fig')) {
+      // Inline SVG diagrams (2026-09-16). The SVG is authored inline in the
+      // source HTML and carried through to the JSON verbatim so the web app
+      // can render it as vector at any size, fully offline. `assets` is a
+      // build-time rasterization of the same SVG for iOS, which has no
+      // native SVG rendering — see scripts/rasterize-figures.mjs.
+      section.blocks.push(parseFigure($, $node));
     } else if ($node.hasClass('xref')) {
       section.blocks.push({ type: 'xref', html: htmlOf($, $node) });
     } else if ($node.hasClass('sources')) {
