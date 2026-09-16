@@ -111,11 +111,17 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 <nav class="quicknav">
   <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
-    <a class="qn pinned" href="#technique">&#9889; TECHNIQUE</a>
+    <a class="qn pinned" href="#tvp-float">&#9889; FLOAT THE WIRE</a>
     <a class="qn" href="#indications">Indications</a>
     <a class="qn" href="#contraindications">Contraindications</a>
     <a class="qn" href="#equipment">Equipment</a>
-    <a class="qn" href="#complications">Complications &amp; Pitfalls</a>
+    <a class="qn" href="#tcp">Transcutaneous</a>
+    <a class="qn" href="#capture">Confirming Capture</a>
+    <a class="qn" href="#tvp-setup">TVP Assembly</a>
+    <a class="qn" href="#tvp-float">Floating the Wire</a>
+    <a class="qn" href="#troubleshooting">Troubleshooting</a>
+    <a class="qn" href="#complications">Complications</a>
+    <a class="qn" href="#post">After</a>
     <a class="qn" href="#pearls">Pearls</a>
     <a class="qn" href="#refs">References</a>
   </div>
@@ -129,75 +135,163 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
       <li>Symptomatic bradycardia unresponsive to atropine and/or refractory to initial pharmacologic management</li>
       <li>High-grade AV block (Mobitz II, third-degree) with hemodynamic instability</li>
       <li>Bradycardic peri-arrest rhythms where pacing is part of the resuscitation algorithm</li>
-      <li>Transvenous pacing specifically indicated when transcutaneous pacing fails to capture, is not tolerated, or a more durable/reliable pacing solution is needed pending definitive management</li>
+      <li>Bradycardia-dependent ventricular arrhythmias (pause-dependent torsades) &mdash; overdrive pacing suppresses the pauses that trigger it</li>
+      <li>Transvenous pacing specifically when transcutaneous pacing fails to capture, is not tolerated despite sedation, or the bradycardia will clearly outlast what pads can reasonably bridge</li>
 </ul>
 </div>
+<div class="xref"><b>Pick the modality by time course, not by severity.</b> Transcutaneous is fast, non-invasive, and buys minutes to an hour or two. Transvenous is slower to place but is what you want the moment you believe the problem will still be there in several hours &mdash; complete heart block that isn't reversing, a beta-blocker/CCB overdose that hasn't peaked yet, an infiltrative or ischemic conduction system. Start pads while someone opens the transvenous kit; these are sequential, not alternative.</div>
+
 <div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Severe hypothermia with bradycardia (pacing is generally ineffective and not recommended until rewarming, per most protocols &mdash; the heart is often refractory to pacing at low core temperatures)</li>
-      <li>Transvenous pacing: coagulopathy or inability to obtain safe central venous access (relative, weighed against the urgency of the indication)</li>
+      <li><b>Severe hypothermia with bradycardia</b> &mdash; the cold myocardium is often refractory to pacing, and instrumentation of an irritable hypothermic ventricle can precipitate VF that is itself refractory until rewarming. Bradycardia is an appropriate physiologic response at low core temperatures; treat the temperature.</li>
+      <li><b>Transvenous:</b> coagulopathy, or inability to obtain safe central venous access (relative &mdash; weighed against the urgency of the indication; a subclavian stick in a coagulopathic patient is a non-compressible site, so favor IJ or femoral if you must proceed)</li>
+      <li><b>Transcutaneous:</b> no absolute contraindication in an unstable patient. Avoid placing a pad directly over an implanted device generator (keep &ge;8&nbsp;cm away) or over a transdermal medication patch &mdash; remove the patch and wipe the skin first.</li>
 </ul>
 </div>
-<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment</h2></div>
+<div class="alert amber"><div class="alert-t">Don't pace a bradycardia the patient needs</div><p>Sinus bradycardia with a normal blood pressure and mentation in a fit patient, an athlete at rest, or a patient on a rate-controlling drug at steady state does not need pacing. The indication is <i>symptomatic</i> or <i>peri-arrest</i> bradycardia &mdash; hypotension, altered mentation, ischemic chest pain, or acute heart failure attributable to the rate. Rate alone is not the indication.</p></div>
+
+<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment &mdash; What's Actually in the Room</h2></div>
 <div class="box t-blue">
 <p><b>Transcutaneous pacing</b></p>
 <ul>
-      <li>Cardiac monitor/defibrillator with pacing capability</li>
-      <li>Pacing pads (anterior-posterior placement preferred)</li>
-      <li>Sedation/analgesia for a conscious patient &mdash; transcutaneous pacing is uncomfortable</li>
+      <li>Monitor/defibrillator with pacing capability &mdash; know which button on <i>your</i> device enters pacing mode; this differs between Zoll, Philips, and LIFEPAK units and is not the time to learn it</li>
+      <li>Multifunction pacing/defibrillation pads (the same pads defibrillate &mdash; you do not need to change them if the patient deteriorates)</li>
+      <li>Razor and a towel &mdash; hair and diaphoresis are the two most common reasons pads won't capture</li>
+      <li>Sedation/analgesia drawn up <i>before</i> you start pacing, not after</li>
 </ul>
 </div>
 <div class="box t-blue">
-<p><b>Transvenous pacing</b></p>
+<p><b>Transvenous pacing &mdash; the full inventory</b></p>
 <ul>
-      <li>Central venous access kit (internal jugular or subclavian preferred for lead stability)</li>
-      <li>Transvenous pacing wire/catheter</li>
-      <li>External pacing generator</li>
-      <li>Fluoroscopy or ECG-guided placement confirmation if available</li>
+      <li><b>Introducer sheath with hemostatic valve and side port</b> &mdash; sized to accept the wire (a 5&nbsp;Fr wire needs at minimum a 6&nbsp;Fr sheath). A standard triple-lumen central line will <i>not</i> accept a pacing wire.</li>
+      <li><b>Balloon-tipped bipolar pacing wire</b> &mdash; typically 5&nbsp;Fr, ~100&nbsp;cm, marked in 10&nbsp;cm increments. Two electrodes: the <b>distal tip</b> and a <b>proximal ring</b> a short distance behind it.</li>
+      <li><b>The sterile protective sleeve</b> &mdash; the concertina-style plastic sheath that lets you advance or withdraw the wire later without contaminating it. See the alert below.</li>
+      <li><b>External pulse generator</b> + <b>a battery you have personally verified</b>. Most units take a 9V; a dead generator discovered at the bedside is a recurring and entirely preventable disaster.</li>
+      <li><b>Connector cable</b> with clearly marked positive and negative terminals</li>
+      <li><b>Alligator clip / V-lead adapter</b> for ECG-guided placement</li>
+      <li><b>Small syringe</b> (usually 1.5&ndash;3&nbsp;mL) for balloon inflation &mdash; inflate with <b>air</b>, never fluid, and never beyond the volume printed on the wire</li>
+      <li>Full sterile barrier, ultrasound with sterile sheath, sterile saline</li>
+      <li>12-lead ECG machine or a monitor that can display and print a V lead</li>
+      <li><b>Transcutaneous pads already on the patient</b> &mdash; your backup runs the entire time you are floating the wire</li>
 </ul>
 </div>
-<div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Stepwise Technique</h2></div>
-<div class="tagline">Transcutaneous pacing</div>
+<div class="alert red"><div class="alert-t">Load the sterile sleeve onto the wire before it ever enters the patient</div><p>The protective sleeve only slides on from the proximal end. Once the wire is in the vein, it is too late &mdash; you now have a wire you cannot reposition without breaking sterility, and lead dislodgement is the single most common late failure of transvenous pacing. This is the classic, universally-taught error, and it is made by experienced operators in a hurry. Sleeve first.</p></div>
+
+<div class="sec-head c-red" id="tcp"><span class="sec-num">04</span><h2>Transcutaneous Pacing &mdash; Setup &amp; Technique</h2></div>
+<div class="tagline">Pad placement determines whether this works at all</div>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-desc">Apply pacing pads in the anterior-posterior position for optimal capture.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-desc">Set the pacer to demand mode (synchronized to the patient's intrinsic rhythm) unless asystole, in which case use fixed/asynchronous mode.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-desc">Set the initial rate (typically 60-80 bpm as a starting target).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-desc">Increase output (mA) gradually from a low starting point until electrical capture is confirmed &mdash; a paced QRS complex following each pacing spike, correlating with a palpable pulse.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-desc">Set the final output slightly above the capture threshold for a safety margin.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-desc">Provide sedation/analgesia promptly, as transcutaneous pacing causes significant discomfort in an awake patient.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-desc">Confirm mechanical capture (palpable pulse corresponding to the paced rate), not just electrical capture on the monitor.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Prepare the skin</div><div class="step-desc">Clip (don't shave raw) dense chest hair, wipe the skin dry, and remove any transdermal patches. Diaphoresis and hair are the two most common causes of a pad that will not capture, and both are trivially fixable in ten seconds &mdash; before you conclude the myocardium is refractory.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Place pads anterior-posterior</div><div class="step-desc">Anterior pad over the left precordium (roughly V2&ndash;V3 position, just left of the sternum); posterior pad on the left infrascapular back, lateral to the spine. This sandwiches the ventricle in the current path. Avoid bone &mdash; sternum and spine both shunt current. Anterolateral placement also works and is acceptable if the patient cannot be turned, but A-P generally captures at lower output.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Set mode and rate</div><div class="step-desc">Demand (synchronous) mode for any patient with an intrinsic rhythm &mdash; it paces only when the patient doesn't. Use fixed/asynchronous mode only for asystole or when artifact is causing the pacer to oversense and inhibit itself. Set rate 60&ndash;80/min for most adults; higher (90&ndash;100) if you are overdrive-pacing pause-dependent torsades.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Find capture &mdash; choose your direction deliberately</div><div class="step-desc">Two accepted approaches. <b>Ramp up</b> from the lowest output and climb until capture appears: better tolerated in a conscious, marginally stable patient. <b>Start at maximum</b> and dial down until you lose capture, then set above that: faster, and the right choice in a peri-arrest patient where you cannot afford to spend thirty seconds hunting. Typical capture thresholds are wide &mdash; commonly around 40&ndash;90&nbsp;mA &mdash; and depend heavily on body habitus, pad contact, and effusion.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Set a safety margin</div><div class="step-desc">Once you identify the capture threshold, run the output roughly 10&nbsp;mA above it. Thresholds drift with position, sweat, and pad gel drying out; running at exactly threshold means intermittent loss of capture you may not notice immediately.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">Sedate &mdash; and understand what hurts</div><div class="step-desc">The pain is skeletal muscle contraction of the chest wall, not the heart. It is genuinely severe and patients describe it as the worst part of their resuscitation. Analgesia plus anxiolysis, titrated carefully &mdash; you are sedating a patient whose blood pressure depends on the thing causing the pain, so small doses, frequent reassessment, and a vasopressor within reach.</div></div></div>
 </div>
-<div class="tagline">Transvenous pacing</div>
+
+<div class="sec-head c-amber" id="capture"><span class="sec-num">05</span><h2>Confirming Capture &mdash; And Why False Capture Fools People</h2></div>
+<div class="tagline">This is the highest-yield teaching point in the whole procedure</div>
+<div class="box t-amber">
+<p><b>Electrical capture</b> means each pacing spike is followed by a genuine, wide paced QRS with a <i>concordant T wave</i> (the T wave should deflect opposite the QRS). <b>Mechanical capture</b> means that complex generated an actual contraction.</p>
+<p><b>False capture</b> is the trap: every pacing spike is followed by a wide squiggle on the monitor that looks exactly like a paced complex but is chest-wall muscle artifact, and the pacer is doing nothing to the heart. Operators declare success, stop escalating, and the patient stays in a perfusionless bradycardia with a monitor that looks reassuring. This is common enough that you should assume it until disproven.</p>
+</div>
+<div class="box t-teal">
+<p><b>How to actually prove capture, in order of reliability:</b></p>
+<ul>
+      <li><b>Femoral or right-sided pulse</b> &mdash; palpate somewhere the pectoral muscle twitch isn't shaking the limb you're feeling. A left radial pulse during left-sided pacing is exactly where artifact fools you.</li>
+      <li><b>Bedside echo</b> &mdash; look directly at the ventricle and watch it contract, one-for-one with the spikes. This is the definitive answer and takes seconds.</li>
+      <li><b>Arterial line waveform or a plethysmograph/SpO<sub>2</sub> tracing</b> &mdash; a mechanical pulse wave at exactly the paced rate is hard to fake.</li>
+      <li><b>End-tidal CO<sub>2</sub> rising</b> in an arrest context &mdash; indirect but real evidence you restored circulation.</li>
+</ul>
+</div>
+<div class="alert red"><div class="alert-t">Pacing spikes with no pulse is still PEA</div><p>If you have convincing electrical capture and no mechanical capture, the problem is no longer the conduction system &mdash; it is pump, volume, or obstruction. Pacing faster will not fix tamponade, a massive PE, profound hyperkalemia, or an empty ventricle. Go back to the arrest algorithm and the reversible causes.</p></div>
+
+<div class="sec-head c-blue" id="tvp-setup"><span class="sec-num">06</span><h2>Transvenous Pacing &mdash; Assembly &amp; Connections Before You Start</h2></div>
+<div class="tagline">Everything here happens on the sterile field before the wire enters the patient</div>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-desc">Obtain central venous access, typically right internal jugular or left subclavian for the most direct path to the right ventricle.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">9</div><div class="step-body"><div class="step-desc">Advance the pacing wire through the introducer sheath toward the right ventricle, using ECG guidance (injury pattern on the pacing wire's intracardiac ECG) or fluoroscopy if available.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">10</div><div class="step-body"><div class="step-desc">Connect the wire to the external pacing generator once positioned.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">11</div><div class="step-body"><div class="step-desc">Set output and sensitivity, confirm capture (paced rhythm on the monitor with correlating pulse).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">12</div><div class="step-body"><div class="step-desc">Secure the wire and generator, obtain a confirmatory chest radiograph for lead position.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">1</div><div class="step-body"><div class="step-title">Test the balloon, then fully deflate it</div><div class="step-desc">Inflate to the labeled volume with air and look for symmetric inflation and no leak &mdash; some operators submerge it in sterile saline to check for bubbles. Then deflate completely and leave the syringe attached. A balloon you discover is ruptured <i>after</i> the wire is in the SVC costs you the entire insertion.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">2</div><div class="step-body"><div class="step-title">Load the sterile sleeve onto the wire</div><div class="step-desc">Slide it on from the proximal end and push it back out of your way toward the connector end. It gets extended and locked onto the sheath hub at the end of the procedure. This step cannot be done later.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">3</div><div class="step-body"><div class="step-title">Know your polarity: distal tip = negative</div><div class="step-desc">The <b>distal tip electrode is the cathode (negative)</b>; the proximal ring is the anode (positive). Every connection downstream depends on this &mdash; the ECG clip, and later the generator cable. Identify which pin on your wire's connector corresponds to the distal tip <i>now</i>, on the field, with the packaging still in front of you.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Clip the V lead to the distal electrode</div><div class="step-desc">Attach an alligator clip from the <b>distal/negative</b> pin to the <b>V1 lead</b> of the ECG machine. The wire's tip now functions as a roving intracardiac electrode, and V1 on your ECG becomes a live readout of where the tip is. <b>Only the distal tip completes this circuit usefully</b> &mdash; clip the proximal ring by mistake and you will not get a clean injury pattern, and you will float the wire blind while believing you have guidance.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Power up and pre-set the generator &mdash; but don't connect it yet</div><div class="step-desc">Confirm the battery, set rate 70&ndash;80/min, output toward maximum (commonly ~10&ndash;20&nbsp;mA to start), sensitivity to asynchronous/fixed for the float. Leave it off or disconnected. <b>You connect the generator after you have your target position</b> &mdash; ECG guidance and pacing output on the same wire at the same time interfere with each other.</div></div></div>
 </div>
-<div class="alert red"><div class="alert-t">Electrical capture is not mechanical capture</div><p>Always confirm a palpable pulse correlating with the paced rhythm before considering the patient stabilized &mdash; pacing spikes on the monitor without a pulse behind them is still pulseless electrical activity.</p></div>
-<div class="sec-head c-red" id="complications"><span class="sec-num">05</span><h2>Complications &amp; Pitfalls</h2></div>
+<div class="xref"><b>Alternative: float it paced.</b> If you have no usable ECG guidance, you can connect the generator up front at high output and asynchronous mode, and advance until paced capture suddenly appears on the monitor &mdash; capture <i>is</i> your position confirmation. It is a legitimate and sometimes faster approach in a crashing patient. It costs you the granular feedback of the injury pattern, so you learn position only at the moment you succeed.</div>
+
+<div class="sec-head c-red" id="tvp-float"><span class="sec-num">07</span><h2>Transvenous Pacing &mdash; Floating the Wire</h2></div>
+<div class="tagline">Right IJ and left subclavian give the gentlest curve into the RV</div>
+<div class="box" style="padding:4px 18px;">
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">1</div><div class="step-body"><div class="step-title">Place the introducer sheath</div><div class="step-desc">Right internal jugular is the most direct, straightest path to the right ventricle and is the preferred site when you have a choice; left subclavian is the next most forgiving curve. Femoral works but usually requires fluoroscopy. Ultrasound-guided, full barrier, and confirm venous placement before dilating.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">2</div><div class="step-body"><div class="step-title">Insert the wire to roughly 15&ndash;20 cm, balloon down</div><div class="step-desc">Advance the deflated wire through the hemostatic valve until the tip is safely past the sheath tip and sitting in the vein &mdash; about 15&ndash;20&nbsp;cm from a neck site. Use the wire's depth markings.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">3</div><div class="step-body"><div class="step-title">Now inflate the balloon</div><div class="step-desc"><b>Never inflate inside the sheath</b> &mdash; you will rupture the balloon against the introducer, and you will not know until the wire refuses to float. Once past the sheath tip, inflate to the labeled volume and lock the stopcock if your wire has one. The inflated balloon is what lets venous flow carry the tip in the right direction.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Advance and read the V1 waveform as a map</div><div class="step-desc">Advance in smooth, unhurried increments and watch V1. <b>SVC:</b> large negative P wave, small QRS. <b>Right atrium:</b> P wave becomes very large, often biphasic &mdash; the P is bigger than the QRS. <b>Crossing the tricuspid into the RV:</b> the P wave abruptly shrinks and the <b>QRS becomes large</b>. <b>Tip against RV endocardium:</b> <b>ST-segment elevation &mdash; the current of injury.</b> That is your endpoint. It means the electrode is in contact with ventricular wall, which is exactly what you need for capture.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">5</div><div class="step-body"><div class="step-title">Recognize the depth you should be at</div><div class="step-desc">From a right IJ, the RV is typically reached around 30&ndash;35&nbsp;cm; from a left subclavian, a few centimeters more. Treat these as a sanity check, not a target &mdash; <b>the waveform and capture tell you where you are; the centimeter markings only tell you when something is wrong.</b> If you are at 45&ndash;50&nbsp;cm with no ventricular signal, you are coiling in the atrium or have gone down the IVC. Withdraw and start again rather than pushing.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">6</div><div class="step-body"><div class="step-title">Deflate the balloon, then connect the generator</div><div class="step-desc">Deflate once you have the injury pattern. Connect the cable with <b>distal/tip to negative, proximal ring to positive</b>. Turn the generator on and confirm capture.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">7</div><div class="step-body"><div class="step-title">Find the true capture threshold</div><div class="step-desc">With capture established, <i>reduce</i> output until capture is lost &mdash; that value is the threshold. A well-positioned wire captures at a low threshold, commonly under 1&nbsp;mA; a threshold above ~2&nbsp;mA suggests the tip is not well apposed and you should consider repositioning now rather than at 3&nbsp;a.m. Then set the running output at roughly 2&ndash;3&times; threshold.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">8</div><div class="step-body"><div class="step-title">Set sensitivity and switch to demand</div><div class="step-desc">Move off asynchronous to demand mode for any patient with an underlying rhythm. Remember the counterintuitive direction: on most generators a <i>lower</i> mV number means <i>more</i> sensitive. Undersensing (spikes landing on intrinsic beats, with R-on-T risk) means you should lower the number; oversensing (inappropriate inhibition and pauses) means raise it.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">9</div><div class="step-body"><div class="step-title">Lock the sleeve, secure, and confirm with imaging</div><div class="step-desc">Extend the sterile sleeve and lock it to the sheath hub, suture/secure the sheath, and tape the generator to the patient &mdash; not to the bed, where a transfer will avulse the wire. Obtain a chest radiograph to confirm the tip sits at the RV apex and to look for a pneumothorax from the access itself.</div></div></div>
+</div>
+<div class="alert amber"><div class="alert-t">Balloon up going in, balloon down coming out &mdash; always</div><p>Advance only with the balloon inflated; withdraw only with it deflated. Dragging an inflated balloon backward across the tricuspid apparatus can entangle or damage chordae and valve leaflets. If you need to pull back even a centimeter, deflate first, every single time.</p></div>
+
+<div class="sec-head c-purple" id="troubleshooting"><span class="sec-num">08</span><h2>Troubleshooting &amp; Failure Modes</h2></div>
+<table class="rt">
+  <tr><th>What you see</th><th>What it usually means</th><th>What to do</th></tr>
+  <tr><td>Spikes, no capture (transcutaneous)</td><td>Pad contact, hair, sweat, or output below threshold</td><td>Dry and clip the skin, re-seat pads in true A-P, escalate output to maximum before concluding failure</td></tr>
+  <tr><td>Spikes, no capture (transvenous)</td><td>Loose connection far more often than true dislodgement</td><td><b>Check the cable and terminals first</b>, then increase output, then reposition. Verify polarity wasn't reversed</td></tr>
+  <tr><td>Capture lost after being stable</td><td>Lead dislodgement, or perforation</td><td>Re-check connections, increase output, reposition. New hypotension + loss of capture = suspect perforation/tamponade and get an echo</td></tr>
+  <tr><td>Wide complexes after every spike but no pulse</td><td>False capture (artifact) or genuine PEA</td><td>Confirm with echo or femoral pulse. If truly electrical-only, treat as PEA and work reversible causes</td></tr>
+  <tr><td>Ventricular ectopy, VT, or VF while floating</td><td>The wire is mechanically irritating the RV &mdash; expected, usually transient</td><td>Stop advancing. Deflate and withdraw slightly; ectopy typically resolves. Defibrillator must already be attached before you start</td></tr>
+  <tr><td>SVT during the float</td><td>Atrial irritation from the catheter</td><td>Withdraw slightly; usually self-terminates. Treat per rhythm if sustained and unstable</td></tr>
+  <tr><td>Asystole / loss of underlying rhythm mid-procedure</td><td>The escape rhythm you were relying on has failed</td><td><b>Go straight to transcutaneous pacing and CPR.</b> Do not keep manipulating the wire in an arrested patient &mdash; that's why the pads stayed on</td></tr>
+  <tr><td>Hiccups or rhythmic abdominal/chest wall twitching</td><td>Diaphragmatic or phrenic pacing &mdash; tip may be at a thin RV wall or through it</td><td>Reduce output and reposition. Consider perforation, especially with any hemodynamic change</td></tr>
+  <tr><td>Pauses / intermittent failure to pace</td><td>Oversensing &mdash; generator inhibiting on artifact or T waves</td><td>Make it less sensitive (raise the mV), or go asynchronous if the patient is dependent</td></tr>
+  <tr><td>Spikes landing on intrinsic beats</td><td>Undersensing</td><td>Make it more sensitive (lower the mV). Real R-on-T risk &mdash; fix promptly</td></tr>
+  <tr><td>Wire won't advance past ~20 cm / coils</td><td>Balloon not inflated, or going down the IVC / into a tributary</td><td>Confirm balloon is up and past the sheath. Withdraw to the SVC and re-float rather than forcing</td></tr>
+</table>
+
+<div class="sec-head c-red" id="complications"><span class="sec-num">09</span><h2>Complications &amp; Pitfalls</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Failure to capture &mdash; reassess pad placement/wire position and increase output as needed</li>
-      <li>Electrical capture without mechanical capture (pulseless electrical activity despite pacing spikes) &mdash; always confirm a palpable pulse, not just the monitor tracing</li>
-      <li>Significant discomfort with transcutaneous pacing if sedation is inadequate</li>
-      <li>Lead perforation, arrhythmia, or cardiac tamponade with transvenous wire placement</li>
-      <li>Lead dislodgement with patient movement if not adequately secured</li>
+      <li><b>RV perforation and tamponade</b> &mdash; the most feared complication. Presents as loss of capture with new hypotension, sometimes with diaphragmatic pacing beforehand. Echo immediately; be prepared for pericardiocentesis.</li>
+      <li><b>Induced ventricular arrhythmia during floating</b> &mdash; common, usually transient, occasionally VF. Non-negotiable reason to have pads and a defibrillator on before starting.</li>
+      <li><b>Lead dislodgement</b> &mdash; the most common late failure, and the reason the sterile sleeve and proper securing matter more than they feel like they do at the time.</li>
+      <li><b>Access complications</b> &mdash; pneumothorax, arterial puncture, and in a coagulopathic patient a non-compressible subclavian hematoma.</li>
+      <li><b>Infection</b> &mdash; rises sharply with dwell time; these are a bridge to a permanent device or to recovery, not a destination.</li>
+      <li><b>Knotting or entanglement in the tricuspid apparatus</b> &mdash; almost always from withdrawing with the balloon inflated, or from repeatedly forcing a wire that won't float.</li>
+      <li><b>Inadequate sedation during transcutaneous pacing</b> &mdash; a genuine harm, not a comfort nicety; patients who have had it describe it as the defining trauma of the resuscitation.</li>
+      <li><b>Declaring success on false capture</b> &mdash; the failure mode most likely to kill the patient quietly while the monitor looks fine.</li>
 </ul>
 </div>
-<div class="sec-head c-purple" id="pearls"><span class="sec-num">06</span><h2>Pearls</h2></div>
-<div class="box t-purple">
-<p>Electrical capture on the monitor is not the same as effective pacing &mdash; always confirm a palpable pulse correlating with the paced rhythm before considering the patient stabilized.</p>
-<p>Transcutaneous pacing is a bridge while transvenous access is arranged in most non-transient cases &mdash; don't treat it as a definitive solution if the bradycardia is expected to persist.</p>
-<p>Sedate early for transcutaneous pacing in an awake patient; this is one of the more uncomfortable interventions in the resuscitation toolkit.</p>
+
+<div class="sec-head c-teal" id="post"><span class="sec-num">10</span><h2>After the Wire Is In</h2></div>
+<div class="box t-teal">
+<ul>
+      <li><b>Document the threshold</b> you measured, the output you set, the mode, the rate, and the insertion depth at the hub. The next clinician troubleshooting a loss of capture needs to know whether 22&nbsp;cm at the hub is where it started.</li>
+      <li><b>Recheck the threshold periodically</b> &mdash; thresholds rise over the first days as local inflammation develops around the tip. A wire that captured at 0.8&nbsp;mA on day one may need more by day two.</li>
+      <li><b>Keep the transcutaneous pads on the patient</b> while the patient is pacer-dependent, particularly through any transfer, turn, or imaging trip &mdash; those are exactly when wires dislodge.</li>
+      <li><b>Every transport is a dislodgement risk.</b> Secure the generator to the patient, and have someone whose specific job is the wire during any move.</li>
+      <li><b>Arrange the definitive plan early</b> &mdash; cardiology/EP for a permanent device, or treatment of the reversible cause (hyperkalemia, drug toxicity, ischemia). A temporary wire is a bridge with a short safe lifespan.</li>
+</ul>
 </div>
-<div class="sec-head c-amber" id="refs"><span class="sec-num">07</span><h2>References</h2></div>
+
+<div class="sec-head c-purple" id="pearls"><span class="sec-num">11</span><h2>Pearls</h2></div>
+<div class="box t-purple">
+<p><b>Electrical capture is not mechanical capture.</b> Prove circulation with an echo or a pulse that muscle twitch cannot fake, every single time, before you relax.</p>
+<p><b>Check connections before you believe in dislodgement.</b> A loose terminal at the generator is dramatically more common than a wire that has moved, and it is fixed in two seconds rather than by re-floating a wire.</p>
+<p><b>The injury pattern is the endpoint, not a waypoint.</b> ST elevation on the V1 tracing means tip-to-endocardium contact. If it appears and then vanishes, you have lost contact &mdash; don't interpret its disappearance as progress.</p>
+<p><b>Only the distal tip completes the sensing circuit.</b> Clipping V1 to the proximal ring gives you a tracing that looks plausible and tells you almost nothing.</p>
+<p><b>Sleeve first, balloon up going in, balloon down coming out.</b> Three habits that prevent most of the procedure's avoidable disasters.</p>
+<p><b>Transcutaneous pacing is a bridge measured in minutes to an hour or two</b>, both because of capture reliability and because it is agonizing. If the underlying problem won't resolve on that timescale, start arranging the wire immediately rather than waiting for the pads to fail.</p>
+<p><b>Pace the patient, not the monitor.</b> A patient whose mentation and blood pressure improve is captured; a monitor that looks tidy is not evidence of anything by itself.</p>
+</div>
+
+<div class="sec-head c-amber" id="refs"><span class="sec-num">12</span><h2>References</h2></div>
 <ul class="sources">
   <li><span class="tier">GUIDELINE</span>Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2).</li>
+  <li><span class="tier">GUIDELINE</span>Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. <i>Circulation.</i> 2019;140(8):e382&ndash;e482.</li>
   <li><span class="tier">REFERENCE</span>Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 &mdash; Cardiac Pacing chapter.</li>
+  <li><span class="tier">REFERENCE</span>Omron R. <i>High Risk Low Frequency: The Transvenous Pacer Course.</i> Johns Hopkins Emergency Medicine &mdash; procedural checklist, equipment walkthrough, and pitfall video series.</li>
 </ul>
+
 <div class="footer">Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and equipment against your own institution's protocol before clinical use.</div>
 </div>
 </body>
