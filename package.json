@@ -8,8 +8,9 @@
     "extract:envenomation": "node scripts/extract-envenomation.mjs",
     "extract:procedures": "node scripts/extract-procedures.mjs",
     "extract": "npm run extract:protocols && npm run extract:envenomation && npm run extract:procedures",
-    "build": "npm run extract && node scripts/write-manifest.mjs",
-    "check-staleness": "node scripts/check-staleness.mjs"
+    "build": "npm run extract && node scripts/write-manifest.mjs && npm run figures",
+    "check-staleness": "node scripts/check-staleness.mjs",
+    "figures": "node scripts/export-figures.mjs"
   },
   "devDependencies": {
     "cheerio": "^1.2.0"
