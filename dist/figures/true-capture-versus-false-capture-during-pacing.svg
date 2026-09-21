@@ -1,0 +1,60 @@
+<svg viewBox="0 0 520 418" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="True capture versus false capture during pacing. True capture shows a pacing spike followed by a wide paced QRS with a T wave deflecting opposite to it, discordant, and a pulse wave for every complex. False capture shows a pacing spike followed by chest wall muscle artifact that resembles a complex but has no discordant T wave and no pulse wave beneath it.">
+<style>
+  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}
+  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}
+  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}
+  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+  .bl{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 4}
+  .sp{stroke:#8a9ab5;stroke-width:1.6}
+</style>
+
+<text class="t" x="0" y="17">Capture, or artifact?</text>
+<text class="c" x="0" y="34">Every spike is followed by something. Only one of them is a heartbeat.</text>
+
+<!-- TRUE CAPTURE -->
+<text class="h" x="0" y="72" style="fill:#00d4aa">TRUE CAPTURE</text>
+<text class="s" x="0" y="90">wide QRS +</text>
+<text class="s" x="0" y="105">discordant T</text>
+<line class="bl" x1="150" y1="110" x2="512" y2="110"></line>
+<!-- spikes -->
+<line class="sp" x1="176" y1="78" x2="176" y2="126"></line>
+<line class="sp" x1="296" y1="78" x2="296" y2="126"></line>
+<line class="sp" x1="416" y1="78" x2="416" y2="126"></line>
+<!-- paced complexes: wide QRS up, T down (discordant) -->
+<polyline class="w" stroke="#00d4aa" points="150,110 176,110 182,80 192,84 202,110 216,110 226,128 238,132 250,110 292,110
+ 296,110 302,80 312,84 322,110 336,110 346,128 358,132 370,110 412,110
+ 416,110 422,80 432,84 442,110 456,110 466,128 478,132 490,110 512,110"></polyline>
+<text class="c" x="150" y="152" style="fill:#00d4aa">QRS up ↑  T down ↓  — opposite, as it should be</text>
+
+<!-- pulse trace for true capture -->
+<text class="s" x="0" y="186" style="fill:#e8edf5">PULSE</text>
+<line class="bl" x1="150" y1="196" x2="512" y2="196"></line>
+<polyline class="w" stroke="#2563eb" points="150,196 176,196 186,170 196,176 208,192 220,196 292,196
+ 296,196 306,170 316,176 328,192 340,196 412,196
+ 416,196 426,170 436,176 448,192 460,196 512,196"></polyline>
+<text class="c" x="150" y="220" style="fill:#2563eb">one pulse wave per spike — this is mechanical capture</text>
+
+<!-- divider -->
+<line x1="0" y1="242" x2="512" y2="242" stroke="#4a5670" stroke-width="1" opacity="0.5"></line>
+
+<!-- FALSE CAPTURE -->
+<text class="h" x="0" y="278" style="fill:#e84c4c">FALSE CAPTURE</text>
+<text class="s" x="0" y="296">muscle artifact</text>
+<text class="s" x="0" y="311">no T wave</text>
+<line class="bl" x1="150" y1="316" x2="512" y2="316"></line>
+<line class="sp" x1="176" y1="284" x2="176" y2="332"></line>
+<line class="sp" x1="296" y1="284" x2="296" y2="332"></line>
+<line class="sp" x1="416" y1="284" x2="416" y2="332"></line>
+<!-- artifact: broad wobble, no organised repolarisation -->
+<polyline class="w" stroke="#e84c4c" points="150,316 176,316 182,294 188,326 196,300 204,322 212,310 222,316 292,316
+ 296,316 302,294 308,326 316,300 324,322 332,310 342,316 412,316
+ 416,316 422,294 428,326 436,300 444,322 452,310 462,316 512,316"></polyline>
+<text class="c" x="150" y="356" style="fill:#e84c4c">looks like a complex — but no discordant T, and…</text>
+
+<!-- flat pulse -->
+<line class="bl" x1="150" y1="382" x2="512" y2="382"></line>
+<text class="s" x="0" y="386" style="fill:#e8edf5">PULSE</text>
+<polyline class="w" stroke="#4a5670" points="150,382 512,382"></polyline>
+<text class="c" x="150" y="398" style="fill:#e84c4c">…nothing underneath it. Still PEA.</text>
+</svg>
