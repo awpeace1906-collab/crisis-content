@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T18:41:03.551Z",
+  "generatedAt": "2026-09-21T23:25:38.602Z",
   "categories": [
     {
       "id": "airway",
@@ -1717,8 +1717,8 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -1951,8 +1951,8 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2167,8 +2167,8 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2347,8 +2347,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2545,8 +2545,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-03-21",
+      "lastVerified": "2026-09-08",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "indications",
@@ -2775,8 +2775,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3089,12 +3089,19 @@
             {
               "type": "box",
               "color": "amber",
-              "html": "<p><b>Electrical capture</b> means each pacing spike is followed by a genuine, wide paced QRS with a <i>concordant T wave</i> (the T wave should deflect opposite the QRS). <b>Mechanical capture</b> means that complex generated an actual contraction.</p>\n<p><b>False capture</b> is the trap: every pacing spike is followed by a wide squiggle on the monitor that looks exactly like a paced complex but is chest-wall muscle artifact, and the pacer is doing nothing to the heart. Operators declare success, stop escalating, and the patient stays in a perfusionless bradycardia with a monitor that looks reassuring. This is common enough that you should assume it until disproven.</p>"
+              "html": "<p><b>Electrical capture</b> means each pacing spike is followed by a genuine, wide paced QRS with a <b>discordant T wave</b> — the T deflects <i>opposite</i> to the main QRS vector, the same repolarization pattern you expect in LBBB. That discordance is a feature, not a problem: it is evidence the complex is a genuinely paced depolarization rather than artifact. (<b>Concordant</b> ST/T changes in a paced rhythm are the abnormal finding — one of the Sgarbossa criteria for ischemia.) <b>Mechanical capture</b> means that complex generated an actual contraction.</p>\n<p><b>False capture</b> is the trap: every pacing spike is followed by a wide squiggle on the monitor that looks exactly like a paced complex but is chest-wall muscle artifact, and the pacer is doing nothing to the heart. Operators declare success, stop escalating, and the patient stays in a perfusionless bradycardia with a monitor that looks reassuring. This is common enough that you should assume it until disproven.</p>"
             },
             {
               "type": "box",
               "color": "teal",
               "html": "<p><b>How to actually prove capture, in order of reliability:</b></p>\n<ul>\n      <li><b>Femoral or right-sided pulse</b> — palpate somewhere the pectoral muscle twitch isn't shaking the limb you're feeling. A left radial pulse during left-sided pacing is exactly where artifact fools you.</li>\n      <li><b>Bedside echo</b> — look directly at the ventricle and watch it contract, one-for-one with the spikes. This is the definitive answer and takes seconds.</li>\n      <li><b>Arterial line waveform or a plethysmograph/SpO<sub>2</sub> tracing</b> — a mechanical pulse wave at exactly the paced rate is hard to fake.</li>\n      <li><b>End-tidal CO<sub>2</sub> rising</b> in an arrest context — indirect but real evidence you restored circulation.</li>\n</ul>"
+            },
+            {
+              "type": "figure",
+              "figureId": "true-capture-versus-false-capture-during-pacing",
+              "svg": "<svg viewBox=\"0 0 520 418\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"True capture versus false capture during pacing. True capture shows a pacing spike followed by a wide paced QRS with a T wave deflecting opposite to it, discordant, and a pulse wave for every complex. False capture shows a pacing spike followed by chest wall muscle artifact that resembles a complex but has no discordant T wave and no pulse wave beneath it.\">\n<style>\n  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}\n  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .bl{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 4}\n  .sp{stroke:#8a9ab5;stroke-width:1.6}\n</style>\n\n<text class=\"t\" x=\"0\" y=\"17\">Capture, or artifact?</text>\n<text class=\"c\" x=\"0\" y=\"34\">Every spike is followed by something. Only one of them is a heartbeat.</text>\n\n<!-- TRUE CAPTURE -->\n<text class=\"h\" x=\"0\" y=\"72\" style=\"fill:#00d4aa\">TRUE CAPTURE</text>\n<text class=\"s\" x=\"0\" y=\"90\">wide QRS +</text>\n<text class=\"s\" x=\"0\" y=\"105\">discordant T</text>\n<line class=\"bl\" x1=\"150\" y1=\"110\" x2=\"512\" y2=\"110\"></line>\n<!-- spikes -->\n<line class=\"sp\" x1=\"176\" y1=\"78\" x2=\"176\" y2=\"126\"></line>\n<line class=\"sp\" x1=\"296\" y1=\"78\" x2=\"296\" y2=\"126\"></line>\n<line class=\"sp\" x1=\"416\" y1=\"78\" x2=\"416\" y2=\"126\"></line>\n<!-- paced complexes: wide QRS up, T down (discordant) -->\n<polyline class=\"w\" stroke=\"#00d4aa\" points=\"150,110 176,110 182,80 192,84 202,110 216,110 226,128 238,132 250,110 292,110\n 296,110 302,80 312,84 322,110 336,110 346,128 358,132 370,110 412,110\n 416,110 422,80 432,84 442,110 456,110 466,128 478,132 490,110 512,110\"></polyline>\n<text class=\"c\" x=\"150\" y=\"152\" style=\"fill:#00d4aa\">QRS up ↑  T down ↓  — opposite, as it should be</text>\n\n<!-- pulse trace for true capture -->\n<text class=\"s\" x=\"0\" y=\"186\" style=\"fill:#e8edf5\">PULSE</text>\n<line class=\"bl\" x1=\"150\" y1=\"196\" x2=\"512\" y2=\"196\"></line>\n<polyline class=\"w\" stroke=\"#2563eb\" points=\"150,196 176,196 186,170 196,176 208,192 220,196 292,196\n 296,196 306,170 316,176 328,192 340,196 412,196\n 416,196 426,170 436,176 448,192 460,196 512,196\"></polyline>\n<text class=\"c\" x=\"150\" y=\"220\" style=\"fill:#2563eb\">one pulse wave per spike — this is mechanical capture</text>\n\n<!-- divider -->\n<line x1=\"0\" y1=\"242\" x2=\"512\" y2=\"242\" stroke=\"#4a5670\" stroke-width=\"1\" opacity=\"0.5\"></line>\n\n<!-- FALSE CAPTURE -->\n<text class=\"h\" x=\"0\" y=\"278\" style=\"fill:#e84c4c\">FALSE CAPTURE</text>\n<text class=\"s\" x=\"0\" y=\"296\">muscle artifact</text>\n<text class=\"s\" x=\"0\" y=\"311\">no T wave</text>\n<line class=\"bl\" x1=\"150\" y1=\"316\" x2=\"512\" y2=\"316\"></line>\n<line class=\"sp\" x1=\"176\" y1=\"284\" x2=\"176\" y2=\"332\"></line>\n<line class=\"sp\" x1=\"296\" y1=\"284\" x2=\"296\" y2=\"332\"></line>\n<line class=\"sp\" x1=\"416\" y1=\"284\" x2=\"416\" y2=\"332\"></line>\n<!-- artifact: broad wobble, no organised repolarisation -->\n<polyline class=\"w\" stroke=\"#e84c4c\" points=\"150,316 176,316 182,294 188,326 196,300 204,322 212,310 222,316 292,316\n 296,316 302,294 308,326 316,300 324,322 332,310 342,316 412,316\n 416,316 422,294 428,326 436,300 444,322 452,310 462,316 512,316\"></polyline>\n<text class=\"c\" x=\"150\" y=\"356\" style=\"fill:#e84c4c\">looks like a complex — but no discordant T, and…</text>\n\n<!-- flat pulse -->\n<line class=\"bl\" x1=\"150\" y1=\"382\" x2=\"512\" y2=\"382\"></line>\n<text class=\"s\" x=\"0\" y=\"386\" style=\"fill:#e8edf5\">PULSE</text>\n<polyline class=\"w\" stroke=\"#4a5670\" points=\"150,382 512,382\"></polyline>\n<text class=\"c\" x=\"150\" y=\"398\" style=\"fill:#e84c4c\">…nothing underneath it. Still PEA.</text>\n</svg>",
+              "alt": "True capture versus false capture during pacing. True capture shows a pacing spike followed by a wide paced QRS with a T wave deflecting opposite to it, discordant, and a pulse wave for every complex. False capture shows a pacing spike followed by chest wall muscle artifact that resembles a complex but has no discordant T wave and no pulse wave beneath it.",
+              "caption": "Both tracings have a spike before every wide deflection, and on a moving monitor they look alike. The difference is the <b>discordant T wave</b> and, decisively, whether there is a pulse wave beneath it — which is why you confirm with a femoral pulse, an arterial line, or bedside echo rather than the monitor alone."
             },
             {
               "type": "alert",
@@ -3410,8 +3417,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3605,8 +3612,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3817,8 +3824,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4036,8 +4043,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4210,8 +4217,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4421,8 +4428,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4591,8 +4598,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4793,8 +4800,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5008,8 +5015,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5184,8 +5191,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5370,8 +5377,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5592,8 +5599,8 @@
       "description": "Proximal humerus, sternal, and tibial sites.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5818,8 +5825,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5986,8 +5993,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6172,8 +6179,8 @@
       "description": "Ratio-based transfusion sequencing and logistics.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6352,8 +6359,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6526,8 +6533,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6738,8 +6745,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
