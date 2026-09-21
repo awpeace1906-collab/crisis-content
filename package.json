@@ -10,9 +10,10 @@
     "extract": "npm run extract:protocols && npm run extract:envenomation && npm run extract:procedures",
     "build": "npm run extract && node scripts/write-manifest.mjs && npm run figures",
     "check-staleness": "node scripts/check-staleness.mjs",
-    "figures": "node scripts/export-figures.mjs"
+    "figures": "node scripts/export-figures.mjs && node scripts/rasterize-figures.mjs"
   },
   "devDependencies": {
-    "cheerio": "^1.2.0"
+    "cheerio": "^1.2.0",
+    "sharp": "^0.35.4"
   }
 }
