@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T16:47:21.510Z",
+  "generatedAt": "2026-09-21T16:16:10.467Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -84,7 +84,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Anticipated difficult airway (limited mouth opening, cervical spine immobility, airway mass/distortion, prior difficult intubation history)</li>\n      <li>Need to preserve spontaneous ventilation through the intubation process</li>\n      <li>Unstable cervical spine where direct laryngoscopy positioning is contraindicated</li>\n      <li>Upper airway pathology (tumor, abscess, angioedema) where induction could precipitate total obstruction</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Anticipated</b> difficult airway — limited mouth opening, cervical immobility, airway mass or distortion, radiotherapy-scarred neck, prior documented difficult intubation</li>\n      <li>Upper airway pathology (tumor, abscess, angioedema, supraglottic swelling) where induction could convert a partial obstruction into a complete one</li>\n      <li>Unstable cervical spine where laryngoscopy positioning is contraindicated</li>\n      <li>Any situation where you want the patient's own respiratory effort preserved as the safety net through the intubation</li>\n</ul>"
+            },
+            {
+              "type": "xref",
+              "html": "<b>The whole point is that nothing irreversible happens.</b> Every other airway technique begins by removing the patient's ability to breathe for themselves and then betting you can replace it. This one doesn't place that bet. That is the reason to choose it, and also the reason oversedation is the cardinal sin — it quietly converts this procedure into the one you were trying to avoid."
             }
           ]
         },
@@ -98,7 +102,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Uncooperative patient unable to tolerate awake instrumentation (relative — may require heavier sedation or an alternative plan)</li>\n      <li>Actively vomiting or high aspiration risk with an unprotected, un-topicalized airway</li>\n      <li>Rapidly deteriorating airway where the time cost of awake technique is not survivable — move to a faster rescue plan (surgical airway) instead</li>\n      <li>Known severe local anesthetic allergy limiting topicalization options (relative — alternative agents exist)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A rapidly deteriorating airway.</b> This technique costs 15–30 minutes done properly. A patient who does not have that is a patient for a surgical airway or an awake look with a plan to cut.</li>\n      <li><b>Uncooperative patient</b> — delirium, intoxication, learning disability, young children (relative; may force an alternative plan rather than heavier sedation, which defeats the purpose)</li>\n      <li><b>Active vomiting or frank blood in the airway</b> — you cannot see through either, and topicalization of a wet airway is unreliable</li>\n      <li>Severe local anesthetic allergy (relative — alternative agents exist)</li>\n      <li><b>Critical stenosis where the scope itself may obstruct</b> what little lumen remains — think carefully before passing a 5&nbsp;mm scope through a 6&nbsp;mm airway</li>\n</ul>"
             }
           ]
         },
@@ -106,19 +110,48 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment — Laid Out Before You Touch the Patient",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Flexible fiberoptic bronchoscope with light source and monitor</li>\n      <li>Topical local anesthetic (nebulized and/or direct application: lidocaine 2-4%)</li>\n      <li>Atomizer or nebulizer device for topicalization</li>\n      <li>Antisialagogue (glycopyrrolate) given in advance to dry secretions and improve visualization</li>\n      <li>Light or titrated sedation agents (dexmedetomidine, low-dose midazolam/fentanyl) preserving spontaneous respiration</li>\n      <li>Appropriately sized ETT preloaded on the scope</li>\n      <li>Full difficult airway cart on standby</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Flexible scope</b>, light source and screen, <b>checked and focused</b> before the patient is in the room. Anti-fog applied, or the tip warmed.</li>\n      <li><b>ETT preloaded</b> on the shaft, pushed up to the handle and secured there. A <b>reinforced or flexible-tip tube</b>, or an Aintree/intubating catheter arrangement, snags far less than a standard PVC bevel.</li>\n      <li><b>One size smaller than you'd normally choose</b> — a 6.0–7.0 in most adults. The narrower the tube, the smaller the step-off between scope and tube tip, and the step-off is what catches.</li>\n      <li><b>Lidocaine, and a plan for the total dose.</b> Atomiser (MAD-type), nebuliser, and a syringe for spray-as-you-go down the working channel.</li>\n      <li><b>Antisialagogue</b> — glycopyrrolate, given early enough to work (see below).</li>\n      <li><b>Vasoconstrictor</b> for the nasal route — oxymetazoline or phenylephrine.</li>\n      <li><b>Sedation you can titrate in small increments</b> — dexmedetomidine, remifentanil, or low-dose midazolam/fentanyl. Draw it up dilute.</li>\n      <li><b>Oxygen throughout</b> — nasal cannula under the mask, or high-flow nasal oxygen, running the entire time.</li>\n      <li><b>The difficult airway trolley open in the room</b>, and a named person ready to do a front-of-neck airway if this goes wrong.</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Give the antisialagogue early or don't bother",
+              "html": "Glycopyrrolate needs roughly <b>15–20 minutes</b> to meaningfully dry secretions. Given as you walk into the room it contributes nothing except tachycardia. Secretions are the most common reason the view is unusable, and this is the cheapest intervention against them — but only if someone thought about it a quarter of an hour ago."
+            }
+          ]
+        },
+        {
+          "id": "topicalize",
+          "num": "04",
+          "color": "amber",
+          "title": "Topicalization — This Is the Procedure",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "A well-topicalized patient needs almost no sedation; a poorly topicalized one cannot be rescued by any amount of it"
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>Work through the territories in order, each with its own nerve supply:</b></p>\n<ul>\n      <li><b>Nasal cavity</b> (if nasal route) — vasoconstrictor plus lidocaine; anterior ethmoidal and sphenopalatine supply.</li>\n      <li><b>Oropharynx and tongue base</b> — glossopharyngeal. This is the gag reflex. Atomised lidocaine, and ask the patient to hold it at the back of the throat rather than swallowing immediately.</li>\n      <li><b>Supraglottis, epiglottis, aryepiglottic folds</b> — superior laryngeal nerve (internal branch).</li>\n      <li><b>Vocal cords and trachea below them</b> — recurrent laryngeal. This territory is the one people under-treat, and it is where coughing comes from.</li>\n</ul>\n<p><b>Spray-as-you-go</b> through the working channel is the workhorse: advance a little, spray, wait ten or fifteen seconds, advance again. It topicalizes exactly what you are about to touch, in the right order, without a separate procedure.</p>"
+            },
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p><b>Keep a running total of the lidocaine.</b> Topical airway lidocaine is absorbed rapidly across mucosa — nebulised, atomised, and sprayed doses all add up, and it is easy to lose count across three different delivery devices. Know your institution's ceiling for topical airway use, say the running total out loud, and have intralipid available in the department. Early LAST is agitation, perioral tingling, and metallic taste — symptoms you may misread as inadequate sedation and treat by giving more of the wrong thing.</p>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
           "title": "Stepwise Technique",
           "tagline": null,
@@ -129,70 +162,138 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Administer antisialagogue early enough to dry secretions before topicalization begins."
+                  "title": "Consent and coach the patient",
+                  "html": "Explain it in plain terms — that they will stay awake and breathing, that their throat will feel numb and strange, that they may feel pressure but not pain, and that coughing is normal. A patient who knows what is coming tolerates it dramatically better. This conversation is part of the technique, not a courtesy before it."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Topicalize the airway systematically: nares (if nasal approach), oropharynx, and progressively deeper structures using nebulized and direct local anesthetic application, often via a “spray as you go” technique through the scope's working channel."
+                  "title": "Position sitting up, and stand where you'll actually scope from",
+                  "html": "Sitting or semi-recumbent is more comfortable, improves their respiratory mechanics, and drains secretions away. Decide early whether you scope from in front (facing them) or from behind at the head, and set the screen where you can see it without turning away from the patient."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Titrate light sedation to maintain a cooperative, spontaneously breathing patient — the goal is comfort and cooperation, not unconsciousness."
+                  "title": "Oxygen on, monitoring on, sedation titrated to conversation",
+                  "html": "The endpoint for sedation is <b>a calm patient who still answers you</b>. If they stop responding to voice, you have gone too far. Dexmedetomidine preserves respiratory drive well but takes time to load; remifentanil blunts cough well but will cause apnoea if you rush it. Small increments, and wait for the peak effect before giving more — stacking doses while waiting is the classic route to an apnoeic patient."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Preload the ETT onto the bronchoscope shaft."
+                  "title": "Advance in the midline, and keep the scope straight",
+                  "html": "Keep the shaft <b>straight</b> between your hand and the patient — a looped or coiled shaft means your tip movements stop corresponding to your wrist movements, which is the single most common reason a novice gets lost. Advance under continuous vision. If you cannot identify a structure, <b>withdraw until you can</b> rather than pushing on in hope. The one rule that recovers every lost scope: pull back to something you recognize."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Advance the scope through the chosen route (oral or nasal), maintaining midline orientation and continuously advancing toward the glottis under direct vision."
+                  "title": "Identify the glottis, spray, and pass the cords",
+                  "html": "Landmarks in order: uvula and soft palate, epiglottis, then the cords. Spray through the channel before passing them — this is where cough is generated. Advance the tip through the glottis and confirm you are tracheal by seeing <b>cartilaginous rings and the carina</b>. Rings and a bifurcation are proof; a dark hole is not."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Identify the vocal cords and advance the scope tip through the glottis into the trachea, confirming tracheal rings and carina view."
+                  "title": "Railroad the tube — rotate, don't shove",
+                  "html": "Hold the scope absolutely still, as a rail, and advance the tube with a <b>90° anticlockwise rotation</b> if it hangs up. The tube catches on the right arytenoid in the great majority of cases, and that rotation turns the bevel away from it. Escalating force does not work and causes trauma; rotation almost always does."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Railroad the ETT over the scope into the trachea."
+                  "title": "Confirm depth from inside before you withdraw",
+                  "html": "Before removing the scope, look: you should see the <b>carina a few centimeters beyond the tube tip</b>. This is a better depth check than any external marking. Then withdraw the scope slowly, watching that the tube does not come with it."
                 },
                 {
                   "num": "8",
                   "color": "teal",
-                  "title": "",
-                  "html": "Confirm depth and position, withdraw the scope, confirm placement (EtCO2, bilateral breath sounds), secure the tube."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Only proceed to induction of general anesthesia once tracheal placement is confirmed — this is the entire safety rationale for the awake technique."
+                  "title": "Confirm, secure, and only then induce",
+                  "html": "Capnography, chest rise, bilateral air entry. Secure the tube. <b>Only now</b> give the induction agent. Inducing before confirmation discards the entire safety rationale of the technique — and it happens, under time pressure, when everyone in the room can see the tube is “obviously” in."
                 }
               ]
             },
             {
               "type": "alert",
-              "color": "amber",
+              "color": "red",
               "title": "Sedation depth is the whole safety margin",
-              "html": "The entire value of this technique is that the patient keeps breathing for themselves throughout — titrate sedation conservatively, since oversedation converts a controlled awake technique into an unplanned loss of airway."
+              "html": "Every milligram you give trades away the thing that makes this technique safe. The patient who stops breathing during an awake fiberoptic has not had a complication of the procedure — they have had a complication of the sedation, and they are now an unanticipated CICO with a scope in their mouth. If you are reaching for more sedation, the problem is almost always inadequate topicalization, and more local is the correct answer."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually means",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "View is a pink/red blur",
+                  "Tip against mucosa — you're touching the wall",
+                  "Withdraw a few centimeters until the lumen reappears. Do not suction blindly or push forward"
+                ],
+                [
+                  "View fogs or smears",
+                  "Secretions or condensation",
+                  "Touch the tip to mucosa to wipe, suction, or flush the channel. Anti-fog and a warmed tip prevent most of it"
+                ],
+                [
+                  "Completely lost, no recognizable structure",
+                  "Off midline, or shaft looped",
+                  "<b>Withdraw to the nasopharynx/oropharynx and start again.</b> Straighten the shaft. This recovers almost every lost scope"
+                ],
+                [
+                  "Patient coughing repeatedly",
+                  "Under-topicalized cords/trachea — not under-sedated",
+                  "More local through the channel, wait. Resist the reflex to deepen sedation"
+                ],
+                [
+                  "Patient gagging on the oral route",
+                  "Tongue base not topicalized",
+                  "More atomised lidocaine to the posterior tongue; consider switching to nasal"
+                ],
+                [
+                  "Tube hangs up at the glottis",
+                  "Catching on the right arytenoid (the usual culprit)",
+                  "<b>Rotate 90° anticlockwise</b> and advance gently. Downsize the tube if it still won't pass"
+                ],
+                [
+                  "Tube advances but the scope view is lost",
+                  "Scope displaced by the tube, or tube went esophageal",
+                  "Do not extubate on suspicion — confirm with capnography first. If esophageal, leave it as a marker and re-scope alongside"
+                ],
+                [
+                  "Brisk bleeding, nasal route",
+                  "Turbinate trauma — inadequate vasoconstriction or too large a tube",
+                  "Switch to the other nostril or go oral. Blood in the airway usually ends the fiberoptic plan"
+                ],
+                [
+                  "Respiratory rate falling, patient not answering",
+                  "<b>Oversedation</b>",
+                  "Stop sedation, stimulate, support ventilation, consider reversal. Be ready to abandon to plan B"
+                ],
+                [
+                  "Agitation, perioral tingling, metallic taste",
+                  "Local anesthetic toxicity — not inadequate sedation",
+                  "Stop dosing local, total up what's been given, intralipid available. Do not \"treat\" this with more sedation"
+                ],
+                [
+                  "Fifteen minutes gone, no progress",
+                  "The technique is failing",
+                  "Call it. Move to the pre-agreed plan B before the patient's reserve is gone"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -200,27 +301,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Inadequate topicalization causing patient discomfort, coughing, or laryngospasm during the procedure</li>\n      <li>Oversedation converting a spontaneously breathing awake technique into an unplanned loss of airway</li>\n      <li>Secretions or bleeding obscuring the fiberoptic view — antisialagogue and gentle technique mitigate this</li>\n      <li>Prolonged procedure time in a patient who cannot tolerate delay — recognize early when to abandon for a faster rescue plan</li>\n      <li>Esophageal misidentification if orientation is lost — maintain constant visual confirmation of airway structures</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Oversedation converting an awake technique into an unplanned loss of airway</b> — the central risk of the procedure</li>\n      <li><b>Local anesthetic systemic toxicity</b> from cumulative topical dosing across multiple devices</li>\n      <li><b>Epistaxis</b> obscuring the view and, occasionally, soiling the airway outright</li>\n      <li><b>Laryngospasm</b> from instrumenting an inadequately topicalized larynx</li>\n      <li><b>Complete obstruction in a critical stenosis</b> — the scope or the resulting edema taking the last of a marginal lumen</li>\n      <li><b>Esophageal intubation</b> if orientation was lost and rings were never positively identified</li>\n      <li><b>Taking too long</b> in a patient whose airway was deteriorating faster than the operator appreciated</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "08",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The entire value of this technique is that the patient keeps breathing for themselves throughout — protect that at all costs by titrating sedation conservatively.</p>\n<p>“Spray as you go” topicalization through the working channel keeps you from having to stop and re-dose separately — it's more efficient and better tolerated.</p>\n<p>Have a clear abort criterion decided before you start: if topicalization or scope advancement isn't progressing within a reasonable window, move to the backup plan rather than persisting.</p>\n<p>This is a skill that degrades fast without practice — simulation reps on a mannequin keep the scope-handling reflexes sharp between real cases.</p>"
+              "html": "<p><b>Topicalization buys you everything; sedation buys you very little and costs a great deal.</b> When tempted to deepen sedation, give more local instead.</p>\n<p><b>Keep the shaft straight.</b> Loops are why the tip stops obeying your hand.</p>\n<p><b>When lost, withdraw.</b> Pulling back to a recognized structure recovers nearly every disoriented scope; pushing forward in hope recovers none.</p>\n<p><b>Rings and carina, or you are not in the trachea.</b> A dark hole is not a diagnosis.</p>\n<p><b>Rotate the tube, don't force it.</b> The right arytenoid is the obstacle, and 90° anticlockwise is the answer.</p>\n<p><b>Confirm before you induce.</b> This is the entire safety argument for the technique; do not spend it at the last step.</p>\n<p><b>Decide your abort criterion out loud beforehand</b> — a time or a number of attempts — because in the moment there is always a reason to try once more.</p>\n<p><b>Glycopyrrolate at least fifteen minutes ahead.</b> Secretions ruin more of these than any technical problem.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "09",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -230,11 +331,15 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. <i>Br J Anaesth.</i> 2015;115(6):827-848."
+                  "html": "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society guidelines for awake tracheal intubation in adults. <i>Anaesthesia.</i> 2020;75(4):509–528."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31–81."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31-81."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Flexible Endoscopic Intubation chapter."
                 }
               ]
             }
@@ -263,8 +368,8 @@
       "description": "Surgical, percutaneous, and needle techniques for CICO.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -276,7 +381,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Cannot Intubate, Cannot Oxygenate (CICO)</li>\n      <li>Artificial airway obstruction (device failure, blocked ETT/trach)</li>\n      <li>Pathologic airway obstruction (angioedema, trauma, burns, abnormal anatomy) not amenable to oral/nasal intubation</li>\n      <li>Failure of primary and rescue airway techniques when oxygenation cannot otherwise be achieved</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Cannot Intubate, Cannot Oxygenate (CICO)</b> — the only indication that matters in the moment</li>\n      <li>Artificial airway obstruction (device failure, blocked ETT or tracheostomy tube) that cannot be cleared</li>\n      <li>Pathologic airway obstruction — angioedema, trauma, burns, tumor, abscess, distorted anatomy — not amenable to oral or nasal intubation</li>\n      <li>Failure of primary and rescue airway techniques when oxygenation cannot be achieved by any other route</li>\n</ul>"
+            },
+            {
+              "type": "xref",
+              "html": "<b>The indication is oxygenation, not intubation.</b> A patient you cannot intubate but can oxygenate by mask or supraglottic airway is not a CICO patient — that is a difficult airway, and you have time to think. The front-of-neck decision belongs to the patient who is desaturating despite optimized attempts at all three of mask, supraglottic, and tube. See the Front-of-Neck Rescue Airway entry for the decision framework that sits above this one."
             }
           ]
         },
@@ -290,7 +399,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>A viable, faster alternative airway exists (relative — in true CICO there are no absolute contraindications to a front-of-neck airway)</li>\n      <li>Pediatric patients under ~1 year for needle/surgical cricothyrotomy — anatomy strongly favors alternative approaches where any other option exists</li>\n      <li>Distorted or unidentifiable anterior neck anatomy (relative — may require the scalpel-finger-bougie approach over needle-based techniques)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>In true CICO there are no absolute contraindications.</b> The alternative to a front-of-neck airway in that situation is a hypoxic death.</li>\n      <li>A viable, faster alternative airway exists (relative) — if one more optimized laryngoscopy attempt or a supraglottic device will work, do that instead</li>\n      <li><b>Children under roughly 8–12 years</b> — the cricothyroid membrane is tiny, soft, and hard to identify; needle technique is the default here and the age threshold varies between guidelines, so know which one your institution follows</li>\n      <li>Coagulopathy, overlying infection, or anterior neck tumor — all relative, and none of them outrank hypoxia</li>\n</ul>"
             }
           ]
         },
@@ -298,36 +407,78 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment — What Should Be on the CICO Cart",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Needle cricothyrotomy</b></p>\n<ul>\n      <li>Large-bore needle/angiocath (12–14 ga)</li>\n      <li>3 mm ID ETT connector/BVM adaptor</li>\n      <li>3-way stopcock, jet insufflation source</li>\n</ul>"
+              "html": "<p><b>Scalpel-bougie-tube (the adult default — this is the set that matters)</b></p>\n<ul>\n      <li><b>#10 scalpel</b> — the broad belly is deliberate; a #11 point is easy to bury and harder to control</li>\n      <li><b>Bougie</b>, ideally coudé-tipped</li>\n      <li><b>Cuffed tube, size 6.0</b> — a standard 7.0–8.0 ETT will often not pass a cricothyroid membrane. Have the 6.0 pre-identified, not hunted for mid-procedure.</li>\n      <li>Syringe for the cuff, tube tie or suture, capnography</li>\n</ul>"
             },
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Percutaneous (Seldinger) cricothyrotomy</b></p>\n<ul>\n      <li>Introducer needle, flexible guidewire, dilator</li>\n      <li>Cricothyrotomy tube or ETT</li>\n</ul>"
+              "html": "<p><b>Needle cricothyrotomy (pediatric default, adult fallback)</b></p>\n<ul>\n      <li>Large-bore cannula, <b>12–14 ga</b> in adults, smaller in children</li>\n      <li>Syringe (saline-filled, so aspirated air shows as bubbles)</li>\n      <li>A <b>purpose-built ventilation device with a pressure-limited source and an exhalation route</b> — not an improvised setup assembled for the first time under pressure. A 3&nbsp;mm ETT connector or a 3-way stopcock arrangement works, but know which one is on your cart and how it assembles.</li>\n</ul>"
             },
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Surgical (open) cricothyrotomy</b></p>\n<ul>\n      <li>#10 scalpel, bougie</li>\n      <li>Cuffed ETT or cricothyrotomy tube</li>\n</ul>"
+              "html": "<p><b>Percutaneous (Seldinger) kit — and the things people forget</b></p>\n<ul>\n      <li>Introducer needle, guidewire, dilator, airway catheter (commercial kits vary — open yours once in daylight before you need it at 3&nbsp;a.m.)</li>\n      <li><b>Ultrasound with a linear probe</b> — the single most useful addition to a difficult-neck CICO cart</li>\n      <li><b>Suction, working and within reach</b> — the field will bleed</li>\n      <li>Gloves you can actually feel through. This is a tactile procedure.</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Know which kit is on your cart before the emergency",
+              "html": "The most common equipment failure in a real CICO event is not a missing item — it is an operator meeting an unfamiliar commercial kit for the first time while a patient desaturates. Open your institution's kit once, lay the parts out, and assemble it. That fifteen-minute exercise is worth more than any amount of reading."
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "landmarks",
           "num": "04",
-          "color": "red",
-          "title": "Stepwise Technique",
+          "color": "purple",
+          "title": "Finding the Membrane",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "Needle cricothyrotomy"
+              "html": "This is where the procedure is actually won or lost"
+            },
+            {
+              "type": "box",
+              "color": "purple",
+              "html": "<p><b>The laryngeal handshake.</b> Stand at the patient's side. With your non-dominant hand, grasp the larynx between thumb and middle finger and walk down the midline: the <b>hyoid</b> first, then the <b>thyroid cartilage</b> (the broad shield, with the notch superiorly), then the soft depression immediately below it — that is the <b>cricothyroid membrane</b> — and then the firm ring of the <b>cricoid cartilage</b> below that. Rock the larynx gently side to side as you go; the whole assembly moves as a unit, which is how you distinguish it from surrounding soft tissue.</p>\n<p>In an adult the membrane sits roughly <b>a finger's breadth below the thyroid notch</b> and is about 1&nbsp;cm tall and 2–3&nbsp;cm wide — a small target, and smaller still in women.</p>"
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>When you cannot feel anything — obesity, edema, hematoma, burns.</b> This is common and it is the situation that kills.</p>\n<ul>\n      <li><b>Ultrasound, if it is already in the room and someone can drive it.</b> Linear probe transverse across the anterior neck: the tracheal rings appear as a row of hypoechoic arcs, and sliding cephalad the cricoid is the largest and most prominent. Do not go looking for the machine mid-arrest.</li>\n      <li><b>If there is no ultrasound, the incision is the assessment.</b> Make a <b>long vertical midline incision</b> — 8–10&nbsp;cm if you have no landmarks at all — and dissect bluntly with your finger down to the larynx. Midline is relatively avascular; this is precisely why vertical is the correct choice when you are unsure.</li>\n      <li><b>Then palpate inside the wound.</b> Your finger, not your eye, finds the membrane in a bleeding neck.</li>\n</ul>"
+            },
+            {
+              "type": "figure",
+              "figureId": "anterior-neck-anatomy-for-front-of-neck-airway",
+              "svg": "<svg viewBox=\"0 0 560 574\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Anterior neck anatomy for front-of-neck airway. From top: hyoid bone, thyroid cartilage with its superior notch, the cricothyroid membrane in the gap below it, the cricoid cartilage ring, then the tracheal rings with the thyroid isthmus overlying the second and third. The cricothyroid membrane is the cricothyrotomy target; the second to third tracheal ring interspace is the tracheostomy target, with subglottic stenosis risk above it and the innominate artery below.\">\n<style>\n  .cart{fill:#182030;stroke:#00d4aa;stroke-width:2.2}\n  .ring{fill:#182030;stroke:#2563eb;stroke-width:2}\n  .lbl{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .sub{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .warn{fill:#f59e0b;font-family:'IBM Plex Mono',monospace;font-size:11px}\n  .dngr{fill:#e84c4c;font-family:'IBM Plex Mono',monospace;font-size:11px}\n  .lead{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 3}\n  .ttl{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .cap{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:11px}\n</style>\n\n<text class=\"ttl\" x=\"0\" y=\"17\">Anterior neck — the landmarks you are feeling for</text>\n<text class=\"cap\" x=\"0\" y=\"35\">Laryngeal handshake: hyoid → thyroid cartilage → membrane → cricoid</text>\n\n<!-- hyoid -->\n<path d=\"M132,78 Q200,56 268,78\" fill=\"none\" stroke=\"#00d4aa\" stroke-width=\"9\" stroke-linecap=\"round\" opacity=\"0.75\"></path>\n<line class=\"lead\" x1=\"272\" y1=\"72\" x2=\"322\" y2=\"66\"></line>\n<text class=\"lbl\" x=\"328\" y=\"70\">Hyoid</text>\n\n<!-- thyroid cartilage, with superior notch -->\n<path class=\"cart\" d=\"M200,120 L188,104 L146,114 L140,196 L200,210 L260,196 L254,114 L212,104 Z\"></path>\n<path d=\"M188,104 L200,120 L212,104\" fill=\"none\" stroke=\"#00d4aa\" stroke-width=\"2.2\"></path>\n<line class=\"lead\" x1=\"264\" y1=\"150\" x2=\"322\" y2=\"140\"></line>\n<text class=\"lbl\" x=\"328\" y=\"138\">Thyroid cartilage</text>\n<text class=\"sub\" x=\"328\" y=\"156\">notch at the top —</text>\n<text class=\"sub\" x=\"328\" y=\"171\">start the walk here</text>\n\n<!-- cricothyroid membrane: the gap -->\n<rect x=\"152\" y=\"214\" width=\"96\" height=\"30\" rx=\"8\" fill=\"#e84c4c\" opacity=\"0.2\"></rect>\n<rect x=\"152\" y=\"214\" width=\"96\" height=\"30\" rx=\"8\" fill=\"none\" stroke=\"#e84c4c\" stroke-width=\"2.4\"></rect>\n<line class=\"lead\" x1=\"252\" y1=\"229\" x2=\"322\" y2=\"215\"></line>\n<text class=\"lbl\" x=\"328\" y=\"212\" style=\"fill:#e84c4c\">Cricothyroid membrane</text>\n<text class=\"sub\" x=\"328\" y=\"230\">~1 cm tall, 2–3 cm wide</text>\n<text class=\"dngr\" x=\"328\" y=\"248\">▸ CRICOTHYROTOMY TARGET</text>\n\n<!-- cricoid -->\n<rect class=\"cart\" x=\"150\" y=\"250\" width=\"100\" height=\"36\" rx=\"13\"></rect>\n<line class=\"lead\" x1=\"254\" y1=\"268\" x2=\"322\" y2=\"276\"></line>\n<text class=\"lbl\" x=\"328\" y=\"280\">Cricoid cartilage</text>\n<text class=\"sub\" x=\"328\" y=\"297\">the only complete ring</text>\n\n<!-- tracheal rings -->\n<rect class=\"ring\" x=\"156\" y=\"300\" width=\"88\" height=\"18\" rx=\"9\"></rect>\n<rect class=\"ring\" x=\"156\" y=\"326\" width=\"88\" height=\"18\" rx=\"9\"></rect>\n<rect class=\"ring\" x=\"156\" y=\"352\" width=\"88\" height=\"18\" rx=\"9\"></rect>\n<rect class=\"ring\" x=\"156\" y=\"378\" width=\"88\" height=\"18\" rx=\"9\"></rect>\n<rect class=\"ring\" x=\"156\" y=\"404\" width=\"88\" height=\"18\" rx=\"9\"></rect>\n<text class=\"sub\" x=\"126\" y=\"313\">1</text>\n<text class=\"sub\" x=\"126\" y=\"339\">2</text>\n<text class=\"sub\" x=\"126\" y=\"365\">3</text>\n<text class=\"sub\" x=\"126\" y=\"391\">4</text>\n\n<!-- thyroid isthmus overlying rings 2-3 -->\n<rect x=\"140\" y=\"322\" width=\"120\" height=\"48\" rx=\"12\" fill=\"#a78bfa\" opacity=\"0.18\"></rect>\n<line class=\"lead\" x1=\"140\" y1=\"346\" x2=\"86\" y2=\"346\"></line>\n<text class=\"sub\" x=\"0\" y=\"342\" style=\"fill:#a78bfa\">thyroid</text>\n<text class=\"sub\" x=\"0\" y=\"357\" style=\"fill:#a78bfa\">isthmus</text>\n\n<!-- tracheostomy window 2nd-3rd -->\n<rect x=\"248\" y=\"330\" width=\"14\" height=\"40\" rx=\"4\" fill=\"#f59e0b\" opacity=\"0.35\"></rect>\n<line class=\"lead\" x1=\"262\" y1=\"350\" x2=\"322\" y2=\"344\"></line>\n<text class=\"lbl\" x=\"328\" y=\"342\" style=\"fill:#f59e0b\">2nd–3rd ring</text>\n<text class=\"warn\" x=\"328\" y=\"360\">▸ TRACHEOSTOMY TARGET</text>\n\n<!-- danger annotations -->\n<text class=\"dngr\" x=\"328\" y=\"392\">Too high → subglottic stenosis</text>\n<text class=\"dngr\" x=\"328\" y=\"409\">Too low → innominate artery</text>\n\n<!-- sternal notch -->\n<path d=\"M120,470 Q200,452 280,470\" fill=\"none\" stroke=\"#4a5670\" stroke-width=\"6\" stroke-linecap=\"round\"></path>\n<line class=\"lead\" x1=\"284\" y1=\"464\" x2=\"322\" y2=\"458\"></line>\n<text class=\"sub\" x=\"328\" y=\"462\">sternal notch</text>\n\n<!-- incision guidance -->\n<line x1=\"200\" y1=\"112\" x2=\"200\" y2=\"240\" stroke=\"#e8edf5\" stroke-width=\"2\" stroke-dasharray=\"6 5\" opacity=\"0.5\"></line>\n<text class=\"cap\" x=\"0\" y=\"508\">Vertical midline incision when landmarks are impalpable — the midline is</text>\n<text class=\"cap\" x=\"0\" y=\"524\">relatively avascular, extends in both directions, and lets you palpate inside</text>\n<text class=\"cap\" x=\"0\" y=\"540\">the wound. Transverse stab only when you can confidently feel the membrane.</text>\n<text class=\"cap\" x=\"0\" y=\"564\" style=\"fill:#8a9ab5\">Schematic, not to scale. The membrane is smaller in women and in children.</text>\n</svg>",
+              "alt": "Anterior neck anatomy for front-of-neck airway. From top: hyoid bone, thyroid cartilage with its superior notch, the cricothyroid membrane in the gap below it, the cricoid cartilage ring, then the tracheal rings with the thyroid isthmus overlying the second and third. The cricothyroid membrane is the cricothyrotomy target; the second to third tracheal ring interspace is the tracheostomy target, with subglottic stenosis risk above it and the innominate artery below.",
+              "caption": "One drawing, four procedures: the membrane is the <b>cricothyrotomy</b> target, the 2nd–3rd ring interspace is the <b>tracheostomy</b> target, the same membrane is punctured <b>cephalad</b> for retrograde intubation, and this is the anatomy you mark pre-induction in a high-risk neck before a possible <b>CICO</b>."
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Never let go of the larynx",
+              "html": "Once your non-dominant hand has the larynx, it stays there until the tube is in. Every time you release to reposition, adjust a glove, or take an instrument, you lose the anatomy and start again — in a neck that is now bleeding. Hand off instruments, accept awkward angles, but do not let go."
+            }
+          ]
+        },
+        {
+          "id": "scalpel",
+          "num": "05",
+          "color": "red",
+          "title": "Scalpel–Bougie–Tube — The Adult Default",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Fastest, most reliable, and the technique to default to when seconds matter"
             },
             {
               "type": "steps",
@@ -335,160 +486,241 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Palpate and stabilize the cricothyroid membrane."
+                  "title": "Position and expose",
+                  "html": "Extend the neck if not contraindicated — it brings the larynx forward and makes everything easier. Stand at the patient's side, not the head. Get the neck exposed properly; do not operate through a gown collar or a cervical collar's front panel (open it, and have someone hold manual in-line stabilization if the spine is a concern)."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Insert large-bore needle/angiocath through the membrane at a caudad angle, aspirating for air to confirm tracheal placement."
+                  "title": "Stabilize the larynx and choose your incision",
+                  "html": "Laryngeal handshake with the non-dominant hand. <b>If you can confidently palpate the membrane</b>, a transverse stab through it is reasonable. <b>If you cannot</b>, make a long <b>vertical midline</b> skin incision first — it stays out of the anterior jugular veins, it can be extended in either direction, and it lets you feel your way down. When in doubt, vertical."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Advance catheter, remove needle, secure."
+                  "title": "Stab through the membrane, then turn the blade",
+                  "html": "With the membrane identified, insert the scalpel through it <b>transversely</b>. Then <b>rotate the blade so the sharp edge points caudally</b> (toward the feet). This orients the opening and, critically, gives the bougie a surface to slide along. Keep the blade in place — it is now your guide, and removing it means finding the hole again."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Connect 3 mm ID ETT adaptor and 3-way stopcock to an oxygen/jet insufflation source."
+                  "title": "Slide the bougie along the blade, angled caudally",
+                  "html": "Pass the bougie into the trachea <b>alongside the scalpel blade</b>, directed toward the carina. Some operators substitute a finger for the blade at this point to hold the tract open — the finger-and-bougie combination is what confirms you are in the trachea in a dark, bloody field. You are looking for <b>tracheal clicks</b> as the coudé tip runs over the cartilage rings, and <b>hold-up</b> at 20–30&nbsp;cm. Soft, endless advancement with neither clicks nor hold-up means you are in tissue or esophagus."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Ventilate via jet insufflation — expect a prolonged expiratory phase due to narrow-lumen exhalation limitation."
+                  "title": "Railroad a 6.0 cuffed tube",
+                  "html": "Remove the scalpel, keeping the bougie and your stabilizing hand exactly where they are. Railroad the tube over the bougie with a gentle <b>rotating</b> motion — if it catches at the membrane, twisting usually walks it through where pushing will not. <b>Advance only about 5–6&nbsp;cm past the membrane.</b> This is not an oral intubation; pushing to a normal 22&nbsp;cm mark puts you in the right mainstem or through the carina."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Treat as a temporizing measure only — plan definitive airway within ~45 minutes to avoid progressive hypercarbia; this is the primary technique of choice in pediatric patients due to small anatomy."
-                }
-              ]
-            },
-            {
-              "type": "tagline",
-              "html": "Percutaneous (Seldinger) cricothyrotomy"
-            },
-            {
-              "type": "steps",
-              "steps": [
-                {
-                  "num": "7",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Palpate and stabilize the cricothyroid membrane."
-                },
-                {
-                  "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Insert introducer needle through the membrane, confirm tracheal entry (air aspiration)."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Thread flexible guidewire through the needle into the trachea; remove needle, leaving wire in place."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Make a small vertical skin incision superficial to the membrane."
-                },
-                {
-                  "num": "11",
-                  "color": "red",
-                  "title": "",
-                  "html": "Advance dilator over the guidewire to expand the tract through the membrane."
-                },
-                {
-                  "num": "12",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Remove dilator; advance cricothyrotomy tube or ETT over the wire into the trachea."
-                },
-                {
-                  "num": "13",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Remove wire, confirm placement, secure tube."
-                },
-                {
-                  "num": "14",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Slower than the surgical technique — not the preferred choice when seconds matter most in a true CICO emergency."
-                }
-              ]
-            },
-            {
-              "type": "tagline",
-              "html": "Surgical (open) cricothyrotomy"
-            },
-            {
-              "type": "steps",
-              "steps": [
-                {
-                  "num": "15",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Palpate and stabilize the cricothyroid membrane with non-dominant hand, maintaining laryngeal control throughout."
-                },
-                {
-                  "num": "16",
-                  "color": "red",
-                  "title": "",
-                  "html": "Make a vertical skin incision superficial to the membrane."
-                },
-                {
-                  "num": "17",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Insert the scalpel laterally through the cricothyroid membrane itself, then rotate/withdraw to open the tract."
-                },
-                {
-                  "num": "18",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Insert a finger along the blunt side of the scalpel to maintain the opening and confirm tracheal entry by feel."
-                },
-                {
-                  "num": "19",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Insert a bougie alongside the finger into the trachea."
-                },
-                {
-                  "num": "20",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Railroad a cuffed ETT or cricothyrotomy tube over the bougie into the trachea."
-                },
-                {
-                  "num": "21",
-                  "color": "red",
-                  "title": "",
-                  "html": "Remove bougie, inflate cuff, confirm placement (chest rise, EtCO2, auscultation), secure tube."
+                  "title": "Remove bougie, inflate cuff, confirm, secure",
+                  "html": "Withdraw the bougie, inflate the cuff, ventilate, and confirm (see below). Then <b>secure the tube immediately and obsessively</b> — a surgical airway sits in a short, slippery tract with nothing anatomical holding it, and it will fall out during the first transfer if it is only being held by the person who placed it."
                 }
               ]
             },
             {
               "type": "alert",
               "color": "red",
-              "title": "Declare it, then commit",
-              "html": "The biggest driver of a bad CICO outcome is hesitation to escalate, not technique failure — once the front-of-neck decision is made, further attempts at oral intubation or mask ventilation only cost the time the procedure needs."
+              "title": "Bleeding is expected. Keep going.",
+              "html": "The anterior neck bleeds, mostly venous, and it will obscure your view almost immediately. This is not a complication to stop and fix — it is the normal appearance of the procedure. In CICO the bleeding does not kill the patient in the next two minutes and the hypoxia does. Work by feel, keep the larynx stabilized, and deal with hemostasis once the airway is secured."
+            }
+          ]
+        },
+        {
+          "id": "needle",
+          "num": "06",
+          "color": "amber",
+          "title": "Needle Cricothyrotomy — And Why Exhalation Is the Whole Problem",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "The pediatric default, and an adult temporising measure only"
+            },
+            {
+              "type": "steps",
+              "steps": [
+                {
+                  "num": "1",
+                  "color": "teal",
+                  "title": "Puncture caudally, aspirating as you go",
+                  "html": "Stabilize the larynx. Insert the cannula through the membrane <b>angled caudally at about 45°</b>, with a saline-filled syringe on the hub, aspirating continuously. <b>Free bubbling of air confirms tracheal entry</b> — the saline is what makes that unmistakable."
+                },
+                {
+                  "num": "2",
+                  "color": "blue",
+                  "title": "Advance the cannula, withdraw the needle, hold on",
+                  "html": "Slide the cannula off the needle into the trachea and remove the needle. <b>Hold the cannula continuously by hand</b> — it kinks and dislodges with almost no provocation, and it is the only airway the patient has."
+                },
+                {
+                  "num": "3",
+                  "color": "purple",
+                  "title": "Connect the ventilation device you already know",
+                  "html": "Attach your pressure-limited oxygen source or the 3&nbsp;mm connector/stopcock arrangement from your cart. A standard bag-valve will generate almost no flow through a 14&nbsp;ga cannula — this needs a high-pressure source to work at all."
+                },
+                {
+                  "num": "4",
+                  "color": "red",
+                  "title": "Ventilate with a long expiratory phase and watch the chest fall",
+                  "html": "Short insufflation, then a <b>markedly prolonged expiratory phase</b> — think in the region of 1:4 or longer. <b>Watch the chest actually come back down between breaths.</b> If it does not, stop insufflating. Stacking breaths into a chest that cannot empty is how this technique kills people."
+                }
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Gas goes in through the cannula; it comes out through the upper airway",
+              "html": "A 14&nbsp;ga cannula is an inadequate exhalation route. Expiration depends on the patient's own upper airway being <b>at least partially patent</b>. If the obstruction is complete — total supraglottic obstruction, severe angioedema, a foreign body — insufflated gas has nowhere to go, intrathoracic pressure climbs with every breath, and you produce barotrauma, pneumothorax, and circulatory collapse. In complete obstruction a needle technique is the wrong answer; you need a cuffed surgical airway."
+            },
+            {
+              "type": "xref",
+              "html": "<b>Needle cricothyrotomy is a bridge, not a destination.</b> Ventilation through a narrow cannula does not clear CO<sub>2</sub> adequately, so hypercarbia climbs steadily — usable for roughly <b>30–45 minutes</b>. Start arranging the definitive airway the moment the cannula is working, not when the gas goes bad."
+            }
+          ]
+        },
+        {
+          "id": "seldinger",
+          "num": "07",
+          "color": "blue",
+          "title": "Percutaneous (Seldinger) Cricothyrotomy",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Familiar sequence, but it costs time you may not have"
+            },
+            {
+              "type": "steps",
+              "steps": [
+                {
+                  "num": "1",
+                  "color": "teal",
+                  "title": "Puncture and confirm",
+                  "html": "Stabilize the larynx; introducer needle through the membrane angled caudally, aspirating a saline-filled syringe until air bubbles freely."
+                },
+                {
+                  "num": "2",
+                  "color": "blue",
+                  "title": "Wire in, needle out",
+                  "html": "Thread the guidewire caudally into the trachea and remove the needle over it. <b>From this point the wire is the airway</b> — never let go of it, and never pull it back through the needle."
+                },
+                {
+                  "num": "3",
+                  "color": "purple",
+                  "title": "Nick the skin, then dilate",
+                  "html": "Small vertical skin incision at the wire to let the dilator through, then advance the dilator-and-airway assembly over the wire with a firm, steady, rotating push. The resistance at the membrane is real and expected; it is also exactly where a false passage gets created if your angle has drifted."
+                },
+                {
+                  "num": "4",
+                  "color": "red",
+                  "title": "Airway in, dilator and wire out, confirm",
+                  "html": "Slide the airway off the dilator into the trachea, remove dilator and wire together, inflate the cuff if present, confirm and secure."
+                }
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Right sequence, wrong emergency",
+              "html": "Seldinger technique is elegant and most clinicians are fluent in it from central lines — which is exactly why it is tempting under stress. It is also measurably slower than scalpel–bougie–tube, has more steps to drop, and depends on fine motor control that degrades badly with adrenaline. <b>In a true CICO, reach for the scalpel.</b> Keep this technique for the semi-elective, better-lit, slightly-more-time situation."
+            }
+          ]
+        },
+        {
+          "id": "confirm",
+          "num": "08",
+          "color": "teal",
+          "title": "Confirming You Are in the Trachea",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<ul>\n      <li><b>Waveform capnography</b> is the standard — but read the caveat below before you rely on its absence.</li>\n      <li><b>Bougie feel, at the time of insertion:</b> tracheal clicks and hold-up at 20–30&nbsp;cm. Soft endless passage is a red flag you get <i>before</i> committing the tube.</li>\n      <li><b>Chest rise, bilateral breath sounds, absence of gastric insufflation.</b></li>\n      <li><b>Bedside ultrasound</b> — tracheal widening on tube passage, or lung sliding bilaterally.</li>\n      <li><b>Rising SpO<sub>2</sub></b>, allowing for the lag in a profoundly hypoxic patient.</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Absent capnography in an arrested patient does not mean you missed",
+              "html": "End-tidal CO<sub>2</sub> depends on pulmonary blood flow. In cardiac arrest, or in a patient who has been profoundly hypoxic with a failing circulation, the trace may be flat or minimal even with a perfectly placed tube. Do not pull a correctly sited surgical airway because the capnograph is unconvincing during arrest — corroborate with bougie feel, chest rise, and ultrasound instead."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "09",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you hit",
+                "What it usually means",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Cannot palpate any landmarks",
+                  "Obesity, edema, hematoma, short neck",
+                  "Long <b>vertical</b> midline incision and finger dissection down to the larynx. Ultrasound only if it is already in the room"
+                ],
+                [
+                  "Field fills with blood immediately",
+                  "Normal anterior neck venous bleeding",
+                  "Keep going. Work by feel, maintain laryngeal control. Hemostasis after the airway"
+                ],
+                [
+                  "Bougie advances softly, no clicks, no hold-up",
+                  "False passage in pretracheal tissue, or esophagus",
+                  "<b>Do not railroad the tube.</b> Withdraw, re-identify the membrane with your finger, redirect caudally"
+                ],
+                [
+                  "Tube will not pass over the bougie",
+                  "Tube too large, or catching on the membrane edge",
+                  "Rotate rather than push. Drop to a 6.0 (or smaller) if you started bigger. Consider extending the incision"
+                ],
+                [
+                  "Tube passes but no capnography",
+                  "False passage — or genuine low pulmonary blood flow in arrest",
+                  "Check bougie feel, chest rise, ultrasound. Do not reflexively pull a tube that felt right during arrest"
+                ],
+                [
+                  "Surgical emphysema after ventilation",
+                  "Tube tip outside the trachea, or a paratracheal tract",
+                  "Stop ventilating through it. Reassess position directly; be prepared to start again"
+                ],
+                [
+                  "Needle technique: chest not falling between breaths",
+                  "No exhalation route — obstruction is complete",
+                  "<b>Stop insufflating.</b> Convert to a cuffed surgical airway. Expect and look for pneumothorax"
+                ],
+                [
+                  "Cannula kinks or dislodges",
+                  "Unsupported narrow cannula — happens constantly",
+                  "Hold it by hand continuously; do not rely on tape. Convert early"
+                ],
+                [
+                  "Tube falls out during transfer",
+                  "Short tract, nothing anatomical retaining it",
+                  "Secure aggressively before moving. Assign one person whose only job is the airway during transfers"
+                ],
+                [
+                  "Pediatric patient, cannot find membrane",
+                  "Normal — it is tiny and soft below ~8–12 years",
+                  "Needle technique with a size-appropriate cannula. Do not attempt open technique unless there is genuinely no alternative"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "10",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -496,13 +728,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Delayed recognition of CICO — the biggest driver of bad outcomes is hesitation to escalate, not technique failure</li>\n      <li>Needle cricothyrotomy: hypercarbia beyond the ~45-minute usable window due to inadequate exhalation through a narrow lumen</li>\n      <li>False passage (paratracheal placement) — confirm with air aspiration/tactile feel before committing to dilation or tube passage</li>\n      <li>Percutaneous technique speed — the Seldinger sequence costs time that may not exist in true CICO; know when to default to open technique</li>\n      <li>Pediatric anatomy makes the open surgical technique disproportionately difficult for inexperienced providers — needle technique is the default in this population</li>\n      <li>Bleeding obscuring the field, especially with vascular anterior neck anatomy</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Delayed recognition of CICO</b> — consistently the biggest driver of bad outcomes, ahead of any technical failure. The scalpel is rarely the problem; the twelve minutes before it was picked up usually are.</li>\n      <li><b>False passage</b> into pretracheal tissue, with ventilation producing surgical emphysema and no gas exchange</li>\n      <li><b>Posterior wall injury</b> — through the trachea into the esophagus, from an over-deep stab or a blade angled posteriorly</li>\n      <li><b>Barotrauma and pneumothorax</b> from needle ventilation without an exhalation route</li>\n      <li><b>Bleeding</b> — expected and survivable acutely; anterior jugular veins and, rarely, an aberrant high thyroid vessel</li>\n      <li><b>Tube dislodgement</b>, especially during transfer — the most common way a successful airway is subsequently lost</li>\n      <li><b>Subglottic stenosis</b> as a late consequence, which is why conversion to a definitive airway is planned rather than indefinite</li>\n      <li><b>Choosing the slow technique</b> — reaching for a Seldinger kit because it feels familiar, when the situation demanded a scalpel</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "11",
+          "color": "teal",
+          "title": "After the Airway Is In",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<ul>\n      <li><b>Secure it as though someone is going to pull on it</b>, then check it again after every move.</li>\n      <li><b>Now get hemostasis</b> — the bleeding you correctly ignored still needs dealing with.</li>\n      <li><b>Sedate and analgese.</b> A patient who arrives at this point conscious has just had their neck cut open.</li>\n      <li><b>Chest radiograph</b> for tube position and to look for the pneumothorax you may have caused, particularly after needle ventilation.</li>\n      <li><b>Plan the definitive airway early.</b> A cricothyrotomy is a bridge; conversion to a formal tracheostomy or an oral tube is an elective, controlled decision made in daylight — not a 3&nbsp;a.m. improvisation. See the Tracheostomy entry.</li>\n      <li><b>Debrief the team.</b> These events are rare, fast, and frightening, and the learning evaporates within hours if nobody captures it.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "12",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -510,13 +756,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>If you're doing a front-of-neck airway, you've already failed two other airway plans — commit fully and move fast, don't second-guess the decision mid-procedure.</p>\n<p>The finger-bougie technique in open cricothyrotomy is what actually confirms you're in the trachea — trust tactile feel over visual confirmation in a bloody or dark field.</p>\n<p>Needle technique buys time in kids and true emergencies; it is not a destination airway. Know your institution's definitive airway plan before you start.</p>\n<p>Practice the open technique on a model regularly — this is a low-frequency, high-stakes skill where muscle memory under stress is the entire game.</p>"
+              "html": "<p><b>If you are doing this, you have already failed two other airway plans.</b> Commit fully. Mid-procedure second-guessing is what turns a survivable CICO into a death.</p>\n<p><b>The hand on the larynx never leaves.</b> If you remember one motor habit from this page, make it that one.</p>\n<p><b>When you cannot feel the landmarks, cut vertically and use your finger.</b> The midline is relatively avascular and the incision is how you find the anatomy — not something you do after finding it.</p>\n<p><b>Tracheal clicks and hold-up are your confirmation, and they arrive before you commit the tube.</b> Soft, endless bougie passage is the cheapest warning you will get; heed it.</p>\n<p><b>Use a 6.0.</b> The tube that will not fit is a predictable, preventable delay.</p>\n<p><b>Needle technique needs somewhere for the gas to go.</b> In complete obstruction it is not a rescue — it is a barotrauma generator.</p>\n<p><b>Practice on a model, regularly.</b> This is the definitive low-frequency, high-stakes psychomotor skill, and under adrenaline you will do what you have rehearsed, not what you have read.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "13",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -526,11 +772,23 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Frerk C, Mitchell VS, McNarry AF, et al.; Difficult Airway Society intubation guidelines working group. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. <i>Br J Anaesth.</i> 2015;115(6):827-848."
+                  "html": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. <i>Br J Anaesth.</i> 2015;115(6):827–848."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31–81."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: results of the Fourth National Audit Project (NAP4). <i>Br J Anaesth.</i> 2011;106(5):617–631."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Cricothyrotomy chapter."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Surgical Airway chapter."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Adapted in part from the author's original “Introduction to Surgical Airways” teaching deck, used with permission."
                 }
               ]
             }
@@ -559,8 +817,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -572,7 +830,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Cannot Intubate, Cannot Oxygenate (CICO) confirmed after failed attempts at face mask ventilation, supraglottic airway placement, and tracheal intubation</li>\n      <li>Progressive desaturation despite optimized attempts at the above</li>\n      <li>Any scenario where the algorithm has been exhausted and oxygenation cannot be achieved by any other route</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Cannot Intubate, Cannot Oxygenate</b> — confirmed after optimized, and <i>failed</i>, attempts at all three of: face mask ventilation, supraglottic airway, and tracheal intubation</li>\n      <li>Progressive desaturation despite those optimized attempts</li>\n      <li>Any situation where the algorithm is exhausted and oxygenation cannot be achieved by any other route</li>\n</ul>"
+            },
+            {
+              "type": "xref",
+              "html": "<b>This entry is the decision layer; the Cricothyrotomy entry is the technique layer.</b> Knowing how to cut is necessary and not sufficient. Almost every published CICO disaster is a story about a team that could have performed the procedure competently and didn't start it soon enough."
             }
           ]
         },
@@ -586,29 +848,44 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None — by definition, if the diagnosis of CICO is correct, a front-of-neck airway is indicated; the only real contraindication is misdiagnosing the situation as CICO when another maneuver would still work</li>\n</ul>"
+              "html": "<p><b>None.</b> If the diagnosis of CICO is correct, a front-of-neck airway is indicated. The only meaningful error in the other direction is <i>misdiagnosing</i> CICO when a further optimized attempt at mask, supraglottic, or tube would still have worked — which is why the section below is about what \"optimized\" actually means.</p>"
             }
           ]
         },
         {
-          "id": "equipment",
+          "id": "recognize",
           "num": "03",
-          "color": "blue",
-          "title": "Equipment",
+          "color": "amber",
+          "title": "Recognizing CICO — The Part That Actually Fails",
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "You are diagnosing a failure of oxygenation, not collecting failed attempts"
+            },
+            {
               "type": "box",
-              "color": "blue",
-              "html": "<ul>\n      <li>Pre-designated CICO/difficult airway cart, immediately available and known to the team</li>\n      <li>Scalpel-bougie-tube setup as the primary adult technique (see Cricothyrotomy entry)</li>\n      <li>Needle cricothyrotomy/jet ventilation setup for pediatric or anatomy-limited cases</li>\n      <li>Clear cognitive aid posted or immediately accessible (CICO algorithm card)</li>\n</ul>"
+              "color": "amber",
+              "html": "<p><b>“Optimized” has a specific meaning.</b> Before you can call an attempt failed, it has to have been a real attempt:</p>\n<ul>\n      <li><b>Face mask:</b> two-person technique, oral and nasal adjuncts in, jaw thrust, head position corrected, seal checked.</li>\n      <li><b>Supraglottic airway:</b> correct size, a second attempt or a different device — not one hurried insertion that didn't seat.</li>\n      <li><b>Intubation:</b> best operator available, best device available, external laryngeal manipulation, patient repositioned. <b>A maximum of three attempts plus one by a more experienced operator</b> is the commonly taught ceiling; the exact number matters less than the principle that repeating an identical failing attempt is not a new attempt.</li>\n</ul>\n<p>Once all three limbs have genuinely failed and the saturation is falling, <b>the diagnosis is made</b>. There is no fourth category to try.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "The clock you are actually racing",
+              "html": "By the time saturations fall below roughly 90% they drop <b>precipitously</b>, not linearly — the oxyhaemoglobin dissociation curve's steep segment means you go from 90% to profound hypoxia in well under a minute in a patient with no reserve. Any plan that assumes you will have several minutes of gentle decline to make up your mind is wrong. Obese, pregnant, pediatric, and critically ill patients have essentially no reserve at all."
+            },
+            {
+              "type": "box",
+              "color": "purple",
+              "html": "<p><b>The human-factors failure modes, by name.</b> These are what the audit data actually describes:</p>\n<ul>\n      <li><b>Task fixation</b> — the operator who keeps re-attempting laryngoscopy because this time it will work. The strongest predictor of it is having just felt close to success.</li>\n      <li><b>Loss of situational awareness</b> — nobody is watching the saturation trend because everybody is watching the mouth.</li>\n      <li><b>Diffusion of responsibility</b> — several senior people present, none of whom believes it is their call to escalate.</li>\n      <li><b>Hierarchy</b> — the person who first recognized CICO is the most junior in the room and raises it as a question rather than a statement.</li>\n      <li><b>Sunk cost</b> — \"we've come this far with this plan.\"</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "declare",
           "num": "04",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Declaring It — The Steps That Matter",
           "tagline": null,
           "blocks": [
             {
@@ -617,58 +894,120 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Declare CICO out loud to the team the moment it is recognized — verbalizing the diagnosis is what triggers the algorithm shift and mobilizes help."
+                  "title": "Say the words out loud",
+                  "html": "<b>“This is CICO. We are performing a front-of-neck airway.”</b> Said as a declaration, not a question. Verbalising the diagnosis is the single act that shifts the whole team out of intubation mode — without it, everyone continues optimizing the thing that has already failed. This is the step that is most often skipped and it costs more lives than any technical error."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Call for the difficult airway/CICO cart immediately if not already open."
+                  "title": "Name people, not roles",
+                  "html": "“Sarah, get the CICO cart. James, you're on the neck with me. Priya, keep the saturation and the time out loud.” Unaddressed requests in a crowded room are absorbed by everybody and actioned by nobody. Assign a <b>timekeeper</b> explicitly — time perception collapses in these events."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Default to the scalpel-bougie-tube (surgical cricothyrotomy) technique in adults as the fastest, most reliable front-of-neck approach — do not default to needle techniques or percutaneous kits when speed is the priority."
+                  "title": "Keep oxygen going through the front door",
+                  "html": "Do not abandon upper-airway oxygenation because you have declared CICO. Leave the supraglottic device or mask in place with high-flow oxygen and continue attempts at passive or active oxygenation while the neck is being prepared. Any residual patency buys seconds, and — importantly — it is also the exhalation route if you end up using a needle technique."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "In pediatric patients or anatomy where surgical technique is disproportionately difficult, default to needle cricothyrotomy with jet ventilation instead."
+                  "title": "Default to scalpel–bougie–tube in adults",
+                  "html": "Decide this <b>before</b> the emergency, as an institutional default, so it is not debated at the bedside. Adults: scalpel technique. Children below roughly 8–12 years, or an adult neck where open technique is genuinely impossible: needle. Do not pick up a Seldinger kit because it feels familiar — see the Cricothyrotomy entry for why speed decides this."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Execute the chosen technique without further attempts at oral intubation or mask ventilation — going back to a failed technique wastes the only resource that matters, time."
+                  "title": "Stop going back",
+                  "html": "Once the decision is made, further attempts at oral intubation or mask ventilation <b>by the same operator</b> are a distraction that consumes the only resource that matters. A second person may continue upper-airway oxygenation; the person doing the neck does the neck."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Confirm oxygenation via the front-of-neck airway before considering the emergency resolved."
-                },
-                {
-                  "num": "7",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Debrief and plan definitive airway management (OR-based conversion, tracheostomy) once the patient is stabilized."
+                  "title": "Confirm oxygenation, then stop and reassess everything",
+                  "html": "A rising saturation through the front-of-neck airway ends the emergency, not the episode. Secure the tube, get imaging, manage bleeding, sedate, and plan the definitive airway."
                 }
               ]
             },
             {
               "type": "alert",
-              "color": "red",
-              "title": "The hard part is the decision, not the scalpel",
-              "html": "Rehearse saying \"this is CICO, we are moving to a surgical airway\" out loud in simulation — a pre-briefed team with a known default technique moves faster than the smartest individual improvising alone."
+              "color": "amber",
+              "title": "Rehearse the sentence, not just the procedure",
+              "html": "Teams that have said “this is CICO, we are moving to a surgical airway” out loud in simulation say it faster in reality. It sounds trivial. It is the single highest-yield thing you can rehearse, because the barrier in the real event is almost never manual dexterity — it is the social and cognitive cost of being the person who declares that the plan has failed."
+            }
+          ]
+        },
+        {
+          "id": "prep",
+          "num": "05",
+          "color": "blue",
+          "title": "What Should Already Be True Before the Emergency",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n      <li><b>A CICO cart with a known location</b> that every anesthetist, intensivist, and emergency clinician can find without asking.</li>\n      <li><b>One agreed default technique</b>, institution-wide. Debate it at a governance meeting, never at a bedside.</li>\n      <li><b>A cognitive aid on the cart</b> — a single laminated card. Working memory is the first thing hypoxic-patient stress takes away from you.</li>\n      <li><b>An airway assessment habit</b> that flags the high-risk neck <i>before</i> induction: previous difficult airway, radiotherapy, neck mass, obesity, limited mouth opening, short thyromental distance, prior surgery.</li>\n      <li><b>A pre-induction verbalised plan</b> for anyone flagged: “Plan A is videolaryngoscopy, plan B is a supraglottic, plan C is front-of-neck and the cart is in that corner.” Naming plan C out loud before you need it dramatically lowers the threshold to reach it.</li>\n      <li><b>Landmarks identified in advance</b> in the high-risk patient — marking the cricothyroid membrane with a skin pen before induction takes fifteen seconds and removes the hardest step from the worst moment.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "purple",
+          "title": "When the Decision Is the Hard Part",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What's happening",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Third or fourth identical laryngoscopy attempt",
+                  "Task fixation",
+                  "Change something or stop. An unchanged attempt is not a new attempt"
+                ],
+                [
+                  "Nobody has said a number out loud in two minutes",
+                  "Lost situational awareness",
+                  "Assign a timekeeper to call saturation and elapsed time aloud every 30 seconds"
+                ],
+                [
+                  "Several seniors present, no decision being made",
+                  "Diffusion of responsibility",
+                  "One person names themselves team leader out loud and takes the decision"
+                ],
+                [
+                  "You think it's CICO but you're junior in the room",
+                  "Hierarchy gradient",
+                  "State it as an observation with a number: “Sat is 82 and falling, we've failed mask, SGA and tube — I think this is CICO.” Data is harder to wave away than a question"
+                ],
+                [
+                  "“Let's just try once more” after the diagnosis is made",
+                  "Sunk cost",
+                  "The declaration ends the debate. Someone else may oxygenate from above; the neck proceeds"
+                ],
+                [
+                  "Can't find the cart / unfamiliar kit",
+                  "System failure, surfacing now",
+                  "Scalpel, bougie, 6.0 tube is sufficient. Don't wait for a kit — that is the whole point of the default technique"
+                ],
+                [
+                  "Saturation briefly improves mid-preparation",
+                  "The most dangerous moment in the event",
+                  "Keep going unless oxygenation is genuinely restored and sustained. Transient improvement has repeatedly seduced teams into standing down too early"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -676,27 +1015,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Delayed declaration of CICO — teams often persist with failing techniques past the point they should have escalated</li>\n      <li>Choosing a slower technique (percutaneous/Seldinger) when the situation calls for the fastest option (surgical)</li>\n      <li>Fixation on a single failed approach instead of moving decisively to the front-of-neck algorithm</li>\n      <li>Team communication breakdown — if CICO isn't declared out loud, help doesn't mobilize in time</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Delayed declaration</b> — the dominant failure mode, by a wide margin</li>\n      <li><b>Choosing the slower technique</b> (Seldinger, or an unfamiliar commercial kit) when speed was the deciding variable</li>\n      <li><b>Standing down on transient improvement</b>, then having to restart the decision from scratch with less reserve than before</li>\n      <li><b>Abandoning upper-airway oxygenation</b> the moment CICO is declared — it still buys time, and it is the exhalation route for needle techniques</li>\n      <li><b>Communication breakdown</b> — if CICO isn't said out loud, help doesn't mobilise and the room stays in intubation mode</li>\n      <li><b>No pre-agreed default</b>, producing a bedside debate about technique while the patient desaturates</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "08",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The hardest part of CICO management isn't the scalpel technique — it's the decision to commit to it. Practice saying “this is CICO, we are moving to a surgical airway” out loud in simulation so it isn't the first time in a real event.</p>\n<p>This entry is the decision layer sitting above the individual techniques (see Cricothyrotomy) — know both, but know this framework first.</p>\n<p>A pre-briefed team with a known cart location and a known default technique moves faster than the smartest individual improvising alone.</p>"
+              "html": "<p><b>The hard part is the decision, not the scalpel.</b> Every element of preparation should be aimed at lowering the threshold to that decision.</p>\n<p><b>Say it as a statement.</b> “This is CICO, we are moving to a surgical airway” — not “do you think maybe we should…”</p>\n<p><b>Name people, not roles.</b> Unaddressed instructions are executed by nobody.</p>\n<p><b>Mark the membrane before induction in a high-risk neck.</b> Fifteen seconds then; the hardest step removed later.</p>\n<p><b>Transient improvement is a trap.</b> It is the most common reason a correctly-made decision gets reversed.</p>\n<p><b>Rehearse it out loud.</b> The team that has practiced the sentence moves faster than the individual who has only practiced the procedure.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "09",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -706,11 +1045,19 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. <i>Br J Anaesth.</i> 2015;115(6):827-848."
+                  "html": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. <i>Br J Anaesth.</i> 2015;115(6):827–848."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31–81."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: results of the Fourth National Audit Project (NAP4). <i>Br J Anaesth.</i> 2011;106(5):617–631 — the audit that established delayed escalation, not technique, as the dominant failure mode."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Higgs A, McGrath BA, Goddard C, et al. Guidelines for the management of tracheal intubation in critically ill adults. <i>Br J Anaesth.</i> 2018;120(2):323-352."
+                  "html": "Chrimes N. The Vortex: a universal “high-acuity implementation tool” for emergency airway management. <i>Br J Anaesth.</i> 2016;117(suppl 1):i20–i27."
                 }
               ]
             }
@@ -739,8 +1086,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -752,7 +1099,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Long-term ventilator-assisted respiration anticipated</li>\n      <li>Failure to wean or prolonged weaning from mechanical ventilation</li>\n      <li>Inability to protect the airway with an anticipated prolonged course</li>\n      <li>Definitive airway control following cricothyrotomy as a bridge (conversion to tracheostomy once stabilized)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Anticipated prolonged mechanical ventilation</b> — the commonest reason by far</li>\n      <li>Failure to wean, or a protracted weaning course where a trachy improves comfort, sedation requirements, and secretion clearance</li>\n      <li>Inability to protect the airway with an expected prolonged course (bulbar weakness, severe brain injury)</li>\n      <li>Upper airway obstruction requiring a durable bypass</li>\n      <li><b>Definitive conversion following an emergency cricothyrotomy</b>, once the patient is stable</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "This is not a rescue airway",
+              "html": "If the question is “can this patient breathe in the next four minutes,” the answer is a cricothyrotomy, not a tracheostomy. The cricothyroid membrane is superficial, avascular, and immediately below the skin; the trachea at the 2nd–3rd ring sits deeper, behind the strap muscles and often behind the thyroid isthmus, in a more vascular field. Attempting a tracheostomy in a true CICO costs time the patient does not have. See the Cricothyrotomy entry."
             }
           ]
         },
@@ -760,13 +1113,53 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Contraindications & Choosing Percutaneous vs Open",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Emergent CICO scenario — tracheostomy is not the front-line rescue airway; cricothyrotomy is faster and anatomically more accessible in a crisis</li>\n      <li>Uncorrected coagulopathy for elective/semi-elective percutaneous approach (relative)</li>\n      <li>Distorted neck anatomy or inability to access the site (favors surgical/open approach in a controlled setting, e.g., OR)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Emergent CICO</b> — absolute, for the reason above</li>\n      <li>Uncorrected coagulopathy (relative; correct first for an elective procedure)</li>\n      <li><b>Age under ~12–16</b> — pediatric tracheostomy is an open, specialist procedure; percutaneous technique is not appropriate</li>\n</ul>"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Feature",
+                "Favors percutaneous (bedside)",
+                "Favors open (theatre)"
+              ],
+              "rows": [
+                [
+                  "Anatomy",
+                  "Palpable landmarks, normal neck",
+                  "Obesity, short neck, impalpable cricoid, goitre, fixed neck"
+                ],
+                [
+                  "Prior surgery/radiotherapy",
+                  "None",
+                  "Previous neck surgery or radiotherapy — distorted planes, scarred tissue"
+                ],
+                [
+                  "Coagulation",
+                  "Normal or corrected",
+                  "Coagulopathy, or high aberrant vessels on ultrasound"
+                ],
+                [
+                  "Spine",
+                  "Neck can be extended",
+                  "Unstable cervical spine, fixed flexion deformity"
+                ],
+                [
+                  "Logistics",
+                  "Avoids transfer of an unstable ICU patient",
+                  "Difficult anatomy worth doing under direct vision"
+                ],
+                [
+                  "Urgency",
+                  "Semi-elective",
+                  "Semi-elective — <b>neither is an emergency technique</b>"
+                ]
+              ]
             }
           ]
         },
@@ -774,26 +1167,37 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment & Team",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Scalpel, retractors, dissection instruments, suction, tracheostomy tube, suture</li>\n      <li>OR setting typically required — this is a controlled, planned procedure, not a rapid rescue technique</li>\n      <li>Bronchoscopic guidance where available for the percutaneous dilational approach</li>\n</ul>"
+              "html": "<p><b>Percutaneous dilational (bedside ICU)</b></p>\n<ul>\n      <li>Commercial PDT kit — introducer needle, guidewire, single graduated dilator (or sequential dilators), loading dilators, tracheostomy tube</li>\n      <li><b>Bronchoscope with a dedicated operator</b> — a second clinician whose only job is the scope and the view</li>\n      <li><b>Ultrasound</b> to map midline, tracheal rings, thyroid isthmus and, critically, <b>aberrant anterior vessels</b> before puncture</li>\n      <li>Capnography, suction, full monitoring, emergency reintubation equipment <b>immediately to hand</b></li>\n      <li><b>A named airway operator at the head</b> managing the existing ETT — this role is as important as the operator at the neck</li>\n</ul>"
+            },
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p><b>Open surgical (theatre)</b></p>\n<ul>\n      <li>Scalpel, retractors (including a Cricoid/Langenbeck), dissecting scissors, diathermy, suction, ties/sutures</li>\n      <li>Tracheostomy tubes: your intended size, <b>plus one smaller</b>, plus a cuffed ETT for rescue</li>\n      <li><b>Tracheal dilator (Trousseau) and tracheal hook</b> — the instruments that save a lost tract</li>\n      <li>Shoulder roll for neck extension</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Have a smaller tube and a reintubation plan open in the room",
+              "html": "The two moments this procedure goes wrong are losing the airway at the head during the exchange, and failing to place the tracheostomy tube after the trachea is already open. Both are survivable if a cuffed ETT and a smaller trachy tube are physically present and someone is assigned to the oral airway. Both are disasters if they must be fetched."
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "percutaneous",
           "num": "04",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Percutaneous Dilational Tracheostomy — Stepwise",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "Open surgical tracheostomy"
+              "html": "Two operators, two airways, one shared moment of vulnerability"
             },
             {
               "type": "steps",
@@ -801,76 +1205,172 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Position patient supine with neck extended (if not contraindicated by cervical spine precautions)."
+                  "title": "Position, pre-oxygenate, and map with ultrasound",
+                  "html": "Shoulder roll, neck extended (if the spine allows), FiO<sub>2</sub> 1.0. Scan before you prep: identify midline, count the rings, find the cricoid, locate the thyroid isthmus, and <b>look specifically for an aberrant anterior jugular or high innominate vessel crossing your intended puncture site.</b> Mark the skin."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Identify the site — closer to the sternoclavicular notch than the cricothyroid membrane, at approximately the 2nd–3rd tracheal ring level."
+                  "title": "Withdraw the ETT under bronchoscopic vision — do not extubate",
+                  "html": "The head operator withdraws the existing tube until the <b>cuff sits just below the cords</b>, with the bronchoscope confirming. This is the single most dangerous step of the procedure: pulled too far you have extubated a critically ill patient; left too deep and your introducer needle will puncture the ETT cuff or the tube itself. The scope stays in the ETT throughout."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Make a transverse or vertical skin incision as per surgeon preference/institutional protocol."
+                  "title": "Puncture between the 1st–2nd or 2nd–3rd rings, transilluminating and watching from inside",
+                  "html": "Small horizontal skin incision, blunt-dissect down to pretracheal tissue, then introduce the needle <b>in the midline, angled caudally</b>, aspirating air. <b>The bronchoscopist confirms the needle enters in the midline, at the correct interspace, and not through the posterior wall.</b> Too high (through the cricoid or the 1st ring) causes subglottic stenosis; too low risks the innominate artery."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Perform meticulous dissection through the strap muscles, retracting to expose the thyroid isthmus."
+                  "title": "Wire in, confirm it heads toward the carina",
+                  "html": "Thread the J-wire caudally and have the bronchoscopist confirm it is running <b>down toward the carina, not up toward the cords</b>. Remove the needle. The wire is now the only thing preserving your tract — it does not get released."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Divide or retract the thyroid isthmus as needed to expose the trachea."
+                  "title": "Dilate over the wire, countering with the other hand",
+                  "html": "Pass the loading dilator, then the graduated dilator over the wire with a firm, steady, rotating advance. <b>Support the anterior neck with your other hand to counter the force</b> — unopposed pushing indents the trachea and risks posterior wall injury. Keep the wire moving freely; if it kinks, stop, straighten and start the dilation again rather than forcing over a bent wire."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Hold the field open with retractors."
+                  "title": "Railroad the tracheostomy tube, then remove obturator and wire together",
+                  "html": "Load the tube on its dilator, advance over the wire into the trachea, then remove the inner dilator and the wire as one. Inflate the cuff, connect the circuit, and <b>confirm with capnography and the bronchoscope passed down the new tube</b> — you want to see rings and carina through the trachy, not just hear breath sounds."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Create the tracheal opening at the bottom of the 3rd and top of the 4th tracheal ring — excise a small window rather than a complete tracheal ring resection."
-                },
+                  "title": "Only now remove the ETT",
+                  "html": "The oral tube stays in place, cuff down, until the tracheostomy is confirmed working. It is your rescue airway, and withdrawing it early is how a recoverable problem becomes an emergency. Once confirmed, remove it, secure the trachy with ties and/or sutures, and document tube size, depth, and the number of dilations."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "open",
+          "num": "05",
+          "color": "blue",
+          "title": "Open Surgical Tracheostomy — Stepwise",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "steps",
+              "steps": [
                 {
-                  "num": "8",
+                  "num": "1",
                   "color": "teal",
-                  "title": "",
-                  "html": "Insert the tracheostomy tube into the created opening."
+                  "title": "Position and mark",
+                  "html": "Supine, shoulder roll, neck extended if permitted. Palpate and mark the thyroid notch, cricoid, and sternal notch. <b>Your target is the 2nd–3rd tracheal ring</b> — roughly midway between cricoid and sternal notch, closer to the notch than the cricothyroid membrane."
                 },
                 {
-                  "num": "9",
+                  "num": "2",
                   "color": "blue",
-                  "title": "",
-                  "html": "Confirm placement (chest rise, EtCO2, bilateral breath sounds)."
+                  "title": "Incise and stay midline",
+                  "html": "Transverse incision about two fingerbreadths above the sternal notch (better cosmesis) or vertical midline (faster, extensible). Then <b>dissect strictly in the midline raphe between the strap muscles</b> and retract them laterally — the midline is the avascular plane, and wandering off it is what produces bleeding."
                 },
                 {
-                  "num": "10",
+                  "num": "3",
                   "color": "purple",
-                  "title": "",
-                  "html": "Secure the tube, dress the site."
+                  "title": "Deal with the thyroid isthmus deliberately",
+                  "html": "Retract it superiorly if it will move; if not, <b>divide it between clamps and suture-ligate both ends</b>. A partially divided, inadequately ligated isthmus is a classic source of troublesome postoperative bleeding into the airway. Do not simply diathermy across it and hope."
+                },
+                {
+                  "num": "4",
+                  "color": "red",
+                  "title": "Expose the rings, place a tracheal hook, and confirm your level",
+                  "html": "Clear the pretracheal fascia, identify the cricoid and count down. A <b>tracheal hook under the cricoid</b> steadies and lifts the larynx. Recount before you cut — this is the last moment the level is free to change."
+                },
+                {
+                  "num": "5",
+                  "color": "amber",
+                  "title": "Open the trachea as a window, not a resected ring",
+                  "html": "Create the opening at the bottom of the 2nd/top of the 3rd ring — a small window or a hinged flap per your institution's practice. <b>Do not resect a full ring circumferentially</b>; over-resection is a technical error that predisposes to tracheomalacia and stenosis. Warn the anesthetist before entering: FiO<sub>2</sub> should be reduced and diathermy kept away from the open airway, because an <b>airway fire</b> is a real hazard at this moment."
+                },
+                {
+                  "num": "6",
+                  "color": "teal",
+                  "title": "Withdraw the ETT, insert the tube, confirm before committing",
+                  "html": "Ask for the ETT to be withdrawn to just above the stoma — <b>not removed</b>. Insert the tracheostomy tube, inflate the cuff, connect and confirm with capnography and chest rise. Only then is the oral tube removed. Secure with ties and stay sutures."
                 }
               ]
             },
             {
               "type": "alert",
               "color": "amber",
-              "title": "This is not a rescue airway",
-              "html": "Tracheostomy belongs to the planned, definitive-airway conversation once a patient is stabilized — attempting it as a first response in a true CICO emergency costs time that cricothyrotomy does not."
+              "title": "Stay sutures and a documented tract are the gift you leave the night team",
+              "html": "In the first week the tract is immature and will not reliably reopen if the tube falls out. <b>Place stay sutures</b> (traction sutures on either side of the tracheal opening, taped to the chest and clearly labelled), record the tube size and type at the bedside, and ensure the same-size and one-size-smaller tubes stay with the patient. An accidental decannulation on day two with no stay sutures is a genuine emergency."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What happens",
+                "What it usually means",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Needle punctures the ETT or its cuff",
+                  "Tube not withdrawn far enough",
+                  "Withdraw the ETT further under vision and re-puncture. Have a replacement ETT ready — a punctured cuff may need exchanging"
+                ],
+                [
+                  "Accidental extubation during withdrawal",
+                  "ETT pulled past the cords",
+                  "Reintubate immediately — this is why the scope and a reintubation plan are mandatory. Abandon and restart once stable"
+                ],
+                [
+                  "Wire kinks during dilation",
+                  "Force applied off-axis",
+                  "Stop. Withdraw the dilator, straighten or replace the wire. Never dilate over a kinked wire — that's how a false passage forms"
+                ],
+                [
+                  "Brisk bleeding during dissection",
+                  "Off midline, or an undivided/unligated isthmus",
+                  "Return to the midline plane. Formally ligate the isthmus. Pack and get proper exposure rather than blindly diathermying"
+                ],
+                [
+                  "Tracheostomy tube won't pass after dilation",
+                  "Under-dilated tract, or false passage",
+                  "Re-dilate over the retained wire. Confirm position bronchoscopically before another attempt. Drop a size"
+                ],
+                [
+                  "Tube in, but no capnography",
+                  "Pretracheal false passage",
+                  "<b>Do not ventilate through it.</b> Revert to the oral ETT (still in place — this is why), reassess, restart"
+                ],
+                [
+                  "Surgical emphysema after connection",
+                  "Tube tip outside the lumen, or over-tight closure around the stoma",
+                  "Stop ventilating via the trachy, reconfirm position, leave the stoma loosely closed"
+                ],
+                [
+                  "Sudden heavy bleeding days later",
+                  "<b>Tracheo-innominate fistula</b> until proven otherwise — tube placed too low",
+                  "Surgical emergency. Hyperinflate the cuff to tamponade, apply digital pressure via the stoma, call vascular/ENT immediately"
+                ],
+                [
+                  "Accidental decannulation in the first week",
+                  "Immature tract, tube not secured",
+                  "Do not blindly reinsert. Oxygenate from above, <b>reintubate orally</b>, then re-establish the stoma under controlled conditions. Stay sutures if present"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -878,27 +1378,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Not a rapid rescue airway — attempting tracheostomy in a true CICO emergency costs time that cricothyrotomy does not</li>\n      <li>Requires an OR in the standard surgical approach — logistically incompatible with emergent bedside crisis management outside specific percutaneous bedside protocols</li>\n      <li>More destructive/invasive than cricothyrotomy — greater tissue disruption, longer procedure time, higher bleeding risk from the thyroid isthmus and surrounding vasculature</li>\n      <li>Over-resection of tracheal rings — removing a fully transected ring segment is a technical error; the opening should be a window, not a full ring excision</li>\n      <li>Bleeding from thyroid isthmus if not adequately controlled during dissection/division</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Loss of the airway during the exchange</b> — the defining intraoperative risk of both techniques</li>\n      <li><b>False passage</b> and pretracheal placement, particularly with percutaneous dilation over a kinked wire</li>\n      <li><b>Bleeding</b> — isthmus, anterior jugular veins, aberrant vessels; and late, catastrophic <b>tracheo-innominate fistula</b> from a tube placed too low</li>\n      <li><b>Posterior tracheal wall injury</b> and tracheo-esophageal fistula — from unopposed dilation force or an over-deep needle</li>\n      <li><b>Subglottic stenosis</b> from a stoma placed too high (through the cricoid or 1st ring)</li>\n      <li><b>Tracheomalacia and tracheal stenosis</b> from over-resection of cartilage</li>\n      <li><b>Airway fire</b> at the moment of tracheal entry with diathermy and a high FiO<sub>2</sub></li>\n      <li><b>Accidental decannulation into an immature tract</b> — the commonest serious ward-level emergency afterwards</li>\n      <li><b>Attempting it as a rescue</b> in CICO — the error this whole entry exists to prevent</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "08",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>If the question is “can this patient breathe right now,” the answer is cricothyrotomy, not tracheostomy — tracheostomy belongs to the planned, definitive-airway conversation.</p>\n<p>Site selection matters: too high risks subglottic stenosis and interferes with a prior cricothyrotomy site; too low risks innominate vessel injury.</p>\n<p>When converting a crisis cricothyrotomy to a definitive tracheostomy, this is typically done electively in a controlled OR setting once the patient is stabilized.</p>"
+              "html": "<p><b>If the question is “can this patient breathe right now,” the answer is a cricothyrotomy.</b> Tracheostomy is a planned conversation about the next fortnight.</p>\n<p><b>The oral tube stays in until the tracheostomy is proven.</b> It is the rescue airway, and removing it early converts every recoverable problem into an emergency.</p>\n<p><b>Site selection is the long game.</b> Too high buys subglottic stenosis; too low buys a tracheo-innominate fistula. Count the rings, and count them again before cutting.</p>\n<p><b>Ultrasound before you puncture</b>, specifically to find the vessel that is not supposed to be there.</p>\n<p><b>Midline is the avascular plane.</b> Nearly all troublesome bleeding comes from drifting off it.</p>\n<p><b>A window, not a resected ring.</b></p>\n<p><b>Stay sutures, a labelled bedside sign, and a spare tube one size down.</b> The procedure's most dangerous day is often day two, on a ward, with a team who didn't place it.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "09",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -907,12 +1407,20 @@
               "type": "sources",
               "items": [
                 {
+                  "tier": "GUIDELINE",
+                  "html": "Raimonde AJ, Westhoven N, Winters R. Tracheostomy. <i>StatPearls</i>. StatPearls Publishing; updated 2023."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "McGrath BA, Bates L, Atkinson D, Moore JA. Multidisciplinary guidelines for the management of tracheostomy and laryngectomy airway emergencies. <i>Anaesthesia.</i> 2012;67(9):1025–1041 — the National Tracheostomy Safety Project algorithms."
+                },
+                {
                   "tier": "REFERENCE",
                   "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Tracheostomy chapter."
                 },
                 {
-                  "tier": "GUIDELINE",
-                  "html": "McGrath BA, Bates L, Atkinson D, Moore JA; National Tracheostomy Safety Project. Multidisciplinary guidelines for the management of tracheostomy and laryngectomy airway emergencies. <i>Anaesthesia.</i> 2012;67(9):1025-1041."
+                  "tier": "REFERENCE",
+                  "html": "Adapted in part from the author's original “Introduction to Surgical Airways” teaching deck, used with permission."
                 }
               ]
             }
@@ -941,8 +1449,8 @@
       "description": "Wire-guided backup when fiberoptic/video fails.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -954,7 +1462,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Difficult airway where standard laryngoscopy and video-assisted techniques have failed or are unavailable</li>\n      <li>Significant blood or secretions obscuring the glottic view for fiberoptic technique</li>\n      <li>Limited mouth opening where a rigid scope cannot be introduced but the cricothyroid membrane is accessible</li>\n      <li>Resource-limited settings without fiberoptic or video laryngoscopy equipment</li>\n</ul>"
+              "html": "<ul>\n      <li>Difficult airway where laryngoscopy and video-assisted techniques have failed <b>or are unavailable</b></li>\n      <li><b>Blood or secretions obscuring the view</b> — the one situation where this technique has a genuine edge, because it does not depend on seeing anything</li>\n      <li>Limited mouth opening that prevents a rigid scope, where the cricothyroid membrane is still accessible</li>\n      <li>Resource-limited settings without fiberoptic or video laryngoscopy</li>\n      <li>A patient who is <b>maintaining oxygenation</b> while you work — this is a difficult-airway technique, not a rescue one</li>\n</ul>"
+            },
+            {
+              "type": "xref",
+              "html": "<b>Know where this sits on the ladder.</b> Slower than video laryngoscopy, slower than fiberoptic, and far slower than a scalpel. It belongs to the difficult-but-not-yet-critical airway in a patient who is still oxygenating. If the patient is desaturating and you cannot oxygenate, this is the wrong page — go to Cricothyrotomy."
             }
           ]
         },
@@ -968,7 +1480,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>True CICO emergency — this technique is too slow; go directly to a surgical airway</li>\n      <li>Coagulopathy or overlying infection at the cricothyroid membrane puncture site (relative)</li>\n      <li>Distorted or unidentifiable anterior neck anatomy preventing safe membrane puncture</li>\n      <li>Any faster airway option is available and appropriate — retrograde intubation is a backup, not a first-line technique</li>\n</ul>"
+              "html": "<ul>\n      <li><b>True CICO.</b> Absolutely. This technique takes minutes you do not have; go directly to a front-of-neck airway.</li>\n      <li>Distorted or unidentifiable anterior neck anatomy preventing safe membrane puncture</li>\n      <li>Coagulopathy, or infection/tumor overlying the puncture site (relative)</li>\n      <li><b>Any faster appropriate option is available</b> — retrograde intubation is a backup, and choosing it over something quicker is itself the error</li>\n</ul>"
             }
           ]
         },
@@ -982,7 +1494,7 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Introducer needle (similar to percutaneous cricothyrotomy kit)</li>\n      <li>Long guidewire or epidural catheter</li>\n      <li>Retrieval forceps or hemostat</li>\n      <li>Standard ETT</li>\n      <li>Local anesthetic if patient is awake/cooperative</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Introducer needle</b> (18 ga or the needle from a percutaneous cricothyrotomy/central line kit), with a saline-filled syringe so tracheal air shows as bubbles</li>\n      <li><b>A long wire</b> — this is the critical spec. You need enough length to span from the neck, up through the larynx, out of the mouth, <b>and</b> still have the tube railroaded over it. A standard 45–50&nbsp;cm central line wire is marginal; a <b>long (≥110&nbsp;cm) J-wire or an epidural catheter</b> is what you actually want.</li>\n      <li><b>Magill forceps</b> and a laryngoscope for retrieving the wire from the pharynx</li>\n      <li><b>An airway exchange catheter or the Aintree-type catheter</b> — strongly preferred over railroading the ETT directly (see the technique note below)</li>\n      <li>ETT, a size smaller than you would normally pick</li>\n      <li>Local anesthetic if the patient is awake, plus topicalization as for any awake technique</li>\n      <li><b>A clamp or hemostat</b> to grip the wire at the neck — losing the wire into the trachea is a real and avoidable complication</li>\n</ul>"
             }
           ]
         },
@@ -994,69 +1506,143 @@
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "A wire from below, guiding a tube from above"
+            },
+            {
               "type": "steps",
               "steps": [
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Identify and stabilize the cricothyroid membrane."
+                  "title": "Identify and stabilize the cricothyroid membrane",
+                  "html": "Laryngeal handshake, as for cricothyrotomy. Topicalize the skin and, if the patient is awake, the airway itself — a transtracheal injection of lidocaine at this point conveniently anesthetizes the very structures the wire is about to irritate."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Puncture the membrane with the introducer needle, directed cephalad, confirming tracheal entry by air aspiration."
+                  "title": "Puncture the membrane aiming CEPHALAD",
+                  "html": "<b>This is the one direction that is opposite to every other neck procedure.</b> Cricothyrotomy, percutaneous tracheostomy, and transtracheal blocks all angle caudally, toward the carina. Here you angle <b>cephalad, toward the head</b>, because the wire has to travel up through the cords and out of the mouth. Confirm tracheal entry with free air bubbles into the saline-filled syringe before threading anything."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Thread the guidewire or epidural catheter through the needle, advancing it cephalad through the larynx and into the oropharynx."
+                  "title": "Thread the wire up and out",
+                  "html": "Advance the wire cephalad through the needle; it passes through the larynx and coils in the pharynx. Feed generously — you want plenty of length in the mouth. Then remove the needle over the wire, and <b>immediately clamp the wire at the skin</b> so it cannot migrate inward."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Retrieve the wire from the mouth (or nose, depending on technique) using direct visualization, laryngoscopy, or forceps."
+                  "title": "Retrieve the wire from the mouth",
+                  "html": "Laryngoscope in, Magill forceps to grab the wire and bring the end out through the mouth. If you cannot see it, a finger sweep will often hook it. <b>Maintain tension at both ends from here on</b> — one hand at the neck, one at the mouth. Slack is how wires get lost."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Thread the ETT over the retrieved wire in an antegrade fashion, advancing it down toward the larynx."
+                  "title": "Pass a catheter over the wire — not the tube directly",
+                  "html": "Thread an <b>airway exchange catheter</b> over the oral end and advance it down to the larynx. This is the step that makes the technique work reliably: the catheter is stiff, small-calibre, and follows the wire faithfully, whereas an ETT bevel catches at the cords and the step-off between wire and tube is enormous. Advance the catheter until it meets the neck puncture site."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Advance the ETT into the trachea while withdrawing/releasing the wire at the neck puncture site as the tube passes the cords."
+                  "title": "Release the wire from below and advance the catheter deeper",
+                  "html": "Unclamp and withdraw the wire <b>out through the mouth</b> while holding the catheter still. The catheter now sits in the trachea, but only as far as the cricothyroid membrane — so <b>advance it further toward the carina</b> before railroading. A catheter that stops at the membrane gives the tube almost nothing to track over."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Once the tube is through the cords and into the trachea, remove the wire entirely."
+                  "title": "Railroad the ETT, rotating anticlockwise if it hangs up",
+                  "html": "Advance the tube over the catheter with a gentle <b>90° anticlockwise rotation</b> if it catches — the right arytenoid is the usual obstacle, exactly as in fiberoptic technique. Keep the catheter absolutely still."
                 },
                 {
                   "num": "8",
                   "color": "teal",
-                  "title": "",
-                  "html": "Confirm placement (EtCO2, chest rise, auscultation), secure the tube, manage the neck puncture site."
+                  "title": "Remove the catheter, confirm, secure, and dress the neck",
+                  "html": "Withdraw the catheter, inflate the cuff, confirm with capnography and auscultation, secure the tube. Then apply a dressing and light pressure to the puncture site and <b>document that a transtracheal puncture was made</b> — someone will otherwise be puzzled by subcutaneous air on a later film."
                 }
               ]
             },
             {
               "type": "alert",
               "color": "amber",
-              "title": "Know where this sits on the urgency ladder",
-              "html": "This technique is slower than fiberoptic or video laryngoscopy and far slower than a surgical airway — in a true CICO emergency, skip straight to cricothyrotomy rather than starting here."
+              "title": "Cephalad here; caudad everywhere else",
+              "html": "The needle direction is the most commonly inverted detail in this procedure, precisely because every other anterior-neck technique you know goes the other way. Angling caudally sends the wire toward the carina and the technique simply fails. Say the direction out loud before you puncture."
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "The wire is the procedure — never let both ends go",
+              "html": "From the moment the wire is through the membrane until it is removed, one end is clamped or held at all times. A wire released at the neck can be pulled entirely into the trachea; a wire released at the mouth retracts and has to be retrieved again. Both are avoidable with a hemostat and a habit."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "05",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What happens",
+                "What it usually means",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "No air aspirated on puncture",
+                  "Not in the trachea — pretracheal or paratracheal",
+                  "Withdraw, re-identify the membrane, re-angle. Do not thread a wire you haven't confirmed"
+                ],
+                [
+                  "Wire won't advance after the needle is in",
+                  "Bevel against the posterior wall, or angled caudally",
+                  "Withdraw slightly, re-angle <b>cephalad</b>, rotate the needle. Never force a wire"
+                ],
+                [
+                  "Wire can't be found in the pharynx",
+                  "Coiled in the vallecula or behind the tongue",
+                  "Laryngoscope + Magill. Finger sweep. Feed more wire from below to give yourself something to grab"
+                ],
+                [
+                  "Tube catches at the cords",
+                  "Right arytenoid, and a big wire-to-tube step-off",
+                  "Rotate 90° anticlockwise. Downsize the tube. This is precisely why an exchange catheter is used as an intermediate"
+                ],
+                [
+                  "Tube advances but sits too shallow",
+                  "Tube tip stopped at the membrane puncture level",
+                  "Advance further once the catheter/wire is out — the guide only ever leads you as deep as the puncture site"
+                ],
+                [
+                  "Wire disappears into the trachea",
+                  "Both ends released",
+                  "Bronchoscopic or forceps retrieval; this may become a surgical problem. Prevent it with a clamp"
+                ],
+                [
+                  "Bleeding at the puncture site",
+                  "Anterior neck vessels",
+                  "Usually minor; pressure after the airway is secured. It rarely obscures this technique the way it does an open one"
+                ],
+                [
+                  "Subcutaneous emphysema afterwards",
+                  "Air tracking from the puncture",
+                  "Usually self-limiting; document it so it isn't misread later. Watch for pneumothorax if it's extensive"
+                ],
+                [
+                  "Patient desaturating during the procedure",
+                  "You have run out of the time this technique needs",
+                  "<b>Abandon and go to a front-of-neck airway.</b> The membrane is already identified and topicalized — you are unusually well positioned to cut"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "06",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -1064,27 +1650,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Technique is time-consuming relative to other rescue options — poor choice when seconds matter most</li>\n      <li>Wire retrieval failure or loss of wire position during tube advancement</li>\n      <li>Bleeding at the puncture site obscuring the field</li>\n      <li>Tube may catch at the glottic inlet advancing over the wire — gentle rotation and steady wire tension help guide it through</li>\n      <li>False sense of security delaying escalation to a surgical airway if the technique is struggling</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Time cost</b> — the defining drawback, and the reason it is the wrong choice in a deteriorating patient</li>\n      <li><b>Wire loss</b> into the trachea, or loss of position during tube advancement</li>\n      <li><b>Failure at the glottic inlet</b>, from railroading an ETT directly over a thin wire</li>\n      <li><b>Bleeding, subcutaneous emphysema</b>, and rarely pneumothorax or pneumomediastinum</li>\n      <li><b>Esophageal or posterior tracheal wall puncture</b> from an over-deep needle</li>\n      <li><b>Infection</b> at the puncture site, particularly if the field was rushed</li>\n      <li><b>False reassurance</b> — persisting with a technique that is not progressing, and thereby delaying the surgical airway the patient actually needed</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "07",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>This sits between fiberoptic technique and a surgical airway on the urgency spectrum — know your algorithm's place for it before you need it.</p>\n<p>A firecracker-fast true CICO scenario should skip straight to cricothyrotomy; retrograde intubation belongs to the difficult-but-not-yet-critical airway.</p>\n<p>Have a clear mental time limit for this technique — if it isn't progressing, abandon it for a surgical airway rather than persisting past the point of safety.</p>"
+              "html": "<p><b>Cephalad. Say it out loud before you puncture.</b> Every neighbouring procedure goes the other way.</p>\n<p><b>Use an exchange catheter as an intermediate.</b> Railroading a tube straight over a wire is where this technique earns its reputation for failing at the cords.</p>\n<p><b>One end of the wire is always held.</b> A hemostat at the neck costs nothing and prevents the worst complication.</p>\n<p><b>Advance the catheter deeper before railroading</b> — the guide otherwise only reaches the membrane, which is not deep enough to steer a tube.</p>\n<p><b>Its niche is blood.</b> When the view is obliterated and fiberoptics are useless but the patient is still oxygenating, this technique does something nothing else does.</p>\n<p><b>Set a time limit before you start</b>, and when you hit it, convert. You are already standing over an identified, anesthetized cricothyroid membrane — the fastest surgical airway of your career is one decision away.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "08",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -1093,12 +1679,16 @@
               "type": "sources",
               "items": [
                 {
+                  "tier": "GUIDELINE",
+                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31–81."
+                },
+                {
                   "tier": "REFERENCE",
                   "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Retrograde Intubation chapter."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 ASA Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31-81."
+                  "html": "Hagberg CA, Artime CA, eds. <i>Benumof and Hagberg's Airway Management</i>, 4th ed. Elsevier; 2018 — Retrograde techniques."
                 }
               ]
             }
@@ -1127,8 +1717,8 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -1361,8 +1951,8 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -1577,8 +2167,8 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -1757,8 +2347,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -1955,8 +2545,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-03-20",
+      "lastVerified": "2026-09-08",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "indications",
@@ -2185,8 +2775,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2365,8 +2955,8 @@
       "description": "Bridging unstable bradycardia to a definitive rhythm.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-03-20",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-03-21",
       "sections": [
         {
           "id": "indications",
@@ -2378,7 +2968,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Symptomatic bradycardia unresponsive to atropine and/or refractory to initial pharmacologic management</li>\n      <li>High-grade AV block (Mobitz II, third-degree) with hemodynamic instability</li>\n      <li>Bradycardic peri-arrest rhythms where pacing is part of the resuscitation algorithm</li>\n      <li>Transvenous pacing specifically indicated when transcutaneous pacing fails to capture, is not tolerated, or a more durable/reliable pacing solution is needed pending definitive management</li>\n</ul>"
+              "html": "<ul>\n      <li>Symptomatic bradycardia unresponsive to atropine and/or refractory to initial pharmacologic management</li>\n      <li>High-grade AV block (Mobitz II, third-degree) with hemodynamic instability</li>\n      <li>Bradycardic peri-arrest rhythms where pacing is part of the resuscitation algorithm</li>\n      <li>Bradycardia-dependent ventricular arrhythmias (pause-dependent torsades) — overdrive pacing suppresses the pauses that trigger it</li>\n      <li>Transvenous pacing specifically when transcutaneous pacing fails to capture, is not tolerated despite sedation, or the bradycardia will clearly outlast what pads can reasonably bridge</li>\n</ul>"
+            },
+            {
+              "type": "xref",
+              "html": "<b>Pick the modality by time course, not by severity.</b> Transcutaneous is fast, non-invasive, and buys minutes to an hour or two. Transvenous is slower to place but is what you want the moment you believe the problem will still be there in several hours — complete heart block that isn't reversing, a beta-blocker/CCB overdose that hasn't peaked yet, an infiltrative or ischemic conduction system. Start pads while someone opens the transvenous kit; these are sequential, not alternative."
             }
           ]
         },
@@ -2392,7 +2986,13 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Severe hypothermia with bradycardia (pacing is generally ineffective and not recommended until rewarming, per most protocols — the heart is often refractory to pacing at low core temperatures)</li>\n      <li>Transvenous pacing: coagulopathy or inability to obtain safe central venous access (relative, weighed against the urgency of the indication)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Severe hypothermia with bradycardia</b> — the cold myocardium is often refractory to pacing, and instrumentation of an irritable hypothermic ventricle can precipitate VF that is itself refractory until rewarming. Bradycardia is an appropriate physiologic response at low core temperatures; treat the temperature.</li>\n      <li><b>Transvenous:</b> coagulopathy, or inability to obtain safe central venous access (relative — weighed against the urgency of the indication; a subclavian stick in a coagulopathic patient is a non-compressible site, so favor IJ or femoral if you must proceed)</li>\n      <li><b>Transcutaneous:</b> no absolute contraindication in an unstable patient. Avoid placing a pad directly over an implanted device generator (keep ≥8&nbsp;cm away) or over a transdermal medication patch — remove the patch and wipe the skin first.</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Don't pace a bradycardia the patient needs",
+              "html": "Sinus bradycardia with a normal blood pressure and mentation in a fit patient, an athlete at rest, or a patient on a rate-controlling drug at steady state does not need pacing. The indication is <i>symptomatic</i> or <i>peri-arrest</i> bradycardia — hypotension, altered mentation, ischemic chest pain, or acute heart failure attributable to the rate. Rate alone is not the indication."
             }
           ]
         },
@@ -2400,31 +3000,37 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment — What's Actually in the Room",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Transcutaneous pacing</b></p>\n<ul>\n      <li>Cardiac monitor/defibrillator with pacing capability</li>\n      <li>Pacing pads (anterior-posterior placement preferred)</li>\n      <li>Sedation/analgesia for a conscious patient — transcutaneous pacing is uncomfortable</li>\n</ul>"
+              "html": "<p><b>Transcutaneous pacing</b></p>\n<ul>\n      <li>Monitor/defibrillator with pacing capability — know which button on <i>your</i> device enters pacing mode; this differs between Zoll, Philips, and LIFEPAK units and is not the time to learn it</li>\n      <li>Multifunction pacing/defibrillation pads (the same pads defibrillate — you do not need to change them if the patient deteriorates)</li>\n      <li>Razor and a towel — hair and diaphoresis are the two most common reasons pads won't capture</li>\n      <li>Sedation/analgesia drawn up <i>before</i> you start pacing, not after</li>\n</ul>"
             },
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Transvenous pacing</b></p>\n<ul>\n      <li>Central venous access kit (internal jugular or subclavian preferred for lead stability)</li>\n      <li>Transvenous pacing wire/catheter</li>\n      <li>External pacing generator</li>\n      <li>Fluoroscopy or ECG-guided placement confirmation if available</li>\n</ul>"
+              "html": "<p><b>Transvenous pacing — the full inventory</b></p>\n<ul>\n      <li><b>Introducer sheath with hemostatic valve and side port</b> — sized to accept the wire (a 5&nbsp;Fr wire needs at minimum a 6&nbsp;Fr sheath). A standard triple-lumen central line will <i>not</i> accept a pacing wire.</li>\n      <li><b>Balloon-tipped bipolar pacing wire</b> — typically 5&nbsp;Fr, ~100&nbsp;cm, marked in 10&nbsp;cm increments. Two electrodes: the <b>distal tip</b> and a <b>proximal ring</b> a short distance behind it.</li>\n      <li><b>The sterile protective sleeve</b> — the concertina-style plastic sheath that lets you advance or withdraw the wire later without contaminating it. See the alert below.</li>\n      <li><b>External pulse generator</b> + <b>a battery you have personally verified</b>. Most units take a 9V; a dead generator discovered at the bedside is a recurring and entirely preventable disaster.</li>\n      <li><b>Connector cable</b> with clearly marked positive and negative terminals</li>\n      <li><b>Alligator clip / V-lead adapter</b> for ECG-guided placement</li>\n      <li><b>Small syringe</b> (usually 1.5–3&nbsp;mL) for balloon inflation — inflate with <b>air</b>, never fluid, and never beyond the volume printed on the wire</li>\n      <li>Full sterile barrier, ultrasound with sterile sheath, sterile saline</li>\n      <li>12-lead ECG machine or a monitor that can display and print a V lead</li>\n      <li><b>Transcutaneous pads already on the patient</b> — your backup runs the entire time you are floating the wire</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Load the sterile sleeve onto the wire before it ever enters the patient",
+              "html": "The protective sleeve only slides on from the proximal end. Once the wire is in the vein, it is too late — you now have a wire you cannot reposition without breaking sterility, and lead dislodgement is the single most common late failure of transvenous pacing. This is the classic, universally-taught error, and it is made by experienced operators in a hurry. Sleeve first."
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "tcp",
           "num": "04",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Transcutaneous Pacing — Setup & Technique",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "Transcutaneous pacing"
+              "html": "Pad placement determines whether this works at all"
             },
             {
               "type": "steps",
@@ -2432,97 +3038,286 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Apply pacing pads in the anterior-posterior position for optimal capture."
+                  "title": "Prepare the skin",
+                  "html": "Clip (don't shave raw) dense chest hair, wipe the skin dry, and remove any transdermal patches. Diaphoresis and hair are the two most common causes of a pad that will not capture, and both are trivially fixable in ten seconds — before you conclude the myocardium is refractory."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Set the pacer to demand mode (synchronized to the patient's intrinsic rhythm) unless asystole, in which case use fixed/asynchronous mode."
+                  "title": "Place pads anterior-posterior",
+                  "html": "Anterior pad over the left precordium (roughly V2–V3 position, just left of the sternum); posterior pad on the left infrascapular back, lateral to the spine. This sandwiches the ventricle in the current path. Avoid bone — sternum and spine both shunt current. Anterolateral placement also works and is acceptable if the patient cannot be turned, but A-P generally captures at lower output."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Set the initial rate (typically 60-80 bpm as a starting target)."
+                  "title": "Set mode and rate",
+                  "html": "Demand (synchronous) mode for any patient with an intrinsic rhythm — it paces only when the patient doesn't. Use fixed/asynchronous mode only for asystole or when artifact is causing the pacer to oversense and inhibit itself. Set rate 60–80/min for most adults; higher (90–100) if you are overdrive-pacing pause-dependent torsades."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Increase output (mA) gradually from a low starting point until electrical capture is confirmed — a paced QRS complex following each pacing spike, correlating with a palpable pulse."
+                  "title": "Find capture — choose your direction deliberately",
+                  "html": "Two accepted approaches. <b>Ramp up</b> from the lowest output and climb until capture appears: better tolerated in a conscious, marginally stable patient. <b>Start at maximum</b> and dial down until you lose capture, then set above that: faster, and the right choice in a peri-arrest patient where you cannot afford to spend thirty seconds hunting. Typical capture thresholds are wide — commonly around 40–90&nbsp;mA — and depend heavily on body habitus, pad contact, and effusion."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Set the final output slightly above the capture threshold for a safety margin."
+                  "title": "Set a safety margin",
+                  "html": "Once you identify the capture threshold, run the output roughly 10&nbsp;mA above it. Thresholds drift with position, sweat, and pad gel drying out; running at exactly threshold means intermittent loss of capture you may not notice immediately."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Provide sedation/analgesia promptly, as transcutaneous pacing causes significant discomfort in an awake patient."
-                },
-                {
-                  "num": "7",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Confirm mechanical capture (palpable pulse corresponding to the paced rate), not just electrical capture on the monitor."
+                  "title": "Sedate — and understand what hurts",
+                  "html": "The pain is skeletal muscle contraction of the chest wall, not the heart. It is genuinely severe and patients describe it as the worst part of their resuscitation. Analgesia plus anxiolysis, titrated carefully — you are sedating a patient whose blood pressure depends on the thing causing the pain, so small doses, frequent reassessment, and a vasopressor within reach."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "capture",
+          "num": "05",
+          "color": "amber",
+          "title": "Confirming Capture — And Why False Capture Fools People",
+          "tagline": null,
+          "blocks": [
             {
               "type": "tagline",
-              "html": "Transvenous pacing"
+              "html": "This is the highest-yield teaching point in the whole procedure"
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>Electrical capture</b> means each pacing spike is followed by a genuine, wide paced QRS with a <i>concordant T wave</i> (the T wave should deflect opposite the QRS). <b>Mechanical capture</b> means that complex generated an actual contraction.</p>\n<p><b>False capture</b> is the trap: every pacing spike is followed by a wide squiggle on the monitor that looks exactly like a paced complex but is chest-wall muscle artifact, and the pacer is doing nothing to the heart. Operators declare success, stop escalating, and the patient stays in a perfusionless bradycardia with a monitor that looks reassuring. This is common enough that you should assume it until disproven.</p>"
+            },
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p><b>How to actually prove capture, in order of reliability:</b></p>\n<ul>\n      <li><b>Femoral or right-sided pulse</b> — palpate somewhere the pectoral muscle twitch isn't shaking the limb you're feeling. A left radial pulse during left-sided pacing is exactly where artifact fools you.</li>\n      <li><b>Bedside echo</b> — look directly at the ventricle and watch it contract, one-for-one with the spikes. This is the definitive answer and takes seconds.</li>\n      <li><b>Arterial line waveform or a plethysmograph/SpO<sub>2</sub> tracing</b> — a mechanical pulse wave at exactly the paced rate is hard to fake.</li>\n      <li><b>End-tidal CO<sub>2</sub> rising</b> in an arrest context — indirect but real evidence you restored circulation.</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Pacing spikes with no pulse is still PEA",
+              "html": "If you have convincing electrical capture and no mechanical capture, the problem is no longer the conduction system — it is pump, volume, or obstruction. Pacing faster will not fix tamponade, a massive PE, profound hyperkalemia, or an empty ventricle. Go back to the arrest algorithm and the reversible causes."
+            }
+          ]
+        },
+        {
+          "id": "tvp-setup",
+          "num": "06",
+          "color": "blue",
+          "title": "Transvenous Pacing — Assembly & Connections Before You Start",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Everything here happens on the sterile field before the wire enters the patient"
             },
             {
               "type": "steps",
               "steps": [
                 {
-                  "num": "8",
+                  "num": "1",
                   "color": "teal",
-                  "title": "",
-                  "html": "Obtain central venous access, typically right internal jugular or left subclavian for the most direct path to the right ventricle."
+                  "title": "Test the balloon, then fully deflate it",
+                  "html": "Inflate to the labeled volume with air and look for symmetric inflation and no leak — some operators submerge it in sterile saline to check for bubbles. Then deflate completely and leave the syringe attached. A balloon you discover is ruptured <i>after</i> the wire is in the SVC costs you the entire insertion."
                 },
                 {
-                  "num": "9",
+                  "num": "2",
                   "color": "blue",
-                  "title": "",
-                  "html": "Advance the pacing wire through the introducer sheath toward the right ventricle, using ECG guidance (injury pattern on the pacing wire's intracardiac ECG) or fluoroscopy if available."
+                  "title": "Load the sterile sleeve onto the wire",
+                  "html": "Slide it on from the proximal end and push it back out of your way toward the connector end. It gets extended and locked onto the sheath hub at the end of the procedure. This step cannot be done later."
                 },
                 {
-                  "num": "10",
+                  "num": "3",
                   "color": "purple",
-                  "title": "",
-                  "html": "Connect the wire to the external pacing generator once positioned."
+                  "title": "Know your polarity: distal tip = negative",
+                  "html": "The <b>distal tip electrode is the cathode (negative)</b>; the proximal ring is the anode (positive). Every connection downstream depends on this — the ECG clip, and later the generator cable. Identify which pin on your wire's connector corresponds to the distal tip <i>now</i>, on the field, with the packaging still in front of you."
                 },
                 {
-                  "num": "11",
+                  "num": "4",
                   "color": "red",
-                  "title": "",
-                  "html": "Set output and sensitivity, confirm capture (paced rhythm on the monitor with correlating pulse)."
+                  "title": "Clip the V lead to the distal electrode",
+                  "html": "Attach an alligator clip from the <b>distal/negative</b> pin to the <b>V1 lead</b> of the ECG machine. The wire's tip now functions as a roving intracardiac electrode, and V1 on your ECG becomes a live readout of where the tip is. <b>Only the distal tip completes this circuit usefully</b> — clip the proximal ring by mistake and you will not get a clean injury pattern, and you will float the wire blind while believing you have guidance."
                 },
                 {
-                  "num": "12",
+                  "num": "5",
                   "color": "amber",
-                  "title": "",
-                  "html": "Secure the wire and generator, obtain a confirmatory chest radiograph for lead position."
+                  "title": "Power up and pre-set the generator — but don't connect it yet",
+                  "html": "Confirm the battery, set rate 70–80/min, output toward maximum (commonly ~10–20&nbsp;mA to start), sensitivity to asynchronous/fixed for the float. Leave it off or disconnected. <b>You connect the generator after you have your target position</b> — ECG guidance and pacing output on the same wire at the same time interfere with each other."
                 }
               ]
             },
             {
+              "type": "xref",
+              "html": "<b>Alternative: float it paced.</b> If you have no usable ECG guidance, you can connect the generator up front at high output and asynchronous mode, and advance until paced capture suddenly appears on the monitor — capture <i>is</i> your position confirmation. It is a legitimate and sometimes faster approach in a crashing patient. It costs you the granular feedback of the injury pattern, so you learn position only at the moment you succeed."
+            }
+          ]
+        },
+        {
+          "id": "tvp-float",
+          "num": "07",
+          "color": "red",
+          "title": "Transvenous Pacing — Floating the Wire",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Right IJ and left subclavian give the gentlest curve into the RV"
+            },
+            {
+              "type": "steps",
+              "steps": [
+                {
+                  "num": "1",
+                  "color": "teal",
+                  "title": "Place the introducer sheath",
+                  "html": "Right internal jugular is the most direct, straightest path to the right ventricle and is the preferred site when you have a choice; left subclavian is the next most forgiving curve. Femoral works but usually requires fluoroscopy. Ultrasound-guided, full barrier, and confirm venous placement before dilating."
+                },
+                {
+                  "num": "2",
+                  "color": "blue",
+                  "title": "Insert the wire to roughly 15–20 cm, balloon down",
+                  "html": "Advance the deflated wire through the hemostatic valve until the tip is safely past the sheath tip and sitting in the vein — about 15–20&nbsp;cm from a neck site. Use the wire's depth markings."
+                },
+                {
+                  "num": "3",
+                  "color": "purple",
+                  "title": "Now inflate the balloon",
+                  "html": "<b>Never inflate inside the sheath</b> — you will rupture the balloon against the introducer, and you will not know until the wire refuses to float. Once past the sheath tip, inflate to the labeled volume and lock the stopcock if your wire has one. The inflated balloon is what lets venous flow carry the tip in the right direction."
+                },
+                {
+                  "num": "4",
+                  "color": "red",
+                  "title": "Advance and read the V1 waveform as a map",
+                  "html": "Advance in smooth, unhurried increments and watch V1. <b>SVC:</b> large negative P wave, small QRS. <b>Right atrium:</b> P wave becomes very large, often biphasic — the P is bigger than the QRS. <b>Crossing the tricuspid into the RV:</b> the P wave abruptly shrinks and the <b>QRS becomes large</b>. <b>Tip against RV endocardium:</b> <b>ST-segment elevation — the current of injury.</b> That is your endpoint. It means the electrode is in contact with ventricular wall, which is exactly what you need for capture."
+                },
+                {
+                  "num": "5",
+                  "color": "amber",
+                  "title": "Recognize the depth you should be at",
+                  "html": "From a right IJ, the RV is typically reached around 30–35&nbsp;cm; from a left subclavian, a few centimeters more. Treat these as a sanity check, not a target — <b>the waveform and capture tell you where you are; the centimeter markings only tell you when something is wrong.</b> If you are at 45–50&nbsp;cm with no ventricular signal, you are coiling in the atrium or have gone down the IVC. Withdraw and start again rather than pushing."
+                },
+                {
+                  "num": "6",
+                  "color": "teal",
+                  "title": "Deflate the balloon, then connect the generator",
+                  "html": "Deflate once you have the injury pattern. Connect the cable with <b>distal/tip to negative, proximal ring to positive</b>. Turn the generator on and confirm capture."
+                },
+                {
+                  "num": "7",
+                  "color": "blue",
+                  "title": "Find the true capture threshold",
+                  "html": "With capture established, <i>reduce</i> output until capture is lost — that value is the threshold. A well-positioned wire captures at a low threshold, commonly under 1&nbsp;mA; a threshold above ~2&nbsp;mA suggests the tip is not well apposed and you should consider repositioning now rather than at 3&nbsp;a.m. Then set the running output at roughly 2–3× threshold."
+                },
+                {
+                  "num": "8",
+                  "color": "purple",
+                  "title": "Set sensitivity and switch to demand",
+                  "html": "Move off asynchronous to demand mode for any patient with an underlying rhythm. Remember the counterintuitive direction: on most generators a <i>lower</i> mV number means <i>more</i> sensitive. Undersensing (spikes landing on intrinsic beats, with R-on-T risk) means you should lower the number; oversensing (inappropriate inhibition and pauses) means raise it."
+                },
+                {
+                  "num": "9",
+                  "color": "red",
+                  "title": "Lock the sleeve, secure, and confirm with imaging",
+                  "html": "Extend the sterile sleeve and lock it to the sheath hub, suture/secure the sheath, and tape the generator to the patient — not to the bed, where a transfer will avulse the wire. Obtain a chest radiograph to confirm the tip sits at the RV apex and to look for a pneumothorax from the access itself."
+                }
+              ]
+            },
+            {
+              "type": "figure",
+              "figureId": "intracardiac-v1-electrogram-as-the-pacing-wire-advances",
+              "svg": "<svg viewBox=\"0 0 520 492\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Intracardiac V1 electrogram as the pacing wire advances: in the SVC a large negative P wave with a small QRS; in the right atrium a very large biphasic P wave; in the right ventricle the P wave shrinks and the QRS becomes large; on contact with the right ventricular endocardium the ST segment elevates, the current of injury, which is the endpoint.\">\n<style>\n  .fw{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}\n  .tl{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .tx{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:12.5px}\n  .st{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:11px}\n  .bl{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 4}\n  .ep{fill:#e84c4c;font-family:Syne,sans-serif;font-weight:700;font-size:11px}\n</style>\n\n<text class=\"tl\" x=\"0\" y=\"16\">Advancing the wire — what V1 shows you</text>\n<text class=\"st\" x=\"0\" y=\"34\">Distal tip clipped to V1. The tracing is your position.</text>\n\n<!-- SVC -->\n<line class=\"bl\" x1=\"168\" y1=\"110\" x2=\"512\" y2=\"110\"></line>\n<text class=\"tx\" x=\"0\" y=\"100\" style=\"fill:#e8edf5;font-weight:600\">SVC</text>\n<text class=\"st\" x=\"0\" y=\"118\">large negative P</text>\n<text class=\"st\" x=\"0\" y=\"133\">small QRS</text>\n<polyline class=\"fw\" stroke=\"#00d4aa\" points=\"168,110 182,110 188,132 194,140 200,132 206,110 220,110 224,104 228,124 232,90 236,110 254,110 262,102 270,110 308,110\n 322,110 328,132 334,140 340,132 346,110 360,110 364,104 368,124 372,90 376,110 394,110 402,102 410,110 448,110\"></polyline>\n\n<!-- RA -->\n<line class=\"bl\" x1=\"168\" y1=\"215\" x2=\"512\" y2=\"215\"></line>\n<text class=\"tx\" x=\"0\" y=\"205\" style=\"fill:#e8edf5;font-weight:600\">RIGHT ATRIUM</text>\n<text class=\"st\" x=\"0\" y=\"223\">huge biphasic P</text>\n<text class=\"st\" x=\"0\" y=\"238\">P larger than QRS</text>\n<polyline class=\"fw\" stroke=\"#00d4aa\" points=\"168,215 180,215 186,181 192,175 198,215 204,245 210,251 216,215 228,215 232,209 236,227 240,197 244,215 262,215 270,208 278,215 316,215\n 330,215 336,181 342,175 348,215 354,245 360,251 366,215 378,215 382,209 386,227 390,197 394,215 412,215 420,208 428,215 466,215\"></polyline>\n\n<!-- RV -->\n<line class=\"bl\" x1=\"168\" y1=\"320\" x2=\"512\" y2=\"320\"></line>\n<text class=\"tx\" x=\"0\" y=\"310\" style=\"fill:#e8edf5;font-weight:600\">RIGHT VENTRICLE</text>\n<text class=\"st\" x=\"0\" y=\"328\">P shrinks</text>\n<text class=\"st\" x=\"0\" y=\"343\">QRS enlarges</text>\n<polyline class=\"fw\" stroke=\"#2563eb\" points=\"168,320 184,320 190,312 196,310 202,320 218,320 224,324 230,268 236,360 242,312 248,320 268,320 278,310 288,320 326,320\n 340,320 346,312 352,310 358,320 374,320 380,324 386,268 392,360 398,312 404,320 424,320 434,310 444,320 482,320\"></polyline>\n\n<!-- RV wall contact -->\n<line class=\"bl\" x1=\"168\" y1=\"430\" x2=\"512\" y2=\"430\"></line>\n<text class=\"tx\" x=\"0\" y=\"420\" style=\"fill:#e8edf5;font-weight:600\">RV WALL CONTACT</text>\n<text class=\"st\" x=\"0\" y=\"438\">ST elevation —</text>\n<text class=\"st\" x=\"0\" y=\"453\">current of injury</text>\n<text class=\"ep\" x=\"0\" y=\"472\">▸ THIS IS THE ENDPOINT</text>\n<polyline class=\"fw\" stroke=\"#e84c4c\" points=\"168,430 184,430 190,424 196,430 214,430 220,434 226,376 232,466 238,404 264,402 276,414 288,430 322,430\n 336,430 342,424 348,430 366,430 372,434 378,376 384,466 390,404 416,402 428,414 440,430 474,430\"></polyline>\n<path d=\"M238,404 L264,402\" stroke=\"#e84c4c\" stroke-width=\"5\" fill=\"none\" opacity=\"0.35\"></path>\n<path d=\"M390,404 L416,402\" stroke=\"#e84c4c\" stroke-width=\"5\" fill=\"none\" opacity=\"0.35\"></path>\n</svg>",
+              "alt": "Intracardiac V1 electrogram as the pacing wire advances: in the SVC a large negative P wave with a small QRS; in the right atrium a very large biphasic P wave; in the right ventricle the P wave shrinks and the QRS becomes large; on contact with the right ventricular endocardium the ST segment elevates, the current of injury, which is the endpoint.",
+              "caption": "If the ST elevation appears and then disappears, you have lost wall contact — that is not progress. Depth is only a sanity check: roughly 30–35&nbsp;cm from a right IJ."
+            },
+            {
               "type": "alert",
-              "color": "red",
-              "title": "Electrical capture is not mechanical capture",
-              "html": "Always confirm a palpable pulse correlating with the paced rhythm before considering the patient stabilized — pacing spikes on the monitor without a pulse behind them is still pulseless electrical activity."
+              "color": "amber",
+              "title": "Balloon up going in, balloon down coming out — always",
+              "html": "Advance only with the balloon inflated; withdraw only with it deflated. Dragging an inflated balloon backward across the tricuspid apparatus can entangle or damage chordae and valve leaflets. If you need to pull back even a centimeter, deflate first, every single time."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually means",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Spikes, no capture (transcutaneous)",
+                  "Pad contact, hair, sweat, or output below threshold",
+                  "Dry and clip the skin, re-seat pads in true A-P, escalate output to maximum before concluding failure"
+                ],
+                [
+                  "Spikes, no capture (transvenous)",
+                  "Loose connection far more often than true dislodgement",
+                  "<b>Check the cable and terminals first</b>, then increase output, then reposition. Verify polarity wasn't reversed"
+                ],
+                [
+                  "Capture lost after being stable",
+                  "Lead dislodgement, or perforation",
+                  "Re-check connections, increase output, reposition. New hypotension + loss of capture = suspect perforation/tamponade and get an echo"
+                ],
+                [
+                  "Wide complexes after every spike but no pulse",
+                  "False capture (artifact) or genuine PEA",
+                  "Confirm with echo or femoral pulse. If truly electrical-only, treat as PEA and work reversible causes"
+                ],
+                [
+                  "Ventricular ectopy, VT, or VF while floating",
+                  "The wire is mechanically irritating the RV — expected, usually transient",
+                  "Stop advancing. Deflate and withdraw slightly; ectopy typically resolves. Defibrillator must already be attached before you start"
+                ],
+                [
+                  "SVT during the float",
+                  "Atrial irritation from the catheter",
+                  "Withdraw slightly; usually self-terminates. Treat per rhythm if sustained and unstable"
+                ],
+                [
+                  "Asystole / loss of underlying rhythm mid-procedure",
+                  "The escape rhythm you were relying on has failed",
+                  "<b>Go straight to transcutaneous pacing and CPR.</b> Do not keep manipulating the wire in an arrested patient — that's why the pads stayed on"
+                ],
+                [
+                  "Hiccups or rhythmic abdominal/chest wall twitching",
+                  "Diaphragmatic or phrenic pacing — tip may be at a thin RV wall or through it",
+                  "Reduce output and reposition. Consider perforation, especially with any hemodynamic change"
+                ],
+                [
+                  "Pauses / intermittent failure to pace",
+                  "Oversensing — generator inhibiting on artifact or T waves",
+                  "Make it less sensitive (raise the mV), or go asynchronous if the patient is dependent"
+                ],
+                [
+                  "Spikes landing on intrinsic beats",
+                  "Undersensing",
+                  "Make it more sensitive (lower the mV). Real R-on-T risk — fix promptly"
+                ],
+                [
+                  "Wire won't advance past ~20 cm / coils",
+                  "Balloon not inflated, or going down the IVC / into a tributary",
+                  "Confirm balloon is up and past the sheath. Withdraw to the SVC and re-float rather than forcing"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "09",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -2530,13 +3325,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Failure to capture — reassess pad placement/wire position and increase output as needed</li>\n      <li>Electrical capture without mechanical capture (pulseless electrical activity despite pacing spikes) — always confirm a palpable pulse, not just the monitor tracing</li>\n      <li>Significant discomfort with transcutaneous pacing if sedation is inadequate</li>\n      <li>Lead perforation, arrhythmia, or cardiac tamponade with transvenous wire placement</li>\n      <li>Lead dislodgement with patient movement if not adequately secured</li>\n</ul>"
+              "html": "<ul>\n      <li><b>RV perforation and tamponade</b> — the most feared complication. Presents as loss of capture with new hypotension, sometimes with diaphragmatic pacing beforehand. Echo immediately; be prepared for pericardiocentesis.</li>\n      <li><b>Induced ventricular arrhythmia during floating</b> — common, usually transient, occasionally VF. Non-negotiable reason to have pads and a defibrillator on before starting.</li>\n      <li><b>Lead dislodgement</b> — the most common late failure, and the reason the sterile sleeve and proper securing matter more than they feel like they do at the time.</li>\n      <li><b>Access complications</b> — pneumothorax, arterial puncture, and in a coagulopathic patient a non-compressible subclavian hematoma.</li>\n      <li><b>Infection</b> — rises sharply with dwell time; these are a bridge to a permanent device or to recovery, not a destination.</li>\n      <li><b>Knotting or entanglement in the tricuspid apparatus</b> — almost always from withdrawing with the balloon inflated, or from repeatedly forcing a wire that won't float.</li>\n      <li><b>Inadequate sedation during transcutaneous pacing</b> — a genuine harm, not a comfort nicety; patients who have had it describe it as the defining trauma of the resuscitation.</li>\n      <li><b>Declaring success on false capture</b> — the failure mode most likely to kill the patient quietly while the monitor looks fine.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "post",
+          "num": "10",
+          "color": "teal",
+          "title": "After the Wire Is In",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<ul>\n      <li><b>Document the threshold</b> you measured, the output you set, the mode, the rate, and the insertion depth at the hub. The next clinician troubleshooting a loss of capture needs to know whether 22&nbsp;cm at the hub is where it started.</li>\n      <li><b>Recheck the threshold periodically</b> — thresholds rise over the first days as local inflammation develops around the tip. A wire that captured at 0.8&nbsp;mA on day one may need more by day two.</li>\n      <li><b>Keep the transcutaneous pads on the patient</b> while the patient is pacer-dependent, particularly through any transfer, turn, or imaging trip — those are exactly when wires dislodge.</li>\n      <li><b>Every transport is a dislodgement risk.</b> Secure the generator to the patient, and have someone whose specific job is the wire during any move.</li>\n      <li><b>Arrange the definitive plan early</b> — cardiology/EP for a permanent device, or treatment of the reversible cause (hyperkalemia, drug toxicity, ischemia). A temporary wire is a bridge with a short safe lifespan.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "11",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -2544,13 +3353,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Electrical capture on the monitor is not the same as effective pacing — always confirm a palpable pulse correlating with the paced rhythm before considering the patient stabilized.</p>\n<p>Transcutaneous pacing is a bridge while transvenous access is arranged in most non-transient cases — don't treat it as a definitive solution if the bradycardia is expected to persist.</p>\n<p>Sedate early for transcutaneous pacing in an awake patient; this is one of the more uncomfortable interventions in the resuscitation toolkit.</p>"
+              "html": "<p><b>Electrical capture is not mechanical capture.</b> Prove circulation with an echo or a pulse that muscle twitch cannot fake, every single time, before you relax.</p>\n<p><b>Check connections before you believe in dislodgement.</b> A loose terminal at the generator is dramatically more common than a wire that has moved, and it is fixed in two seconds rather than by re-floating a wire.</p>\n<p><b>The injury pattern is the endpoint, not a waypoint.</b> ST elevation on the V1 tracing means tip-to-endocardium contact. If it appears and then vanishes, you have lost contact — don't interpret its disappearance as progress.</p>\n<p><b>Only the distal tip completes the sensing circuit.</b> Clipping V1 to the proximal ring gives you a tracing that looks plausible and tells you almost nothing.</p>\n<p><b>Sleeve first, balloon up going in, balloon down coming out.</b> Three habits that prevent most of the procedure's avoidable disasters.</p>\n<p><b>Transcutaneous pacing is a bridge measured in minutes to an hour or two</b>, both because of capture reliability and because it is agonizing. If the underlying problem won't resolve on that timescale, start arranging the wire immediately rather than waiting for the pads to fail.</p>\n<p><b>Pace the patient, not the monitor.</b> A patient whose mentation and blood pressure improve is captured; a monitor that looks tidy is not evidence of anything by itself.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "12",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -2563,8 +3372,16 @@
                   "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2)."
                 },
                 {
+                  "tier": "GUIDELINE",
+                  "html": "Kusumoto FM, Schoenfeld MH, Barrett C, et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. <i>Circulation.</i> 2019;140(8):e382–e482."
+                },
+                {
                   "tier": "REFERENCE",
                   "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Cardiac Pacing chapter."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Omron R. <i>High Risk Low Frequency: The Transvenous Pacer Course.</i> Johns Hopkins Emergency Medicine — procedural checklist, equipment walkthrough, and pitfall video series."
                 }
               ]
             }
@@ -2593,8 +3410,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2788,8 +3605,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3000,8 +3817,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3219,8 +4036,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3393,8 +4210,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3604,8 +4421,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3774,8 +4591,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3976,8 +4793,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4191,8 +5008,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4367,8 +5184,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4553,8 +5370,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4775,8 +5592,8 @@
       "description": "Proximal humerus, sternal, and tibial sites.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5001,8 +5818,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5169,8 +5986,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5355,8 +6172,8 @@
       "description": "Ratio-based transfusion sequencing and logistics.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5535,8 +6352,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5709,8 +6526,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5921,8 +6738,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-20",
-      "reviewDue": "2027-09-20",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
