@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T16:16:34.232Z",
+  "generatedAt": "2026-09-21T16:25:28.086Z",
   "categories": [
     {
       "id": "airway",
@@ -140,12 +140,12 @@
             {
               "type": "box",
               "color": "amber",
-              "html": "<p><b>Work through the territories in order, each with its own nerve supply:</b></p>\n<ul>\n      <li><b>Nasal cavity</b> (if nasal route) — vasoconstrictor plus lidocaine; anterior ethmoidal and sphenopalatine supply.</li>\n      <li><b>Oropharynx and tongue base</b> — glossopharyngeal. This is the gag reflex. Atomised lidocaine, and ask the patient to hold it at the back of the throat rather than swallowing immediately.</li>\n      <li><b>Supraglottis, epiglottis, aryepiglottic folds</b> — superior laryngeal nerve (internal branch).</li>\n      <li><b>Vocal cords and trachea below them</b> — recurrent laryngeal. This territory is the one people under-treat, and it is where coughing comes from.</li>\n</ul>\n<p><b>Spray-as-you-go</b> through the working channel is the workhorse: advance a little, spray, wait ten or fifteen seconds, advance again. It topicalizes exactly what you are about to touch, in the right order, without a separate procedure.</p>"
+              "html": "<p><b>Work through the territories in order, each with its own nerve supply:</b></p>\n<ul>\n      <li><b>Nasal cavity</b> (if nasal route) — vasoconstrictor plus lidocaine; anterior ethmoidal and sphenopalatine supply.</li>\n      <li><b>Oropharynx and tongue base</b> — glossopharyngeal. This is the gag reflex. Atomized lidocaine, and ask the patient to hold it at the back of the throat rather than swallowing immediately.</li>\n      <li><b>Supraglottis, epiglottis, aryepiglottic folds</b> — superior laryngeal nerve (internal branch).</li>\n      <li><b>Vocal cords and trachea below them</b> — recurrent laryngeal. This territory is the one people under-treat, and it is where coughing comes from.</li>\n</ul>\n<p><b>Spray-as-you-go</b> through the working channel is the workhorse: advance a little, spray, wait ten or fifteen seconds, advance again. It topicalizes exactly what you are about to touch, in the right order, without a separate procedure.</p>"
             },
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Keep a running total of the lidocaine.</b> Topical airway lidocaine is absorbed rapidly across mucosa — nebulised, atomised, and sprayed doses all add up, and it is easy to lose count across three different delivery devices. Know your institution's ceiling for topical airway use, say the running total out loud, and have intralipid available in the department. Early LAST is agitation, perioral tingling, and metallic taste — symptoms you may misread as inadequate sedation and treat by giving more of the wrong thing.</p>"
+              "html": "<p><b>Keep a running total of the lidocaine.</b> Topical airway lidocaine is absorbed rapidly across mucosa — nebulized, atomized, and sprayed doses all add up, and it is easy to lose count across three different delivery devices. Know your institution's ceiling for topical airway use, say the running total out loud, and have intralipid available in the department. Early LAST is agitation, perioral tingling, and metallic taste — symptoms you may misread as inadequate sedation and treat by giving more of the wrong thing.</p>"
             }
           ]
         },
@@ -193,7 +193,7 @@
                   "num": "6",
                   "color": "red",
                   "title": "Railroad the tube — rotate, don't shove",
-                  "html": "Hold the scope absolutely still, as a rail, and advance the tube with a <b>90° anticlockwise rotation</b> if it hangs up. The tube catches on the right arytenoid in the great majority of cases, and that rotation turns the bevel away from it. Escalating force does not work and causes trauma; rotation almost always does."
+                  "html": "Hold the scope absolutely still, as a rail, and advance the tube with a <b>90° counterclockwise rotation</b> if it hangs up. The tube catches on the right arytenoid in the great majority of cases, and that rotation turns the bevel away from it. Escalating force does not work and causes trauma; rotation almost always does."
                 },
                 {
                   "num": "7",
@@ -255,12 +255,12 @@
                 [
                   "Patient gagging on the oral route",
                   "Tongue base not topicalized",
-                  "More atomised lidocaine to the posterior tongue; consider switching to nasal"
+                  "More atomized lidocaine to the posterior tongue; consider switching to nasal"
                 ],
                 [
                   "Tube hangs up at the glottis",
                   "Catching on the right arytenoid (the usual culprit)",
-                  "<b>Rotate 90° anticlockwise</b> and advance gently. Downsize the tube if it still won't pass"
+                  "<b>Rotate 90° counterclockwise</b> and advance gently. Downsize the tube if it still won't pass"
                 ],
                 [
                   "Tube advances but the scope view is lost",
@@ -315,7 +315,7 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p><b>Topicalization buys you everything; sedation buys you very little and costs a great deal.</b> When tempted to deepen sedation, give more local instead.</p>\n<p><b>Keep the shaft straight.</b> Loops are why the tip stops obeying your hand.</p>\n<p><b>When lost, withdraw.</b> Pulling back to a recognized structure recovers nearly every disoriented scope; pushing forward in hope recovers none.</p>\n<p><b>Rings and carina, or you are not in the trachea.</b> A dark hole is not a diagnosis.</p>\n<p><b>Rotate the tube, don't force it.</b> The right arytenoid is the obstacle, and 90° anticlockwise is the answer.</p>\n<p><b>Confirm before you induce.</b> This is the entire safety argument for the technique; do not spend it at the last step.</p>\n<p><b>Decide your abort criterion out loud beforehand</b> — a time or a number of attempts — because in the moment there is always a reason to try once more.</p>\n<p><b>Glycopyrrolate at least fifteen minutes ahead.</b> Secretions ruin more of these than any technical problem.</p>"
+              "html": "<p><b>Topicalization buys you everything; sedation buys you very little and costs a great deal.</b> When tempted to deepen sedation, give more local instead.</p>\n<p><b>Keep the shaft straight.</b> Loops are why the tip stops obeying your hand.</p>\n<p><b>When lost, withdraw.</b> Pulling back to a recognized structure recovers nearly every disoriented scope; pushing forward in hope recovers none.</p>\n<p><b>Rings and carina, or you are not in the trachea.</b> A dark hole is not a diagnosis.</p>\n<p><b>Rotate the tube, don't force it.</b> The right arytenoid is the obstacle, and 90° counterclockwise is the answer.</p>\n<p><b>Confirm before you induce.</b> This is the entire safety argument for the technique; do not spend it at the last step.</p>\n<p><b>Decide your abort criterion out loud beforehand</b> — a time or a number of attempts — because in the moment there is always a reason to try once more.</p>\n<p><b>Glycopyrrolate at least fifteen minutes ahead.</b> Secretions ruin more of these than any technical problem.</p>"
             }
           ]
         },
@@ -538,7 +538,7 @@
           "blocks": [
             {
               "type": "tagline",
-              "html": "The pediatric default, and an adult temporising measure only"
+              "html": "The pediatric default, and an adult temporizing measure only"
             },
             {
               "type": "steps",
@@ -895,7 +895,7 @@
                   "num": "1",
                   "color": "red",
                   "title": "Say the words out loud",
-                  "html": "<b>“This is CICO. We are performing a front-of-neck airway.”</b> Said as a declaration, not a question. Verbalising the diagnosis is the single act that shifts the whole team out of intubation mode — without it, everyone continues optimizing the thing that has already failed. This is the step that is most often skipped and it costs more lives than any technical error."
+                  "html": "<b>“This is CICO. We are performing a front-of-neck airway.”</b> Said as a declaration, not a question. Verbalizing the diagnosis is the single act that shifts the whole team out of intubation mode — without it, everyone continues optimizing the thing that has already failed. This is the step that is most often skipped and it costs more lives than any technical error."
                 },
                 {
                   "num": "2",
@@ -947,7 +947,7 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li><b>A CICO cart with a known location</b> that every anesthetist, intensivist, and emergency clinician can find without asking.</li>\n      <li><b>One agreed default technique</b>, institution-wide. Debate it at a governance meeting, never at a bedside.</li>\n      <li><b>A cognitive aid on the cart</b> — a single laminated card. Working memory is the first thing hypoxic-patient stress takes away from you.</li>\n      <li><b>An airway assessment habit</b> that flags the high-risk neck <i>before</i> induction: previous difficult airway, radiotherapy, neck mass, obesity, limited mouth opening, short thyromental distance, prior surgery.</li>\n      <li><b>A pre-induction verbalised plan</b> for anyone flagged: “Plan A is videolaryngoscopy, plan B is a supraglottic, plan C is front-of-neck and the cart is in that corner.” Naming plan C out loud before you need it dramatically lowers the threshold to reach it.</li>\n      <li><b>Landmarks identified in advance</b> in the high-risk patient — marking the cricothyroid membrane with a skin pen before induction takes fifteen seconds and removes the hardest step from the worst moment.</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A CICO cart with a known location</b> that every anesthetist, intensivist, and emergency clinician can find without asking.</li>\n      <li><b>One agreed default technique</b>, institution-wide. Debate it at a governance meeting, never at a bedside.</li>\n      <li><b>A cognitive aid on the cart</b> — a single laminated card. Working memory is the first thing hypoxic-patient stress takes away from you.</li>\n      <li><b>An airway assessment habit</b> that flags the high-risk neck <i>before</i> induction: previous difficult airway, radiotherapy, neck mass, obesity, limited mouth opening, short thyromental distance, prior surgery.</li>\n      <li><b>A pre-induction verbalized plan</b> for anyone flagged: “Plan A is videolaryngoscopy, plan B is a supraglottic, plan C is front-of-neck and the cart is in that corner.” Naming plan C out loud before you need it dramatically lowers the threshold to reach it.</li>\n      <li><b>Landmarks identified in advance</b> in the high-risk patient — marking the cricothyroid membrane with a skin pen before induction takes fifteen seconds and removes the hardest step from the worst moment.</li>\n</ul>"
             }
           ]
         },
@@ -1015,7 +1015,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li><b>Delayed declaration</b> — the dominant failure mode, by a wide margin</li>\n      <li><b>Choosing the slower technique</b> (Seldinger, or an unfamiliar commercial kit) when speed was the deciding variable</li>\n      <li><b>Standing down on transient improvement</b>, then having to restart the decision from scratch with less reserve than before</li>\n      <li><b>Abandoning upper-airway oxygenation</b> the moment CICO is declared — it still buys time, and it is the exhalation route for needle techniques</li>\n      <li><b>Communication breakdown</b> — if CICO isn't said out loud, help doesn't mobilise and the room stays in intubation mode</li>\n      <li><b>No pre-agreed default</b>, producing a bedside debate about technique while the patient desaturates</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Delayed declaration</b> — the dominant failure mode, by a wide margin</li>\n      <li><b>Choosing the slower technique</b> (Seldinger, or an unfamiliar commercial kit) when speed was the deciding variable</li>\n      <li><b>Standing down on transient improvement</b>, then having to restart the decision from scratch with less reserve than before</li>\n      <li><b>Abandoning upper-airway oxygenation</b> the moment CICO is declared — it still buys time, and it is the exhalation route for needle techniques</li>\n      <li><b>Communication breakdown</b> — if CICO isn't said out loud, help doesn't mobilize and the room stays in intubation mode</li>\n      <li><b>No pre-agreed default</b>, producing a bedside debate about technique while the patient desaturates</li>\n</ul>"
             }
           ]
         },
@@ -1551,8 +1551,8 @@
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "Railroad the ETT, rotating anticlockwise if it hangs up",
-                  "html": "Advance the tube over the catheter with a gentle <b>90° anticlockwise rotation</b> if it catches — the right arytenoid is the usual obstacle, exactly as in fiberoptic technique. Keep the catheter absolutely still."
+                  "title": "Railroad the ETT, rotating counterclockwise if it hangs up",
+                  "html": "Advance the tube over the catheter with a gentle <b>90° counterclockwise rotation</b> if it catches — the right arytenoid is the usual obstacle, exactly as in fiberoptic technique. Keep the catheter absolutely still."
                 },
                 {
                   "num": "8",
@@ -1609,7 +1609,7 @@
                 [
                   "Tube catches at the cords",
                   "Right arytenoid, and a big wire-to-tube step-off",
-                  "Rotate 90° anticlockwise. Downsize the tube. This is precisely why an exchange catheter is used as an intermediate"
+                  "Rotate 90° counterclockwise. Downsize the tube. This is precisely why an exchange catheter is used as an intermediate"
                 ],
                 [
                   "Tube advances but sits too shallow",
@@ -1717,8 +1717,8 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -1951,8 +1951,8 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2167,8 +2167,8 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2347,8 +2347,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2545,8 +2545,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-03-21",
+      "lastVerified": "2026-09-08",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "indications",
@@ -2775,8 +2775,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3410,8 +3410,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3605,8 +3605,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3817,8 +3817,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4036,8 +4036,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4210,8 +4210,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4421,8 +4421,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4591,8 +4591,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4793,8 +4793,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5008,8 +5008,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5184,8 +5184,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5370,8 +5370,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5592,8 +5592,8 @@
       "description": "Proximal humerus, sternal, and tibial sites.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5818,8 +5818,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5986,8 +5986,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6172,8 +6172,8 @@
       "description": "Ratio-based transfusion sequencing and logistics.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6352,8 +6352,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6526,8 +6526,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6738,8 +6738,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
