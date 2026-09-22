@@ -8,7 +8,7 @@
 //
 // This is also step one of iOS rasterization: rasterize-figures.mjs turns
 // these same files into PNGs, since SwiftUI can't render SVG.
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -64,8 +64,36 @@ function checkBounds(fig) {
 
   // <text x= y=> — add a rough descender allowance so text sitting exactly
   // on the bottom edge is still flagged.
-  for (const m of fig.svg.matchAll(/<text[^>]*\sx="([-\d.]+)"[^>]*\sy="([-\d.]+)"/g)) {
-    note('text', Number(m[1]), Number(m[2]) + 4);
+  //
+  // Also estimate the RENDERED WIDTH and flag right-edge overflow. Checking
+  // only the start coordinate is blind to a long line running off the side,
+  // which is the same silent clipping this function exists to catch, just on
+  // the other axis. The per-character ratios are rough (monospace is the
+  // wider of the two) and deliberately conservative — a false positive costs
+  // a glance, a false negative ships a truncated sentence.
+  for (const m of fig.svg.matchAll(/<text[^>]*\sx="([-\d.]+)"[^>]*\sy="([-\d.]+)"[^>]*>([\s\S]*?)<\/text>/g)) {
+    const [, xs, ys, inner] = m;
+    const x = Number(xs);
+    note('text', x, Number(ys) + 4);
+
+    const tag = m[0].slice(0, m[0].indexOf('>'));
+    const cls = /class="([^"]*)"/.exec(tag)?.[1] ?? '';
+    const sizeAttr = /font-size:\s*([\d.]+)/.exec(tag)?.[1];
+    // Resolve the font-size from the inline style, else the <style> rule for
+    // the class, else a sane default.
+    const classSize = cls
+      ? /font-size:\s*([\d.]+)px/.exec(new RegExp(`\\.${cls.split(/\s+/)[0]}\\s*\\{[^}]*\\}`).exec(fig.svg)?.[0] ?? '')?.[1]
+      : undefined;
+    const size = Number(sizeAttr ?? classSize ?? 12);
+
+    // Entities and tags render as roughly one glyph / nothing respectively.
+    const text = inner.replace(/<[^>]+>/g, '').replace(/&[a-z]+;|&#\d+;/gi, 'x').trim();
+    const mono = /mono/i.test(fig.svg.slice(Math.max(0, fig.svg.indexOf(`.${cls.split(/\s+/)[0]}{`)), fig.svg.indexOf(`.${cls.split(/\s+/)[0]}{`) + 200));
+    const perChar = mono ? 0.62 : 0.54;
+    const endX = x + text.length * size * perChar;
+    if (endX > w + 2) {
+      problems.push(`text "${text.slice(0, 34)}${text.length > 34 ? '…' : ''}" runs to x≈${Math.round(endX)}, past ${w}`);
+    }
   }
   // <polyline points="x,y x,y ...">
   for (const m of fig.svg.matchAll(/points="([^"]+)"/g)) {
@@ -90,8 +118,14 @@ function checkBounds(fig) {
 
 function main() {
   const figures = loadFigures();
-  rmSync(OUT, { recursive: true, force: true });
+  // Clear stale SVGs only. Do NOT nuke the whole directory — rasterize-figures
+  // writes PNGs into figures/png/, and wiping that here means running this
+  // script on its own silently deletes the iOS assets and leaves the build in
+  // a broken state until a full rebuild.
   mkdirSync(OUT, { recursive: true });
+  for (const stale of readdirSync(OUT).filter((f) => f.endsWith('.svg') || f === 'index.html')) {
+    rmSync(path.join(OUT, stale), { force: true });
+  }
 
   for (const f of figures) {
     writeFileSync(path.join(OUT, `${f.figureId}.svg`), f.svg);

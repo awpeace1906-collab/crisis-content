@@ -172,6 +172,87 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
   <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-title">Railroad the ETT, rotating counterclockwise if it hangs up</div><div class="step-desc">Advance the tube over the catheter with a gentle <b>90&deg; counterclockwise rotation</b> if it catches &mdash; the right arytenoid is the usual obstacle, exactly as in fiberoptic technique. Keep the catheter absolutely still.</div></div></div>
   <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-title">Remove the catheter, confirm, secure, and dress the neck</div><div class="step-desc">Withdraw the catheter, inflate the cuff, confirm with capnography and auscultation, secure the tube. Then apply a dressing and light pressure to the puncture site and <b>document that a transtracheal puncture was made</b> &mdash; someone will otherwise be puzzled by subcutaneous air on a later film.</div></div></div>
 </div>
+<figure class="fig">
+<svg viewBox="0 0 520 496" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Retrograde intubation wire direction, shown as a vertical schematic of the airway. The needle punctures the cricothyroid membrane and is angled cephalad, upward, so the wire travels up past the cricoid and thyroid cartilage, through the vocal cords, up the pharynx and out of the mouth where it is retrieved. A contrasting downward arrow marks the direction used by cricothyrotomy and percutaneous tracheostomy, which both angle caudally toward the carina.">
+<style>
+  .col{fill:#182030;stroke:#4a5670;stroke-width:1.6}
+  .lbl{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:13.5px}
+  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11px}
+  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}
+  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+  .lead{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 3}
+</style>
+<defs>
+  <marker id="up" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto">
+    <path d="M5,0 L10,10 L0,10 Z" fill="#f59e0b"/>
+  </marker>
+  <marker id="dn" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto">
+    <path d="M5,0 L10,10 L0,10 Z" fill="#e84c4c"/>
+  </marker>
+</defs>
+
+<text class="t" x="0" y="17">Cephalad &mdash; the wire goes up and out</text>
+
+<!-- airway column -->
+<rect class="col" x="150" y="54" width="72" height="376" rx="10"/>
+
+<!-- mouth -->
+<text class="lbl" x="238" y="70">Mouth</text>
+<text class="s" x="238" y="86">retrieve the wire here</text>
+<line class="lead" x1="222" y1="70" x2="234" y2="66"/>
+
+<!-- pharynx label -->
+<text class="s" x="238" y="130">pharynx</text>
+<line class="lead" x1="222" y1="126" x2="234" y2="126"/>
+
+<!-- vocal cords -->
+<line x1="150" y1="196" x2="186" y2="196" stroke="#00d4aa" stroke-width="5" stroke-linecap="round"/>
+<line x1="192" y1="196" x2="222" y2="196" stroke="#00d4aa" stroke-width="5" stroke-linecap="round"/>
+<text class="lbl" x="238" y="192" style="fill:#00d4aa">Vocal cords</text>
+<text class="s" x="238" y="208">wire passes through</text>
+<line class="lead" x1="222" y1="196" x2="234" y2="194"/>
+
+<!-- thyroid cartilage -->
+<rect x="130" y="216" width="14" height="44" rx="4" fill="#182030" stroke="#00d4aa" stroke-width="1.8"/>
+<text class="s" x="34" y="234">thyroid</text>
+<text class="s" x="34" y="248">cartilage</text>
+<line class="lead" x1="128" y1="238" x2="104" y2="240"/>
+
+<!-- cricothyroid membrane -->
+<rect x="128" y="266" width="18" height="24" rx="4" fill="#e84c4c" opacity="0.26"/>
+<rect x="128" y="266" width="18" height="24" rx="4" fill="none" stroke="#e84c4c" stroke-width="2"/>
+<text class="lbl" x="238" y="272" style="fill:#e84c4c">Cricothyroid membrane</text>
+<text class="s" x="238" y="288">puncture, angled UP</text>
+<line class="lead" x1="148" y1="278" x2="234" y2="276"/>
+
+<!-- cricoid -->
+<rect x="130" y="298" width="14" height="26" rx="4" fill="#182030" stroke="#00d4aa" stroke-width="1.8"/>
+<text class="s" x="40" y="316">cricoid</text>
+<line class="lead" x1="128" y1="312" x2="106" y2="314"/>
+
+<!-- needle, angled cephalad into the membrane -->
+<line x1="92" y1="318" x2="140" y2="280" stroke="#f59e0b" stroke-width="3.6" stroke-linecap="round"/>
+<text class="s" x="34" y="342" style="fill:#f59e0b">needle &#8599;</text>
+
+<!-- THE WIRE: from membrane straight up and out of the mouth -->
+<line x1="186" y1="278" x2="186" y2="44" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" marker-end="url(#up)"/>
+<circle cx="186" cy="278" r="5" fill="#f59e0b"/>
+
+<!-- contrast: every other procedure goes down -->
+<line x1="204" y1="330" x2="204" y2="412" stroke="#e84c4c" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#dn)"/>
+<text class="s" x="238" y="356" style="fill:#e84c4c">cricothyrotomy &amp;</text>
+<text class="s" x="238" y="372" style="fill:#e84c4c">tracheostomy point</text>
+<text class="s" x="238" y="388" style="fill:#e84c4c">the other way &#8595;</text>
+
+<text class="s" x="238" y="424">toward the carina</text>
+
+<!-- footer -->
+<line x1="0" y1="444" x2="512" y2="444" stroke="#4a5670" stroke-width="1" opacity="0.4"/>
+<text class="c" x="0" y="462">Schematic, not anatomic proportions. Say the direction out loud</text>
+<text class="c" x="0" y="476">before you puncture &mdash; caudad sends the wire toward the carina.</text>
+</svg>
+<figcaption>The needle angles <b>cephalad</b> &mdash; the most commonly inverted detail in this procedure, precisely because cricothyrotomy, percutaneous tracheostomy and transtracheal blocks all angle the other way.</figcaption>
+</figure>
 <div class="alert amber"><div class="alert-t">Cephalad here; caudad everywhere else</div><p>The needle direction is the most commonly inverted detail in this procedure, precisely because every other anterior-neck technique you know goes the other way. Angling caudally sends the wire toward the carina and the technique simply fails. Say the direction out loud before you puncture.</p></div>
 <div class="alert red"><div class="alert-t">The wire is the procedure &mdash; never let both ends go</div><p>From the moment the wire is through the membrane until it is removed, one end is clamped or held at all times. A wire released at the neck can be pulled entirely into the trachea; a wire released at the mouth retracts and has to be retrieved again. Both are avoidable with a hemostat and a habit.</p></div>
 

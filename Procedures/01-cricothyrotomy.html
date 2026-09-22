@@ -301,6 +301,82 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
   <div class="step-row"><div class="step-num" style="background:var(--purple)">3</div><div class="step-body"><div class="step-title">Connect the ventilation device you already know</div><div class="step-desc">Attach your pressure-limited oxygen source or the 3&nbsp;mm connector/stopcock arrangement from your cart. A standard bag-valve will generate almost no flow through a 14&nbsp;ga cannula &mdash; this needs a high-pressure source to work at all.</div></div></div>
   <div class="step-row"><div class="step-num" style="background:var(--red)">4</div><div class="step-body"><div class="step-title">Ventilate with a long expiratory phase and watch the chest fall</div><div class="step-desc">Short insufflation, then a <b>markedly prolonged expiratory phase</b> &mdash; think in the region of 1:4 or longer. <b>Watch the chest actually come back down between breaths.</b> If it does not, stop insufflating. Stacking breaths into a chest that cannot empty is how this technique kills people.</div></div></div>
 </div>
+<figure class="fig">
+<svg viewBox="0 0 520 424" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Why needle cricothyrotomy depends on the upper airway. In the left panel the upper airway is partly patent, so gas insufflated through the narrow cannula can escape upward past the obstruction and the chest falls between breaths. In the right panel the obstruction is complete, gas enters through the cannula but cannot leave, intrathoracic pressure rises with every breath, and the result is barotrauma, pneumothorax and circulatory collapse.">
+<style>
+  .b{fill:#182030;stroke:#4a5670;stroke-width:1.5}
+  .lbl{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:13px}
+  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}
+  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+</style>
+<defs>
+  <marker id="in" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/></marker>
+  <marker id="out" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#00d4aa"/></marker>
+</defs>
+
+<text class="t" x="0" y="17">A 14 ga cannula is not an exhalation route</text>
+<text class="c" x="0" y="34">Gas goes in through the cannula. It has to come out somewhere else.</text>
+
+<!-- ============ LEFT PANEL: partial patency ============ -->
+<text class="lbl" x="0" y="66" style="fill:#00d4aa">PARTIAL PATENCY &mdash; works</text>
+
+<!-- upper airway tube -->
+<rect class="b" x="56" y="82" width="34" height="86" rx="6"/>
+<!-- partial obstruction -->
+<path d="M56,110 L74,122 L56,134 Z" fill="#e84c4c" opacity="0.5"/>
+<path d="M90,110 L72,122 L90,134 Z" fill="#e84c4c" opacity="0.5"/>
+<text class="s" x="98" y="120">partial</text>
+<text class="s" x="98" y="134">obstruction</text>
+<!-- trachea below -->
+<rect class="b" x="56" y="168" width="34" height="112" rx="6"/>
+<!-- cannula entering -->
+<line x1="150" y1="196" x2="92" y2="184" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round"/>
+<text class="s" x="118" y="216" style="fill:#2563eb">cannula</text>
+<!-- gas in arrow -->
+<line x1="134" y1="190" x2="100" y2="183" stroke="#2563eb" stroke-width="2.6" marker-end="url(#in)"/>
+<!-- gas out arrow, up through the partly open airway -->
+<line x1="73" y1="168" x2="73" y2="76" stroke="#00d4aa" stroke-width="2.6" marker-end="url(#out)"/>
+<text class="s" x="86" y="100" style="fill:#00d4aa">gas escapes &#8593;</text>
+<!-- chest -->
+<ellipse cx="73" cy="304" rx="42" ry="24" fill="#182030" stroke="#00d4aa" stroke-width="1.8"/>
+<text class="s" x="40" y="308" style="fill:#00d4aa">chest falls</text>
+<text class="s" x="34" y="348" style="fill:#00d4aa">Watch it come</text>
+<text class="s" x="34" y="362" style="fill:#00d4aa">back down.</text>
+
+<!-- divider -->
+<line x1="258" y1="54" x2="258" y2="372" stroke="#4a5670" stroke-width="1" opacity="0.45"/>
+
+<!-- ============ RIGHT PANEL: complete obstruction ============ -->
+<text class="lbl" x="288" y="66" style="fill:#e84c4c">COMPLETE OBSTRUCTION &mdash; kills</text>
+
+<rect class="b" x="344" y="82" width="34" height="86" rx="6"/>
+<!-- full obstruction block -->
+<rect x="344" y="108" width="34" height="28" fill="#e84c4c" opacity="0.75"/>
+<text class="s" x="386" y="120">no way</text>
+<text class="s" x="386" y="134">out</text>
+<rect class="b" x="344" y="168" width="34" height="112" rx="6"/>
+<!-- cannula -->
+<line x1="438" y1="196" x2="380" y2="184" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round"/>
+<line x1="422" y1="190" x2="388" y2="183" stroke="#2563eb" stroke-width="2.6" marker-end="url(#in)"/>
+<text class="s" x="406" y="216" style="fill:#2563eb">cannula</text>
+<!-- blocked arrow -->
+<line x1="361" y1="168" x2="361" y2="142" stroke="#e84c4c" stroke-width="2.6"/>
+<line x1="350" y1="146" x2="372" y2="138" stroke="#e84c4c" stroke-width="2.6"/>
+<line x1="350" y1="138" x2="372" y2="146" stroke="#e84c4c" stroke-width="2.6"/>
+<!-- over-inflated chest -->
+<ellipse cx="361" cy="304" rx="54" ry="32" fill="#e84c4c" fill-opacity="0.16" stroke="#e84c4c" stroke-width="2.2"/>
+<text class="s" x="310" y="300" style="fill:#e84c4c">pressure climbs</text>
+<text class="s" x="310" y="314" style="fill:#e84c4c">every breath</text>
+<text class="s" x="288" y="348" style="fill:#e84c4c">Barotrauma, pneumothorax,</text>
+<text class="s" x="288" y="362" style="fill:#e84c4c">circulatory collapse.</text>
+
+<line x1="0" y1="376" x2="512" y2="376" stroke="#4a5670" stroke-width="1" opacity="0.4"/>
+<text class="c" x="0" y="388">In complete obstruction a needle technique is not a rescue.</text>
+<text class="c" x="0" y="402">You need a cuffed surgical airway.</text>
+</svg>
+<figcaption>If the chest does not come back down between insufflations, <b>stop</b>. Stacking breaths into a chest that cannot empty is how this technique kills people &mdash; and it is the reason a needle cricothyrotomy is a bridge, never the answer to a completely obstructed airway.</figcaption>
+</figure>
 <div class="alert red"><div class="alert-t">Gas goes in through the cannula; it comes out through the upper airway</div><p>A 14&nbsp;ga cannula is an inadequate exhalation route. Expiration depends on the patient's own upper airway being <b>at least partially patent</b>. If the obstruction is complete &mdash; total supraglottic obstruction, severe angioedema, a foreign body &mdash; insufflated gas has nowhere to go, intrathoracic pressure climbs with every breath, and you produce barotrauma, pneumothorax, and circulatory collapse. In complete obstruction a needle technique is the wrong answer; you need a cuffed surgical airway.</p></div>
 <div class="xref"><b>Needle cricothyrotomy is a bridge, not a destination.</b> Ventilation through a narrow cannula does not clear CO<sub>2</sub> adequately, so hypercarbia climbs steadily &mdash; usable for roughly <b>30&ndash;45 minutes</b>. Start arranging the definitive airway the moment the cannula is working, not when the gas goes bad.</div>
 
