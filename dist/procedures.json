@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T17:37:54.402Z",
+  "generatedAt": "2026-09-22T23:18:32.365Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -3310,8 +3310,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3952,8 +3952,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4147,8 +4147,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4359,8 +4359,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4578,8 +4578,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4752,8 +4752,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4963,8 +4963,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5133,8 +5133,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5335,8 +5335,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5563,7 +5563,7 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Need for continuous, beat-to-beat blood pressure monitoring during active resuscitation or hemodynamic instability</li>\n      <li>Frequent arterial blood gas sampling anticipated</li>\n      <li>Titration of vasopressors/inotropes where non-invasive cuff measurements are too slow or unreliable (e.g., low-flow states)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Any patient on a vasoactive infusion.</b> A cuff cycling every three minutes cannot titrate a drug whose effect changes in thirty seconds — and in low-flow states the cuff is not merely slow, it is wrong.</li>\n      <li><b>Shock of any cause</b> where the trend between cuff readings is the information you need</li>\n      <li><b>Frequent blood gases</b> — ventilated patients, DKA, toxic ingestions, post-arrest care</li>\n      <li><b>During CPR</b> — a genuinely different indication with genuinely different value; see §08. It lets you measure whether your compressions are generating perfusion and detect ROSC without pausing.</li>\n      <li><b>Titrating blood pressure to a tight target</b> — aortic dissection, post-arrest neuroprotection, intracranial hemorrhage, permissive hypotension in trauma</li>\n      <li><b>Dynamic preload assessment</b> (pulse pressure variation) in the appropriate ventilated patient</li>\n</ul>"
             }
           ]
         },
@@ -5577,7 +5577,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Inadequate collateral circulation at the intended site (e.g., abnormal Allen's test for radial site, though rarely a hard stop in an emergency)</li>\n      <li>Local infection or significant trauma overlying the intended site</li>\n      <li>Severe peripheral vascular disease at the intended site (relative — choose an alternate site)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Infection, burn, or trauma over the site</b> — choose another artery.</li>\n      <li><b>Known vascular compromise or a previous surgical or interventional injury</b> to that vessel — prior radial harvest for CABG, an AV fistula in that arm, a vascular graft.</li>\n      <li><b>Raynaud phenomenon, thromboangiitis obliterans, or severe peripheral vascular disease</b> at the intended site.</li>\n      <li><b>End arteries without collateral supply.</b> The <b>brachial</b> artery is the notable one — it is effectively the sole supply to the forearm, and thrombosis there threatens the whole limb. The median nerve runs alongside it. Prefer radial, femoral, or axillary.</li>\n      <li><b>Coagulopathy is relative</b> — but it makes site choice matter. Radial is superficial and compressible; femoral bleeding can dissect into the retroperitoneum if the puncture is above the inguinal ligament.</li>\n</ul>\n<p><b>On the Allen test:</b> it has been shown repeatedly to predict neither ischemic complications nor their absence, and a “failed” Allen test in a patient who needs a line should not stop you. Its residual value is as a prompt to look at the hand and think about collateral flow before and after. It is not a gate.</p>"
             }
           ]
         },
@@ -5591,15 +5591,65 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Arterial line catheter kit (typically 20 ga for radial, larger for femoral)</li>\n      <li>Ultrasound with linear probe (recommended, especially in low-flow/hypotensive states)</li>\n      <li>Pressure transducer, tubing, pressure bag with flush solution</li>\n      <li>Local anesthetic if patient is responsive</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Catheter.</b> <span class=\"d\">20 G, 4.5–5 cm</span> for radial — either a plain catheter-over-needle or an integrated-guidewire kit. <span class=\"d\">18 G, 10–16 cm</span> for femoral, placed by Seldinger technique. Pediatric radial: 22–24 G.</li>\n      <li><b>Ultrasound, linear probe, sterile sheath.</b> Ultrasound guidance improves first-pass success and reduces attempts, and its advantage is largest in precisely the patients you are placing the line in — hypotensive, edematous, pulseless. Default to it.</li>\n      <li><b>Transducer set:</b> pressure tubing (short and stiff — see §07), transducer, three-way stopcock, cable to the monitor.</li>\n      <li><b>Flush bag under a pressure bag at 300 mmHg</b>, delivering roughly 3 mL/h continuously. Check the pressure bag is actually inflated — a deflated bag is a common cause of a line that clots and a trace that damps.</li>\n      <li><b>Lidocaine 1%</b> for any patient with perception. A small wheal also reduces arterial spasm.</li>\n      <li><b>Arm board, rolled gauze or a 500 mL bag, and tape</b> for radial positioning.</li>\n      <li><b>Clear labeling</b> — red-striped tubing, an ARTERIAL label on the stopcock, and no injection ports that can be mistaken for an IV.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "site",
           "num": "04",
+          "color": "amber",
+          "title": "Choosing the Site — and the Radial-to-Femoral Gradient",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Site",
+                "For",
+                "Against"
+              ],
+              "rows": [
+                [
+                  "<b>Radial</b>",
+                  "Superficial, compressible, good collateral via the palmar arches, lowest complication rate, keeps the groin free",
+                  "Small and spasm-prone. <b>Under-reads central pressure in shock</b> (see below). Hardest exactly when you need it most."
+                ],
+                [
+                  "<b>Femoral</b>",
+                  "Large, easy to find with ultrasound even when pulseless, accurate in shock, stays patent when radial arteries have clamped down. Often the right first choice in profound shock.",
+                  "Groin contamination and higher infection risk. Retroperitoneal bleed if punctured above the ligament. Competes with ECMO/REBOA access."
+                ],
+                [
+                  "<b>Axillary</b>",
+                  "Central pressures, large vessel, good collateral through the scapular network. Underused.",
+                  "Brachial plexus adjacent. Not compressible. Requires ultrasound."
+                ],
+                [
+                  "<b>Dorsalis pedis / posterior tibial</b>",
+                  "Available when arms are burned, injured, or occupied",
+                  "Small, distal, and systolic pressure is markedly amplified — often 10–20 mmHg above central. MAP remains usable."
+                ],
+                [
+                  "<b>Brachial</b>",
+                  "Large, easy to palpate",
+                  "<b>End artery with the median nerve alongside.</b> Reserve for when nothing else is available."
+                ]
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "The radial line may be lying to you in vasopressor shock",
+              "html": "In distributive shock on high-dose vasopressors, peripheral vasoconstriction creates a real pressure gradient between the aorta and the radial artery. <b>Radial MAP can read 10–30 mmHg <i>below</i> simultaneous femoral MAP.</b> The failure mode is specific and dangerous: the radial number looks inadequate, so the norepinephrine goes up, so the gradient widens, so the number still looks inadequate. <b>If a patient is on escalating pressors and the radial trace looks disproportionately bad for how they appear, place or compare against a femoral line before climbing further.</b>"
+            }
+          ]
+        },
+        {
+          "id": "radial",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Radial Technique",
           "tagline": null,
           "blocks": [
             {
@@ -5608,72 +5658,228 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Select the site — radial artery is typical first choice for accessibility and complication profile; femoral artery for faster access in profound shock or when radial pulses are difficult to palpate."
+                  "title": "Position — extended, not hyperextended",
+                  "html": "Rolled gauze or a small fluid bag under the wrist, arm on a board, palm up. Extend to about <b>30–45°</b> and tape the thumb down in gentle traction to stabilize the vessel. <b>Hyperextension flattens the artery and reduces flow</b> — a wrist bent back as far as it goes is a common and self-inflicted reason a line will not thread. If the pulse weakens as you extend, back off."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Position the extremity appropriately (wrist extension for radial access)."
+                  "title": "Map it with ultrasound before you prep",
+                  "html": "Short axis, just proximal to the wrist crease. Identify the radial artery: round, pulsatile, non-compressible, with the two small venae comitantes flanking it. <b>Note the depth</b> (usually 2–5 mm) and the course — if it dives or branches, move proximally to a straighter segment. A palpable pulse tells you nothing about whether the vessel runs straight."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Prep the site; use ultrasound guidance if available, especially with weak or absent palpable pulses."
+                  "title": "Prep, drape, and wheal",
+                  "html": "Chlorhexidine and dry. A small lidocaine wheal for anyone with perception — it also blunts the spasm that follows a painful first pass."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Insert the catheter-over-needle or catheter-over-wire (Seldinger) system at a shallow angle, advancing until arterial flash is seen."
+                  "title": "Enter at 30–45°, then go flat",
+                  "html": "Puncture the skin, then advance slowly toward the vessel. <b>Flash means the needle tip is in the lumen — not the catheter.</b> Drop the hub toward the skin to about <b>10–15°</b> and advance the whole assembly a further <b>1–2 mm</b> so the catheter's leading edge crosses the arterial wall. Only then advance the catheter alone. <b>Skipping this is the single commonest reason a line flashes beautifully and then will not thread.</b>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Advance the catheter into the vessel, confirm pulsatile return."
+                  "title": "Ultrasound: walk the tip down, don't chase the shaft",
+                  "html": "In short axis, what you see is a cross-section of the needle — and a bright dot may be the <i>shaft</i>, not the tip. Use <b>dynamic needle tip positioning</b>: advance the needle a millimeter, slide the probe a millimeter forward, re-find the bright dot, repeat. You are always looking at the tip because you keep moving the probe past it. Alternatively use <b>long axis in-plane</b>, which shows the whole needle at once and is excellent for a straight superficial radial — at the cost of needing to hold the probe exactly in the vessel's plane."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Connect to the pressure tubing/transducer system, zero and level the transducer."
+                  "title": "If it won't thread: transfixion",
+                  "html": "A legitimate rescue, not a failure. Deliberately pass through both walls, remove the needle, then <b>withdraw the catheter slowly</b> until pulsatile flow returns — you are now in the lumen from behind. Advance. With an integrated-wire kit, thread the wire at the moment of pulsatile return instead. Transfixion punctures the back wall, so expect a little more bruising."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Secure the catheter, confirm waveform quality on the monitor."
+                  "title": "Connect, flush, secure",
+                  "html": "Occlude the artery proximally with a fingertip while you disconnect the needle — it keeps the field clean and loses less blood. Connect the primed transducer tubing, flush, and secure with a sutureless device or a suture. <b>Keep the wrist in gentle extension in the final dressing</b>; a line that works on the arm board and damps when the wrist flexes is positional, not broken."
                 }
               ]
             },
             {
-              "type": "alert",
+              "type": "tagline",
+              "html": "Femoral arterial line"
+            },
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p>Same Seldinger sequence as a central line, with the target switched: <b>the artery is <i>lateral</i> to the vein</b> (NAVEL, lateral to medial: Nerve, Artery, Vein, Empty space, Lymphatics). Puncture <b>1–2 cm below the inguinal ligament</b>, measured from the ASIS–pubic tubercle line rather than the skin crease. Enter at 45°, take pulsatile return, thread the wire with no resistance, nick, dilate shallowly, and advance an <span class=\"d\">18 G, 10–16 cm</span> catheter.</p>\n<p>Two things differ from the venous version. <b>Above the ligament, an arterial bleed is retroperitoneal</b> — unrecognizable and uncompressible. And <b>if ECPR or REBOA is on the table, this is the vessel those teams need</b>; place it on the side they are not planning to use, and tell them it is there.</p>"
+            }
+          ]
+        },
+        {
+          "id": "transducer",
+          "num": "06",
+          "color": "teal",
+          "title": "Zeroing, Leveling, and Why the Number Is Wrong",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Two different actions that get conflated, and one of them has to be repeated all day."
+            },
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p><b>Zeroing</b> tells the monitor which pressure is atmospheric. Open the stopcock to air at the transducer, press zero, close it. Done once at setup and after any disconnection or suspicion of drift.</p>\n<p><b>Leveling</b> tells you <i>what</i> you are measuring. The transducer must sit at the <b>phlebostatic axis — fourth intercostal space, mid-axillary line</b>. This must be re-checked <b>every time the bed height or the patient's position changes</b>, which in a busy unit is many times a day and is the most frequently skipped step in arterial monitoring.</p>\n<p><b>The number that makes it concrete: every 10 cm of vertical offset is a 7.4 mmHg error.</b> A transducer taped to the bed rail 13 cm below the patient's chest reads about 10 mmHg too high — more than enough to justify not escalating a pressor on a patient who needs one. Above the axis, it under-reads by the same rule.</p>\n<p><b>For cerebral perfusion</b> — post-arrest care, traumatic brain injury, stroke — some units level to the <b>external auditory meatus</b> (approximating the circle of Willis) instead, which reads lower than the phlebostatic axis by the height difference. Know which convention your unit uses and make sure everyone at the bedside is using the same one; two teams levelling differently on the same patient will disagree about the MAP by 10–15 mmHg and never work out why.</p>"
+            }
+          ]
+        },
+        {
+          "id": "waveform",
+          "num": "07",
+          "color": "amber",
+          "title": "Reading the Waveform",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "The trace carries more information than the three numbers next to it."
+            },
+            {
+              "type": "box",
               "color": "amber",
-              "title": "Palpable pulses can be absent even when a line is achievable",
-              "html": "In profound shock, ultrasound guidance becomes far more valuable in exactly the situations where the line is most urgently needed — don't let a difficult radial site delay you from moving to femoral access."
+              "html": "<p><b>The fast-flush (square wave) test — do this before you believe any arterial number.</b> Pull the flush tab for about a second and release. The trace squares off at the flush pressure, then snaps back. <b>Count the oscillations after release:</b></p>\n<ul>\n  <li><b>1–2 oscillations, then a clean return to baseline — optimally damped.</b> Trust all the numbers.</li>\n  <li><b>Fewer than 1 — sluggish, rounded return: <span style=\"color:var(--red)\">over-damped</span>.</b> The trace loses its dicrotic notch and looks flattened. It <b>under-reads systolic and over-reads diastolic.</b> Causes: air bubbles anywhere in the circuit, a clot or fibrin at the tip, a kink, the wrist flexed, compliant or over-long tubing, too many stopcocks, a flush bag below 300 mmHg, or arterial spasm.</li>\n  <li><b>More than 2–3 oscillations — a whippy, spiky trace: <span style=\"color:var(--amber)\">under-damped</span> (hyper-resonant).</b> It <b>over-reads systolic by as much as 20–30 mmHg</b> and under-reads diastolic. Causes: long stiff tubing, tachycardia, high contractility, catheter whip. A damping device or a shorter tubing run fixes it.</li>\n</ul>\n<p><b>The rule that saves you in both cases: <span style=\"color:var(--teal)\">MAP is the robust number.</span></b> Mean arterial pressure survives damping error far better than systolic or diastolic, because it is an integrated area rather than a peak. When the waveform is imperfect and you cannot fix it immediately, titrate to MAP, not to systolic.</p>"
+            },
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p><b>What else the shape tells you:</b></p>\n<ul>\n  <li><b>Upstroke slope</b> — steepness tracks contractility and the rate of ventricular ejection. A slurred, slow upstroke suggests poor contractility or aortic stenosis.</li>\n  <li><b>Dicrotic notch position</b> — a notch sitting low on the downstroke suggests low systemic vascular resistance (sepsis, vasodilation). High on the limb suggests a vasoconstricted, high-resistance state.</li>\n  <li><b>Narrow pulse pressure</b> — hypovolemia, tamponade, or a failing ventricle. <b>Wide</b> — vasodilation, aortic regurgitation, or a stiff aorta.</li>\n  <li><b>Pulse pressure variation (PPV)</b> — respiratory swing in pulse pressure. <span class=\"d\">&gt;13%</span> predicts fluid responsiveness, but <b>only</b> in a patient in sinus rhythm, fully mechanically ventilated with no spontaneous effort, at a tidal volume of at least 8 mL/kg, with a closed chest and no severe right heart failure. Outside those conditions it is not interpretable — and it is quoted outside those conditions constantly.</li>\n  <li><b>Pulsus paradoxus</b> — an inspiratory systolic fall greater than 10 mmHg, visible directly on the trace. Points to tamponade, severe asthma, or massive pulmonary embolism.</li>\n  <li><b>Pulsus alternans</b> — alternating strong and weak beats. Severe left ventricular dysfunction.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "arrest",
+          "num": "08",
+          "color": "red",
+          "title": "The Arterial Line During CPR",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "This is the use that changes management most, and it is the least familiar."
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p>During cardiac arrest the arterial line stops being a monitor and becomes a feedback device on the quality of your resuscitation.</p>\n<ul>\n  <li><b>Diastolic pressure is the number that matters</b>, because coronary perfusion happens in diastole. <b>Target an arterial diastolic above roughly 25–30 mmHg during compressions.</b> Below about 20 mmHg, ROSC becomes very unlikely.</li>\n  <li><b>A low diastolic is actionable in two directions:</b> change the compressor or fix the mechanics (rate, depth, recoil, hand position), or give a vasopressor. It converts “are these compressions any good?” from an argument into a reading.</li>\n  <li><b>ROSC is detectable without pausing.</b> An abrupt rise in diastolic and the appearance of an organized native waveform between compressions signals return of circulation — so you can confirm it without the interruption in flow that a pulse check costs.</li>\n  <li><b>Use it alongside end-tidal CO<sub>2</sub>,</b> not instead of it. ETCO<sub>2</sub> reflects pulmonary blood flow, arterial diastolic reflects coronary perfusion pressure; they answer adjacent questions and together they cover most of what you want to know.</li>\n  <li><b>Post-ROSC it is immediately useful</b> for titrating to a MAP target without waiting on a cuff that will not cycle usefully in a poorly perfused patient.</li>\n</ul>\n<p>In a prolonged code, particularly one heading toward ECPR, a femoral arterial line is worth the two minutes it costs — and it is often being placed by the same team, at the same time, in the same groin as the rest of the cannulation plan. Coordinate that.</p>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "09",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Flash, then the catheter won't advance",
+                  "Needle tip in the lumen, catheter tip still in the wall",
+                  "Drop to 10–15° and advance the whole assembly 1–2 mm before sliding the catheter. Then transfixion if needed."
+                ],
+                [
+                  "Pulse disappeared during positioning",
+                  "Wrist hyperextended, flattening the artery",
+                  "Relax to 30–45°. Re-palpate or re-image."
+                ],
+                [
+                  "Artery visible but keeps rolling away",
+                  "Not enough skin tension; approach angle too shallow",
+                  "Tension the skin distally with the non-dominant hand. Enter directly over the vessel center in short axis."
+                ],
+                [
+                  "Trace flattens and numbers drift low",
+                  "Over-damping: air, clot, kink, flexed wrist, or a deflated pressure bag",
+                  "Square-wave test. Check the pressure bag is at 300 mmHg, hunt for bubbles at stopcocks, straighten the wrist, gently aspirate then flush. <b>Do not flush forcefully against resistance.</b>"
+                ],
+                [
+                  "Systolic reads absurdly high, trace looks spiky",
+                  "Under-damping / resonance",
+                  "Shorten the tubing, remove extra stopcocks, add a damping device. <b>Meanwhile titrate to MAP.</b>"
+                ],
+                [
+                  "Arterial MAP much lower than the cuff, on high-dose pressors",
+                  "Radial-to-central gradient in vasoconstricted shock",
+                  "Compare against a femoral line or a manual cuff before escalating pressors further. Do not chase the radial number upward."
+                ],
+                [
+                  "Cannot aspirate, cannot flush",
+                  "Clotted or the tip is against the wall",
+                  "Reposition the limb and retry gently. If truly occluded the line is finished — remove it. Forcing a flush risks <b>retrograde embolization</b>."
+                ],
+                [
+                  "Hand or fingers pale, cool, painful",
+                  "Thrombosis or embolism distal to the catheter",
+                  "<b>Remove the line.</b> Assess perfusion, warm the limb, get vascular input. Do not wait to see if it improves with the line in."
+                ],
+                [
+                  "Expanding pulsatile swelling at an old site",
+                  "Pseudoaneurysm",
+                  "Ultrasound and vascular referral. Do not aspirate it."
+                ],
+                [
+                  "Trace is fine, numbers implausible for the patient",
+                  "Transducer not level — bed raised or lowered",
+                  "Re-level to the phlebostatic axis and re-zero. Remember 10 cm = 7.4 mmHg."
+                ],
+                [
+                  "Blood in the tubing, slowly backing up",
+                  "Pressure bag deflated or empty",
+                  "Re-inflate to 300 mmHg, refill. Then check the line has not clotted."
+                ]
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Never inject into an arterial line",
+              "html": "Inadvertent intra-arterial injection causes intense vasospasm, distal thrombosis, and tissue necrosis — it has ended in amputation. The defenses are physical and procedural, not vigilance: <b>red-striped tubing, an ARTERIAL label at every stopcock, no needleless injection ports on the arterial circuit, and stating “that's the art line” out loud at every handover.</b> If it happens: stop immediately, leave the catheter in place, and involve vascular surgery — the catheter is the route for any attempted treatment."
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "10",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Thrombosis or distal ischemia — monitor the extremity distal to the line regularly</li>\n      <li>Hematoma or bleeding at the site, especially with coagulopathy</li>\n      <li>Infection with prolonged dwell time</li>\n      <li>Inadvertent intra-arterial medication injection if the line is mistaken for venous access — label clearly</li>\n      <li>Damped or inaccurate waveform from catheter kinking, air in the system, or poor positioning</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Temporary radial artery occlusion</b> — not rare, and usually asymptomatic because of palmar arch collateral. <b>Permanent ischemic injury is well under 1%.</b> Risk rises with catheter size relative to vessel, dwell time, repeated attempts, and vasopressor use.</li>\n      <li><b>Distal ischemia</b> — the complication that matters. Check the hand or foot at least every shift and document it; the first sign is often mottling or delayed capillary refill rather than pain.</li>\n      <li><b>Hematoma and bleeding</b>, particularly on removal or with coagulopathy. <b>Retroperitoneal hemorrhage</b> from a high femoral puncture.</li>\n      <li><b>Pseudoaneurysm and arteriovenous fistula</b> — femoral more than radial; consider in any new pulsatile mass or bruit at an old site.</li>\n      <li><b>Infection</b> — lower than central venous catheters but not negligible; femoral highest.</li>\n      <li><b>Nerve injury</b> — median nerve at the brachial site, brachial plexus at the axillary site.</li>\n      <li><b>Retrograde cerebral embolization</b> — forceful flushing of a radial line with as little as 2 mL can drive air or clot retrograde into the subclavian and then the carotid circulation. Flush gently and in small volumes.</li>\n      <li><b>Forearm compartment syndrome</b> — rare, from a large hematoma in an anticoagulated patient.</li>\n      <li><b>Blood loss from sampling</b> — a real and cumulative cause of anemia in a long ICU stay. Use a closed conservation system and question each draw.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "11",
+          "color": "blue",
+          "title": "Maintenance and Removal",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Re-level at every position change</b>, and square-wave test at the start of each shift and any time the numbers surprise you.</li>\n  <li><b>Document distal perfusion</b> each shift — color, temperature, capillary refill, sensation.</li>\n  <li><b>Keep the pressure bag at 300 mmHg</b> and the flush bag full. Most “the art line died overnight” events start here.</li>\n  <li><b>Remove it when the indication ends.</b> The line is there for pressor titration or frequent gases; when neither is true, it is only accumulating risk and drawing blood.</li>\n  <li><b>On removal: hold direct pressure for a full 5 minutes</b> at a radial site, longer with coagulopathy or antiplatelet therapy, and <b>10–20 minutes for femoral</b>. Do not occlude so hard that you obliterate distal flow for the entire period. Then apply a pressure dressing and <b>re-check the site and the distal pulse 15 and 60 minutes later</b> — late re-bleeding after an apparently dry site is the usual pattern.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "12",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -5681,13 +5887,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>In profound shock, palpable pulses may be absent even with adequate arterial pressure for a line — ultrasound guidance becomes far more valuable in exactly the situations where you need the line most urgently.</p>\n<p>Femoral access is often faster and more reliable than radial in a critically hypotensive patient — don't force a technically harder site when time and accuracy both matter.</p>\n<p>Zero and level the transducer at the phlebostatic axis for femoral or central-adjacent sites to avoid a systematically inaccurate reading.</p>"
+              "html": "<p><b>Square-wave test before you believe the number.</b> Four seconds, and it tells you whether the systolic in front of you is real.</p>\n<p><b>When the waveform is imperfect, trust the MAP.</b> Damping distorts systolic and diastolic far more than the mean.</p>\n<p><b>Flash is the needle, not the catheter.</b> Drop the angle and advance 1–2 mm more. This single habit fixes most failed radial attempts.</p>\n<p><b>Don't hyperextend the wrist.</b> You flatten the artery you are trying to cannulate.</p>\n<p><b>Ten centimeters is 7.4 mmHg.</b> A transducer that has drifted off the phlebostatic axis is the commonest reason a stable patient appears to have changed.</p>\n<p><b>In vasopressor shock the radial under-reads.</b> Compare against femoral before you escalate on a number you do not trust.</p>\n<p><b>In arrest, watch diastolic.</b> Above 25–30 mmHg during compressions, or change something. It also shows you ROSC without a pause.</p>\n<p><b>PPV needs four conditions.</b> Sinus rhythm, fully controlled ventilation, tidal volume ≥8 mL/kg, closed chest. Outside those, it is a number, not information.</p>\n<p><b>Label it, and never inject into it.</b> The safeguards have to be physical — red tubing and no injection ports — because attention fails.</p>\n<p><b>Check the hand.</b> The complication that costs a patient something is distal ischemia, and it is found by looking.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "13",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -5696,8 +5902,28 @@
               "type": "sources",
               "items": [
                 {
+                  "tier": "EVIDENCE",
+                  "html": "Scheer B, Perel A, Pfeiffer UJ. Clinical review: complications and risk factors of peripheral arterial catheters used for haemodynamic monitoring in anaesthesia and intensive care medicine. <i>Crit Care.</i> 2002;6(3):199–204."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Kim WY, Jun JH, Huh JW, Hong SB, Lim CM, Koh Y. Radial to femoral arterial blood pressure differences in septic shock patients receiving high-dose norepinephrine therapy. <i>Shock.</i> 2013;40(6):527–531."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Michard F, Teboul JL. Predicting fluid responsiveness in ICU patients: a critical analysis of the evidence. <i>Chest.</i> 2002;121(6):2000–2008."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Paradis NA, Martin GB, Rivers EP, et al. Coronary perfusion pressure and the return of spontaneous circulation in human cardiopulmonary resuscitation. <i>JAMA.</i> 1990;263(8):1106–1113."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2)."
+                },
+                {
                   "tier": "REFERENCE",
-                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Arterial Puncture and Cannulation chapter."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Arterial Puncture and Cannulation."
                 }
               ]
             }
@@ -5739,7 +5965,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Need for reliable central access during cardiac arrest or peri-arrest resuscitation when IO/peripheral access is inadequate or unavailable</li>\n      <li>High-dose vasopressor administration, rapid volume resuscitation, or need for central venous monitoring during ongoing resuscitation</li>\n      <li>Anticipated prolonged resuscitation (e.g., ECPR candidacy) where central access will be needed regardless</li>\n</ul>"
+              "html": "<ul>\n      <li>Cardiac arrest or peri-arrest where peripheral and intraosseous access are inadequate, failed, or unavailable</li>\n      <li>Vasopressor infusion that will run for hours, at doses or concentrations you do not want in a peripheral vein</li>\n      <li><b>Volume</b> — but only if you place a large-bore introducer sheath. A triple-lumen is <i>worse</i> than a good peripheral for flow (see §03)</li>\n      <li>Anticipated ECPR, transvenous pacing, or a pulmonary artery catheter — access you will need regardless of how this code ends</li>\n      <li>Post-ROSC, when the line placed under compressions needs to become the line you can keep</li>\n</ul>\n<p><b>What it is <i>not</i> indicated for:</b> getting drugs in faster than an IO. An intraosseous line is already running, already works for every arrest drug, and does not require someone to stop resuscitating and start a sterile procedure. Central access during arrest is for the things IO cannot do — sustained pressors, large-bore volume, a pacing wire, a monitoring column.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Below the diaphragm, drugs take longer",
+              "html": "A standard 20 cm femoral catheter sits in the iliac vein or low IVC. During CPR, forward flow from below the diaphragm is poor and drug transit to the central circulation is slower than from an upper-body line or a proximal humeral IO. It still works — but <b>every drug gets a 20 mL flush and the leg gets raised.</b> If you have a choice of sites and no reason to avoid the chest, an upper-body line delivers faster."
             }
           ]
         },
@@ -5753,7 +5985,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Active CPR at the intended site preventing safe access (femoral line placement should not interrupt or interfere with ongoing compressions — choose a site and technique that coexists with compressions)</li>\n      <li>Known femoral vascular injury or prior femoral graft at the intended site (relative — choose alternate side or site)</li>\n      <li>Coagulopathy is a relative, not absolute, contraindication in the arrest setting given the urgency of the indication</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A groin you are going to need for ECMO.</b> If ECPR is on the table — even as a maybe — <b>do not put a resuscitation line in the groin the cannulation team wants.</b> Right femoral vessels are conventionally preferred for VA-ECMO cannulation. Use the left groin, or go above the diaphragm. A triple-lumen in the right femoral vein at minute 12 can cost the cannulation at minute 25, and nobody will remember to tell the ECMO team it is there.</li>\n      <li><b>Vascular injury, graft, or known thrombus</b> at the intended site. A femoral line above a pelvic fracture or an IVC injury delivers drug into the retroperitoneum.</li>\n      <li><b>Infection or burn over the site</b> — choose another.</li>\n      <li><b>Subclavian in severe coagulopathy</b> — the site is not compressible. In a coagulopathic bleeding patient, femoral or IJ are the compressible options.</li>\n      <li><b>Coagulopathy generally is relative, not absolute</b>, in arrest. So is the absence of full sterile barrier. Both are reasons to plan an exchange later, not reasons to withhold access now.</li>\n</ul>"
             }
           ]
         },
@@ -5761,21 +5993,89 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Which Catheter — and Why It Is Usually the Wrong One",
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "The kit you grab determines what the line can do. This decision is made before you scrub, and it is frequently made wrong."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Catheter",
+                "Gravity flow (approx.)",
+                "Use it for"
+              ],
+              "rows": [
+                [
+                  "7 Fr triple-lumen, 20 cm",
+                  "~25–50 mL/min through the distal lumen",
+                  "Multiple simultaneous infusions, pressors, monitoring. <b>Not volume.</b>"
+                ],
+                [
+                  "8.5 Fr introducer sheath (“Cordis”), 10 cm",
+                  "~250–500 mL/min",
+                  "<b>Hemorrhage and volume.</b> Also the conduit for a transvenous pacing wire or a PA catheter."
+                ],
+                [
+                  "16 G peripheral, 1.25 in",
+                  "~200 mL/min",
+                  "Reference point — it beats a triple-lumen, because flow falls with catheter length and rises with the fourth power of radius."
+                ]
+              ]
+            },
+            {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Central line kit (triple-lumen or appropriate for indication)</li>\n      <li>Ultrasound with linear probe if available and time allows</li>\n      <li>Chlorhexidine prep, sterile technique as feasible given the emergent context</li>\n      <li>Guidewire, dilator, catheter per Seldinger technique</li>\n</ul>"
+              "html": "<p><b>Everything else you need:</b></p>\n<ul>\n      <li><b>Ultrasound, linear probe, sterile sheath and gel.</b> In arrest this is not an optional refinement — it is the only reliable way to tell artery from vein when there is no pulse and no color difference. Prepare it <i>while</i> you prep the skin, not after.</li>\n      <li>Chlorhexidine, full barrier drape, gown and gloves — use what the situation allows, and document what it did not.</li>\n      <li>Seldinger components: introducer needle, guidewire, scalpel, dilator, catheter, suture or securement device.</li>\n      <li>Saline flushes for every lumen, and a primed extension set.</li>\n      <li>A pressure transducer or a length of sterile IV tubing (for the manometry check — §06).</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "site",
+          "num": "04",
+          "color": "amber",
+          "title": "Choosing the Site Under Compressions",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Site",
+                "For",
+                "Against"
+              ],
+              "rows": [
+                [
+                  "<b>Femoral</b> — the default",
+                  "Does not compete with the airway or the compressor. Compressible. Easy landmarks and easy ultrasound. Can be done by one person in a crowded room.",
+                  "Slower drug transit during CPR. Highest infection rate. <b>May consume the ECMO groin.</b>"
+                ],
+                [
+                  "<b>Subclavian</b>",
+                  "Above the diaphragm, so faster drug delivery. Stays out of the way of both the head and the groin. Best long-term infection profile. Landmarks survive when the vein is empty — it is tethered open by surrounding tissue.",
+                  "Not compressible. Pneumothorax risk in a patient already being ventilated. Chest wall is moving under compressions."
+                ],
+                [
+                  "<b>Internal jugular</b>",
+                  "Above the diaphragm, compressible, excellent ultrasound target.",
+                  "<b>Directly contests the airway.</b> Head-of-bed is the busiest square meter in the room. Realistic mainly post-ROSC or when someone else fully owns the airway and the bed can be turned over to you."
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>The practical rule:</b> during active compressions, <b>femoral</b> — unless ECPR is a possibility, in which case femoral on the <b>left</b>, or subclavian. After ROSC, when the room calms and the bed is yours, the decision reverts to the usual one.</p>\n<p><b>Say out loud which groin you are taking.</b> Two operators independently deciding “femoral” and arriving at the same groin, or the ECMO team arriving to find both groins used, are avoidable and entirely typical failures.</p>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Femoral Technique During Active CPR",
           "tagline": null,
           "blocks": [
             {
@@ -5784,78 +6084,196 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Choose the femoral vein as the default site during active arrest — it does not require interrupting compressions or airway management, unlike subclavian or internal jugular approaches."
+                  "title": "Claim the space and set up on the correct side",
+                  "html": "Announce it: “<i>I am taking the left femoral vein.</i>” Sit or kneel at the groin, outside the compressor's arc. Have the whole kit open and the wire loosened from its dispenser <b>before</b> you start — you will not be able to fish for components one-handed with a needle in a vein that is moving with every compression."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Identify landmarks: femoral vein lies medial to the femoral artery, below the inguinal ligament (use ultrasound if immediately available without delaying access)."
+                  "title": "Find the inguinal ligament, not the skin crease",
+                  "html": "Draw the line from the anterior superior iliac spine to the pubic tubercle — that is the inguinal ligament. Puncture <b>1–2 cm <i>below</i> it.</b> In an obese patient the skin crease can sit several centimeters distal to the ligament and using it as the landmark puts you too low, in the branching femoral vessels. Puncturing <i>above</i> the ligament is worse: that bleed is retroperitoneal, not compressible, and silent."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Insert the needle at a 30-45 degree angle, aspirating as you advance, aiming just medial to the palpated or visualized arterial pulse."
+                  "title": "Put the probe on — short axis first",
+                  "html": "Lateral to medial the structures run <span class=\"d\">NAVEL</span>: Nerve, Artery, Vein, Empty space, Lymphatics. <b>The vein is medial to the artery.</b> On ultrasound, the artery is round, thick-walled and resists compression; the vein is more oval and collapses. <b>Be warned: in arrest, an empty artery compresses too</b>, and during compressions the vein can transmit pulsation. Do not rely on pulsatility or on blood color — deoxygenated arterial blood in arrest is dark. <b>Use position and wall thickness, and then use the wire (step 7).</b>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Confirm venous return (dark, non-pulsatile blood), thread the guidewire."
+                  "title": "Prep and drape as fully as the clock allows",
+                  "html": "Chlorhexidine, let it dry if you can, full drape if someone can hand it to you. If a step gets skipped, skip it deliberately and say so — it goes in the note and it sets up the exchange decision later."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Make a small skin nick, dilate the tract."
+                  "title": "Needle in at 30–45°, aspirating continuously",
+                  "html": "Aim just medial to the artery, along the vessel's axis, advancing under constant negative pressure on the syringe. <b>Compressions do not stop.</b> Expect the target to move a centimeter with each one — advance between compressions if you can time it, and accept that this is harder than an elective line. Flash is dark and often <i>non-pulsatile even from an artery</i>, because there is no pulse."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Advance the catheter over the wire to the appropriate depth, remove the wire."
+                  "title": "Drop the angle, thread the wire, and never let go of it",
+                  "html": "Flatten the needle toward the skin before feeding the wire so it turns up the vessel rather than through the back wall. The wire should pass with no resistance at all. <b>A hand is on the wire at every instant from the moment it leaves the dispenser until it is withdrawn</b> — a wire released during chest compressions embolizes. Do not advance more than about 20 cm."
                 },
                 {
                   "num": "7",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Aspirate and flush all ports, secure the catheter."
+                  "color": "teal",
+                  "title": "See the wire in the vein. This is the step that prevents the disaster.",
+                  "html": "Turn the probe to <b>long axis over the vein</b> and identify the echogenic wire lying <i>inside it</i>. If you cannot see the wire in the vein, you do not have a venous wire. Slide the probe proximally and confirm it stays in the venous channel. <b>Dilation is the point of no return</b> — ten seconds of ultrasound before the dilator is the cheapest insurance in the procedure."
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Obtain confirmatory imaging or clinical confirmation once the immediate resuscitation allows; reassess placement once the code concludes."
+                  "color": "amber",
+                  "title": "Nick and dilate — shallow",
+                  "html": "Scalpel blade against the wire, cutting <i>away</i> from the wire, just through dermis. Then pass the dilator over the wire only far enough to open the tract — typically 2–3 cm. The dilator is a tissue dilator, not a vessel dilator; burying it perforates the posterior wall."
+                },
+                {
+                  "num": "9",
+                  "color": "blue",
+                  "title": "Catheter over wire — wire out the hub first",
+                  "html": "Thread the catheter until the wire emerges from the distal hub, <i>then</i> advance it into the vessel. Femoral catheters sit at roughly <span class=\"d\">20–25 cm</span> at the skin. Remove the wire and <b>confirm it is intact and whole</b> when it is out."
+                },
+                {
+                  "num": "10",
+                  "color": "purple",
+                  "title": "Aspirate every lumen, flush every lumen, secure",
+                  "html": "Every port must draw blood back and flush freely. Suture or use the securement device — a line that is only taped will be removed by the transfer to CT. Then announce it: “<i>Left femoral central line is in and working.</i>”"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "confirm",
+          "num": "06",
+          "color": "teal",
+          "title": "Confirming It Is Venous — When Every Normal Clue Has Failed",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "In arrest, all three of the usual reassurances are unreliable at once."
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<ul>\n  <li><b>Pulsatility:</b> useless. There is no pulse — and compressions make <i>everything</i> pulsatile.</li>\n  <li><b>Color:</b> useless. Arterial blood in arrest is desaturated and dark.</li>\n  <li><b>Ease of flow / low resistance:</b> useless. There is no arterial pressure to push back.</li>\n</ul>"
+            },
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p><b>What actually works, in order of usefulness during CPR:</b></p>\n<ul>\n  <li><b>1. Ultrasound of the wire, long axis.</b> The definitive bedside test, available before dilation, and the only one that is fully reliable during compressions. Make it a habit, not a tiebreaker.</li>\n  <li><b>2. Transduce the needle or catheter.</b> Connect to a pressure transducer and read the waveform. Post-ROSC this is decisive. <i>During</i> compressions it is muddied — compression-generated arterial waveforms can be substantial — but a clearly arterial trace is still an answer.</li>\n  <li><b>3. Manometry.</b> Attach sterile IV tubing to the needle hub, fill it, and hold it vertically. A venous column rises a few centimeters and stops; an arterial column climbs and swings. Interpretable post-ROSC; confounded during compressions.</li>\n  <li><b>4. Blood gas from the catheter.</b> Slow, and in arrest the arteriovenous difference narrows — a last resort, not a plan.</li>\n  <li><b>5. Post-procedure imaging.</b> Chest film for upper-body lines to confirm tip position and exclude pneumothorax. It answers a question you needed answered twenty minutes earlier — useful for documentation and tip position, not for preventing arterial dilation.</li>\n</ul>"
             },
             {
               "type": "alert",
-              "color": "amber",
-              "title": "Femoral is the default during active compressions",
-              "html": "It's the one site that doesn't compete with the airway or the person doing chest compressions — don't let the pursuit of ultrasound guidance delay access if landmark technique is faster and the operator is confident."
+              "color": "red",
+              "title": "If you dilated an artery — leave the catheter in",
+              "html": "A large-bore catheter that has been dilated into the femoral or subclavian artery is <b>tamponading its own hole</b>. Pulling it produces uncontrolled arterial bleeding, and in the subclavian position that bleeding is into a space you cannot compress. <b>Leave it in place, leave it clamped, and call vascular surgery or interventional radiology now.</b> This instinct — not to pull — is counterintuitive and has to be pre-loaded, because in the moment every reflex says remove it."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "07",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "No flash anywhere",
+                  "Vein is empty and collapsed — the commonest problem in arrest",
+                  "Use ultrasound to find the vein rather than hunting. Withdraw slowly under aspiration — the back wall is often transfixed on the way in and the flash appears coming <i>out</i>."
+                ],
+                [
+                  "Flash obtained, wire will not pass",
+                  "Bevel against the wall, or needle tip only partly in the lumen",
+                  "Do not force — forcing dissects. Drop the angle a few degrees, rotate the needle 90°, re-confirm aspiration, retry. If it still won't pass, start over."
+                ],
+                [
+                  "Wire passes but resistance partway",
+                  "Valve, tortuosity, or the wire has gone up a tributary",
+                  "Withdraw a few centimeters and re-advance. Confirm position on ultrasound. Never push a wire that resists."
+                ],
+                [
+                  "Cannot tell artery from vein",
+                  "Arrest physiology — all the usual discriminators have failed",
+                  "Ultrasound the wire in long axis before dilating. If you still cannot say, do not dilate."
+                ],
+                [
+                  "Bright pulsatile blood <i>after</i> ROSC",
+                  "Arterial cannulation, unmasked by return of a pulse",
+                  "If it is a needle — remove and compress 10 min. If it has been <b>dilated and catheterized — leave it in</b> and call vascular surgery."
+                ],
+                [
+                  "Catheter in, no blood returns from any port",
+                  "Tip against a wall, kinked at the skin, or not in the vessel",
+                  "Withdraw 1–2 cm, reposition the limb, reattempt aspiration. If it flushes but will not draw, treat it as unverified until imaged."
+                ],
+                [
+                  "Groin swelling during resuscitation",
+                  "The line is extravascular, or an arterial puncture is bleeding",
+                  "Stop infusing through it. Compress. Reassess with ultrasound. A retroperitoneal bleed from a high puncture will <i>not</i> show as groin swelling."
+                ],
+                [
+                  "Wire disappeared",
+                  "Released during compressions — embolized",
+                  "Do not chase blindly. Immediate imaging and interventional radiology for retrieval."
+                ],
+                [
+                  "Sudden hypoxia / hypotension after a subclavian or IJ attempt",
+                  "Pneumothorax — or tension, under positive pressure",
+                  "Clinical diagnosis and needle or finger decompression. Do not wait for a film in a deteriorating patient."
+                ],
+                [
+                  "ECMO team arrives, both groins used",
+                  "Nobody said which side they were taking",
+                  "Preventable only in advance: declare the side, and preserve the right groin whenever ECPR is conceivable."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "08",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Arterial puncture — apply direct pressure, do not remove the needle blindly if committed to the wire without confirming venous placement first</li>\n      <li>Guidewire embolization if not held securely at all times</li>\n      <li>Infection risk elevated given compromised sterile technique in an emergent setting — plan for line exchange once the patient is stabilized</li>\n      <li>Delayed recognition of arterial cannulation if committed to dilation before confirming venous return</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Arterial puncture and arterial cannulation</b> — the defining risk of this procedure in arrest, because every normal discriminator fails simultaneously. Needle punctures compress; dilated catheters do not come out at the bedside.</li>\n      <li><b>Retroperitoneal hemorrhage</b> from a femoral puncture above the inguinal ligament. Not compressible, not visible, and presents as unexplained shock after an apparently uneventful line.</li>\n      <li><b>Guidewire embolization</b> — rare, entirely preventable, and specifically more likely here because compressions jostle the operator's hands.</li>\n      <li><b>Pneumothorax and hemothorax</b> — subclavian and IJ. In a ventilated patient a simple pneumothorax can tension quickly.</li>\n      <li><b>Air embolism</b> — upper-body lines, especially on chest recoil. Keep the hub occluded.</li>\n      <li><b>Vessel perforation and cardiac tamponade</b> — from over-advancing a dilator or a stiff wire.</li>\n      <li><b>Arrhythmia</b> from a wire in the right atrium or ventricle. Irrelevant in arrest; genuinely dangerous peri-arrest. Limit the wire to ~20 cm.</li>\n      <li><b>Infection</b> — elevated, because barrier precautions were compromised. Femoral is the highest-risk site. Plan the exchange; see §09.</li>\n      <li><b>Thrombosis</b> — femoral lines in an immobile ICU patient.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "09",
+          "color": "blue",
+          "title": "After ROSC",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Re-verify the line now that there is a pulse.</b> Transduce it. Draw a gas from it if there is any doubt. A line that was “probably venous” during compressions gets a definitive answer within minutes of ROSC, because the answer is now easy to obtain.</li>\n  <li><b>Image it.</b> Chest film for any upper-body line — tip at the cavoatrial junction, no pneumothorax. Femoral lines do not need a film for position but do need a documented function check.</li>\n  <li><b>Flag it as an emergent line, explicitly, in the chart and at handover.</b> Write down which barrier precautions were and were not used. Lines placed without full sterile technique should be removed or replaced <b>as soon as the patient is stable, generally within 24–48 hours</b> — and the only way that happens is if the next team knows.</li>\n  <li><b>Reassess whether you still need it.</b> The indication was arrest. If the patient now needs only maintenance fluids and a single infusion, the line's risk has outlived its purpose.</li>\n  <li><b>Tell the ECMO, IR, and surgical teams which vessels are occupied.</b> Access planning downstream depends on it.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "10",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -5863,13 +6281,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Femoral access is the default during active compressions because it's the one site that doesn't compete with the airway or the person doing compressions.</p>\n<p>Don't let the pursuit of ultrasound guidance delay access if landmark technique is faster and the operator is confident — use whichever gets you reliable access soonest.</p>\n<p>Any line placed under emergent, imperfect sterile conditions should be flagged for exchange once the patient is stabilized.</p>"
+              "html": "<p><b>See the wire before you dilate.</b> If you take one thing: long-axis ultrasound confirming the wire inside the vein, every time, before the dilator. Everything else in arrest lies to you.</p>\n<p><b>Protect the right groin if ECPR is possible.</b> The line you place in minute 12 can cost the cannulation in minute 25.</p>\n<p><b>If you dilated an artery, do not pull it.</b> The catheter is plugging the hole. Clamp it, leave it, call vascular surgery.</p>\n<p><b>Grab the right kit.</b> A triple-lumen is not a volume line. If you need blood to move, that is an 8.5 Fr introducer — or a short 14 G peripheral, which beats the triple-lumen anyway.</p>\n<p><b>Puncture below the inguinal ligament, judged from bone landmarks, not the skin crease.</b> Above it, the bleed is retroperitoneal and silent.</p>\n<p><b>The vein is empty, so hunt with the probe, not the needle.</b> And watch for the flash on withdrawal — you transfix the back wall more often than you think.</p>\n<p><b>A hand on the wire at all times.</b> Compressions are shaking the field; this is exactly where wires get let go.</p>\n<p><b>Flush hard and raise the leg</b> after every drug through a femoral line during CPR.</p>\n<p><b>An IO already in and working beats a central line you are still placing.</b> Place this line for what only it can do, not for speed.</p>\n<p><b>Say which side you are taking, out loud.</b> Most access collisions are communication failures, not technical ones.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "11",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -5878,12 +6296,24 @@
               "type": "sources",
               "items": [
                 {
-                  "tier": "REFERENCE",
-                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Central Venous Catheterization chapter."
+                  "tier": "GUIDELINE",
+                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S366–S468."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Practice Guidelines for Central Venous Access 2020: An Updated Report by the American Society of Anesthesiologists Task Force on Central Venous Access. <i>Anesthesiology.</i> 2020;132(1):8–43."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "O'Grady NP, Alexander M, Burns LA, et al. Guidelines for the prevention of intravascular catheter-related infections. Centers for Disease Control and Prevention. <i>Clin Infect Dis.</i> 2011;52(9):e162–e193."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Bowdle A. Vascular complications of central venous catheter placement: evidence-based methods for prevention and treatment. <i>J Cardiothorac Vasc Anesth.</i> 2014;28(2):358–368."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2)."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Central Venous Catheterization."
                 }
               ]
             }
@@ -5912,8 +6342,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6132,10 +6562,10 @@
       "categoryOrder": 7,
       "color": "red",
       "description": "Proximal humerus, sternal, and tibial sites.",
-      "reviewTier": 2,
-      "reviewTierIsDefault": true,
+      "reviewTier": 1,
+      "reviewTierIsDefault": false,
       "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
@@ -6147,7 +6577,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Emergent need for vascular access when peripheral IV access is difficult, delayed, or has failed</li>\n      <li>Cardiac arrest (any age)</li>\n      <li>Hemorrhagic or other shock states requiring immediate fluid/medication access</li>\n      <li>Any critically ill or injured patient where seconds of delay matter</li>\n</ul>"
+              "html": "<ul>\n      <li>Cardiac arrest, any age, when a peripheral IV is not already running</li>\n      <li>Shock of any cause where access is the rate-limiting step — hemorrhagic, septic, anaphylactic, cardiogenic</li>\n      <li>Two failed peripheral attempts, or a patient in whom you can see at a glance that attempts will fail (burns, IV drug use, obesity, profound vasoconstriction, hypothermia)</li>\n      <li>Status epilepticus, status asthmaticus, hypoglycemia with altered mental status — time-critical drug delivery in a moving target</li>\n      <li>Pre-hospital and austere settings where ultrasound-guided peripheral or central access is not available</li>\n      <li>As a bridge during RSI when you need induction drugs now and the line you have is unreliable</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "What the 2025 trials actually showed",
+              "html": "Two large randomized trials of out-of-hospital arrest — PARAMEDIC-3 and IVIO — found that an <b>IO-first</b> strategy did not improve survival over an IV-first strategy, and PARAMEDIC-3 found <i>lower</i> rates of ROSC in the IO-first arm. This does not make IO a bad route. It means IO is the answer to <i>“I cannot get a vein,”</i> not a shortcut to be reached for reflexively when a vein is available. If a peripheral IV will be in within about 90 seconds, place the IV. If it won't, drill."
             }
           ]
         },
@@ -6161,7 +6597,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Fracture at or proximal to the intended insertion site</li>\n      <li>Previous IO attempt or orthopedic hardware at the same site within the prior 24-48 hours</li>\n      <li>Infection (cellulitis) overlying the insertion site</li>\n      <li>Inability to identify landmarks confidently (relative — choose an alternate site)</li>\n</ul>"
+              "html": "<p><b>Absolute — pick a different bone:</b></p>\n<ul>\n      <li><b>Fracture in that bone</b>, at or proximal to the site. Infusate leaks out the fracture; a tibial IO above a tibial fracture perfuses the hematoma, not the patient.</li>\n      <li><b>Previous IO attempt in the same bone within 48 hours</b>, successful or not. The old cortical hole is a vent — the new line will run straight out of it into the soft tissue. Cross to the other side or another site.</li>\n      <li><b>Orthopedic hardware, prosthetic joint, or prior surgery</b> at the site (knee replacement, IM nail, shoulder arthroplasty).</li>\n      <li><b>Infection, burn, or cellulitis</b> over the insertion point. Seeding the marrow through infected skin produces osteomyelitis. Burned skin over an otherwise good site is not an absolute bar in extremis — but choose unburned skin if any exists.</li>\n</ul>\n<p><b>Relative:</b></p>\n<ul>\n      <li><b>Osteogenesis imperfecta, osteopetrosis, severe osteoporosis</b> — fragile or sclerotic bone. Osteopetrotic bone may simply not be penetrable.</li>\n      <li><b>Landmarks you cannot confidently palpate.</b> Body habitus that defeats palpation is a reason to change sites or use ultrasound, not a reason to guess. A blind drill into soft tissue is the commonest cause of a failed IO.</li>\n      <li><b>Sternal IO:</b> add prior sternotomy, sternal fracture, and small children to the exclusion list.</li>\n</ul>"
             }
           ]
         },
@@ -6169,26 +6605,91 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "blue",
-              "html": "<ul>\n      <li>IO driver (manual or powered, e.g., spring-loaded or drill-based device)</li>\n      <li>IO needle appropriate to site and patient size</li>\n      <li>Chlorhexidine or available skin prep</li>\n      <li>Extension tubing, syringe for aspiration/flush</li>\n      <li>Lidocaine for conscious patients (both at the skin and injected into the marrow space before infusion)</li>\n</ul>"
-            }
-          ]
-        },
-        {
-          "id": "technique",
-          "num": "04",
-          "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Equipment — Opening the Kit",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "Proximal humerus"
+              "html": "A powered driver with the wrong needle in it fails exactly like no driver at all."
+            },
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n      <li><b>Powered driver</b> (battery drill-type) or manual driver. Check the battery indicator at the start of any shift you might need it. A driver that stalls partway through the cortex leaves a needle you must remove and a site you can no longer use.</li>\n      <li><b>Needle sets — three lengths, and the length is the decision.</b> The color codes below are the widely used EZ-IO convention; confirm against the set in your own kit.\n        <ul>\n          <li><b>15 mm (pink):</b> 3–39 kg</li>\n          <li><b>25 mm (blue):</b> ≥3 kg — the adult tibial default</li>\n          <li><b>45 mm (yellow):</b> ≥40 kg, or any site with heavy overlying tissue. <b>The proximal humerus in an adult is a 45 mm needle, always</b> — the deltoid is thicker than people estimate, and a 25 mm needle in a humerus is the single most common cause of an IO that “placed fine” and then infiltrated.</li>\n        </ul>\n      </li>\n      <li><b>Chlorhexidine</b> or whatever prep is within reach. In arrest this is one pass, not a scrub.</li>\n      <li><b>Extension set with a Luer lock</b>, primed. Prime it — pushing the air column in the tubing into the marrow first is both wasted time and extra pain.</li>\n      <li><b>Two 10 mL syringes:</b> one of normal saline for the flush, one for aspiration.</li>\n      <li><b>Preservative-free 2% lidocaine</b> (cardiac lidocaine) for any patient with a pulse and any perception. This is not optional comfort care — see §09.</li>\n      <li><b>Pressure bag or infusion pump.</b> Gravity through an IO delivers roughly a milliliter a minute. Without pressure you have access that does nothing.</li>\n      <li><b>Securement dressing</b> (the winged stabilizer in the kit, or a bulky dressing and tape).</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "The 5 mm rule",
+              "html": "Seat the needle through the skin until the tip touches bone, <i>then look at the hub</i>. At least one black depth marking must be visible above the skin. If no line shows, the needle is too short to cross the cortex and still sit in the marrow — swap up a size before you pull the trigger. Checking this takes two seconds and prevents the failure you won't detect until you flush."
+            }
+          ]
+        },
+        {
+          "id": "site-choice",
+          "num": "04",
+          "color": "amber",
+          "title": "Choosing the Site",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Site",
+                "Flow (pressurized)",
+                "Choose it when",
+                "Watch for"
+              ],
+              "rows": [
+                [
+                  "Proximal humerus",
+                  "~5 L/hr",
+                  "Volume resuscitation; drugs you want centrally fast; awake patients (least painful site)",
+                  "Displacement with any arm movement — secure the arm to the torso. Not during unmechanized CPR on that side."
+                ],
+                [
+                  "Proximal tibia",
+                  "~1 L/hr",
+                  "Default in arrest with ongoing compressions; easiest landmarks; pediatrics",
+                  "Slowest flow. Posterior extravasation is invisible — you must palpate the calf."
+                ],
+                [
+                  "Distal femur",
+                  "~1 L/hr",
+                  "Infants and small children — wide, flat, forgiving target",
+                  "Growth plate. Leg must be straight."
+                ],
+                [
+                  "Distal tibia",
+                  "~1 L/hr",
+                  "Second-choice extremity site; useful when the knee is involved",
+                  "Thin cortex — easy to go through and through."
+                ],
+                [
+                  "Sternum (manubrium)",
+                  "High",
+                  "Military/tactical, dedicated device, bilateral extremity trauma",
+                  "Dedicated device only. Competes with pad and compression placement."
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>The default pairing worth committing to memory:</b> <i>humerus for flow and speed to the central circulation, tibia for a moving resuscitation.</i> Humeral flow is roughly five times tibial, and drug transit to the central compartment is faster — which matters for adenosine and for arrest drugs. But the humeral needle sits in a bone attached to a limb that everyone in the room will move, and it dislodges.</p>\n<p>In a running code with manual compressions, the tibia is usually the right call: nobody is near it and nothing displaces it. If you place a humeral IO in that setting, tape the arm down across the abdomen and tell the team it is there.</p>"
+            }
+          ]
+        },
+        {
+          "id": "humerus",
+          "num": "05",
+          "color": "red",
+          "title": "Proximal Humerus — The One People Miss",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Almost every humeral failure is a positioning failure, and it happens before the drill comes out."
             },
             {
               "type": "steps",
@@ -6196,114 +6697,234 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Position the arm adducted, internally rotated, with the hand resting on the abdomen (this exposes the greater tubercle landmark)."
+                  "title": "Position the arm — this is the procedure",
+                  "html": "Adduct the arm tight to the chest wall, then <b>internally rotate</b> so the palm rests on the umbilicus and the elbow points posteriorly. If you can, have someone hold it. Internal rotation is what swings the <i>greater tubercle</i> anteriorly into your target line and moves it clear of the acromion. Without it you are drilling into the joint capsule or the deltoid."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Palpate the surgical neck of the humerus, approximately 1-2 cm above it for the insertion point."
+                  "title": "Find the golf ball on the tee",
+                  "html": "Place the heel of your hand on the anterior shoulder and slide your thumb <i>up</i> the anterior humeral shaft. You will feel the shaft narrow — that notch is the <span class=\"d\">surgical neck</span> — and then a broad, round prominence above it. That prominence is the greater tubercle: the ball sitting on the tee. <b>The target is the most prominent point of that ball, roughly 1–2 cm above the surgical neck.</b> If you never felt a narrowing, you have not found the neck, and your landmark is a guess."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Insert the IO needle perpendicular to the bone surface, driving through the cortex until a give/pop is felt."
+                  "title": "Angle 45° down and back",
+                  "html": "Enter perpendicular to the <i>surface of the tubercle</i>, which means aiming roughly <b>45° caudad (toward the elbow) and slightly posteromedial</b>. Straight-in aiming at the ceiling walks you into the joint space. Think of the needle as pointing at the opposite hip."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Remove the stylet, confirm placement (needle stands firmly without support, marrow aspirate if attempted, free flow of flush without extravasation)."
+                  "title": "Push to bone, then check the line",
+                  "html": "Push the needle through the skin and soft tissue <i>manually</i> until the tip stops on bone. Now look: at least one black depth line must be showing. In an adult humerus this should be a 45 mm needle. Only then squeeze the trigger."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Secure and connect to extension tubing."
-                }
-              ]
-            },
-            {
-              "type": "tagline",
-              "html": "Sternal"
-            },
-            {
-              "type": "steps",
-              "steps": [
+                  "title": "Let the drill do the work — then feel the change",
+                  "html": "Apply steady, gentle axial pressure and let the driver cut. Leaning on it stalls the motor. You are drilling through a thicker cortex than the tibia, so it takes longer and the “pop” is less obvious. <b>The endpoint is a sudden loss of resistance and a change in the driver's pitch as it unloads</b>, or the hub reaching the skin. Stop there. Continuing drives the needle out the far cortex."
+                },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Identify the manubrium as the insertion site (device-specific — sternal IO devices use a dedicated targeting mechanism)."
+                  "title": "Uncouple, unscrew, secure",
+                  "html": "Hold the hub and pull the driver straight off — do not let it torque the needle. Remove the stylet by turning counterclockwise. Attach the primed extension set. <b>Then tape the arm to the torso.</b> A humeral IO not secured to the body has an hourly dislodgement rate that makes it unreliable exactly when you stop watching it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tibia",
+          "num": "06",
+          "color": "red",
+          "title": "Proximal Tibia — Adult and Pediatric",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "steps",
+              "steps": [
+                {
+                  "num": "1",
+                  "color": "red",
+                  "title": "Find the tuberosity, then move off it",
+                  "html": "Run a finger up the shin to the bony bump below the patella — the tibial tuberosity. You are not drilling into it. <b>Adult: about 2 cm medial and 1 cm proximal to the tuberosity</b>, on the flat anteromedial face of the tibia. <b>Child: about 1 cm medial and 1–2 cm distal</b> — distal, to stay clear of the proximal tibial physis. In an infant, one finger-breadth below and medial."
                 },
                 {
-                  "num": "7",
+                  "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Follow the specific device protocol for insertion depth and technique."
+                  "title": "Support the knee, don't suspend the leg",
+                  "html": "Put a rolled towel under the knee so it rests in slight flexion on a solid surface. A leg that bounces on the mattress absorbs the drill and turns a clean insertion into a wandering one."
                 },
                 {
-                  "num": "8",
+                  "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Confirm placement per device indicator and flush test."
+                  "title": "Perpendicular — 90° to the flat surface",
+                  "html": "Unlike the humerus, the tibial approach is straight in, 90° to the flat medial surface. Angling drags the needle toward the thin cortex and out the side."
+                },
+                {
+                  "num": "4",
+                  "color": "blue",
+                  "title": "Drill to the give",
+                  "html": "The tibial cortex is thin and the pop is distinct — often the first clear tactile landmark a trainee ever gets. <b>Stop at the pop.</b> In a child the cortex is thinner still and the marrow cavity is shallow; a through-and-through insertion is the classic pediatric error. Feather the trigger rather than holding it down."
+                },
+                {
+                  "num": "5",
+                  "color": "purple",
+                  "title": "Stylet out, extension on, palpate the calf",
+                  "html": "After the flush, <b>put your hand behind the calf</b>. The tibia extravasates posteriorly where you cannot see it, and the first sign of a failed tibial IO is often a firm posterior compartment rather than a visible bulge."
                 }
               ]
             },
             {
               "type": "tagline",
-              "html": "Tibial"
+              "html": "Alternate sites"
             },
             {
-              "type": "steps",
-              "steps": [
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Identify the anteromedial tibial surface, approximately 1-2 cm below and medial to the tibial tuberosity in adults (adjust per pediatric landmarks)."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Insert perpendicular to the bone, driving through the cortex until loss of resistance."
-                },
-                {
-                  "num": "11",
-                  "color": "red",
-                  "title": "",
-                  "html": "Remove stylet, confirm placement, secure and connect to extension tubing."
-                }
-              ]
+              "type": "box",
+              "color": "blue",
+              "html": "<p><b>Distal femur (pediatric):</b> leg straight, patella identified. Insert <b>1 cm proximal to the superior border of the patella and 1–2 cm medial to the midline</b>, aiming straight back (slightly cephalad if anything). Wide target, thick marrow, forgiving — a good choice in a small child when the tibia has failed.</p>\n<p><b>Distal tibia:</b> <b>2 cm proximal to the most prominent point of the medial malleolus</b>, on the flat medial surface, perpendicular. Thin cortex — easy to over-drill.</p>\n<p><b>Sternum:</b> device-specific (FAST1 / FASTResponder and similar), targeting the manubrium about 1.5 cm below the sternal notch via the device's own locating collar. Fixed depth, no freehand angle to judge. Do not improvise a sternal IO with an extremity needle.</p>"
+            }
+          ]
+        },
+        {
+          "id": "confirm",
+          "num": "07",
+          "color": "teal",
+          "title": "Confirming You Are in the Marrow",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Four checks, in order. Only one of them is decisive."
+            },
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<ul>\n      <li><b>1. The needle stands unsupported.</b> Let go. A correctly seated IO is held rigidly by cortical bone and stands like a flagpole. One that wobbles, leans, or falls is in soft tissue. This is a fast and powerful negative test.</li>\n      <li><b>2. Loss of resistance was felt.</b> Corroborative, not proof — in the humerus it can be subtle, and in osteoporotic bone it can be absent entirely.</li>\n      <li><b>3. Marrow aspirates.</b> Nice when it happens. <b>Its absence proves nothing</b> — a substantial fraction of correctly placed IOs never yield aspirate, particularly in arrest. Do not pull a good needle because nothing came back.</li>\n      <li><b>4. The flush runs without swelling.</b> <b>This is the test that decides.</b> Push 10 mL of saline briskly in an adult (2–5 mL in a child) while watching and feeling the limb. Free flow with no swelling, no boggy tissue, no resistance building under your thumb — you are in. Anything else means stop.</li>\n</ul>"
             },
             {
               "type": "alert",
+              "color": "red",
+              "title": "The flush is not a confirmation step — it is part of the insertion",
+              "html": "The marrow cavity is a sponge of trabecular bone and fat, not an open tube. <b>Without a forceful flush the space does not open and nothing will infuse afterward, no matter how perfectly the needle sits.</b> The commonest complaint about IO access — “it's in but it won't run” — is nearly always an under-flushed line. Push it hard, and push it again if flow is sluggish."
+            }
+          ]
+        },
+        {
+          "id": "pain-pressure",
+          "num": "08",
+          "color": "amber",
+          "title": "Lidocaine, Pressure, and What Can Go Through It",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
               "color": "amber",
-              "title": "Confirm placement before infusing",
-              "html": "A needle that doesn't stand firmly on its own, or a flush that causes visible swelling, means stop and reassess — extravasation into a closed compartment is the complication that turns a good access decision into a bad outcome."
+              "html": "<p><b>Lidocaine — the sequence matters more than the dose.</b> The saline flush into a conscious patient's marrow is described by patients as among the worst pain in medicine. Lidocaine must go in <i>before</i> the flush, not after.</p>\n<ul>\n  <li><b>Adult:</b> preservative-free 2% lidocaine, <span class=\"d\">40 mg (2 mL)</span> slowly over about 120 seconds → <b>let it dwell 60 seconds</b> → flush 5–10 mL saline → a further <span class=\"d\">20 mg (1 mL)</span> over 60 seconds.</li>\n  <li><b>Pediatric:</b> <span class=\"d\">0.5 mg/kg</span>, max 40 mg, same dwell-then-flush sequence.</li>\n  <li>Repeat doses are appropriate for ongoing pain during infusion. Account for the total in any systemic lidocaine ceiling.</li>\n  <li>This is for any patient with a pulse and any plausible perception. It is not indicated in arrest — and if they wake up, give it then.</li>\n</ul>\n<p><b>Pressure.</b> Gravity produces roughly 1 mL/min through an IO. Every infusion that needs to be fast needs a <b>pressure bag at 300 mmHg</b> or a pump. If a resuscitation is running slowly through an IO, check the pressure bag before you blame the needle.</p>\n<p><b>What can go through it: everything.</b> Crystalloid, blood and all components, vasopressors, induction and paralytic agents, antibiotics, TXA, sodium bicarbonate, hypertonic saline, contrast for CT. Onset and peak levels approximate IV. There is no drug class that is IV-only. The proximal humerus is preferred for adenosine and other agents whose effect depends on a tight, fast bolus.</p>\n<p><b>Labs from the aspirate:</b> the first aspirate can be sent for type and screen, chemistry, lactate and blood gas, and correlates acceptably for most. It is unreliable for platelet and white cell counts, and <b>marrow will clog an automated analyzer</b>. Call the lab and the blood bank before you send it — some will not accept it, and you need to know that before it is the only sample you have.</p>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "09",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Needle bounces off, drill bogs down",
+                  "Leaning on the driver and stalling the motor; or a dead battery; or sclerotic bone",
+                  "Ease the axial pressure and let it cut. Swap batteries. If two attempts stall, change sites."
+                ],
+                [
+                  "Drove it in, no pop, hub at skin",
+                  "Needle too short — it never crossed into marrow",
+                  "Remove. Re-site on the <i>other</i> limb with the next size up. Do not redrill the same bone."
+                ],
+                [
+                  "Needle wobbles / falls over",
+                  "In soft tissue, or through-and-through out the far cortex",
+                  "Remove and re-site on a different bone. Hold pressure."
+                ],
+                [
+                  "No marrow aspirate",
+                  "Normal — common in low-flow states",
+                  "Ignore it. Confirm with the flush instead."
+                ],
+                [
+                  "Flush meets hard resistance",
+                  "Tip against cortex, or the lumen is plugged with a marrow core",
+                  "One firm attempt to clear. If still blocked, it is a failed line — remove."
+                ],
+                [
+                  "Limb swells / calf firms up on flush",
+                  "Extravasation",
+                  "<b>Stop immediately.</b> Remove. New site on a different bone. Mark the limb and reassess for compartment syndrome hourly."
+                ],
+                [
+                  "Ran fine, then stopped",
+                  "Dislodgement (classically humeral, with arm movement), or clotting from an inadequate initial flush",
+                  "Re-flush firmly. Check the needle is still rigid. If it now wobbles, it has moved — replace it."
+                ],
+                [
+                  "Correct position but flow is slow",
+                  "Running on gravity",
+                  "Pressure bag to 300 mmHg, or a pump. Re-flush."
+                ],
+                [
+                  "Awake patient screams on infusion",
+                  "Lidocaine omitted, or given after the saline flush",
+                  "Stop the infusion. Give lidocaine, dwell 60 seconds, then restart."
+                ],
+                [
+                  "Second IO in the same bone won't hold pressure",
+                  "The earlier cortical hole is venting the marrow space",
+                  "Expected and unfixable. Use a different bone — this is why the 48-hour rule exists."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "10",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Extravasation from failure to fully penetrate the cortex or from a through-and-through insertion — monitor the limb for swelling during infusion</li>\n      <li>Compartment syndrome from unrecognized extravasation</li>\n      <li>Fracture, especially in pediatric or osteoporotic bone with excessive force</li>\n      <li>Infection/osteomyelitis with prolonged dwell time — convert to standard IV access as soon as feasible</li>\n      <li>Pain on infusion in conscious patients — pre-treat with intraosseous lidocaine before fluids/medications</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Extravasation → compartment syndrome.</b> The complication that matters, and it is essentially always a recognition failure rather than a technique failure. The tibia is the highest-risk site because leakage tracks posteriorly and stays invisible. Any IO limb gets a documented baseline and scheduled re-checks while it is running.</li>\n      <li><b>Through-and-through penetration</b> — classically the pediatric tibia, from holding the trigger through the marrow cavity and out the far cortex. Presents as a needle that stands but will not flush.</li>\n      <li><b>Fracture</b> — excess force in osteoporotic or pediatric bone, or a manual needle levered sideways.</li>\n      <li><b>Osteomyelitis</b> — well under 1%, and rises with dwell time and with insertion through non-prepped or infected skin.</li>\n      <li><b>Growth plate injury</b> — the reason pediatric tibial landmarks sit <i>distal</i> to the tuberosity and femoral landmarks sit proximal to the patella.</li>\n      <li><b>Fat and marrow embolization</b> — demonstrable, but not associated with clinically meaningful harm in humans. It is not a reason to withhold or under-flush an IO.</li>\n      <li><b>Skin necrosis</b> from vesicant or vasopressor extravasation into soft tissue — a downstream consequence of a missed infiltration, not a separate event.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "11",
+          "color": "blue",
+          "title": "Dwell Time and Removal",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p><b>24 hours is the ceiling</b> under most manufacturer instructions, and sooner is better. IO is a bridge. Once the patient is stabilized and a peripheral or central line is in, the IO comes out — leaving it “just in case” accumulates infection risk for access you are not using.</p>\n<p><b>Removal:</b> attach a <b>Luer-lock</b> syringe to the hub (a slip-tip will pull off). Rotate <b>clockwise</b> while drawing straight out along the needle's axis. <b>Do not rock, lever, or bend.</b> Side-loading can shear the needle and leave a fragment in the bone — a problem that becomes an orthopedic consult. Dress the site; it will ooze a little.</p>\n<p><b>Document:</b> site, needle size, time in, time out, lidocaine given, and the limb assessment. If the patient goes to CT or the OR, tell the receiving team the IO is there — humeral needles under a gown are easy to miss and easy to knock out.</p>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "12",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -6311,13 +6932,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>IO access is not inferior to IV for emergency medication and fluid administration — treat it as a full-status line, not a placeholder.</p>\n<p>The proximal humerus site allows faster flow rates than tibial sites and is preferred when rapid volume resuscitation is the goal.</p>\n<p>Always confirm placement before infusing — a needle that doesn't stand firmly on its own, or flush that causes visible swelling, means reassess before continuing.</p>\n<p>Convert to standard IV/central access as soon as the situation allows; IO is a bridge, not a destination line.</p>"
+              "html": "<p><b>Flush like you mean it.</b> If you remember one thing: the marrow cavity does not open until you force it open. Almost every “the IO doesn't work” complaint is an under-flushed line.</p>\n<p><b>The needle stands up or it isn't in.</b> Letting go of the hub is a free, instant, highly specific test, and it is the one people skip in a hurry.</p>\n<p><b>No aspirate is not a failure.</b> More correctly placed IOs yield nothing back than most clinicians expect. Confirm with the flush, not the syringe.</p>\n<p><b>The humerus needs the long needle and the right rotation.</b> Hand on the belly, 45° toward the elbow, 45 mm needle. Get those three and the humerus is the best line in the room; miss any one and it fails quietly.</p>\n<p><b>Secure the arm.</b> A humeral IO not taped to the torso will be pulled out by someone doing something reasonable.</p>\n<p><b>Pressure bag, every time.</b> Access without pressure is not resuscitation.</p>\n<p><b>Never re-drill the same bone.</b> Within 48 hours, the previous hole vents everything you put in. Cross to the other side.</p>\n<p><b>IO is not a second-class line.</b> Every drug, blood product, and contrast agent that goes IV goes IO. Treat it as full access — and then replace it within 24 hours.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "13",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -6326,12 +6947,28 @@
               "type": "sources",
               "items": [
                 {
+                  "tier": "TRIAL",
+                  "html": "Couper K, Ji C, Deakin CD, et al. A randomized trial of drug route in out-of-hospital cardiac arrest (PARAMEDIC-3). <i>N Engl J Med.</i> 2025;392(4):336–348."
+                },
+                {
+                  "tier": "TRIAL",
+                  "html": "Vallentin MF, Granfeldt A, Klitgaard TL, et al. Intraosseous or intravenous vascular access for out-of-hospital cardiac arrest (IVIO). <i>N Engl J Med.</i> 2025;392(4):349–360."
+                },
+                {
                   "tier": "GUIDELINE",
                   "html": "Petitpas F, Guenezan J, Vendeuvre T, Scepi M, Oriot D, Mimoz O. Use of intra-osseous access in adults: a systematic review. <i>Crit Care.</i> 2016;20:102."
                 },
                 {
+                  "tier": "GUIDELINE",
+                  "html": "American Heart Association. 2020 Guidelines for CPR and ECC — Adult and Pediatric Advanced Life Support: vascular access. <i>Circulation.</i> 2020;142(16_suppl_2)."
+                },
+                {
                   "tier": "REFERENCE",
-                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Intraosseous Infusion chapter."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Intraosseous Infusion."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Teleflex. <i>EZ-IO Intraosseous Vascular Access System — Instructions for Use.</i> Manufacturer labeling for needle sizing, lidocaine protocol, and dwell time. Confirm against the device stocked in your own institution."
                 }
               ]
             }
@@ -6360,8 +6997,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6528,8 +7165,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6712,22 +7349,26 @@
       "categoryOrder": 7,
       "color": "blue",
       "description": "Ratio-based transfusion sequencing and logistics.",
-      "reviewTier": 2,
-      "reviewTierIsDefault": true,
+      "reviewTier": 1,
+      "reviewTierIsDefault": false,
       "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
           "num": "01",
           "color": "teal",
-          "title": "Indications",
+          "title": "When to Activate",
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "The protocol exists to be pulled early. Over-activation costs product; under-activation costs the patient."
+            },
+            {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Anticipated or ongoing massive hemorrhage (commonly defined as anticipated need for ≥10 units PRBCs in 24 hours, or ≥4 units in 1 hour, or hemorrhage with hemodynamic instability unresponsive to initial resuscitation)</li>\n      <li>Clinical gestalt of significant ongoing hemorrhage should trigger activation without waiting to meet a strict numeric threshold — the protocol exists to be activated early</li>\n</ul>"
+              "html": "<p><b>Activate on any of these — do not wait for a lab value:</b></p>\n<ul>\n      <li><b>Critical Administration Threshold (CAT+):</b> <span class=\"d\">≥3 units of red cells in any 60-minute period</span>. This is the most useful real-time trigger — it is the one you can recognize while it is happening.</li>\n      <li><b>ABC score ≥2</b> (one point each): penetrating mechanism · SBP ≤90 · HR ≥120 · positive FAST.</li>\n      <li><b>Shock index</b> (HR ÷ SBP) <span class=\"d\">&gt;1.0</span>, and especially &gt;1.4.</li>\n      <li>Anticipated <span class=\"d\">≥10 units in 24 h</span> or <span class=\"d\">≥4 units in 1 h</span> — the classic definitions, useful for audit, too slow to be a bedside trigger.</li>\n      <li><b>Clinical gestalt.</b> A ruptured AAA, a mangled pelvis, a boggy uterus that will not contract, or bright blood filling a chest tube is enough. Pulling the trigger on a patient who turns out not to need it is a recoverable error.</li>\n</ul>\n<p><b>Non-trauma activations matter just as much:</b> obstetric hemorrhage, upper GI variceal bleeding, ruptured aneurysm, and post-operative surgical bleeding all belong here.</p>"
             }
           ]
         },
@@ -6735,13 +7376,13 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Contraindications and Limits",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute when major hemorrhage is present or strongly anticipated</li>\n      <li>Known and documented patient refusal of blood products (relative — follow your institution's policy and the patient's expressed wishes/advance directives)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None absolute</b> in the presence of major hemorrhage.</li>\n      <li><b>Documented refusal of blood products.</b> Follow the patient's stated wishes and your institution's policy. Have the alternative plan ready before you need it — cell salvage, TXA, fibrinogen concentrate, factor concentrates, and aggressive surgical control. Know which of these an individual patient does and does not accept; the categories are not uniform.</li>\n      <li><b>Uncontrolled surgical bleeding is not a transfusion problem.</b> Product buys time to get to the OR, angiography suite, or the balloon. If activation is being used as a substitute for source control, the protocol will fail no matter how well it is run.</li>\n      <li><b>Futility.</b> Massive transfusion in a patient with unsurvivable injury consumes a finite regional blood supply. This is a judgment call made early and explicitly, not one drifted into.</li>\n</ul>"
             }
           ]
         },
@@ -6749,21 +7390,221 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "What You Need Running",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Institutional MTP activation mechanism (phone activation, EHR order set, or dedicated MTP phone line to blood bank)</li>\n      <li>Rapid infuser/blood warmer</li>\n      <li>Large-bore IV or central access sufficient for high-flow product administration</li>\n      <li>Point-of-care testing (ABG, TEG/ROTEM if available) to guide ongoing product ratios beyond the initial fixed-ratio phase</li>\n</ul>"
+              "html": "<ul>\n      <li><b>The activation mechanism itself</b> — one phone number or one order. Know it before the day you need it. The commonest delay in a massive transfusion is not the blood bank; it is the four minutes spent working out who to call.</li>\n      <li><b>Rapid infuser with integrated warmer</b> (Belmont, Level 1, or equivalent) — capable of 500–1000 mL/min at 38&nbsp;°C. A blood warmer on a gravity line is not a rapid infuser.</li>\n      <li><b>Two large-bore access points.</b> Flow scales with the fourth power of radius and inversely with length: a <b>short 14–16 G peripheral</b> outperforms a long triple-lumen central line for volume. If central access is needed, use an introducer sheath (8.5&nbsp;Fr), not a multi-lumen.</li>\n      <li><b>Forced-air warmer, warmed room, warmed fluids</b> — hypothermia is generated by the resuscitation itself.</li>\n      <li><b>Point-of-care testing:</b> blood gas with <b>ionized calcium</b>, lactate, hemoglobin; and viscoelastic testing (TEG/ROTEM) if available.</li>\n      <li><b>A whiteboard and a scribe.</b> Product counts, time of activation, and calcium doses are all lost in real time without someone writing them down.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "packs",
           "num": "04",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "The Packs and the Ratio",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Ratios are prescribed so nobody has to calculate during the event."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Component",
+                "Adult pack (typical)",
+                "Notes"
+              ],
+              "rows": [
+                [
+                  "Red cells",
+                  "6 units",
+                  "Uncrossmatched O to start. O-negative for females of childbearing potential; O-positive is acceptable for males and post-menopausal females and protects a scarce O-neg supply."
+                ],
+                [
+                  "Plasma (FFP / thawed)",
+                  "6 units",
+                  "Thawing takes 20–30 min unless pre-thawed plasma is stocked — this is the usual reason pack 1 arrives red-cell-heavy."
+                ],
+                [
+                  "Platelets",
+                  "1 apheresis unit",
+                  "<b>One apheresis unit ≈ 6 pooled units</b> — this is what makes a 6:6:1 pack a “1:1:1” ratio. Miscounting this is how platelets get under-given."
+                ],
+                [
+                  "Cryoprecipitate",
+                  "Often not in pack 1",
+                  "Must usually be asked for. See §06 — fibrinogen falls first and is the thing most often missed."
+                ],
+                [
+                  "Whole blood (LTOWB)",
+                  "Increasingly pack 1",
+                  "Low-titer group O whole blood delivers the balanced ratio in a single bag with one venipuncture-equivalent of dilution. Where stocked, it is the simplest way to get the ratio right."
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p><b>What PROPPR actually showed.</b> 1:1:1 versus 1:1:2 produced <i>no difference</i> in 24-hour or 30-day all-cause mortality. What it did show: more patients achieved anatomic hemostasis, and fewer died of exsanguination in the first 24 hours, with 1:1:1. That is the basis for the default — a reasonable empiric starting ratio, not a proven mortality intervention. It is a bridge to goal-directed therapy, and should be abandoned for viscoelastic guidance as soon as you have data.</p>"
+            },
+            {
+              "type": "tagline",
+              "html": "Pediatric dosing"
+            },
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Red cells:</b> <span class=\"d\">10–20 mL/kg</span> per round</li>\n  <li><b>Plasma:</b> <span class=\"d\">10–20 mL/kg</span></li>\n  <li><b>Platelets:</b> <span class=\"d\">10–15 mL/kg</span></li>\n  <li><b>Cryoprecipitate:</b> <span class=\"d\">5–10 mL/kg</span></li>\n  <li><b>Pediatric massive transfusion</b> is commonly defined as &gt;40 mL/kg of any product in 24 h, or &gt;half the estimated blood volume in 3 h.</li>\n  <li>Children tolerate the citrate and potassium load of rapid transfusion <b>worse</b> than adults, not better. Calcium and potassium need checking sooner.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "adjuncts",
+          "num": "05",
+          "color": "red",
+          "title": "Drugs That Go With the Blood",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "These are the doses. They are forgotten more often than the blood is."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Agent",
+                "Adult dose",
+                "When / why"
+              ],
+              "rows": [
+                [
+                  "Tranexamic acid — trauma",
+                  "<b>1 g IV over 10 min, then 1 g over 8 h</b>",
+                  "<b>Within 3 hours of injury.</b> Beyond 3 hours CRASH-2 showed a signal of <i>harm</i> — check the clock, not just the bleeding. Rapid push causes hypotension."
+                ],
+                [
+                  "Tranexamic acid — postpartum",
+                  "<b>1 g IV over 10 min; repeat 1 g</b> if bleeding continues after 30 min or restarts within 24 h",
+                  "WOMAN trial. Same 3-hour window from onset of bleeding."
+                ],
+                [
+                  "Tranexamic acid — pediatric",
+                  "<b>15 mg/kg (max 1 g) over 10 min, then 2 mg/kg/h</b>",
+                  "Extrapolated dosing; confirm locally."
+                ],
+                [
+                  "Calcium chloride 10%",
+                  "<b>1 g (10 mL) = 13.6 mEq elemental Ca</b>",
+                  "Roughly <b>1 g per 4 units of product</b>, or empirically with pack 1. Three times the elemental calcium of gluconate per gram. Sclerosant — prefer a central or large vein, but do not withhold it for that reason in exsanguination."
+                ],
+                [
+                  "Calcium gluconate 10%",
+                  "<b>3 g (30 mL) = 13.6 mEq elemental Ca</b>",
+                  "Peripheral-friendly equivalent. Requires hepatic metabolism to liberate calcium — less reliable in the shocked, acidotic liver."
+                ],
+                [
+                  "Calcium — pediatric",
+                  "CaCl <span class=\"d\">20 mg/kg</span> or Ca gluconate <span class=\"d\">60 mg/kg</span>",
+                  "Same trigger: ionized calcium, or empirically per pack."
+                ],
+                [
+                  "Fibrinogen (cryoprecipitate)",
+                  "<b>10 pooled units</b> (raises fibrinogen ~50–100 mg/dL)",
+                  "When fibrinogen <span class=\"d\">&lt;150 mg/dL</span>, or &lt;200 in obstetric hemorrhage. See §06."
+                ],
+                [
+                  "Fibrinogen concentrate",
+                  "<b>3–4 g</b>",
+                  "Where stocked — no thaw time, no ABO matching, smaller volume."
+                ],
+                [
+                  "Anticoagulant reversal",
+                  "Agent-specific",
+                  "Ask about DOACs and warfarin on <i>every</i> bleeding patient. Reversal is a separate decision tree — see the anticoagulant reversal protocol; do not improvise doses here."
+                ]
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Hypocalcemia is the fourth point of the diamond",
+              "html": "Every unit of product carries citrate, which chelates ionized calcium. Ionized calcium <span class=\"d\">&lt;0.9 mmol/L</span> on arrival independently predicts mortality and the need for massive transfusion. Calcium is required for platelet function and for nearly every step of the coagulation cascade — <b>you cannot clot without it, and no amount of plasma substitutes for it.</b> It is also negatively inotropic when low. Give calcium with the first pack and recheck the ionized level every 30 minutes; <b>target &gt;1.1–1.2 mmol/L</b>."
+            }
+          ]
+        },
+        {
+          "id": "targets",
+          "num": "06",
+          "color": "amber",
+          "title": "Targets and Goal-Directed Therapy",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Parameter",
+                "Target",
+                "Act when"
+              ],
+              "rows": [
+                [
+                  "Ionized calcium",
+                  "&gt;1.1–1.2 mmol/L",
+                  "&lt;1.1 — and empirically with pack 1 regardless"
+                ],
+                [
+                  "Fibrinogen",
+                  "&gt;150 mg/dL (&gt;200 obstetric)",
+                  "&lt;150 → cryoprecipitate or concentrate"
+                ],
+                [
+                  "Platelets",
+                  "&gt;50 ×10<sup>9</sup>/L; &gt;100 with TBI or ongoing bleeding",
+                  "&lt;50, or &lt;100 with head injury"
+                ],
+                [
+                  "INR / PT ratio",
+                  "&lt;1.5",
+                  "&gt;1.5 → plasma (slow signal — viscoelastic is faster)"
+                ],
+                [
+                  "Temperature",
+                  "&gt;35–36 °C",
+                  "Always — warm everything, all the time"
+                ],
+                [
+                  "pH / base deficit",
+                  "pH &gt;7.2",
+                  "Worsening base deficit means ongoing bleeding, not a bicarbonate problem"
+                ],
+                [
+                  "Potassium",
+                  "&lt;5.5 mmol/L",
+                  "Rising with rapid transfusion of older units — especially in children"
+                ],
+                [
+                  "Blood pressure (pre-control)",
+                  "SBP 80–90 / MAP 50–65",
+                  "<b>Except TBI or spinal cord injury: SBP ≥110, MAP ≥80</b>"
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>Reading viscoelastic tests quickly.</b> The point of TEG/ROTEM here is not elegance — it is that each abnormality maps to one bag.</p>\n<ul>\n  <li><b>Prolonged R time (TEG) / CT (EXTEM)</b> → not enough clotting factors → <b>plasma</b> (or PCC in the anticoagulated).</li>\n  <li><b>Narrow alpha angle, prolonged K / low FIBTEM A10</b> → not enough fibrinogen → <b>cryoprecipitate or fibrinogen concentrate</b>.</li>\n  <li><b>Low MA (TEG) / low EXTEM A10 with normal FIBTEM</b> → not enough platelets → <b>platelets</b>.</li>\n  <li><b>LY30 &gt;3% / increased maximum lysis</b> → hyperfibrinolysis → <b>TXA</b>.</li>\n</ul>\n<p><b>Permissive hypotension</b> until hemorrhage is controlled: a clot formed at SBP 85 survives; the same clot is blown off at SBP 140. The exceptions are absolute — a brain or cord that is also injured needs perfusion pressure more than it needs a protected clot.</p>\n<p><b>Crystalloid is not resuscitation.</b> Keep it under 1 L before blood arrives, and ideally near zero. It dilutes clotting factors, worsens acidosis, drops the temperature, and raises pressure enough to displace clot — four harms, no benefit.</p>"
+            }
+          ]
+        },
+        {
+          "id": "running",
+          "num": "07",
+          "color": "blue",
+          "title": "Running It — Roles and Sequence",
           "tagline": null,
           "blocks": [
             {
@@ -6772,72 +7613,141 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Activate the protocol early and verbally, using your institution's specific activation phrase/mechanism — do not wait for confirmatory lab values in an obviously hemorrhaging patient."
+                  "title": "Activate out loud, and name the person",
+                  "html": "“<i>I am activating massive transfusion. [Name], you are calling the blood bank.</i>” Undirected instructions in a full room get executed by nobody. State the location, the patient identifier, and that this is an MTP activation."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Initiate transfusion in a fixed ratio, typically 1:1:1 (PRBC:FFP:platelets), as the default starting sequence while definitive hemorrhage control is pursued."
+                  "title": "Assign the four jobs",
+                  "html": "<b>Blood bank liaison</b> (the only person who talks to blood bank, and who keeps the runner moving) · <b>Rapid infuser operator</b> (does nothing else) · <b>Scribe</b> (units in, times, calcium doses, labs sent) · <b>Team leader</b> (source control and the decision to keep going). One person cannot hold two of these."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Ensure blood is warmed via a rapid infuser/blood warmer system before or during administration to avoid iatrogenic hypothermia."
+                  "title": "Start uncrossmatched now, send the type and screen simultaneously",
+                  "html": "Do not hold the first unit waiting for a crossmatch. Send the sample at the same moment the emergency-release blood is hung, so the switch to type-specific product is ready when the initial supply runs down."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Administer calcium supplementation proactively — citrate in transfused blood products chelates calcium and can cause clinically significant hypocalcemia during massive transfusion."
+                  "title": "Give TXA and calcium with pack 1",
+                  "html": "Both are time-sensitive and both are the things that get remembered at minute 40. <b>Check the injury clock for the 3-hour TXA window before giving it.</b>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Send serial labs (ABG with ionized calcium, fibrinogen, coagulation studies) to guide product ratio adjustments as the resuscitation progresses beyond the initial empiric phase."
+                  "title": "Warm everything",
+                  "html": "Infuser warmer on and verified at temperature, forced-air blanket over whatever is not exposed, room heat up, wet clothing cut off and removed. Hypothermia here is iatrogenic and it is the leg of the lethal triad you have the most direct control over."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Communicate continuously with blood bank regarding ongoing need, product availability, and any anticipated de-escalation."
+                  "title": "Get labs at activation and every 30–60 minutes",
+                  "html": "Blood gas with ionized calcium, CBC, fibrinogen, PT/INR, and viscoelastic if available. Fibrinogen specifically — it is not on a standard coagulation panel at many sites and it is the first thing to fail."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Formally deactivate the protocol once hemorrhage is controlled and the patient is stabilizing, to avoid unnecessary product waste and cost."
+                  "title": "Drive toward source control the whole time",
+                  "html": "OR, interventional radiology, endoscopy, balloon tamponade, a binder, a tourniquet, uterotonics. <b>Every round of product is a question about why the bleeding has not stopped.</b> If the answer is “we are still waiting for the OR,” escalate that instead of hanging another unit."
+                },
+                {
+                  "num": "8",
+                  "color": "purple",
+                  "title": "Deactivate explicitly, and return the cooler",
+                  "html": "Call blood bank and say the protocol is off. Unopened coolers go back <b>promptly</b> — units held at the bedside past their window are destroyed, and a regional supply is finite. This step is skipped constantly."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
             {
-              "type": "alert",
-              "color": "red",
-              "title": "Activate on clinical suspicion, not lab confirmation",
-              "html": "The entire value of the protocol is removing decision friction at exactly the moment friction is most costly — waiting for confirmatory labs in an obviously hemorrhaging patient defeats the purpose of having a protocol at all."
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Product arrives but nothing is going in fast",
+                  "Access is the limit — long, narrow catheters",
+                  "Place a short large-bore peripheral or an 8.5 Fr introducer. Not a triple lumen."
+                ],
+                [
+                  "Pack 1 is all red cells, no plasma",
+                  "Plasma is still thawing",
+                  "Expected. Ask whether pre-thawed plasma or LTOWB exists. Do not slow the red cells waiting."
+                ],
+                [
+                  "Bleeding from every puncture site and mucosa",
+                  "Established coagulopathy — usually fibrinogen and calcium",
+                  "Cryoprecipitate and calcium now, do not wait for the panel. Send viscoelastic."
+                ],
+                [
+                  "Pressure won't come up despite volume",
+                  "Ongoing bleeding you have not found — or a non-hemorrhagic cause",
+                  "Reassess the four spaces (chest, abdomen, pelvis/retroperitoneum, long bones and the floor). Rule out tension pneumothorax and tamponade — both mimic refractory hemorrhagic shock."
+                ],
+                [
+                  "Sudden arrest mid-transfusion",
+                  "Hyperkalemia or profound ionized hypocalcemia from rapid product delivery",
+                  "Calcium immediately. Treat hyperkalemia. This is more common with older units, rapid central infusion, and children."
+                ],
+                [
+                  "Widening QRS, peaked T waves",
+                  "Hyperkalemia from stored red cells",
+                  "Calcium, insulin/dextrose, consider washed or fresher units for continued transfusion."
+                ],
+                [
+                  "Temperature falling despite a warmer",
+                  "Warmer not at temperature, or bypassed by a side line",
+                  "Verify the warmer is actually in circuit and the display is at target. Cover everything else."
+                ],
+                [
+                  "Hypotension right after TXA",
+                  "Pushed too fast",
+                  "TXA goes over 10 minutes. Slow it."
+                ],
+                [
+                  "Hypoxia and infiltrates within 6 h",
+                  "TRALI or TACO",
+                  "Supportive care and respiratory support; distinguish by volume status and response to diuresis. Report the reaction — it changes future product selection."
+                ],
+                [
+                  "Blood bank says they are out",
+                  "Regional supply limit reached",
+                  "This is a command decision, not a clinical one: escalate to the blood bank medical director and consider transfer, damage-control surgery now rather than later, and an explicit goals-of-care conversation."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "09",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Hypothermia from unwarmed product administration, which independently worsens coagulopathy — part of the lethal triad alongside acidosis and coagulopathy</li>\n      <li>Hypocalcemia from citrate load if calcium is not proactively repleted</li>\n      <li>Transfusion-related acute lung injury (TRALI) or transfusion-associated circulatory overload (TACO), particularly with large product volumes</li>\n      <li>Delayed activation — waiting for lab confirmation before activating costs time the patient may not have</li>\n      <li>Under-transfusion of platelets/plasma relative to PRBCs if ratio discipline is not maintained under the chaos of an active resuscitation</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Hypothermia</b> — worsens platelet function and enzyme kinetics. Largely iatrogenic and largely preventable.</li>\n      <li><b>Ionized hypocalcemia</b> — citrate-driven; causes coagulopathy, hypotension, and arrest. The single most under-treated complication of massive transfusion.</li>\n      <li><b>Hyperkalemia</b> — potassium leaks from stored red cells; risk scales with unit age, infusion rate, and inversely with patient size.</li>\n      <li><b>Dilutional coagulopathy</b> — from crystalloid and from red-cell-heavy ratios.</li>\n      <li><b>Metabolic alkalosis</b> — a late effect as citrate is metabolized to bicarbonate.</li>\n      <li><b>TRALI</b> (within 6 h, non-cardiogenic infiltrates) and <b>TACO</b> (volume overload) — both present as post-transfusion hypoxia and are distinguished mainly by volume status.</li>\n      <li><b>Acute hemolytic reaction</b> — rare with emergency-release O product; the real risk is a mislabeled sample. Two-person identity verification does not stop during a resuscitation.</li>\n      <li><b>Transfusion-associated immunomodulation and infection risk</b> — dose-dependent, and a reason to stop when bleeding stops.</li>\n      <li><b>Abdominal compartment syndrome</b> after large-volume resuscitation — measure bladder pressure if the abdomen becomes tense and oliguria or high airway pressures develop.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "10",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -6845,13 +7755,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Activate on clinical suspicion, not lab confirmation — the entire value of a protocol is that it removes decision friction in exactly the moment friction is most costly.</p>\n<p>Warm the blood and replete calcium proactively rather than reactively — both are easy to forget in the chaos of an active resuscitation and both meaningfully affect coagulation.</p>\n<p>The fixed 1:1:1 ratio is a starting point, not a permanent prescription — use point-of-care coagulation data to individualize as soon as it's available.</p>\n<p>Deactivate promptly once hemorrhage is controlled; this closes the loop with blood bank and avoids unnecessary product utilization.</p>"
+              "html": "<p><b>Three units in an hour is your trigger.</b> Of all the scores, CAT+ is the one you can actually notice in real time.</p>\n<p><b>Calcium with the first pack, every time.</b> It is the most commonly omitted and most rapidly lethal deficiency in the whole protocol, and it is one syringe.</p>\n<p><b>Check the clock before giving TXA.</b> Within 3 hours it helps; beyond it, the trial data point the other way. Bleeding alone is not the indication — timing is.</p>\n<p><b>One apheresis platelet equals six units.</b> Miscount this and your “1:1:1” is a 6:6:6 — wildly over-plateleted — or you give six pooled bags thinking you are behind.</p>\n<p><b>Fibrinogen fails first and is measured last.</b> Order it explicitly; it is absent from many default coagulation panels.</p>\n<p><b>Short and fat beats long and central.</b> A 14 G peripheral moves more blood than a triple-lumen. If you want central, place an introducer sheath.</p>\n<p><b>Keep the pressure low until the bleeding stops</b> — unless the brain or cord is injured, where perfusion wins.</p>\n<p><b>Every unit is a question about source control.</b> The protocol is a bridge to an operation, an embolization, or a balloon. It is not a destination.</p>\n<p><b>Deactivate and send the cooler back.</b> Unglamorous, constantly forgotten, and the difference between a functioning regional blood supply and a depleted one.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "11",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -6861,11 +7771,31 @@
               "items": [
                 {
                   "tier": "EVIDENCE",
-                  "html": "Holcomb JB, Tilley BC, Baraniuk S, et al. Transfusion of plasma, platelets, and red blood cells in a 1:1:1 vs a 1:1:2 ratio and mortality in patients with severe trauma: the PROPPR randomized clinical trial. <i>JAMA.</i> 2015;313(5):471-482."
+                  "html": "Holcomb JB, Tilley BC, Baraniuk S, et al. Transfusion of plasma, platelets, and red blood cells in a 1:1:1 vs a 1:1:2 ratio and mortality in patients with severe trauma: the PROPPR randomized clinical trial. <i>JAMA.</i> 2015;313(5):471–482."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "CRASH-2 Collaborators. Effects of tranexamic acid on death, vascular occlusive events, and blood transfusion in trauma patients with significant haemorrhage: a randomised, placebo-controlled trial. <i>Lancet.</i> 2010;376(9734):23–32."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "WOMAN Trial Collaborators. Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage. <i>Lancet.</i> 2017;389(10084):2105–2116."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Rossaint R, Afshari A, Bouillon B, et al. The European guideline on management of major bleeding and coagulopathy following trauma, 6th edition. <i>Crit Care.</i> 2023;27(1):80."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Nunez TC, Voskresensky IV, Dossett LA, Shinall R, Dutton WD, Cotton BA. Early prediction of massive transfusion in trauma: simple as ABC? <i>J Trauma.</i> 2009;66(2):346–352."
                 },
                 {
                   "tier": "REFERENCE",
                   "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. ACS; 2018."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Your institution's own MTP pack composition, activation number, and deactivation procedure. These vary substantially — confirm the local specifics before you need them."
                 }
               ]
             }
@@ -6894,8 +7824,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7081,13 +8011,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Non-compressible torso hemorrhage (pelvic, junctional, abdominal) with hemorrhagic shock refractory to initial resuscitation</li>\n      <li>Bridge to definitive hemorrhage control (OR, IR) in a patient too unstable to survive transport or induction without proximal aortic control</li>\n      <li>Peri-arrest or profound hypotension (SBP &lt;70–80 mmHg) from suspected sub-diaphragmatic hemorrhage</li>\n      <li>Alternative to resuscitative thoracotomy in patients with a viable but rapidly deteriorating hemodynamic profile</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Non-compressible torso hemorrhage</b> — pelvic, junctional, or intra-abdominal — with shock refractory to initial resuscitation</li>\n      <li><b>Peri-arrest from suspected sub-diaphragmatic bleeding</b>: SBP &lt;70–80 mmHg despite product, or a patient losing their pulse in front of you with a mechanism that fits</li>\n      <li><b>Bridge to definitive control</b> in a patient who will not survive transport, induction of anesthesia, or the walk to CT without proximal aortic control</li>\n      <li><b>An alternative to resuscitative thoracotomy</b> in a patient who still has a rhythm and a blood pressure — it achieves aortic occlusion without opening the chest</li>\n      <li><b>Non-trauma uses:</b> ruptured abdominal aortic aneurysm as a bridge to repair, and refractory postpartum hemorrhage (Zone 3), where it is an established adjunct in some centers</li>\n</ul>"
             },
             {
               "type": "alert",
               "color": "amber",
               "title": "Survival benefit is not established — this is a bridge, not a proven mortality intervention",
-              "html": "The 2023 UK-REBOA trial (Jansen et al., JAMA) randomized exsanguinating trauma patients to standard care with or without REBOA and found <b>no survival benefit</b> from adding REBOA, with a numerically higher mortality in the REBOA arm. Earlier support for REBOA came almost entirely from registry data (AAST AORTA) and non-randomized comparisons, which carry real selection bias — sicker/faster-dying patients are less likely to reach REBOA at all, flattering its apparent outcomes. None of this means REBOA has no role: it still reliably raises proximal blood pressure as a temporizing bridge, and most guidance restricts it to centers with dedicated training, rapid access, and a clear path to definitive control — not as a default first move for non-compressible hemorrhage. Treat it as a technique with a real physiologic effect and an unresolved outcome benefit, not a settled standard of care."
+              "html": "The 2023 <b>UK-REBOA</b> trial randomized exsanguinating trauma patients to standard care with or without REBOA and found <b>no survival benefit</b>, with numerically <i>higher</i> mortality in the REBOA arm. Earlier support came almost entirely from registry data (AAST AORTA) and non-randomized comparisons, which carry real selection bias — the patients who die fastest never reach REBOA at all, which flatters its apparent outcomes."
             }
           ]
         },
@@ -7101,7 +8031,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Known or suspected thoracic aortic injury or dissection proximal to the zone of occlusion</li>\n      <li>Cardiac arrest from a non-hemorrhagic cause — REBOA does not substitute for compressions/defibrillation</li>\n      <li>Inability to obtain femoral arterial access (severe bilateral lower-extremity vascular injury)</li>\n      <li>Prolonged anticipated occlusion time without a clear path to definitive control (irreversible ischemia risk beyond ~30–60 min at Zone 1)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Suspected thoracic aortic injury or dissection</b> proximal to the intended zone. A balloon inflated in a dissected aorta can extend the dissection or rupture it.</li>\n      <li><b>Hemorrhage above the diaphragm.</b> Occluding below a thoracic source does not control it — it raises the pressure driving it, and it costs you the minutes in which you might have found it. A chest that is bleeding gets a thoracostomy and a thoracotomy, not a balloon.</li>\n      <li><b>Cardiac arrest from a non-hemorrhagic cause.</b> REBOA does not replace compressions, defibrillation, or reversing the cause.</li>\n      <li><b>Prolonged arrest with no signs of life</b> and no realistic path to control — the same futility judgment that governs thoracotomy.</li>\n      <li><b>No obtainable common femoral access</b> — bilateral vascular injury or destroyed groins.</li>\n      <li><b>No definitive control available.</b> If there is no OR, no interventional radiology, and no transfer plan, the balloon buys ischemic time for no purpose. <b>Do not inflate a balloon you have no plan to deflate.</b></li>\n      <li><b>Pediatric patients</b> — not established; catheter and sheath sizes do not fit small vessels.</li>\n</ul>"
             }
           ]
         },
@@ -7115,107 +8045,257 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>REBOA catheter kit (7 Fr low-profile system where available, or 11–12 Fr standard system)</li>\n      <li>Ultrasound with linear probe for femoral access</li>\n      <li>Arterial sheath, guidewire, compliant occlusion balloon</li>\n      <li>Pressure monitoring line/transducer (proximal, and distal if possible)</li>\n      <li>Fluoroscopy or external landmark measurement for balloon positioning if fluoro unavailable</li>\n      <li>Saline for balloon inflation — never air</li>\n</ul>"
+              "html": "<ul>\n      <li><b>REBOA catheter.</b> Current low-profile systems (ER-REBOA and partial-occlusion variants) run through a <span class=\"d\">7 Fr</span> sheath and carry an integrated distal pressure port — a significant advantage, because it lets you transduce proximally and distally without a second line. Older compliant occlusion balloons need <span class=\"d\">11–12 Fr</span>, which changes the access and closure problem entirely.</li>\n      <li><b>Sheath</b> matched to the catheter. Note the length — the sheath length counts against your insertion depth measurement.</li>\n      <li><b>Ultrasound with a linear probe.</b> The access is the procedure; see §05.</li>\n      <li><b>Guidewire</b> (0.035″ for most systems), and a stiffer exchange wire if you plan to upsize.</li>\n      <li><b>Two transducers</b> — proximal (the catheter's own port, or a radial line) and distal (the sheath side-arm). <b>The proximal/distal pressure pair is how you know the balloon is working</b>, and it is what makes partial occlusion possible.</li>\n      <li><b>Saline for inflation</b> — or dilute contrast if fluoroscopy is available. <b>Never air.</b> An air-filled balloon that ruptures embolizes air into the aorta and onward to brain and coronaries; a saline balloon that ruptures does nothing.</li>\n      <li><b>Syringes with fine graduations</b> (a 20 mL syringe, ideally a Luer-lock) — balloon volumes are small and the difference between occlusion and over-inflation is a couple of milliliters.</li>\n      <li><b>Plain radiograph capability or fluoroscopy</b> for position confirmation. A portable chest or abdominal film in the resuscitation bay is usually achievable and is worth taking.</li>\n      <li><b>A visible clock or timer</b>, started at inflation. See §07.</li>\n      <li><b>Cutdown tray</b> as the access backup — and as what you will need at the end to take the sheath out.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "zones",
+          "num": "04",
+          "color": "amber",
+          "title": "The Zones — and the One You Never Occlude",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Zone",
+                "Extent",
+                "Use for",
+                "Safe dwell"
+              ],
+              "rows": [
+                [
+                  "<b>Zone 1</b> (supraceliac)",
+                  "Origin of the left subclavian → celiac axis",
+                  "Intra-abdominal hemorrhage; peri-arrest from any sub-diaphragmatic source. The functional equivalent of a cross-clamp at thoracotomy.",
+                  "<b>Aim ≤30 min; 15–20 is better.</b> Every abdominal and pelvic organ plus both kidneys is downstream."
+                ],
+                [
+                  "<b>Zone 2</b> (visceral)",
+                  "Celiac axis → lowest renal artery",
+                  "<b>Nothing. This is the “no-fly” zone.</b> A balloon here occludes across the origins of the celiac, SMA, and renal arteries without the benefit of full proximal control.",
+                  "—"
+                ],
+                [
+                  "<b>Zone 3</b> (infrarenal)",
+                  "Lowest renal artery → aortic bifurcation",
+                  "Isolated pelvic or junctional hemorrhage; postpartum hemorrhage. Spares the kidneys, gut, liver, and cord.",
+                  "<b>Substantially longer — up to 60 min, and beyond with care.</b> Only the pelvis and legs are ischemic."
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>Choosing between them.</b> Zone 3 is safer and should be used whenever the source is clearly pelvic — an unstable pelvic fracture with a binder on and a negative FAST. Zone 1 is for an intra-abdominal source, an uncertain source in extremis, or a patient who is arresting. <b>Zone 1 buys more pressure at much higher cost.</b></p>\n<p><b>Getting the depth.</b> External measurement is the usual method in a resuscitation bay. Lay the catheter on the patient from the <i>access site</i> and read off the target landmark:</p>\n<ul>\n  <li><b>Zone 1:</b> to the <b>sternal notch / manubrium</b> — roughly <span class=\"d\">45–50 cm</span> in an adult</li>\n  <li><b>Zone 3:</b> to the <b>umbilicus</b> (or just above it) — roughly <span class=\"d\">27–30 cm</span></li>\n</ul>\n<p>Protocols vary in which landmark they cite, and body habitus shifts both. <b>Confirm the position radiographically whenever you can</b> — on a plain film, the balloon in Zone 1 should sit at the level of the mid-to-lower thoracic vertebrae, and in Zone 3 below the renal arteries around L2–L3. Treat the external measurement as the starting estimate and the pressure response as the functional check.</p>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Technique",
           "tagline": null,
           "blocks": [
+            {
+              "type": "tagline",
+              "html": "Access is the procedure. Everything that follows is quick; the femoral artery is where REBOA succeeds or fails."
+            },
             {
               "type": "steps",
               "steps": [
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Obtain common femoral artery access via ultrasound-guided Seldinger technique; confirm arterial waveform."
+                  "title": "Get the arterial line in before you need the balloon",
+                  "html": "<b>The highest-value operational habit in REBOA has nothing to do with the balloon.</b> Place a common femoral arterial line early in any shocked trauma patient — it gives you real-time pressure you need anyway, and if REBOA becomes necessary it converts a difficult new puncture in a pulseless patient into a straightforward wire exchange and upsize. Teams that do this reliably get balloons up in a few minutes; teams that don't spend those minutes hunting a femoral pulse that no longer exists."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Place introducer sheath appropriate to catheter system."
+                  "title": "Target the common femoral artery, under ultrasound",
+                  "html": "Puncture <b>below the inguinal ligament but above the bifurcation</b> into superficial and profunda femoris. A sheath in the superficial femoral artery is too big for the vessel and produces limb ischemia and thrombosis. Above the ligament, a failed puncture bleeds into the retroperitoneum. That is a narrow window, and in a pulseless patient ultrasound is the only way to find it — look for the vessel <i>before</i> it divides, image the bifurcation and come up from it."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Determine target zone: <b>Zone 1</b> (left subclavian to celiac trunk) for suspected intra-abdominal hemorrhage; <b>Zone 3</b> (lowest renal artery to aortic bifurcation) for isolated pelvic hemorrhage."
+                  "title": "If ultrasound access fails, cut down early",
+                  "html": "Set a limit in advance — two or three passes, or 90 seconds — and then convert to a femoral cutdown. The commonest way REBOA fails is not a technical error at the balloon but ten minutes burned on percutaneous attempts in a vessel with no pressure in it. Decide the escalation point before you start, out loud."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Measure catheter insertion length externally (xiphoid for Zone 1, umbilicus for Zone 3) or confirm with fluoroscopy if available."
+                  "title": "Sheath in, transduce the side-arm",
+                  "html": "Place the sheath over the wire. Connect the side-arm to a transducer — <b>this is your distal pressure</b>, and it will be the thing that tells you the balloon is occluding and, later, the thing that lets you run partial occlusion."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Advance catheter to target zone."
+                  "title": "Measure, then advance to the zone",
+                  "html": "Choose the zone (§04), measure externally from the access site, and mark the catheter. Advance smoothly — <b>it should pass with no resistance.</b> Resistance means the wire or catheter has found a branch vessel or a dissection plane. Stop, withdraw, reassess. Do not push through resistance in an aorta."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Inflate balloon slowly with saline while monitoring proximal pressure rise and loss of distal pulse/waveform — stop inflation at the minimum volume achieving occlusion."
+                  "title": "Inflate slowly, watching two numbers",
+                  "html": "Inflate with saline in <b>1–2 mL increments</b> while watching the <b>proximal pressure rise</b> and the <b>distal waveform flatten</b>. Typical volumes: <span class=\"d\">Zone 1 ≈ 8–10 mL</span>, <span class=\"d\">Zone 3 ≈ 2–6 mL</span> — but <b>the endpoint is the pressure response, not the volume.</b> Stop at the minimum volume that achieves occlusion. Over-inflation risks aortic injury and rupture, and the aorta of a young exsanguinating trauma patient is small and empty."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Confirm occlusion: rising proximal MAP, loss of distal femoral signal."
+                  "title": "Confirm, and start the clock out loud",
+                  "html": "Occlusion is confirmed by a <b>rising proximal MAP</b> and <b>loss of the distal arterial waveform and femoral signal</b>. Then say it to the room: “<i>Balloon up at 14:32, Zone 1. I will call it out every five minutes.</i>” Write it on the board. <b>The clock is the safety system</b> — see §07."
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Document inflation time immediately; set a hard countdown for the team."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Proceed to definitive hemorrhage control (OR/IR) without delay — REBOA is a bridge, not a treatment."
-                },
-                {
-                  "num": "10",
                   "color": "purple",
-                  "title": "",
-                  "html": "Deflate gradually in a controlled setting, titrating to hemodynamics — rapid deflation risks reperfusion collapse."
+                  "title": "Go to definitive control now",
+                  "html": "The moment the balloon is up, the only remaining question is where the bleeding gets stopped and how soon. OR, angiography suite, pelvic packing, preperitoneal packing. <b>Every minute of inflation should be a minute of movement toward that.</b> A stable patient with a balloon up is not a stable patient; they are an ischemic patient with a normal-looking monitor."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "partial",
+          "num": "06",
+          "color": "blue",
+          "title": "Partial and Intermittent Occlusion",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p>Complete occlusion maximizes proximal pressure and maximizes distal ischemia. The refinement that has come out of the last decade is to give up some of the first to buy a great deal of the second.</p>\n<ul>\n  <li><b>Partial REBOA (pREBOA):</b> deflate back from full occlusion until a small amount of distal flow returns — titrating to a target such as a proximal MAP around <span class=\"d\">80–90 mmHg</span>, or a measurable distal systolic pressure. Distal perfusion continues at a reduced rate, the acid and potassium load accumulates more slowly, and the safe dwell extends substantially. This requires a <b>distal transducer and continuous attention</b>: a partial balloon drifts, and one that drifts closed is a full occlusion nobody is timing.</li>\n  <li><b>Intermittent REBOA (iREBOA):</b> cycles of inflation and deflation. Simpler to do without a distal transducer, but each deflation produces a hemodynamic swing and can dislodge fresh clot. Generally the less favored of the two.</li>\n  <li><b>Purpose-built partial-occlusion catheters</b> exist and make the titration far more controllable than throttling a standard compliant balloon by hand.</li>\n</ul>\n<p>If your service is going to do REBOA at all, partial occlusion with distal pressure monitoring is the version most likely to do more good than harm — but it demands a dedicated person watching two pressures and nothing else.</p>"
+            }
+          ]
+        },
+        {
+          "id": "clock",
+          "num": "07",
+          "color": "red",
+          "title": "The Clock, and Coming Down",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Deflation is more dangerous than inflation, and it is the part people prepare for least."
             },
             {
               "type": "alert",
               "color": "red",
-              "title": "Occlusion time is the whole safety margin",
-              "html": "Zone 1 REBOA carries a real ischemia-reperfusion burden that climbs with dwell time — treat balloon inflation time as a hard countdown communicated out loud to the team, not a detail to check later."
+              "title": "Inflation time is the entire safety margin",
+              "html": "Everything distal to the balloon is ischemic from the second it goes up, and the reperfusion injury is proportional to the dwell. <b>Zone 1: target under 30 minutes, and treat 15–20 as the aspiration.</b> Zone 3 is far more forgiving — up to an hour and sometimes beyond — because only the pelvis and legs are at stake. <b>Announce the time every five minutes.</b> Nobody should be surprised at minute 30, and in practice they are, because in a busy resuscitation nobody owns the clock unless someone is told to."
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p><b>Before you deflate, have all of this ready:</b></p>\n<ul>\n  <li>The surgeon present and the source controlled or controllable</li>\n  <li><b>Blood products running</b>, not ordered</li>\n  <li><b>Vasopressors drawn up and connected</b></li>\n  <li><b>Calcium ready</b> — the reperfusion washout carries potassium and acid, and calcium is both the antiarrhythmic and the inotrope for that moment</li>\n  <li>Consideration of <b>sodium bicarbonate</b> for the acid load</li>\n  <li>A current potassium if you can get one</li>\n</ul>\n<p><b>Then deflate in 1–2 mL increments, over minutes, watching the pressure.</b> If the pressure falls, <b>stop — and re-inflate if it collapses.</b> You can go back up. The washout of lactate, potassium, and inflammatory mediators from ischemic viscera and limbs can cause profound vasoplegia, arrhythmia, and arrest, and the magnitude scales with how long the balloon was up and how fast you let it down. <b>A fast deflation after a long Zone 1 occlusion can kill a patient whose bleeding you have just successfully stopped.</b></p>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "No femoral pulse to puncture",
+                  "Profound shock — expected, not a reason to stop",
+                  "Ultrasound. If two or three passes fail, <b>cut down</b> rather than continuing to probe."
+                ],
+                [
+                  "Wire or catheter meets resistance",
+                  "Branch vessel, tortuosity, or a dissection plane",
+                  "Stop. Withdraw and redirect. Never force a wire in an aorta."
+                ],
+                [
+                  "<b>Balloon inflated, proximal pressure does not rise</b>",
+                  "Three possibilities, in order: under-inflated; malpositioned (too low, or in an iliac); <b>or the bleeding is above the balloon</b>",
+                  "Add 1–2 mL. Check distal waveform is truly lost. Confirm position on film. <b>If pressure still doesn't rise, strongly consider a thoracic source</b> — reassess the chest, get a film, and think about thoracotomy."
+                ],
+                [
+                  "Distal waveform persists after inflation",
+                  "Incomplete occlusion, or the balloon is in an iliac with flow down the other side",
+                  "Verify position. A balloon in one iliac occludes one leg and nothing else."
+                ],
+                [
+                  "Proximal pressure rises then falls again",
+                  "Balloon migration, a leak, or continued bleeding outrunning the occlusion",
+                  "Check the inflation volume has held; re-transduce; get a film. Consider that the source is above."
+                ],
+                [
+                  "Sudden loss of balloon resistance / syringe empties",
+                  "<b>Balloon rupture</b>",
+                  "This is why you inflate with saline. Do not inflate further. Withdraw the catheter as a unit. Decide immediately whether to replace it or convert to thoracotomy."
+                ],
+                [
+                  "Collapse during deflation",
+                  "Reperfusion washout — potassium, acid, vasodilatory mediators",
+                  "<b>Re-inflate.</b> Give calcium, product, pressors. Then come down more slowly."
+                ],
+                [
+                  "Leg mottled and pulseless after the sheath is in",
+                  "Sheath thrombosis or SFA placement",
+                  "Vascular surgery now. This is limb-threatening and it is a common REBOA complication, not a rare one."
+                ],
+                [
+                  "Anuria and a rising creatinine post-procedure",
+                  "Renal ischemia from Zone 1 occlusion, plus rhabdomyolysis",
+                  "Expected consequence to monitor for, not a surprise. Check CK and potassium; support the kidneys."
+                ],
+                [
+                  "Tense, painful legs hours later",
+                  "Reperfusion compartment syndrome",
+                  "Serial compartment checks are mandatory after any lower-body ischemic interval. Low threshold for fasciotomy."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "09",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Ischemia-reperfusion injury distal to occlusion, worsening with time — minimize occlusion duration</li>\n      <li>Distal limb ischemia/thromboembolism from sheath or catheter</li>\n      <li>Balloon rupture or malposition — confirm zone before inflation</li>\n      <li>Rebound hypotension on deflation — deflate incrementally with volume/pressor support ready</li>\n      <li>Missed proximal (thoracic) injury — occluding downstream of an undiagnosed thoracic injury will not control hemorrhage and delays recognition</li>\n      <li>Vessel injury/dissection from access or catheter advancement</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Ischemia–reperfusion injury</b> — the dominant harm, proportional to dwell time and zone. Acute kidney injury, gut ischemia, hepatic injury, rhabdomyolysis, spinal cord ischemia with Zone 1, and a systemic inflammatory response that outlasts the procedure by days.</li>\n      <li><b>Limb ischemia, thrombosis, and amputation</b> — from the sheath itself, from a superficial femoral puncture, or from the occlusion interval. Reported in a meaningful fraction of cases; the larger the sheath, the higher the rate.</li>\n      <li><b>Access-site complications</b> — pseudoaneurysm, arteriovenous fistula, dissection, retroperitoneal hemorrhage from a high puncture.</li>\n      <li><b>Aortic injury or rupture</b> from over-inflation, particularly in a small, empty, young aorta.</li>\n      <li><b>Balloon rupture or migration.</b></li>\n      <li><b>Reperfusion arrest</b> on deflation — hyperkalemia, acidemia, and vasoplegia arriving together.</li>\n      <li><b>Compartment syndrome</b> of the legs after reperfusion.</li>\n      <li><b>Missed proximal injury</b> — the most consequential cognitive error. Occluding below an undiagnosed thoracic source delays the correct operation while the patient keeps bleeding.</li>\n      <li><b>Sheath removal problems</b> — a 7–12 Fr arterial sheath is not pulled at the bedside and forgotten. It needs a closure device or surgical repair, and a plan made in advance.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "10",
+          "color": "blue",
+          "title": "After Deflation",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>The sheath needs an owner and a plan.</b> Percutaneous closure device or open repair, by vascular or trauma surgery. Document who is responsible and when it comes out. Sheaths left in overnight because nobody owned them are a recognized source of limb loss.</li>\n  <li><b>Hourly limb assessment</b> — pulses (Doppler if not palpable), color, temperature, capillary refill, and compartment tension in both legs. An ankle-brachial index once the patient is stable.</li>\n  <li><b>Serial potassium, lactate, creatinine, CK, and blood gas.</b> Hyperkalemia and rhabdomyolysis are expected after a substantial ischemic interval, not incidental findings.</li>\n  <li><b>Urine output and color</b> — pigmented urine means myoglobin; start fluids and follow CK.</li>\n  <li><b>Record the occlusion interval precisely</b> — zone, inflation time, deflation time, partial-occlusion periods. Every downstream team needs this number and it cannot be reconstructed later.</li>\n  <li><b>Watch for delayed gut and cord injury</b> after Zone 1 — abdominal examination, lactate trend, and a neurologic assessment of the legs once sedation allows. Paraplegia after Zone 1 occlusion is rare but real.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "11",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -7223,13 +8303,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Zone selection matters more than perfect technique — get the level right before worrying about elegance.</p>\n<p>Treat occlusion time like a ticking clock out loud to the team; nobody should be surprised at minute 30.</p>\n<p>REBOA buys time, it doesn't fix anything — the moment it's inflated, the next question is where definitive control is happening and how fast.</p>\n<p>If ultrasound-guided access is failing under time pressure, don't burn the clock — escalate to cutdown or your backup access plan early.</p>"
+              "html": "<p><b>Put a femoral arterial line in early.</b> The single change that makes REBOA achievable is having the access already there, so the balloon is an upsize and not a puncture.</p>\n<p><b>If the proximal pressure doesn't rise, suspect a chest.</b> A correctly placed, properly inflated balloon raises pressure. When it doesn't, the most important possibility is that you are occluding below the bleeding.</p>\n<p><b>Zone 3 whenever the source is pelvic.</b> It costs you less pressure and buys a far longer safe window.</p>\n<p><b>Zone 2 is a no-fly zone.</b> All of the visceral cost, none of the proximal benefit.</p>\n<p><b>Saline, never air.</b> A ruptured saline balloon is an inconvenience; a ruptured air balloon is an arterial air embolism.</p>\n<p><b>Inflate to the pressure, not to the volume.</b> Stop at the least volume that occludes. The published volumes are a range, not a target.</p>\n<p><b>Own the clock out loud.</b> Zone 1 under 30 minutes, called every five. This is a communication task, and it is the one that fails.</p>\n<p><b>Deflation needs more preparation than inflation.</b> Blood up, pressors connected, calcium drawn, surgeon present, and come down a milliliter at a time.</p>\n<p><b>Cut down early rather than probe long.</b> Set the escalation point before you start.</p>\n<p><b>Somebody owns the sheath.</b> Name them before you leave the resuscitation bay.</p>\n<p><b>A balloon buys time and nothing else.</b> The moment it is up, the only meaningful activity in the room is getting to definitive control.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "12",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -7239,19 +8319,27 @@
               "items": [
                 {
                   "tier": "EVIDENCE",
-                  "html": "Jansen JO, Hudson J, Cochran C, et al. Emergency Department Resuscitative Endovascular Balloon Occlusion of the Aorta in Trauma Patients With Exsanguinating Hemorrhage: The UK-REBOA Randomized Clinical Trial. <i>JAMA.</i> 2023;330(19):1862-1871."
+                  "html": "Jansen JO, Hudson J, Cochran C, et al. Emergency department resuscitative endovascular balloon occlusion of the aorta in trauma patients with exsanguinating hemorrhage: the UK-REBOA randomized clinical trial. <i>JAMA.</i> 2023;330(19):1862–1871."
                 },
                 {
                   "tier": "EVIDENCE",
-                  "html": "DuBose JJ, Scalea TM, Brenner M, et al.; AAST AORTA Study Group. The AAST prospective Aortic Occlusion for Resuscitation in Trauma and Acute Care Surgery (AORTA) registry: data on contemporary utilization and outcomes of aortic occlusion and resuscitative balloon occlusion of the aorta (REBOA). <i>J Trauma Acute Care Surg.</i> 2016;81(3):409-419."
+                  "html": "DuBose JJ, Scalea TM, Brenner M, et al.; AAST AORTA Study Group. The AAST prospective Aortic Occlusion for Resuscitation in Trauma and Acute Care Surgery (AORTA) registry. <i>J Trauma Acute Care Surg.</i> 2016;81(3):409–419."
                 },
                 {
                   "tier": "EVIDENCE",
-                  "html": "Cralley AL, Vigneshwar N, Moore EE, et al.; AAST AORTA Study Group. Zone 1 endovascular balloon occlusion of the aorta vs resuscitative thoracotomy for patient resuscitation after severe hemorrhagic shock. <i>JAMA Surg.</i> 2023;158(2):140-146."
+                  "html": "Cralley AL, Vigneshwar N, Moore EE, et al.; AAST AORTA Study Group. Zone 1 endovascular balloon occlusion of the aorta vs resuscitative thoracotomy for patient resuscitation after severe hemorrhagic shock. <i>JAMA Surg.</i> 2023;158(2):140–146."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Beyer CA, Johnson MA, Galante JM, DuBose JJ. Zones matter: hemodynamic effects of zone 1 vs zone 3 REBOA placement in trauma patients. <i>Injury.</i> 2019;50(4):855–858."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Brenner M, Bulger EM, Perina DG, et al. Joint statement from the American College of Surgeons Committee on Trauma and the American College of Emergency Physicians regarding the clinical use of resuscitative endovascular balloon occlusion of the aorta. <i>Trauma Surg Acute Care Open.</i> 2018;3(1):e000154."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Beyer CA, Johnson MA, Galante JM, DuBose JJ. Zones matter: hemodynamic effects of zone 1 vs zone 3 REBOA placement in trauma patients. <i>Injury.</i> 2019;50(4):855-858."
+                  "html": "Your center's REBOA credentialing policy, catheter system, and instructions for use. Balloon volumes, sheath sizes, and insertion-depth markings are device-specific — confirm against the kit you actually stock."
                 }
               ]
             }
@@ -7280,8 +8368,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
