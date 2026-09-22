@@ -1,0 +1,82 @@
+<svg viewBox="0 0 520 510" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Proximal humerus intraosseous access in two steps. First, internal rotation: the arm is adducted with the palm on the umbilicus and the elbow pointing backward, which swings the greater tubercle forward into the operator's target line. Second, the angle: the needle enters the most prominent point of the greater tubercle, one to two centimeters above the surgical neck, and is driven at forty-five degrees toward the elbow. A needle driven straight in instead travels medially through the humeral head into the glenohumeral joint space.">
+<style>
+  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}
+  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}
+  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}
+  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+  .bone{fill:#182030;stroke:#8a9ab5;stroke-width:2}
+  .ld{stroke:#4a5670;stroke-width:1}
+  .dash{stroke-dasharray:4 4;fill:none}
+</style>
+
+<text class="t" x="0" y="17">Rotation first, then angle</text>
+<text class="c" x="0" y="34">Both decisions happen before the drill comes out.</text>
+
+<!-- ============ 1. INTERNAL ROTATION ============ -->
+<text class="h" x="0" y="66" style="fill:#00d4aa">1 — INTERNALLY ROTATE THE ARM</text>
+
+<circle cx="74" cy="92" r="13" fill="#182030" stroke="#8a9ab5" stroke-width="2"></circle>
+<rect x="38" y="108" width="72" height="88" rx="14" fill="#182030" stroke="#8a9ab5" stroke-width="2"></rect>
+<polyline class="w" stroke="#00d4aa" points="108,124 138,158 92,172"></polyline>
+<circle cx="92" cy="172" r="7" fill="#00d4aa"></circle>
+<text class="c" x="122" y="178" style="fill:#00d4aa">hand</text>
+<path class="w dash" stroke="#00d4aa" d="M118,108 A22,22 0 0 1 132,132"></path>
+<polygon points="132,134 126,124 138,125" fill="#00d4aa"></polygon>
+
+<text class="s" x="170" y="118">Arm tight to the chest.</text>
+<text class="s" x="170" y="136">Palm on the umbilicus,</text>
+<text class="s" x="170" y="154">elbow pointing backward.</text>
+<text class="s" x="170" y="178" style="fill:#00d4aa">This is what swings the greater</text>
+<text class="s" x="170" y="196" style="fill:#00d4aa">tubercle forward, into your line.</text>
+
+<line x1="0" y1="218" x2="512" y2="218" stroke="#4a5670" stroke-width="1" opacity="0.4"></line>
+
+<!-- ============ 2. THE ANGLE ============ -->
+<text class="h" x="0" y="248" style="fill:#00d4aa">2 — DRIVE 45° TOWARD THE ELBOW</text>
+
+<!-- glenoid fossa (the joint the wrong angle finds) -->
+<path class="w" stroke="#e84c4c" opacity="0.55" d="M106,300 Q92,340 106,380"></path>
+<text class="s" x="4" y="336" style="fill:#e84c4c">JOINT</text>
+<line class="ld" x1="52" y1="332" x2="96" y2="338" stroke="#e84c4c" opacity="0.55"></line>
+
+<!-- proximal humerus: head, groove, greater tubercle, surgical neck, shaft -->
+<path class="bone" d="M150,496 L150,404 Q150,392 156,386 Q124,376 120,340 Q116,300 152,294
+ Q180,290 186,314 Q190,323 197,317 Q217,312 221,340 Q225,368 204,380 Q192,386 190,404 L190,496"></path>
+
+<!-- target point: most prominent part of the greater tubercle -->
+<circle cx="219" cy="340" r="5.5" fill="#00d4aa"></circle>
+
+<!-- CORRECT: 45 degrees caudad -->
+<line class="w" stroke="#00d4aa" x1="300" y1="258" x2="232" y2="326"></line>
+<polygon points="224,334 230,320 238,328" fill="#00d4aa"></polygon>
+<rect x="296" y="246" width="22" height="12" rx="2" transform="rotate(45 307 252)" fill="#00d4aa"></rect>
+<text class="s" x="322" y="258" style="fill:#00d4aa">45° CAUDAD</text>
+<text class="c" x="322" y="274" style="fill:#00d4aa">toward the elbow</text>
+<!-- continuation into the marrow -->
+<line class="w dash" stroke="#00d4aa" x1="212" y1="347" x2="184" y2="375" opacity="0.55"></line>
+
+<!-- greater tubercle label -->
+<line class="ld" x1="296" y1="322" x2="230" y2="336"></line>
+<text class="s" x="302" y="318" style="fill:#e8edf5">GREATER TUBERCLE</text>
+<text class="c" x="302" y="334">the “golf ball on the tee”</text>
+<text class="c" x="302" y="348">1–2 cm above the neck</text>
+
+<!-- WRONG: straight in -->
+<line class="w" stroke="#e84c4c" x1="348" y1="382" x2="244" y2="360"></line>
+<polygon points="236,358 250,354 248,365" fill="#e84c4c"></polygon>
+<line class="w dash" stroke="#e84c4c" x1="230" y1="354" x2="112" y2="342" opacity="0.5"></line>
+<text class="s" x="354" y="386" style="fill:#e84c4c">STRAIGHT IN</text>
+<text class="c" x="354" y="402" style="fill:#e84c4c">into the joint space</text>
+
+<!-- surgical neck -->
+<line class="ld" x1="104" y1="396" x2="148" y2="398"></line>
+<text class="s" x="0" y="400">SURGICAL NECK</text>
+<text class="c" x="0" y="418">the narrowing you</text>
+<text class="c" x="0" y="432">must actually feel</text>
+
+<!-- needle length -->
+<text class="s" x="230" y="452" style="fill:#f59e0b">45 mm needle. Always, in an adult.</text>
+<text class="c" x="230" y="470" style="fill:#f59e0b">A 25 mm needle here is the classic</text>
+<text class="c" x="230" y="484" style="fill:#f59e0b">quiet failure — it never reaches marrow.</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg viewBox="0 0 520 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Proximal tibial intraosseous landmarks, anterior view of the right knee. The tibial tuberosity is the reference bump. The adult target lies two centimeters medial and one centimeter proximal to it, above the tuberosity. The pediatric target lies one centimeter medial and one to two centimeters distal to it, below the tuberosity, so that it stays clear of the open proximal tibial growth plate. The two targets sit on opposite sides of the tuberosity.">
+<style>
+  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}
+  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}
+  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}
+  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+  .bone{fill:#182030;stroke:#8a9ab5;stroke-width:2}
+  .ld{stroke:#4a5670;stroke-width:1}
+  .dash{stroke-dasharray:4 4;fill:none}
+</style>
+
+<text class="t" x="0" y="17">The tibial targets point opposite ways</text>
+<text class="c" x="0" y="34">Adult goes above the tuberosity. Child goes below it. Anterior view, right knee.</text>
+
+<!-- distal femur + patella, faint, for orientation -->
+<path class="w" stroke="#8a9ab5" opacity="0.35" d="M166,60 L166,104 Q166,134 198,138 L252,138 Q284,134 284,104 L284,60"></path>
+<ellipse cx="225" cy="106" rx="24" ry="29" fill="none" stroke="#8a9ab5" stroke-width="1.6" opacity="0.35"></ellipse>
+<text class="c" x="296" y="110" opacity="0.7">patella</text>
+
+<!-- tibia -->
+<path class="bone" d="M160,150 L290,150 Q282,188 274,222 L268,340 L182,340 L176,222 Q168,188 160,150 Z"></path>
+
+<!-- proximal tibial physis -->
+<rect x="164" y="166" width="122" height="20" fill="#f59e0b" opacity="0.14"></rect>
+<line class="dash" stroke="#f59e0b" x1="164" y1="166" x2="286" y2="166" stroke-width="1.6"></line>
+<line class="dash" stroke="#f59e0b" x1="166" y1="186" x2="284" y2="186" stroke-width="1.6"></line>
+<!-- the apophysis tongue running down to the tuberosity -->
+<line class="ld" x1="326" y1="176" x2="290" y2="176" stroke="#f59e0b" opacity="0.7"></line>
+
+<!-- tibial tuberosity -->
+<ellipse class="bone" cx="225" cy="208" rx="21" ry="14"></ellipse>
+<ellipse cx="225" cy="208" rx="12" ry="7" fill="none" stroke="#8a9ab5" stroke-width="1" opacity="0.5"></ellipse>
+<line class="ld" x1="326" y1="264" x2="249" y2="211"></line>
+
+<!-- ADULT target -->
+<circle cx="189" cy="194" r="6" fill="#00d4aa"></circle>
+<line class="ld" x1="100" y1="196" x2="181" y2="194" stroke="#00d4aa" opacity="0.7"></line>
+<text class="s" x="0" y="190" style="fill:#00d4aa">ADULT</text>
+<text class="c" x="0" y="206">2 cm medial,</text>
+<text class="c" x="0" y="220" style="fill:#00d4aa">1 cm PROXIMAL ↑</text>
+
+<!-- PEDIATRIC target -->
+<circle cx="207" cy="243" r="6" fill="#a78bfa"></circle>
+<line class="ld" x1="110" y1="266" x2="200" y2="246" stroke="#a78bfa" opacity="0.7"></line>
+<text class="s" x="0" y="260" style="fill:#a78bfa">CHILD</text>
+<text class="c" x="0" y="276">1 cm medial,</text>
+<text class="c" x="0" y="290" style="fill:#a78bfa">1–2 cm DISTAL ↓</text>
+
+<!-- right-hand labels -->
+<text class="s" x="330" y="172" style="fill:#f59e0b">GROWTH PLATE</text>
+<text class="c" x="330" y="188">open in children.</text>
+<text class="c" x="330" y="202" style="fill:#f59e0b">This is the whole</text>
+<text class="c" x="330" y="216" style="fill:#f59e0b">reason the pediatric</text>
+<text class="c" x="330" y="230" style="fill:#f59e0b">landmark goes DOWN.</text>
+
+<text class="s" x="330" y="268">TIBIAL TUBEROSITY</text>
+<text class="c" x="330" y="284">find it, then move</text>
+<text class="c" x="330" y="298">off it — never into it</text>
+
+<!-- scale -->
+<line x1="330" y1="330" x2="348" y2="330" stroke="#8a9ab5" stroke-width="1.6"></line>
+<line x1="330" y1="326" x2="330" y2="334" stroke="#8a9ab5" stroke-width="1.6"></line>
+<line x1="348" y1="326" x2="348" y2="334" stroke="#8a9ab5" stroke-width="1.6"></line>
+<text class="c" x="356" y="334">1 cm</text>
+
+<!-- medial / lateral orientation -->
+<text class="c" x="112" y="143">← MEDIAL</text>
+<text class="c" x="298" y="143">LATERAL →</text>
+
+<text class="s" x="0" y="372" style="fill:#00d4aa">90° — straight in, perpendicular to the flat surface.</text>
+<text class="c" x="0" y="390">Unlike the humerus. Angling drags the needle out the thin side wall.</text>
+<text class="c" x="0" y="414">Support the knee on a rolled towel — a leg that bounces absorbs the drill.</text>
+</svg>

@@ -1,0 +1,101 @@
+<svg viewBox="0 0 520 526" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The three REBOA aortic zones. Zone 1 runs from the origin of the left subclavian artery down to the celiac axis and is used for intra-abdominal bleeding or peri-arrest, with a target occlusion time of thirty minutes or less, measured externally to the sternal notch at roughly forty-five to fifty centimeters. Zone 2 runs from the celiac axis to the lowest renal artery and is a no-fly zone, because a balloon there crosses the celiac, superior mesenteric and renal origins without the benefit of proximal control. Zone 3 runs from the lowest renal artery to the aortic bifurcation and is used for pelvic or junctional bleeding and postpartum hemorrhage, tolerating up to sixty minutes, measured externally to the umbilicus at roughly twenty-seven to thirty centimeters.">
+<style>
+  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}
+  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}
+  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}
+  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+  .z{font-family:Syne,sans-serif;font-weight:800;font-size:30px}
+  .ld{stroke:#4a5670;stroke-width:1}
+  .dash{stroke-dasharray:4 4;fill:none}
+  .vessel{fill:none;stroke:#8a9ab5;stroke-linecap:round}
+</style>
+
+<text class="t" x="0" y="17">Where the balloon goes</text>
+<text class="c" x="0" y="34">Three zones. One of them is never a target.</text>
+
+<!-- zone bands -->
+<rect x="96" y="62" width="154" height="138" fill="#00d4aa" opacity="0.10"></rect>
+<rect x="96" y="200" width="154" height="58" fill="#e84c4c" opacity="0.16"></rect>
+<rect x="96" y="258" width="154" height="132" fill="#2563eb" opacity="0.11"></rect>
+<!-- zone 2 hatching -->
+<g stroke="#e84c4c" stroke-width="1" opacity="0.35">
+  <line x1="96" y1="230" x2="126" y2="200"></line><line x1="96" y1="258" x2="154" y2="200"></line>
+  <line x1="124" y1="258" x2="182" y2="200"></line><line x1="152" y1="258" x2="210" y2="200"></line>
+  <line x1="180" y1="258" x2="238" y2="200"></line><line x1="208" y1="258" x2="250" y2="216"></line>
+  <line x1="236" y1="258" x2="250" y2="244"></line>
+</g>
+<line class="dash" stroke="#8a9ab5" x1="96" y1="200" x2="250" y2="200" stroke-width="1.4" opacity="0.7"></line>
+<line class="dash" stroke="#8a9ab5" x1="96" y1="258" x2="250" y2="258" stroke-width="1.4" opacity="0.7"></line>
+<line class="dash" stroke="#8a9ab5" x1="96" y1="390" x2="250" y2="390" stroke-width="1.4" opacity="0.7"></line>
+
+<!-- aorta: arch, descending, bifurcation -->
+<path class="vessel" stroke-width="24" d="M150,390 L150,96 Q150,56 186,56 Q220,56 220,92 L220,118"></path>
+<path class="vessel" stroke-width="16" d="M150,390 L112,450"></path>
+<path class="vessel" stroke-width="16" d="M150,390 L188,450"></path>
+<!-- arch branches -->
+<line class="vessel" stroke-width="9" x1="158" y1="58" x2="138" y2="22"></line>
+<!-- visceral branches -->
+<line class="vessel" stroke-width="8" x1="150" y1="200" x2="104" y2="194"></line>
+<line class="vessel" stroke-width="8" x1="150" y1="222" x2="104" y2="222"></line>
+<line class="vessel" stroke-width="8" x1="150" y1="250" x2="104" y2="249"></line>
+<line class="vessel" stroke-width="8" x1="150" y1="250" x2="194" y2="250"></line>
+
+<!-- diaphragm -->
+<line class="dash" stroke="#8a9ab5" x1="94" y1="180" x2="250" y2="180" stroke-width="1.2" opacity="0.45"></line>
+
+<!-- zone numerals -->
+<text class="z" x="228" y="150" fill="#00d4aa" opacity="0.8">1</text>
+<text class="z" x="228" y="242" fill="#e84c4c" opacity="0.85">2</text>
+<text class="z" x="228" y="338" fill="#2563eb" opacity="0.8">3</text>
+
+<!-- balloons -->
+<ellipse cx="150" cy="150" rx="25" ry="18" fill="#00d4aa" opacity="0.32"></ellipse>
+<ellipse cx="150" cy="150" rx="25" ry="18" fill="none" stroke="#00d4aa" stroke-width="2.2"></ellipse>
+<ellipse class="dash" cx="150" cy="322" rx="22" ry="16" fill="none" stroke="#2563eb" stroke-width="2"></ellipse>
+
+<!-- catheter from the femoral access -->
+<path class="w dash" stroke="#00d4aa" d="M176,452 L150,394 L150,170" opacity="0.9"></path>
+<text class="c" x="196" y="462" style="fill:#00d4aa">common femoral access</text>
+
+<!-- left-hand anatomy labels -->
+<text class="c" x="0" y="62">L SUBCLAVIAN</text>
+<text class="c" x="0" y="76">top of Zone 1</text>
+<line class="ld" x1="82" y1="58" x2="144" y2="47"></line>
+<text class="c" x="0" y="176">DIAPHRAGM</text>
+<line class="ld" x1="63" y1="173" x2="92" y2="179"></line>
+<text class="c" x="42" y="198">CELIAC</text>
+<line class="ld" x1="85" y1="195" x2="101" y2="194"></line>
+<text class="c" x="55" y="226">SMA</text>
+<line class="ld" x1="79" y1="223" x2="101" y2="222"></line>
+<text class="c" x="42" y="254">RENALS</text>
+<line class="ld" x1="85" y1="251" x2="101" y2="249"></line>
+<text class="c" x="0" y="396">BIFURCATION</text>
+<line class="ld" x1="76" y1="393" x2="138" y2="390"></line>
+
+<!-- right-hand zone detail -->
+<text class="s" x="300" y="96" style="fill:#00d4aa">ZONE 1 — SUPRACELIAC</text>
+<text class="c" x="300" y="112">Intra-abdominal bleeding</text>
+<text class="c" x="300" y="126">or peri-arrest.</text>
+<text class="c" x="300" y="144" style="fill:#00d4aa">≤30 min — aim for 15–20</text>
+<text class="c" x="300" y="158" style="fill:#00d4aa">measure to the sternal notch</text>
+<text class="c" x="300" y="172" style="fill:#00d4aa">≈45–50 cm · 8–10 mL</text>
+
+<text class="s" x="300" y="206" style="fill:#e84c4c">ZONE 2 — NO-FLY</text>
+<text class="c" x="300" y="222" style="fill:#e84c4c">Sits across the celiac,</text>
+<text class="c" x="300" y="236" style="fill:#e84c4c">SMA and renal origins</text>
+<text class="c" x="300" y="250" style="fill:#e84c4c">with none of the proximal</text>
+<text class="c" x="300" y="264" style="fill:#e84c4c">benefit. Never a target.</text>
+
+<text class="s" x="300" y="300" style="fill:#2563eb">ZONE 3 — INFRARENAL</text>
+<text class="c" x="300" y="316">Pelvic or junctional</text>
+<text class="c" x="300" y="330">bleeding. Also PPH.</text>
+<text class="c" x="300" y="348" style="fill:#2563eb">Up to 60 min — kidneys,</text>
+<text class="c" x="300" y="362" style="fill:#2563eb">gut and cord all spared</text>
+<text class="c" x="300" y="376" style="fill:#2563eb">measure to the umbilicus</text>
+<text class="c" x="300" y="390" style="fill:#2563eb">≈27–30 cm · 2–6 mL</text>
+
+<text class="s" x="0" y="486" style="fill:#f59e0b">Inflate with saline. Never air.</text>
+<text class="c" x="0" y="502">Stop at the least volume that occludes — the endpoint</text>
+<text class="c" x="0" y="516">is the pressure response, not the published volume.</text>
+</svg>
