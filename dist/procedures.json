@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T12:36:49.273Z",
+  "generatedAt": "2026-09-22T12:44:47.411Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1744,7 +1744,7 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Pneumothorax (simple, traumatic, or post-finger-thoracostomy definitive management)</li>\n      <li>Hemothorax</li>\n      <li>Traumatic hemopneumothorax</li>\n      <li>Empyema or complicated pleural effusion requiring drainage (non-emergent variant of the same technique)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Pneumothorax</b> — traumatic, tension (after immediate decompression), or a simple pneumothorax large enough or symptomatic enough to need drainage</li>\n      <li><b>Hemothorax</b> and traumatic hemopneumothorax</li>\n      <li><b>Any pneumothorax in a patient about to receive positive-pressure ventilation</b> or go to the operating room — a small pneumothorax that was tolerable breathing spontaneously can tension under a ventilator</li>\n      <li>Empyema or complicated parapneumonic effusion (a non-emergent variant of the same technique)</li>\n      <li>Definitive management after a finger thoracostomy or needle decompression — neither of those is an endpoint</li>\n</ul>"
             }
           ]
         },
@@ -1758,7 +1758,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>No absolute contraindications in a true emergent pneumothorax/hemothorax with hemodynamic compromise</li>\n      <li>Relative: coagulopathy (correct if time permits and patient is stable enough), diaphragmatic hernia at the intended site (imaging guidance preferred if not emergent), extensive pleural adhesions (may require alternate site or surgical approach)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None absolute</b> in a tension pneumothorax or hemothorax with hemodynamic compromise</li>\n      <li>Coagulopathy — relative; correct it if the patient is stable enough to wait, and prefer a smaller-bore tube</li>\n      <li><b>Suspected diaphragmatic hernia</b> at the intended site — abdominal contents in the chest will be entered instead. If the mechanism suggests it and the patient can wait, image first.</li>\n      <li>Dense pleural adhesions — may need an alternative site or a surgical approach</li>\n      <li><b>Skin infection over the site</b> — choose a different interspace</li>\n</ul>"
             }
           ]
         },
@@ -1772,13 +1772,43 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>2% chlorhexidine solution, sterile gauze, sterile drapes</li>\n      <li>Local anesthetic (if patient status allows)</li>\n      <li>Chest tube, 32–36 Fr for adult trauma/hemothorax indications</li>\n      <li>Two clamps/forceps, #10 scalpel</li>\n      <li>Kelly clamp (or equivalent) for blunt dissection</li>\n      <li>Suture for securing the tube</li>\n      <li>Pleural drainage system (e.g., Pleurovac)</li>\n      <li>Petroleum-based gauze, additional sterile gauze, pressure dressing supplies</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Tube.</b> Traditional teaching is <b>32–36 Fr</b> for traumatic hemothorax. Note this is genuinely contested — multiple trials comparing <b>14 Fr pigtail catheters</b> against large-bore tubes for traumatic hemothorax have found comparable drainage and failure rates with considerably less pain. Know which your institution and trauma service favour, and know that \"bigger drains blood better\" is no longer an unexamined truth.</li>\n      <li><b>#10 scalpel</b>, large <b>Kelly clamp</b>, and a second clamp for the tube tip</li>\n      <li><b>0 or 1-0 silk/nylon</b> on a cutting needle for securing</li>\n      <li><b>Drainage system</b> (three-chamber or digital), primed, with tubing long enough to reach</li>\n      <li><b>Local anaesthetic</b> — plenty of it. 20–30&nbsp;mL of lidocaine is not excessive for an awake patient; the periosteum and parietal pleura are the painful bits and are frequently under-infiltrated.</li>\n      <li>Chlorhexidine, full drapes, petroleum gauze, dressings, tape</li>\n      <li><b>Systemic analgesia on board before you start</b>, not requested afterwards</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Do not use a trocar",
+              "html": "Tubes supplied with a sharp internal trocar are still found on some trolleys. Passing a tube on a trocar converts a controlled blunt dissection into a blind stab and is the classic mechanism for lung, cardiac and intra-abdominal injury. <b>Blunt dissection and a finger, every time.</b> If the tube you have comes with a trocar, remove it and set it aside before you start."
+            }
+          ]
+        },
+        {
+          "id": "site",
+          "num": "04",
+          "color": "purple",
+          "title": "The Triangle of Safety",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Get the site right and most of the complications disappear"
+            },
+            {
+              "type": "box",
+              "color": "purple",
+              "html": "<p><b>Boundaries:</b></p>\n<ul>\n      <li><b>Anterior:</b> lateral border of pectoralis major</li>\n      <li><b>Posterior:</b> anterior border of latissimus dorsi</li>\n      <li><b>Inferior:</b> a horizontal line at the level of the nipple (roughly the 5th intercostal space)</li>\n      <li><b>Apex:</b> the axilla</li>\n</ul>\n<p><b>Why this triangle and not somewhere more convenient:</b> the chest wall is thinnest here, so dissection is shorter and less traumatic. Going <b>lower</b> risks the diaphragm and, beneath it, the liver on the right and the spleen on the left — and the diaphragm rises much higher than people expect, especially supine and in expiration. Going too far <b>posteriorly</b> puts the tube under the patient where it kinks and is agonising to lie on. Going too far <b>anteriorly and medially</b> approaches the internal mammary vessels.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Count from a landmark you can actually feel",
+              "html": "The nipple is an unreliable landmark in women, in the obese, and in anyone lying on their side. Count down from the <b>sternal angle</b> to the 2nd rib and work down, or use the <b>inframammary fold</b> with the breast tissue retracted superiorly. Placing a tube through breast tissue is painful, cosmetically poor, and easily avoided."
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
           "title": "Stepwise Technique",
           "tagline": null,
@@ -1789,112 +1819,175 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Position the patient supine or semi-recumbent with the arm raised over the head to expose the lateral chest wall."
+                  "title": "Position and mark",
+                  "html": "Supine or semi-recumbent, with the arm abducted and the hand behind the head to open the axilla. Identify and <b>mark</b> the triangle of safety before you prep — landmarks are much harder to find through drapes. Confirm the side against the imaging and, out loud, against the examination findings."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Identify the insertion site — typically the 4th or 5th intercostal space, anterior to mid-axillary line, at or above the level of the nipple."
+                  "title": "Anaesthetise generously, and reach the two structures that hurt",
+                  "html": "Skin first, then infiltrate down onto the <b>rib periosteum</b>, then walk the needle over the superior edge of the rib and infiltrate the <b>parietal pleura</b>. Those two are the painful structures; a wheal in the skin alone leaves the patient feeling everything that matters. Aspirating air or blood as you enter the pleura also confirms your depth and your diagnosis before you cut."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Consider local anesthetic depending on patient status."
+                  "title": "Incise parallel to the rib, over the rib below your target space",
+                  "html": "A 2–3&nbsp;cm incision through skin and subcutaneous fat, sited over the rib <i>below</i> the interspace you intend to enter. That offset is what creates the short oblique tunnel — it makes the tract self-sealing when the tube comes out."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Sterilize widely with 2% chlorhexidine; create a large sterile field with sterile gauze; drape, exposing only the marked area."
+                  "title": "Blunt-dissect up and over the rib",
+                  "html": "Open the Kelly clamp to spread tissue, withdraw, reinsert, and repeat — tunnelling <b>superiorly</b> over the top of the rib. <b>Stay on the upper border.</b> The intercostal neurovascular bundle runs in the groove beneath each rib, so hugging the inferior margin of the space above is how you find the artery. Expect this to take longer than you want; this is the part that protects everything underneath."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Grasp the proximal free end of the chest tube (32–36 Fr) with a clamp/forceps and the distal tip with another — do not let instrument tips pass the end of the tube."
+                  "title": "Puncture the pleura deliberately",
+                  "html": "With the closed clamp tip on the superior edge of the rib, push through the parietal pleura with <b>controlled force</b>, then open the clamp to widen the hole. There is usually a distinct give, often a rush of air or blood. Control the depth with your hand — choke up on the instrument so it cannot plunge."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Make a 1.5–3.0 cm incision with a #10 scalpel, parallel to the rib, through subcutaneous tissue to the level of the intercostal muscles."
+                  "title": "Put a finger in. Every time.",
+                  "html": "Sweep a gloved finger through the tract into the pleural space. You are confirming you are <b>inside the chest and not in a false tract</b>, feeling for lung sliding under your fingertip, and sweeping for adhesions or — the reason this step exists — <b>abdominal contents</b> from an unrecognised diaphragmatic injury. This is the single step most often skipped to save seconds and most likely to cause a serious injury when it is."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Bluntly dissect superiorly with a Kelly clamp, tunneling up to the intercostal space directly above the rib — stay off the inferior rib margin to avoid the subcostal neurovascular bundle."
+                  "title": "Railroad the tube on the clamp",
+                  "html": "Clamp the tube tip and guide it along your finger through the tract. <b>Posteriorly and apically</b> is a reasonable default that drains both air and fluid in a supine trauma patient; strictly apical for air, basal for fluid, if you have the luxury of choosing. Advance until <b>every side hole is inside the pleural space</b> — the last hole sits on the tube's radiopaque line interruption, and leaving it outside gives a persistent air leak and subcutaneous emphysema. Typically 10–14&nbsp;cm at the skin in an adult; more in a large chest."
                 },
                 {
                   "num": "8",
                   "color": "teal",
-                  "title": "",
-                  "html": "At the intercostal space, position the clamp tips at the superior rib edge and apply firm, controlled pressure to pass through the parietal pleura (this may require significant force)."
+                  "title": "Secure it so it cannot move",
+                  "html": "A single heavy interrupted stitch closing the incision snugly around the tube, then <b>wrap the free ends around the tube several times and tie</b>. Add a second anchoring stitch. <b>Do not place a purse-string</b> — it is obsolete, it necroses the skin edge, and it leaves a puckered scar without improving the seal. Then tape the tubing to the chest wall in a loop so that a tug pulls on the tape rather than the tube."
                 },
                 {
                   "num": "9",
                   "color": "blue",
-                  "title": "",
-                  "html": "Insert a finger into the thoracic space to confirm thoracostomy and check for adhesions or unanticipated findings."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Insert the chest tube along the dissected tract, directing it apically/posteriorly for fluid or anteriorly/superiorly for pneumothorax evacuation."
-                },
-                {
-                  "num": "11",
-                  "color": "red",
-                  "title": "",
-                  "html": "Advance until the last side hole is within the pleural space, with the proximal hole at least 2 cm beyond the rib margin — skin-level marker typically 10–14 cm in an average adult."
-                },
-                {
-                  "num": "12",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Secure with mattress or interrupted sutures on both sides of the incision, snugging tissue around the tube for an air-tight seal; wrap suture around the tube twice and tie."
-                },
-                {
-                  "num": "13",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Connect to a sterile pleural drainage system at initial suction of –20 cm H2O; unclamp the distal end once connected."
-                },
-                {
-                  "num": "14",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Tape the tube to the patient's side; dress with petroleum-based gauze, additional sterile gauze, and pressure dressings."
-                },
-                {
-                  "num": "15",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Obtain an AP chest radiograph to confirm placement and monitor for complications (bleeding, hemothorax, air leak, organ perforation)."
-                },
-                {
-                  "num": "16",
-                  "color": "red",
-                  "title": "",
-                  "html": "Time removal based on the original indication; obtain a follow-up chest radiograph 12–24 hours after removal."
+                  "title": "Connect, look for swing and bubble, then film",
+                  "html": "Connect to the drainage system below the level of the chest. <b>Look immediately for respiratory swing</b> in the fluid column — that is your confirmation the tube communicates with the pleural space. Suction at around −20&nbsp;cm H<sub>2</sub>O if indicated. Then get a chest radiograph for position and re-expansion."
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reading",
+          "num": "06",
+          "color": "amber",
+          "title": "Reading the Drain",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "The bottle tells you what is happening inside the chest"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it means"
+              ],
+              "rows": [
+                [
+                  "<b>Swinging</b> (fluid column rises and falls with respiration)",
+                  "The tube is patent and communicating with the pleural space. This is the reassuring sign you want."
+                ],
+                [
+                  "<b>Bubbling on coughing only</b>",
+                  "A small air leak, resolving. Expected early after a pneumothorax."
+                ],
+                [
+                  "<b>Continuous bubbling</b>",
+                  "Ongoing air leak — from the lung, or from the system. <b>Check the system first:</b> a side hole outside the chest, a loose connection, or a cracked bottle are all commoner than a bronchopleural fistula."
+                ],
+                [
+                  "<b>No swing, no bubbling</b>",
+                  "Either the lung is fully re-expanded and the tube is redundant, <i>or</i> the tube is blocked, kinked, or clamped. Do not assume the happy explanation — check the tube and the film."
+                ],
+                [
+                  "<b>Sudden stop in a previously draining haemothorax</b>",
+                  "Clot occluding the tube. The blood is still accumulating; the drain has simply stopped telling you about it."
+                ],
+                [
+                  "<b>Brisk ongoing blood loss</b>",
+                  "Institutional thresholds vary, but figures around <b>1–1.5 L immediately</b>, or <b>&gt;200 mL/hr for 2–4 hours</b>, are widely used triggers for surgical consultation. Trend and physiology matter more than any single number."
+                ]
               ]
             },
             {
               "type": "alert",
               "color": "amber",
-              "title": "The finger check before tube passage is non-negotiable",
-              "html": "It's the difference between confirmed pleural entry and a blind pass into an unexpected structure — skipping it to save seconds is the step most likely to cause an organ injury."
+              "title": "Drain a large chronic effusion slowly",
+              "html": "Removing a very large, long-standing effusion rapidly risks <b>re-expansion pulmonary oedema</b> — uncommon but occasionally severe. A widely taught ceiling is around <b>1–1.5 L in one sitting</b>, then clamp and continue later, stopping earlier if the patient develops chest tightness or cough. This does <i>not</i> apply to acutely draining a haemothorax or tension pneumothorax, where you drain what needs draining."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "07",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Problem",
+                "Usual cause",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Cannot get through the pleura",
+                  "Not enough controlled force, or dissecting into the rib",
+                  "Reconfirm you are on the superior rib edge; commit with controlled pressure. Hesitation causes more trauma than a decisive pass"
+                ],
+                [
+                  "Subcutaneous emphysema after placement",
+                  "A side hole left outside the pleura, or tube dislodged",
+                  "Check the film and the insertion depth. Advance or replace — do not simply add dressings"
+                ],
+                [
+                  "Persistent large air leak",
+                  "System fault far more often than bronchopleural fistula",
+                  "Work from patient to bottle: insertion site, connections, tubing, bottle. Then consider a genuine lung injury"
+                ],
+                [
+                  "Tube drains nothing, film shows it in a fissure",
+                  "Malposition",
+                  "Common and often functionally adequate. Replace if it isn't draining what it needs to"
+                ],
+                [
+                  "Tube appears intraparenchymal on CT",
+                  "Passed into lung, usually through adhesions",
+                  "Surgical/thoracic input before manipulating it"
+                ],
+                [
+                  "Patient in severe pain despite the tube working",
+                  "Under-treated, very common",
+                  "The parietal pleura is exquisitely sensitive. Systemic analgesia, and consider regional blockade. Pain is not a sign of malfunction"
+                ],
+                [
+                  "Retained haemothorax on follow-up imaging",
+                  "Clotted blood the tube never evacuated",
+                  "Early surgical referral. Retained clot is a route to empyema and trapped lung; a second tube rarely fixes it"
+                ],
+                [
+                  "Tube falls out",
+                  "Inadequate securing",
+                  "Occlusive dressing immediately, reassess clinically, replace through a <b>fresh site</b> — never reinsert the old tube through the old hole"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "08",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -1902,13 +1995,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Neurovascular bundle injury from dissecting along the inferior rib margin instead of the superior edge</li>\n      <li>Organ perforation (lung, liver, spleen, diaphragm) from excessive force or poor trajectory control</li>\n      <li>Malposition — tube kinking, insufficient insertion depth, or a side hole left outside the pleural space</li>\n      <li>Inadequate seal at the skin leading to air leak or subcutaneous emphysema</li>\n      <li>Infection from break in sterile technique, particularly relevant in non-emergent placements</li>\n      <li>Failure to confirm with a finger sweep before tube passage — this is the step that catches adhesions and confirms true pleural entry</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Intercostal neurovascular injury</b> from dissecting along the inferior margin of the space</li>\n      <li><b>Organ injury</b> — lung, liver, spleen, diaphragm, and rarely heart or great vessels. Nearly always a consequence of a trocar, a site that was too low, or a skipped finger sweep</li>\n      <li><b>Placement into the abdomen</b> through an unrecognised diaphragmatic rupture</li>\n      <li><b>Malposition</b> — fissural, subcutaneous, intraparenchymal, or simply not in far enough</li>\n      <li><b>Re-expansion pulmonary oedema</b> after rapid drainage of a large chronic effusion</li>\n      <li><b>Empyema and retained haemothorax</b> as later consequences of incomplete drainage</li>\n      <li><b>Inadequate analgesia</b> — consistently under-recognised, and one of the procedures patients recall most unpleasantly</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "removal",
+          "num": "09",
+          "color": "teal",
+          "title": "Removal",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<ul>\n      <li><b>Criteria:</b> the original indication is resolved — no air leak, drainage volume acceptably low, lung re-expanded on film, and the patient off positive pressure or stable on it per your unit's practice.</li>\n      <li><b>Analgesia first.</b> Removal hurts.</li>\n      <li><b>Have the occlusive dressing prepared and in your hand before the tube moves.</b></li>\n      <li><b>Timing with the respiratory cycle:</b> remove at <b>end-inspiration or during a Valsalva</b>, when intrapleural pressure is least likely to draw air in. Practice varies; what matters is that the patient is not inhaling as the tube exits and the dressing goes on immediately.</li>\n      <li><b>One smooth, brisk pull</b>, then seal.</li>\n      <li><b>Follow-up film</b> a few hours after removal to exclude a recurrent pneumothorax.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "10",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -1916,13 +2023,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The finger check before tube insertion is non-negotiable — it's the difference between confirmed pleural entry and a blind pass into an unexpected structure.</p>\n<p>Direction after entry matters clinically: apical/posterior for air, basilar/posterior for fluid — but in an emergent trauma placement, adequate drainage of the acute threat takes priority over perfect directional placement.</p>\n<p>Firm, controlled pressure through the pleura is expected — hesitation here often causes more tissue trauma than a confident, controlled pass.</p>\n<p>Don't skip the post-placement film — it's the only way to confirm true intrathoracic position and catch a missed complication before it becomes clinically significant.</p>"
+              "html": "<p><b>The finger sweep is not optional.</b> It is what stands between a routine procedure and putting a tube through a diaphragm into a liver.</p>\n<p><b>Superior edge of the rib, always.</b> The bundle lives under the rib above.</p>\n<p><b>Anaesthetise the periosteum and the pleura</b>, not just the skin. Those are the structures that hurt.</p>\n<p><b>Swing confirms position better than the film does</b> — and you get it instantly, at the bedside.</p>\n<p><b>Continuous bubbling is a system fault until proven otherwise.</b> Work from the patient outward before diagnosing a lung injury.</p>\n<p><b>No trocar. No purse-string.</b> Both are legacy practice that cause harm.</p>\n<p><b>A tube that stops draining a haemothorax has not cured it.</b> Suspect clot, and re-image rather than relaxing.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "11",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -1931,8 +2038,16 @@
               "type": "sources",
               "items": [
                 {
-                  "tier": "REFERENCE",
-                  "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. ACS; 2018."
+                  "tier": "GUIDELINE",
+                  "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. Chicago: ACS; 2018."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Kulvatunyou N, Bauman ZM, Zein Edine SB, et al. The small (14 Fr) percutaneous catheter (P-CAT) versus large (28–32 Fr) open chest tube for traumatic hemothorax: a multicenter randomized clinical trial. <i>J Trauma Acute Care Surg.</i> 2021;91(5):809–813."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Havelock T, Teoh R, Laws D, Gleeson F; BTS Pleural Disease Guideline Group. Pleural procedures and thoracic ultrasound: British Thoracic Society pleural disease guideline. <i>Thorax.</i> 2010;65(Suppl 2):ii61–ii76."
                 },
                 {
                   "tier": "REFERENCE",
@@ -1978,7 +2093,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Clinically diagnosed tension pneumothorax: hypotension, absent/decreased breath sounds unilaterally, tracheal deviation (late finding), distended neck veins, respiratory distress in a trauma or critically ill patient</li>\n      <li>Diagnosis is clinical — do not delay for imaging in a decompensating patient with a compatible presentation</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Tension pneumothorax</b> — hypotension with unilateral absent or reduced breath sounds, respiratory distress, distended neck veins, and rising airway pressures in a ventilated patient</li>\n      <li><b>Traumatic cardiac arrest</b> — bilateral finger thoracostomies are a standard component of the algorithm, performed for every traumatic arrest regardless of examination findings</li>\n      <li>Any decompensating patient where tension physiology is a credible explanation and you cannot afford to wait for imaging</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Tracheal deviation is a late and unreliable sign",
+              "html": "Waiting for the textbook triad means waiting too long. Distended neck veins are frequently absent in a hypovolaemic trauma patient — there is no volume to distend them. In a ventilated patient the earliest reliable signal is often a <b>sudden rise in peak airway pressure with falling blood pressure</b>. Treat the physiology you have, not the sign you were taught to look for."
             }
           ]
         },
@@ -1992,7 +2113,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute in a true tension pneumothorax with hemodynamic compromise — the risk of inaction outweighs procedural risk</li>\n      <li>Misdiagnosis (simple pneumothorax without tension physiology) is the real risk to guard against, not a formal contraindication</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None</b> in a genuine tension pneumothorax with haemodynamic compromise. The risk of inaction dominates.</li>\n      <li>The real hazard is not a contraindication but a <b>misdiagnosis</b> — decompressing a chest that was never under tension, when the hypotension was haemorrhage, tamponade or a right mainstem intubation.</li>\n</ul>"
             }
           ]
         },
@@ -2006,25 +2127,43 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Needle decompression</b></p>\n<ul>\n      <li>Large-bore needle/angiocath (10-14 ga, adequate length for chest wall thickness — standard needles are frequently too short in larger patients)</li>\n</ul>"
+              "html": "<p><b>Needle decompression</b></p>\n<ul>\n      <li>Large-bore cannula, <b>and length is the whole problem</b>. A standard 5&nbsp;cm catheter fails to reach the pleural space in a substantial proportion of adults — chest wall thickness at the 2nd intercostal space commonly exceeds it. <b>An 8&nbsp;cm cannula</b> is what most current trauma guidance recommends. Check what is actually on your trolley.</li>\n      <li>A syringe, so you can aspirate rather than rely on hearing a hiss in a noisy resuscitation room</li>\n</ul>"
             },
             {
               "type": "box",
               "color": "blue",
-              "html": "<p><b>Finger thoracostomy</b></p>\n<ul>\n      <li>Scalpel, Kelly clamp or equivalent for blunt dissection</li>\n      <li>Gloves, basic sterile prep if time allows (do not delay for this in a decompensating patient)</li>\n</ul>"
+              "html": "<p><b>Finger thoracostomy</b></p>\n<ul>\n      <li><b>Scalpel and a large blunt clamp</b> — that is genuinely all you need</li>\n      <li>Gloves, and whatever prep the situation permits; in an arrest, do not trade time for sterility you cannot achieve anyway</li>\n      <li><b>A chest tube and drainage system ready to follow</b>, because this is not the endpoint</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "site",
+          "num": "04",
+          "color": "amber",
+          "title": "Choosing the Site",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "The classic teaching site is the one most likely to fail"
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>2nd intercostal space, midclavicular line</b> — the traditional landmark. Problems: the chest wall is <b>thickest</b> here, so a short cannula frequently does not reach the pleura; and going too medial approaches the <b>internal mammary vessels and the subclavian</b>.</p>\n<p><b>4th–5th intercostal space, anterior axillary line</b> — increasingly preferred, and the same site as a chest tube. The chest wall is <b>thinner</b>, the success rate is better, it is where you will be putting the tube anyway, and it is the natural site for a finger thoracostomy.</p>\n<p><b>Practical answer:</b> if you are going lateral, you may as well cut. Finger thoracostomy at the lateral site is more reliable than a needle at either site, and it does not depend on a cannula being long enough.</p>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
           "title": "Stepwise Technique",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "Needle decompression"
+              "html": "Needle decompression — fastest, least reliable"
             },
             {
               "type": "steps",
@@ -2032,85 +2171,146 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Identify the insertion site — traditionally 2nd intercostal space, midclavicular line, though 4th/5th intercostal space, anterior axillary line (same site as finger thoracostomy) is increasingly preferred given shorter chest wall distance and lower vascular injury risk."
+                  "title": "Insert over the top of the rib, syringe attached",
+                  "html": "Perpendicular to the chest wall, immediately <b>superior to the rib</b> to avoid the neurovascular bundle. Advance while aspirating — a sudden free draw of air is more dependable confirmation than trying to hear a hiss in a working resuscitation bay."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Insert the needle perpendicular to the chest wall, just above the rib margin, advancing until a rush of air or loss of resistance is felt."
+                  "title": "Advance the cannula, withdraw the needle, secure",
+                  "html": "Slide the plastic cannula fully in and remove the needle. Secure it, and accept that it <b>will</b> kink, clot or dislodge — a soft cannula in a moving chest wall has a short working life."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Listen/feel for the hallmark rush of air confirming tension physiology and successful decompression."
-                },
-                {
-                  "num": "4",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Secure the catheter in place; this is a temporizing measure — a formal chest tube (tube thoracostomy) is required promptly after."
+                  "title": "Treat success as temporary and move on",
+                  "html": "Improvement buys minutes. Arrange the definitive tube immediately — and if there was no improvement, do not conclude the diagnosis was wrong until you have decompressed properly with a finger."
                 }
               ]
             },
             {
               "type": "tagline",
-              "html": "Finger thoracostomy"
+              "html": "Finger thoracostomy — slower by seconds, far more reliable"
             },
             {
               "type": "steps",
               "steps": [
                 {
+                  "num": "4",
+                  "color": "blue",
+                  "title": "Incise in the triangle of safety",
+                  "html": "Same site as a chest tube: 4th–5th intercostal space, anterior to the mid-axillary line, arm abducted. A 3&nbsp;cm incision over the rib below your target space, parallel to the rib."
+                },
+                {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Identify the same site as tube thoracostomy — 4th or 5th intercostal space, anterior to mid-axillary line."
+                  "title": "Blunt-dissect up and over the rib, then through the pleura",
+                  "html": "Spread with the clamp, tunnelling <b>superiorly</b> over the top of the rib, and push through the parietal pleura with deliberate, controlled force. Expect a rush of air under tension — though absence of a dramatic hiss does not mean you are in the wrong place."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Make an incision through skin and subcutaneous tissue with a scalpel."
+                  "title": "Put your finger in and sweep",
+                  "html": "Confirm you are in the pleural space, feel for lung, and sweep for adhesions and for <b>abdominal contents</b> from an unrecognised diaphragmatic injury. In a traumatic arrest this sweep is also diagnostic — you may find a massive haemothorax that changes the entire resuscitation."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Bluntly dissect with a Kelly clamp to the pleura, staying superior to the rib to avoid the neurovascular bundle."
-                },
-                {
-                  "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Puncture through the pleura with the clamp or a finger, feeling for the rush of air."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Sweep a finger into the pleural space to confirm decompression and clear any adhesions."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Leave the tract open or pack loosely until a formal chest tube can be placed — this technique can serve as decompression alone or as the first step of a full tube thoracostomy."
+                  "title": "Leave it open, and follow with a tube",
+                  "html": "In a ventilated patient the open thoracostomy continues to decompress, and many services deliberately leave it open with a simple dressing during transfer rather than tubing immediately. In a <b>spontaneously breathing</b> patient an open hole can entrain air — place the tube promptly."
                 }
               ]
             },
             {
               "type": "alert",
+              "color": "amber",
+              "title": "In traumatic arrest, do both sides",
+              "html": "Bilateral finger thoracostomies are performed in traumatic cardiac arrest <b>without waiting for examination findings</b>, alongside haemorrhage control and volume. Auscultation is unreliable during CPR, and a unilateral decision based on breath sounds in that setting is a guess."
+            }
+          ]
+        },
+        {
+          "id": "confirm",
+          "num": "06",
+          "color": "teal",
+          "title": "Did It Work?",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<ul>\n      <li><b>Haemodynamic improvement</b> — blood pressure rising within a minute or two is the most meaningful endpoint</li>\n      <li><b>Falling peak airway pressures</b> in a ventilated patient</li>\n      <li><b>Free rush of air</b> on entry — supportive, but its absence proves nothing</li>\n      <li><b>Return of lung sliding on POCUS</b> over the decompressed side</li>\n      <li><b>Your finger feeling lung</b> — the most direct confirmation available</li>\n</ul>"
+            },
+            {
+              "type": "alert",
               "color": "red",
-              "title": "This is a clinical diagnosis and a clinical decompression",
-              "html": "Don't wait for a chest X-ray in a patient who is actively decompensating — a needle that's too short to reach the pleural space is a common, preventable cause of a failed decompression in larger patients."
+              "title": "No improvement does not mean no tension pneumothorax",
+              "html": "It commonly means the needle was too short, kinked, blocked, or in the wrong place. Before you discard the diagnosis, <b>decompress properly with a finger</b>. And if a correctly performed bilateral finger thoracostomy genuinely changes nothing, the diagnosis was something else — go back to haemorrhage, tamponade, and the rest of the arrest algorithm."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "07",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What happens",
+                "Usual cause",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "No air, no improvement after needle",
+                  "Cannula too short for the chest wall — the commonest failure",
+                  "Go lateral and use a finger. Do not repeat the same short needle at the same site"
+                ],
+                [
+                  "Initial improvement, then deterioration",
+                  "Cannula kinked, clotted or dislodged",
+                  "Expected behaviour for a needle. Convert to finger thoracostomy and a tube"
+                ],
+                [
+                  "Rush of air but no haemodynamic change",
+                  "Pneumothorax present but not the cause of shock",
+                  "Look elsewhere — haemorrhage, tamponade, or a second pneumothorax on the other side"
+                ],
+                [
+                  "Finger finds bowel or liver",
+                  "Diaphragmatic injury; you are in the abdomen",
+                  "Stop. Do not place a tube. Immediate surgical involvement"
+                ],
+                [
+                  "Finger finds a large volume of blood",
+                  "Massive haemothorax",
+                  "This is now a haemorrhage problem. Tube, activate transfusion, surgical referral against thoracotomy thresholds"
+                ],
+                [
+                  "Bleeding from the incision",
+                  "Intercostal vessel — dissected too close to the inferior rib margin",
+                  "Pressure, then a tube through the tract; may need surgical control"
+                ],
+                [
+                  "Spontaneously breathing patient worsens after an open thoracostomy",
+                  "Air entrained through the open wound",
+                  "Occlusive dressing and place the definitive tube now"
+                ],
+                [
+                  "Nothing found on either side in traumatic arrest",
+                  "Tension pneumothorax was not the cause",
+                  "Correct — you have excluded a reversible cause in seconds. Continue the algorithm"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "08",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -2118,27 +2318,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Needle too short to reach the pleural space in patients with a thick chest wall — a common cause of failed decompression</li>\n      <li>Vascular or lung injury from an overly medial or poorly angled needle insertion</li>\n      <li>False negative (no rush of air) does not rule out tension pneumothorax — reassess clinically and consider finger thoracostomy or repeat attempt at an alternate site</li>\n      <li>Needle decompression alone is temporizing only — failure to follow with a formal chest tube risks recurrence</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Failed decompression from an inadequate needle</b> — the dominant failure mode, and entirely a matter of equipment and site selection</li>\n      <li><b>Lung laceration</b> from a needle inserted into a chest that was not under tension</li>\n      <li><b>Vascular injury</b> — internal mammary or subclavian if too medial at the 2nd space; intercostal vessels if dissecting along the wrong rib margin</li>\n      <li><b>Entry into the abdomen</b> through an unrecognised diaphragmatic injury</li>\n      <li><b>Creating a pneumothorax</b> in a patient who did not have one</li>\n      <li><b>Treating decompression as definitive</b> — it never is</li>\n      <li><b>Infection</b> in the survivor, from a necessarily unsterile field</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "09",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Finger thoracostomy at the 4th/5th intercostal space, anterior axillary line site is increasingly favored over the classic 2nd intercostal space needle site — shorter distance to the pleura, more reliable decompression in larger patients.</p>\n<p>This is a clinical diagnosis and a clinical decompression — don't wait for a chest X-ray in a patient who is actively decompensating.</p>\n<p>Always follow decompression with a formal chest tube; neither needle decompression nor finger thoracostomy alone is definitive management.</p>"
+              "html": "<p><b>If you are going lateral, cut.</b> A finger is more reliable than any cannula, and you are already at the site the tube needs.</p>\n<p><b>Length is the whole argument for needles.</b> A 5&nbsp;cm cannula frequently does not reach the pleura in an adult chest; carry 8&nbsp;cm.</p>\n<p><b>Aspirate rather than listen.</b> A syringe gives you an answer in a room too noisy for a hiss.</p>\n<p><b>Tracheal deviation and distended neck veins are late and often absent</b> — especially in the hypovolaemic. Rising airway pressure with falling pressure is the earlier tell.</p>\n<p><b>Bilateral, in traumatic arrest, without debate.</b></p>\n<p><b>The finger sweep is diagnostic as well as therapeutic.</b> Blood, bowel or adhesions all change what happens next.</p>\n<p><b>Nothing here is definitive.</b> The tube always follows.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "10",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -2147,12 +2347,20 @@
               "type": "sources",
               "items": [
                 {
-                  "tier": "REFERENCE",
-                  "html": "Laan DV, Vu TD, Thiels CA, et al. Chest wall thickness and decompression failure: a systematic review and meta-analysis comparing anatomic locations in needle thoracostomy. <i>Injury.</i> 2016;47(4):797-804."
+                  "tier": "GUIDELINE",
+                  "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. Chicago: ACS; 2018 — includes the revision to an 8 cm cannula and the lateral site."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Lott C, Truhlář A, Alfonzo A, et al. European Resuscitation Council Guidelines 2021: Cardiac arrest in special circumstances. <i>Resuscitation.</i> 2021;161:152–219 — traumatic cardiac arrest algorithm."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Inaba K, Branco BC, Eckstein M, et al. Optimal positioning for emergent needle thoracostomy: a cadaver-based study. <i>J Trauma.</i> 2011;71(5):1099–1103."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. ACS; 2018."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019."
                 }
               ]
             }
@@ -2194,7 +2402,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Pericardial tamponade with hemodynamic compromise (Beck's triad: hypotension, distended neck veins, muffled heart sounds; or ultrasound-confirmed effusion with tamponade physiology)</li>\n      <li>Peri-arrest or arrest from suspected tamponade, particularly after penetrating chest trauma or in the setting of known pericardial effusion</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Cardiac tamponade with haemodynamic compromise</b> — hypotension, raised venous pressure, and echocardiographic tamponade physiology</li>\n      <li>Peri-arrest or arrest where tamponade is a credible reversible cause</li>\n      <li>Symptomatic effusion needing drainage in a controlled setting (a different, far less urgent version of the same procedure)</li>\n</ul>"
+            },
+            {
+              "type": "xref",
+              "html": "<b>Tamponade is an echocardiographic diagnosis, not a volume one.</b> A small effusion that accumulated fast can tamponade; a litre that collected over months may not. Look for <b>right atrial systolic collapse</b> (sensitive), <b>right ventricular diastolic collapse</b> (specific), a <b>plethoric non-collapsing IVC</b>, and exaggerated respiratory variation in inflow velocities. Beck's triad is present in a minority of cases and its absence excludes nothing."
             }
           ]
         },
@@ -2202,13 +2414,13 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Contraindications — and When to Do Something Else",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute in a hemodynamically unstable patient with confirmed or highly suspected tamponade</li>\n      <li>Traumatic tamponade with an available surgical team and OR access — consider proceeding directly to thoracotomy/sternotomy rather than needle pericardiocentesis, which is often temporizing and less definitive for traumatic hemopericardium</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None absolute</b> in an unstable patient with confirmed tamponade.</li>\n      <li><b>Traumatic haemopericardium with surgical capability available</b> — this is the important one. Blood in the pericardium after penetrating trauma <b>clots</b>, so a needle frequently drains little or nothing and the negative tap is falsely reassuring. If you have a surgeon and an operating room, the answer is <b>thoracotomy or sternotomy</b>; the needle is at best a bridge while that is mobilised.</li>\n      <li><b>Aortic dissection with haemopericardium</b> — relative, and genuinely dangerous. Decompressing can raise the blood pressure, re-establish flow through the false lumen, and precipitate catastrophic rupture. Drain only what restores a perfusing rhythm, and get to theatre.</li>\n      <li>Uncorrected severe coagulopathy — relative; correct alongside, not instead.</li>\n</ul>"
             }
           ]
         },
@@ -2222,13 +2434,31 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Long spinal needle (typically 18 ga, 15 cm) or dedicated pericardiocentesis kit</li>\n      <li>Ultrasound with cardiac probe (strongly preferred when time allows)</li>\n      <li>ECG monitoring/lead attached to the needle if using electrocardiographic guidance</li>\n      <li>Syringe, three-way stopcock, guidewire/catheter kit if converting to a pigtail drain</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Ultrasound with a phased-array cardiac probe</b> — this is the single item that changes the procedure's safety profile, and it should be considered standard rather than optional</li>\n      <li><b>Long needle</b>: 18 ga spinal needle (~9–15&nbsp;cm), or a dedicated pericardiocentesis kit</li>\n      <li><b>Guidewire, dilator and pigtail catheter</b> — reaccumulation is the norm, not the exception</li>\n      <li><b>Three-way stopcock</b> and a large syringe, plus a collection system</li>\n      <li><b>Agitated saline</b> — 10&nbsp;mL saline with a small air bubble, briskly exchanged between two syringes. This is how you confirm needle position (see below), and it costs nothing to prepare in advance.</li>\n      <li>Full monitoring, defibrillator to hand, and sterile prep/drapes</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "approach",
+          "num": "04",
+          "color": "purple",
+          "title": "Choosing the Window",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "With ultrasound, the subxiphoid route is often the wrong answer"
+            },
+            {
+              "type": "box",
+              "color": "purple",
+              "html": "<p><b>The rule with ultrasound is simple:</b> scan all the windows and puncture wherever the fluid is <b>largest, closest to the skin, and free of lung or liver in the path.</b> The needle follows the fluid, not a memorised landmark.</p>\n<ul>\n      <li><b>Apical</b> — frequently the best target. Needle enters just lateral to the apex beat, directed toward the right shoulder, running roughly parallel to the long axis of the heart. Risks the lingula and the left internal mammary if too medial.</li>\n      <li><b>Parasternal</b> — a short, direct route to an anterior effusion. Enter <b>immediately lateral to the sternal edge</b> to avoid the internal mammary artery, which runs about 3–5&nbsp;cm from the sternal border; a perpendicular puncture through the 5th intercostal space is short and often the safest of all when the fluid is anterior.</li>\n      <li><b>Subxiphoid</b> — the traditional blind landmark, and the right choice when there is no ultrasound or the chest is inaccessible. Enter just left and inferior to the xiphoid at about 45° to the skin, aiming toward the <b>left shoulder</b>. It has the <b>longest needle path</b> of the three and traverses the liver — which is why it is no longer the automatic first choice when imaging is available.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
           "title": "Stepwise Technique",
           "tagline": null,
@@ -2239,58 +2469,117 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Position the patient supine, torso elevated 30-45 degrees if tolerated (brings the effusion closer to the anterior chest wall)."
+                  "title": "Position and scan before you prep",
+                  "html": "Sit the patient up <b>30–45°</b> if tolerated — it pools the effusion dependently and brings it toward the anterior chest wall. Then scan subxiphoid, parasternal and apical and <b>choose your window deliberately</b>, noting depth to fluid and what lies in the path."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Identify the subxiphoid approach: insert the needle just left and inferior to the xiphoid process, at a 45-degree angle to the skin, aiming toward the left shoulder."
+                  "title": "Prep, drape, and anaesthetise the whole track",
+                  "html": "Full sterile technique if there is any time at all. Infiltrate generously down to and including the parietal pericardium in an awake patient."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Use ultrasound guidance if available to visualize the needle path directly into the effusion, avoiding the heart, lung, and liver."
+                  "title": "Advance under vision, aspirating continuously",
+                  "html": "Keep the needle tip in view — in-plane if your skill allows, otherwise watch for tissue movement and the tenting of the pericardium as you press against it. Aspirate the whole way in. Entry into the pericardial space is usually a distinct give followed by free return of fluid."
                 },
                 {
                   "num": "4",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Advance slowly while aspirating continuously; a sudden return of non-clotting blood or fluid confirms entry into the pericardial space."
+                  "color": "purple",
+                  "title": "Confirm with agitated saline before you dilate",
+                  "html": "<b>This is the step that prevents the disaster.</b> Inject a few millilitres of agitated saline down the needle while watching on ultrasound. Bubbles appearing <b>in the pericardial space, surrounding the heart</b> confirm correct position. Bubbles appearing <b>inside a cardiac chamber</b> mean you are in the heart — withdraw, do not dilate, and reassess. Never railroad a dilator over a wire whose position you have not confirmed."
                 },
                 {
                   "num": "5",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Aspirate as much fluid as needed to restore hemodynamics; even small volumes (50-100 mL) can produce significant improvement in tamponade physiology."
+                  "color": "blue",
+                  "title": "Aspirate to effect, not to dryness",
+                  "html": "Remove enough to restore perfusion — <b>often only 30–100&nbsp;mL transforms the haemodynamics</b>, because tamponade physiology sits on the steep part of the pericardial pressure-volume curve. Chasing complete drainage through a needle adds risk without adding benefit."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Consider leaving a pigtail catheter in place over a guidewire (Seldinger technique) if reaccumulation is anticipated before definitive surgical management."
+                  "title": "Leave a pigtail over a wire",
+                  "html": "Seldinger the catheter in and secure it. Reaccumulation is expected; a drain converts a procedure you would otherwise repeat under worse conditions into a monitored one. Send fluid for the studies the clinical context demands."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Reassess hemodynamics continuously; this is often temporizing — arrange definitive management (surgical drainage, thoracotomy) promptly."
+                  "title": "Re-scan, and keep the definitive plan moving",
+                  "html": "Confirm the effusion has reduced and the chambers are filling. Then continue arranging whatever actually fixes the cause — a surgical window, thoracotomy, or treatment of the underlying disease. Pericardiocentesis buys time; it rarely cures."
                 }
               ]
             },
             {
               "type": "alert",
               "color": "amber",
-              "title": "Small volumes can produce large hemodynamic improvement",
-              "html": "Don't chase complete drainage at the expense of safety — ultrasound guidance dramatically improves success and safety over blind landmark technique whenever the equipment and time allow."
+              "title": "Is this blood from the pericardium or from a ventricle?",
+              "html": "Two checks, neither perfect. <b>Pericardial blood is usually defibrinated and does not clot</b> in the syringe, whereas fresh intracardiac blood clots — useful, but unreliable with very recent bleeding. Comparing the aspirate's haematocrit with a venous sample is slower but more objective. <b>Agitated saline under ultrasound is better than either</b> and gives an answer in seconds, which is why it belongs in the routine rather than the troubleshooting list."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What happens",
+                "Usual cause",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Dry tap in suspected traumatic tamponade",
+                  "<b>Clotted haemopericardium</b> — the needle cannot drain clot",
+                  "A negative tap does <b>not</b> exclude tamponade after trauma. Escalate to surgical decompression"
+                ],
+                [
+                  "Agitated saline appears inside a chamber",
+                  "Needle is in the heart",
+                  "Withdraw slowly, re-scan, re-site. Do not dilate. Watch for a new or enlarging effusion"
+                ],
+                [
+                  "Ectopy or ST elevation as you advance",
+                  "Needle contacting myocardium",
+                  "Withdraw a few millimetres; the ectopy should settle. Redirect using the image rather than by feel"
+                ],
+                [
+                  "Blood aspirated that clots in the syringe",
+                  "Probably intracardiac",
+                  "Confirm with agitated saline before proceeding either way"
+                ],
+                [
+                  "Haemodynamics worsen after drainage",
+                  "RV puncture with ongoing bleeding, or <b>pericardial decompression syndrome</b>",
+                  "Re-scan immediately for a re-accumulating effusion. Support, and get surgical help — this can be catastrophic"
+                ],
+                [
+                  "Desaturation after the procedure",
+                  "Pneumothorax from the needle path",
+                  "POCUS for lung sliding; treat as needed"
+                ],
+                [
+                  "Effusion reaccumulates quickly",
+                  "Ongoing bleeding or ongoing production",
+                  "Expected. This is why a pigtail goes in. Escalate to definitive management"
+                ],
+                [
+                  "Cannot find a safe window at all",
+                  "Loculated or posterior effusion, or a hyperinflated chest",
+                  "Do not improvise a blind route. This is a surgical drainage problem"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -2298,27 +2587,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Cardiac chamber puncture/laceration, particularly the right ventricle</li>\n      <li>Coronary artery injury</li>\n      <li>Pneumothorax from inadvertent lung puncture</li>\n      <li>Arrhythmia from myocardial irritation — ECG-guided technique can help detect needle-myocardium contact (ST changes/ectopy) before injury occurs</li>\n      <li>Incomplete drainage or reaccumulation if not converted to a pigtail catheter</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Cardiac chamber puncture or laceration</b> — classically the right ventricle, which sits immediately anterior</li>\n      <li><b>Coronary artery laceration</b>, with the haemopericardium it causes</li>\n      <li><b>Pneumothorax</b>, and rarely <b>hepatic injury</b> via the subxiphoid route</li>\n      <li><b>Arrhythmia</b> from myocardial irritation</li>\n      <li><b>Pericardial decompression syndrome</b> — uncommon but well described: paradoxical ventricular dysfunction and pulmonary oedema after rapid drainage. An argument for draining to effect rather than to dryness</li>\n      <li><b>The falsely reassuring dry tap</b> in traumatic tamponade — arguably the most dangerous outcome of the whole procedure, because it ends the search</li>\n      <li><b>Delay to definitive management</b> while attention stays on the needle</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "08",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Ultrasound guidance dramatically improves safety and success compared to blind landmark technique — use it whenever the equipment and time allow.</p>\n<p>Small aspirated volumes can produce large hemodynamic improvement in tamponade — don't chase complete drainage at the expense of safety.</p>\n<p>In traumatic tamponade with surgical resources available, needle pericardiocentesis is often a bridge, not the definitive answer — keep the surgical team engaged in parallel.</p>"
+              "html": "<p><b>Puncture where the fluid is, not where the textbook says.</b> With ultrasound the apical or parasternal window is frequently shorter and safer than subxiphoid.</p>\n<p><b>Agitated saline before dilating.</b> Seconds to perform, and it is the difference between a drain in the pericardium and a dilator in a ventricle.</p>\n<p><b>Drain to effect.</b> Thirty to a hundred millilitres often restores the blood pressure; chasing dryness adds only risk.</p>\n<p><b>A dry tap after penetrating trauma means clot, not absence of tamponade.</b> Escalate rather than relax.</p>\n<p><b>Leave a pigtail.</b> Reaccumulation is the rule.</p>\n<p><b>Sit them up.</b> Thirty to forty-five degrees brings the effusion to the needle.</p>\n<p><b>If there is a surgeon and an operating room, a traumatic haemopericardium belongs to them</b> — you are buying minutes, not providing treatment.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "09",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -2327,12 +2616,20 @@
               "type": "sources",
               "items": [
                 {
+                  "tier": "GUIDELINE",
+                  "html": "Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. <i>Eur Heart J.</i> 2015;36(42):2921–2964."
+                },
+                {
                   "tier": "REFERENCE",
                   "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Pericardiocentesis chapter."
                 },
                 {
+                  "tier": "EVIDENCE",
+                  "html": "Tsang TS, Enriquez-Sarano M, Freeman WK, et al. Consecutive 1127 therapeutic echocardiographically guided pericardiocenteses: clinical profile, practice patterns, and outcomes. <i>Mayo Clin Proc.</i> 2002;77(5):429–436 — the series underpinning echo-guided practice."
+                },
+                {
                   "tier": "GUIDELINE",
-                  "html": "Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. <i>Eur Heart J.</i> 2015;36(42):2921-2964."
+                  "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. Chicago: ACS; 2018."
                 }
               ]
             }
@@ -2361,8 +2658,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2559,8 +2856,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-03-22",
+      "lastVerified": "2026-09-08",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "indications",
@@ -2789,8 +3086,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2969,8 +3266,8 @@
       "description": "Bridging unstable bradycardia to a definitive rhythm.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-03-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-03-21",
       "sections": [
         {
           "id": "indications",
@@ -3431,8 +3728,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3626,8 +3923,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3838,8 +4135,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4057,8 +4354,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4231,8 +4528,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4442,8 +4739,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4612,8 +4909,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4814,8 +5111,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5029,8 +5326,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5205,8 +5502,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5391,8 +5688,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5613,8 +5910,8 @@
       "description": "Proximal humerus, sternal, and tibial sites.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5839,8 +6136,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6007,8 +6304,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6193,8 +6490,8 @@
       "description": "Ratio-based transfusion sequencing and logistics.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6373,8 +6670,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6547,8 +6844,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6759,8 +7056,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
