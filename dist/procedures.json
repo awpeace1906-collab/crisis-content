@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T23:25:51.916Z",
+  "generatedAt": "2026-09-22T12:36:33.459Z",
   "categories": [
     {
       "id": "airway",
@@ -368,8 +368,8 @@
       "description": "Surgical, percutaneous, and needle techniques for CICO.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -568,6 +568,13 @@
                   "html": "Short insufflation, then a <b>markedly prolonged expiratory phase</b> — think in the region of 1:4 or longer. <b>Watch the chest actually come back down between breaths.</b> If it does not, stop insufflating. Stacking breaths into a chest that cannot empty is how this technique kills people."
                 }
               ]
+            },
+            {
+              "type": "figure",
+              "figureId": "why-needle-cricothyrotomy-depends-on-the-upper-airway",
+              "svg": "<svg viewBox=\"0 0 520 424\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Why needle cricothyrotomy depends on the upper airway. In the left panel the upper airway is partly patent, so gas insufflated through the narrow cannula can escape upward past the obstruction and the chest falls between breaths. In the right panel the obstruction is complete, gas enters through the cannula but cannot leave, intrathoracic pressure rises with every breath, and the result is barotrauma, pneumothorax and circulatory collapse.\">\n<style>\n  .b{fill:#182030;stroke:#4a5670;stroke-width:1.5}\n  .lbl{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:13px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n</style>\n<defs>\n  <marker id=\"in\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#2563eb\"></path></marker>\n  <marker id=\"out\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#00d4aa\"></path></marker>\n</defs>\n\n<text class=\"t\" x=\"0\" y=\"17\">A 14 ga cannula is not an exhalation route</text>\n<text class=\"c\" x=\"0\" y=\"34\">Gas goes in through the cannula. It has to come out somewhere else.</text>\n\n<!-- ============ LEFT PANEL: partial patency ============ -->\n<text class=\"lbl\" x=\"0\" y=\"66\" style=\"fill:#00d4aa\">PARTIAL PATENCY — works</text>\n\n<!-- upper airway tube -->\n<rect class=\"b\" x=\"56\" y=\"82\" width=\"34\" height=\"86\" rx=\"6\"></rect>\n<!-- partial obstruction -->\n<path d=\"M56,110 L74,122 L56,134 Z\" fill=\"#e84c4c\" opacity=\"0.5\"></path>\n<path d=\"M90,110 L72,122 L90,134 Z\" fill=\"#e84c4c\" opacity=\"0.5\"></path>\n<text class=\"s\" x=\"98\" y=\"120\">partial</text>\n<text class=\"s\" x=\"98\" y=\"134\">obstruction</text>\n<!-- trachea below -->\n<rect class=\"b\" x=\"56\" y=\"168\" width=\"34\" height=\"112\" rx=\"6\"></rect>\n<!-- cannula entering -->\n<line x1=\"150\" y1=\"196\" x2=\"92\" y2=\"184\" stroke=\"#2563eb\" stroke-width=\"3.4\" stroke-linecap=\"round\"></line>\n<text class=\"s\" x=\"118\" y=\"216\" style=\"fill:#2563eb\">cannula</text>\n<!-- gas in arrow -->\n<line x1=\"134\" y1=\"190\" x2=\"100\" y2=\"183\" stroke=\"#2563eb\" stroke-width=\"2.6\" marker-end=\"url(#in)\"></line>\n<!-- gas out arrow, up through the partly open airway -->\n<line x1=\"73\" y1=\"168\" x2=\"73\" y2=\"76\" stroke=\"#00d4aa\" stroke-width=\"2.6\" marker-end=\"url(#out)\"></line>\n<text class=\"s\" x=\"86\" y=\"100\" style=\"fill:#00d4aa\">gas escapes ↑</text>\n<!-- chest -->\n<ellipse cx=\"73\" cy=\"304\" rx=\"42\" ry=\"24\" fill=\"#182030\" stroke=\"#00d4aa\" stroke-width=\"1.8\"></ellipse>\n<text class=\"s\" x=\"40\" y=\"308\" style=\"fill:#00d4aa\">chest falls</text>\n<text class=\"s\" x=\"34\" y=\"348\" style=\"fill:#00d4aa\">Watch it come</text>\n<text class=\"s\" x=\"34\" y=\"362\" style=\"fill:#00d4aa\">back down.</text>\n\n<!-- divider -->\n<line x1=\"258\" y1=\"54\" x2=\"258\" y2=\"372\" stroke=\"#4a5670\" stroke-width=\"1\" opacity=\"0.45\"></line>\n\n<!-- ============ RIGHT PANEL: complete obstruction ============ -->\n<text class=\"lbl\" x=\"288\" y=\"66\" style=\"fill:#e84c4c\">COMPLETE OBSTRUCTION — kills</text>\n\n<rect class=\"b\" x=\"344\" y=\"82\" width=\"34\" height=\"86\" rx=\"6\"></rect>\n<!-- full obstruction block -->\n<rect x=\"344\" y=\"108\" width=\"34\" height=\"28\" fill=\"#e84c4c\" opacity=\"0.75\"></rect>\n<text class=\"s\" x=\"386\" y=\"120\">no way</text>\n<text class=\"s\" x=\"386\" y=\"134\">out</text>\n<rect class=\"b\" x=\"344\" y=\"168\" width=\"34\" height=\"112\" rx=\"6\"></rect>\n<!-- cannula -->\n<line x1=\"438\" y1=\"196\" x2=\"380\" y2=\"184\" stroke=\"#2563eb\" stroke-width=\"3.4\" stroke-linecap=\"round\"></line>\n<line x1=\"422\" y1=\"190\" x2=\"388\" y2=\"183\" stroke=\"#2563eb\" stroke-width=\"2.6\" marker-end=\"url(#in)\"></line>\n<text class=\"s\" x=\"406\" y=\"216\" style=\"fill:#2563eb\">cannula</text>\n<!-- blocked arrow -->\n<line x1=\"361\" y1=\"168\" x2=\"361\" y2=\"142\" stroke=\"#e84c4c\" stroke-width=\"2.6\"></line>\n<line x1=\"350\" y1=\"146\" x2=\"372\" y2=\"138\" stroke=\"#e84c4c\" stroke-width=\"2.6\"></line>\n<line x1=\"350\" y1=\"138\" x2=\"372\" y2=\"146\" stroke=\"#e84c4c\" stroke-width=\"2.6\"></line>\n<!-- over-inflated chest -->\n<ellipse cx=\"361\" cy=\"304\" rx=\"54\" ry=\"32\" fill=\"#e84c4c\" fill-opacity=\"0.16\" stroke=\"#e84c4c\" stroke-width=\"2.2\"></ellipse>\n<text class=\"s\" x=\"310\" y=\"300\" style=\"fill:#e84c4c\">pressure climbs</text>\n<text class=\"s\" x=\"310\" y=\"314\" style=\"fill:#e84c4c\">every breath</text>\n<text class=\"s\" x=\"288\" y=\"348\" style=\"fill:#e84c4c\">Barotrauma, pneumothorax,</text>\n<text class=\"s\" x=\"288\" y=\"362\" style=\"fill:#e84c4c\">circulatory collapse.</text>\n\n<line x1=\"0\" y1=\"376\" x2=\"512\" y2=\"376\" stroke=\"#4a5670\" stroke-width=\"1\" opacity=\"0.4\"></line>\n<text class=\"c\" x=\"0\" y=\"388\">In complete obstruction a needle technique is not a rescue.</text>\n<text class=\"c\" x=\"0\" y=\"402\">You need a cuffed surgical airway.</text>\n</svg>",
+              "alt": "Why needle cricothyrotomy depends on the upper airway. In the left panel the upper airway is partly patent, so gas insufflated through the narrow cannula can escape upward past the obstruction and the chest falls between breaths. In the right panel the obstruction is complete, gas enters through the cannula but cannot leave, intrathoracic pressure rises with every breath, and the result is barotrauma, pneumothorax and circulatory collapse.",
+              "caption": "If the chest does not come back down between insufflations, <b>stop</b>. Stacking breaths into a chest that cannot empty is how this technique kills people — and it is the reason a needle cricothyrotomy is a bridge, never the answer to a completely obstructed airway."
             },
             {
               "type": "alert",
@@ -1449,8 +1456,8 @@
       "description": "Wire-guided backup when fiberoptic/video fails.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -1561,6 +1568,13 @@
                   "html": "Withdraw the catheter, inflate the cuff, confirm with capnography and auscultation, secure the tube. Then apply a dressing and light pressure to the puncture site and <b>document that a transtracheal puncture was made</b> — someone will otherwise be puzzled by subcutaneous air on a later film."
                 }
               ]
+            },
+            {
+              "type": "figure",
+              "figureId": "retrograde-intubation-wire-direction-shown-as-a-vertical-sch",
+              "svg": "<svg viewBox=\"0 0 520 496\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Retrograde intubation wire direction, shown as a vertical schematic of the airway. The needle punctures the cricothyroid membrane and is angled cephalad, upward, so the wire travels up past the cricoid and thyroid cartilage, through the vocal cords, up the pharynx and out of the mouth where it is retrieved. A contrasting downward arrow marks the direction used by cricothyrotomy and percutaneous tracheostomy, which both angle caudally toward the carina.\">\n<style>\n  .col{fill:#182030;stroke:#4a5670;stroke-width:1.6}\n  .lbl{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:13.5px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .lead{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 3}\n</style>\n<defs>\n  <marker id=\"up\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"8\" orient=\"auto\">\n    <path d=\"M5,0 L10,10 L0,10 Z\" fill=\"#f59e0b\"></path>\n  </marker>\n  <marker id=\"dn\" markerWidth=\"10\" markerHeight=\"10\" refX=\"5\" refY=\"8\" orient=\"auto\">\n    <path d=\"M5,0 L10,10 L0,10 Z\" fill=\"#e84c4c\"></path>\n  </marker>\n</defs>\n\n<text class=\"t\" x=\"0\" y=\"17\">Cephalad — the wire goes up and out</text>\n\n<!-- airway column -->\n<rect class=\"col\" x=\"150\" y=\"54\" width=\"72\" height=\"376\" rx=\"10\"></rect>\n\n<!-- mouth -->\n<text class=\"lbl\" x=\"238\" y=\"70\">Mouth</text>\n<text class=\"s\" x=\"238\" y=\"86\">retrieve the wire here</text>\n<line class=\"lead\" x1=\"222\" y1=\"70\" x2=\"234\" y2=\"66\"></line>\n\n<!-- pharynx label -->\n<text class=\"s\" x=\"238\" y=\"130\">pharynx</text>\n<line class=\"lead\" x1=\"222\" y1=\"126\" x2=\"234\" y2=\"126\"></line>\n\n<!-- vocal cords -->\n<line x1=\"150\" y1=\"196\" x2=\"186\" y2=\"196\" stroke=\"#00d4aa\" stroke-width=\"5\" stroke-linecap=\"round\"></line>\n<line x1=\"192\" y1=\"196\" x2=\"222\" y2=\"196\" stroke=\"#00d4aa\" stroke-width=\"5\" stroke-linecap=\"round\"></line>\n<text class=\"lbl\" x=\"238\" y=\"192\" style=\"fill:#00d4aa\">Vocal cords</text>\n<text class=\"s\" x=\"238\" y=\"208\">wire passes through</text>\n<line class=\"lead\" x1=\"222\" y1=\"196\" x2=\"234\" y2=\"194\"></line>\n\n<!-- thyroid cartilage -->\n<rect x=\"130\" y=\"216\" width=\"14\" height=\"44\" rx=\"4\" fill=\"#182030\" stroke=\"#00d4aa\" stroke-width=\"1.8\"></rect>\n<text class=\"s\" x=\"34\" y=\"234\">thyroid</text>\n<text class=\"s\" x=\"34\" y=\"248\">cartilage</text>\n<line class=\"lead\" x1=\"128\" y1=\"238\" x2=\"104\" y2=\"240\"></line>\n\n<!-- cricothyroid membrane -->\n<rect x=\"128\" y=\"266\" width=\"18\" height=\"24\" rx=\"4\" fill=\"#e84c4c\" opacity=\"0.26\"></rect>\n<rect x=\"128\" y=\"266\" width=\"18\" height=\"24\" rx=\"4\" fill=\"none\" stroke=\"#e84c4c\" stroke-width=\"2\"></rect>\n<text class=\"lbl\" x=\"238\" y=\"272\" style=\"fill:#e84c4c\">Cricothyroid membrane</text>\n<text class=\"s\" x=\"238\" y=\"288\">puncture, angled UP</text>\n<line class=\"lead\" x1=\"148\" y1=\"278\" x2=\"234\" y2=\"276\"></line>\n\n<!-- cricoid -->\n<rect x=\"130\" y=\"298\" width=\"14\" height=\"26\" rx=\"4\" fill=\"#182030\" stroke=\"#00d4aa\" stroke-width=\"1.8\"></rect>\n<text class=\"s\" x=\"40\" y=\"316\">cricoid</text>\n<line class=\"lead\" x1=\"128\" y1=\"312\" x2=\"106\" y2=\"314\"></line>\n\n<!-- needle, angled cephalad into the membrane -->\n<line x1=\"92\" y1=\"318\" x2=\"140\" y2=\"280\" stroke=\"#f59e0b\" stroke-width=\"3.6\" stroke-linecap=\"round\"></line>\n<text class=\"s\" x=\"34\" y=\"342\" style=\"fill:#f59e0b\">needle ↗</text>\n\n<!-- THE WIRE: from membrane straight up and out of the mouth -->\n<line x1=\"186\" y1=\"278\" x2=\"186\" y2=\"44\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\" marker-end=\"url(#up)\"></line>\n<circle cx=\"186\" cy=\"278\" r=\"5\" fill=\"#f59e0b\"></circle>\n\n<!-- contrast: every other procedure goes down -->\n<line x1=\"204\" y1=\"330\" x2=\"204\" y2=\"412\" stroke=\"#e84c4c\" stroke-width=\"3\" stroke-dasharray=\"7 5\" marker-end=\"url(#dn)\"></line>\n<text class=\"s\" x=\"238\" y=\"356\" style=\"fill:#e84c4c\">cricothyrotomy &amp;</text>\n<text class=\"s\" x=\"238\" y=\"372\" style=\"fill:#e84c4c\">tracheostomy point</text>\n<text class=\"s\" x=\"238\" y=\"388\" style=\"fill:#e84c4c\">the other way ↓</text>\n\n<text class=\"s\" x=\"238\" y=\"424\">toward the carina</text>\n\n<!-- footer -->\n<line x1=\"0\" y1=\"444\" x2=\"512\" y2=\"444\" stroke=\"#4a5670\" stroke-width=\"1\" opacity=\"0.4\"></line>\n<text class=\"c\" x=\"0\" y=\"462\">Schematic, not anatomic proportions. Say the direction out loud</text>\n<text class=\"c\" x=\"0\" y=\"476\">before you puncture — caudad sends the wire toward the carina.</text>\n</svg>",
+              "alt": "Retrograde intubation wire direction, shown as a vertical schematic of the airway. The needle punctures the cricothyroid membrane and is angled cephalad, upward, so the wire travels up past the cricoid and thyroid cartilage, through the vocal cords, up the pharynx and out of the mouth where it is retrieved. A contrasting downward arrow marks the direction used by cricothyrotomy and percutaneous tracheostomy, which both angle caudally toward the carina.",
+              "caption": "The needle angles <b>cephalad</b> — the most commonly inverted detail in this procedure, precisely because cricothyrotomy, percutaneous tracheostomy and transtracheal blocks all angle the other way."
             },
             {
               "type": "alert",
@@ -1717,8 +1731,8 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -1951,8 +1965,8 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2167,8 +2181,8 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2347,8 +2361,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -2545,8 +2559,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-03-21",
+      "lastVerified": "2026-09-08",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "indications",
@@ -2775,8 +2789,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3417,8 +3431,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3612,8 +3626,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3824,8 +3838,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4043,8 +4057,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4217,8 +4231,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4428,8 +4442,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4598,8 +4612,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4800,8 +4814,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5015,8 +5029,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5191,8 +5205,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5377,8 +5391,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5599,8 +5613,8 @@
       "description": "Proximal humerus, sternal, and tibial sites.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5825,8 +5839,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5993,8 +6007,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6179,8 +6193,8 @@
       "description": "Ratio-based transfusion sequencing and logistics.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6359,8 +6373,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6533,8 +6547,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6745,8 +6759,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
