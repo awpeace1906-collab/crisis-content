@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T23:18:32.365Z",
+  "generatedAt": "2026-09-22T23:19:21.375Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
-      "reviewDue": "2027-09-21",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -3310,8 +3310,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -3952,8 +3952,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -4147,8 +4147,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -4359,8 +4359,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -4578,8 +4578,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -4752,8 +4752,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -4963,8 +4963,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -5133,8 +5133,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -5335,8 +5335,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6342,8 +6342,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6997,8 +6997,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -7165,8 +7165,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -7824,8 +7824,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -8368,8 +8368,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-08-25",
-      "reviewDue": "2027-08-25",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
