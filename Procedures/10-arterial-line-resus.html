@@ -111,11 +111,18 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 <nav class="quicknav">
   <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
-    <a class="qn pinned" href="#technique">&#9889; TECHNIQUE</a>
+    <a class="qn pinned" href="#waveform">&#9889; WAVEFORM</a>
     <a class="qn" href="#indications">Indications</a>
     <a class="qn" href="#contraindications">Contraindications</a>
     <a class="qn" href="#equipment">Equipment</a>
-    <a class="qn" href="#complications">Complications &amp; Pitfalls</a>
+    <a class="qn" href="#site">Choosing the Site &mdash; and the Radial-to-Femoral Gradient</a>
+    <a class="qn" href="#radial">Radial Technique</a>
+    <a class="qn" href="#transducer">Zeroing, Leveling, and Why the Number Is Wrong</a>
+    <a class="qn" href="#waveform">Reading the Waveform</a>
+    <a class="qn" href="#arrest">The Arterial Line During CPR</a>
+    <a class="qn" href="#troubleshooting">Troubleshooting &amp; Failure Modes</a>
+    <a class="qn" href="#complications">Complications</a>
+    <a class="qn" href="#after">Maintenance and Removal</a>
     <a class="qn" href="#pearls">Pearls</a>
     <a class="qn" href="#refs">References</a>
   </div>
@@ -126,59 +133,168 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 <div class="sec-head c-teal" id="indications"><span class="sec-num">01</span><h2>Indications</h2></div>
 <div class="box t-teal">
 <ul>
-      <li>Need for continuous, beat-to-beat blood pressure monitoring during active resuscitation or hemodynamic instability</li>
-      <li>Frequent arterial blood gas sampling anticipated</li>
-      <li>Titration of vasopressors/inotropes where non-invasive cuff measurements are too slow or unreliable (e.g., low-flow states)</li>
+      <li><b>Any patient on a vasoactive infusion.</b> A cuff cycling every three minutes cannot titrate a drug whose effect changes in thirty seconds &mdash; and in low-flow states the cuff is not merely slow, it is wrong.</li>
+      <li><b>Shock of any cause</b> where the trend between cuff readings is the information you need</li>
+      <li><b>Frequent blood gases</b> &mdash; ventilated patients, DKA, toxic ingestions, post-arrest care</li>
+      <li><b>During CPR</b> &mdash; a genuinely different indication with genuinely different value; see &sect;08. It lets you measure whether your compressions are generating perfusion and detect ROSC without pausing.</li>
+      <li><b>Titrating blood pressure to a tight target</b> &mdash; aortic dissection, post-arrest neuroprotection, intracranial hemorrhage, permissive hypotension in trauma</li>
+      <li><b>Dynamic preload assessment</b> (pulse pressure variation) in the appropriate ventilated patient</li>
 </ul>
 </div>
 <div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Inadequate collateral circulation at the intended site (e.g., abnormal Allen's test for radial site, though rarely a hard stop in an emergency)</li>
-      <li>Local infection or significant trauma overlying the intended site</li>
-      <li>Severe peripheral vascular disease at the intended site (relative &mdash; choose an alternate site)</li>
+      <li><b>Infection, burn, or trauma over the site</b> &mdash; choose another artery.</li>
+      <li><b>Known vascular compromise or a previous surgical or interventional injury</b> to that vessel &mdash; prior radial harvest for CABG, an AV fistula in that arm, a vascular graft.</li>
+      <li><b>Raynaud phenomenon, thromboangiitis obliterans, or severe peripheral vascular disease</b> at the intended site.</li>
+      <li><b>End arteries without collateral supply.</b> The <b>brachial</b> artery is the notable one &mdash; it is effectively the sole supply to the forearm, and thrombosis there threatens the whole limb. The median nerve runs alongside it. Prefer radial, femoral, or axillary.</li>
+      <li><b>Coagulopathy is relative</b> &mdash; but it makes site choice matter. Radial is superficial and compressible; femoral bleeding can dissect into the retroperitoneum if the puncture is above the inguinal ligament.</li>
 </ul>
+<p><b>On the Allen test:</b> it has been shown repeatedly to predict neither ischemic complications nor their absence, and a &ldquo;failed&rdquo; Allen test in a patient who needs a line should not stop you. Its residual value is as a prompt to look at the hand and think about collateral flow before and after. It is not a gate.</p>
 </div>
 <div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment</h2></div>
 <div class="box t-blue">
 <ul>
-      <li>Arterial line catheter kit (typically 20 ga for radial, larger for femoral)</li>
-      <li>Ultrasound with linear probe (recommended, especially in low-flow/hypotensive states)</li>
-      <li>Pressure transducer, tubing, pressure bag with flush solution</li>
-      <li>Local anesthetic if patient is responsive</li>
+      <li><b>Catheter.</b> <span class="d">20 G, 4.5&ndash;5 cm</span> for radial &mdash; either a plain catheter-over-needle or an integrated-guidewire kit. <span class="d">18 G, 10&ndash;16 cm</span> for femoral, placed by Seldinger technique. Pediatric radial: 22&ndash;24 G.</li>
+      <li><b>Ultrasound, linear probe, sterile sheath.</b> Ultrasound guidance improves first-pass success and reduces attempts, and its advantage is largest in precisely the patients you are placing the line in &mdash; hypotensive, edematous, pulseless. Default to it.</li>
+      <li><b>Transducer set:</b> pressure tubing (short and stiff &mdash; see &sect;07), transducer, three-way stopcock, cable to the monitor.</li>
+      <li><b>Flush bag under a pressure bag at 300 mmHg</b>, delivering roughly 3 mL/h continuously. Check the pressure bag is actually inflated &mdash; a deflated bag is a common cause of a line that clots and a trace that damps.</li>
+      <li><b>Lidocaine 1%</b> for any patient with perception. A small wheal also reduces arterial spasm.</li>
+      <li><b>Arm board, rolled gauze or a 500 mL bag, and tape</b> for radial positioning.</li>
+      <li><b>Clear labeling</b> &mdash; red-striped tubing, an ARTERIAL label on the stopcock, and no injection ports that can be mistaken for an IV.</li>
 </ul>
 </div>
-<div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Stepwise Technique</h2></div>
+<div class="sec-head c-amber" id="site"><span class="sec-num">04</span><h2>Choosing the Site &mdash; and the Radial-to-Femoral Gradient</h2></div>
+<table class="rt">
+  <tr><th>Site</th><th>For</th><th>Against</th></tr>
+  <tr><td><b>Radial</b></td><td>Superficial, compressible, good collateral via the palmar arches, lowest complication rate, keeps the groin free</td><td>Small and spasm-prone. <b>Under-reads central pressure in shock</b> (see below). Hardest exactly when you need it most.</td></tr>
+  <tr><td><b>Femoral</b></td><td>Large, easy to find with ultrasound even when pulseless, accurate in shock, stays patent when radial arteries have clamped down. Often the right first choice in profound shock.</td><td>Groin contamination and higher infection risk. Retroperitoneal bleed if punctured above the ligament. Competes with ECMO/REBOA access.</td></tr>
+  <tr><td><b>Axillary</b></td><td>Central pressures, large vessel, good collateral through the scapular network. Underused.</td><td>Brachial plexus adjacent. Not compressible. Requires ultrasound.</td></tr>
+  <tr><td><b>Dorsalis pedis / posterior tibial</b></td><td>Available when arms are burned, injured, or occupied</td><td>Small, distal, and systolic pressure is markedly amplified &mdash; often 10&ndash;20 mmHg above central. MAP remains usable.</td></tr>
+  <tr><td><b>Brachial</b></td><td>Large, easy to palpate</td><td><b>End artery with the median nerve alongside.</b> Reserve for when nothing else is available.</td></tr>
+</table>
+<div class="alert amber"><div class="alert-t">The radial line may be lying to you in vasopressor shock</div><p>In distributive shock on high-dose vasopressors, peripheral vasoconstriction creates a real pressure gradient between the aorta and the radial artery. <b>Radial MAP can read 10&ndash;30 mmHg <i>below</i> simultaneous femoral MAP.</b> The failure mode is specific and dangerous: the radial number looks inadequate, so the norepinephrine goes up, so the gradient widens, so the number still looks inadequate. <b>If a patient is on escalating pressors and the radial trace looks disproportionately bad for how they appear, place or compare against a femoral line before climbing further.</b></p></div>
+<div class="sec-head c-red" id="radial"><span class="sec-num">05</span><h2>Radial Technique</h2></div>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-desc">Select the site &mdash; radial artery is typical first choice for accessibility and complication profile; femoral artery for faster access in profound shock or when radial pulses are difficult to palpate.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-desc">Position the extremity appropriately (wrist extension for radial access).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-desc">Prep the site; use ultrasound guidance if available, especially with weak or absent palpable pulses.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-desc">Insert the catheter-over-needle or catheter-over-wire (Seldinger) system at a shallow angle, advancing until arterial flash is seen.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-desc">Advance the catheter into the vessel, confirm pulsatile return.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-desc">Connect to the pressure tubing/transducer system, zero and level the transducer.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-desc">Secure the catheter, confirm waveform quality on the monitor.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Position &mdash; extended, not hyperextended</div><div class="step-desc">Rolled gauze or a small fluid bag under the wrist, arm on a board, palm up. Extend to about <b>30&ndash;45&deg;</b> and tape the thumb down in gentle traction to stabilize the vessel. <b>Hyperextension flattens the artery and reduces flow</b> &mdash; a wrist bent back as far as it goes is a common and self-inflicted reason a line will not thread. If the pulse weakens as you extend, back off.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Map it with ultrasound before you prep</div><div class="step-desc">Short axis, just proximal to the wrist crease. Identify the radial artery: round, pulsatile, non-compressible, with the two small venae comitantes flanking it. <b>Note the depth</b> (usually 2&ndash;5 mm) and the course &mdash; if it dives or branches, move proximally to a straighter segment. A palpable pulse tells you nothing about whether the vessel runs straight.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Prep, drape, and wheal</div><div class="step-desc">Chlorhexidine and dry. A small lidocaine wheal for anyone with perception &mdash; it also blunts the spasm that follows a painful first pass.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Enter at 30&ndash;45&deg;, then go flat</div><div class="step-desc">Puncture the skin, then advance slowly toward the vessel. <b>Flash means the needle tip is in the lumen &mdash; not the catheter.</b> Drop the hub toward the skin to about <b>10&ndash;15&deg;</b> and advance the whole assembly a further <b>1&ndash;2 mm</b> so the catheter's leading edge crosses the arterial wall. Only then advance the catheter alone. <b>Skipping this is the single commonest reason a line flashes beautifully and then will not thread.</b></div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Ultrasound: walk the tip down, don't chase the shaft</div><div class="step-desc">In short axis, what you see is a cross-section of the needle &mdash; and a bright dot may be the <i>shaft</i>, not the tip. Use <b>dynamic needle tip positioning</b>: advance the needle a millimeter, slide the probe a millimeter forward, re-find the bright dot, repeat. You are always looking at the tip because you keep moving the probe past it. Alternatively use <b>long axis in-plane</b>, which shows the whole needle at once and is excellent for a straight superficial radial &mdash; at the cost of needing to hold the probe exactly in the vessel's plane.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">If it won't thread: transfixion</div><div class="step-desc">A legitimate rescue, not a failure. Deliberately pass through both walls, remove the needle, then <b>withdraw the catheter slowly</b> until pulsatile flow returns &mdash; you are now in the lumen from behind. Advance. With an integrated-wire kit, thread the wire at the moment of pulsatile return instead. Transfixion punctures the back wall, so expect a little more bruising.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-title">Connect, flush, secure</div><div class="step-desc">Occlude the artery proximally with a fingertip while you disconnect the needle &mdash; it keeps the field clean and loses less blood. Connect the primed transducer tubing, flush, and secure with a sutureless device or a suture. <b>Keep the wrist in gentle extension in the final dressing</b>; a line that works on the arm board and damps when the wrist flexes is positional, not broken.</div></div></div>
 </div>
-<div class="alert amber"><div class="alert-t">Palpable pulses can be absent even when a line is achievable</div><p>In profound shock, ultrasound guidance becomes far more valuable in exactly the situations where the line is most urgently needed &mdash; don't let a difficult radial site delay you from moving to femoral access.</p></div>
-<div class="sec-head c-red" id="complications"><span class="sec-num">05</span><h2>Complications &amp; Pitfalls</h2></div>
+<div class="tagline">Femoral arterial line</div>
+<div class="box t-blue">
+<p>Same Seldinger sequence as a central line, with the target switched: <b>the artery is <i>lateral</i> to the vein</b> (NAVEL, lateral to medial: Nerve, Artery, Vein, Empty space, Lymphatics). Puncture <b>1&ndash;2 cm below the inguinal ligament</b>, measured from the ASIS&ndash;pubic tubercle line rather than the skin crease. Enter at 45&deg;, take pulsatile return, thread the wire with no resistance, nick, dilate shallowly, and advance an <span class="d">18 G, 10&ndash;16 cm</span> catheter.</p>
+<p>Two things differ from the venous version. <b>Above the ligament, an arterial bleed is retroperitoneal</b> &mdash; unrecognizable and uncompressible. And <b>if ECPR or REBOA is on the table, this is the vessel those teams need</b>; place it on the side they are not planning to use, and tell them it is there.</p>
+</div>
+<div class="sec-head c-teal" id="transducer"><span class="sec-num">06</span><h2>Zeroing, Leveling, and Why the Number Is Wrong</h2></div>
+<p class="tagline">Two different actions that get conflated, and one of them has to be repeated all day.</p>
+<div class="box t-teal">
+<p><b>Zeroing</b> tells the monitor which pressure is atmospheric. Open the stopcock to air at the transducer, press zero, close it. Done once at setup and after any disconnection or suspicion of drift.</p>
+<p><b>Leveling</b> tells you <i>what</i> you are measuring. The transducer must sit at the <b>phlebostatic axis &mdash; fourth intercostal space, mid-axillary line</b>. This must be re-checked <b>every time the bed height or the patient's position changes</b>, which in a busy unit is many times a day and is the most frequently skipped step in arterial monitoring.</p>
+<p><b>The number that makes it concrete: every 10 cm of vertical offset is a 7.4 mmHg error.</b> A transducer taped to the bed rail 13 cm below the patient's chest reads about 10 mmHg too high &mdash; more than enough to justify not escalating a pressor on a patient who needs one. Above the axis, it under-reads by the same rule.</p>
+<p><b>For cerebral perfusion</b> &mdash; post-arrest care, traumatic brain injury, stroke &mdash; some units level to the <b>external auditory meatus</b> (approximating the circle of Willis) instead, which reads lower than the phlebostatic axis by the height difference. Know which convention your unit uses and make sure everyone at the bedside is using the same one; two teams levelling differently on the same patient will disagree about the MAP by 10&ndash;15 mmHg and never work out why.</p>
+</div>
+<div class="sec-head c-amber" id="waveform"><span class="sec-num">07</span><h2>Reading the Waveform</h2></div>
+<p class="tagline">The trace carries more information than the three numbers next to it.</p>
+<div class="box t-amber">
+<p><b>The fast-flush (square wave) test &mdash; do this before you believe any arterial number.</b> Pull the flush tab for about a second and release. The trace squares off at the flush pressure, then snaps back. <b>Count the oscillations after release:</b></p>
+<ul>
+  <li><b>1&ndash;2 oscillations, then a clean return to baseline &mdash; optimally damped.</b> Trust all the numbers.</li>
+  <li><b>Fewer than 1 &mdash; sluggish, rounded return: <span style="color:var(--red)">over-damped</span>.</b> The trace loses its dicrotic notch and looks flattened. It <b>under-reads systolic and over-reads diastolic.</b> Causes: air bubbles anywhere in the circuit, a clot or fibrin at the tip, a kink, the wrist flexed, compliant or over-long tubing, too many stopcocks, a flush bag below 300 mmHg, or arterial spasm.</li>
+  <li><b>More than 2&ndash;3 oscillations &mdash; a whippy, spiky trace: <span style="color:var(--amber)">under-damped</span> (hyper-resonant).</b> It <b>over-reads systolic by as much as 20&ndash;30 mmHg</b> and under-reads diastolic. Causes: long stiff tubing, tachycardia, high contractility, catheter whip. A damping device or a shorter tubing run fixes it.</li>
+</ul>
+<p><b>The rule that saves you in both cases: <span style="color:var(--teal)">MAP is the robust number.</span></b> Mean arterial pressure survives damping error far better than systolic or diastolic, because it is an integrated area rather than a peak. When the waveform is imperfect and you cannot fix it immediately, titrate to MAP, not to systolic.</p>
+</div>
+<div class="box t-blue">
+<p><b>What else the shape tells you:</b></p>
+<ul>
+  <li><b>Upstroke slope</b> &mdash; steepness tracks contractility and the rate of ventricular ejection. A slurred, slow upstroke suggests poor contractility or aortic stenosis.</li>
+  <li><b>Dicrotic notch position</b> &mdash; a notch sitting low on the downstroke suggests low systemic vascular resistance (sepsis, vasodilation). High on the limb suggests a vasoconstricted, high-resistance state.</li>
+  <li><b>Narrow pulse pressure</b> &mdash; hypovolemia, tamponade, or a failing ventricle. <b>Wide</b> &mdash; vasodilation, aortic regurgitation, or a stiff aorta.</li>
+  <li><b>Pulse pressure variation (PPV)</b> &mdash; respiratory swing in pulse pressure. <span class="d">&gt;13%</span> predicts fluid responsiveness, but <b>only</b> in a patient in sinus rhythm, fully mechanically ventilated with no spontaneous effort, at a tidal volume of at least 8 mL/kg, with a closed chest and no severe right heart failure. Outside those conditions it is not interpretable &mdash; and it is quoted outside those conditions constantly.</li>
+  <li><b>Pulsus paradoxus</b> &mdash; an inspiratory systolic fall greater than 10 mmHg, visible directly on the trace. Points to tamponade, severe asthma, or massive pulmonary embolism.</li>
+  <li><b>Pulsus alternans</b> &mdash; alternating strong and weak beats. Severe left ventricular dysfunction.</li>
+</ul>
+</div>
+<div class="sec-head c-red" id="arrest"><span class="sec-num">08</span><h2>The Arterial Line During CPR</h2></div>
+<p class="tagline">This is the use that changes management most, and it is the least familiar.</p>
+<div class="box t-red">
+<p>During cardiac arrest the arterial line stops being a monitor and becomes a feedback device on the quality of your resuscitation.</p>
+<ul>
+  <li><b>Diastolic pressure is the number that matters</b>, because coronary perfusion happens in diastole. <b>Target an arterial diastolic above roughly 25&ndash;30 mmHg during compressions.</b> Below about 20 mmHg, ROSC becomes very unlikely.</li>
+  <li><b>A low diastolic is actionable in two directions:</b> change the compressor or fix the mechanics (rate, depth, recoil, hand position), or give a vasopressor. It converts &ldquo;are these compressions any good?&rdquo; from an argument into a reading.</li>
+  <li><b>ROSC is detectable without pausing.</b> An abrupt rise in diastolic and the appearance of an organized native waveform between compressions signals return of circulation &mdash; so you can confirm it without the interruption in flow that a pulse check costs.</li>
+  <li><b>Use it alongside end-tidal CO<sub>2</sub>,</b> not instead of it. ETCO<sub>2</sub> reflects pulmonary blood flow, arterial diastolic reflects coronary perfusion pressure; they answer adjacent questions and together they cover most of what you want to know.</li>
+  <li><b>Post-ROSC it is immediately useful</b> for titrating to a MAP target without waiting on a cuff that will not cycle usefully in a poorly perfused patient.</li>
+</ul>
+<p>In a prolonged code, particularly one heading toward ECPR, a femoral arterial line is worth the two minutes it costs &mdash; and it is often being placed by the same team, at the same time, in the same groin as the rest of the cannulation plan. Coordinate that.</p>
+</div>
+<div class="sec-head c-red" id="troubleshooting"><span class="sec-num">09</span><h2>Troubleshooting &amp; Failure Modes</h2></div>
+<table class="rt">
+  <tr><th>What you see</th><th>What it usually is</th><th>What to do</th></tr>
+  <tr><td>Flash, then the catheter won't advance</td><td>Needle tip in the lumen, catheter tip still in the wall</td><td>Drop to 10&ndash;15&deg; and advance the whole assembly 1&ndash;2 mm before sliding the catheter. Then transfixion if needed.</td></tr>
+  <tr><td>Pulse disappeared during positioning</td><td>Wrist hyperextended, flattening the artery</td><td>Relax to 30&ndash;45&deg;. Re-palpate or re-image.</td></tr>
+  <tr><td>Artery visible but keeps rolling away</td><td>Not enough skin tension; approach angle too shallow</td><td>Tension the skin distally with the non-dominant hand. Enter directly over the vessel center in short axis.</td></tr>
+  <tr><td>Trace flattens and numbers drift low</td><td>Over-damping: air, clot, kink, flexed wrist, or a deflated pressure bag</td><td>Square-wave test. Check the pressure bag is at 300 mmHg, hunt for bubbles at stopcocks, straighten the wrist, gently aspirate then flush. <b>Do not flush forcefully against resistance.</b></td></tr>
+  <tr><td>Systolic reads absurdly high, trace looks spiky</td><td>Under-damping / resonance</td><td>Shorten the tubing, remove extra stopcocks, add a damping device. <b>Meanwhile titrate to MAP.</b></td></tr>
+  <tr><td>Arterial MAP much lower than the cuff, on high-dose pressors</td><td>Radial-to-central gradient in vasoconstricted shock</td><td>Compare against a femoral line or a manual cuff before escalating pressors further. Do not chase the radial number upward.</td></tr>
+  <tr><td>Cannot aspirate, cannot flush</td><td>Clotted or the tip is against the wall</td><td>Reposition the limb and retry gently. If truly occluded the line is finished &mdash; remove it. Forcing a flush risks <b>retrograde embolization</b>.</td></tr>
+  <tr><td>Hand or fingers pale, cool, painful</td><td>Thrombosis or embolism distal to the catheter</td><td><b>Remove the line.</b> Assess perfusion, warm the limb, get vascular input. Do not wait to see if it improves with the line in.</td></tr>
+  <tr><td>Expanding pulsatile swelling at an old site</td><td>Pseudoaneurysm</td><td>Ultrasound and vascular referral. Do not aspirate it.</td></tr>
+  <tr><td>Trace is fine, numbers implausible for the patient</td><td>Transducer not level &mdash; bed raised or lowered</td><td>Re-level to the phlebostatic axis and re-zero. Remember 10 cm = 7.4 mmHg.</td></tr>
+  <tr><td>Blood in the tubing, slowly backing up</td><td>Pressure bag deflated or empty</td><td>Re-inflate to 300 mmHg, refill. Then check the line has not clotted.</td></tr>
+</table>
+<div class="alert red"><div class="alert-t">Never inject into an arterial line</div><p>Inadvertent intra-arterial injection causes intense vasospasm, distal thrombosis, and tissue necrosis &mdash; it has ended in amputation. The defenses are physical and procedural, not vigilance: <b>red-striped tubing, an ARTERIAL label at every stopcock, no needleless injection ports on the arterial circuit, and stating &ldquo;that's the art line&rdquo; out loud at every handover.</b> If it happens: stop immediately, leave the catheter in place, and involve vascular surgery &mdash; the catheter is the route for any attempted treatment.</p></div>
+<div class="sec-head c-red" id="complications"><span class="sec-num">10</span><h2>Complications</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Thrombosis or distal ischemia &mdash; monitor the extremity distal to the line regularly</li>
-      <li>Hematoma or bleeding at the site, especially with coagulopathy</li>
-      <li>Infection with prolonged dwell time</li>
-      <li>Inadvertent intra-arterial medication injection if the line is mistaken for venous access &mdash; label clearly</li>
-      <li>Damped or inaccurate waveform from catheter kinking, air in the system, or poor positioning</li>
+      <li><b>Temporary radial artery occlusion</b> &mdash; not rare, and usually asymptomatic because of palmar arch collateral. <b>Permanent ischemic injury is well under 1%.</b> Risk rises with catheter size relative to vessel, dwell time, repeated attempts, and vasopressor use.</li>
+      <li><b>Distal ischemia</b> &mdash; the complication that matters. Check the hand or foot at least every shift and document it; the first sign is often mottling or delayed capillary refill rather than pain.</li>
+      <li><b>Hematoma and bleeding</b>, particularly on removal or with coagulopathy. <b>Retroperitoneal hemorrhage</b> from a high femoral puncture.</li>
+      <li><b>Pseudoaneurysm and arteriovenous fistula</b> &mdash; femoral more than radial; consider in any new pulsatile mass or bruit at an old site.</li>
+      <li><b>Infection</b> &mdash; lower than central venous catheters but not negligible; femoral highest.</li>
+      <li><b>Nerve injury</b> &mdash; median nerve at the brachial site, brachial plexus at the axillary site.</li>
+      <li><b>Retrograde cerebral embolization</b> &mdash; forceful flushing of a radial line with as little as 2 mL can drive air or clot retrograde into the subclavian and then the carotid circulation. Flush gently and in small volumes.</li>
+      <li><b>Forearm compartment syndrome</b> &mdash; rare, from a large hematoma in an anticoagulated patient.</li>
+      <li><b>Blood loss from sampling</b> &mdash; a real and cumulative cause of anemia in a long ICU stay. Use a closed conservation system and question each draw.</li>
 </ul>
 </div>
-<div class="sec-head c-purple" id="pearls"><span class="sec-num">06</span><h2>Pearls</h2></div>
+<div class="sec-head c-blue" id="after"><span class="sec-num">11</span><h2>Maintenance and Removal</h2></div>
+<div class="box t-blue">
+<ul>
+  <li><b>Re-level at every position change</b>, and square-wave test at the start of each shift and any time the numbers surprise you.</li>
+  <li><b>Document distal perfusion</b> each shift &mdash; color, temperature, capillary refill, sensation.</li>
+  <li><b>Keep the pressure bag at 300 mmHg</b> and the flush bag full. Most &ldquo;the art line died overnight&rdquo; events start here.</li>
+  <li><b>Remove it when the indication ends.</b> The line is there for pressor titration or frequent gases; when neither is true, it is only accumulating risk and drawing blood.</li>
+  <li><b>On removal: hold direct pressure for a full 5 minutes</b> at a radial site, longer with coagulopathy or antiplatelet therapy, and <b>10&ndash;20 minutes for femoral</b>. Do not occlude so hard that you obliterate distal flow for the entire period. Then apply a pressure dressing and <b>re-check the site and the distal pulse 15 and 60 minutes later</b> &mdash; late re-bleeding after an apparently dry site is the usual pattern.</li>
+</ul>
+</div>
+<div class="sec-head c-purple" id="pearls"><span class="sec-num">12</span><h2>Pearls</h2></div>
 <div class="box t-purple">
-<p>In profound shock, palpable pulses may be absent even with adequate arterial pressure for a line &mdash; ultrasound guidance becomes far more valuable in exactly the situations where you need the line most urgently.</p>
-<p>Femoral access is often faster and more reliable than radial in a critically hypotensive patient &mdash; don't force a technically harder site when time and accuracy both matter.</p>
-<p>Zero and level the transducer at the phlebostatic axis for femoral or central-adjacent sites to avoid a systematically inaccurate reading.</p>
+<p><b>Square-wave test before you believe the number.</b> Four seconds, and it tells you whether the systolic in front of you is real.</p>
+<p><b>When the waveform is imperfect, trust the MAP.</b> Damping distorts systolic and diastolic far more than the mean.</p>
+<p><b>Flash is the needle, not the catheter.</b> Drop the angle and advance 1&ndash;2 mm more. This single habit fixes most failed radial attempts.</p>
+<p><b>Don't hyperextend the wrist.</b> You flatten the artery you are trying to cannulate.</p>
+<p><b>Ten centimeters is 7.4 mmHg.</b> A transducer that has drifted off the phlebostatic axis is the commonest reason a stable patient appears to have changed.</p>
+<p><b>In vasopressor shock the radial under-reads.</b> Compare against femoral before you escalate on a number you do not trust.</p>
+<p><b>In arrest, watch diastolic.</b> Above 25&ndash;30 mmHg during compressions, or change something. It also shows you ROSC without a pause.</p>
+<p><b>PPV needs four conditions.</b> Sinus rhythm, fully controlled ventilation, tidal volume &ge;8 mL/kg, closed chest. Outside those, it is a number, not information.</p>
+<p><b>Label it, and never inject into it.</b> The safeguards have to be physical &mdash; red tubing and no injection ports &mdash; because attention fails.</p>
+<p><b>Check the hand.</b> The complication that costs a patient something is distal ischemia, and it is found by looking.</p>
 </div>
-<div class="sec-head c-amber" id="refs"><span class="sec-num">07</span><h2>References</h2></div>
+<div class="sec-head c-amber" id="refs"><span class="sec-num">13</span><h2>References</h2></div>
 <ul class="sources">
-  <li><span class="tier">REFERENCE</span>Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 &mdash; Arterial Puncture and Cannulation chapter.</li>
+  <li><span class="tier">EVIDENCE</span>Scheer B, Perel A, Pfeiffer UJ. Clinical review: complications and risk factors of peripheral arterial catheters used for haemodynamic monitoring in anaesthesia and intensive care medicine. <i>Crit Care.</i> 2002;6(3):199&ndash;204.</li>
+  <li><span class="tier">EVIDENCE</span>Kim WY, Jun JH, Huh JW, Hong SB, Lim CM, Koh Y. Radial to femoral arterial blood pressure differences in septic shock patients receiving high-dose norepinephrine therapy. <i>Shock.</i> 2013;40(6):527&ndash;531.</li>
+  <li><span class="tier">EVIDENCE</span>Michard F, Teboul JL. Predicting fluid responsiveness in ICU patients: a critical analysis of the evidence. <i>Chest.</i> 2002;121(6):2000&ndash;2008.</li>
+  <li><span class="tier">EVIDENCE</span>Paradis NA, Martin GB, Rivers EP, et al. Coronary perfusion pressure and the return of spontaneous circulation in human cardiopulmonary resuscitation. <i>JAMA.</i> 1990;263(8):1106&ndash;1113.</li>
+  <li><span class="tier">GUIDELINE</span>Panchal AR, Bartos JA, Caba&ntilde;as JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2).</li>
+  <li><span class="tier">REFERENCE</span>Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 &mdash; Arterial Puncture and Cannulation.</li>
 </ul>
+
 <div class="footer">Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and equipment against your own institution's protocol before clinical use.</div>
 </div>
 </body>

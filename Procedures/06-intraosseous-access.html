@@ -95,7 +95,7 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 </style>
 </head>
-<body>
+<body data-review-tier="1" data-last-verified="2026-09-22">
 
 <div class="page">
   <div class="hdr-block">
@@ -111,11 +111,18 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 <nav class="quicknav">
   <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
-    <a class="qn pinned" href="#technique">&#9889; TECHNIQUE</a>
+    <a class="qn pinned" href="#humerus">&#9889; HUMERUS</a>
     <a class="qn" href="#indications">Indications</a>
     <a class="qn" href="#contraindications">Contraindications</a>
-    <a class="qn" href="#equipment">Equipment</a>
-    <a class="qn" href="#complications">Complications &amp; Pitfalls</a>
+    <a class="qn" href="#equipment">Equipment &mdash; Opening the Kit</a>
+    <a class="qn" href="#site-choice">Choosing the Site</a>
+    <a class="qn" href="#humerus">Proximal Humerus &mdash; The One People Miss</a>
+    <a class="qn" href="#tibia">Proximal Tibia &mdash; Adult and Pediatric</a>
+    <a class="qn" href="#confirm">Confirming You Are in the Marrow</a>
+    <a class="qn" href="#pain-pressure">Lidocaine, Pressure, and What Can Go Through It</a>
+    <a class="qn" href="#troubleshooting">Troubleshooting &amp; Failure Modes</a>
+    <a class="qn" href="#complications">Complications</a>
+    <a class="qn" href="#after">Dwell Time and Removal</a>
     <a class="qn" href="#pearls">Pearls</a>
     <a class="qn" href="#refs">References</a>
   </div>
@@ -126,75 +133,166 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 <div class="sec-head c-teal" id="indications"><span class="sec-num">01</span><h2>Indications</h2></div>
 <div class="box t-teal">
 <ul>
-      <li>Emergent need for vascular access when peripheral IV access is difficult, delayed, or has failed</li>
-      <li>Cardiac arrest (any age)</li>
-      <li>Hemorrhagic or other shock states requiring immediate fluid/medication access</li>
-      <li>Any critically ill or injured patient where seconds of delay matter</li>
+      <li>Cardiac arrest, any age, when a peripheral IV is not already running</li>
+      <li>Shock of any cause where access is the rate-limiting step &mdash; hemorrhagic, septic, anaphylactic, cardiogenic</li>
+      <li>Two failed peripheral attempts, or a patient in whom you can see at a glance that attempts will fail (burns, IV drug use, obesity, profound vasoconstriction, hypothermia)</li>
+      <li>Status epilepticus, status asthmaticus, hypoglycemia with altered mental status &mdash; time-critical drug delivery in a moving target</li>
+      <li>Pre-hospital and austere settings where ultrasound-guided peripheral or central access is not available</li>
+      <li>As a bridge during RSI when you need induction drugs now and the line you have is unreliable</li>
 </ul>
 </div>
+<div class="alert amber"><div class="alert-t">What the 2025 trials actually showed</div><p>Two large randomized trials of out-of-hospital arrest &mdash; PARAMEDIC-3 and IVIO &mdash; found that an <b>IO-first</b> strategy did not improve survival over an IV-first strategy, and PARAMEDIC-3 found <i>lower</i> rates of ROSC in the IO-first arm. This does not make IO a bad route. It means IO is the answer to <i>&ldquo;I cannot get a vein,&rdquo;</i> not a shortcut to be reached for reflexively when a vein is available. If a peripheral IV will be in within about 90 seconds, place the IV. If it won't, drill.</p></div>
 <div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications</h2></div>
 <div class="box t-red">
+<p><b>Absolute &mdash; pick a different bone:</b></p>
 <ul>
-      <li>Fracture at or proximal to the intended insertion site</li>
-      <li>Previous IO attempt or orthopedic hardware at the same site within the prior 24-48 hours</li>
-      <li>Infection (cellulitis) overlying the insertion site</li>
-      <li>Inability to identify landmarks confidently (relative &mdash; choose an alternate site)</li>
+      <li><b>Fracture in that bone</b>, at or proximal to the site. Infusate leaks out the fracture; a tibial IO above a tibial fracture perfuses the hematoma, not the patient.</li>
+      <li><b>Previous IO attempt in the same bone within 48 hours</b>, successful or not. The old cortical hole is a vent &mdash; the new line will run straight out of it into the soft tissue. Cross to the other side or another site.</li>
+      <li><b>Orthopedic hardware, prosthetic joint, or prior surgery</b> at the site (knee replacement, IM nail, shoulder arthroplasty).</li>
+      <li><b>Infection, burn, or cellulitis</b> over the insertion point. Seeding the marrow through infected skin produces osteomyelitis. Burned skin over an otherwise good site is not an absolute bar in extremis &mdash; but choose unburned skin if any exists.</li>
+</ul>
+<p><b>Relative:</b></p>
+<ul>
+      <li><b>Osteogenesis imperfecta, osteopetrosis, severe osteoporosis</b> &mdash; fragile or sclerotic bone. Osteopetrotic bone may simply not be penetrable.</li>
+      <li><b>Landmarks you cannot confidently palpate.</b> Body habitus that defeats palpation is a reason to change sites or use ultrasound, not a reason to guess. A blind drill into soft tissue is the commonest cause of a failed IO.</li>
+      <li><b>Sternal IO:</b> add prior sternotomy, sternal fracture, and small children to the exclusion list.</li>
 </ul>
 </div>
-<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment</h2></div>
+<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment &mdash; Opening the Kit</h2></div>
+<p class="tagline">A powered driver with the wrong needle in it fails exactly like no driver at all.</p>
 <div class="box t-blue">
 <ul>
-      <li>IO driver (manual or powered, e.g., spring-loaded or drill-based device)</li>
-      <li>IO needle appropriate to site and patient size</li>
-      <li>Chlorhexidine or available skin prep</li>
-      <li>Extension tubing, syringe for aspiration/flush</li>
-      <li>Lidocaine for conscious patients (both at the skin and injected into the marrow space before infusion)</li>
+      <li><b>Powered driver</b> (battery drill-type) or manual driver. Check the battery indicator at the start of any shift you might need it. A driver that stalls partway through the cortex leaves a needle you must remove and a site you can no longer use.</li>
+      <li><b>Needle sets &mdash; three lengths, and the length is the decision.</b> The color codes below are the widely used EZ-IO convention; confirm against the set in your own kit.
+        <ul>
+          <li><b>15 mm (pink):</b> 3&ndash;39 kg</li>
+          <li><b>25 mm (blue):</b> &ge;3 kg &mdash; the adult tibial default</li>
+          <li><b>45 mm (yellow):</b> &ge;40 kg, or any site with heavy overlying tissue. <b>The proximal humerus in an adult is a 45 mm needle, always</b> &mdash; the deltoid is thicker than people estimate, and a 25 mm needle in a humerus is the single most common cause of an IO that &ldquo;placed fine&rdquo; and then infiltrated.</li>
+        </ul>
+      </li>
+      <li><b>Chlorhexidine</b> or whatever prep is within reach. In arrest this is one pass, not a scrub.</li>
+      <li><b>Extension set with a Luer lock</b>, primed. Prime it &mdash; pushing the air column in the tubing into the marrow first is both wasted time and extra pain.</li>
+      <li><b>Two 10 mL syringes:</b> one of normal saline for the flush, one for aspiration.</li>
+      <li><b>Preservative-free 2% lidocaine</b> (cardiac lidocaine) for any patient with a pulse and any perception. This is not optional comfort care &mdash; see &sect;09.</li>
+      <li><b>Pressure bag or infusion pump.</b> Gravity through an IO delivers roughly a milliliter a minute. Without pressure you have access that does nothing.</li>
+      <li><b>Securement dressing</b> (the winged stabilizer in the kit, or a bulky dressing and tape).</li>
 </ul>
 </div>
-<div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Stepwise Technique</h2></div>
-<div class="tagline">Proximal humerus</div>
-<div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-desc">Position the arm adducted, internally rotated, with the hand resting on the abdomen (this exposes the greater tubercle landmark).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-desc">Palpate the surgical neck of the humerus, approximately 1-2 cm above it for the insertion point.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-desc">Insert the IO needle perpendicular to the bone surface, driving through the cortex until a give/pop is felt.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-desc">Remove the stylet, confirm placement (needle stands firmly without support, marrow aspirate if attempted, free flow of flush without extravasation).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-desc">Secure and connect to extension tubing.</div></div></div>
+<div class="alert amber"><div class="alert-t">The 5&nbsp;mm rule</div><p>Seat the needle through the skin until the tip touches bone, <i>then look at the hub</i>. At least one black depth marking must be visible above the skin. If no line shows, the needle is too short to cross the cortex and still sit in the marrow &mdash; swap up a size before you pull the trigger. Checking this takes two seconds and prevents the failure you won't detect until you flush.</p></div>
+<div class="sec-head c-amber" id="site-choice"><span class="sec-num">04</span><h2>Choosing the Site</h2></div>
+<table class="rt">
+  <tr><th>Site</th><th>Flow (pressurized)</th><th>Choose it when</th><th>Watch for</th></tr>
+  <tr><td>Proximal humerus</td><td>~5 L/hr</td><td>Volume resuscitation; drugs you want centrally fast; awake patients (least painful site)</td><td>Displacement with any arm movement &mdash; secure the arm to the torso. Not during unmechanized CPR on that side.</td></tr>
+  <tr><td>Proximal tibia</td><td>~1 L/hr</td><td>Default in arrest with ongoing compressions; easiest landmarks; pediatrics</td><td>Slowest flow. Posterior extravasation is invisible &mdash; you must palpate the calf.</td></tr>
+  <tr><td>Distal femur</td><td>~1 L/hr</td><td>Infants and small children &mdash; wide, flat, forgiving target</td><td>Growth plate. Leg must be straight.</td></tr>
+  <tr><td>Distal tibia</td><td>~1 L/hr</td><td>Second-choice extremity site; useful when the knee is involved</td><td>Thin cortex &mdash; easy to go through and through.</td></tr>
+  <tr><td>Sternum (manubrium)</td><td>High</td><td>Military/tactical, dedicated device, bilateral extremity trauma</td><td>Dedicated device only. Competes with pad and compression placement.</td></tr>
+</table>
+<div class="box t-amber">
+<p><b>The default pairing worth committing to memory:</b> <i>humerus for flow and speed to the central circulation, tibia for a moving resuscitation.</i> Humeral flow is roughly five times tibial, and drug transit to the central compartment is faster &mdash; which matters for adenosine and for arrest drugs. But the humeral needle sits in a bone attached to a limb that everyone in the room will move, and it dislodges.</p>
+<p>In a running code with manual compressions, the tibia is usually the right call: nobody is near it and nothing displaces it. If you place a humeral IO in that setting, tape the arm down across the abdomen and tell the team it is there.</p>
 </div>
-<div class="tagline">Sternal</div>
+<div class="sec-head c-red" id="humerus"><span class="sec-num">05</span><h2>Proximal Humerus &mdash; The One People Miss</h2></div>
+<p class="tagline">Almost every humeral failure is a positioning failure, and it happens before the drill comes out.</p>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-desc">Identify the manubrium as the insertion site (device-specific &mdash; sternal IO devices use a dedicated targeting mechanism).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-desc">Follow the specific device protocol for insertion depth and technique.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-desc">Confirm placement per device indicator and flush test.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Position the arm &mdash; this is the procedure</div><div class="step-desc">Adduct the arm tight to the chest wall, then <b>internally rotate</b> so the palm rests on the umbilicus and the elbow points posteriorly. If you can, have someone hold it. Internal rotation is what swings the <i>greater tubercle</i> anteriorly into your target line and moves it clear of the acromion. Without it you are drilling into the joint capsule or the deltoid.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Find the golf ball on the tee</div><div class="step-desc">Place the heel of your hand on the anterior shoulder and slide your thumb <i>up</i> the anterior humeral shaft. You will feel the shaft narrow &mdash; that notch is the <span class="d">surgical neck</span> &mdash; and then a broad, round prominence above it. That prominence is the greater tubercle: the ball sitting on the tee. <b>The target is the most prominent point of that ball, roughly 1&ndash;2 cm above the surgical neck.</b> If you never felt a narrowing, you have not found the neck, and your landmark is a guess.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Angle 45&deg; down and back</div><div class="step-desc">Enter perpendicular to the <i>surface of the tubercle</i>, which means aiming roughly <b>45&deg; caudad (toward the elbow) and slightly posteromedial</b>. Straight-in aiming at the ceiling walks you into the joint space. Think of the needle as pointing at the opposite hip.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Push to bone, then check the line</div><div class="step-desc">Push the needle through the skin and soft tissue <i>manually</i> until the tip stops on bone. Now look: at least one black depth line must be showing. In an adult humerus this should be a 45 mm needle. Only then squeeze the trigger.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Let the drill do the work &mdash; then feel the change</div><div class="step-desc">Apply steady, gentle axial pressure and let the driver cut. Leaning on it stalls the motor. You are drilling through a thicker cortex than the tibia, so it takes longer and the &ldquo;pop&rdquo; is less obvious. <b>The endpoint is a sudden loss of resistance and a change in the driver's pitch as it unloads</b>, or the hub reaching the skin. Stop there. Continuing drives the needle out the far cortex.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">Uncouple, unscrew, secure</div><div class="step-desc">Hold the hub and pull the driver straight off &mdash; do not let it torque the needle. Remove the stylet by turning counterclockwise. Attach the primed extension set. <b>Then tape the arm to the torso.</b> A humeral IO not secured to the body has an hourly dislodgement rate that makes it unreliable exactly when you stop watching it.</div></div></div>
 </div>
-<div class="tagline">Tibial</div>
+<div class="sec-head c-red" id="tibia"><span class="sec-num">06</span><h2>Proximal Tibia &mdash; Adult and Pediatric</h2></div>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">9</div><div class="step-body"><div class="step-desc">Identify the anteromedial tibial surface, approximately 1-2 cm below and medial to the tibial tuberosity in adults (adjust per pediatric landmarks).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">10</div><div class="step-body"><div class="step-desc">Insert perpendicular to the bone, driving through the cortex until loss of resistance.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">11</div><div class="step-body"><div class="step-desc">Remove stylet, confirm placement, secure and connect to extension tubing.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Find the tuberosity, then move off it</div><div class="step-desc">Run a finger up the shin to the bony bump below the patella &mdash; the tibial tuberosity. You are not drilling into it. <b>Adult: about 2 cm medial and 1 cm proximal to the tuberosity</b>, on the flat anteromedial face of the tibia. <b>Child: about 1 cm medial and 1&ndash;2 cm distal</b> &mdash; distal, to stay clear of the proximal tibial physis. In an infant, one finger-breadth below and medial.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Support the knee, don't suspend the leg</div><div class="step-desc">Put a rolled towel under the knee so it rests in slight flexion on a solid surface. A leg that bounces on the mattress absorbs the drill and turns a clean insertion into a wandering one.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Perpendicular &mdash; 90&deg; to the flat surface</div><div class="step-desc">Unlike the humerus, the tibial approach is straight in, 90&deg; to the flat medial surface. Angling drags the needle toward the thin cortex and out the side.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Drill to the give</div><div class="step-desc">The tibial cortex is thin and the pop is distinct &mdash; often the first clear tactile landmark a trainee ever gets. <b>Stop at the pop.</b> In a child the cortex is thinner still and the marrow cavity is shallow; a through-and-through insertion is the classic pediatric error. Feather the trigger rather than holding it down.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Stylet out, extension on, palpate the calf</div><div class="step-desc">After the flush, <b>put your hand behind the calf</b>. The tibia extravasates posteriorly where you cannot see it, and the first sign of a failed tibial IO is often a firm posterior compartment rather than a visible bulge.</div></div></div>
 </div>
-<div class="alert amber"><div class="alert-t">Confirm placement before infusing</div><p>A needle that doesn't stand firmly on its own, or a flush that causes visible swelling, means stop and reassess &mdash; extravasation into a closed compartment is the complication that turns a good access decision into a bad outcome.</p></div>
-<div class="sec-head c-red" id="complications"><span class="sec-num">05</span><h2>Complications &amp; Pitfalls</h2></div>
+<div class="tagline">Alternate sites</div>
+<div class="box t-blue">
+<p><b>Distal femur (pediatric):</b> leg straight, patella identified. Insert <b>1 cm proximal to the superior border of the patella and 1&ndash;2 cm medial to the midline</b>, aiming straight back (slightly cephalad if anything). Wide target, thick marrow, forgiving &mdash; a good choice in a small child when the tibia has failed.</p>
+<p><b>Distal tibia:</b> <b>2 cm proximal to the most prominent point of the medial malleolus</b>, on the flat medial surface, perpendicular. Thin cortex &mdash; easy to over-drill.</p>
+<p><b>Sternum:</b> device-specific (FAST1 / FASTResponder and similar), targeting the manubrium about 1.5 cm below the sternal notch via the device's own locating collar. Fixed depth, no freehand angle to judge. Do not improvise a sternal IO with an extremity needle.</p>
+</div>
+<div class="sec-head c-teal" id="confirm"><span class="sec-num">07</span><h2>Confirming You Are in the Marrow</h2></div>
+<p class="tagline">Four checks, in order. Only one of them is decisive.</p>
+<div class="box t-teal">
+<ul>
+      <li><b>1. The needle stands unsupported.</b> Let go. A correctly seated IO is held rigidly by cortical bone and stands like a flagpole. One that wobbles, leans, or falls is in soft tissue. This is a fast and powerful negative test.</li>
+      <li><b>2. Loss of resistance was felt.</b> Corroborative, not proof &mdash; in the humerus it can be subtle, and in osteoporotic bone it can be absent entirely.</li>
+      <li><b>3. Marrow aspirates.</b> Nice when it happens. <b>Its absence proves nothing</b> &mdash; a substantial fraction of correctly placed IOs never yield aspirate, particularly in arrest. Do not pull a good needle because nothing came back.</li>
+      <li><b>4. The flush runs without swelling.</b> <b>This is the test that decides.</b> Push 10 mL of saline briskly in an adult (2&ndash;5 mL in a child) while watching and feeling the limb. Free flow with no swelling, no boggy tissue, no resistance building under your thumb &mdash; you are in. Anything else means stop.</li>
+</ul>
+</div>
+<div class="alert red"><div class="alert-t">The flush is not a confirmation step &mdash; it is part of the insertion</div><p>The marrow cavity is a sponge of trabecular bone and fat, not an open tube. <b>Without a forceful flush the space does not open and nothing will infuse afterward, no matter how perfectly the needle sits.</b> The commonest complaint about IO access &mdash; &ldquo;it's in but it won't run&rdquo; &mdash; is nearly always an under-flushed line. Push it hard, and push it again if flow is sluggish.</p></div>
+<div class="sec-head c-amber" id="pain-pressure"><span class="sec-num">08</span><h2>Lidocaine, Pressure, and What Can Go Through It</h2></div>
+<div class="box t-amber">
+<p><b>Lidocaine &mdash; the sequence matters more than the dose.</b> The saline flush into a conscious patient's marrow is described by patients as among the worst pain in medicine. Lidocaine must go in <i>before</i> the flush, not after.</p>
+<ul>
+  <li><b>Adult:</b> preservative-free 2% lidocaine, <span class="d">40 mg (2 mL)</span> slowly over about 120 seconds &rarr; <b>let it dwell 60 seconds</b> &rarr; flush 5&ndash;10 mL saline &rarr; a further <span class="d">20 mg (1 mL)</span> over 60 seconds.</li>
+  <li><b>Pediatric:</b> <span class="d">0.5 mg/kg</span>, max 40 mg, same dwell-then-flush sequence.</li>
+  <li>Repeat doses are appropriate for ongoing pain during infusion. Account for the total in any systemic lidocaine ceiling.</li>
+  <li>This is for any patient with a pulse and any plausible perception. It is not indicated in arrest &mdash; and if they wake up, give it then.</li>
+</ul>
+<p><b>Pressure.</b> Gravity produces roughly 1 mL/min through an IO. Every infusion that needs to be fast needs a <b>pressure bag at 300 mmHg</b> or a pump. If a resuscitation is running slowly through an IO, check the pressure bag before you blame the needle.</p>
+<p><b>What can go through it: everything.</b> Crystalloid, blood and all components, vasopressors, induction and paralytic agents, antibiotics, TXA, sodium bicarbonate, hypertonic saline, contrast for CT. Onset and peak levels approximate IV. There is no drug class that is IV-only. The proximal humerus is preferred for adenosine and other agents whose effect depends on a tight, fast bolus.</p>
+<p><b>Labs from the aspirate:</b> the first aspirate can be sent for type and screen, chemistry, lactate and blood gas, and correlates acceptably for most. It is unreliable for platelet and white cell counts, and <b>marrow will clog an automated analyzer</b>. Call the lab and the blood bank before you send it &mdash; some will not accept it, and you need to know that before it is the only sample you have.</p>
+</div>
+<div class="sec-head c-red" id="troubleshooting"><span class="sec-num">09</span><h2>Troubleshooting &amp; Failure Modes</h2></div>
+<table class="rt">
+  <tr><th>What you see</th><th>What it usually is</th><th>What to do</th></tr>
+  <tr><td>Needle bounces off, drill bogs down</td><td>Leaning on the driver and stalling the motor; or a dead battery; or sclerotic bone</td><td>Ease the axial pressure and let it cut. Swap batteries. If two attempts stall, change sites.</td></tr>
+  <tr><td>Drove it in, no pop, hub at skin</td><td>Needle too short &mdash; it never crossed into marrow</td><td>Remove. Re-site on the <i>other</i> limb with the next size up. Do not redrill the same bone.</td></tr>
+  <tr><td>Needle wobbles / falls over</td><td>In soft tissue, or through-and-through out the far cortex</td><td>Remove and re-site on a different bone. Hold pressure.</td></tr>
+  <tr><td>No marrow aspirate</td><td>Normal &mdash; common in low-flow states</td><td>Ignore it. Confirm with the flush instead.</td></tr>
+  <tr><td>Flush meets hard resistance</td><td>Tip against cortex, or the lumen is plugged with a marrow core</td><td>One firm attempt to clear. If still blocked, it is a failed line &mdash; remove.</td></tr>
+  <tr><td>Limb swells / calf firms up on flush</td><td>Extravasation</td><td><b>Stop immediately.</b> Remove. New site on a different bone. Mark the limb and reassess for compartment syndrome hourly.</td></tr>
+  <tr><td>Ran fine, then stopped</td><td>Dislodgement (classically humeral, with arm movement), or clotting from an inadequate initial flush</td><td>Re-flush firmly. Check the needle is still rigid. If it now wobbles, it has moved &mdash; replace it.</td></tr>
+  <tr><td>Correct position but flow is slow</td><td>Running on gravity</td><td>Pressure bag to 300 mmHg, or a pump. Re-flush.</td></tr>
+  <tr><td>Awake patient screams on infusion</td><td>Lidocaine omitted, or given after the saline flush</td><td>Stop the infusion. Give lidocaine, dwell 60 seconds, then restart.</td></tr>
+  <tr><td>Second IO in the same bone won't hold pressure</td><td>The earlier cortical hole is venting the marrow space</td><td>Expected and unfixable. Use a different bone &mdash; this is why the 48-hour rule exists.</td></tr>
+</table>
+<div class="sec-head c-red" id="complications"><span class="sec-num">10</span><h2>Complications</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Extravasation from failure to fully penetrate the cortex or from a through-and-through insertion &mdash; monitor the limb for swelling during infusion</li>
-      <li>Compartment syndrome from unrecognized extravasation</li>
-      <li>Fracture, especially in pediatric or osteoporotic bone with excessive force</li>
-      <li>Infection/osteomyelitis with prolonged dwell time &mdash; convert to standard IV access as soon as feasible</li>
-      <li>Pain on infusion in conscious patients &mdash; pre-treat with intraosseous lidocaine before fluids/medications</li>
+      <li><b>Extravasation &rarr; compartment syndrome.</b> The complication that matters, and it is essentially always a recognition failure rather than a technique failure. The tibia is the highest-risk site because leakage tracks posteriorly and stays invisible. Any IO limb gets a documented baseline and scheduled re-checks while it is running.</li>
+      <li><b>Through-and-through penetration</b> &mdash; classically the pediatric tibia, from holding the trigger through the marrow cavity and out the far cortex. Presents as a needle that stands but will not flush.</li>
+      <li><b>Fracture</b> &mdash; excess force in osteoporotic or pediatric bone, or a manual needle levered sideways.</li>
+      <li><b>Osteomyelitis</b> &mdash; well under 1%, and rises with dwell time and with insertion through non-prepped or infected skin.</li>
+      <li><b>Growth plate injury</b> &mdash; the reason pediatric tibial landmarks sit <i>distal</i> to the tuberosity and femoral landmarks sit proximal to the patella.</li>
+      <li><b>Fat and marrow embolization</b> &mdash; demonstrable, but not associated with clinically meaningful harm in humans. It is not a reason to withhold or under-flush an IO.</li>
+      <li><b>Skin necrosis</b> from vesicant or vasopressor extravasation into soft tissue &mdash; a downstream consequence of a missed infiltration, not a separate event.</li>
 </ul>
 </div>
-<div class="sec-head c-purple" id="pearls"><span class="sec-num">06</span><h2>Pearls</h2></div>
+<div class="sec-head c-blue" id="after"><span class="sec-num">11</span><h2>Dwell Time and Removal</h2></div>
+<div class="box t-blue">
+<p><b>24 hours is the ceiling</b> under most manufacturer instructions, and sooner is better. IO is a bridge. Once the patient is stabilized and a peripheral or central line is in, the IO comes out &mdash; leaving it &ldquo;just in case&rdquo; accumulates infection risk for access you are not using.</p>
+<p><b>Removal:</b> attach a <b>Luer-lock</b> syringe to the hub (a slip-tip will pull off). Rotate <b>clockwise</b> while drawing straight out along the needle's axis. <b>Do not rock, lever, or bend.</b> Side-loading can shear the needle and leave a fragment in the bone &mdash; a problem that becomes an orthopedic consult. Dress the site; it will ooze a little.</p>
+<p><b>Document:</b> site, needle size, time in, time out, lidocaine given, and the limb assessment. If the patient goes to CT or the OR, tell the receiving team the IO is there &mdash; humeral needles under a gown are easy to miss and easy to knock out.</p>
+</div>
+<div class="sec-head c-purple" id="pearls"><span class="sec-num">12</span><h2>Pearls</h2></div>
 <div class="box t-purple">
-<p>IO access is not inferior to IV for emergency medication and fluid administration &mdash; treat it as a full-status line, not a placeholder.</p>
-<p>The proximal humerus site allows faster flow rates than tibial sites and is preferred when rapid volume resuscitation is the goal.</p>
-<p>Always confirm placement before infusing &mdash; a needle that doesn't stand firmly on its own, or flush that causes visible swelling, means reassess before continuing.</p>
-<p>Convert to standard IV/central access as soon as the situation allows; IO is a bridge, not a destination line.</p>
+<p><b>Flush like you mean it.</b> If you remember one thing: the marrow cavity does not open until you force it open. Almost every &ldquo;the IO doesn't work&rdquo; complaint is an under-flushed line.</p>
+<p><b>The needle stands up or it isn't in.</b> Letting go of the hub is a free, instant, highly specific test, and it is the one people skip in a hurry.</p>
+<p><b>No aspirate is not a failure.</b> More correctly placed IOs yield nothing back than most clinicians expect. Confirm with the flush, not the syringe.</p>
+<p><b>The humerus needs the long needle and the right rotation.</b> Hand on the belly, 45&deg; toward the elbow, 45 mm needle. Get those three and the humerus is the best line in the room; miss any one and it fails quietly.</p>
+<p><b>Secure the arm.</b> A humeral IO not taped to the torso will be pulled out by someone doing something reasonable.</p>
+<p><b>Pressure bag, every time.</b> Access without pressure is not resuscitation.</p>
+<p><b>Never re-drill the same bone.</b> Within 48 hours, the previous hole vents everything you put in. Cross to the other side.</p>
+<p><b>IO is not a second-class line.</b> Every drug, blood product, and contrast agent that goes IV goes IO. Treat it as full access &mdash; and then replace it within 24 hours.</p>
 </div>
-<div class="sec-head c-amber" id="refs"><span class="sec-num">07</span><h2>References</h2></div>
+<div class="sec-head c-amber" id="refs"><span class="sec-num">13</span><h2>References</h2></div>
 <ul class="sources">
+  <li><span class="tier">TRIAL</span>Couper K, Ji C, Deakin CD, et al. A randomized trial of drug route in out-of-hospital cardiac arrest (PARAMEDIC-3). <i>N Engl J Med.</i> 2025;392(4):336&ndash;348.</li>
+  <li><span class="tier">TRIAL</span>Vallentin MF, Granfeldt A, Klitgaard TL, et al. Intraosseous or intravenous vascular access for out-of-hospital cardiac arrest (IVIO). <i>N Engl J Med.</i> 2025;392(4):349&ndash;360.</li>
   <li><span class="tier">GUIDELINE</span>Petitpas F, Guenezan J, Vendeuvre T, Scepi M, Oriot D, Mimoz O. Use of intra-osseous access in adults: a systematic review. <i>Crit Care.</i> 2016;20:102.</li>
-  <li><span class="tier">REFERENCE</span>Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 &mdash; Intraosseous Infusion chapter.</li>
+  <li><span class="tier">GUIDELINE</span>American Heart Association. 2020 Guidelines for CPR and ECC &mdash; Adult and Pediatric Advanced Life Support: vascular access. <i>Circulation.</i> 2020;142(16_suppl_2).</li>
+  <li><span class="tier">REFERENCE</span>Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 &mdash; Intraosseous Infusion.</li>
+  <li><span class="tier">REFERENCE</span>Teleflex. <i>EZ-IO Intraosseous Vascular Access System &mdash; Instructions for Use.</i> Manufacturer labeling for needle sizing, lidocaine protocol, and dwell time. Confirm against the device stocked in your own institution.</li>
 </ul>
+
 <div class="footer">Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and equipment against your own institution's protocol before clinical use.</div>
 </div>
 </body>
