@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T23:19:21.375Z",
+  "generatedAt": "2026-09-22T23:30:48.577Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -3310,8 +3310,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3952,8 +3952,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4147,8 +4147,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4359,8 +4359,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4578,8 +4578,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4752,8 +4752,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4963,8 +4963,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5133,8 +5133,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5335,8 +5335,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6342,8 +6342,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6692,6 +6692,13 @@
               "html": "Almost every humeral failure is a positioning failure, and it happens before the drill comes out."
             },
             {
+              "type": "figure",
+              "figureId": "proximal-humerus-intraosseous-access-in-two-steps",
+              "svg": "<svg viewBox=\"0 0 520 510\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Proximal humerus intraosseous access in two steps. First, internal rotation: the arm is adducted with the palm on the umbilicus and the elbow pointing backward, which swings the greater tubercle forward into the operator's target line. Second, the angle: the needle enters the most prominent point of the greater tubercle, one to two centimeters above the surgical neck, and is driven at forty-five degrees toward the elbow. A needle driven straight in instead travels medially through the humeral head into the glenohumeral joint space.\">\n<style>\n  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}\n  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .bone{fill:#182030;stroke:#8a9ab5;stroke-width:2}\n  .ld{stroke:#4a5670;stroke-width:1}\n  .dash{stroke-dasharray:4 4;fill:none}\n</style>\n\n<text class=\"t\" x=\"0\" y=\"17\">Rotation first, then angle</text>\n<text class=\"c\" x=\"0\" y=\"34\">Both decisions happen before the drill comes out.</text>\n\n<!-- ============ 1. INTERNAL ROTATION ============ -->\n<text class=\"h\" x=\"0\" y=\"66\" style=\"fill:#00d4aa\">1 — INTERNALLY ROTATE THE ARM</text>\n\n<circle cx=\"74\" cy=\"92\" r=\"13\" fill=\"#182030\" stroke=\"#8a9ab5\" stroke-width=\"2\"></circle>\n<rect x=\"38\" y=\"108\" width=\"72\" height=\"88\" rx=\"14\" fill=\"#182030\" stroke=\"#8a9ab5\" stroke-width=\"2\"></rect>\n<polyline class=\"w\" stroke=\"#00d4aa\" points=\"108,124 138,158 92,172\"></polyline>\n<circle cx=\"92\" cy=\"172\" r=\"7\" fill=\"#00d4aa\"></circle>\n<text class=\"c\" x=\"122\" y=\"178\" style=\"fill:#00d4aa\">hand</text>\n<path class=\"w dash\" stroke=\"#00d4aa\" d=\"M118,108 A22,22 0 0 1 132,132\"></path>\n<polygon points=\"132,134 126,124 138,125\" fill=\"#00d4aa\"></polygon>\n\n<text class=\"s\" x=\"170\" y=\"118\">Arm tight to the chest.</text>\n<text class=\"s\" x=\"170\" y=\"136\">Palm on the umbilicus,</text>\n<text class=\"s\" x=\"170\" y=\"154\">elbow pointing backward.</text>\n<text class=\"s\" x=\"170\" y=\"178\" style=\"fill:#00d4aa\">This is what swings the greater</text>\n<text class=\"s\" x=\"170\" y=\"196\" style=\"fill:#00d4aa\">tubercle forward, into your line.</text>\n\n<line x1=\"0\" y1=\"218\" x2=\"512\" y2=\"218\" stroke=\"#4a5670\" stroke-width=\"1\" opacity=\"0.4\"></line>\n\n<!-- ============ 2. THE ANGLE ============ -->\n<text class=\"h\" x=\"0\" y=\"248\" style=\"fill:#00d4aa\">2 — DRIVE 45° TOWARD THE ELBOW</text>\n\n<!-- glenoid fossa (the joint the wrong angle finds) -->\n<path class=\"w\" stroke=\"#e84c4c\" opacity=\"0.55\" d=\"M106,300 Q92,340 106,380\"></path>\n<text class=\"s\" x=\"4\" y=\"336\" style=\"fill:#e84c4c\">JOINT</text>\n<line class=\"ld\" x1=\"52\" y1=\"332\" x2=\"96\" y2=\"338\" stroke=\"#e84c4c\" opacity=\"0.55\"></line>\n\n<!-- proximal humerus: head, groove, greater tubercle, surgical neck, shaft -->\n<path class=\"bone\" d=\"M150,496 L150,404 Q150,392 156,386 Q124,376 120,340 Q116,300 152,294\n Q180,290 186,314 Q190,323 197,317 Q217,312 221,340 Q225,368 204,380 Q192,386 190,404 L190,496\"></path>\n\n<!-- target point: most prominent part of the greater tubercle -->\n<circle cx=\"219\" cy=\"340\" r=\"5.5\" fill=\"#00d4aa\"></circle>\n\n<!-- CORRECT: 45 degrees caudad -->\n<line class=\"w\" stroke=\"#00d4aa\" x1=\"300\" y1=\"258\" x2=\"232\" y2=\"326\"></line>\n<polygon points=\"224,334 230,320 238,328\" fill=\"#00d4aa\"></polygon>\n<rect x=\"296\" y=\"246\" width=\"22\" height=\"12\" rx=\"2\" transform=\"rotate(45 307 252)\" fill=\"#00d4aa\"></rect>\n<text class=\"s\" x=\"322\" y=\"258\" style=\"fill:#00d4aa\">45° CAUDAD</text>\n<text class=\"c\" x=\"322\" y=\"274\" style=\"fill:#00d4aa\">toward the elbow</text>\n<!-- continuation into the marrow -->\n<line class=\"w dash\" stroke=\"#00d4aa\" x1=\"212\" y1=\"347\" x2=\"184\" y2=\"375\" opacity=\"0.55\"></line>\n\n<!-- greater tubercle label -->\n<line class=\"ld\" x1=\"296\" y1=\"322\" x2=\"230\" y2=\"336\"></line>\n<text class=\"s\" x=\"302\" y=\"318\" style=\"fill:#e8edf5\">GREATER TUBERCLE</text>\n<text class=\"c\" x=\"302\" y=\"334\">the “golf ball on the tee”</text>\n<text class=\"c\" x=\"302\" y=\"348\">1–2 cm above the neck</text>\n\n<!-- WRONG: straight in -->\n<line class=\"w\" stroke=\"#e84c4c\" x1=\"348\" y1=\"382\" x2=\"244\" y2=\"360\"></line>\n<polygon points=\"236,358 250,354 248,365\" fill=\"#e84c4c\"></polygon>\n<line class=\"w dash\" stroke=\"#e84c4c\" x1=\"230\" y1=\"354\" x2=\"112\" y2=\"342\" opacity=\"0.5\"></line>\n<text class=\"s\" x=\"354\" y=\"386\" style=\"fill:#e84c4c\">STRAIGHT IN</text>\n<text class=\"c\" x=\"354\" y=\"402\" style=\"fill:#e84c4c\">into the joint space</text>\n\n<!-- surgical neck -->\n<line class=\"ld\" x1=\"104\" y1=\"396\" x2=\"148\" y2=\"398\"></line>\n<text class=\"s\" x=\"0\" y=\"400\">SURGICAL NECK</text>\n<text class=\"c\" x=\"0\" y=\"418\">the narrowing you</text>\n<text class=\"c\" x=\"0\" y=\"432\">must actually feel</text>\n\n<!-- needle length -->\n<text class=\"s\" x=\"230\" y=\"452\" style=\"fill:#f59e0b\">45 mm needle. Always, in an adult.</text>\n<text class=\"c\" x=\"230\" y=\"470\" style=\"fill:#f59e0b\">A 25 mm needle here is the classic</text>\n<text class=\"c\" x=\"230\" y=\"484\" style=\"fill:#f59e0b\">quiet failure — it never reaches marrow.</text>\n</svg>",
+              "alt": "Proximal humerus intraosseous access in two steps. First, internal rotation: the arm is adducted with the palm on the umbilicus and the elbow pointing backward, which swings the greater tubercle forward into the operator's target line. Second, the angle: the needle enters the most prominent point of the greater tubercle, one to two centimeters above the surgical neck, and is driven at forty-five degrees toward the elbow. A needle driven straight in instead travels medially through the humeral head into the glenohumeral joint space.",
+              "caption": "Internal rotation and the 45° caudad angle are the two things that make this line work, and neither is visible once the drill is in your hand. A needle driven perpendicular to the skin travels medially through the head and into the glenohumeral joint — it will stand up convincingly, flush poorly, and infiltrate."
+            },
+            {
               "type": "steps",
               "steps": [
                 {
@@ -6741,6 +6748,13 @@
           "title": "Proximal Tibia — Adult and Pediatric",
           "tagline": null,
           "blocks": [
+            {
+              "type": "figure",
+              "figureId": "proximal-tibial-intraosseous-landmarks-anterior-view-of-the-",
+              "svg": "<svg viewBox=\"0 0 520 430\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Proximal tibial intraosseous landmarks, anterior view of the right knee. The tibial tuberosity is the reference bump. The adult target lies two centimeters medial and one centimeter proximal to it, above the tuberosity. The pediatric target lies one centimeter medial and one to two centimeters distal to it, below the tuberosity, so that it stays clear of the open proximal tibial growth plate. The two targets sit on opposite sides of the tuberosity.\">\n<style>\n  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}\n  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .bone{fill:#182030;stroke:#8a9ab5;stroke-width:2}\n  .ld{stroke:#4a5670;stroke-width:1}\n  .dash{stroke-dasharray:4 4;fill:none}\n</style>\n\n<text class=\"t\" x=\"0\" y=\"17\">The tibial targets point opposite ways</text>\n<text class=\"c\" x=\"0\" y=\"34\">Adult goes above the tuberosity. Child goes below it. Anterior view, right knee.</text>\n\n<!-- distal femur + patella, faint, for orientation -->\n<path class=\"w\" stroke=\"#8a9ab5\" opacity=\"0.35\" d=\"M166,60 L166,104 Q166,134 198,138 L252,138 Q284,134 284,104 L284,60\"></path>\n<ellipse cx=\"225\" cy=\"106\" rx=\"24\" ry=\"29\" fill=\"none\" stroke=\"#8a9ab5\" stroke-width=\"1.6\" opacity=\"0.35\"></ellipse>\n<text class=\"c\" x=\"296\" y=\"110\" opacity=\"0.7\">patella</text>\n\n<!-- tibia -->\n<path class=\"bone\" d=\"M160,150 L290,150 Q282,188 274,222 L268,340 L182,340 L176,222 Q168,188 160,150 Z\"></path>\n\n<!-- proximal tibial physis -->\n<rect x=\"164\" y=\"166\" width=\"122\" height=\"20\" fill=\"#f59e0b\" opacity=\"0.14\"></rect>\n<line class=\"dash\" stroke=\"#f59e0b\" x1=\"164\" y1=\"166\" x2=\"286\" y2=\"166\" stroke-width=\"1.6\"></line>\n<line class=\"dash\" stroke=\"#f59e0b\" x1=\"166\" y1=\"186\" x2=\"284\" y2=\"186\" stroke-width=\"1.6\"></line>\n<!-- the apophysis tongue running down to the tuberosity -->\n<line class=\"ld\" x1=\"326\" y1=\"176\" x2=\"290\" y2=\"176\" stroke=\"#f59e0b\" opacity=\"0.7\"></line>\n\n<!-- tibial tuberosity -->\n<ellipse class=\"bone\" cx=\"225\" cy=\"208\" rx=\"21\" ry=\"14\"></ellipse>\n<ellipse cx=\"225\" cy=\"208\" rx=\"12\" ry=\"7\" fill=\"none\" stroke=\"#8a9ab5\" stroke-width=\"1\" opacity=\"0.5\"></ellipse>\n<line class=\"ld\" x1=\"326\" y1=\"264\" x2=\"249\" y2=\"211\"></line>\n\n<!-- ADULT target -->\n<circle cx=\"189\" cy=\"194\" r=\"6\" fill=\"#00d4aa\"></circle>\n<line class=\"ld\" x1=\"100\" y1=\"196\" x2=\"181\" y2=\"194\" stroke=\"#00d4aa\" opacity=\"0.7\"></line>\n<text class=\"s\" x=\"0\" y=\"190\" style=\"fill:#00d4aa\">ADULT</text>\n<text class=\"c\" x=\"0\" y=\"206\">2 cm medial,</text>\n<text class=\"c\" x=\"0\" y=\"220\" style=\"fill:#00d4aa\">1 cm PROXIMAL ↑</text>\n\n<!-- PEDIATRIC target -->\n<circle cx=\"207\" cy=\"243\" r=\"6\" fill=\"#a78bfa\"></circle>\n<line class=\"ld\" x1=\"110\" y1=\"266\" x2=\"200\" y2=\"246\" stroke=\"#a78bfa\" opacity=\"0.7\"></line>\n<text class=\"s\" x=\"0\" y=\"260\" style=\"fill:#a78bfa\">CHILD</text>\n<text class=\"c\" x=\"0\" y=\"276\">1 cm medial,</text>\n<text class=\"c\" x=\"0\" y=\"290\" style=\"fill:#a78bfa\">1–2 cm DISTAL ↓</text>\n\n<!-- right-hand labels -->\n<text class=\"s\" x=\"330\" y=\"172\" style=\"fill:#f59e0b\">GROWTH PLATE</text>\n<text class=\"c\" x=\"330\" y=\"188\">open in children.</text>\n<text class=\"c\" x=\"330\" y=\"202\" style=\"fill:#f59e0b\">This is the whole</text>\n<text class=\"c\" x=\"330\" y=\"216\" style=\"fill:#f59e0b\">reason the pediatric</text>\n<text class=\"c\" x=\"330\" y=\"230\" style=\"fill:#f59e0b\">landmark goes DOWN.</text>\n\n<text class=\"s\" x=\"330\" y=\"268\">TIBIAL TUBEROSITY</text>\n<text class=\"c\" x=\"330\" y=\"284\">find it, then move</text>\n<text class=\"c\" x=\"330\" y=\"298\">off it — never into it</text>\n\n<!-- scale -->\n<line x1=\"330\" y1=\"330\" x2=\"348\" y2=\"330\" stroke=\"#8a9ab5\" stroke-width=\"1.6\"></line>\n<line x1=\"330\" y1=\"326\" x2=\"330\" y2=\"334\" stroke=\"#8a9ab5\" stroke-width=\"1.6\"></line>\n<line x1=\"348\" y1=\"326\" x2=\"348\" y2=\"334\" stroke=\"#8a9ab5\" stroke-width=\"1.6\"></line>\n<text class=\"c\" x=\"356\" y=\"334\">1 cm</text>\n\n<!-- medial / lateral orientation -->\n<text class=\"c\" x=\"112\" y=\"143\">← MEDIAL</text>\n<text class=\"c\" x=\"298\" y=\"143\">LATERAL →</text>\n\n<text class=\"s\" x=\"0\" y=\"372\" style=\"fill:#00d4aa\">90° — straight in, perpendicular to the flat surface.</text>\n<text class=\"c\" x=\"0\" y=\"390\">Unlike the humerus. Angling drags the needle out the thin side wall.</text>\n<text class=\"c\" x=\"0\" y=\"414\">Support the knee on a rolled towel — a leg that bounces absorbs the drill.</text>\n</svg>",
+              "alt": "Proximal tibial intraosseous landmarks, anterior view of the right knee. The tibial tuberosity is the reference bump. The adult target lies two centimeters medial and one centimeter proximal to it, above the tuberosity. The pediatric target lies one centimeter medial and one to two centimeters distal to it, below the tuberosity, so that it stays clear of the open proximal tibial growth plate. The two targets sit on opposite sides of the tuberosity.",
+              "caption": "The tuberosity is the reference, not the target. <b>Adult goes proximal to it; a child goes distal</b> — opposite directions, for the one reason shown here. Getting them backwards in a child puts the needle through an open physis."
+            },
             {
               "type": "steps",
               "steps": [
@@ -6997,8 +7011,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7165,8 +7179,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7824,8 +7838,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -8056,6 +8070,13 @@
           "title": "The Zones — and the One You Never Occlude",
           "tagline": null,
           "blocks": [
+            {
+              "type": "figure",
+              "figureId": "the-three-reboa-aortic-zones",
+              "svg": "<svg viewBox=\"0 0 520 526\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"The three REBOA aortic zones. Zone 1 runs from the origin of the left subclavian artery down to the celiac axis and is used for intra-abdominal bleeding or peri-arrest, with a target occlusion time of thirty minutes or less, measured externally to the sternal notch at roughly forty-five to fifty centimeters. Zone 2 runs from the celiac axis to the lowest renal artery and is a no-fly zone, because a balloon there crosses the celiac, superior mesenteric and renal origins without the benefit of proximal control. Zone 3 runs from the lowest renal artery to the aortic bifurcation and is used for pelvic or junctional bleeding and postpartum hemorrhage, tolerating up to sixty minutes, measured externally to the umbilicus at roughly twenty-seven to thirty centimeters.\">\n<style>\n  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}\n  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .z{font-family:Syne,sans-serif;font-weight:800;font-size:30px}\n  .ld{stroke:#4a5670;stroke-width:1}\n  .dash{stroke-dasharray:4 4;fill:none}\n  .vessel{fill:none;stroke:#8a9ab5;stroke-linecap:round}\n</style>\n\n<text class=\"t\" x=\"0\" y=\"17\">Where the balloon goes</text>\n<text class=\"c\" x=\"0\" y=\"34\">Three zones. One of them is never a target.</text>\n\n<!-- zone bands -->\n<rect x=\"96\" y=\"62\" width=\"154\" height=\"138\" fill=\"#00d4aa\" opacity=\"0.10\"></rect>\n<rect x=\"96\" y=\"200\" width=\"154\" height=\"58\" fill=\"#e84c4c\" opacity=\"0.16\"></rect>\n<rect x=\"96\" y=\"258\" width=\"154\" height=\"132\" fill=\"#2563eb\" opacity=\"0.11\"></rect>\n<!-- zone 2 hatching -->\n<g stroke=\"#e84c4c\" stroke-width=\"1\" opacity=\"0.35\">\n  <line x1=\"96\" y1=\"230\" x2=\"126\" y2=\"200\"></line><line x1=\"96\" y1=\"258\" x2=\"154\" y2=\"200\"></line>\n  <line x1=\"124\" y1=\"258\" x2=\"182\" y2=\"200\"></line><line x1=\"152\" y1=\"258\" x2=\"210\" y2=\"200\"></line>\n  <line x1=\"180\" y1=\"258\" x2=\"238\" y2=\"200\"></line><line x1=\"208\" y1=\"258\" x2=\"250\" y2=\"216\"></line>\n  <line x1=\"236\" y1=\"258\" x2=\"250\" y2=\"244\"></line>\n</g>\n<line class=\"dash\" stroke=\"#8a9ab5\" x1=\"96\" y1=\"200\" x2=\"250\" y2=\"200\" stroke-width=\"1.4\" opacity=\"0.7\"></line>\n<line class=\"dash\" stroke=\"#8a9ab5\" x1=\"96\" y1=\"258\" x2=\"250\" y2=\"258\" stroke-width=\"1.4\" opacity=\"0.7\"></line>\n<line class=\"dash\" stroke=\"#8a9ab5\" x1=\"96\" y1=\"390\" x2=\"250\" y2=\"390\" stroke-width=\"1.4\" opacity=\"0.7\"></line>\n\n<!-- aorta: arch, descending, bifurcation -->\n<path class=\"vessel\" stroke-width=\"24\" d=\"M150,390 L150,96 Q150,56 186,56 Q220,56 220,92 L220,118\"></path>\n<path class=\"vessel\" stroke-width=\"16\" d=\"M150,390 L112,450\"></path>\n<path class=\"vessel\" stroke-width=\"16\" d=\"M150,390 L188,450\"></path>\n<!-- arch branches -->\n<line class=\"vessel\" stroke-width=\"9\" x1=\"158\" y1=\"58\" x2=\"138\" y2=\"22\"></line>\n<!-- visceral branches -->\n<line class=\"vessel\" stroke-width=\"8\" x1=\"150\" y1=\"200\" x2=\"104\" y2=\"194\"></line>\n<line class=\"vessel\" stroke-width=\"8\" x1=\"150\" y1=\"222\" x2=\"104\" y2=\"222\"></line>\n<line class=\"vessel\" stroke-width=\"8\" x1=\"150\" y1=\"250\" x2=\"104\" y2=\"249\"></line>\n<line class=\"vessel\" stroke-width=\"8\" x1=\"150\" y1=\"250\" x2=\"194\" y2=\"250\"></line>\n\n<!-- diaphragm -->\n<line class=\"dash\" stroke=\"#8a9ab5\" x1=\"94\" y1=\"180\" x2=\"250\" y2=\"180\" stroke-width=\"1.2\" opacity=\"0.45\"></line>\n\n<!-- zone numerals -->\n<text class=\"z\" x=\"228\" y=\"150\" fill=\"#00d4aa\" opacity=\"0.8\">1</text>\n<text class=\"z\" x=\"228\" y=\"242\" fill=\"#e84c4c\" opacity=\"0.85\">2</text>\n<text class=\"z\" x=\"228\" y=\"338\" fill=\"#2563eb\" opacity=\"0.8\">3</text>\n\n<!-- balloons -->\n<ellipse cx=\"150\" cy=\"150\" rx=\"25\" ry=\"18\" fill=\"#00d4aa\" opacity=\"0.32\"></ellipse>\n<ellipse cx=\"150\" cy=\"150\" rx=\"25\" ry=\"18\" fill=\"none\" stroke=\"#00d4aa\" stroke-width=\"2.2\"></ellipse>\n<ellipse class=\"dash\" cx=\"150\" cy=\"322\" rx=\"22\" ry=\"16\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"></ellipse>\n\n<!-- catheter from the femoral access -->\n<path class=\"w dash\" stroke=\"#00d4aa\" d=\"M176,452 L150,394 L150,170\" opacity=\"0.9\"></path>\n<text class=\"c\" x=\"196\" y=\"462\" style=\"fill:#00d4aa\">common femoral access</text>\n\n<!-- left-hand anatomy labels -->\n<text class=\"c\" x=\"0\" y=\"62\">L SUBCLAVIAN</text>\n<text class=\"c\" x=\"0\" y=\"76\">top of Zone 1</text>\n<line class=\"ld\" x1=\"82\" y1=\"58\" x2=\"144\" y2=\"47\"></line>\n<text class=\"c\" x=\"0\" y=\"176\">DIAPHRAGM</text>\n<line class=\"ld\" x1=\"63\" y1=\"173\" x2=\"92\" y2=\"179\"></line>\n<text class=\"c\" x=\"42\" y=\"198\">CELIAC</text>\n<line class=\"ld\" x1=\"85\" y1=\"195\" x2=\"101\" y2=\"194\"></line>\n<text class=\"c\" x=\"55\" y=\"226\">SMA</text>\n<line class=\"ld\" x1=\"79\" y1=\"223\" x2=\"101\" y2=\"222\"></line>\n<text class=\"c\" x=\"42\" y=\"254\">RENALS</text>\n<line class=\"ld\" x1=\"85\" y1=\"251\" x2=\"101\" y2=\"249\"></line>\n<text class=\"c\" x=\"0\" y=\"396\">BIFURCATION</text>\n<line class=\"ld\" x1=\"76\" y1=\"393\" x2=\"138\" y2=\"390\"></line>\n\n<!-- right-hand zone detail -->\n<text class=\"s\" x=\"300\" y=\"96\" style=\"fill:#00d4aa\">ZONE 1 — SUPRACELIAC</text>\n<text class=\"c\" x=\"300\" y=\"112\">Intra-abdominal bleeding</text>\n<text class=\"c\" x=\"300\" y=\"126\">or peri-arrest.</text>\n<text class=\"c\" x=\"300\" y=\"144\" style=\"fill:#00d4aa\">≤30 min — aim for 15–20</text>\n<text class=\"c\" x=\"300\" y=\"158\" style=\"fill:#00d4aa\">measure to the sternal notch</text>\n<text class=\"c\" x=\"300\" y=\"172\" style=\"fill:#00d4aa\">≈45–50 cm · 8–10 mL</text>\n\n<text class=\"s\" x=\"300\" y=\"206\" style=\"fill:#e84c4c\">ZONE 2 — NO-FLY</text>\n<text class=\"c\" x=\"300\" y=\"222\" style=\"fill:#e84c4c\">Sits across the celiac,</text>\n<text class=\"c\" x=\"300\" y=\"236\" style=\"fill:#e84c4c\">SMA and renal origins</text>\n<text class=\"c\" x=\"300\" y=\"250\" style=\"fill:#e84c4c\">with none of the proximal</text>\n<text class=\"c\" x=\"300\" y=\"264\" style=\"fill:#e84c4c\">benefit. Never a target.</text>\n\n<text class=\"s\" x=\"300\" y=\"300\" style=\"fill:#2563eb\">ZONE 3 — INFRARENAL</text>\n<text class=\"c\" x=\"300\" y=\"316\">Pelvic or junctional</text>\n<text class=\"c\" x=\"300\" y=\"330\">bleeding. Also PPH.</text>\n<text class=\"c\" x=\"300\" y=\"348\" style=\"fill:#2563eb\">Up to 60 min — kidneys,</text>\n<text class=\"c\" x=\"300\" y=\"362\" style=\"fill:#2563eb\">gut and cord all spared</text>\n<text class=\"c\" x=\"300\" y=\"376\" style=\"fill:#2563eb\">measure to the umbilicus</text>\n<text class=\"c\" x=\"300\" y=\"390\" style=\"fill:#2563eb\">≈27–30 cm · 2–6 mL</text>\n\n<text class=\"s\" x=\"0\" y=\"486\" style=\"fill:#f59e0b\">Inflate with saline. Never air.</text>\n<text class=\"c\" x=\"0\" y=\"502\">Stop at the least volume that occludes — the endpoint</text>\n<text class=\"c\" x=\"0\" y=\"516\">is the pressure response, not the published volume.</text>\n</svg>",
+              "alt": "The three REBOA aortic zones. Zone 1 runs from the origin of the left subclavian artery down to the celiac axis and is used for intra-abdominal bleeding or peri-arrest, with a target occlusion time of thirty minutes or less, measured externally to the sternal notch at roughly forty-five to fifty centimeters. Zone 2 runs from the celiac axis to the lowest renal artery and is a no-fly zone, because a balloon there crosses the celiac, superior mesenteric and renal origins without the benefit of proximal control. Zone 3 runs from the lowest renal artery to the aortic bifurcation and is used for pelvic or junctional bleeding and postpartum hemorrhage, tolerating up to sixty minutes, measured externally to the umbilicus at roughly twenty-seven to thirty centimeters.",
+              "caption": "Zone 1 buys the most pressure at the highest cost: every abdominal organ, both kidneys and the cord sit downstream. Zone 3 spares all of them. <b>If the proximal pressure does not rise on inflation</b>, the balloon is under-inflated, malpositioned — or the bleeding is above it."
+            },
             {
               "type": "table",
               "headers": [
@@ -8368,8 +8389,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
