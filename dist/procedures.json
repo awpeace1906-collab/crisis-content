@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T12:45:04.649Z",
+  "generatedAt": "2026-09-22T12:51:12.129Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1772,7 +1772,7 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li><b>Tube.</b> Traditional teaching is <b>32–36 Fr</b> for traumatic hemothorax. Note this is genuinely contested — multiple trials comparing <b>14 Fr pigtail catheters</b> against large-bore tubes for traumatic hemothorax have found comparable drainage and failure rates with considerably less pain. Know which your institution and trauma service favour, and know that \"bigger drains blood better\" is no longer an unexamined truth.</li>\n      <li><b>#10 scalpel</b>, large <b>Kelly clamp</b>, and a second clamp for the tube tip</li>\n      <li><b>0 or 1-0 silk/nylon</b> on a cutting needle for securing</li>\n      <li><b>Drainage system</b> (three-chamber or digital), primed, with tubing long enough to reach</li>\n      <li><b>Local anaesthetic</b> — plenty of it. 20–30&nbsp;mL of lidocaine is not excessive for an awake patient; the periosteum and parietal pleura are the painful bits and are frequently under-infiltrated.</li>\n      <li>Chlorhexidine, full drapes, petroleum gauze, dressings, tape</li>\n      <li><b>Systemic analgesia on board before you start</b>, not requested afterwards</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Tube.</b> Traditional teaching is <b>32–36 Fr</b> for traumatic hemothorax. Note this is genuinely contested — multiple trials comparing <b>14 Fr pigtail catheters</b> against large-bore tubes for traumatic hemothorax have found comparable drainage and failure rates with considerably less pain. Know which your institution and trauma service favour, and know that \"bigger drains blood better\" is no longer an unexamined truth.</li>\n      <li><b>#10 scalpel</b>, large <b>Kelly clamp</b>, and a second clamp for the tube tip</li>\n      <li><b>0 or 1-0 silk/nylon</b> on a cutting needle for securing</li>\n      <li><b>Drainage system</b> (three-chamber or digital), primed, with tubing long enough to reach</li>\n      <li><b>Local anesthetic</b> — plenty of it. 20–30&nbsp;mL of lidocaine is not excessive for an awake patient; the periosteum and parietal pleura are the painful bits and are frequently under-infiltrated.</li>\n      <li>Chlorhexidine, full drapes, petroleum gauze, dressings, tape</li>\n      <li><b>Systemic analgesia on board before you start</b>, not requested afterwards</li>\n</ul>"
             },
             {
               "type": "alert",
@@ -1825,7 +1825,7 @@
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "Anaesthetise generously, and reach the two structures that hurt",
+                  "title": "Anesthetize generously, and reach the two structures that hurt",
                   "html": "Skin first, then infiltrate down onto the <b>rib periosteum</b>, then walk the needle over the superior edge of the rib and infiltrate the <b>parietal pleura</b>. Those two are the painful structures; a wheal in the skin alone leaves the patient feeling everything that matters. Aspirating air or blood as you enter the pleura also confirms your depth and your diagnosis before you cut."
                 },
                 {
@@ -1909,7 +1909,7 @@
                   "Either the lung is fully re-expanded and the tube is redundant, <i>or</i> the tube is blocked, kinked, or clamped. Do not assume the happy explanation — check the tube and the film."
                 ],
                 [
-                  "<b>Sudden stop in a previously draining haemothorax</b>",
+                  "<b>Sudden stop in a previously draining hemothorax</b>",
                   "Clot occluding the tube. The blood is still accumulating; the drain has simply stopped telling you about it."
                 ],
                 [
@@ -1922,7 +1922,7 @@
               "type": "alert",
               "color": "amber",
               "title": "Drain a large chronic effusion slowly",
-              "html": "Removing a very large, long-standing effusion rapidly risks <b>re-expansion pulmonary oedema</b> — uncommon but occasionally severe. A widely taught ceiling is around <b>1–1.5 L in one sitting</b>, then clamp and continue later, stopping earlier if the patient develops chest tightness or cough. This does <i>not</i> apply to acutely draining a haemothorax or tension pneumothorax, where you drain what needs draining."
+              "html": "Removing a very large, long-standing effusion rapidly risks <b>re-expansion pulmonary edema</b> — uncommon but occasionally severe. A widely taught ceiling is around <b>1–1.5 L in one sitting</b>, then clamp and continue later, stopping earlier if the patient develops chest tightness or cough. This does <i>not</i> apply to acutely draining a hemothorax or tension pneumothorax, where you drain what needs draining."
             }
           ]
         },
@@ -1972,7 +1972,7 @@
                   "The parietal pleura is exquisitely sensitive. Systemic analgesia, and consider regional blockade. Pain is not a sign of malfunction"
                 ],
                 [
-                  "Retained haemothorax on follow-up imaging",
+                  "Retained hemothorax on follow-up imaging",
                   "Clotted blood the tube never evacuated",
                   "Early surgical referral. Retained clot is a route to empyema and trapped lung; a second tube rarely fixes it"
                 ],
@@ -1995,7 +1995,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li><b>Intercostal neurovascular injury</b> from dissecting along the inferior margin of the space</li>\n      <li><b>Organ injury</b> — lung, liver, spleen, diaphragm, and rarely heart or great vessels. Nearly always a consequence of a trocar, a site that was too low, or a skipped finger sweep</li>\n      <li><b>Placement into the abdomen</b> through an unrecognised diaphragmatic rupture</li>\n      <li><b>Malposition</b> — fissural, subcutaneous, intraparenchymal, or simply not in far enough</li>\n      <li><b>Re-expansion pulmonary oedema</b> after rapid drainage of a large chronic effusion</li>\n      <li><b>Empyema and retained haemothorax</b> as later consequences of incomplete drainage</li>\n      <li><b>Inadequate analgesia</b> — consistently under-recognised, and one of the procedures patients recall most unpleasantly</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Intercostal neurovascular injury</b> from dissecting along the inferior margin of the space</li>\n      <li><b>Organ injury</b> — lung, liver, spleen, diaphragm, and rarely heart or great vessels. Nearly always a consequence of a trocar, a site that was too low, or a skipped finger sweep</li>\n      <li><b>Placement into the abdomen</b> through an unrecognised diaphragmatic rupture</li>\n      <li><b>Malposition</b> — fissural, subcutaneous, intraparenchymal, or simply not in far enough</li>\n      <li><b>Re-expansion pulmonary edema</b> after rapid drainage of a large chronic effusion</li>\n      <li><b>Empyema and retained hemothorax</b> as later consequences of incomplete drainage</li>\n      <li><b>Inadequate analgesia</b> — consistently under-recognized, and one of the procedures patients recall most unpleasantly</li>\n</ul>"
             }
           ]
         },
@@ -2023,7 +2023,7 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p><b>The finger sweep is not optional.</b> It is what stands between a routine procedure and putting a tube through a diaphragm into a liver.</p>\n<p><b>Superior edge of the rib, always.</b> The bundle lives under the rib above.</p>\n<p><b>Anaesthetise the periosteum and the pleura</b>, not just the skin. Those are the structures that hurt.</p>\n<p><b>Swing confirms position better than the film does</b> — and you get it instantly, at the bedside.</p>\n<p><b>Continuous bubbling is a system fault until proven otherwise.</b> Work from the patient outward before diagnosing a lung injury.</p>\n<p><b>No trocar. No purse-string.</b> Both are legacy practice that cause harm.</p>\n<p><b>A tube that stops draining a haemothorax has not cured it.</b> Suspect clot, and re-image rather than relaxing.</p>"
+              "html": "<p><b>The finger sweep is not optional.</b> It is what stands between a routine procedure and putting a tube through a diaphragm into a liver.</p>\n<p><b>Superior edge of the rib, always.</b> The bundle lives under the rib above.</p>\n<p><b>Anesthetize the periosteum and the pleura</b>, not just the skin. Those are the structures that hurt.</p>\n<p><b>Swing confirms position better than the film does</b> — and you get it instantly, at the bedside.</p>\n<p><b>Continuous bubbling is a system fault until proven otherwise.</b> Work from the patient outward before diagnosing a lung injury.</p>\n<p><b>No trocar. No purse-string.</b> Both are legacy practice that cause harm.</p>\n<p><b>A tube that stops draining a hemothorax has not cured it.</b> Suspect clot, and re-image rather than relaxing.</p>"
             }
           ]
         },
@@ -2099,7 +2099,7 @@
               "type": "alert",
               "color": "red",
               "title": "Tracheal deviation is a late and unreliable sign",
-              "html": "Waiting for the textbook triad means waiting too long. Distended neck veins are frequently absent in a hypovolaemic trauma patient — there is no volume to distend them. In a ventilated patient the earliest reliable signal is often a <b>sudden rise in peak airway pressure with falling blood pressure</b>. Treat the physiology you have, not the sign you were taught to look for."
+              "html": "Waiting for the textbook triad means waiting too long. Distended neck veins are frequently absent in a hypovolemic trauma patient — there is no volume to distend them. In a ventilated patient the earliest reliable signal is often a <b>sudden rise in peak airway pressure with falling blood pressure</b>. Treat the physiology you have, not the sign you were taught to look for."
             }
           ]
         },
@@ -2113,7 +2113,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li><b>None</b> in a genuine tension pneumothorax with haemodynamic compromise. The risk of inaction dominates.</li>\n      <li>The real hazard is not a contraindication but a <b>misdiagnosis</b> — decompressing a chest that was never under tension, when the hypotension was haemorrhage, tamponade or a right mainstem intubation.</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None</b> in a genuine tension pneumothorax with hemodynamic compromise. The risk of inaction dominates.</li>\n      <li>The real hazard is not a contraindication but a <b>misdiagnosis</b> — decompressing a chest that was never under tension, when the hypotension was hemorrhage, tamponade or a right mainstem intubation.</li>\n</ul>"
             }
           ]
         },
@@ -2211,7 +2211,7 @@
                   "num": "6",
                   "color": "red",
                   "title": "Put your finger in and sweep",
-                  "html": "Confirm you are in the pleural space, feel for lung, and sweep for adhesions and for <b>abdominal contents</b> from an unrecognised diaphragmatic injury. In a traumatic arrest this sweep is also diagnostic — you may find a massive haemothorax that changes the entire resuscitation."
+                  "html": "Confirm you are in the pleural space, feel for lung, and sweep for adhesions and for <b>abdominal contents</b> from an unrecognised diaphragmatic injury. In a traumatic arrest this sweep is also diagnostic — you may find a massive hemothorax that changes the entire resuscitation."
                 },
                 {
                   "num": "7",
@@ -2225,7 +2225,7 @@
               "type": "alert",
               "color": "amber",
               "title": "In traumatic arrest, do both sides",
-              "html": "Bilateral finger thoracostomies are performed in traumatic cardiac arrest <b>without waiting for examination findings</b>, alongside haemorrhage control and volume. Auscultation is unreliable during CPR, and a unilateral decision based on breath sounds in that setting is a guess."
+              "html": "Bilateral finger thoracostomies are performed in traumatic cardiac arrest <b>without waiting for examination findings</b>, alongside hemorrhage control and volume. Auscultation is unreliable during CPR, and a unilateral decision based on breath sounds in that setting is a guess."
             }
           ]
         },
@@ -2239,13 +2239,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li><b>Haemodynamic improvement</b> — blood pressure rising within a minute or two is the most meaningful endpoint</li>\n      <li><b>Falling peak airway pressures</b> in a ventilated patient</li>\n      <li><b>Free rush of air</b> on entry — supportive, but its absence proves nothing</li>\n      <li><b>Return of lung sliding on POCUS</b> over the decompressed side</li>\n      <li><b>Your finger feeling lung</b> — the most direct confirmation available</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Hemodynamic improvement</b> — blood pressure rising within a minute or two is the most meaningful endpoint</li>\n      <li><b>Falling peak airway pressures</b> in a ventilated patient</li>\n      <li><b>Free rush of air</b> on entry — supportive, but its absence proves nothing</li>\n      <li><b>Return of lung sliding on POCUS</b> over the decompressed side</li>\n      <li><b>Your finger feeling lung</b> — the most direct confirmation available</li>\n</ul>"
             },
             {
               "type": "alert",
               "color": "red",
               "title": "No improvement does not mean no tension pneumothorax",
-              "html": "It commonly means the needle was too short, kinked, blocked, or in the wrong place. Before you discard the diagnosis, <b>decompress properly with a finger</b>. And if a correctly performed bilateral finger thoracostomy genuinely changes nothing, the diagnosis was something else — go back to haemorrhage, tamponade, and the rest of the arrest algorithm."
+              "html": "It commonly means the needle was too short, kinked, blocked, or in the wrong place. Before you discard the diagnosis, <b>decompress properly with a finger</b>. And if a correctly performed bilateral finger thoracostomy genuinely changes nothing, the diagnosis was something else — go back to hemorrhage, tamponade, and the rest of the arrest algorithm."
             }
           ]
         },
@@ -2272,12 +2272,12 @@
                 [
                   "Initial improvement, then deterioration",
                   "Cannula kinked, clotted or dislodged",
-                  "Expected behaviour for a needle. Convert to finger thoracostomy and a tube"
+                  "Expected behavior for a needle. Convert to finger thoracostomy and a tube"
                 ],
                 [
-                  "Rush of air but no haemodynamic change",
+                  "Rush of air but no hemodynamic change",
                   "Pneumothorax present but not the cause of shock",
-                  "Look elsewhere — haemorrhage, tamponade, or a second pneumothorax on the other side"
+                  "Look elsewhere — hemorrhage, tamponade, or a second pneumothorax on the other side"
                 ],
                 [
                   "Finger finds bowel or liver",
@@ -2286,8 +2286,8 @@
                 ],
                 [
                   "Finger finds a large volume of blood",
-                  "Massive haemothorax",
-                  "This is now a haemorrhage problem. Tube, activate transfusion, surgical referral against thoracotomy thresholds"
+                  "Massive hemothorax",
+                  "This is now a hemorrhage problem. Tube, activate transfusion, surgical referral against thoracotomy thresholds"
                 ],
                 [
                   "Bleeding from the incision",
@@ -2332,7 +2332,7 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p><b>If you are going lateral, cut.</b> A finger is more reliable than any cannula, and you are already at the site the tube needs.</p>\n<p><b>Length is the whole argument for needles.</b> A 5&nbsp;cm cannula frequently does not reach the pleura in an adult chest; carry 8&nbsp;cm.</p>\n<p><b>Aspirate rather than listen.</b> A syringe gives you an answer in a room too noisy for a hiss.</p>\n<p><b>Tracheal deviation and distended neck veins are late and often absent</b> — especially in the hypovolaemic. Rising airway pressure with falling pressure is the earlier tell.</p>\n<p><b>Bilateral, in traumatic arrest, without debate.</b></p>\n<p><b>The finger sweep is diagnostic as well as therapeutic.</b> Blood, bowel or adhesions all change what happens next.</p>\n<p><b>Nothing here is definitive.</b> The tube always follows.</p>"
+              "html": "<p><b>If you are going lateral, cut.</b> A finger is more reliable than any cannula, and you are already at the site the tube needs.</p>\n<p><b>Length is the whole argument for needles.</b> A 5&nbsp;cm cannula frequently does not reach the pleura in an adult chest; carry 8&nbsp;cm.</p>\n<p><b>Aspirate rather than listen.</b> A syringe gives you an answer in a room too noisy for a hiss.</p>\n<p><b>Tracheal deviation and distended neck veins are late and often absent</b> — especially in the hypovolemic. Rising airway pressure with falling pressure is the earlier tell.</p>\n<p><b>Bilateral, in traumatic arrest, without debate.</b></p>\n<p><b>The finger sweep is diagnostic as well as therapeutic.</b> Blood, bowel or adhesions all change what happens next.</p>\n<p><b>Nothing here is definitive.</b> The tube always follows.</p>"
             }
           ]
         },
@@ -2402,11 +2402,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li><b>Cardiac tamponade with haemodynamic compromise</b> — hypotension, raised venous pressure, and echocardiographic tamponade physiology</li>\n      <li>Peri-arrest or arrest where tamponade is a credible reversible cause</li>\n      <li>Symptomatic effusion needing drainage in a controlled setting (a different, far less urgent version of the same procedure)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Cardiac tamponade with hemodynamic compromise</b> — hypotension, raised venous pressure, and echocardiographic tamponade physiology</li>\n      <li>Peri-arrest or arrest where tamponade is a credible reversible cause</li>\n      <li>Symptomatic effusion needing drainage in a controlled setting (a different, far less urgent version of the same procedure)</li>\n</ul>"
             },
             {
               "type": "xref",
-              "html": "<b>Tamponade is an echocardiographic diagnosis, not a volume one.</b> A small effusion that accumulated fast can tamponade; a litre that collected over months may not. Look for <b>right atrial systolic collapse</b> (sensitive), <b>right ventricular diastolic collapse</b> (specific), a <b>plethoric non-collapsing IVC</b>, and exaggerated respiratory variation in inflow velocities. Beck's triad is present in a minority of cases and its absence excludes nothing."
+              "html": "<b>Tamponade is an echocardiographic diagnosis, not a volume one.</b> A small effusion that accumulated fast can tamponade; a liter that collected over months may not. Look for <b>right atrial systolic collapse</b> (sensitive), <b>right ventricular diastolic collapse</b> (specific), a <b>plethoric non-collapsing IVC</b>, and exaggerated respiratory variation in inflow velocities. Beck's triad is present in a minority of cases and its absence excludes nothing."
             }
           ]
         },
@@ -2420,7 +2420,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li><b>None absolute</b> in an unstable patient with confirmed tamponade.</li>\n      <li><b>Traumatic haemopericardium with surgical capability available</b> — this is the important one. Blood in the pericardium after penetrating trauma <b>clots</b>, so a needle frequently drains little or nothing and the negative tap is falsely reassuring. If you have a surgeon and an operating room, the answer is <b>thoracotomy or sternotomy</b>; the needle is at best a bridge while that is mobilised.</li>\n      <li><b>Aortic dissection with haemopericardium</b> — relative, and genuinely dangerous. Decompressing can raise the blood pressure, re-establish flow through the false lumen, and precipitate catastrophic rupture. Drain only what restores a perfusing rhythm, and get to theatre.</li>\n      <li>Uncorrected severe coagulopathy — relative; correct alongside, not instead.</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None absolute</b> in an unstable patient with confirmed tamponade.</li>\n      <li><b>Traumatic hemopericardium with surgical capability available</b> — this is the important one. Blood in the pericardium after penetrating trauma <b>clots</b>, so a needle frequently drains little or nothing and the negative tap is falsely reassuring. If you have a surgeon and an operating room, the answer is <b>thoracotomy or sternotomy</b>; the needle is at best a bridge while that is mobilized.</li>\n      <li><b>Aortic dissection with hemopericardium</b> — relative, and genuinely dangerous. Decompressing can raise the blood pressure, re-establish flow through the false lumen, and precipitate catastrophic rupture. Drain only what restores a perfusing rhythm, and get to theatre.</li>\n      <li>Uncorrected severe coagulopathy — relative; correct alongside, not instead.</li>\n</ul>"
             }
           ]
         },
@@ -2475,7 +2475,7 @@
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "Prep, drape, and anaesthetise the whole track",
+                  "title": "Prep, drape, and anesthetize the whole track",
                   "html": "Full sterile technique if there is any time at all. Infiltrate generously down to and including the parietal pericardium in an awake patient."
                 },
                 {
@@ -2494,7 +2494,7 @@
                   "num": "5",
                   "color": "blue",
                   "title": "Aspirate to effect, not to dryness",
-                  "html": "Remove enough to restore perfusion — <b>often only 30–100&nbsp;mL transforms the haemodynamics</b>, because tamponade physiology sits on the steep part of the pericardial pressure-volume curve. Chasing complete drainage through a needle adds risk without adding benefit."
+                  "html": "Remove enough to restore perfusion — <b>often only 30–100&nbsp;mL transforms the hemodynamics</b>, because tamponade physiology sits on the steep part of the pericardial pressure-volume curve. Chasing complete drainage through a needle adds risk without adding benefit."
                 },
                 {
                   "num": "6",
@@ -2514,7 +2514,7 @@
               "type": "alert",
               "color": "amber",
               "title": "Is this blood from the pericardium or from a ventricle?",
-              "html": "Two checks, neither perfect. <b>Pericardial blood is usually defibrinated and does not clot</b> in the syringe, whereas fresh intracardiac blood clots — useful, but unreliable with very recent bleeding. Comparing the aspirate's haematocrit with a venous sample is slower but more objective. <b>Agitated saline under ultrasound is better than either</b> and gives an answer in seconds, which is why it belongs in the routine rather than the troubleshooting list."
+              "html": "Two checks, neither perfect. <b>Pericardial blood is usually defibrinated and does not clot</b> in the syringe, whereas fresh intracardiac blood clots — useful, but unreliable with very recent bleeding. Comparing the aspirate's hematocrit with a venous sample is slower but more objective. <b>Agitated saline under ultrasound is better than either</b> and gives an answer in seconds, which is why it belongs in the routine rather than the troubleshooting list."
             }
           ]
         },
@@ -2535,7 +2535,7 @@
               "rows": [
                 [
                   "Dry tap in suspected traumatic tamponade",
-                  "<b>Clotted haemopericardium</b> — the needle cannot drain clot",
+                  "<b>Clotted hemopericardium</b> — the needle cannot drain clot",
                   "A negative tap does <b>not</b> exclude tamponade after trauma. Escalate to surgical decompression"
                 ],
                 [
@@ -2546,7 +2546,7 @@
                 [
                   "Ectopy or ST elevation as you advance",
                   "Needle contacting myocardium",
-                  "Withdraw a few millimetres; the ectopy should settle. Redirect using the image rather than by feel"
+                  "Withdraw a few millimeters; the ectopy should settle. Redirect using the image rather than by feel"
                 ],
                 [
                   "Blood aspirated that clots in the syringe",
@@ -2554,7 +2554,7 @@
                   "Confirm with agitated saline before proceeding either way"
                 ],
                 [
-                  "Haemodynamics worsen after drainage",
+                  "Hemodynamics worsen after drainage",
                   "RV puncture with ongoing bleeding, or <b>pericardial decompression syndrome</b>",
                   "Re-scan immediately for a re-accumulating effusion. Support, and get surgical help — this can be catastrophic"
                 ],
@@ -2587,7 +2587,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li><b>Cardiac chamber puncture or laceration</b> — classically the right ventricle, which sits immediately anterior</li>\n      <li><b>Coronary artery laceration</b>, with the haemopericardium it causes</li>\n      <li><b>Pneumothorax</b>, and rarely <b>hepatic injury</b> via the subxiphoid route</li>\n      <li><b>Arrhythmia</b> from myocardial irritation</li>\n      <li><b>Pericardial decompression syndrome</b> — uncommon but well described: paradoxical ventricular dysfunction and pulmonary oedema after rapid drainage. An argument for draining to effect rather than to dryness</li>\n      <li><b>The falsely reassuring dry tap</b> in traumatic tamponade — arguably the most dangerous outcome of the whole procedure, because it ends the search</li>\n      <li><b>Delay to definitive management</b> while attention stays on the needle</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Cardiac chamber puncture or laceration</b> — classically the right ventricle, which sits immediately anterior</li>\n      <li><b>Coronary artery laceration</b>, with the hemopericardium it causes</li>\n      <li><b>Pneumothorax</b>, and rarely <b>hepatic injury</b> via the subxiphoid route</li>\n      <li><b>Arrhythmia</b> from myocardial irritation</li>\n      <li><b>Pericardial decompression syndrome</b> — uncommon but well described: paradoxical ventricular dysfunction and pulmonary edema after rapid drainage. An argument for draining to effect rather than to dryness</li>\n      <li><b>The falsely reassuring dry tap</b> in traumatic tamponade — arguably the most dangerous outcome of the whole procedure, because it ends the search</li>\n      <li><b>Delay to definitive management</b> while attention stays on the needle</li>\n</ul>"
             }
           ]
         },
@@ -2601,7 +2601,7 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p><b>Puncture where the fluid is, not where the textbook says.</b> With ultrasound the apical or parasternal window is frequently shorter and safer than subxiphoid.</p>\n<p><b>Agitated saline before dilating.</b> Seconds to perform, and it is the difference between a drain in the pericardium and a dilator in a ventricle.</p>\n<p><b>Drain to effect.</b> Thirty to a hundred millilitres often restores the blood pressure; chasing dryness adds only risk.</p>\n<p><b>A dry tap after penetrating trauma means clot, not absence of tamponade.</b> Escalate rather than relax.</p>\n<p><b>Leave a pigtail.</b> Reaccumulation is the rule.</p>\n<p><b>Sit them up.</b> Thirty to forty-five degrees brings the effusion to the needle.</p>\n<p><b>If there is a surgeon and an operating room, a traumatic haemopericardium belongs to them</b> — you are buying minutes, not providing treatment.</p>"
+              "html": "<p><b>Puncture where the fluid is, not where the textbook says.</b> With ultrasound the apical or parasternal window is frequently shorter and safer than subxiphoid.</p>\n<p><b>Agitated saline before dilating.</b> Seconds to perform, and it is the difference between a drain in the pericardium and a dilator in a ventricle.</p>\n<p><b>Drain to effect.</b> Thirty to a hundred millilitres often restores the blood pressure; chasing dryness adds only risk.</p>\n<p><b>A dry tap after penetrating trauma means clot, not absence of tamponade.</b> Escalate rather than relax.</p>\n<p><b>Leave a pigtail.</b> Reaccumulation is the rule.</p>\n<p><b>Sit them up.</b> Thirty to forty-five degrees brings the effusion to the needle.</p>\n<p><b>If there is a surgeon and an operating room, a traumatic hemopericardium belongs to them</b> — you are buying minutes, not providing treatment.</p>"
             }
           ]
         },
@@ -2669,9 +2669,51 @@
           "tagline": null,
           "blocks": [
             {
-              "type": "box",
-              "color": "teal",
-              "html": "<ul>\n      <li>Penetrating trauma with witnessed loss of vital signs and &lt;15 minutes of prehospital CPR (best outcomes)</li>\n      <li>Penetrating trauma with signs of life on arrival that are lost during resuscitation</li>\n      <li>Blunt trauma with witnessed arrest and &lt;10 minutes of CPR (much lower survival, but still a candidate population at select centers)</li>\n      <li>Suspected pericardial tamponade, massive hemothorax, or air embolism amenable to thoracotomy-based intervention in the peri-arrest patient</li>\n</ul>"
+              "type": "tagline",
+              "html": "Candidacy is decided in seconds, and it decides the outcome more than technique does"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Presentation",
+                "Stance"
+              ],
+              "rows": [
+                [
+                  "<b>Penetrating thoracic trauma, arrest witnessed, signs of life within ~15 min</b>",
+                  "<b>Strongest indication.</b> Best reported survival, particularly for a stab wound to the cardiac box with tamponade"
+                ],
+                [
+                  "Penetrating thoracic trauma, no signs of life, &lt;15 min CPR",
+                  "Reasonable — still a candidate group"
+                ],
+                [
+                  "Penetrating <b>extra</b>-thoracic trauma, signs of life",
+                  "Weaker, but defensible for aortic cross-clamping in exsanguination"
+                ],
+                [
+                  "<b>Blunt trauma, signs of life present</b>",
+                  "Low survival, but performed at many centres. Know your institution's stance"
+                ],
+                [
+                  "<b>Blunt trauma, no signs of life</b>",
+                  "Survival approaches zero. Most guidance advises against"
+                ],
+                [
+                  "Prolonged CPR (&gt;15 min penetrating, &gt;10 min blunt) with no signs of life",
+                  "Against"
+                ]
+              ]
+            },
+            {
+              "type": "xref",
+              "html": "<b>“Signs of life” has a specific meaning</b> — pupillary response, spontaneous ventilation, a palpable pulse, measurable blood pressure, spontaneous movement, or organized electrical activity. It is not the same as “arrived with CPR in progress.” Establish what the prehospital team actually witnessed, and when, in the first fifteen seconds of handover."
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "The physiological targets, not just the diagnosis",
+              "html": "This procedure exists to do four things: <b>release tamponade</b>, <b>control intrathoracic hemorrhage</b>, <b>cross-clamp the aorta</b> to redistribute what blood remains to heart and brain, and <b>deliver internal cardiac massage or defibrillation</b>. If none of those four is plausibly the problem, opening the chest will not help."
             }
           ]
         },
@@ -2685,7 +2727,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Blunt trauma arrest with prolonged downtime and no signs of life — survival is exceedingly rare and most protocols exclude this group</li>\n      <li>Penetrating trauma with prolonged (&gt;15 min) CPR and no signs of life</li>\n      <li>Injuries clearly incompatible with survival regardless of intervention</li>\n</ul>"
+              "html": "<ul>\n      <li>Blunt arrest with prolonged downtime and no signs of life</li>\n      <li>Penetrating trauma with &gt;15 minutes of CPR and no signs of life</li>\n      <li>Injuries obviously incompatible with survival</li>\n      <li><b>No surgical capability to follow.</b> This is a bridge. Opening a chest in a facility that cannot then repair what you find, and cannot transfer, commits the patient and exposes the team for nothing — a decision to make before the patient arrives, not over the body.</li>\n</ul>"
             }
           ]
         },
@@ -2693,13 +2735,13 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment & Team",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Scalpel (#10 blade), Mayo scissors, rib spreaders (Finochietto retractor)</li>\n      <li>Internal defibrillator paddles</li>\n      <li>Vascular clamps (for aortic cross-clamping)</li>\n      <li>Suction, large-bore IV/central access already in progress</li>\n      <li>Available OR/surgical backup for definitive repair</li>\n</ul>"
+              "html": "<ul>\n      <li><b>#10 scalpel</b>, heavy <b>Mayo scissors</b>, and <b>toothed forceps</b></li>\n      <li><b>Finochietto rib spreader</b></li>\n      <li><b>Heavy scissors, Gigli saw or a Lebsche knife</b> for the sternum if converting to clamshell</li>\n      <li><b>Vascular clamps</b> — a DeBakey or aortic clamp for the descending aorta, and a second for the hilum</li>\n      <li><b>Internal defibrillator paddles</b>, and a defibrillator that will accept them</li>\n      <li><b>Foley catheter</b> — an improvised but genuinely effective tamponade for a ventricular hole</li>\n      <li>Skin stapler, 2-0/3-0 pledgeted sutures, suction, packs</li>\n      <li><b>Full barrier PPE for everyone at the table</b> — face shield, gown, <b>double gloves</b>. This is among the highest body-fluid-exposure procedures in medicine, performed fast, around cut bone and sharps.</li>\n      <li><b>Massive transfusion running before the chest is open</b>, and a named person running it</li>\n</ul>"
             }
           ]
         },
@@ -2711,81 +2753,155 @@
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "Incision to pericardium is the interval that matters — aim for well under a minute"
+            },
+            {
               "type": "steps",
               "steps": [
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Confirm indication criteria rapidly — mechanism, downtime, and signs of life determine candidacy; this decision must be made in seconds, not minutes."
+                  "title": "Declare it, assign roles, arms up",
+                  "html": "Say out loud that you are performing a resuscitative thoracotomy. Assign: airway, the transfusion, and one person on instruments. Abduct the left arm above the head. Continue chest compressions and ventilation until the moment you cut."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Make a left anterolateral thoracotomy incision at the 4th or 5th intercostal space, from the sternal border to the posterior axillary line."
+                  "title": "Left anterolateral incision, 4th–5th interspace, one confident pass",
+                  "html": "From the <b>sternal edge to the table</b> — go further posteriorly than instinct suggests, because inadequate length is the commonest reason exposure fails. Follow the curve of the rib, in the inframammary crease, <b>retracting breast tissue superiorly</b> rather than cutting through it. Cut deeply through skin, fat and muscle in a single deliberate stroke; timid repeated passes waste the seconds this procedure is spending."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Extend to a clamshell (bilateral anterolateral thoracotomy with transverse sternotomy) if right-sided or bilateral pathology is suspected, or if left-sided exposure alone is inadequate."
+                  "title": "Open the intercostal muscle and pleura with scissors",
+                  "html": "Puncture the intercostal muscle just above the rib, then run heavy scissors along the <b>superior border</b> of the rib for the length of the incision, pushing the lung away. Ask for ventilation to be held briefly if the lung is in the way."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Insert a rib spreader and open the chest widely."
+                  "title": "Insert the spreader with the handle toward the axilla",
+                  "html": "A small practical point that matters enormously: <b>orient the Finochietto's ratchet and handle inferiorly/laterally, toward the axilla.</b> Placed the other way, the handle sits over the sternum and physically blocks the clamshell extension you may be about to need. Open it wide."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Open the pericardium longitudinally, anterior to the phrenic nerve, to relieve tamponade if present and expose the heart."
+                  "title": "Extend to clamshell if you need the other side",
+                  "html": "If the injury is right-sided, bilateral, or exposure is inadequate, mirror the incision on the right and divide the sternum transversely with heavy scissors or a Gigli saw. <b>The internal mammary arteries will be cut and they must be found and ligated.</b> They often do not bleed while the patient is exsanguinated and pressureless — and then bleed briskly the moment you restore a blood pressure. Ligate them before that happens."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Control cardiac hemorrhage with digital pressure, staples, or sutures as indicated; identify and control any great vessel injury."
+                  "title": "Open the pericardium longitudinally, anterior to the phrenic nerve",
+                  "html": "Identify the <b>phrenic nerve</b> running vertically on the lateral pericardium — stay <b>anterior</b> to it. Tent the pericardium with forceps and incise longitudinally with scissors, then extend the opening widely. Under tamponade the pericardium is tense and bluish. Evacuate clot with your hand; clot is exactly what the needle could not remove."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Perform internal cardiac massage if in arrest."
+                  "title": "Control cardiac bleeding — finger first",
+                  "html": "Deliver the heart into the wound. Put a <b>finger over the hole</b>; that alone controls most wounds and buys thinking time. Then: a <b>Foley through the defect with the balloon inflated and gentle traction</b> for a larger ventricular wound, skin staples for a rapid closure, or pledgeted horizontal mattress sutures placed <b>underneath the coronary artery</b> so you do not ligate it. Atrial wounds can often be clamped with a side-biting vascular clamp and repaired."
                 },
                 {
                   "num": "8",
                   "color": "teal",
-                  "title": "",
-                  "html": "Cross-clamp the descending thoracic aorta if hemorrhage control below the diaphragm and improved cerebral/coronary perfusion is the goal."
+                  "title": "Internal massage, correctly",
+                  "html": "<b>Two hands, flat, hinged at the wrists</b> — one posterior and one anterior, compressing the heart between the flat palmar surfaces at around 100/min. <b>Do not squeeze with fingertips</b>: point pressure perforates a flaccid ventricle. Compress from apex toward base."
                 },
                 {
                   "num": "9",
                   "color": "blue",
-                  "title": "",
-                  "html": "Defibrillate internally if indicated using internal paddles."
+                  "title": "Cross-clamp the descending aorta if you need it",
+                  "html": "Sweep the left lung anteriorly and medially. The aorta lies <b>posteriorly, against the vertebral bodies</b> — and the structure immediately anterior to it is the <b>esophagus</b>, which is easy to clamp by mistake. A nasogastric tube makes the esophagus palpable and is worth the seconds. Open the mediastinal pleura, bluntly dissect the aorta circumferentially, and apply the clamp. <b>Note the time:</b> aim to release within roughly 30 minutes, and anticipate a reperfusion insult when you do."
                 },
                 {
                   "num": "10",
                   "color": "purple",
-                  "title": "",
-                  "html": "Transition immediately to definitive OR management once any restoration of perfusion is achieved — this procedure is a bridge to definitive repair, not the endpoint."
+                  "title": "Internal defibrillation — start low",
+                  "html": "Internal paddles applied directly to the heart, one anterior and one posterior. <b>Start at 10–20 J</b>, not external energies. External doses applied directly to myocardium cause injury and are unnecessary — you have removed the chest wall from the circuit."
+                },
+                {
+                  "num": "11",
+                  "color": "red",
+                  "title": "If you get a perfusing rhythm, go to theatre now",
+                  "html": "The chest stays open, packed, with the clamp noted. Everything from here is damage control in an operating room. <b>If there is no response after adequate exposure, tamponade release and massage, stop and say so out loud</b> — a clear termination is part of the procedure, and the team needs to hear it."
                 }
               ]
             },
             {
               "type": "alert",
               "color": "red",
-              "title": "Indication criteria determine survival more than technique does",
-              "html": "Applying this outside validated criteria (mechanism, downtime, signs of life) consumes resources without a realistic survival benefit — know your institution's specific criteria before the patient arrives, not while cutting."
+              "title": "Protect the team while you work",
+              "html": "Sharp bone edges, a scalpel and scissors moving fast, and blood everywhere. Announce every sharp, hand instruments rather than reaching, and keep the number of hands in the chest to the minimum that works. A needlestick or a splash here is a genuine occupational exposure, and the adrenaline that makes this procedure possible is exactly what makes people careless."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "05",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Problem",
+                "Usual cause",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Cannot see anything once open",
+                  "Incision too short, or too anterior",
+                  "Extend posteriorly to the table. Convert to clamshell — poor exposure is the commonest reason this fails"
+                ],
+                [
+                  "Spreader blocks sternal division",
+                  "Handle oriented toward the sternum",
+                  "Reposition with the ratchet toward the axilla. Easier to get right first time than to fix mid-procedure"
+                ],
+                [
+                  "Brisk bleeding from the sternal edges after ROSC",
+                  "<b>Unligated internal mammary arteries</b>",
+                  "Find and ligate both. Anticipate this the moment a pressure returns"
+                ],
+                [
+                  "Pericardium looks normal, no tamponade",
+                  "Diagnosis was something else",
+                  "Look for hilar injury, aortic injury, or a source below the diaphragm. Cross-clamp if exsanguinating"
+                ],
+                [
+                  "Clamp applied but no improvement",
+                  "Esophagus clamped instead of aorta",
+                  "Re-identify against the vertebral bodies; use the NG tube to distinguish. Aorta is posterior"
+                ],
+                [
+                  "Heart fills poorly despite massage",
+                  "Hypovolemia — there is nothing to pump",
+                  "Massage moves only what volume exists. Transfusion is the treatment; consider a source below the diaphragm"
+                ],
+                [
+                  "Air in the coronaries / sudden arrest on ventilation",
+                  "Systemic air embolism from a bronchovenous fistula",
+                  "Clamp or twist the hilum of the injured lung, place head down, aspirate air from the LV apex and aortic root"
+                ],
+                [
+                  "Repair sutures cause ST changes or regional akinesis",
+                  "A coronary artery has been ligated",
+                  "Remove and replace, passing the suture <b>beneath</b> the vessel"
+                ],
+                [
+                  "ROSC then deterioration after clamp release",
+                  "Reperfusion — acidosis, hyperkalemia, vasoplegia",
+                  "Release gradually, anticipate it, treat metabolically. Note total clamp time"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "06",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -2793,27 +2909,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Extremely high mortality even with correct indication and technique — set expectations with the team accordingly</li>\n      <li>Iatrogenic injury to the heart, great vessels, lung, or phrenic nerve during rapid exposure</li>\n      <li>Failure to control the actual source of hemorrhage/tamponade despite adequate exposure</li>\n      <li>Provider injury (sharp instruments, exposed bone edges) in a high-adrenaline, high-speed procedure — maintain situational awareness for the team's safety too</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Very high mortality even when everything is done correctly</b> — the team should hear this framed before it begins</li>\n      <li><b>Phrenic nerve injury</b> from opening the pericardium in the wrong plane</li>\n      <li><b>Coronary artery ligation</b> during a hurried cardiac repair</li>\n      <li><b>Esophageal injury</b> from a misplaced aortic clamp</li>\n      <li><b>Myocardial perforation</b> from fingertip massage</li>\n      <li><b>Reperfusion injury</b> after cross-clamp release</li>\n      <li><b>Occupational exposure</b> — a real and under-discussed outcome for the team</li>\n      <li><b>Performing it outside criteria</b>, consuming blood, people and exposure risk without realistic prospect of survival</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "07",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Indication criteria matter enormously for outcome — this is not a universal salvage maneuver, and applying it outside validated criteria consumes resources without a realistic survival benefit.</p>\n<p>Speed of exposure is everything; the incision-to-pericardium interval is the single biggest modifiable time factor.</p>\n<p>Know your institution's criteria and have the conversation about candidacy before the patient arrives, not while cutting.</p>"
+              "html": "<p><b>Candidacy decides outcome more than technique does.</b> Have the criteria conversation before the patient arrives.</p>\n<p><b>Cut long, cut deep, cut once.</b> Inadequate exposure is the commonest technical failure, and timid incisions cost more time than they save.</p>\n<p><b>Spreader handle toward the axilla</b> — so it never blocks the clamshell.</p>\n<p><b>Anterior to the phrenic nerve, longitudinally.</b></p>\n<p><b>Ligate the internal mammaries</b> before the blood pressure comes back and reminds you.</p>\n<p><b>Flat hands, not fingertips.</b></p>\n<p><b>The aorta is posterior; the esophagus is in front of it.</b> Feel for the NG tube.</p>\n<p><b>Internal defibrillation is 10–20 J.</b></p>\n<p><b>Say the ending out loud.</b> Terminating clearly is part of running the procedure well.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "08",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -2823,11 +2939,19 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Burlew CC, Moore EE, Moore FA, et al. Western Trauma Association critical decisions in trauma: resuscitative thoracotomy. <i>J Trauma Acute Care Surg.</i> 2012;73(6):1359-1363."
+                  "html": "Seamon MJ, Haut ER, Van Arendonk K, et al. An evidence-based approach to patient selection for emergency department thoracotomy: a practice management guideline from the Eastern Association for the Surgery of Trauma. <i>J Trauma Acute Care Surg.</i> 2015;79(1):159–173."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. Chicago: ACS; 2018."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Lott C, Truhlář A, Alfonzo A, et al. European Resuscitation Council Guidelines 2021: Cardiac arrest in special circumstances. <i>Resuscitation.</i> 2021;161:152–219."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. ACS; 2018."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Resuscitative Thoracotomy chapter."
                 }
               ]
             }
@@ -2869,12 +2993,11 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<p><b>Synchronized cardioversion</b></p>\n<ul>\n      <li>Unstable tachyarrhythmia with a discernible, organized QRS complex: unstable SVT, unstable atrial fibrillation/flutter with rapid ventricular response, unstable monomorphic ventricular tachycardia with a pulse</li>\n</ul>"
+              "html": "<p><b>Synchronized cardioversion</b> — an unstable tachyarrhythmia <i>with a pulse</i> and a discernible, organized QRS:</p>\n<ul>\n      <li>Unstable SVT refractory to vagal maneuvers/adenosine</li>\n      <li>Unstable atrial fibrillation or flutter with rapid ventricular response</li>\n      <li>Unstable <b>monomorphic</b> VT with a pulse</li>\n</ul>\n<p><b>Defibrillation (unsynchronized)</b> — no pulse, or no synchronizable QRS:</p>\n<ul>\n      <li>Pulseless VF or pulseless VT</li>\n      <li><b>Polymorphic VT</b>, including torsades — the QRS varies beat to beat, so the machine cannot reliably find an R wave. Unsynchronized, even if a pulse is present.</li>\n</ul>"
             },
             {
-              "type": "box",
-              "color": "teal",
-              "html": "<p><b>Defibrillation (unsynchronized)</b></p>\n<ul>\n      <li>Pulseless ventricular fibrillation</li>\n      <li>Pulseless ventricular tachycardia</li>\n      <li>Polymorphic VT (unsynchronized due to the irregular, unpredictable QRS morphology precluding reliable synchronization)</li>\n</ul>"
+              "type": "xref",
+              "html": "<b>“Unstable” means the rhythm is causing the problem:</b> hypotension, altered mentation, ischemic chest pain, or acute heart failure attributable to the rate. A heart rate alone is not an indication — and a rate below about 150 rarely explains shock by itself in an adult, so look hard for another cause before shocking."
             }
           ]
         },
@@ -2882,27 +3005,82 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Contraindications & Cautions",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Stable tachyarrhythmia (no hemodynamic compromise) — pursue pharmacologic management first</li>\n      <li>Synchronized cardioversion should not be attempted on a rhythm without a clear, consistently identifiable QRS for the machine to sync to (e.g., polymorphic VT) — default to unsynchronized defibrillation instead</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Stable tachyarrhythmia</b> — treat pharmacologically; you have time</li>\n      <li><b>Do not attempt to synchronize a rhythm without a consistent QRS.</b> The machine will either refuse to discharge or sync to the wrong deflection. Polymorphic VT goes unsynchronized.</li>\n      <li><b>Digoxin toxicity</b> — cardioversion can precipitate refractory ventricular arrhythmias. If unavoidable, use the lowest effective energy and have magnesium and antidote available.</li>\n      <li><b>Atrial fibrillation of &gt;48 hours or unknown duration</b> in a <i>stable</i> patient — elective cardioversion carries thromboembolic risk and needs anticoagulation or TOE first. In the genuinely unstable patient this consideration does not override shocking.</li>\n      <li><b>Implanted device</b> — not a contraindication; place pads at least 8&nbsp;cm from the generator, ideally anteroposterior, and have the device interrogated afterwards.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "equipment",
+          "id": "energy",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Energy Selection",
           "tagline": null,
           "blocks": [
             {
-              "type": "box",
-              "color": "blue",
-              "html": "<ul>\n      <li>Defibrillator/cardioversion-capable monitor with pads or paddles</li>\n      <li>Sedation/analgesia for a conscious, unstable patient prior to synchronized cardioversion when time allows</li>\n</ul>"
+              "type": "tagline",
+              "html": "Device-specific — these are starting points, not a substitute for your machine's guidance"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Rhythm",
+                "Mode",
+                "Typical biphasic energy"
+              ],
+              "rows": [
+                [
+                  "SVT / atrial flutter",
+                  "<b>Sync</b>",
+                  "50–100 J — these terminate at the lowest energies"
+                ],
+                [
+                  "Atrial fibrillation",
+                  "<b>Sync</b>",
+                  "120–200 J"
+                ],
+                [
+                  "Monomorphic VT with a pulse",
+                  "<b>Sync</b>",
+                  "100 J"
+                ],
+                [
+                  "VF / pulseless VT",
+                  "<b>Unsync</b>",
+                  "120–200 J per manufacturer; if unknown, use the maximum"
+                ],
+                [
+                  "Polymorphic VT / torsades",
+                  "<b>Unsync</b>",
+                  "Defibrillation doses"
+                ],
+                [
+                  "Pediatric defibrillation",
+                  "<b>Unsync</b>",
+                  "<b>2 J/kg</b> first, then <b>4 J/kg</b>, subsequent ≥4 J/kg (max 10 J/kg or adult dose)"
+                ],
+                [
+                  "Pediatric cardioversion",
+                  "<b>Sync</b>",
+                  "<b>0.5–1 J/kg</b> first, escalating to <b>2 J/kg</b>"
+                ],
+                [
+                  "Internal paddles (open chest)",
+                  "<b>Unsync</b>",
+                  "<b>10–20 J</b> — an order of magnitude lower; external doses injure myocardium"
+                ]
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Escalate if the first shock fails",
+              "html": "If a synchronized shock does not convert the rhythm, <b>step the energy up</b> for the next attempt rather than repeating the same dose. Repeating an identical failed shock is the same error as repeating an identical failed laryngoscopy."
             }
           ]
         },
@@ -2923,103 +3101,137 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Confirm the patient is unstable and the rhythm has a discernible, organized QRS complex."
+                  "title": "Confirm instability and a synchronizable rhythm",
+                  "html": "Pulse present, organized QRS, and symptoms attributable to the rate. Print or freeze a strip — you want to be certain this is monomorphic before choosing sync."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Attach pads/leads, ensure clear ECG tracing on the monitor."
+                  "title": "Prepare the skin and place pads",
+                  "html": "Dry the chest, clip dense hair, remove transdermal patches. <b>Anteroposterior placement</b> is generally preferred for atrial fibrillation and for patients with implanted devices; anterolateral is acceptable and faster. Keep pads ≥8&nbsp;cm from any device generator."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Activate the synchronization mode on the defibrillator — confirm the sync markers are correctly aligned on each QRS complex before shocking."
+                  "title": "Sedate — this is a conscious patient about to be shocked",
+                  "html": "If there is any time at all, provide procedural sedation and analgesia. Titrate carefully: the blood pressure you are worried about is already low. Small doses, pre-oxygenation, airway equipment and a vasopressor within reach."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Sedate if time and hemodynamic status allow."
+                  "title": "Press SYNC, then look at the screen",
+                  "html": "Activate synchronization and <b>visually confirm a marker sitting on every R wave</b> — and only on R waves. If markers are landing on T waves or appearing intermittently, increase the ECG gain or switch to a lead with a taller R. <b>Do not shock until the markers are right.</b> This look at the screen is the entire safety mechanism of the procedure."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Select the appropriate energy level per rhythm (lower initial energies for SVT/atrial arrhythmias, higher for monomorphic VT, per your device and current ACLS guidance)."
+                  "title": "Charge, clear, and hold the button",
+                  "html": "Announce and confirm everyone is clear. <b>Hold the shock button down</b> — in sync mode the machine waits for the next R wave, so there is a perceptible delay between pressing and discharge. Releasing early is a common reason “the shock didn't work.”"
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Deliver the shock — note that with synchronization active, there may be a brief delay between pressing the shock button and actual delivery as the machine times the discharge to the QRS."
-                },
-                {
-                  "num": "7",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Reassess rhythm and pulse immediately after the shock; re-sync and repeat if the arrhythmia persists and the patient remains unstable."
+                  "title": "Reassess — and re-arm SYNC before the next shock",
+                  "html": "Check rhythm and pulse. If still unstable and unconverted, escalate energy and shock again — but first <b>re-confirm sync is active</b>. Most defibrillators revert to unsynchronized after every delivery, by design, so that a patient who arrests can be defibrillated immediately."
                 }
               ]
             },
             {
               "type": "tagline",
-              "html": "Defibrillation (unsynchronized)"
+              "html": "Defibrillation"
             },
             {
               "type": "steps",
               "steps": [
                 {
+                  "num": "7",
+                  "color": "teal",
+                  "title": "Confirm pulselessness, charge during compressions",
+                  "html": "Keep compressions going while the machine charges — this is the single biggest modifiable factor in minimizing the peri-shock pause. Ensure sync is <b>off</b>."
+                },
+                {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Confirm pulseless VF or VT (or polymorphic VT with instability)."
-                },
-                {
-                  "num": "9",
                   "color": "blue",
-                  "title": "",
-                  "html": "Attach pads, ensure no synchronization mode is active."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Select maximum or protocol-appropriate energy per your device."
-                },
-                {
-                  "num": "11",
-                  "color": "red",
-                  "title": "",
-                  "html": "Announce clear, ensure no one is in contact with the patient or bed."
-                },
-                {
-                  "num": "12",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Deliver the shock immediately without delay."
-                },
-                {
-                  "num": "13",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Resume CPR immediately after the shock without pausing to check rhythm/pulse; reassess at the next scheduled rhythm check per the resuscitation algorithm."
+                  "title": "Clear, shock, and resume compressions immediately",
+                  "html": "Brief clear, deliver, and go straight back to compressions <b>without</b> a pulse or rhythm check. Reassess at the next scheduled rhythm check. A perfusing rhythm rarely appears instantly after a shock, and pausing to look costs coronary perfusion pressure that took a minute to build."
                 }
               ]
             },
             {
               "type": "alert",
               "color": "red",
-              "title": "Confirm sync mode every single time before shocking",
-              "html": "Many devices default back to unsynchronized mode after each delivery — an unsynchronized shock landing on the T wave of a patient who still has a pulse is the exact mechanism sync mode exists to prevent."
+              "title": "Check SYNC every single time",
+              "html": "Two failures, opposite directions, both common. <b>Sync left off</b> when cardioverting a patient with a pulse: the shock can land on the T wave and induce VF — the R-on-T phenomenon that synchronization exists to prevent. <b>Sync left on</b> when the patient has arrested into VF: the machine hunts for an R wave it will never find and <b>refuses to discharge</b>, and precious seconds are lost to a defibrillator that appears broken. Look at the mode indicator before every shock."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "05",
+          "color": "purple",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What happens",
+                "Usual cause",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Machine will not discharge",
+                  "<b>Sync is on and it cannot find an R wave</b>",
+                  "If the patient is pulseless, turn sync OFF and defibrillate. This is the classic time-waster in a peri-arrest"
+                ],
+                [
+                  "Sync markers on T waves, or missing beats",
+                  "Low-amplitude R waves in the selected lead",
+                  "Increase gain, switch lead, or reposition pads. Never shock with markers you don't trust"
+                ],
+                [
+                  "Pressed shock, nothing happened",
+                  "Button released before the next R wave",
+                  "Hold it down until discharge"
+                ],
+                [
+                  "Second shock delivered unsynchronized by accident",
+                  "Device reverted to unsync after the first",
+                  "Re-arm sync every time. Build it into the verbal sequence"
+                ],
+                [
+                  "Rhythm converts, then immediately recurs",
+                  "Untreated underlying driver",
+                  "More shocks won't fix it. Correct electrolytes, ischemia, sepsis, hypoxia, drug effect"
+                ],
+                [
+                  "Shock fails to convert AF",
+                  "Impedance, energy too low, or pad position",
+                  "Escalate energy, switch to anteroposterior, press pads firmly, ensure skin is dry"
+                ],
+                [
+                  "VF induced after cardioversion",
+                  "R-on-T, or underlying ischemia/digoxin toxicity",
+                  "Immediately defibrillate unsynchronized. Then ask why"
+                ],
+                [
+                  "Patient recalls the shock",
+                  "Inadequate sedation",
+                  "A genuine harm, not a minor one. Sedate properly if any time exists"
+                ],
+                [
+                  "Skin burns after repeated shocks",
+                  "Poor pad contact, dry gel, hair",
+                  "Replace pads, clip hair, ensure full contact"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "06",
           "color": "red",
           "title": "Complications & Pitfalls",
           "tagline": null,
@@ -3027,27 +3239,27 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Delivering an unsynchronized shock on a rhythm with a pulse can precipitate VF if it lands on the T wave (R-on-T phenomenon) — this is the entire reason synchronization exists for stable-QRS tachyarrhythmias</li>\n      <li>Failure to switch out of sync mode when transitioning to a pulseless rhythm can cause the machine to fail to deliver a shock when needed emergently</li>\n      <li>Skin burns or discomfort, particularly with repeated shocks</li>\n      <li>Inadequate sedation for a conscious, unstable patient undergoing synchronized cardioversion</li>\n</ul>"
+              "html": "<ul>\n      <li><b>R-on-T induction of VF</b> from an unsynchronized shock in a patient with a pulse</li>\n      <li><b>Failure to discharge</b> because sync was left on in a pulseless patient</li>\n      <li><b>Thromboembolic stroke</b> after cardioverting AF of &gt;48 hours without anticoagulation</li>\n      <li><b>Ventricular arrhythmia</b> in digoxin toxicity</li>\n      <li><b>Sedation-related hypotension or apnoea</b> in an already marginal patient</li>\n      <li><b>Skin burns</b>, and myocardial injury from unnecessarily high repeated energies</li>\n      <li><b>Implanted device malfunction</b> from pads placed too close to the generator</li>\n      <li><b>Shocking a stable patient</b> who needed a drug and a conversation instead</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
-          "color": "purple",
+          "num": "07",
+          "color": "teal",
           "title": "Pearls",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The core distinction is simple once internalized: sync mode times the shock to avoid the vulnerable period of the T wave in a patient who still has a pulse; defibrillation doesn't need to, because there's no organized rhythm or pulse to protect.</p>\n<p>After every synchronized cardioversion attempt, re-confirm sync mode is still active before the next shock — many devices default back to unsynchronized mode after each delivery.</p>\n<p>If a patient in front of you goes pulseless after a rhythm you were about to synchronize-cardiovert, that's your cue to immediately switch to standard defibrillation and CPR, not to keep pursuing the sync approach.</p>"
+              "html": "<p><b>Sync protects a pulse.</b> That is the whole distinction — if there is an organized QRS and a pulse to preserve, time the shock away from the T wave; if there is neither, there is nothing to protect.</p>\n<p><b>Look at the markers, not just the mode light.</b> Sync engaged but marking T waves is more dangerous than no sync at all.</p>\n<p><b>Hold the button.</b> The delay is the machine doing its job.</p>\n<p><b>Re-arm sync after every shock.</b> The revert-to-unsync default is deliberate, and it will catch you.</p>\n<p><b>Polymorphic means unsynchronized</b>, pulse or no pulse.</p>\n<p><b>Charge during compressions</b> and resume them immediately after — the peri-shock pause is the thing you control.</p>\n<p><b>Internal paddles are 10–20 J.</b> Two orders of magnitude of error are possible here.</p>\n<p><b>If it converts and immediately recurs, the problem is not the shock.</b></p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "08",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -3057,7 +3269,19 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2)."
+                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S366–S468."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Topjian AA, Raymond TT, Atkins D, et al. Part 4: Pediatric Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S469–S523."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "January CT, Wann LS, Calkins H, et al. 2019 AHA/ACC/HRS Focused Update of the 2014 Guideline for the Management of Patients With Atrial Fibrillation. <i>Circulation.</i> 2019;140(2):e125–e151."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Defibrillation and Cardioversion chapter."
                 }
               ]
             }
@@ -3086,8 +3310,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3410,7 +3634,7 @@
             {
               "type": "figure",
               "figureId": "true-capture-versus-false-capture-during-pacing",
-              "svg": "<svg viewBox=\"0 0 520 418\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"True capture versus false capture during pacing. True capture shows a pacing spike followed by a wide paced QRS with a T wave deflecting opposite to it, discordant, and a pulse wave for every complex. False capture shows a pacing spike followed by chest wall muscle artifact that resembles a complex but has no discordant T wave and no pulse wave beneath it.\">\n<style>\n  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}\n  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .bl{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 4}\n  .sp{stroke:#8a9ab5;stroke-width:1.6}\n</style>\n\n<text class=\"t\" x=\"0\" y=\"17\">Capture, or artifact?</text>\n<text class=\"c\" x=\"0\" y=\"34\">Every spike is followed by something. Only one of them is a heartbeat.</text>\n\n<!-- TRUE CAPTURE -->\n<text class=\"h\" x=\"0\" y=\"72\" style=\"fill:#00d4aa\">TRUE CAPTURE</text>\n<text class=\"s\" x=\"0\" y=\"90\">wide QRS +</text>\n<text class=\"s\" x=\"0\" y=\"105\">discordant T</text>\n<line class=\"bl\" x1=\"150\" y1=\"110\" x2=\"512\" y2=\"110\"></line>\n<!-- spikes -->\n<line class=\"sp\" x1=\"176\" y1=\"78\" x2=\"176\" y2=\"126\"></line>\n<line class=\"sp\" x1=\"296\" y1=\"78\" x2=\"296\" y2=\"126\"></line>\n<line class=\"sp\" x1=\"416\" y1=\"78\" x2=\"416\" y2=\"126\"></line>\n<!-- paced complexes: wide QRS up, T down (discordant) -->\n<polyline class=\"w\" stroke=\"#00d4aa\" points=\"150,110 176,110 182,80 192,84 202,110 216,110 226,128 238,132 250,110 292,110\n 296,110 302,80 312,84 322,110 336,110 346,128 358,132 370,110 412,110\n 416,110 422,80 432,84 442,110 456,110 466,128 478,132 490,110 512,110\"></polyline>\n<text class=\"c\" x=\"150\" y=\"152\" style=\"fill:#00d4aa\">QRS up ↑  T down ↓  — opposite, as it should be</text>\n\n<!-- pulse trace for true capture -->\n<text class=\"s\" x=\"0\" y=\"186\" style=\"fill:#e8edf5\">PULSE</text>\n<line class=\"bl\" x1=\"150\" y1=\"196\" x2=\"512\" y2=\"196\"></line>\n<polyline class=\"w\" stroke=\"#2563eb\" points=\"150,196 176,196 186,170 196,176 208,192 220,196 292,196\n 296,196 306,170 316,176 328,192 340,196 412,196\n 416,196 426,170 436,176 448,192 460,196 512,196\"></polyline>\n<text class=\"c\" x=\"150\" y=\"220\" style=\"fill:#2563eb\">one pulse wave per spike — this is mechanical capture</text>\n\n<!-- divider -->\n<line x1=\"0\" y1=\"242\" x2=\"512\" y2=\"242\" stroke=\"#4a5670\" stroke-width=\"1\" opacity=\"0.5\"></line>\n\n<!-- FALSE CAPTURE -->\n<text class=\"h\" x=\"0\" y=\"278\" style=\"fill:#e84c4c\">FALSE CAPTURE</text>\n<text class=\"s\" x=\"0\" y=\"296\">muscle artifact</text>\n<text class=\"s\" x=\"0\" y=\"311\">no T wave</text>\n<line class=\"bl\" x1=\"150\" y1=\"316\" x2=\"512\" y2=\"316\"></line>\n<line class=\"sp\" x1=\"176\" y1=\"284\" x2=\"176\" y2=\"332\"></line>\n<line class=\"sp\" x1=\"296\" y1=\"284\" x2=\"296\" y2=\"332\"></line>\n<line class=\"sp\" x1=\"416\" y1=\"284\" x2=\"416\" y2=\"332\"></line>\n<!-- artifact: broad wobble, no organised repolarisation -->\n<polyline class=\"w\" stroke=\"#e84c4c\" points=\"150,316 176,316 182,294 188,326 196,300 204,322 212,310 222,316 292,316\n 296,316 302,294 308,326 316,300 324,322 332,310 342,316 412,316\n 416,316 422,294 428,326 436,300 444,322 452,310 462,316 512,316\"></polyline>\n<text class=\"c\" x=\"150\" y=\"356\" style=\"fill:#e84c4c\">looks like a complex — but no discordant T, and…</text>\n\n<!-- flat pulse -->\n<line class=\"bl\" x1=\"150\" y1=\"382\" x2=\"512\" y2=\"382\"></line>\n<text class=\"s\" x=\"0\" y=\"386\" style=\"fill:#e8edf5\">PULSE</text>\n<polyline class=\"w\" stroke=\"#4a5670\" points=\"150,382 512,382\"></polyline>\n<text class=\"c\" x=\"150\" y=\"398\" style=\"fill:#e84c4c\">…nothing underneath it. Still PEA.</text>\n</svg>",
+              "svg": "<svg viewBox=\"0 0 520 418\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"True capture versus false capture during pacing. True capture shows a pacing spike followed by a wide paced QRS with a T wave deflecting opposite to it, discordant, and a pulse wave for every complex. False capture shows a pacing spike followed by chest wall muscle artifact that resembles a complex but has no discordant T wave and no pulse wave beneath it.\">\n<style>\n  .w{fill:none;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}\n  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .bl{stroke:#4a5670;stroke-width:1;stroke-dasharray:3 4}\n  .sp{stroke:#8a9ab5;stroke-width:1.6}\n</style>\n\n<text class=\"t\" x=\"0\" y=\"17\">Capture, or artifact?</text>\n<text class=\"c\" x=\"0\" y=\"34\">Every spike is followed by something. Only one of them is a heartbeat.</text>\n\n<!-- TRUE CAPTURE -->\n<text class=\"h\" x=\"0\" y=\"72\" style=\"fill:#00d4aa\">TRUE CAPTURE</text>\n<text class=\"s\" x=\"0\" y=\"90\">wide QRS +</text>\n<text class=\"s\" x=\"0\" y=\"105\">discordant T</text>\n<line class=\"bl\" x1=\"150\" y1=\"110\" x2=\"512\" y2=\"110\"></line>\n<!-- spikes -->\n<line class=\"sp\" x1=\"176\" y1=\"78\" x2=\"176\" y2=\"126\"></line>\n<line class=\"sp\" x1=\"296\" y1=\"78\" x2=\"296\" y2=\"126\"></line>\n<line class=\"sp\" x1=\"416\" y1=\"78\" x2=\"416\" y2=\"126\"></line>\n<!-- paced complexes: wide QRS up, T down (discordant) -->\n<polyline class=\"w\" stroke=\"#00d4aa\" points=\"150,110 176,110 182,80 192,84 202,110 216,110 226,128 238,132 250,110 292,110\n 296,110 302,80 312,84 322,110 336,110 346,128 358,132 370,110 412,110\n 416,110 422,80 432,84 442,110 456,110 466,128 478,132 490,110 512,110\"></polyline>\n<text class=\"c\" x=\"150\" y=\"152\" style=\"fill:#00d4aa\">QRS up ↑  T down ↓  — opposite, as it should be</text>\n\n<!-- pulse trace for true capture -->\n<text class=\"s\" x=\"0\" y=\"186\" style=\"fill:#e8edf5\">PULSE</text>\n<line class=\"bl\" x1=\"150\" y1=\"196\" x2=\"512\" y2=\"196\"></line>\n<polyline class=\"w\" stroke=\"#2563eb\" points=\"150,196 176,196 186,170 196,176 208,192 220,196 292,196\n 296,196 306,170 316,176 328,192 340,196 412,196\n 416,196 426,170 436,176 448,192 460,196 512,196\"></polyline>\n<text class=\"c\" x=\"150\" y=\"220\" style=\"fill:#2563eb\">one pulse wave per spike — this is mechanical capture</text>\n\n<!-- divider -->\n<line x1=\"0\" y1=\"242\" x2=\"512\" y2=\"242\" stroke=\"#4a5670\" stroke-width=\"1\" opacity=\"0.5\"></line>\n\n<!-- FALSE CAPTURE -->\n<text class=\"h\" x=\"0\" y=\"278\" style=\"fill:#e84c4c\">FALSE CAPTURE</text>\n<text class=\"s\" x=\"0\" y=\"296\">muscle artifact</text>\n<text class=\"s\" x=\"0\" y=\"311\">no T wave</text>\n<line class=\"bl\" x1=\"150\" y1=\"316\" x2=\"512\" y2=\"316\"></line>\n<line class=\"sp\" x1=\"176\" y1=\"284\" x2=\"176\" y2=\"332\"></line>\n<line class=\"sp\" x1=\"296\" y1=\"284\" x2=\"296\" y2=\"332\"></line>\n<line class=\"sp\" x1=\"416\" y1=\"284\" x2=\"416\" y2=\"332\"></line>\n<!-- artifact: broad wobble, no organized repolarisation -->\n<polyline class=\"w\" stroke=\"#e84c4c\" points=\"150,316 176,316 182,294 188,326 196,300 204,322 212,310 222,316 292,316\n 296,316 302,294 308,326 316,300 324,322 332,310 342,316 412,316\n 416,316 422,294 428,326 436,300 444,322 452,310 462,316 512,316\"></polyline>\n<text class=\"c\" x=\"150\" y=\"356\" style=\"fill:#e84c4c\">looks like a complex — but no discordant T, and…</text>\n\n<!-- flat pulse -->\n<line class=\"bl\" x1=\"150\" y1=\"382\" x2=\"512\" y2=\"382\"></line>\n<text class=\"s\" x=\"0\" y=\"386\" style=\"fill:#e8edf5\">PULSE</text>\n<polyline class=\"w\" stroke=\"#4a5670\" points=\"150,382 512,382\"></polyline>\n<text class=\"c\" x=\"150\" y=\"398\" style=\"fill:#e84c4c\">…nothing underneath it. Still PEA.</text>\n</svg>",
               "alt": "True capture versus false capture during pacing. True capture shows a pacing spike followed by a wide paced QRS with a T wave deflecting opposite to it, discordant, and a pulse wave for every complex. False capture shows a pacing spike followed by chest wall muscle artifact that resembles a complex but has no discordant T wave and no pulse wave beneath it.",
               "caption": "Both tracings have a spike before every wide deflection, and on a moving monitor they look alike. The difference is the <b>discordant T wave</b> and, decisively, whether there is a pulse wave beneath it — which is why you confirm with a femoral pulse, an arterial line, or bedside echo rather than the monitor alone."
             },
@@ -3728,8 +3952,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3923,8 +4147,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4135,8 +4359,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4354,8 +4578,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4528,8 +4752,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4739,8 +4963,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4909,8 +5133,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5111,8 +5335,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5326,8 +5550,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5502,8 +5726,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5688,8 +5912,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5910,8 +6134,8 @@
       "description": "Proximal humerus, sternal, and tibial sites.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6136,8 +6360,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6304,8 +6528,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6490,8 +6714,8 @@
       "description": "Ratio-based transfusion sequencing and logistics.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6670,8 +6894,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6844,8 +7068,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7056,8 +7280,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",

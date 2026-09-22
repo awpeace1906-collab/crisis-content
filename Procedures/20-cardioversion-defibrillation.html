@@ -111,10 +111,12 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 <nav class="quicknav">
   <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
-    <a class="qn pinned" href="#technique">&#9889; TECHNIQUE</a>
+    <a class="qn pinned" href="#energy">&#9889; ENERGIES</a>
     <a class="qn" href="#indications">Indications</a>
-    <a class="qn" href="#contraindications">Contraindications</a>
-    <a class="qn" href="#equipment">Equipment</a>
+    <a class="qn" href="#contraindications">Contraindications &amp; Cautions</a>
+    <a class="qn" href="#energy">Energy Selection</a>
+    <a class="qn" href="#technique">Stepwise Technique</a>
+    <a class="qn" href="#troubleshooting">Troubleshooting &amp; Failure Modes</a>
     <a class="qn" href="#complications">Complications &amp; Pitfalls</a>
     <a class="qn" href="#pearls">Pearls</a>
     <a class="qn" href="#refs">References</a>
@@ -125,73 +127,111 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 <div class="sec-head c-teal" id="indications"><span class="sec-num">01</span><h2>Indications</h2></div>
 <div class="box t-teal">
-<p><b>Synchronized cardioversion</b></p>
+<p><b>Synchronized cardioversion</b> &mdash; an unstable tachyarrhythmia <i>with a pulse</i> and a discernible, organized QRS:</p>
 <ul>
-      <li>Unstable tachyarrhythmia with a discernible, organized QRS complex: unstable SVT, unstable atrial fibrillation/flutter with rapid ventricular response, unstable monomorphic ventricular tachycardia with a pulse</li>
+      <li>Unstable SVT refractory to vagal maneuvers/adenosine</li>
+      <li>Unstable atrial fibrillation or flutter with rapid ventricular response</li>
+      <li>Unstable <b>monomorphic</b> VT with a pulse</li>
+</ul>
+<p><b>Defibrillation (unsynchronized)</b> &mdash; no pulse, or no synchronizable QRS:</p>
+<ul>
+      <li>Pulseless VF or pulseless VT</li>
+      <li><b>Polymorphic VT</b>, including torsades &mdash; the QRS varies beat to beat, so the machine cannot reliably find an R wave. Unsynchronized, even if a pulse is present.</li>
 </ul>
 </div>
-<div class="box t-teal">
-<p><b>Defibrillation (unsynchronized)</b></p>
-<ul>
-      <li>Pulseless ventricular fibrillation</li>
-      <li>Pulseless ventricular tachycardia</li>
-      <li>Polymorphic VT (unsynchronized due to the irregular, unpredictable QRS morphology precluding reliable synchronization)</li>
-</ul>
-</div>
-<div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications</h2></div>
+<div class="xref"><b>&ldquo;Unstable&rdquo; means the rhythm is causing the problem:</b> hypotension, altered mentation, ischemic chest pain, or acute heart failure attributable to the rate. A heart rate alone is not an indication &mdash; and a rate below about 150 rarely explains shock by itself in an adult, so look hard for another cause before shocking.</div>
+
+<div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications &amp; Cautions</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Stable tachyarrhythmia (no hemodynamic compromise) &mdash; pursue pharmacologic management first</li>
-      <li>Synchronized cardioversion should not be attempted on a rhythm without a clear, consistently identifiable QRS for the machine to sync to (e.g., polymorphic VT) &mdash; default to unsynchronized defibrillation instead</li>
+      <li><b>Stable tachyarrhythmia</b> &mdash; treat pharmacologically; you have time</li>
+      <li><b>Do not attempt to synchronize a rhythm without a consistent QRS.</b> The machine will either refuse to discharge or sync to the wrong deflection. Polymorphic VT goes unsynchronized.</li>
+      <li><b>Digoxin toxicity</b> &mdash; cardioversion can precipitate refractory ventricular arrhythmias. If unavoidable, use the lowest effective energy and have magnesium and antidote available.</li>
+      <li><b>Atrial fibrillation of &gt;48 hours or unknown duration</b> in a <i>stable</i> patient &mdash; elective cardioversion carries thromboembolic risk and needs anticoagulation or TOE first. In the genuinely unstable patient this consideration does not override shocking.</li>
+      <li><b>Implanted device</b> &mdash; not a contraindication; place pads at least 8&nbsp;cm from the generator, ideally anteroposterior, and have the device interrogated afterwards.</li>
 </ul>
 </div>
-<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment</h2></div>
-<div class="box t-blue">
-<ul>
-      <li>Defibrillator/cardioversion-capable monitor with pads or paddles</li>
-      <li>Sedation/analgesia for a conscious, unstable patient prior to synchronized cardioversion when time allows</li>
-</ul>
-</div>
+
+<div class="sec-head c-blue" id="energy"><span class="sec-num">03</span><h2>Energy Selection</h2></div>
+<div class="tagline">Device-specific — these are starting points, not a substitute for your machine's guidance</div>
+<table class="rt">
+  <tr><th>Rhythm</th><th>Mode</th><th>Typical biphasic energy</th></tr>
+  <tr><td>SVT / atrial flutter</td><td><b>Sync</b></td><td>50&ndash;100 J &mdash; these terminate at the lowest energies</td></tr>
+  <tr><td>Atrial fibrillation</td><td><b>Sync</b></td><td>120&ndash;200 J</td></tr>
+  <tr><td>Monomorphic VT with a pulse</td><td><b>Sync</b></td><td>100 J</td></tr>
+  <tr><td>VF / pulseless VT</td><td><b>Unsync</b></td><td>120&ndash;200 J per manufacturer; if unknown, use the maximum</td></tr>
+  <tr><td>Polymorphic VT / torsades</td><td><b>Unsync</b></td><td>Defibrillation doses</td></tr>
+  <tr><td>Pediatric defibrillation</td><td><b>Unsync</b></td><td><b>2 J/kg</b> first, then <b>4 J/kg</b>, subsequent ≥4 J/kg (max 10 J/kg or adult dose)</td></tr>
+  <tr><td>Pediatric cardioversion</td><td><b>Sync</b></td><td><b>0.5&ndash;1 J/kg</b> first, escalating to <b>2 J/kg</b></td></tr>
+  <tr><td>Internal paddles (open chest)</td><td><b>Unsync</b></td><td><b>10&ndash;20 J</b> &mdash; an order of magnitude lower; external doses injure myocardium</td></tr>
+</table>
+<div class="alert amber"><div class="alert-t">Escalate if the first shock fails</div><p>If a synchronized shock does not convert the rhythm, <b>step the energy up</b> for the next attempt rather than repeating the same dose. Repeating an identical failed shock is the same error as repeating an identical failed laryngoscopy.</p></div>
+
 <div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Stepwise Technique</h2></div>
 <div class="tagline">Synchronized cardioversion</div>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-desc">Confirm the patient is unstable and the rhythm has a discernible, organized QRS complex.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-desc">Attach pads/leads, ensure clear ECG tracing on the monitor.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-desc">Activate the synchronization mode on the defibrillator &mdash; confirm the sync markers are correctly aligned on each QRS complex before shocking.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-desc">Sedate if time and hemodynamic status allow.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-desc">Select the appropriate energy level per rhythm (lower initial energies for SVT/atrial arrhythmias, higher for monomorphic VT, per your device and current ACLS guidance).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-desc">Deliver the shock &mdash; note that with synchronization active, there may be a brief delay between pressing the shock button and actual delivery as the machine times the discharge to the QRS.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-desc">Reassess rhythm and pulse immediately after the shock; re-sync and repeat if the arrhythmia persists and the patient remains unstable.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Confirm instability and a synchronizable rhythm</div><div class="step-desc">Pulse present, organized QRS, and symptoms attributable to the rate. Print or freeze a strip &mdash; you want to be certain this is monomorphic before choosing sync.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Prepare the skin and place pads</div><div class="step-desc">Dry the chest, clip dense hair, remove transdermal patches. <b>Anteroposterior placement</b> is generally preferred for atrial fibrillation and for patients with implanted devices; anterolateral is acceptable and faster. Keep pads ≥8&nbsp;cm from any device generator.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Sedate &mdash; this is a conscious patient about to be shocked</div><div class="step-desc">If there is any time at all, provide procedural sedation and analgesia. Titrate carefully: the blood pressure you are worried about is already low. Small doses, pre-oxygenation, airway equipment and a vasopressor within reach.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Press SYNC, then look at the screen</div><div class="step-desc">Activate synchronization and <b>visually confirm a marker sitting on every R wave</b> &mdash; and only on R waves. If markers are landing on T waves or appearing intermittently, increase the ECG gain or switch to a lead with a taller R. <b>Do not shock until the markers are right.</b> This look at the screen is the entire safety mechanism of the procedure.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Charge, clear, and hold the button</div><div class="step-desc">Announce and confirm everyone is clear. <b>Hold the shock button down</b> &mdash; in sync mode the machine waits for the next R wave, so there is a perceptible delay between pressing and discharge. Releasing early is a common reason &ldquo;the shock didn't work.&rdquo;</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">Reassess &mdash; and re-arm SYNC before the next shock</div><div class="step-desc">Check rhythm and pulse. If still unstable and unconverted, escalate energy and shock again &mdash; but first <b>re-confirm sync is active</b>. Most defibrillators revert to unsynchronized after every delivery, by design, so that a patient who arrests can be defibrillated immediately.</div></div></div>
 </div>
-<div class="tagline">Defibrillation (unsynchronized)</div>
+<div class="tagline">Defibrillation</div>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-desc">Confirm pulseless VF or VT (or polymorphic VT with instability).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">9</div><div class="step-body"><div class="step-desc">Attach pads, ensure no synchronization mode is active.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">10</div><div class="step-body"><div class="step-desc">Select maximum or protocol-appropriate energy per your device.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">11</div><div class="step-body"><div class="step-desc">Announce clear, ensure no one is in contact with the patient or bed.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">12</div><div class="step-body"><div class="step-desc">Deliver the shock immediately without delay.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">13</div><div class="step-body"><div class="step-desc">Resume CPR immediately after the shock without pausing to check rhythm/pulse; reassess at the next scheduled rhythm check per the resuscitation algorithm.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">7</div><div class="step-body"><div class="step-title">Confirm pulselessness, charge during compressions</div><div class="step-desc">Keep compressions going while the machine charges &mdash; this is the single biggest modifiable factor in minimizing the peri-shock pause. Ensure sync is <b>off</b>.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">8</div><div class="step-body"><div class="step-title">Clear, shock, and resume compressions immediately</div><div class="step-desc">Brief clear, deliver, and go straight back to compressions <b>without</b> a pulse or rhythm check. Reassess at the next scheduled rhythm check. A perfusing rhythm rarely appears instantly after a shock, and pausing to look costs coronary perfusion pressure that took a minute to build.</div></div></div>
 </div>
-<div class="alert red"><div class="alert-t">Confirm sync mode every single time before shocking</div><p>Many devices default back to unsynchronized mode after each delivery &mdash; an unsynchronized shock landing on the T wave of a patient who still has a pulse is the exact mechanism sync mode exists to prevent.</p></div>
-<div class="sec-head c-red" id="complications"><span class="sec-num">05</span><h2>Complications &amp; Pitfalls</h2></div>
+<div class="alert red"><div class="alert-t">Check SYNC every single time</div><p>Two failures, opposite directions, both common. <b>Sync left off</b> when cardioverting a patient with a pulse: the shock can land on the T wave and induce VF &mdash; the R-on-T phenomenon that synchronization exists to prevent. <b>Sync left on</b> when the patient has arrested into VF: the machine hunts for an R wave it will never find and <b>refuses to discharge</b>, and precious seconds are lost to a defibrillator that appears broken. Look at the mode indicator before every shock.</p></div>
+
+<div class="sec-head c-purple" id="troubleshooting"><span class="sec-num">05</span><h2>Troubleshooting &amp; Failure Modes</h2></div>
+<table class="rt">
+  <tr><th>What happens</th><th>Usual cause</th><th>What to do</th></tr>
+  <tr><td>Machine will not discharge</td><td><b>Sync is on and it cannot find an R wave</b></td><td>If the patient is pulseless, turn sync OFF and defibrillate. This is the classic time-waster in a peri-arrest</td></tr>
+  <tr><td>Sync markers on T waves, or missing beats</td><td>Low-amplitude R waves in the selected lead</td><td>Increase gain, switch lead, or reposition pads. Never shock with markers you don't trust</td></tr>
+  <tr><td>Pressed shock, nothing happened</td><td>Button released before the next R wave</td><td>Hold it down until discharge</td></tr>
+  <tr><td>Second shock delivered unsynchronized by accident</td><td>Device reverted to unsync after the first</td><td>Re-arm sync every time. Build it into the verbal sequence</td></tr>
+  <tr><td>Rhythm converts, then immediately recurs</td><td>Untreated underlying driver</td><td>More shocks won't fix it. Correct electrolytes, ischemia, sepsis, hypoxia, drug effect</td></tr>
+  <tr><td>Shock fails to convert AF</td><td>Impedance, energy too low, or pad position</td><td>Escalate energy, switch to anteroposterior, press pads firmly, ensure skin is dry</td></tr>
+  <tr><td>VF induced after cardioversion</td><td>R-on-T, or underlying ischemia/digoxin toxicity</td><td>Immediately defibrillate unsynchronized. Then ask why</td></tr>
+  <tr><td>Patient recalls the shock</td><td>Inadequate sedation</td><td>A genuine harm, not a minor one. Sedate properly if any time exists</td></tr>
+  <tr><td>Skin burns after repeated shocks</td><td>Poor pad contact, dry gel, hair</td><td>Replace pads, clip hair, ensure full contact</td></tr>
+</table>
+
+<div class="sec-head c-red" id="complications"><span class="sec-num">06</span><h2>Complications &amp; Pitfalls</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Delivering an unsynchronized shock on a rhythm with a pulse can precipitate VF if it lands on the T wave (R-on-T phenomenon) &mdash; this is the entire reason synchronization exists for stable-QRS tachyarrhythmias</li>
-      <li>Failure to switch out of sync mode when transitioning to a pulseless rhythm can cause the machine to fail to deliver a shock when needed emergently</li>
-      <li>Skin burns or discomfort, particularly with repeated shocks</li>
-      <li>Inadequate sedation for a conscious, unstable patient undergoing synchronized cardioversion</li>
+      <li><b>R-on-T induction of VF</b> from an unsynchronized shock in a patient with a pulse</li>
+      <li><b>Failure to discharge</b> because sync was left on in a pulseless patient</li>
+      <li><b>Thromboembolic stroke</b> after cardioverting AF of &gt;48 hours without anticoagulation</li>
+      <li><b>Ventricular arrhythmia</b> in digoxin toxicity</li>
+      <li><b>Sedation-related hypotension or apnoea</b> in an already marginal patient</li>
+      <li><b>Skin burns</b>, and myocardial injury from unnecessarily high repeated energies</li>
+      <li><b>Implanted device malfunction</b> from pads placed too close to the generator</li>
+      <li><b>Shocking a stable patient</b> who needed a drug and a conversation instead</li>
 </ul>
 </div>
-<div class="sec-head c-purple" id="pearls"><span class="sec-num">06</span><h2>Pearls</h2></div>
+
+<div class="sec-head c-teal" id="pearls"><span class="sec-num">07</span><h2>Pearls</h2></div>
 <div class="box t-purple">
-<p>The core distinction is simple once internalized: sync mode times the shock to avoid the vulnerable period of the T wave in a patient who still has a pulse; defibrillation doesn't need to, because there's no organized rhythm or pulse to protect.</p>
-<p>After every synchronized cardioversion attempt, re-confirm sync mode is still active before the next shock &mdash; many devices default back to unsynchronized mode after each delivery.</p>
-<p>If a patient in front of you goes pulseless after a rhythm you were about to synchronize-cardiovert, that's your cue to immediately switch to standard defibrillation and CPR, not to keep pursuing the sync approach.</p>
+<p><b>Sync protects a pulse.</b> That is the whole distinction &mdash; if there is an organized QRS and a pulse to preserve, time the shock away from the T wave; if there is neither, there is nothing to protect.</p>
+<p><b>Look at the markers, not just the mode light.</b> Sync engaged but marking T waves is more dangerous than no sync at all.</p>
+<p><b>Hold the button.</b> The delay is the machine doing its job.</p>
+<p><b>Re-arm sync after every shock.</b> The revert-to-unsync default is deliberate, and it will catch you.</p>
+<p><b>Polymorphic means unsynchronized</b>, pulse or no pulse.</p>
+<p><b>Charge during compressions</b> and resume them immediately after &mdash; the peri-shock pause is the thing you control.</p>
+<p><b>Internal paddles are 10&ndash;20 J.</b> Two orders of magnitude of error are possible here.</p>
+<p><b>If it converts and immediately recurs, the problem is not the shock.</b></p>
 </div>
-<div class="sec-head c-amber" id="refs"><span class="sec-num">07</span><h2>References</h2></div>
+
+<div class="sec-head c-amber" id="refs"><span class="sec-num">08</span><h2>References</h2></div>
 <ul class="sources">
-  <li><span class="tier">GUIDELINE</span>Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2).</li>
+  <li><span class="tier">GUIDELINE</span>Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S366&ndash;S468.</li>
+  <li><span class="tier">GUIDELINE</span>Topjian AA, Raymond TT, Atkins D, et al. Part 4: Pediatric Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S469&ndash;S523.</li>
+  <li><span class="tier">GUIDELINE</span>January CT, Wann LS, Calkins H, et al. 2019 AHA/ACC/HRS Focused Update of the 2014 Guideline for the Management of Patients With Atrial Fibrillation. <i>Circulation.</i> 2019;140(2):e125&ndash;e151.</li>
+  <li><span class="tier">REFERENCE</span>Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 &mdash; Defibrillation and Cardioversion chapter.</li>
 </ul>
+
 <div class="footer">Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and equipment against your own institution's protocol before clinical use.</div>
 </div>
 </body>
