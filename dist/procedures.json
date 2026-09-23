@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T02:36:11.233Z",
+  "generatedAt": "2026-09-23T02:58:20.607Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -368,8 +368,8 @@
       "description": "Surgical, percutaneous, and needle techniques for CICO.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1456,8 +1456,8 @@
       "description": "Wire-guided backup when fiberoptic/video fails.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -1731,8 +1731,8 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2080,8 +2080,8 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2389,8 +2389,8 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2658,8 +2658,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2980,8 +2980,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-03-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
@@ -3310,8 +3310,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3490,8 +3490,8 @@
       "description": "Bridging unstable bradycardia to a definitive rhythm.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-03-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
@@ -3950,10 +3950,10 @@
       "categoryOrder": 4,
       "color": "purple",
       "description": "First-line mechanical management of uterine atony.",
-      "reviewTier": 2,
-      "reviewTierIsDefault": true,
+      "reviewTier": 1,
+      "reviewTierIsDefault": false,
       "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-03-23",
       "sections": [
         {
           "id": "indications",
@@ -3965,7 +3965,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Postpartum hemorrhage due to uterine atony (a boggy, poorly contracted uterus on palpation, with ongoing vaginal bleeding after delivery)</li>\n      <li>First-line intervention alongside uterotonic medication administration</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Postpartum hemorrhage with a soft, boggy, poorly contracted uterus</b> — uterine atony, which causes 70–80% of postpartum hemorrhage</li>\n      <li><b>Prophylactically, in the third stage</b>, as part of active management alongside a uterotonic</li>\n      <li><b>Any postpartum bleeding that looks more than ordinary</b>, before you have worked out the cause — massage costs nothing and buys time</li>\n</ul>\n<p><b>The current definition of postpartum hemorrhage</b> is cumulative blood loss of <span class=\"d\">≥1000 mL</span>, <i>or</i> blood loss accompanied by signs of hypovolemia, within 24 hours of birth — regardless of route of delivery. The older 500 mL vaginal threshold is retained by many units as a trigger for heightened attention, which is reasonable.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "You are underestimating the blood loss — everyone does",
+              "html": "Visual estimation of obstetric blood loss under-reads by <b>30–50%</b>, and the error grows as the volume grows. <b>Quantify it:</b> weigh pads, drapes and sponges (1 g = 1 mL, minus dry weight) and use a graduated under-buttocks drape. And remember that a healthy pregnant woman's blood volume is <b>up 40–50%</b>, so she compensates beautifully and then collapses: vital signs can stay near-normal until 1500 mL is gone. <b>Watch the shock index (HR ÷ SBP) — above 0.9 to 1.0 is an early and validated trigger</b>, well before hypotension appears."
             }
           ]
         },
@@ -3973,13 +3979,13 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "When Massage Is the Wrong Answer",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute in postpartum hemorrhage from suspected atony</li>\n      <li>Hemorrhage from a source other than atony (laceration, retained products, coagulopathy) will not respond to massage/compression alone — reassess promptly if bleeding continues despite a firm, well-contracted uterus</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A firm uterus with ongoing bleeding is not atony.</b> Stop massaging and go looking. Inspect the cervix, vagina and perineum for lacerations, consider retained placental tissue, consider uterine rupture, and consider coagulopathy — including amniotic fluid embolism, which presents as coagulopathic bleeding with cardiorespiratory collapse.</li>\n      <li><b>Uterine inversion.</b> If the fundus is not palpable abdominally and there is a mass at or through the cervix, with shock out of proportion to the visible loss, <b>this is inversion, and massaging or giving uterotonics makes it irreversible.</b> See §06 — the treatment is the opposite of everything else on this page.</li>\n      <li><b>Retained placenta.</b> A uterus cannot contract around retained tissue. It has to come out first.</li>\n      <li><b>Continuing massage as a substitute for escalation.</b> A uterus that firms under your hand and softens the moment you stop is telling you atony is ongoing and unresponsive. That is a signal to escalate, not to keep rubbing.</li>\n</ul>\n<p><b>The four T's, in order of frequency:</b> <b>Tone</b> (atony, ~70–80%) · <b>Trauma</b> (lacerations, rupture, hematoma, ~20%) · <b>Tissue</b> (retained products) · <b>Thrombin</b> (coagulopathy). Inversion sits outside the list and is the one that punishes the reflexive response.</p>"
             }
           ]
         },
@@ -3993,7 +3999,7 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Gloved hands — this is a manual technique requiring no specialized equipment</li>\n      <li>Uterotonic medications on hand as concurrent pharmacologic management (oxytocin first-line, with additional agents per protocol for refractory atony)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Gloved hands</b> — long gloves if you have them, because bimanual compression puts your forearm in the vagina.</li>\n      <li><b>A urinary catheter.</b> Frequently skipped and genuinely effective: <b>a full bladder mechanically prevents the uterus from contracting.</b> Empty it early.</li>\n      <li><b>Uterotonics, drawn and ready</b> — see §05 for doses and the two contraindications that matter.</li>\n      <li><b>Large-bore IV access ×2</b>, crystalloid, and the massive transfusion pathway on standby.</li>\n      <li><b>Tranexamic acid.</b></li>\n      <li><b>Analgesia or sedation.</b> Sustained bimanual compression is extremely painful in a woman who is usually awake and alert.</li>\n      <li><b>Escalation equipment within reach:</b> intrauterine balloon (Bakri, or a condom catheter improvised over a Foley), vacuum-induced tamponade device, and the number for whoever performs compression sutures, embolization, or a hysterectomy.</li>\n      <li><b>A scale</b> for quantitative blood loss, and a whiteboard.</li>\n</ul>"
             }
           ]
         },
@@ -4001,12 +4007,12 @@
           "id": "technique",
           "num": "04",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Technique",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "Fundal massage"
+              "html": "Fundal massage — two hands, not one"
             },
             {
               "type": "steps",
@@ -4014,20 +4020,20 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Place one hand on the abdomen at the level of the uterine fundus."
+                  "title": "Empty the bladder first",
+                  "html": "Catheterize. A distended bladder displaces the uterus and physically prevents contraction, and this single step sometimes resolves the problem. It also gives you urine output as a perfusion marker for everything that follows."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Massage firmly in a circular or kneading motion to stimulate uterine contraction."
+                  "title": "Support the lower segment with the second hand",
+                  "html": "Cup the fundus with one hand and place the other just above the symphysis, pressing back and supporting the lower uterine segment. <b>Vigorous one-handed massage of an atonic uterus can invert it.</b> The lower hand is a guard, not an afterthought."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Reassess uterine tone frequently — a well-contracted uterus should feel firm, like a clenched fist, rather than soft/boggy."
+                  "title": "Massage firmly — and know what you are feeling for",
+                  "html": "A deep, firm, kneading circular motion, not a light rub. <b>The endpoint is a uterus that feels like a clenched fist</b>, globular and hard, at or below the umbilicus. Boggy, wide, and doughy means atony continues. Express retained clot from the lower segment as tone returns — clot in the cavity perpetuates atony."
                 }
               ]
             },
@@ -4041,60 +4047,220 @@
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Insert one hand into the vagina, forming a fist, and place it in the anterior fornix, pushing against the anterior surface of the uterus."
+                  "title": "Vaginal hand into the anterior fornix, as a fist",
+                  "html": "Insert the whole hand, make a fist in the anterior fornix, and press <b>upward and forward</b> against the anterior wall of the uterus. Say what you are about to do — she is awake, and this is frightening as well as painful."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Place the other hand on the abdomen behind the uterine fundus."
+                  "title": "Abdominal hand behind the fundus, pulling it forward",
+                  "html": "Reach behind the uterus abdominally, cup the posterior wall, and draw the fundus <b>down and forward onto the vaginal fist</b>. You are not pressing straight down — you are bringing the two hands together."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Compress the uterus firmly between both hands, applying sustained pressure."
+                  "title": "Compress and hold",
+                  "html": "Squeeze the whole uterus between your hands, hard, and sustain it. This works two ways: it compresses the myometrium directly, and it kinks the uterine arteries in the broad ligament. <b>It is exhausting within minutes — plan to rotate operators before anyone weakens.</b> Do not release intermittently to check; hold, while the drugs and the team catch up."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Continue compression while uterotonic medications take effect and while arranging for any additional interventions (balloon tamponade, surgical management) if bleeding is refractory."
+                  "title": "Everything else happens around you",
+                  "html": "Compression is a holding action. While it is held: uterotonics given, TXA given, two lines in, blood ordered, bladder emptied, the genital tract inspected, and the next step being prepared. <b>Bimanual compression that continues for twenty minutes with nothing else happening is not a plan.</b>"
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Maintain compression until bleeding is controlled and uterine tone is restored, or until more definitive management is ready to proceed."
+                  "color": "purple",
+                  "title": "Aortic compression, if it is catastrophic",
+                  "html": "In torrential hemorrhage, a closed fist pressed hard just above the umbilicus, directed posteriorly onto the vertebral column, compresses the abdominal aorta. Confirm by loss of femoral pulses. A crude, tiring, temporary measure — and it buys minutes when nothing else is working."
                 }
               ]
-            },
-            {
-              "type": "alert",
-              "color": "amber",
-              "title": "Start it the moment atony is suspected, not after medications are running",
-              "html": "This is a first-line, no-equipment-needed intervention that belongs in parallel with calling for uterotonics, not sequentially after them."
             }
           ]
         },
         {
-          "id": "complications",
+          "id": "drugs",
           "num": "05",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Uterotonics — Doses and the Two That Can Harm",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Massage and drugs go together. Neither is the second step."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Agent",
+                "Dose",
+                "Do not give if"
+              ],
+              "rows": [
+                [
+                  "<b>Oxytocin</b><br>first line",
+                  "<span class=\"d\">10 units IM</span>, or <span class=\"d\">10–40 units in 500–1000 mL</span> crystalloid as an IV infusion, titrated",
+                  "<b>Never undiluted as a rapid IV push</b> — causes hypotension, tachycardia and arrhythmia. Dilute it."
+                ],
+                [
+                  "<b>Methylergonovine</b>",
+                  "<span class=\"d\">0.2 mg IM</span>, may repeat every 2–4 h",
+                  "<b>Hypertension, preeclampsia, or Raynaud phenomenon.</b> It is a vasoconstrictor and can precipitate stroke or severe hypertension. <b>Never IV.</b>"
+                ],
+                [
+                  "<b>Carboprost</b><br>15-methyl PGF<sub>2α</sub>",
+                  "<span class=\"d\">250 mcg IM or intramyometrial</span>, repeat every 15–90 min, <b>max 8 doses (2 mg)</b>",
+                  "<b>Asthma</b> — it causes bronchospasm. Expect diarrhea, vomiting and fever as routine effects."
+                ],
+                [
+                  "<b>Misoprostol</b>",
+                  "<span class=\"d\">600–1000 mcg</span> sublingual, oral or rectal",
+                  "No absolute contraindication. Causes fever and shivering, which is easily mistaken for sepsis."
+                ],
+                [
+                  "<b>Tranexamic acid</b>",
+                  "<span class=\"d\">1 g IV over 10 min</span>; repeat 1 g if bleeding continues after 30 min or restarts within 24 h",
+                  "<b>Within 3 hours of onset of bleeding</b> — give it early. Pushed fast, it causes hypotension."
+                ],
+                [
+                  "<b>Calcium</b>",
+                  "CaCl 1 g, or Ca gluconate 3 g IV",
+                  "Ionized calcium is required for myometrial contraction and falls with citrate from transfused product. Replete it."
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p><b>The two that catch people:</b> methylergonovine in a preeclamptic woman, and carboprost in an asthmatic. Both are given in a rush by someone reaching for the next ampoule, and both patient groups are common on a labor ward. <b>Say the contraindication out loud as you draw it up.</b></p>\n<p><b>Uterine artery blood flow at term is roughly 500–700 mL/min.</b> Hemostasis after delivery is <i>mechanical</i> — contracted myometrium strangling the spiral arteries, the “living ligatures” — not clot formation. That is why a woman with normal coagulation can exsanguinate from an atonic uterus in minutes, and why a profoundly coagulopathic woman stops bleeding once the uterus contracts.</p>"
+            }
+          ]
+        },
+        {
+          "id": "inversion",
+          "num": "06",
+          "color": "amber",
+          "title": "Uterine Inversion — the Opposite Treatment",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "If the fundus is missing, stop and think before you massage",
+              "html": "<b>Recognize it:</b> the fundus cannot be palpated abdominally, or there is a dimple where it should be; a soft mass is felt at the cervix or seen at the introitus; and there is <b>shock out of proportion to the visible blood loss</b>, from the vagal response to traction on the peritoneum. Often follows cord traction on a fundally implanted placenta."
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<ul>\n  <li><b>Stop all uterotonics.</b></li>\n  <li><b>Replace it immediately</b> — every minute makes it harder. Johnson maneuver: grasp the fundus in the palm, direct the fingertips toward the posterior fornix, and push steadily <b>upward along the axis of the vagina toward the umbilicus</b>. Steady pressure, not jabbing.</li>\n  <li><b>If the ring has already tightened, relax the uterus</b> — nitroglycerin <span class=\"d\">50–100 mcg IV</span>, terbutaline, magnesium, or a volatile anesthetic — then replace.</li>\n  <li><b>Leave the placenta attached until after reduction</b> if it is still adherent; removing it first increases blood loss.</li>\n  <li><b>Only once the uterus is back: give uterotonics</b>, and keep a hand inside until it contracts around it.</li>\n  <li><b>Resuscitate throughout</b>, and call for surgical help early — failed reduction needs an operating room.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "escalation",
+          "num": "07",
+          "color": "red",
+          "title": "When Compression Is Not Enough",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Continued hemorrhage despite adequate technique — reassess for an alternate cause (laceration, retained products, coagulopathy) rather than persisting indefinitely with massage alone</li>\n      <li>Provider fatigue during prolonged bimanual compression — this can be physically demanding to sustain and may require provider rotation</li>\n      <li>Delayed escalation to definitive management (balloon tamponade, uterine artery embolization, surgical intervention) if massage/compression is relied upon past the point of effectiveness</li>\n</ul>"
+              "html": "<p>Massage and compression are the first rung. Bleeding that persists despite a well-contracted uterus, or atony that will not hold, moves up the ladder — and the movement should be by the clock, not by feel.</p>\n<ul>\n  <li><b>Intrauterine balloon tamponade</b> — a Bakri balloon filled with <span class=\"d\">300–500 mL</span> of saline, or a condom tied over a catheter where no device exists. The <b>“tamponade test”</b>: if bleeding stops with the balloon up, laparotomy is usually avoidable; if it does not, the patient needs an operation and you have learned that in minutes.</li>\n  <li><b>Vacuum-induced tamponade</b> — a suction device that collapses the cavity rather than distending it. Fast where stocked.</li>\n  <li><b>Examination under anesthesia</b> — for lacerations, retained tissue, and rupture. Do not persist with medical management on an undiagnosed cause.</li>\n  <li><b>Compression sutures</b> (B-Lynch and variants) at laparotomy.</li>\n  <li><b>Uterine artery embolization</b>, where interventional radiology is available and the patient is stable enough to travel.</li>\n  <li><b>Uterine or internal iliac artery ligation.</b></li>\n  <li><b>Hysterectomy</b> — definitive, and the decision that is most often made too late. In refractory hemorrhage, deciding early saves lives.</li>\n  <li><b>Aortic compression, REBOA Zone 3, or a non-pneumatic anti-shock garment</b> as bridges, particularly during transfer.</li>\n  <li><b>Massive transfusion throughout</b>, with attention to fibrinogen — obstetric hemorrhage depletes it early, and <b>the target in obstetric bleeding is higher: above 200 mg/dL.</b></li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Uterus firms, then softens the moment you stop",
+                  "Ongoing unresponsive atony",
+                  "Escalate the uterotonic ladder and prepare a balloon. Do not simply keep massaging."
+                ],
+                [
+                  "Uterus firm, still bleeding",
+                  "<b>Not atony</b> — trauma, retained tissue, or coagulopathy",
+                  "Inspect the genital tract properly, with light and retraction. Send coagulation studies and fibrinogen. Consider rupture."
+                ],
+                [
+                  "Uterus will not contract at all",
+                  "Full bladder, retained clot or placental tissue, or inversion",
+                  "Catheterize, express clot, explore the cavity. Confirm the fundus is where it should be."
+                ],
+                [
+                  "Fundus not palpable, profound shock, modest visible loss",
+                  "<b>Uterine inversion</b>",
+                  "Stop uterotonics. Replace immediately (§06). Relax the uterus if the ring has closed."
+                ],
+                [
+                  "Vital signs normal, losses mounting",
+                  "Pregnancy physiology masking hypovolemia",
+                  "Do not be reassured. Quantify losses and watch the shock index. Decompensation is abrupt."
+                ],
+                [
+                  "Steady trickle nobody escalates for",
+                  "Slow accumulation — the pattern that kills quietly",
+                  "Quantify. A persistent trickle reaches 1500 mL without a single dramatic moment."
+                ],
+                [
+                  "Sudden hypertension after a uterotonic",
+                  "Methylergonovine, probably in a preeclamptic patient",
+                  "Treat the hypertension. Do not repeat the dose. Check what else was given."
+                ],
+                [
+                  "Bronchospasm after a uterotonic",
+                  "Carboprost in an asthmatic",
+                  "Treat the bronchospasm. Switch agents."
+                ],
+                [
+                  "Hypotension right after oxytocin",
+                  "Given undiluted as a rapid push",
+                  "Support pressure; give it as a dilute infusion from now on."
+                ],
+                [
+                  "Oozing everywhere, contracted uterus",
+                  "Coagulopathy — consider amniotic fluid embolism",
+                  "Massive transfusion, fibrinogen replacement, TXA, calcium. AFE is a separate pathway — look for the cardiorespiratory collapse that precedes it."
+                ],
+                [
+                  "Operator tiring, compression slackening",
+                  "Entirely predictable",
+                  "Rotate before it happens, not after. Assign the relief in advance."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "complications",
+          "num": "09",
+          "color": "red",
+          "title": "Complications",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<ul>\n      <li><b>Uterine inversion</b> from vigorous unsupported fundal massage or cord traction — the reason the second hand exists.</li>\n      <li><b>Delayed escalation</b> — the dominant harm. Compression is comfortable to keep doing and feels like treatment, and hours are lost inside it.</li>\n      <li><b>Delayed recognition of a non-atonic cause</b>, because the reflex response was applied to the wrong problem.</li>\n      <li><b>Pain and distress</b> in an awake patient — treatable, and frequently untreated.</li>\n      <li><b>Uterotonic adverse effects</b> — hypertensive crisis, bronchospasm, hypotension, fever, vomiting.</li>\n      <li><b>Consequences of massive hemorrhage</b>: dilutional and consumptive coagulopathy, transfusion reactions, acute kidney injury, Sheehan syndrome, ARDS, and hysterectomy with its own permanent consequences.</li>\n      <li><b>Psychological sequelae</b> for the patient — postpartum hemorrhage is a recognized cause of birth trauma and post-traumatic stress. Debrief her, afterwards, properly.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "10",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -4102,13 +4268,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>This is a first-line, immediate, no-equipment-needed intervention — start it the moment atony is suspected, in parallel with calling for uterotonic medications, not sequentially.</p>\n<p>A uterus that firms up under your hand and then goes soft again the moment you stop massaging is telling you atony is ongoing and you need to escalate pharmacologic/procedural management, not just keep massaging indefinitely.</p>\n<p>Don't let bimanual compression become a substitute for identifying a non-atony cause of hemorrhage if the uterus is actually firm and bleeding continues.</p>"
+              "html": "<p><b>Empty the bladder.</b> Simple, frequently skipped, and sometimes the whole answer.</p>\n<p><b>Two hands on the fundus.</b> The lower hand supports the segment and prevents the inversion your massage could cause.</p>\n<p><b>Firm uterus plus bleeding means look elsewhere.</b> Cervix, vagina, retained tissue, rupture, coagulopathy.</p>\n<p><b>Missing fundus plus disproportionate shock means inversion</b> — and every instinct on this page is then backwards. Stop the uterotonics and replace it.</p>\n<p><b>You are underestimating the loss.</b> Weigh it. Watch the shock index, not the blood pressure.</p>\n<p><b>She looks fine until she does not.</b> Forty to fifty percent extra blood volume buys compensation that ends abruptly.</p>\n<p><b>Methylergonovine and hypertension; carboprost and asthma.</b> Say it aloud as you draw it up.</p>\n<p><b>Oxytocin goes in dilute.</b></p>\n<p><b>Hemostasis here is muscle, not clot.</b> A contracted uterus stops bleeding even in a coagulopathic woman.</p>\n<p><b>Compression is a holding action.</b> If nothing else is being organized while you hold it, the plan has stopped.</p>\n<p><b>Rotate before you tire.</b></p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "11",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -4118,7 +4284,27 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 183: Postpartum Hemorrhage. <i>Obstet Gynecol.</i> 2017;130(4):e168-e186."
+                  "html": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 183: Postpartum Hemorrhage. <i>Obstet Gynecol.</i> 2017;130(4):e168–e186."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "WOMAN Trial Collaborators. Effect of early tranexamic acid administration on mortality, hysterectomy, and other morbidities in women with post-partum haemorrhage. <i>Lancet.</i> 2017;389(10084):2105–2116."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "World Health Organization. <i>WHO Recommendations on the Assessment of Postpartum Blood Loss and Use of a Treatment Bundle for Postpartum Haemorrhage.</i> WHO; 2023."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Mavrides E, Allard S, Chandraharan E, et al. Prevention and management of postpartum haemorrhage (Green-top Guideline No. 52). <i>BJOG.</i> 2017;124:e106–e149."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Le Bas A, Chandraharan E, Addei A, Arulkumaran S. Use of the “obstetric shock index” as an adjunct in identifying significant blood loss in patients with massive postpartum hemorrhage. <i>Int J Gynaecol Obstet.</i> 2014;124(3):253–255."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Your unit's postpartum hemorrhage bundle, massive transfusion trigger, and balloon device. These vary, and the time to learn them is not during the event."
                 }
               ]
             }
@@ -4158,9 +4344,19 @@
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "The modern name is <i>resuscitative hysterotomy</i>, and the change is not cosmetic — it names what the procedure is for."
+            },
+            {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Maternal cardiac arrest at or beyond ~20 weeks gestational age (fundus at or above the umbilicus), with no ROSC after initial resuscitative measures</li>\n      <li>Goal is dual: relieve aortocaval compression to improve maternal resuscitation, and deliver a potentially viable fetus</li>\n      <li>A maternal resuscitation procedure first — it improves maternal cardiac output even if fetal viability is uncertain or fetal demise has already occurred</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Maternal cardiac arrest with a uterus palpable at or above the umbilicus</b> — roughly 20 weeks — without ROSC in the first few minutes of high-quality resuscitation</li>\n      <li><b>Peri-arrest with profound, refractory shock</b> in late pregnancy, where aortocaval compression is plausibly the limiting factor</li>\n      <li><b>Fundal height is the trigger, not a documented gestational age.</b> Nobody has dates in an arrest, and a stated LMP is not a reason to wait. Put a hand on the abdomen.</li>\n</ul>\n<p><b>This is a maternal resuscitation maneuver.</b> The gravid uterus at term can sequester a substantial fraction of cardiac output and compresses both the inferior vena cava and the aorta against the spine. Chest compressions already generate only a fraction of normal output; against aortocaval obstruction they may generate almost nothing. <b>Emptying the uterus restores venous return, and it is frequently the intervention that makes the rest of the resuscitation work.</b></p>\n<p><b>It is indicated even when the fetus is already dead, and even below the threshold of fetal viability</b>, if the uterus is large enough to obstruct. Between about 20 and 24 weeks the procedure is performed for the mother alone. Framing this out loud to the team — “<i>we are decompressing the aorta and vena cava</i>” rather than “<i>we are delivering a baby</i>” — measurably reduces hesitation, and hesitation is the main failure mode.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "The four-minute rule is a prompt, not a deadline",
+              "html": "Katz's 1986 recommendation — incision at 4 minutes, delivery by 5 — was derived from case reports, and it remains the right thing to aim for. But its modern misuse is the opposite of its intent: <b>teams look at a clock reading eleven minutes and conclude they have missed the window.</b> They have not. Maternal ROSC and intact neonatal survival are both documented well beyond 5 minutes, including past 15. <b>If the mother is still in arrest and the uterus is still obstructing, the procedure is still indicated.</b> Aim for four minutes; never use having passed it as a reason not to act."
             }
           ]
         },
@@ -4174,7 +4370,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>True contraindications are minimal given the life-threatening nature of the indication</li>\n      <li>Gestational age clearly and reliably below viability/umbilical fundal height (relative — aortocaval relief may still benefit the mother even below classic viability thresholds)</li>\n      <li>Do not delay for imaging, fetal heart tones, or transport to an OR — this is a bedside/field procedure when indicated</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A uterus that does not reach the umbilicus.</b> Below roughly 20 weeks there is no meaningful aortocaval compression and nothing to be gained.</li>\n      <li><b>ROSC already achieved.</b> If she has a pulse, this becomes an obstetric decision made with obstetrics, not a resuscitation maneuver.</li>\n      <li><b>Obvious, unequivocal signs of irreversible death</b> predating the arrest.</li>\n</ul>\n<p><b>Things that are <i>not</i> contraindications</b>, and which are used as reasons to delay:</p>\n<ul>\n      <li><b>Absent fetal heart tones.</b> Do not look for them. The procedure is for the mother, the ultrasound takes time you do not have, and a normal fetal heart does not change the decision either.</li>\n      <li><b>No obstetrician present.</b> Whoever is there does it. Waiting for the right specialist is the commonest way the window is lost.</li>\n      <li><b>Not being in an operating room.</b> It happens where the arrest happened. Moving the patient means stopping compressions, and transport time is the one thing that cannot be recovered.</li>\n      <li><b>No consent.</b> Emergency doctrine. This is standard of care.</li>\n      <li><b>No sterile field, no anesthesia, no formal instrument tray.</b> A patient in cardiac arrest does not need anesthesia, and infection is a problem for survivors.</li>\n      <li><b>Uncertain dates.</b> See above — palpate.</li>\n</ul>"
             }
           ]
         },
@@ -4188,15 +4384,33 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Scalpel (#10 blade) — the only truly essential instrument</li>\n      <li>Whatever is immediately available: hemostats, scissors, retractors, suction if present</li>\n      <li>Should not require a dedicated tray — delay to gather equipment defeats the purpose</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A scalpel.</b> A No. 10 blade. That is the whole essential list, and saying so out loud helps people start.</li>\n      <li><b>Two cord clamps and scissors</b> — or any two clamps and anything that cuts.</li>\n      <li><b>Bandage or Mayo scissors</b> for extending the uterine incision, if reaching for them costs nothing.</li>\n      <li><b>Abdominal packs and towels</b> for after ROSC.</li>\n      <li><b>Suction</b>, if it is already in the room.</li>\n      <li><b>Neonatal resuscitation equipment and a separate team</b> — warmer, bag-mask with a neonatal mask, towels, cord clamp. This is a second resuscitation and it needs its own people. Where there is any warning at all, stage them before incision.</li>\n      <li><b>Oxytocin</b>, drawn and ready for the moment ROSC is achieved — see §07.</li>\n</ul>\n<p><b>A pre-assembled pack helps, but only if it is where the patient is.</b> Many units keep a resuscitative hysterotomy tray on the maternal arrest trolley. If yours does, know where it lives. If it does not, the scalpel on the intubation trolley is sufficient, and the procedure has been done with less.</p>"
+            }
+          ]
+        },
+        {
+          "id": "cpr",
+          "num": "04",
+          "color": "amber",
+          "title": "Resuscitating a Pregnant Patient",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Several things people “know” about this are out of date."
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<ul>\n  <li><b>Manual left uterine displacement, not lateral tilt.</b> Stand at the patient's left and pull the uterus up and to the left with both hands, or push it leftward from her right side. <b>Keep her supine.</b> Tilting the whole body degrades compression quality substantially, and the evidence now favors displacement on a flat back. Continue displacement until the uterus is opened.</li>\n  <li><b>Standard hand position for compressions.</b> The old teaching to move the hands higher on the sternum in pregnancy has not held up. Compress where you always compress.</li>\n  <li><b>Defibrillate at standard energies.</b> Pads in the usual positions; move a lateral pad slightly if breast tissue is in the way. Fetal monitors come off before the shock.</li>\n  <li><b>Standard drugs at standard doses.</b> No modification for pregnancy, and none withheld out of fetal concern — the fetus does not survive a mother who does not.</li>\n  <li><b>Airway early, and expect it to be hard.</b> Mucosal edema, a fuller airway, larger breasts against the laryngoscope, and a reduced functional residual capacity with raised oxygen consumption mean <b>desaturation is fast and the view is worse than you expect</b>. Have a smaller tube ready — 6.0 to 7.0 — and go to a supraglottic device early rather than repeating attempts. Aspiration risk is high.</li>\n  <li><b>Access above the diaphragm.</b> A femoral line delivers drugs through a vena cava the uterus is compressing. Use an upper-limb IV, a humeral IO, or an upper-body central line.</li>\n  <li><b>Think about the obstetric causes while you work.</b> Hemorrhage (including concealed abruption and rupture), amniotic fluid embolism, pulmonary embolism, eclampsia and intracranial hemorrhage, peripartum cardiomyopathy, sepsis, anesthetic complications including high spinal and local anesthetic toxicity, and magnesium toxicity — <b>for which the treatment is calcium, and which is easy to miss in a patient receiving an infusion nobody mentioned.</b></li>\n</ul>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Technique",
           "tagline": null,
           "blocks": [
             {
@@ -4205,96 +4419,155 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Continue high-quality maternal CPR throughout — compressions and airway management do not stop for this procedure."
+                  "title": "Announce the arrest time, and have someone call the clock",
+                  "html": "“<i>Arrest at 14:06. I want the time called every minute. If there is no ROSC at 14:10 we are doing a hysterotomy.</i>” Naming the decision in advance is what converts a four-minute target into something that actually happens, because in the moment nobody wants to be the person who says it."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Trigger the decision at the 4-minute mark of maternal arrest without ROSC (target incision at 4 minutes, delivery by 5 minutes — the “4-minute rule”)."
+                  "title": "Compressions and displacement continue throughout",
+                  "html": "Nothing stops for this. Not for the incision, not for the delivery. Someone maintains left uterine displacement until the uterus is open."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "No time for antiseptic prep, anesthesia, or patient positioning changes — proceed immediately at the bedside/scene."
+                  "title": "Vertical midline, umbilicus to symphysis, through everything",
+                  "html": "A single firm stroke from just above the umbilicus down to the pubic symphysis, through skin, fat, and fascia. <b>There is very little bleeding in arrest</b> — no perfusion pressure — and this surprises people the first time. Do not creep through the layers. Vertical is chosen because it is fast and forgiving of anatomy you cannot see."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Make a vertical midline incision from the umbilicus to the pubic symphysis through skin, subcutaneous tissue, and fascia."
+                  "title": "Open the peritoneum, sweep the bladder down",
+                  "html": "Enter bluntly with fingers where you can, to avoid bowel and bladder. The bladder sits over the lower uterine segment and is often distended — push it inferiorly out of the way rather than cutting through it."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Enter the peritoneum bluntly."
+                  "title": "Vertical uterine incision — start small, extend with fingers",
+                  "html": "Make a short vertical incision in the lower uterine segment and continue until you are through the myometrium and into the cavity. <b>Then put the scalpel down.</b> Extend the opening upward with your fingers, or with bandage scissors advanced between two fingers held inside the uterus as a shield. <b>Scalpel extension is how fetuses get lacerated</b>, and it is entirely avoidable."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Identify the uterus; make a vertical (classical) incision through the lower uterine segment/uterine wall — faster and more forgiving of imprecise anatomy under crisis conditions."
+                  "title": "Deliver, clamp, cut, hand off",
+                  "html": "Deliver the fetus by whatever presentation you find — a hand under the head, or by the feet if breech. Double-clamp and cut the cord and <b>hand the neonate to a different person with a different job.</b> The mother remains your patient. If no neonatal team exists yet, that is a hard reality to state out loud and then work within."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Extend the uterine incision with fingers (not scalpel) once the uterine cavity is entered, to avoid fetal injury."
+                  "title": "Remove the placenta, then keep resuscitating",
+                  "html": "Deliver the placenta manually if it comes easily; do not spend time on it if it does not. <b>The decompression has already happened.</b> Reassess rhythm and continue the algorithm — venous return may now be dramatically better, and this is the point at which arrests sometimes convert."
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Deliver the fetus, clamp and cut the cord, hand off immediately to a neonatal resuscitation team/pathway."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Deliver the placenta if readily accomplished, but do not delay ongoing maternal resuscitation for this."
-                },
-                {
-                  "num": "10",
                   "color": "purple",
-                  "title": "",
-                  "html": "Continue maternal CPR and resuscitation — aortocaval decompression from evacuating the uterus often improves venous return and compression effectiveness immediately."
-                },
-                {
-                  "num": "11",
-                  "color": "red",
-                  "title": "",
-                  "html": "Pack the open abdomen/uterus if maternal ROSC is achieved and hemorrhage control is needed en route to definitive surgical management."
+                  "title": "Record every time",
+                  "html": "Arrest, decision, incision, delivery. Someone writes these down as they happen. They will be needed for the neonatal team, for the debrief, and for the review that follows."
                 }
               ]
-            },
-            {
-              "type": "alert",
-              "color": "red",
-              "title": "This is a maternal resuscitation maneuver, not a delivery decision",
-              "html": "Framing it that way to the team — \"we are decompressing the aorta and vena cava\" — reduces the hesitation that is the single biggest reason the 4-minute window is missed in real events."
             }
           ]
         },
         {
-          "id": "complications",
-          "num": "05",
+          "id": "troubleshooting",
+          "num": "06",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Minutes passing, nobody starting",
+                  "<b>Hesitation — the dominant failure mode of this procedure</b>",
+                  "Name it: the arrest time, the decision point, and who holds the scalpel. Frame it as decompression, not delivery."
+                ],
+                [
+                  "Team wants to move to an OR",
+                  "Reasonable instinct, wrong answer",
+                  "It happens here. Transport costs CPR quality and minutes that cannot be recovered."
+                ],
+                [
+                  "Someone is reaching for the ultrasound",
+                  "Looking for fetal heart tones",
+                  "Stop them. It does not change the decision in either direction, and it costs the window."
+                ],
+                [
+                  "Far more bleeding than expected",
+                  "<b>She has ROSC</b> — or never fully lost output",
+                  "Good news. Now it is an operation: pack, control, get to an OR, get obstetrics and anesthesia."
+                ],
+                [
+                  "Cannot find the uterus in the wound",
+                  "Incision too short, or still above the peritoneum",
+                  "Extend the incision fully to the symphysis. The gravid uterus is unmissable once you are actually inside."
+                ],
+                [
+                  "Fetus lacerated on delivery",
+                  "Uterine incision extended with the blade",
+                  "Preventable: extend with fingers or shielded scissors. Hand the injury to the neonatal team explicitly."
+                ],
+                [
+                  "No improvement after delivery",
+                  "Aortocaval compression was not the limiting problem",
+                  "Return to the differential — hemorrhage, AFE, PE, magnesium toxicity, local anesthetic toxicity, tamponade. Consider ECPR if available."
+                ],
+                [
+                  "ROSC, then torrential bleeding",
+                  "<b>Uterine atony in an open uterus</b>",
+                  "Oxytocin immediately, bimanual compression, pack the uterus and abdomen. See the postpartum hemorrhage entry — this is now that problem."
+                ],
+                [
+                  "Neonate delivered, nobody free to take it",
+                  "Single-team resuscitation",
+                  "Anticipate it. Assign a person before incision if there is any warning at all. Dry, warm, stimulate, and ventilate — most need no more."
+                ],
+                [
+                  "Magnesium infusion running",
+                  "Magnesium toxicity as the arrest cause",
+                  "<b>Stop it and give calcium.</b> Easily missed because the infusion is routine and nobody mentions it."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "07",
+          "color": "blue",
+          "title": "If She Gets ROSC",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
-              "color": "red",
-              "html": "<ul>\n      <li>Delay is the dominant failure mode — teams hesitate waiting for confirmation, equipment, or a “better” location; effectiveness drops rapidly after minute 5</li>\n      <li>Fetal laceration from scalpel extension of the uterine incision — extend with fingers once inside the uterine cavity</li>\n      <li>Underestimating gestational age at the bedside — fundal height at or above umbilicus is the trigger, not a documented gestational age</li>\n      <li>Stopping compressions during the procedure — compressions continue throughout</li>\n      <li>Failure to have a neonatal resuscitation plan ready — a second team/provider should be staged for the newborn before incision if any warning exists</li>\n</ul>"
+              "color": "blue",
+              "html": "<p>The moment perfusion returns, an open atonic uterus becomes a hemorrhage of a scale few clinicians have seen. Be ready for it before it happens.</p>\n<ul>\n  <li><b>Oxytocin immediately</b> — a dilute infusion, not an undiluted rapid push, which causes hypotension and arrhythmia in an already unstable patient. Add further uterotonics per the postpartum hemorrhage pathway, observing their contraindications.</li>\n  <li><b>Bimanual compression and uterine massage</b>, and pack the uterus and abdomen with laparotomy sponges. <b>Count them.</b></li>\n  <li><b>Activate massive transfusion</b> and give TXA if within the window.</li>\n  <li><b>Move to an operating room</b> for formal closure. The abdomen can travel packed and open; it must not stay that way.</li>\n  <li><b>Broad-spectrum antibiotics</b> — the field was not sterile and now she is a survivor for whom infection matters.</li>\n  <li><b>Targeted temperature management and post-arrest care</b> as for any other arrest. Pregnancy and recent delivery are not contraindications.</li>\n  <li><b>Treat the cause.</b> The hysterotomy relieved an obstruction; it did not treat an embolism, an eclamptic bleed, or a cardiomyopathy.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "team",
+          "num": "08",
+          "color": "amber",
+          "title": "Afterwards — the Team",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<ul>\n  <li><b>Debrief, and mean it.</b> This is among the most distressing events in clinical medicine, and it is frequently performed by people who have never done it and will never do it again. Debrief on the day and follow up afterwards, with a specific offer rather than a general one.</li>\n  <li><b>Expect the review, and welcome it.</b> Maternal deaths are formally reviewed everywhere. Contemporaneous times and a clear account of the decision are what make that review useful rather than adversarial.</li>\n  <li><b>Rehearse it.</b> Every unit that cares for pregnant patients — including emergency departments and non-obstetric hospitals — should have run this in simulation. The failure is almost never technical; it is the four minutes spent deciding. <b>The single strongest predictor of doing it in time is having said out loud, beforehand, that you would.</b></li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "09",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -4302,13 +4575,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>This is fundamentally a maternal resuscitation maneuver — frame it that way to the team to reduce hesitation. “We are decompressing the aorta and vena cava” gets action faster than “we are delivering a baby.”</p>\n<p>Speed over sterility, speed over anatomic precision — the 4-to-5-minute window is the entire clinical rationale.</p>\n<p>Vertical skin and uterine incisions are faster and more forgiving than transverse under crisis conditions; save the cosmetic technique for controlled OR deliveries.</p>\n<p>Announce the time of arrest loudly and repeatedly so the 4-minute trigger isn't missed in the chaos of a resuscitation.</p>"
+              "html": "<p><b>Call it a resuscitative hysterotomy.</b> The name is the intervention: it tells the room this is for the mother, and that is what gets it started.</p>\n<p><b>Fundus at or above the umbilicus is the trigger.</b> Not dates, not an ultrasound, not an obstetrician's opinion.</p>\n<p><b>Past four minutes is not too late.</b> The rule is a prompt. Survivors exist well beyond it.</p>\n<p><b>Do not go looking for fetal heart tones.</b> They do not change the decision and they cost the window.</p>\n<p><b>Do it where she is.</b> Moving means stopping compressions.</p>\n<p><b>Manual left uterine displacement, supine.</b> Not tilt — tilt ruins the compressions.</p>\n<p><b>Access above the diaphragm.</b> Drugs given below a compressed vena cava may never arrive.</p>\n<p><b>Put the scalpel down once you are in the uterus.</b> Fingers from there.</p>\n<p><b>Almost no bleeding in arrest — and torrential bleeding at ROSC.</b> Have oxytocin drawn before you need it.</p>\n<p><b>One scalpel is enough.</b> Saying so is part of the technique.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "10",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -4318,19 +4591,27 @@
               "items": [
                 {
                   "tier": "PRIMARY",
-                  "html": "Katz VL, Dotters DJ, Droegemueller W. Perimortem cesarean delivery. <i>Obstet Gynecol.</i> 1986;68(4):571-576."
+                  "html": "Katz VL, Dotters DJ, Droegemueller W. Perimortem cesarean delivery. <i>Obstet Gynecol.</i> 1986;68(4):571–576."
                 },
                 {
                   "tier": "EVIDENCE",
-                  "html": "Katz V, Balderston K, DeFreest M. Perimortem cesarean delivery: were our assumptions correct? <i>Am J Obstet Gynecol.</i> 2005;192(6):1916-1920."
+                  "html": "Katz V, Balderston K, DeFreest M. Perimortem cesarean delivery: were our assumptions correct? <i>Am J Obstet Gynecol.</i> 2005;192(6):1916–1920."
                 },
                 {
-                  "tier": "REFERENCE",
-                  "html": "Rose CH, Faksh A, Traynor KD, Cabrera D, Arendt KW, Brost BC. Challenging the 4- to 5-minute rule: from perimortem cesarean to resuscitative hysterotomy. <i>Am J Obstet Gynecol.</i> 2015;213(5):653-656."
+                  "tier": "EVIDENCE",
+                  "html": "Rose CH, Faksh A, Traynor KD, Cabrera D, Arendt KW, Brost BC. Challenging the 4- to 5-minute rule: from perimortem cesarean to resuscitative hysterotomy. <i>Am J Obstet Gynecol.</i> 2015;213(5):653–656."
                 },
                 {
-                  "tier": "REFERENCE",
+                  "tier": "GUIDELINE",
+                  "html": "Jeejeebhoy FM, Zelop CM, Lipman S, et al. Cardiac arrest in pregnancy: a scientific statement from the American Heart Association. <i>Circulation.</i> 2015;132(18):1747–1773."
+                },
+                {
+                  "tier": "GUIDELINE",
                   "html": "Panchal AR, Bartos JA, Cabañas JG, et al. 2020 American Heart Association Guidelines for CPR and ECC — Cardiac Arrest in Pregnancy. <i>Circulation.</i> 2020;142(16_suppl_2)."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Lott C, Truhlář A, Alfonzo A, et al. European Resuscitation Council Guidelines 2021: Cardiac arrest in special circumstances. <i>Resuscitation.</i> 2021;161:152–219."
                 }
               ]
             }
@@ -4366,27 +4647,33 @@
           "id": "indications",
           "num": "01",
           "color": "teal",
-          "title": "Indications",
+          "title": "Recognition",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Shoulder dystocia: failure of the fetal shoulders to deliver spontaneously after delivery of the head, often recognized by the \"turtle sign\" (head retracting against the perineum)</li>\n      <li>Symphysiotomy specifically reserved for shoulder dystocia refractory to standard maneuvers, in settings without immediate access to cesarean delivery</li>\n</ul>"
+              "html": "<ul>\n      <li><b>The head delivers and the shoulders do not follow</b> with gentle downward traction and the next contraction</li>\n      <li><b>Turtle sign</b> — the head delivers, then retracts tightly back against the perineum as the anterior shoulder catches on the symphysis</li>\n      <li><b>The head fails to restitute</b>, sitting stuck facing directly down or up rather than rotating to one side</li>\n      <li><b>A head-to-body interval beyond about 60 seconds</b>, or any delivery requiring maneuvers beyond gentle axial traction — this is the working definition, and it is deliberately broad</li>\n</ul>\n<p><b>You cannot predict it.</b> Most shoulder dystocias occur in normal-weight infants of women with no risk factors, and the recognized associations — macrosomia, diabetes, prior dystocia, instrumental delivery, prolonged second stage — have poor predictive value individually. <b>Every delivery is a delivery where this can happen</b>, which is why the response has to be drilled rather than reasoned out on the spot.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "The clock is the whole problem",
+              "html": "Once the head is out, the chest cannot expand and the cord is compressed against the pelvis. Fetal pH falls by roughly <b>0.04 units per minute</b> from that moment. Beyond about <b>5 minutes</b>, the risk of hypoxic-ischemic injury rises steeply. <b>Announce the time the head delivered and have someone call it out every 30 seconds.</b> Under pressure, teams consistently believe far less time has elapsed than actually has — a called clock is the only reliable correction for that."
             }
           ]
         },
         {
-          "id": "contraindications",
+          "id": "never",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "The Three Things That Cause the Injuries",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Symphysiotomy: any setting with timely access to cesarean delivery should default to that option instead — this is a resource-limited/field last resort, not a routine escalation step</li>\n      <li>Standard maneuvers have essentially no contraindications in true shoulder dystocia given the acute fetal risk</li>\n</ul>"
+              "html": "<p>Most permanent harm from shoulder dystocia comes not from the impaction but from the response to it.</p>\n<ul>\n      <li><b>Never apply fundal pressure.</b> It drives the anterior shoulder harder onto the symphysis, worsening the impaction it is meant to relieve, and it causes uterine rupture. Suprapubic pressure is the correct external maneuver, and the two get confused under stress precisely because both involve a hand on the abdomen. <b>Say which one you want, and watch where the hand goes.</b></li>\n      <li><b>Never apply excessive or lateral traction to the head.</b> Brachial plexus injury is caused by stretching the neck away from the shoulder. Traction is gentle, <b>axial</b> — in the line of the fetal spine, not downward-and-sideways — and it is applied only in coordination with a maneuver that is actually creating space.</li>\n      <li><b>Never twist or rotate the head.</b> Rotation is done internally, on the <i>shoulders</i>, with a hand in the vagina. Turning the head turns nothing but the cervical spine.</li>\n</ul>\n<p>Shoulder dystocia is among the most litigated events in obstetrics, and the record of what was and was not done matters. That is a secondary reason to get it right; the primary one is that these three errors are the ones that leave a child with a permanent deficit.</p>"
             }
           ]
         },
@@ -4394,26 +4681,26 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "What You Need",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>None required for positional/manual maneuvers</li>\n      <li>Scalpel, local anesthetic if performing symphysiotomy</li>\n</ul>"
+              "html": "<ul>\n      <li><b>People.</b> The single most useful resource. Call for obstetric, anesthetic and neonatal help the moment you recognize it. You will need at least two for the legs, one for suprapubic pressure, one scribe, and a neonatal team.</li>\n      <li><b>A scribe and a visible clock.</b> Every maneuver, with its time. This is both a clinical aid and the record.</li>\n      <li><b>A bed that flattens</b>, and the ability to drop the foot of it and remove the end.</li>\n      <li><b>A stool</b> — suprapubic pressure is delivered with body weight from above, which needs height.</li>\n      <li><b>Neonatal resuscitation equipment</b>, warm and ready.</li>\n      <li><b>Cord gas syringes.</b> Paired arterial and venous samples after delivery.</li>\n      <li><b>Episiotomy scissors and local anesthetic</b> — not routinely required, but available.</li>\n      <li><b>Postpartum hemorrhage supplies.</b> Prolonged dystocia is followed by atony often enough to anticipate it.</li>\n      <li><b>For symphysiotomy only</b> (see §06): scalpel, urinary catheter, local anesthetic, and two assistants.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "sequence",
           "num": "04",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "The Escalation Sequence",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "Escalation sequence for shoulder dystocia"
+              "html": "Roughly 30 seconds per maneuver. Move on. Do not repeat what has already failed."
             },
             {
               "type": "steps",
@@ -4421,111 +4708,253 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Call for help immediately and note the time — shoulder dystocia is a time-critical fetal emergency."
+                  "title": "Call for help. Note the time. Stop pushing.",
+                  "html": "Say the words “<i>shoulder dystocia</i>” out loud — it summons a specific response that “<i>I need a hand</i>” does not. Ask the mother to stop pushing for the moment; maternal effort against an impacted shoulder achieves nothing and makes the maneuvers harder. Flatten the bed and bring her buttocks to its edge."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "McRoberts maneuver: sharply flex the mother's hips against her abdomen, flattening the sacrum and rotating the pubic symphysis, often resolving the dystocia alone."
+                  "title": "McRoberts — hyperflex the hips",
+                  "html": "One person per leg, hips sharply flexed onto the abdomen and slightly abducted. <b>This does not enlarge the pelvis.</b> It rotates the symphysis cephalad and flattens the sacral promontory, which frees the anterior shoulder from behind the pubic bone. Simple, non-invasive, and it resolves a large share of cases on its own."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Apply suprapubic pressure simultaneously (not fundal pressure, which worsens impaction) directed downward and laterally to adduct the anterior shoulder."
+                  "title": "Suprapubic pressure — downward and lateral, from the fetal back",
+                  "html": "Stand on a stool. Heel of the hand just above the symphysis, over the <b>anterior shoulder</b>, pressing <b>downward and toward the fetal chest</b> — that is, from the side the baby's back is on. The aim is to <b>adduct the shoulder</b>, narrowing the bisacromial diameter, and nudge it into the oblique. Steady pressure first; a rocking CPR-like motion if steady fails. <b>McRoberts plus suprapubic pressure resolves the majority of dystocias.</b>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "If unresolved, proceed to internal maneuvers: deliver the posterior arm, or rotational maneuvers (Rubin or Woods screw) to rotate the fetal shoulders into an oblique plane."
+                  "title": "Consider an episiotomy — for access, not for space",
+                  "html": "The obstruction is bone against bone, and cutting the perineum does not relieve it. What it can do is give your hand room for the internal maneuvers that follow. <b>Not routine</b>; a judgment call when you cannot get a hand in."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Consider the Gaskin (all-fours) maneuver if the mother's position allows and other techniques have failed."
+                  "title": "Internal rotation — get a hand in posteriorly",
+                  "html": "Enter alongside the posterior shoulder, where the sacral hollow gives you room. Then either: <b>Rubin II</b> — fingers behind the <i>anterior</i> shoulder, pushing it toward the fetal chest to adduct and rotate it; or <b>Woods screw</b> — fingers on the front of the <i>posterior</i> shoulder, rotating the opposite way. <b>Combining Rubin II with Woods on opposite shoulders, turning them like a screw, is more effective than either alone.</b> The aim is to move the shoulders out of the anteroposterior plane into the oblique. If one direction fails, try the reverse."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "As a last resort in an unresolved dystocia with fetal compromise and no timely surgical option, consider deliberate clavicular fracture or, exceedingly rarely, symphysiotomy."
+                  "title": "Deliver the posterior arm — the highest-yield internal maneuver",
+                  "html": "Reach into the sacral hollow, follow the posterior humerus to the elbow, and press the antecubital fossa to <b>flex the forearm</b>. Grasp the forearm or hand — <b>never the upper arm, which fractures</b> — and sweep it across the chest and out over the face. Removing one arm reduces the shoulder diameter by around 20% and usually frees the impaction immediately. <b>A humeral or clavicular fracture during this maneuver is an accepted cost</b>; it heals, and hypoxic brain injury does not."
+                },
+                {
+                  "num": "7",
+                  "color": "amber",
+                  "title": "Gaskin — roll her onto all fours",
+                  "html": "Onto hands and knees. The change in pelvic geometry and the effect of gravity frees a proportion of dystocias on its own, and the shoulder that was posterior becomes the accessible one. <b>Underused</b>, because it looks disruptive mid-emergency. It is quick, it needs no equipment, and the internal maneuvers can all be repeated in this position. Impractical with an epidural or in an exhausted woman — but worth attempting when it is not."
+                },
+                {
+                  "num": "8",
+                  "color": "purple",
+                  "title": "Then the last resorts — and say so out loud",
+                  "html": "If the sequence has been worked through twice without success, you are in genuinely rare territory: deliberate clavicular fracture, the Zavanelli maneuver, abdominal rescue, or symphysiotomy (§06). <b>All carry major morbidity, all are rarely performed, and the choice depends entirely on whether an operating room is reachable.</b> Get the most senior help available and state clearly what you are about to do."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "lastresort",
+          "num": "05",
+          "color": "amber",
+          "title": "The Last-Resort Maneuvers",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Maneuver",
+                "What it is",
+                "When"
+              ],
+              "rows": [
+                [
+                  "<b>Deliberate clavicular fracture</b><br>(cleidotomy)",
+                  "Direct pressure on the anterior clavicle, outward against the ramus, to fracture it and collapse the shoulder girdle",
+                  "Rarely achievable deliberately in a live fetus. Heals well. Risk of underlying vascular and lung injury."
+                ],
+                [
+                  "<b>Zavanelli</b>",
+                  "Rotate the head back to occiput-anterior, flex it, and push it back into the vagina; hold it there; deliver by immediate cesarean. Tocolysis (e.g. terbutaline or nitroglycerin) helps.",
+                  "<b>The preferred last resort wherever an operating room is available.</b> Significant maternal morbidity, and it depends on being able to get to theater immediately."
+                ],
+                [
+                  "<b>Abdominal rescue</b>",
+                  "Laparotomy and hysterotomy, with the impacted shoulder rotated transabdominally while an assistant delivers vaginally",
+                  "Where a cesarean is available but the head cannot be replaced."
+                ],
+                [
+                  "<b>Symphysiotomy</b>",
+                  "Division of the symphyseal fibrocartilage to widen the pelvic outlet",
+                  "<b>Only where cesarean is genuinely unavailable within the survivable interval.</b> See §06."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "symphysiotomy",
+          "num": "06",
+          "color": "red",
+          "title": "Symphysiotomy",
+          "tagline": null,
+          "blocks": [
             {
               "type": "tagline",
-              "html": "Symphysiotomy (last-resort technique)"
+              "html": "A resource-limited last resort with a difficult history and real, permanent maternal cost."
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p><b>Where it belongs.</b> Symphysiotomy retains a narrow place in settings where cesarean delivery is not available in the time the fetus has. Where an operating room is reachable, <b>Zavanelli and abdominal rescue are the correct last resorts and symphysiotomy is not.</b> The procedure was historically performed on women without consent and without adequate analgesia, and it left many with lifelong disability — that history is a reason to hold the indication narrowly and to obtain consent wherever it is possible, not a reason to pretend the procedure does not exist.</p>"
             },
             {
               "type": "steps",
               "steps": [
                 {
-                  "num": "7",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Confirm all standard maneuvers have failed and cesarean delivery is not accessible in the necessary timeframe."
-                },
-                {
-                  "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Infiltrate local anesthetic over the pubic symphysis if time and circumstances allow."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "With the mother's legs supported and hips moderately abducted, make an incision through the skin and the fibrocartilaginous symphyseal joint at the midline."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Apply controlled pressure only as needed to create additional pelvic outlet space — this is a measured, not maximal, separation."
-                },
-                {
-                  "num": "11",
+                  "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Proceed immediately with delivery of the impacted shoulder once adequate space is achieved."
+                  "title": "Confirm there is no surgical option in time",
+                  "html": "State it aloud and record it. All standard maneuvers must have failed, and cesarean must be genuinely unreachable — not merely inconvenient or slow to organize."
                 },
                 {
-                  "num": "12",
+                  "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Manage the symphyseal disruption post-delivery per orthopedic/surgical follow-up — this creates a significant maternal injury that requires definitive management afterward."
+                  "title": "Catheterize, and displace the urethra",
+                  "html": "Place an indwelling catheter — it both empties the bladder and lets you feel where the urethra is. <b>An assistant's fingers in the vagina push the urethra laterally, away from the midline, and stay there throughout the cut.</b> Urethral and bladder injury is the characteristic complication and this is what prevents it."
+                },
+                {
+                  "num": "3",
+                  "color": "teal",
+                  "title": "Two assistants on the legs — and a hard limit on abduction",
+                  "html": "One assistant per leg, supporting the thigh. <b>Total abduction must not exceed about 80–90°.</b> Once the symphysis is divided the pelvis is a hinge, and over-abduction tears the sacroiliac joints and the urethra. This limit is the difference between a recoverable injury and a permanently disabled woman, and it is the instruction most easily lost in the urgency."
+                },
+                {
+                  "num": "4",
+                  "color": "blue",
+                  "title": "Infiltrate local anesthetic",
+                  "html": "Over and into the joint. Seconds well spent, and she is awake."
+                },
+                {
+                  "num": "5",
+                  "color": "purple",
+                  "title": "Divide the fibrocartilage in the midline",
+                  "html": "A stab incision over the symphysis, then divide the joint from front to back with the blade under the guiding finger. <b>The aim is partial division and roughly 2–2.5 cm of separation — measured, not maximal.</b> Complete division does not help further and worsens the injury."
+                },
+                {
+                  "num": "6",
+                  "color": "red",
+                  "title": "Deliver, then close and support the pelvis",
+                  "html": "Deliver immediately with the maneuvers that previously failed — they will now usually succeed. Then close the skin, <b>keep the catheter in for several days</b>, apply a firm pelvic binder or strapping, and arrange bed rest with gradual mobilization. She needs analgesia, follow-up, and an honest explanation of what was done and why."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "07",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
             {
-              "type": "alert",
-              "color": "red",
-              "title": "McRoberts plus suprapubic pressure resolves most cases",
-              "html": "Never apply fundal pressure — it worsens impaction rather than relieving it. Symphysiotomy is a genuine last resort reserved for settings without timely cesarean access, not a routine escalation step."
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Nothing working, and it feels like seconds have passed",
+                  "Time distortion — universal under stress",
+                  "This is what the called clock is for. Believe the scribe, not your sense of it."
+                ],
+                [
+                  "Someone pushing on the fundus",
+                  "Confusion between fundal and suprapubic pressure",
+                  "<b>Stop them.</b> Name the landmark: “just above the pubic bone.” Watch the hand."
+                ],
+                [
+                  "Traction is increasing as frustration rises",
+                  "The instinctive and most harmful response",
+                  "Take your hands off the head. Traction does not resolve a bony impaction; it only injures the plexus."
+                ],
+                [
+                  "Cannot get a hand in",
+                  "Insufficient room posteriorly",
+                  "Enter in the sacral hollow, not anteriorly. Consider episiotomy for access. Empty the bladder."
+                ],
+                [
+                  "Rotation will not move the shoulders",
+                  "Wrong direction, or pressure on the wrong aspect",
+                  "Try the reverse direction. Combine anterior and posterior hands as a screw rather than pushing one shoulder alone."
+                ],
+                [
+                  "Cannot reach the posterior arm",
+                  "The arm is extended alongside the body",
+                  "Follow the humerus to the elbow and press the antecubital fossa to flex it. Never pull on the upper arm."
+                ],
+                [
+                  "Something snapped during a maneuver",
+                  "Clavicle or humerus",
+                  "Keep going. It heals; hypoxia does not. Tell the neonatal team and document it."
+                ],
+                [
+                  "Whole sequence failed once",
+                  "Not yet a failure",
+                  "<b>Repeat the sequence</b>, with a different operator if one is available. Fresh hands and a different position frequently succeed where the first attempt did not."
+                ],
+                [
+                  "Brisk bleeding after delivery",
+                  "Atony after prolonged dystocia, or a significant tear",
+                  "Anticipate it. Uterotonics, quantify the loss, inspect the genital tract."
+                ],
+                [
+                  "Baby flat at delivery",
+                  "Expected after a prolonged head-to-body interval",
+                  "Full neonatal resuscitation. Paired cord gases. Early assessment for hypoxic-ischemic encephalopathy and for cooling eligibility."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "08",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Brachial plexus injury or clavicular/humeral fracture to the fetus from excessive traction during any maneuver — avoid fundal pressure and excessive axial traction throughout</li>\n      <li>Maternal perineal/vaginal trauma from internal maneuvers</li>\n      <li>Symphysiotomy: significant maternal pelvic instability, pain, and long-term morbidity — this is a genuinely last-resort technique with substantial maternal cost</li>\n      <li>Delayed escalation through the maneuver sequence in a truly refractory dystocia, worsening fetal hypoxic risk</li>\n</ul>"
+              "html": "<p><b>Fetal / neonatal:</b></p>\n<ul>\n      <li><b>Brachial plexus injury</b> — most commonly Erb palsy (C5–C6). The majority resolve within a year; a minority are permanent. Related to traction, but also occurs with none.</li>\n      <li><b>Clavicular and humeral fracture</b> — heal well, and acceptable in exchange for delivery.</li>\n      <li><b>Hypoxic-ischemic encephalopathy and death</b> — the reason for the clock.</li>\n</ul>\n<p><b>Maternal:</b></p>\n<ul>\n      <li><b>Postpartum hemorrhage</b> from atony — common after a prolonged dystocia.</li>\n      <li><b>Third- and fourth-degree perineal tears</b>, vaginal and cervical lacerations.</li>\n      <li><b>Symphyseal separation</b>, with pain and difficulty walking, even without symphysiotomy.</li>\n      <li><b>Uterine rupture</b> — from fundal pressure.</li>\n      <li><b>After symphysiotomy specifically:</b> urethral and bladder injury, vesicovaginal fistula, stress incontinence, sacroiliac disruption, chronic pelvic pain, infection, and long-term gait disturbance.</li>\n      <li><b>Psychological trauma</b> — a frightening, chaotic delivery with many hands and shouted instructions. Debrief her afterwards, with the sequence explained.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "09",
+          "color": "blue",
+          "title": "Afterwards",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Paired cord gases</b>, arterial and venous, from a doubly clamped segment.</li>\n  <li><b>Neonatal examination</b> for plexus injury and fractures, and assessment for therapeutic hypothermia if the interval was long or the baby was depressed.</li>\n  <li><b>Document, in this order and with times:</b> time of head delivery, which shoulder was anterior, each maneuver performed with its time and who performed it, the time of body delivery, who was present, cord gases, the neonatal condition and examination, and the maternal assessment. <b>Which shoulder was anterior is the detail most often omitted and most often asked for later.</b></li>\n  <li><b>Examine the genital tract and quantify blood loss.</b></li>\n  <li><b>Explain it to the parents</b> on the day, in plain language, and again later. They saw an emergency and understood almost none of it.</li>\n  <li><b>Debrief the team.</b></li>\n  <li><b>Drill it.</b> Simulation training for shoulder dystocia has been shown to improve outcomes — one of the few obstetric interventions where that is demonstrable. The sequence must be automatic, because there is no time to reason it out.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "10",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -4533,13 +4962,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>McRoberts plus suprapubic pressure resolves the large majority of shoulder dystocias — most cases never need to progress further down this list.</p>\n<p>Never apply fundal pressure in shoulder dystocia — it worsens impaction rather than relieving it; suprapubic pressure is the correct external maneuver.</p>\n<p>Symphysiotomy belongs in the field/resource-limited-setting category of this library specifically because it is almost never the right choice when a timely cesarean is available — know your setting's actual escalation pathway before assuming this technique applies.</p>"
+              "html": "<p><b>Say the words and start the clock.</b> “Shoulder dystocia” summons a response; anything vaguer does not.</p>\n<p><b>McRoberts plus suprapubic pressure solves most of them.</b> Do both properly before moving on.</p>\n<p><b>Suprapubic, never fundal.</b> Name the landmark aloud and watch the hand.</p>\n<p><b>Take your hands off the head.</b> Increasing traction is the instinct that causes the permanent injury.</p>\n<p><b>The posterior arm is the highest-yield internal maneuver.</b> Flex at the elbow, grasp the forearm, sweep across the chest — never pull the upper arm.</p>\n<p><b>All fours is quick and underused.</b> No equipment, and every internal maneuver still works there.</p>\n<p><b>A fracture is an acceptable price.</b> Bone heals; brain does not.</p>\n<p><b>Failing once through the sequence is not failure.</b> Repeat it, ideally with fresh hands.</p>\n<p><b>Expect the hemorrhage afterwards.</b></p>\n<p><b>Record which shoulder was anterior.</b> It is always asked for and rarely written.</p>\n<p><b>Symphysiotomy only where there is no operating room.</b> And then: catheter in, urethra held aside, and abduction capped at 90°.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "11",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -4549,7 +4978,27 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 178: Shoulder Dystocia. <i>Obstet Gynecol.</i> 2017;129(5):e123-e133."
+                  "html": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 178: Shoulder Dystocia. <i>Obstet Gynecol.</i> 2017;129(5):e123–e133."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Royal College of Obstetricians and Gynaecologists. Shoulder Dystocia (Green-top Guideline No. 42), 2nd ed. RCOG; 2012."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Draycott TJ, Crofts JF, Ash JP, et al. Improving neonatal outcome through practical shoulder dystocia training. <i>Obstet Gynecol.</i> 2008;112(1):14–20."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Hoffman MK, Bailit JL, Branch DW, et al. A comparison of obstetric maneuvers for the acute management of shoulder dystocia. <i>Obstet Gynecol.</i> 2011;117(6):1272–1278."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Sandberg EC. The Zavanelli maneuver: 12 years of recorded experience. <i>Obstet Gynecol.</i> 1999;93(2):312–317."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "World Health Organization. <i>Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors</i>, 2nd ed. WHO; 2017 — symphysiotomy technique in settings without surgical access."
                 }
               ]
             }
@@ -4578,8 +5027,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5449,8 +5898,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5651,8 +6100,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5866,8 +6315,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6268,8 +6717,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6658,8 +7107,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7682,8 +8131,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -8677,8 +9126,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
