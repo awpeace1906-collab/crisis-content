@@ -11,7 +11,13 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
-import { HALO_CATEGORY_MAP, UNIFIED_CATEGORIES, PROCEDURE_CATEGORY_OVERRIDES } from './unified-categories.mjs';
+import {
+  HALO_CATEGORY_MAP,
+  UNIFIED_CATEGORIES,
+  PROCEDURE_CATEGORY_OVERRIDES,
+  ENTRY_ORDER,
+  DEFAULT_ENTRY_ORDER,
+} from './unified-categories.mjs';
 import { resolveReview, lastChangedDate } from './review-policy.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -289,7 +295,11 @@ function main() {
     p.categoryOrder = target.order;
   }
 
-  procedures.sort((a, b) => a.categoryOrder - b.categoryOrder || a.title.localeCompare(b.title));
+  // entryOrder lets a category override alphabetical — see ENTRY_ORDER.
+  for (const p of procedures) p.entryOrder = ENTRY_ORDER[p.id] ?? DEFAULT_ENTRY_ORDER;
+  procedures.sort(
+    (a, b) => a.categoryOrder - b.categoryOrder || a.entryOrder - b.entryOrder || a.title.localeCompare(b.title),
+  );
 
   // Same adjacent-no-repeat cycling used for protocols — see extract-protocols.mjs.
   const PALETTE = ['teal', 'blue', 'purple', 'red', 'amber'];

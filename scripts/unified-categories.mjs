@@ -12,11 +12,33 @@
 // procedure-only content anymore. `id` kept stable (used as the /category/
 // URL slug and as a lookup key elsewhere) even though it no longer matches
 // the label exactly.
+// Airway, split out of Anesthesia & Perioperative Crises on 2026-09-23.
+// That category had grown to 18 items and the airway content was scattered
+// through transfusion reactions, awareness, fat embolism and TURP syndrome —
+// so in a CICO event you were scanning an 18-item list for the two entries
+// that matter.
+//
+// Deliberately NOT called "CICO". Only two of these entries are CICO
+// procedures. Awake fiberoptic is the technique you use so that you never
+// reach CICO — filing it under a CICO header inverts its meaning — and
+// retrograde intubation needs minutes of oxygenation a CICO does not give you.
+// The header names the anatomy; ENTRY_ORDER below puts the CICO pair on top.
+//
+// Order 1: airway precedes everything else in a resuscitation, and this is the
+// category someone opens with the least time to spare.
+export const AIRWAY_CATEGORY = {
+  id: 'airway',
+  label: 'Airway',
+  color: 'teal',
+  order: 1,
+};
+
 export const EXTRA_CATEGORY = {
   id: 'trauma-resuscitation-procedures',
   label: 'Trauma & Critical Care',
   color: 'amber',
-  order: 7,
+  // 8, not 7 — everything shifted down one when Airway took order 1.
+  order: 8,
 };
 
 // HALO's own 8 procedure-hub categories, each mapped onto one of the 6
@@ -24,7 +46,7 @@ export const EXTRA_CATEGORY = {
 // match a CRISIS category slug); the rest were a deliberate choice among
 // several options — see memory for the alternatives that were rejected.
 export const HALO_CATEGORY_MAP = {
-  'airway': 'anesthesia-perioperative-crises',
+  'airway': 'airway',
   'vascular-access-circulatory': 'trauma-resuscitation-procedures',
   'thoracic': 'resuscitation-acls-adjacent',
   'hemorrhage-control': 'trauma-resuscitation-procedures',
@@ -49,6 +71,11 @@ export const PROTOCOL_CATEGORY_OVERRIDES = {
   // 2026-08-25 to move the MTP *protocol* (decision-making) alongside it,
   // out of Resuscitation & ACLS-Adjacent where the hub currently has it.
   'massive-transfusion-protocol': 'trauma-resuscitation-procedures',
+  // The algorithm belongs with the procedures that carry it out (2026-09-23).
+  // Laryngospasm moves too: it is a perioperative event, but it is also one of
+  // the few that progresses to CICO, and it is treated at the airway.
+  'difficult-failed-airway': 'airway',
+  'laryngospasm': 'airway',
 };
 
 // Per-procedure overrides, same idea as PROTOCOL_CATEGORY_OVERRIDES above
@@ -67,14 +94,39 @@ export const PROCEDURE_CATEGORY_OVERRIDES = {
   'transcutaneous-transvenous-pacing': 'resuscitation-acls-adjacent',
 };
 
+// Explicit within-category ordering. Everything defaults to DEFAULT_ENTRY_ORDER
+// and then falls back to alphabetical, which is fine nearly everywhere — but
+// alphabetical inside Airway puts "Awake Fiberoptic Intubation" at the top of
+// the list you open during a CICO. Lower sorts first.
+//
+// Note this cannot be fixed by ordering the JSON array: the app stores entries
+// in IndexedDB with keyPath 'id', so getAll() returns them in primary-key
+// order and any array order is thrown away. The app sorts on this field.
+export const DEFAULT_ENTRY_ORDER = 50;
+
+export const ENTRY_ORDER = {
+  // CICO rescue first — recognize and declare, then the techniques.
+  'front-of-neck-rescue-airway-in-cico': 10,
+  'cricothyrotomy-surgical-percutaneous-needle': 11,
+  // The algorithm that leads there, and the cause most likely to.
+  'difficult-failed-airway': 12,
+  'laryngospasm': 13,
+  // Difficult airway with time to work — still oxygenating.
+  'retrograde-intubation': 14,
+  'awake-fiberoptic-intubation': 15,
+  // Definitive / semi-elective.
+  'percutaneous-surgical-tracheostomy': 16,
+};
+
 // Full unified list, for lookups by id (label/color/order). Kept in sync
 // with the Crisis hub's 6 by hand — see the note on EXTRA_CATEGORY above.
 export const UNIFIED_CATEGORIES = [
-  { id: 'anesthesia-perioperative-crises', label: 'Anesthesia & Perioperative Crises', color: 'red', order: 1 },
-  { id: 'resuscitation-acls-adjacent', label: 'Resuscitation & ACLS-Adjacent', color: 'blue', order: 2 },
-  { id: 'toxicologic', label: 'Toxicologic', color: 'purple', order: 3 },
-  { id: 'obstetric', label: 'Obstetric', color: 'teal', order: 4 },
-  { id: 'pediatric-neonatal', label: 'Pediatric / Neonatal', color: 'blue', order: 5 },
-  { id: 'environmental-prehospital', label: 'Environmental / Prehospital', color: 'purple', order: 6 },
+  AIRWAY_CATEGORY,
+  { id: 'anesthesia-perioperative-crises', label: 'Anesthesia & Perioperative Crises', color: 'red', order: 2 },
+  { id: 'resuscitation-acls-adjacent', label: 'Resuscitation & ACLS-Adjacent', color: 'blue', order: 3 },
+  { id: 'toxicologic', label: 'Toxicologic', color: 'purple', order: 4 },
+  { id: 'obstetric', label: 'Obstetric', color: 'teal', order: 5 },
+  { id: 'pediatric-neonatal', label: 'Pediatric / Neonatal', color: 'blue', order: 6 },
+  { id: 'environmental-prehospital', label: 'Environmental / Prehospital', color: 'purple', order: 7 },
   EXTRA_CATEGORY,
 ];

@@ -4,7 +4,13 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
-import { EXTRA_CATEGORY, PROTOCOL_CATEGORY_OVERRIDES } from './unified-categories.mjs';
+import {
+  EXTRA_CATEGORY,
+  PROTOCOL_CATEGORY_OVERRIDES,
+  UNIFIED_CATEGORIES,
+  ENTRY_ORDER,
+  DEFAULT_ENTRY_ORDER,
+} from './unified-categories.mjs';
 import { resolveReview, lastChangedDate } from './review-policy.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -240,11 +246,25 @@ function main() {
   for (const p of protocols) {
     const overrideId = PROTOCOL_CATEGORY_OVERRIDES[p.id];
     if (!overrideId) continue;
-    const target = [...categories.map((c) => ({ id: c.id, label: c.label, order: c.order })), EXTRA_CATEGORY].find((c) => c.id === overrideId);
+    const target =
+      [...categories.map((c) => ({ id: c.id, label: c.label, order: c.order })), ...UNIFIED_CATEGORIES].find(
+        (c) => c.id === overrideId,
+      );
     if (!target) throw new Error(`PROTOCOL_CATEGORY_OVERRIDES["${p.id}"] references unknown category "${overrideId}"`);
     p.category = target.id;
     p.categoryLabel = target.label;
     p.categoryOrder = target.order;
+  }
+
+  // Reconcile against the unified taxonomy. Protocols take label/order from the
+  // protocol hub, procedures take theirs from UNIFIED_CATEGORIES — so any
+  // category present in both has to resolve to the same numbers here, or the
+  // two halves of a category render as two groups.
+  for (const p of protocols) {
+    const unified = UNIFIED_CATEGORIES.find((c) => c.id === p.category);
+    if (!unified) continue;
+    p.categoryLabel = unified.label;
+    p.categoryOrder = unified.order;
   }
 
   // Report protocols the hub references but that don't exist on disk yet (queued content)
@@ -252,7 +272,10 @@ function main() {
     if (!files.includes(file)) missing.push({ file, ...meta });
   }
 
-  protocols.sort((a, b) => a.categoryOrder - b.categoryOrder || a.title.localeCompare(b.title));
+  for (const p of protocols) p.entryOrder = ENTRY_ORDER[p.id] ?? DEFAULT_ENTRY_ORDER;
+  protocols.sort(
+    (a, b) => a.categoryOrder - b.categoryOrder || a.entryOrder - b.entryOrder || a.title.localeCompare(b.title),
+  );
 
   // The hub's per-card colors are decorative and not sequence-aware, so
   // adjacent cards can (and do) land on the same color. Reassign by cycling
