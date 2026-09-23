@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T17:51:03.224Z",
+  "generatedAt": "2026-09-23T17:56:20.727Z",
   "categories": [
     {
       "id": "anesthesia-perioperative-crises",
@@ -41,10 +41,681 @@
       "id": "trauma-resuscitation-procedures",
       "label": "Trauma & Critical Care",
       "color": "amber",
-      "order": 7
+      "order": 8
     }
   ],
   "protocols": [
+    {
+      "id": "difficult-failed-airway",
+      "type": "protocol",
+      "file": "CV_Crisis_Difficult_Airway.html",
+      "title": "Difficult & Failed Airway",
+      "kicker": "The Critical Vector · Crisis Management · Anesthesiology / Airway",
+      "subtitle": "The CICO decision tree, why \"wake the patient\" was removed from the emergency pathway, scalpel cricothyrotomy technique, and the assessment tools that predict trouble before you ever pick up a blade.",
+      "badges": [
+        {
+          "color": "red",
+          "text": "ANESTHESIA / AIRWAY EMERGENCY"
+        },
+        {
+          "color": "teal",
+          "text": "ASA 2022 / DAS 2025-ALIGNED"
+        },
+        {
+          "color": "amber",
+          "text": "OXYGENATION > INTUBATION"
+        }
+      ],
+      "category": "airway",
+      "categoryLabel": "Airway",
+      "categoryOrder": 1,
+      "color": "teal",
+      "description": "CICO decision tree, ASA 2022/DAS 2025-aligned, scalpel cric technique, LEMON/RODS/SHORT assessment tools.",
+      "reviewTier": 2,
+      "reviewTierIsDefault": true,
+      "lastVerified": "2026-08-31",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-08-31",
+      "sections": [
+        {
+          "id": "treatment",
+          "num": "01",
+          "color": "red",
+          "title": "Emergency Management — The Failed Airway Sequence",
+          "tagline": "The decision that matters most is made before the laryngoscope goes in. Once you're in trouble, the goal shifts from \"get the tube\" to \"keep oxygenating\" — the tube can wait.",
+          "blocks": [
+            {
+              "type": "steps",
+              "steps": [
+                {
+                  "num": "1",
+                  "color": "red",
+                  "title": "Declare it and call for help",
+                  "html": "The moment you recognize a failed attempt or failed oxygenation, say so out loud. Most airway deaths occur after the third attempt — task fixation and the \"ego tube\" (pushing repeated attempts instead of pivoting) are the actual killers, not anatomy."
+                },
+                {
+                  "num": "2",
+                  "color": "amber",
+                  "title": "Optimize and reattempt once, with a change",
+                  "html": "Reposition (RAMP/ear-to-sternal-notch in obesity), try a bougie with video laryngoscopy, try a hyperangulated blade — change something rather than repeating the identical attempt. No view at all? Come out and bag."
+                },
+                {
+                  "num": "3",
+                  "color": "teal",
+                  "title": "Can you bag them? — the branch point that matters most",
+                  "html": "Good BVM seal and ventilation present: you have time. Adjust variables, consider a flexible/rigid intubating scope or an intubating SGA. <b>Cannot bag effectively:</b> place a supraglottic airway immediately — SGA placement is the standard next rescue step before jumping to a surgical airway, and restores oxygenation faster than repeated laryngoscopy."
+                },
+                {
+                  "num": "4",
+                  "color": "red",
+                  "title": "SGA also fails to oxygenate → this is CICO, act now",
+                  "html": "Can't Intubate, Can't Oxygenate. This is the true emergency pathway. <b>Do not attempt to \"wake the patient\"</b> — that option was deliberately removed from the 2022 ASA emergency pathway, since a non-patent airway isn't reliably reversible by simply stopping drugs."
+                },
+                {
+                  "num": "5",
+                  "color": "red",
+                  "title": "Surgical cricothyrotomy — the definitive adult rescue",
+                  "html": "Scalpel cricothyrotomy is preferred over needle cricothyrotomy for adult CICO per ASA 2022 / current DAS guidance — needle cric with jet ventilation is temporizing only; CO₂ accumulates fast and it's easy to lose the airway again. <b>Technique:</b> palpate the cricothyroid membrane between thyroid and cricoid cartilage (ultrasound if landmarks are unclear); vertical stab incision, horizontal extension through the membrane, bougie-guided ETT placement — bougie-assisted open technique is fastest to teach and perform under pressure. <b>Pediatrics:</b> no surgical cric under age 8–12 — needle cric only until then."
+                },
+                {
+                  "num": "6",
+                  "color": "amber",
+                  "title": "Watch elapsed time and saturation throughout — not just attempt count",
+                  "html": "The 2022 ASA guidelines emphasize continuous oxygenation and time-awareness over a strict attempt-count rule. \"Three attempts\" isn't a protocol — it's an ego limit. Have your next move planned after attempt one, not after attempt three."
+                }
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "The surgical airway is not a failure — not doing it when you should is",
+              "html": "CICO incidence is low (roughly 0.002–0.04% of general anesthetics) but accounts for a disproportionate share of anesthetic mortality when it happens. Hesitation, not the procedure itself, is what kills people in this scenario."
+            }
+          ]
+        },
+        {
+          "id": "review",
+          "num": "02",
+          "color": "teal",
+          "title": "Brief Review",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p>A difficult airway is any clinical situation where a trained provider experiences difficulty with face mask ventilation, supraglottic airway ventilation, laryngoscopy, intubation, or extubation — the 2022 ASA guidelines explicitly broadened the definition beyond just \"hard to intubate\" to include SGA and extubation problems as well.</p>\n    <p>The truly emergent version — Can't Intubate, Can't Oxygenate (CICO) — occurs in roughly 0.0019–0.04% of cases but represents close to 25% of anesthesia-related mortality, making it the most common lethal respiratory emergency in perioperative practice. The problem is almost never that the anatomy was impossible; it's that the failure to oxygenate wasn't recognized and acted on quickly enough.</p>"
+            }
+          ]
+        },
+        {
+          "id": "signs",
+          "num": "03",
+          "color": "amber",
+          "title": "Predicting the Ugly — Assessment Tools",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Tool",
+                "What it screens for"
+              ],
+              "rows": [
+                [
+                  "LEMON",
+                  "<b>L</b>ook externally · <b>E</b>valuate 3-3-2 (3 finger-breadths mouth opening, 3 chin-to-hyoid, 2 hyoid-to-thyroid notch) · <b>M</b>allampati · <b>O</b>bstruction · <b>N</b>eck mobility — the core difficult-laryngoscopy screen."
+                ],
+                [
+                  "RODS",
+                  "<b>R</b>estricted mouth opening · <b>O</b>bstruction · <b>D</b>istorted airway · <b>S</b>tiff lungs/cervical spine — predicts difficult supraglottic airway ventilation specifically."
+                ],
+                [
+                  "SHORT",
+                  "<b>S</b>urgery (prior neck surgery/radiation changes anatomy) · <b>H</b>ematoma · <b>O</b>besity · <b>R</b>adiation · <b>T</b>umor — predicts a difficult surgical airway, worth assessing even when you don't expect to need one."
+                ],
+                [
+                  "Physiologic predictors",
+                  "Hypoxemia, hypotension, and metabolic acidosis predict a bad outcome on induction independent of anatomy — \"the crash.\" A physiologically hostile patient can die on induction with a perfectly normal-looking airway."
+                ]
+              ]
+            },
+            {
+              "type": "xref",
+              "html": "<b>The ugly airway is usually ugly before you touch it — look harder.</b> Trauma-specific red flags: blood in the oropharynx, restricted mouth opening, an expanding neck hematoma (the airway you see now may not be the airway in 10 minutes — Zone II penetrating trauma with a growing hematoma means the surgical airway decision comes earlier than feels comfortable)."
+            }
+          ]
+        },
+        {
+          "id": "prevention",
+          "num": "04",
+          "color": "blue",
+          "title": "Plan Before You Touch the Patient (In Place of \"Room Setup\")",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n      <li><b>Name your primary, backup, and bailout before induction — all three, every time.</b> If you don't have a bailout, you don't have a plan. Know explicitly who performs the surgical airway and under what trigger.</li>\n      <li><b>Consider awake intubation</b> when difficulty is anticipated plus any of: known/suspected difficult airway on exam, high aspiration risk, poor tolerance of an apneic period, or a predicted CICO scenario — awake technique carries far lower risk than inducing first and finding out.</li>\n      <li><b>Difficult airway cart immediately available</b> and stocked: video laryngoscope, bougie, multiple SGA sizes, surgical airway kit, and the cricothyroid membrane marked/identified in advance (palpation, or ultrasound if landmarks are unclear) for any anticipated-difficult case.</li>\n      <li><b>Preoxygenate as treatment, not prep</b> — see Numbers to Know below. A 100% SpO₂ on the monitor is a margin, not a guarantee; it reflects reservoir oxygen, not whether the airway is currently patent.</li>\n      <li><b>Use nasal cannula apneic oxygenation during laryngoscopy</b> (15 L/min, Levitan's NODESAT technique) — low-cost, no-harm, use it routinely. Evidence for meaningful benefit is stronger in healthy well-preoxygenated patients than in critically ill ones (the FELLOW trial showed no benefit in ICU patients specifically) — treat it as a helpful adjunct, not a substitute for real preoxygenation.</li>\n      <li><b>State the difficult-airway status explicitly during time-out</b>, and document the specific findings (grade of view, device that worked, number of attempts) in the chart for every future anesthetic.</li>\n    </ul>"
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "num": "05",
+          "color": "teal",
+          "title": "Numbers to Know (In Place of \"Labs\")",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Parameter",
+                "Value / significance"
+              ],
+              "rows": [
+                [
+                  "Nitrogen washout preoxygenation",
+                  "Tight-seal BVM at 15 L/min for 3–5 minutes replaces alveolar nitrogen with O₂ — roughly 3,000 mL of O₂ reservoir in the lungs vs. ~450 mL on room air. This is the actual intervention that extends safe apnea time, not the pulse ox reading."
+                ],
+                [
+                  "Apneic oxygenation (NODESAT)",
+                  "Nasal cannula at 15 L/min left running through laryngoscopy. Extends safe apnea time in healthy, well-preoxygenated patients; benefit not demonstrated in critically ill ICU populations (FELLOW trial). Use it — it doesn't replace nitrogen washout."
+                ],
+                [
+                  "CICO incidence",
+                  "~0.0019–0.04% of general anesthetics — rare per case, but accounts for a large share of airway-related mortality when it occurs."
+                ],
+                [
+                  "Cannot-oxygenate share of anesthetic mortality",
+                  "Roughly 25% — the single most common lethal respiratory emergency in perioperative medicine."
+                ],
+                [
+                  "Attempt-time discipline",
+                  "No fixed number of attempts is \"the rule\" — the 2022 ASA guidance emphasizes continuous awareness of elapsed time and oxygen saturation over any specific attempt count. Most airway deaths occur after the third attempt because providers keep trying the same thing instead of escalating."
+                ],
+                [
+                  "Post-intubation tidal volume",
+                  "6–8 mL/kg <b>ideal body weight</b>, not actual weight — obese patients have the same lung, bigger body; dosing on actual weight risks volutrauma."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rationale",
+          "num": "06",
+          "color": "purple",
+          "title": "Rationale for Airway Management Decisions",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "purple",
+              "html": "<p><b>Why \"wake the patient\" was removed from the emergency pathway:</b> the option assumes that stopping drugs restores a patent airway and spontaneous ventilation quickly enough to prevent hypoxic injury. In a true CICO scenario the airway itself may not be patent regardless of anesthetic depth, so waiting for the patient to wake up wastes the exact time that oxygenation rescue needs. The non-emergency pathway (can ventilate, can't intubate) still reasonably includes waking the patient as an option — the distinction is whether oxygenation, not just intubation, has failed.</p>\n    <p><b>Why oxygenation is monitored separately from intubation success:</b> pulse oximetry reflects the oxygen already bound to hemoglobin and stored in a preoxygenated lung — it can stay reassuring for a period of time after the airway has actually become non-patent. Treating SpO₂ as a real-time \"is the airway open\" signal is a common and dangerous misread; it's a lagging indicator, not a live one.</p>\n    <p><b>Why SGA rescue comes before surgical airway, but doesn't delay it if it fails:</b> supraglottic airway placement restores oxygenation faster than repeated laryngoscopy attempts and is successful in the large majority of \"can't intubate\" scenarios, which is why it's the standard next step. But if it doesn't restore oxygenation, that failure defines true CICO — the moment SGA also fails, further attempts at anything other than a surgical airway are wasting the same limited oxygen reserve that killed the \"wake the patient\" option above.</p>\n    <p><b>Why scalpel cricothyrotomy is preferred over needle cric in adults:</b> needle techniques with jet ventilation are genuinely temporizing — CO₂ clearance is poor, barotrauma risk is real, and the airway can be lost again quickly. A scalpel-bougie-tube approach delivers a cuffed, definitive airway in comparable or faster time in trained hands, which is why current guidelines designate it the preferred adult CICO rescue rather than a last resort.</p>\n    <p><b>Why nitrogen washout matters more than people give it credit for:</b> a \"100% SpO₂\" on a patient who was only briefly preoxygenated with a loose mask seal still has a small functional oxygen reserve, because most of the reservoir gain comes from actually displacing alveolar nitrogen with oxygen over several minutes of tight-seal breathing — not from the number on the monitor at the moment of induction.</p>"
+            }
+          ]
+        },
+        {
+          "id": "ddx",
+          "num": "07",
+          "color": "blue",
+          "title": "Differential Diagnosis — Airway-Threatening Swelling",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Condition",
+                "Key distinguishing features"
+              ],
+              "rows": [
+                [
+                  "Anaphylaxis",
+                  "IgE-mediated, fast onset (minutes), systemic — skin, cardiovascular, and airway together. Epinephrine 0.3–0.5 mg IM (adult) is first-line and works well."
+                ],
+                [
+                  "Angioedema — allergic (mast-cell mediated)",
+                  "Slower onset than anaphylaxis but faster than HAE; airway edema without the full systemic pattern; responds to epinephrine/antihistamines similarly to anaphylaxis."
+                ],
+                [
+                  "Angioedema — hereditary (HAE) or ACE-inhibitor-induced",
+                  "Bradykinin-mediated, not histamine-mediated. Slow onset over hours. Airway edema dominant, <b>no hives</b>, no hypotension. Epinephrine may slow it but does <b>not</b> reverse it — definitive treatment is C1-esterase inhibitor concentrate or icatibant, both hospital-level."
+                ],
+                [
+                  "Epiglottitis",
+                  "Bacterial (H. influenzae, S. aureus), onset over hours to days. Classic triad: drooling, dysphagia, distress (\"tripod\" positioning). <b>Do not examine the throat</b> or force the patient supine — either can trigger complete obstruction. Position of comfort, transport to a controlled airway setting (OR)."
+                ],
+                [
+                  "Peritonsillar / retropharyngeal abscess",
+                  "Trismus, muffled \"hot potato\" voice, unilateral tonsillar deviation (peritonsillar) — differentiate from diffuse angioedema by the asymmetric, localized exam finding."
+                ],
+                [
+                  "Expanding neck hematoma (post-surgical or traumatic)",
+                  "Clear temporal link to a procedure or trauma mechanism; progressive, exam-visible swelling rather than diffuse edema — decompression (opening the wound at bedside if post-surgical) may be needed before any airway attempt."
+                ]
+              ]
+            },
+            {
+              "type": "xref",
+              "html": "<b>The voice is an early warning most people miss.</b> A muffled, \"hot potato\" voice quality in an ambulatory, normally-saturating patient reflects airway narrowing before saturation ever drops — by the time SpO₂ falls or stridor appears, the window to secure the airway electively may already be closing."
+            }
+          ]
+        },
+        {
+          "id": "disposition",
+          "num": "08",
+          "color": "teal",
+          "title": "After the Tube — Confirmation & Disposition",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p><b>Confirmation:</b> waveform capnography is the only reliable confirmation of correct tube placement — pulse oximetry and chest rise are not sufficient on their own. Loss of the waveform at any point should be treated as a displaced tube until proven otherwise, not an equipment glitch.</p>\n    <p><b>Depth and positioning:</b> mark and document tube depth at the teeth/lips, confirm bilateral breath sounds — right mainstem intubation is a common and easy-to-miss complication, especially after a rushed attempt in a bloody or distorted airway.</p>\n    <p><b>Post-intubation sedation:</b> a paralyzed, unsedated patient is a sentinel event — plan sedation before the paralytic wears off, not after. Reasonable options: ketamine infusion, midazolam plus fentanyl, or propofol if hemodynamically stable.</p>\n    <p><b>Disposition:</b> ICU-level monitoring for any difficult or failed airway case, regardless of how the eventual airway was secured. Do not extubate a documented difficult airway in an uncontrolled setting — plan extubation as deliberately as the original intubation, ideally with the same difficult-airway equipment immediately available.</p>\n    <p><b>Documentation:</b> record the specific difficulty encountered, what worked, what didn't, and grade of view — this becomes the single most valuable piece of information for every subsequent anesthetic this patient ever has.</p>"
+            }
+          ]
+        },
+        {
+          "id": "refs",
+          "num": "09",
+          "color": "amber",
+          "title": "References",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "sources",
+              "items": [
+                {
+                  "tier": "PRIMARY",
+                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31–81."
+                },
+                {
+                  "tier": "PRIMARY",
+                  "html": "Difficult Airway Society. 2025 Guidelines for Management of Unanticipated Difficult Intubation in Adults. das.uk.com."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 Guidelines for Management of Unanticipated Difficult Intubation in Adults. <i>Br J Anaesth.</i> 2015;115(6):827–848."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Semler MW, et al. (FELLOW Trial) Randomized Trial of Apneic Oxygenation During Endotracheal Intubation of the Critically Ill. <i>Am J Respir Crit Care Med.</i> 2016;193(3):273–280."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Weingart SD, Levitan RM. Preoxygenation and Prevention of Desaturation During Emergency Airway Management. <i>Ann Emerg Med.</i> 2012;59(3):165–175."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Driver BE, et al. Effect of Use of a Bougie vs Endotracheal Tube on First-Attempt Intubation Success. <i>JAMA.</i> 2018;319(21):2179–2189."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Brown CA III, Sakles JC, Mick NW. <i>The Walls Manual of Emergency Airway Management,</i> 5th ed. Wolters Kluwer; 2018."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "NYSORA. \"Difficult Airway Management.\" nysora.com, updated 2026."
+                },
+                {
+                  "tier": "INTERNAL",
+                  "html": "\"Blade, Backup, Bailout\" — A. Peace, EMS Expo teaching deck (NM EMS SOP-referenced field content, cross-checked against ASA/DAS above)."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and technique against your own institutional protocol before clinical use.",
+      "entryOrder": 12
+    },
+    {
+      "id": "laryngospasm",
+      "type": "protocol",
+      "file": "CV_Crisis_Laryngospasm.html",
+      "title": "Laryngospasm",
+      "kicker": "The Critical Vector · Crisis Management · Anesthesiology / Airway",
+      "subtitle": "A protective reflex turned airway emergency — the escalation ladder from jaw thrust to succinylcholine, why the low-dose route is usually the right one, and the complication that shows up after you've already broken the spasm.",
+      "badges": [
+        {
+          "color": "red",
+          "text": "AIRWAY EMERGENCY"
+        },
+        {
+          "color": "teal",
+          "text": "WFSA-ALIGNED"
+        },
+        {
+          "color": "amber",
+          "text": "23% NOT OBVIOUS"
+        }
+      ],
+      "category": "airway",
+      "categoryLabel": "Airway",
+      "categoryOrder": 1,
+      "color": "blue",
+      "description": "Escalation ladder from jaw thrust to succinylcholine, WFSA-aligned dosing, negative pressure pulmonary edema as the delayed complication.",
+      "reviewTier": 1,
+      "reviewTierIsDefault": false,
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": false,
+      "reviewDue": "2027-03-22",
+      "sections": [
+        {
+          "id": "treatment",
+          "num": "01",
+          "color": "red",
+          "title": "Emergency Management — The Escalation Ladder",
+          "tagline": "Most laryngospasm resolves with the first two steps. Escalate quickly if it doesn't — hypoxia plus a paralytic is a dangerous combination if the airway still isn't secured.",
+          "blocks": [
+            {
+              "type": "steps",
+              "steps": [
+                {
+                  "num": "1",
+                  "color": "red",
+                  "title": "Stop the stimulus, call for help",
+                  "html": "Remove the triggering stimulus if one is identifiable (suction catheter, surgical stimulation, extubation timing). Get another set of hands — this escalates fast if it doesn't break quickly."
+                },
+                {
+                  "num": "2",
+                  "color": "amber",
+                  "title": "Jaw thrust / Larson's maneuver + CPAP with 100% O₂",
+                  "html": "Firm jaw thrust at the \"laryngospasm notch\" — bilateral pressure behind the ramus of the mandible, anterior to the mastoid process. Simultaneously apply CPAP via tight-seal BVM with a PEEP valve. Avoid vigorous positive-pressure ventilation attempts — forceful bagging against a closed glottis risks gastric insufflation. Larson's maneuver has limited controlled evidence behind it, but it's low-risk and widely used as first response."
+                },
+                {
+                  "num": "3",
+                  "color": "teal",
+                  "title": "Clear the airway, deepen anesthesia",
+                  "html": "Suction the pharynx if blood or secretions are contributing. If not already breaking: propofol <span class=\"d\">0.5–0.8 mg/kg IV</span> (subhypnotic doses as low as <span class=\"d\">0.25 mg/kg</span> have been effective) — deepens anesthesia and relaxes upper airway tissue without the full apnea burden of a paralytic."
+                },
+                {
+                  "num": "4",
+                  "color": "red",
+                  "title": "Desaturating or no response — succinylcholine",
+                  "html": "Low dose often sufficient to break the spasm: <span class=\"d\">0.1–0.2 mg/kg IV</span> (full paralysis in 30–45 sec, breaks spasm in 45 sec–1 min). Severe/refractory: full dose <span class=\"d\">1–1.5 mg/kg IV</span> and proceed to intubation. <b>No IV access:</b> succinylcholine <span class=\"d\">4 mg/kg IM</span> (onset slower, roughly 3–4 minutes) or <span class=\"d\">2 mg/kg intralingual</span> (IM into the tongue body — retains perfusion better than peripheral muscle during hypoxia, but carries a high rate of transient arrhythmia). Rocuronium <span class=\"d\">1.2 mg/kg IV</span> is a reasonable alternative if succinylcholine is contraindicated."
+                },
+                {
+                  "num": "5",
+                  "color": "amber",
+                  "title": "Treat bradycardia if it develops",
+                  "html": "Airway manipulation and succinylcholine can both provoke bradycardia/arrest in a hypoxic patient, especially children. Correct hypoxia urgently and give atropine <span class=\"d\">0.02 mg/kg</span> for symptomatic bradycardia."
+                },
+                {
+                  "num": "6",
+                  "color": "blue",
+                  "title": "Intubate if the spasm doesn't break",
+                  "html": "Forced orotracheal intubation, even through partially closed cords if necessary, rescues the airway — some vocal cord trauma is an acceptable trade for hypoxic arrest. Laryngospasm is often followed by a brief gasp; that moment can be your window to pass the tube."
+                },
+                {
+                  "num": "7",
+                  "color": "purple",
+                  "title": "Surgical airway — last resort",
+                  "html": "Cricothyrotomy/tracheostomy only if intubation also fails and oxygenation cannot otherwise be restored — same CICO logic as any other failed airway."
+                }
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Not always obvious",
+              "html": "Roughly 23% of laryngospasm cases don't present with the classic high-pitched crowing sound — some present only as increasing work of breathing, paradoxical chest movement, or desaturation without any audible warning. Suspect it whenever airway obstruction appears without an obvious supraglottic cause."
+            }
+          ]
+        },
+        {
+          "id": "review",
+          "num": "02",
+          "color": "teal",
+          "title": "Brief Review",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p>Laryngospasm is an exaggeration of the normal protective glottic-closure reflex — sustained closure of the true (and often false) vocal cords that partially or completely obstructs the airway. Sensory input runs through the internal branch of the superior laryngeal nerve; the motor response is mediated by the recurrent laryngeal nerve driving the intrinsic laryngeal muscles. It occurs most often during induction and emergence from general anesthesia, though it's also described during procedural sedation and, rarely, in the awake state.</p>\n    <p>It's a relatively common perioperative event, more frequent in children than adults — pediatric procedural sedation series report roughly 3.9 per 1,000 cases versus about 1.1 per 1,000 in adults, and the large majority of reported cases involve ketamine sedation specifically.</p>"
+            }
+          ]
+        },
+        {
+          "id": "signs",
+          "num": "03",
+          "color": "amber",
+          "title": "Signs and Symptoms",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Finding",
+                "Notes"
+              ],
+              "rows": [
+                [
+                  "High-pitched inspiratory stridor (\"crowing\")",
+                  "Classic warning sign of partial laryngospasm — but absent in a meaningful minority of cases."
+                ],
+                [
+                  "Complete, silent obstruction",
+                  "No audible sound at all once the cords fully close — the most dangerous presentation because it's easy to miss initially."
+                ],
+                [
+                  "Increased work of breathing",
+                  "Tracheal tug, suprasternal/intercostal indrawing."
+                ],
+                [
+                  "Paradoxical respiratory effort",
+                  "Chest and abdomen moving in opposite directions (\"see-saw\" breathing) against an obstructed airway."
+                ],
+                [
+                  "Desaturation ± bradycardia",
+                  "Bradycardia in this setting is usually hypoxia-driven — correcting oxygenation is the primary fix, not atropine alone."
+                ],
+                [
+                  "Airway obstruction unresponsive to an oral airway",
+                  "Distinguishes true laryngospasm from simple supraglottic (tongue-based) obstruction, which typically resolves with an OPA and jaw thrust alone."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prevention",
+          "num": "04",
+          "color": "blue",
+          "title": "Risk Factors & Prevention (In Place of \"Room Setup\")",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n      <li><b>Patient factors:</b> young age (children, especially infants), airway hypersensitivity, recent upper respiratory tract infection, passive or active smoke exposure, obesity with obstructive sleep apnea, GERD, structural airway anomaly.</li>\n      <li><b>Anesthetic/procedural factors:</b> light plane of anesthesia during airway manipulation, blood/secretions/gastric contents irritating the cords, laryngoscopy or suction catheter stimulation, extubation during a light (\"stage 2\") plane of anesthesia — a well-recognized higher-risk moment.</li>\n      <li><b>Prevention strategies:</b> IV propofol induction rather than inhalational induction in children reduces risk; IV lidocaine or magnesium sulfate given prophylactically has supporting evidence in at-risk cases; extubating either fully awake or fully deep (not in between) avoids the highest-risk light plane; suctioning and clearing the airway thoroughly before extubation reduces stimulus load.</li>\n      <li><b>Have the ladder ready before extubating a higher-risk patient:</b> propofol drawn up, succinylcholine dose calculated and available, difficult airway equipment nearby — treat any extubation in a known at-risk patient the way you'd treat a planned difficult airway.</li>\n    </ul>"
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "num": "05",
+          "color": "teal",
+          "title": "Drug Doses — Numbers to Know (In Place of \"Labs\")",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Drug / route",
+                "Dose",
+                "Notes"
+              ],
+              "rows": [
+                [
+                  "Propofol IV",
+                  "0.5–0.8 mg/kg (subhypnotic doses ~0.25 mg/kg reported effective)",
+                  "First pharmacologic step if positioning/CPAP alone doesn't break it; deepens anesthesia without full paralysis."
+                ],
+                [
+                  "Succinylcholine IV, low dose",
+                  "0.1–0.2 mg/kg",
+                  "Often sufficient to break the spasm alone; full paralysis in 30–45 sec."
+                ],
+                [
+                  "Succinylcholine IV, full dose",
+                  "1–1.5 mg/kg",
+                  "Use for severe/refractory spasm; proceed directly to intubation."
+                ],
+                [
+                  "Succinylcholine IM",
+                  "4 mg/kg",
+                  "No IV access; onset markedly slower (~3–4 min) than IV routes."
+                ],
+                [
+                  "Succinylcholine intralingual (IM into tongue)",
+                  "2 mg/kg",
+                  "Faster onset than peripheral IM since tongue retains perfusion better during hypoxia; high rate (&gt;50%) of transient arrhythmia reported."
+                ],
+                [
+                  "Rocuronium IV",
+                  "1.2 mg/kg",
+                  "Alternative if succinylcholine contraindicated; longer duration of action."
+                ],
+                [
+                  "Rocuronium IM (case-report level evidence)",
+                  "~1.0 mg/kg",
+                  "Reported successful when no IV access and succinylcholine unavailable — not first-line, but a documented rescue option."
+                ],
+                [
+                  "Atropine",
+                  "0.02 mg/kg",
+                  "For symptomatic bradycardia during airway manipulation/succinylcholine administration."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rationale",
+          "num": "06",
+          "color": "purple",
+          "title": "Rationale for Laryngospasm Management Steps",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "purple",
+              "html": "<p><b>Why deepen anesthesia before reaching for a paralytic:</b> laryngospasm is fundamentally a reflex problem — the cords are closing in response to a stimulus interpreted as threatening. Deepening anesthesia with propofol reduces the reflex arc's sensitivity directly, often resolving the spasm without the apnea and full recovery time a paralytic requires. It's the lower-risk intervention and is tried first whenever the patient isn't yet critically hypoxic.</p>\n    <p><b>Why low-dose succinylcholine is often enough:</b> the goal isn't full surgical paralysis — it's relaxing the intrinsic laryngeal muscles enough to break the spasm. A fractional dose (0.1–0.2 mg/kg) frequently accomplishes this while preserving some respiratory drive and shortening total recovery time compared to a full RSI dose, which is why experienced anesthesia providers often reach for the low dose before escalating.</p>\n    <p><b>Why avoid vigorous bag-mask ventilation attempts:</b> forcing positive pressure against a closed or partially closed glottis pushes air into the stomach instead of the lungs, distending it and increasing aspiration risk without improving oxygenation — CPAP (steady pressure, not forceful bagging) is the correct technique while waiting for pharmacologic treatment to work.</p>\n    <p><b>Why the tongue is used for IM injection when there's no IV:</b> peripheral skeletal muscle perfusion drops significantly during hypoxia and shock, slowing drug uptake from a standard IM injection exactly when speed matters most. The tongue retains relatively better blood flow under those conditions, which is the physiologic basis for intralingual succinylcholine as a faster-acting alternative to a deltoid or thigh injection — at the cost of a higher reported arrhythmia rate.</p>\n    <p><b>Why Larson's maneuver persists in every algorithm despite weak evidence:</b> the proposed mechanism is that firm, painful pressure at the laryngospasm notch triggers vocal cord relaxation via a pain-mediated autonomic reflex — plausible, widely taught, and low-risk to attempt, but it has never been validated in a controlled trial. It's kept in the sequence because it costs nothing to try while CPAP and repositioning are already underway, not because the evidence is strong.</p>"
+            }
+          ]
+        },
+        {
+          "id": "ddx",
+          "num": "07",
+          "color": "blue",
+          "title": "Differential Diagnosis",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Mimic",
+                "Key distinguishing features"
+              ],
+              "rows": [
+                [
+                  "Simple supraglottic obstruction (tongue falling back)",
+                  "Resolves promptly with jaw thrust and an oral/nasal airway alone — true laryngospasm does not resolve with positioning adjuncts."
+                ],
+                [
+                  "Bronchospasm",
+                  "Expiratory wheeze rather than inspiratory stridor; obstruction is lower-airway, not glottic; treated with bronchodilators rather than the laryngospasm ladder."
+                ],
+                [
+                  "Foreign body / secretions occluding the airway",
+                  "Suctioning or removal resolves it directly; laryngospasm can co-occur if the material itself is the triggering stimulus."
+                ],
+                [
+                  "Anaphylaxis with airway involvement",
+                  "Accompanied by hypotension, urticaria, or other systemic features; treated with epinephrine, not the airway-deepening ladder."
+                ],
+                [
+                  "Epiglottitis (if awake/pre-induction)",
+                  "Hours-to-days onset, drooling/dysphagia/distress triad — an entirely different, infectious process; do not examine the throat."
+                ],
+                [
+                  "Vocal cord dysfunction / paradoxical vocal fold motion",
+                  "Can mimic laryngospasm in awake or lightly sedated patients; often has a psychogenic or irritant-triggered component and doesn't follow the anesthesia-induction/emergence timing pattern."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "disposition",
+          "num": "08",
+          "color": "teal",
+          "title": "After the Spasm — Complications & Disposition",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p><b>Watch for negative pressure pulmonary edema:</b> forceful inspiratory effort against a closed glottis generates markedly negative intrathoracic pressure, which can pull fluid into the alveoli once the obstruction clears — this can present minutes to a couple of hours after the laryngospasm itself resolves, so don't consider the episode \"closed\" the moment oxygenation normalizes.</p>\n    <p><b>Reintubation/airway support:</b> once broken, support with 100% O₂ and reassess. If the patient was intubated to break the spasm, continued intubation may be appropriate if airway soiling or pulmonary edema occurred, allowing suctioning and lung recruitment before extubation is reattempted.</p>\n    <p><b>Disposition:</b> extended PACU or ICU-level observation after any laryngospasm requiring pharmacologic intervention, specifically to catch delayed negative pressure pulmonary edema and confirm full recovery from any paralytic given.</p>\n    <p><b>Documentation and future anesthetics:</b> record the trigger, the intervention that worked, and the total drug doses given. Recurrent laryngospasm (especially post-tonsillectomy/adenoidectomy patients) may warrant a modified extubation plan or subhypnotic propofol prophylaxis on future anesthetics; genuinely recurrent cases occasionally prompt consideration of superior laryngeal nerve block as an extreme preventive measure.</p>"
+            }
+          ]
+        },
+        {
+          "id": "refs",
+          "num": "09",
+          "color": "amber",
+          "title": "References",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "sources",
+              "items": [
+                {
+                  "tier": "PRIMARY",
+                  "html": "World Federation of Societies of Anaesthesiologists. Update 35: Laryngospasm — simplified management flowchart. resources.wfsahq.org."
+                },
+                {
+                  "tier": "PRIMARY",
+                  "html": "Hampson-Evans D, Morgan P, Farrar M. Pediatric Laryngospasm. <i>Paediatr Anaesth.</i> 2008;18:281–288."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Gavel G, Walker RWM. Laryngospasm in Anaesthesia. <i>Contin Educ Anaesth Crit Care Pain.</i> BJA Education, 2014."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "OpenAnesthesia. \"Laryngospasm.\" openanesthesia.org, updated 2024."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "LITFL. \"Laryngospasm.\" litfl.com, updated 2024."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "First10EM. \"Managing Laryngospasm in the Emergency Department.\" first10em.com."
+                },
+                {
+                  "tier": "CASE DATA",
+                  "html": "Tabata H, et al. Laryngospasm Treated With Intramuscular Rocuronium in a Pediatric Patient Without IV Access. <i>Cureus.</i> 2024."
+                },
+                {
+                  "tier": "CASE DATA",
+                  "html": "Wong AK, et al. Negative Pressure Pulmonary Edema Related to Laryngospasm and Upper Airway Obstruction. <i>PMC case report.</i>"
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Bellolio MF, et al. Incidence of laryngospasm in ED procedural sedation, cited in First10EM synthesis."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 13
+    },
     {
       "id": "acute-transfusion-reactions",
       "type": "protocol",
@@ -68,14 +739,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
-      "color": "teal",
+      "categoryOrder": 2,
+      "color": "purple",
       "description": "AHTR vs. TRALI vs. TACO side-by-side, why TACO and TRALI need opposite fluid strategies, StatPearls/ASH-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -404,7 +1075,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and protocols against your own institutional blood bank policy before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and protocols against your own institutional blood bank policy before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "awareness-under-anesthesia",
@@ -429,14 +1101,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
-      "color": "blue",
+      "categoryOrder": 2,
+      "color": "red",
       "description": "Why post-event benzos can't undo recall, BIS vs. ETAC trial evidence, ASA Practice Advisory-aligned prevention and postop workup.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -709,330 +1381,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event."
-    },
-    {
-      "id": "difficult-failed-airway",
-      "type": "protocol",
-      "file": "CV_Crisis_Difficult_Airway.html",
-      "title": "Difficult & Failed Airway",
-      "kicker": "The Critical Vector · Crisis Management · Anesthesiology / Airway",
-      "subtitle": "The CICO decision tree, why \"wake the patient\" was removed from the emergency pathway, scalpel cricothyrotomy technique, and the assessment tools that predict trouble before you ever pick up a blade.",
-      "badges": [
-        {
-          "color": "red",
-          "text": "ANESTHESIA / AIRWAY EMERGENCY"
-        },
-        {
-          "color": "teal",
-          "text": "ASA 2022 / DAS 2025-ALIGNED"
-        },
-        {
-          "color": "amber",
-          "text": "OXYGENATION > INTUBATION"
-        }
-      ],
-      "category": "anesthesia-perioperative-crises",
-      "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
-      "color": "purple",
-      "description": "CICO decision tree, ASA 2022/DAS 2025-aligned, scalpel cric technique, LEMON/RODS/SHORT assessment tools.",
-      "reviewTier": 2,
-      "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
-      "sections": [
-        {
-          "id": "treatment",
-          "num": "01",
-          "color": "red",
-          "title": "Emergency Management — The Failed Airway Sequence",
-          "tagline": "The decision that matters most is made before the laryngoscope goes in. Once you're in trouble, the goal shifts from \"get the tube\" to \"keep oxygenating\" — the tube can wait.",
-          "blocks": [
-            {
-              "type": "steps",
-              "steps": [
-                {
-                  "num": "1",
-                  "color": "red",
-                  "title": "Declare it and call for help",
-                  "html": "The moment you recognize a failed attempt or failed oxygenation, say so out loud. Most airway deaths occur after the third attempt — task fixation and the \"ego tube\" (pushing repeated attempts instead of pivoting) are the actual killers, not anatomy."
-                },
-                {
-                  "num": "2",
-                  "color": "amber",
-                  "title": "Optimize and reattempt once, with a change",
-                  "html": "Reposition (RAMP/ear-to-sternal-notch in obesity), try a bougie with video laryngoscopy, try a hyperangulated blade — change something rather than repeating the identical attempt. No view at all? Come out and bag."
-                },
-                {
-                  "num": "3",
-                  "color": "teal",
-                  "title": "Can you bag them? — the branch point that matters most",
-                  "html": "Good BVM seal and ventilation present: you have time. Adjust variables, consider a flexible/rigid intubating scope or an intubating SGA. <b>Cannot bag effectively:</b> place a supraglottic airway immediately — SGA placement is the standard next rescue step before jumping to a surgical airway, and restores oxygenation faster than repeated laryngoscopy."
-                },
-                {
-                  "num": "4",
-                  "color": "red",
-                  "title": "SGA also fails to oxygenate → this is CICO, act now",
-                  "html": "Can't Intubate, Can't Oxygenate. This is the true emergency pathway. <b>Do not attempt to \"wake the patient\"</b> — that option was deliberately removed from the 2022 ASA emergency pathway, since a non-patent airway isn't reliably reversible by simply stopping drugs."
-                },
-                {
-                  "num": "5",
-                  "color": "red",
-                  "title": "Surgical cricothyrotomy — the definitive adult rescue",
-                  "html": "Scalpel cricothyrotomy is preferred over needle cricothyrotomy for adult CICO per ASA 2022 / current DAS guidance — needle cric with jet ventilation is temporizing only; CO₂ accumulates fast and it's easy to lose the airway again. <b>Technique:</b> palpate the cricothyroid membrane between thyroid and cricoid cartilage (ultrasound if landmarks are unclear); vertical stab incision, horizontal extension through the membrane, bougie-guided ETT placement — bougie-assisted open technique is fastest to teach and perform under pressure. <b>Pediatrics:</b> no surgical cric under age 8–12 — needle cric only until then."
-                },
-                {
-                  "num": "6",
-                  "color": "amber",
-                  "title": "Watch elapsed time and saturation throughout — not just attempt count",
-                  "html": "The 2022 ASA guidelines emphasize continuous oxygenation and time-awareness over a strict attempt-count rule. \"Three attempts\" isn't a protocol — it's an ego limit. Have your next move planned after attempt one, not after attempt three."
-                }
-              ]
-            },
-            {
-              "type": "alert",
-              "color": "red",
-              "title": "The surgical airway is not a failure — not doing it when you should is",
-              "html": "CICO incidence is low (roughly 0.002–0.04% of general anesthetics) but accounts for a disproportionate share of anesthetic mortality when it happens. Hesitation, not the procedure itself, is what kills people in this scenario."
-            }
-          ]
-        },
-        {
-          "id": "review",
-          "num": "02",
-          "color": "teal",
-          "title": "Brief Review",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "teal",
-              "html": "<p>A difficult airway is any clinical situation where a trained provider experiences difficulty with face mask ventilation, supraglottic airway ventilation, laryngoscopy, intubation, or extubation — the 2022 ASA guidelines explicitly broadened the definition beyond just \"hard to intubate\" to include SGA and extubation problems as well.</p>\n    <p>The truly emergent version — Can't Intubate, Can't Oxygenate (CICO) — occurs in roughly 0.0019–0.04% of cases but represents close to 25% of anesthesia-related mortality, making it the most common lethal respiratory emergency in perioperative practice. The problem is almost never that the anatomy was impossible; it's that the failure to oxygenate wasn't recognized and acted on quickly enough.</p>"
-            }
-          ]
-        },
-        {
-          "id": "signs",
-          "num": "03",
-          "color": "amber",
-          "title": "Predicting the Ugly — Assessment Tools",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "table",
-              "headers": [
-                "Tool",
-                "What it screens for"
-              ],
-              "rows": [
-                [
-                  "LEMON",
-                  "<b>L</b>ook externally · <b>E</b>valuate 3-3-2 (3 finger-breadths mouth opening, 3 chin-to-hyoid, 2 hyoid-to-thyroid notch) · <b>M</b>allampati · <b>O</b>bstruction · <b>N</b>eck mobility — the core difficult-laryngoscopy screen."
-                ],
-                [
-                  "RODS",
-                  "<b>R</b>estricted mouth opening · <b>O</b>bstruction · <b>D</b>istorted airway · <b>S</b>tiff lungs/cervical spine — predicts difficult supraglottic airway ventilation specifically."
-                ],
-                [
-                  "SHORT",
-                  "<b>S</b>urgery (prior neck surgery/radiation changes anatomy) · <b>H</b>ematoma · <b>O</b>besity · <b>R</b>adiation · <b>T</b>umor — predicts a difficult surgical airway, worth assessing even when you don't expect to need one."
-                ],
-                [
-                  "Physiologic predictors",
-                  "Hypoxemia, hypotension, and metabolic acidosis predict a bad outcome on induction independent of anatomy — \"the crash.\" A physiologically hostile patient can die on induction with a perfectly normal-looking airway."
-                ]
-              ]
-            },
-            {
-              "type": "xref",
-              "html": "<b>The ugly airway is usually ugly before you touch it — look harder.</b> Trauma-specific red flags: blood in the oropharynx, restricted mouth opening, an expanding neck hematoma (the airway you see now may not be the airway in 10 minutes — Zone II penetrating trauma with a growing hematoma means the surgical airway decision comes earlier than feels comfortable)."
-            }
-          ]
-        },
-        {
-          "id": "prevention",
-          "num": "04",
-          "color": "blue",
-          "title": "Plan Before You Touch the Patient (In Place of \"Room Setup\")",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "blue",
-              "html": "<ul>\n      <li><b>Name your primary, backup, and bailout before induction — all three, every time.</b> If you don't have a bailout, you don't have a plan. Know explicitly who performs the surgical airway and under what trigger.</li>\n      <li><b>Consider awake intubation</b> when difficulty is anticipated plus any of: known/suspected difficult airway on exam, high aspiration risk, poor tolerance of an apneic period, or a predicted CICO scenario — awake technique carries far lower risk than inducing first and finding out.</li>\n      <li><b>Difficult airway cart immediately available</b> and stocked: video laryngoscope, bougie, multiple SGA sizes, surgical airway kit, and the cricothyroid membrane marked/identified in advance (palpation, or ultrasound if landmarks are unclear) for any anticipated-difficult case.</li>\n      <li><b>Preoxygenate as treatment, not prep</b> — see Numbers to Know below. A 100% SpO₂ on the monitor is a margin, not a guarantee; it reflects reservoir oxygen, not whether the airway is currently patent.</li>\n      <li><b>Use nasal cannula apneic oxygenation during laryngoscopy</b> (15 L/min, Levitan's NODESAT technique) — low-cost, no-harm, use it routinely. Evidence for meaningful benefit is stronger in healthy well-preoxygenated patients than in critically ill ones (the FELLOW trial showed no benefit in ICU patients specifically) — treat it as a helpful adjunct, not a substitute for real preoxygenation.</li>\n      <li><b>State the difficult-airway status explicitly during time-out</b>, and document the specific findings (grade of view, device that worked, number of attempts) in the chart for every future anesthetic.</li>\n    </ul>"
-            }
-          ]
-        },
-        {
-          "id": "numbers",
-          "num": "05",
-          "color": "teal",
-          "title": "Numbers to Know (In Place of \"Labs\")",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "table",
-              "headers": [
-                "Parameter",
-                "Value / significance"
-              ],
-              "rows": [
-                [
-                  "Nitrogen washout preoxygenation",
-                  "Tight-seal BVM at 15 L/min for 3–5 minutes replaces alveolar nitrogen with O₂ — roughly 3,000 mL of O₂ reservoir in the lungs vs. ~450 mL on room air. This is the actual intervention that extends safe apnea time, not the pulse ox reading."
-                ],
-                [
-                  "Apneic oxygenation (NODESAT)",
-                  "Nasal cannula at 15 L/min left running through laryngoscopy. Extends safe apnea time in healthy, well-preoxygenated patients; benefit not demonstrated in critically ill ICU populations (FELLOW trial). Use it — it doesn't replace nitrogen washout."
-                ],
-                [
-                  "CICO incidence",
-                  "~0.0019–0.04% of general anesthetics — rare per case, but accounts for a large share of airway-related mortality when it occurs."
-                ],
-                [
-                  "Cannot-oxygenate share of anesthetic mortality",
-                  "Roughly 25% — the single most common lethal respiratory emergency in perioperative medicine."
-                ],
-                [
-                  "Attempt-time discipline",
-                  "No fixed number of attempts is \"the rule\" — the 2022 ASA guidance emphasizes continuous awareness of elapsed time and oxygen saturation over any specific attempt count. Most airway deaths occur after the third attempt because providers keep trying the same thing instead of escalating."
-                ],
-                [
-                  "Post-intubation tidal volume",
-                  "6–8 mL/kg <b>ideal body weight</b>, not actual weight — obese patients have the same lung, bigger body; dosing on actual weight risks volutrauma."
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "id": "rationale",
-          "num": "06",
-          "color": "purple",
-          "title": "Rationale for Airway Management Decisions",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "purple",
-              "html": "<p><b>Why \"wake the patient\" was removed from the emergency pathway:</b> the option assumes that stopping drugs restores a patent airway and spontaneous ventilation quickly enough to prevent hypoxic injury. In a true CICO scenario the airway itself may not be patent regardless of anesthetic depth, so waiting for the patient to wake up wastes the exact time that oxygenation rescue needs. The non-emergency pathway (can ventilate, can't intubate) still reasonably includes waking the patient as an option — the distinction is whether oxygenation, not just intubation, has failed.</p>\n    <p><b>Why oxygenation is monitored separately from intubation success:</b> pulse oximetry reflects the oxygen already bound to hemoglobin and stored in a preoxygenated lung — it can stay reassuring for a period of time after the airway has actually become non-patent. Treating SpO₂ as a real-time \"is the airway open\" signal is a common and dangerous misread; it's a lagging indicator, not a live one.</p>\n    <p><b>Why SGA rescue comes before surgical airway, but doesn't delay it if it fails:</b> supraglottic airway placement restores oxygenation faster than repeated laryngoscopy attempts and is successful in the large majority of \"can't intubate\" scenarios, which is why it's the standard next step. But if it doesn't restore oxygenation, that failure defines true CICO — the moment SGA also fails, further attempts at anything other than a surgical airway are wasting the same limited oxygen reserve that killed the \"wake the patient\" option above.</p>\n    <p><b>Why scalpel cricothyrotomy is preferred over needle cric in adults:</b> needle techniques with jet ventilation are genuinely temporizing — CO₂ clearance is poor, barotrauma risk is real, and the airway can be lost again quickly. A scalpel-bougie-tube approach delivers a cuffed, definitive airway in comparable or faster time in trained hands, which is why current guidelines designate it the preferred adult CICO rescue rather than a last resort.</p>\n    <p><b>Why nitrogen washout matters more than people give it credit for:</b> a \"100% SpO₂\" on a patient who was only briefly preoxygenated with a loose mask seal still has a small functional oxygen reserve, because most of the reservoir gain comes from actually displacing alveolar nitrogen with oxygen over several minutes of tight-seal breathing — not from the number on the monitor at the moment of induction.</p>"
-            }
-          ]
-        },
-        {
-          "id": "ddx",
-          "num": "07",
-          "color": "blue",
-          "title": "Differential Diagnosis — Airway-Threatening Swelling",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "table",
-              "headers": [
-                "Condition",
-                "Key distinguishing features"
-              ],
-              "rows": [
-                [
-                  "Anaphylaxis",
-                  "IgE-mediated, fast onset (minutes), systemic — skin, cardiovascular, and airway together. Epinephrine 0.3–0.5 mg IM (adult) is first-line and works well."
-                ],
-                [
-                  "Angioedema — allergic (mast-cell mediated)",
-                  "Slower onset than anaphylaxis but faster than HAE; airway edema without the full systemic pattern; responds to epinephrine/antihistamines similarly to anaphylaxis."
-                ],
-                [
-                  "Angioedema — hereditary (HAE) or ACE-inhibitor-induced",
-                  "Bradykinin-mediated, not histamine-mediated. Slow onset over hours. Airway edema dominant, <b>no hives</b>, no hypotension. Epinephrine may slow it but does <b>not</b> reverse it — definitive treatment is C1-esterase inhibitor concentrate or icatibant, both hospital-level."
-                ],
-                [
-                  "Epiglottitis",
-                  "Bacterial (H. influenzae, S. aureus), onset over hours to days. Classic triad: drooling, dysphagia, distress (\"tripod\" positioning). <b>Do not examine the throat</b> or force the patient supine — either can trigger complete obstruction. Position of comfort, transport to a controlled airway setting (OR)."
-                ],
-                [
-                  "Peritonsillar / retropharyngeal abscess",
-                  "Trismus, muffled \"hot potato\" voice, unilateral tonsillar deviation (peritonsillar) — differentiate from diffuse angioedema by the asymmetric, localized exam finding."
-                ],
-                [
-                  "Expanding neck hematoma (post-surgical or traumatic)",
-                  "Clear temporal link to a procedure or trauma mechanism; progressive, exam-visible swelling rather than diffuse edema — decompression (opening the wound at bedside if post-surgical) may be needed before any airway attempt."
-                ]
-              ]
-            },
-            {
-              "type": "xref",
-              "html": "<b>The voice is an early warning most people miss.</b> A muffled, \"hot potato\" voice quality in an ambulatory, normally-saturating patient reflects airway narrowing before saturation ever drops — by the time SpO₂ falls or stridor appears, the window to secure the airway electively may already be closing."
-            }
-          ]
-        },
-        {
-          "id": "disposition",
-          "num": "08",
-          "color": "teal",
-          "title": "After the Tube — Confirmation & Disposition",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "teal",
-              "html": "<p><b>Confirmation:</b> waveform capnography is the only reliable confirmation of correct tube placement — pulse oximetry and chest rise are not sufficient on their own. Loss of the waveform at any point should be treated as a displaced tube until proven otherwise, not an equipment glitch.</p>\n    <p><b>Depth and positioning:</b> mark and document tube depth at the teeth/lips, confirm bilateral breath sounds — right mainstem intubation is a common and easy-to-miss complication, especially after a rushed attempt in a bloody or distorted airway.</p>\n    <p><b>Post-intubation sedation:</b> a paralyzed, unsedated patient is a sentinel event — plan sedation before the paralytic wears off, not after. Reasonable options: ketamine infusion, midazolam plus fentanyl, or propofol if hemodynamically stable.</p>\n    <p><b>Disposition:</b> ICU-level monitoring for any difficult or failed airway case, regardless of how the eventual airway was secured. Do not extubate a documented difficult airway in an uncontrolled setting — plan extubation as deliberately as the original intubation, ideally with the same difficult-airway equipment immediately available.</p>\n    <p><b>Documentation:</b> record the specific difficulty encountered, what worked, what didn't, and grade of view — this becomes the single most valuable piece of information for every subsequent anesthetic this patient ever has.</p>"
-            }
-          ]
-        },
-        {
-          "id": "refs",
-          "num": "09",
-          "color": "amber",
-          "title": "References",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "sources",
-              "items": [
-                {
-                  "tier": "PRIMARY",
-                  "html": "Apfelbaum JL, Hagberg CA, Connis RT, et al. 2022 American Society of Anesthesiologists Practice Guidelines for Management of the Difficult Airway. <i>Anesthesiology.</i> 2022;136(1):31–81."
-                },
-                {
-                  "tier": "PRIMARY",
-                  "html": "Difficult Airway Society. 2025 Guidelines for Management of Unanticipated Difficult Intubation in Adults. das.uk.com."
-                },
-                {
-                  "tier": "GUIDELINE",
-                  "html": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 Guidelines for Management of Unanticipated Difficult Intubation in Adults. <i>Br J Anaesth.</i> 2015;115(6):827–848."
-                },
-                {
-                  "tier": "EVIDENCE",
-                  "html": "Semler MW, et al. (FELLOW Trial) Randomized Trial of Apneic Oxygenation During Endotracheal Intubation of the Critically Ill. <i>Am J Respir Crit Care Med.</i> 2016;193(3):273–280."
-                },
-                {
-                  "tier": "EVIDENCE",
-                  "html": "Weingart SD, Levitan RM. Preoxygenation and Prevention of Desaturation During Emergency Airway Management. <i>Ann Emerg Med.</i> 2012;59(3):165–175."
-                },
-                {
-                  "tier": "EVIDENCE",
-                  "html": "Driver BE, et al. Effect of Use of a Bougie vs Endotracheal Tube on First-Attempt Intubation Success. <i>JAMA.</i> 2018;319(21):2179–2189."
-                },
-                {
-                  "tier": "REFERENCE",
-                  "html": "Brown CA III, Sakles JC, Mick NW. <i>The Walls Manual of Emergency Airway Management,</i> 5th ed. Wolters Kluwer; 2018."
-                },
-                {
-                  "tier": "REFERENCE",
-                  "html": "NYSORA. \"Difficult Airway Management.\" nysora.com, updated 2026."
-                },
-                {
-                  "tier": "INTERNAL",
-                  "html": "\"Blade, Backup, Bailout\" — A. Peace, EMS Expo teaching deck (NM EMS SOP-referenced field content, cross-checked against ASA/DAS above)."
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and technique against your own institutional protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event.",
+      "entryOrder": 50
     },
     {
       "id": "fat-embolism-syndrome",
@@ -1057,14 +1407,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
-      "color": "red",
+      "categoryOrder": 2,
+      "color": "amber",
       "description": "Gurd and Wilson criteria, supportive-care-only management, cerebral fat embolism as the easy-to-miss isolated-neuro variant.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -1369,353 +1719,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event."
-    },
-    {
-      "id": "laryngospasm",
-      "type": "protocol",
-      "file": "CV_Crisis_Laryngospasm.html",
-      "title": "Laryngospasm",
-      "kicker": "The Critical Vector · Crisis Management · Anesthesiology / Airway",
-      "subtitle": "A protective reflex turned airway emergency — the escalation ladder from jaw thrust to succinylcholine, why the low-dose route is usually the right one, and the complication that shows up after you've already broken the spasm.",
-      "badges": [
-        {
-          "color": "red",
-          "text": "AIRWAY EMERGENCY"
-        },
-        {
-          "color": "teal",
-          "text": "WFSA-ALIGNED"
-        },
-        {
-          "color": "amber",
-          "text": "23% NOT OBVIOUS"
-        }
-      ],
-      "category": "anesthesia-perioperative-crises",
-      "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
-      "color": "amber",
-      "description": "Escalation ladder from jaw thrust to succinylcholine, WFSA-aligned dosing, negative pressure pulmonary edema as the delayed complication.",
-      "reviewTier": 1,
-      "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-22",
-      "lastVerifiedIsInferred": false,
-      "reviewDue": "2027-03-22",
-      "sections": [
-        {
-          "id": "treatment",
-          "num": "01",
-          "color": "red",
-          "title": "Emergency Management — The Escalation Ladder",
-          "tagline": "Most laryngospasm resolves with the first two steps. Escalate quickly if it doesn't — hypoxia plus a paralytic is a dangerous combination if the airway still isn't secured.",
-          "blocks": [
-            {
-              "type": "steps",
-              "steps": [
-                {
-                  "num": "1",
-                  "color": "red",
-                  "title": "Stop the stimulus, call for help",
-                  "html": "Remove the triggering stimulus if one is identifiable (suction catheter, surgical stimulation, extubation timing). Get another set of hands — this escalates fast if it doesn't break quickly."
-                },
-                {
-                  "num": "2",
-                  "color": "amber",
-                  "title": "Jaw thrust / Larson's maneuver + CPAP with 100% O₂",
-                  "html": "Firm jaw thrust at the \"laryngospasm notch\" — bilateral pressure behind the ramus of the mandible, anterior to the mastoid process. Simultaneously apply CPAP via tight-seal BVM with a PEEP valve. Avoid vigorous positive-pressure ventilation attempts — forceful bagging against a closed glottis risks gastric insufflation. Larson's maneuver has limited controlled evidence behind it, but it's low-risk and widely used as first response."
-                },
-                {
-                  "num": "3",
-                  "color": "teal",
-                  "title": "Clear the airway, deepen anesthesia",
-                  "html": "Suction the pharynx if blood or secretions are contributing. If not already breaking: propofol <span class=\"d\">0.5–0.8 mg/kg IV</span> (subhypnotic doses as low as <span class=\"d\">0.25 mg/kg</span> have been effective) — deepens anesthesia and relaxes upper airway tissue without the full apnea burden of a paralytic."
-                },
-                {
-                  "num": "4",
-                  "color": "red",
-                  "title": "Desaturating or no response — succinylcholine",
-                  "html": "Low dose often sufficient to break the spasm: <span class=\"d\">0.1–0.2 mg/kg IV</span> (full paralysis in 30–45 sec, breaks spasm in 45 sec–1 min). Severe/refractory: full dose <span class=\"d\">1–1.5 mg/kg IV</span> and proceed to intubation. <b>No IV access:</b> succinylcholine <span class=\"d\">4 mg/kg IM</span> (onset slower, roughly 3–4 minutes) or <span class=\"d\">2 mg/kg intralingual</span> (IM into the tongue body — retains perfusion better than peripheral muscle during hypoxia, but carries a high rate of transient arrhythmia). Rocuronium <span class=\"d\">1.2 mg/kg IV</span> is a reasonable alternative if succinylcholine is contraindicated."
-                },
-                {
-                  "num": "5",
-                  "color": "amber",
-                  "title": "Treat bradycardia if it develops",
-                  "html": "Airway manipulation and succinylcholine can both provoke bradycardia/arrest in a hypoxic patient, especially children. Correct hypoxia urgently and give atropine <span class=\"d\">0.02 mg/kg</span> for symptomatic bradycardia."
-                },
-                {
-                  "num": "6",
-                  "color": "blue",
-                  "title": "Intubate if the spasm doesn't break",
-                  "html": "Forced orotracheal intubation, even through partially closed cords if necessary, rescues the airway — some vocal cord trauma is an acceptable trade for hypoxic arrest. Laryngospasm is often followed by a brief gasp; that moment can be your window to pass the tube."
-                },
-                {
-                  "num": "7",
-                  "color": "purple",
-                  "title": "Surgical airway — last resort",
-                  "html": "Cricothyrotomy/tracheostomy only if intubation also fails and oxygenation cannot otherwise be restored — same CICO logic as any other failed airway."
-                }
-              ]
-            },
-            {
-              "type": "alert",
-              "color": "amber",
-              "title": "Not always obvious",
-              "html": "Roughly 23% of laryngospasm cases don't present with the classic high-pitched crowing sound — some present only as increasing work of breathing, paradoxical chest movement, or desaturation without any audible warning. Suspect it whenever airway obstruction appears without an obvious supraglottic cause."
-            }
-          ]
-        },
-        {
-          "id": "review",
-          "num": "02",
-          "color": "teal",
-          "title": "Brief Review",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "teal",
-              "html": "<p>Laryngospasm is an exaggeration of the normal protective glottic-closure reflex — sustained closure of the true (and often false) vocal cords that partially or completely obstructs the airway. Sensory input runs through the internal branch of the superior laryngeal nerve; the motor response is mediated by the recurrent laryngeal nerve driving the intrinsic laryngeal muscles. It occurs most often during induction and emergence from general anesthesia, though it's also described during procedural sedation and, rarely, in the awake state.</p>\n    <p>It's a relatively common perioperative event, more frequent in children than adults — pediatric procedural sedation series report roughly 3.9 per 1,000 cases versus about 1.1 per 1,000 in adults, and the large majority of reported cases involve ketamine sedation specifically.</p>"
-            }
-          ]
-        },
-        {
-          "id": "signs",
-          "num": "03",
-          "color": "amber",
-          "title": "Signs and Symptoms",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "table",
-              "headers": [
-                "Finding",
-                "Notes"
-              ],
-              "rows": [
-                [
-                  "High-pitched inspiratory stridor (\"crowing\")",
-                  "Classic warning sign of partial laryngospasm — but absent in a meaningful minority of cases."
-                ],
-                [
-                  "Complete, silent obstruction",
-                  "No audible sound at all once the cords fully close — the most dangerous presentation because it's easy to miss initially."
-                ],
-                [
-                  "Increased work of breathing",
-                  "Tracheal tug, suprasternal/intercostal indrawing."
-                ],
-                [
-                  "Paradoxical respiratory effort",
-                  "Chest and abdomen moving in opposite directions (\"see-saw\" breathing) against an obstructed airway."
-                ],
-                [
-                  "Desaturation ± bradycardia",
-                  "Bradycardia in this setting is usually hypoxia-driven — correcting oxygenation is the primary fix, not atropine alone."
-                ],
-                [
-                  "Airway obstruction unresponsive to an oral airway",
-                  "Distinguishes true laryngospasm from simple supraglottic (tongue-based) obstruction, which typically resolves with an OPA and jaw thrust alone."
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "id": "prevention",
-          "num": "04",
-          "color": "blue",
-          "title": "Risk Factors & Prevention (In Place of \"Room Setup\")",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "blue",
-              "html": "<ul>\n      <li><b>Patient factors:</b> young age (children, especially infants), airway hypersensitivity, recent upper respiratory tract infection, passive or active smoke exposure, obesity with obstructive sleep apnea, GERD, structural airway anomaly.</li>\n      <li><b>Anesthetic/procedural factors:</b> light plane of anesthesia during airway manipulation, blood/secretions/gastric contents irritating the cords, laryngoscopy or suction catheter stimulation, extubation during a light (\"stage 2\") plane of anesthesia — a well-recognized higher-risk moment.</li>\n      <li><b>Prevention strategies:</b> IV propofol induction rather than inhalational induction in children reduces risk; IV lidocaine or magnesium sulfate given prophylactically has supporting evidence in at-risk cases; extubating either fully awake or fully deep (not in between) avoids the highest-risk light plane; suctioning and clearing the airway thoroughly before extubation reduces stimulus load.</li>\n      <li><b>Have the ladder ready before extubating a higher-risk patient:</b> propofol drawn up, succinylcholine dose calculated and available, difficult airway equipment nearby — treat any extubation in a known at-risk patient the way you'd treat a planned difficult airway.</li>\n    </ul>"
-            }
-          ]
-        },
-        {
-          "id": "numbers",
-          "num": "05",
-          "color": "teal",
-          "title": "Drug Doses — Numbers to Know (In Place of \"Labs\")",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "table",
-              "headers": [
-                "Drug / route",
-                "Dose",
-                "Notes"
-              ],
-              "rows": [
-                [
-                  "Propofol IV",
-                  "0.5–0.8 mg/kg (subhypnotic doses ~0.25 mg/kg reported effective)",
-                  "First pharmacologic step if positioning/CPAP alone doesn't break it; deepens anesthesia without full paralysis."
-                ],
-                [
-                  "Succinylcholine IV, low dose",
-                  "0.1–0.2 mg/kg",
-                  "Often sufficient to break the spasm alone; full paralysis in 30–45 sec."
-                ],
-                [
-                  "Succinylcholine IV, full dose",
-                  "1–1.5 mg/kg",
-                  "Use for severe/refractory spasm; proceed directly to intubation."
-                ],
-                [
-                  "Succinylcholine IM",
-                  "4 mg/kg",
-                  "No IV access; onset markedly slower (~3–4 min) than IV routes."
-                ],
-                [
-                  "Succinylcholine intralingual (IM into tongue)",
-                  "2 mg/kg",
-                  "Faster onset than peripheral IM since tongue retains perfusion better during hypoxia; high rate (&gt;50%) of transient arrhythmia reported."
-                ],
-                [
-                  "Rocuronium IV",
-                  "1.2 mg/kg",
-                  "Alternative if succinylcholine contraindicated; longer duration of action."
-                ],
-                [
-                  "Rocuronium IM (case-report level evidence)",
-                  "~1.0 mg/kg",
-                  "Reported successful when no IV access and succinylcholine unavailable — not first-line, but a documented rescue option."
-                ],
-                [
-                  "Atropine",
-                  "0.02 mg/kg",
-                  "For symptomatic bradycardia during airway manipulation/succinylcholine administration."
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "id": "rationale",
-          "num": "06",
-          "color": "purple",
-          "title": "Rationale for Laryngospasm Management Steps",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "purple",
-              "html": "<p><b>Why deepen anesthesia before reaching for a paralytic:</b> laryngospasm is fundamentally a reflex problem — the cords are closing in response to a stimulus interpreted as threatening. Deepening anesthesia with propofol reduces the reflex arc's sensitivity directly, often resolving the spasm without the apnea and full recovery time a paralytic requires. It's the lower-risk intervention and is tried first whenever the patient isn't yet critically hypoxic.</p>\n    <p><b>Why low-dose succinylcholine is often enough:</b> the goal isn't full surgical paralysis — it's relaxing the intrinsic laryngeal muscles enough to break the spasm. A fractional dose (0.1–0.2 mg/kg) frequently accomplishes this while preserving some respiratory drive and shortening total recovery time compared to a full RSI dose, which is why experienced anesthesia providers often reach for the low dose before escalating.</p>\n    <p><b>Why avoid vigorous bag-mask ventilation attempts:</b> forcing positive pressure against a closed or partially closed glottis pushes air into the stomach instead of the lungs, distending it and increasing aspiration risk without improving oxygenation — CPAP (steady pressure, not forceful bagging) is the correct technique while waiting for pharmacologic treatment to work.</p>\n    <p><b>Why the tongue is used for IM injection when there's no IV:</b> peripheral skeletal muscle perfusion drops significantly during hypoxia and shock, slowing drug uptake from a standard IM injection exactly when speed matters most. The tongue retains relatively better blood flow under those conditions, which is the physiologic basis for intralingual succinylcholine as a faster-acting alternative to a deltoid or thigh injection — at the cost of a higher reported arrhythmia rate.</p>\n    <p><b>Why Larson's maneuver persists in every algorithm despite weak evidence:</b> the proposed mechanism is that firm, painful pressure at the laryngospasm notch triggers vocal cord relaxation via a pain-mediated autonomic reflex — plausible, widely taught, and low-risk to attempt, but it has never been validated in a controlled trial. It's kept in the sequence because it costs nothing to try while CPAP and repositioning are already underway, not because the evidence is strong.</p>"
-            }
-          ]
-        },
-        {
-          "id": "ddx",
-          "num": "07",
-          "color": "blue",
-          "title": "Differential Diagnosis",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "table",
-              "headers": [
-                "Mimic",
-                "Key distinguishing features"
-              ],
-              "rows": [
-                [
-                  "Simple supraglottic obstruction (tongue falling back)",
-                  "Resolves promptly with jaw thrust and an oral/nasal airway alone — true laryngospasm does not resolve with positioning adjuncts."
-                ],
-                [
-                  "Bronchospasm",
-                  "Expiratory wheeze rather than inspiratory stridor; obstruction is lower-airway, not glottic; treated with bronchodilators rather than the laryngospasm ladder."
-                ],
-                [
-                  "Foreign body / secretions occluding the airway",
-                  "Suctioning or removal resolves it directly; laryngospasm can co-occur if the material itself is the triggering stimulus."
-                ],
-                [
-                  "Anaphylaxis with airway involvement",
-                  "Accompanied by hypotension, urticaria, or other systemic features; treated with epinephrine, not the airway-deepening ladder."
-                ],
-                [
-                  "Epiglottitis (if awake/pre-induction)",
-                  "Hours-to-days onset, drooling/dysphagia/distress triad — an entirely different, infectious process; do not examine the throat."
-                ],
-                [
-                  "Vocal cord dysfunction / paradoxical vocal fold motion",
-                  "Can mimic laryngospasm in awake or lightly sedated patients; often has a psychogenic or irritant-triggered component and doesn't follow the anesthesia-induction/emergence timing pattern."
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "id": "disposition",
-          "num": "08",
-          "color": "teal",
-          "title": "After the Spasm — Complications & Disposition",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "box",
-              "color": "teal",
-              "html": "<p><b>Watch for negative pressure pulmonary edema:</b> forceful inspiratory effort against a closed glottis generates markedly negative intrathoracic pressure, which can pull fluid into the alveoli once the obstruction clears — this can present minutes to a couple of hours after the laryngospasm itself resolves, so don't consider the episode \"closed\" the moment oxygenation normalizes.</p>\n    <p><b>Reintubation/airway support:</b> once broken, support with 100% O₂ and reassess. If the patient was intubated to break the spasm, continued intubation may be appropriate if airway soiling or pulmonary edema occurred, allowing suctioning and lung recruitment before extubation is reattempted.</p>\n    <p><b>Disposition:</b> extended PACU or ICU-level observation after any laryngospasm requiring pharmacologic intervention, specifically to catch delayed negative pressure pulmonary edema and confirm full recovery from any paralytic given.</p>\n    <p><b>Documentation and future anesthetics:</b> record the trigger, the intervention that worked, and the total drug doses given. Recurrent laryngospasm (especially post-tonsillectomy/adenoidectomy patients) may warrant a modified extubation plan or subhypnotic propofol prophylaxis on future anesthetics; genuinely recurrent cases occasionally prompt consideration of superior laryngeal nerve block as an extreme preventive measure.</p>"
-            }
-          ]
-        },
-        {
-          "id": "refs",
-          "num": "09",
-          "color": "amber",
-          "title": "References",
-          "tagline": null,
-          "blocks": [
-            {
-              "type": "sources",
-              "items": [
-                {
-                  "tier": "PRIMARY",
-                  "html": "World Federation of Societies of Anaesthesiologists. Update 35: Laryngospasm — simplified management flowchart. resources.wfsahq.org."
-                },
-                {
-                  "tier": "PRIMARY",
-                  "html": "Hampson-Evans D, Morgan P, Farrar M. Pediatric Laryngospasm. <i>Paediatr Anaesth.</i> 2008;18:281–288."
-                },
-                {
-                  "tier": "GUIDELINE",
-                  "html": "Gavel G, Walker RWM. Laryngospasm in Anaesthesia. <i>Contin Educ Anaesth Crit Care Pain.</i> BJA Education, 2014."
-                },
-                {
-                  "tier": "REFERENCE",
-                  "html": "OpenAnesthesia. \"Laryngospasm.\" openanesthesia.org, updated 2024."
-                },
-                {
-                  "tier": "REFERENCE",
-                  "html": "LITFL. \"Laryngospasm.\" litfl.com, updated 2024."
-                },
-                {
-                  "tier": "REFERENCE",
-                  "html": "First10EM. \"Managing Laryngospasm in the Emergency Department.\" first10em.com."
-                },
-                {
-                  "tier": "CASE DATA",
-                  "html": "Tabata H, et al. Laryngospasm Treated With Intramuscular Rocuronium in a Pediatric Patient Without IV Access. <i>Cureus.</i> 2024."
-                },
-                {
-                  "tier": "CASE DATA",
-                  "html": "Wong AK, et al. Negative Pressure Pulmonary Edema Related to Laryngospasm and Upper Airway Obstruction. <i>PMC case report.</i>"
-                },
-                {
-                  "tier": "REFERENCE",
-                  "html": "Bellolio MF, et al. Incidence of laryngospasm in ED procedural sedation, cited in First10EM synthesis."
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event.",
+      "entryOrder": 50
     },
     {
       "id": "local-anesthetic-systemic-toxicity",
@@ -1740,14 +1745,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "teal",
       "description": "ASRA 2020 lipid emulsion protocol, modified ACLS, max doses by agent, prevention during regional blocks.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-08",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "treatment",
@@ -2050,7 +2055,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "malignant-hyperthermia",
@@ -2075,14 +2081,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "blue",
       "description": "RYR1-mediated hypermetabolic crisis. Dantrolene, room setup for the susceptible patient, genetics, recrudescence.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-03",
       "sections": [
         {
           "id": "treatment",
@@ -2439,7 +2445,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or MHAUS consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or MHAUS consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "negative-pressure-pulmonary-edema",
@@ -2464,14 +2471,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "purple",
       "description": "Post-extubation laryngospasm's downstream complication, hydrostatic mechanism, why diuretics stay contested. Linked to the Laryngospasm file.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-22",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "treatment",
@@ -2764,7 +2771,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify management choices, particularly around diuretic use, against your own institutional protocol."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify management choices, particularly around diuretic use, against your own institutional protocol.",
+      "entryOrder": 50
     },
     {
       "id": "perioperative-anaphylaxis",
@@ -2789,7 +2797,7 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "red",
       "description": "NMBA/latex/chlorhexidine triggers, tryptase timing, epinephrine dosing by severity, risk-stratified observation.",
       "reviewTier": 1,
@@ -3085,7 +3093,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "severe-intraoperative-bronchospasm",
@@ -3110,7 +3119,7 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "amber",
       "description": "Mechanical-cause rule-out, stepwise inhaled-to-IV escalation, dynamic hyperinflation as the hidden hemodynamic threat.",
       "reviewTier": 1,
@@ -3433,7 +3442,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "total-high-spinal",
@@ -3458,14 +3468,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "teal",
       "description": "Four-stage ascending recognition, \"spinal after epidural\" as the classic setup, airway/hemodynamic support, NYSORA/WFSA-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-21",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "treatment",
@@ -3758,7 +3768,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "turp-syndrome",
@@ -3783,7 +3794,7 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "blue",
       "description": "Acute hyponatremia treated fast on purpose, glycine CNS toxicity, hypertonic saline dosing, TURis/saline hyperchloremic acidosis variant.",
       "reviewTier": 1,
@@ -4101,7 +4112,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and correction targets against your own institutional protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and correction targets against your own institutional protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "venous-air-embolism",
@@ -4126,14 +4138,14 @@
       ],
       "category": "anesthesia-perioperative-crises",
       "categoryLabel": "Anesthesia & Perioperative Crises",
-      "categoryOrder": 1,
+      "categoryOrder": 2,
       "color": "purple",
       "description": "Durant maneuver, precordial Doppler detection, PEEP's paradoxical-embolism trade-off, UpToDate/StatPearls-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-21",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "treatment",
@@ -4450,7 +4462,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and thresholds against your own institutional protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and thresholds against your own institutional protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "acls-quick-reference",
@@ -4475,14 +4488,14 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "red",
       "description": "The algorithm backbone every other file in this category plugs into — 2025 AHA drug timing, CPR quality, H's and T's each linked to its own deep dive.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-08",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "treatment",
@@ -4797,7 +4810,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "hyperkalemic-cardiac-arrest",
@@ -4822,14 +4836,14 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "amber",
       "description": "Calcium-shift-eliminate sequence, why arrest duration should be longer here, insulin-before-albuterol ordering. ILCOR 2025/AHA-aligned.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-22",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "treatment",
@@ -5152,7 +5166,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "peri-arrest-pulmonary-embolism",
@@ -5177,7 +5192,7 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "teal",
       "description": "Full-dose lysis in arrest vs. half-dose peri-arrest, echo-guided redosing, why CPR isn't a contraindication. 2026 AHA/ACC PE guideline-aligned.",
       "reviewTier": 1,
@@ -5485,7 +5500,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "pericardial-tamponade",
@@ -5510,14 +5526,14 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "blue",
       "description": "Beck's triad present in only 10–40% of cases, \"last-drop\" pressure-volume curve, needle vs. surgical drainage decision. StatPearls/AMBOSS-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -5824,7 +5840,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique against your own institutional protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique against your own institutional protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "perioperative-cardiac-arrest",
@@ -5849,7 +5866,7 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "purple",
       "description": "PeRLS 2025-aligned, OR-specific reversible causes in place of the standard H's and T's, early ECMO escalation, rhythm-specific notes.",
       "reviewTier": 1,
@@ -6191,7 +6208,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. For trigger-specific detail, see the dedicated MH, LAST, Anaphylaxis, VAE, Total/High Spinal, and Massive Transfusion Protocol crisis files."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. For trigger-specific detail, see the dedicated MH, LAST, Anaphylaxis, VAE, Total/High Spinal, and Massive Transfusion Protocol crisis files.",
+      "entryOrder": 50
     },
     {
       "id": "refractory-vfpvt-ecpr",
@@ -6216,14 +6234,14 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "red",
       "description": "Vector change vs. DSED, why ERC won't recommend DSED despite positive trial data, low-flow time as the real ECPR clock. ERC 2025/ELSO-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -6550,7 +6568,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. ECPR requires an established institutional program — verify local activation criteria and capability before applying this framework."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. ECPR requires an established institutional program — verify local activation criteria and capability before applying this framework.",
+      "entryOrder": 50
     },
     {
       "id": "tension-pneumothorax",
@@ -6575,14 +6594,14 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "amber",
       "description": "2nd ICS-MCL vs 5th ICS-MAL site debate, finger thoracostomy vs needle, why nitrous oxide worsens it. StatPearls/NAEMSP-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -6893,7 +6912,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and site selection against your own institutional/EMS protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and site selection against your own institutional/EMS protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "torsades-de-pointes",
@@ -6918,7 +6938,7 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "teal",
       "description": "Magnesium works regardless of serum level, overdrive pacing/isoproterenol, why amiodarone is contraindicated here. 2017 AHA/ACC/HRS-aligned.",
       "reviewTier": 1,
@@ -7228,7 +7248,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "traumatic-cardiac-arrest",
@@ -7253,14 +7274,14 @@
       ],
       "category": "resuscitation-acls-adjacent",
       "categoryLabel": "Resuscitation & ACLS-Adjacent",
-      "categoryOrder": 2,
+      "categoryOrder": 3,
       "color": "blue",
       "description": "HOTT framework, why REBOA's own trial was stopped for harm, the 10-minute thoracotomy window. ERC 2025-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -7563,7 +7584,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and thresholds against your own institutional/EMS protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and thresholds against your own institutional/EMS protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "beta-blocker-calcium-channel-blocker-overdose",
@@ -7588,14 +7610,14 @@
       ],
       "category": "toxicologic",
       "categoryLabel": "Toxicologic",
-      "categoryOrder": 3,
+      "categoryOrder": 4,
       "color": "purple",
       "description": "High-dose insulin as metabolic support not antidote, why it beats escalating vasopressors, lipid rescue for lipophilic agents. EXTRIP/HIET-aligned.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-22",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "treatment",
@@ -7918,7 +7940,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Call your regional poison center for real-time guidance. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Call your regional poison center for real-time guidance. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "cocaine-sympathomimetic-toxicity",
@@ -7943,7 +7966,7 @@
       ],
       "category": "toxicologic",
       "categoryLabel": "Toxicologic",
-      "categoryOrder": 3,
+      "categoryOrder": 4,
       "color": "red",
       "description": "Benzodiazepines first, the real nuance behind the beta-blocker rule, cocaine as a sodium-channel blocker. StatPearls/CorePendium-aligned.",
       "reviewTier": 1,
@@ -8266,7 +8289,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "digoxin-toxicity",
@@ -8291,14 +8315,14 @@
       ],
       "category": "toxicologic",
       "categoryLabel": "Toxicologic",
-      "categoryOrder": 3,
+      "categoryOrder": 4,
       "color": "amber",
       "description": "Nearly any arrhythmia except rapid SVT, why calcium avoidance is more contested than taught, hyperkalemia as a pump-poisoning severity marker.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-08",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "treatment",
@@ -8617,7 +8641,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "opioid-overdose",
@@ -8642,7 +8667,7 @@
       ],
       "category": "toxicologic",
       "categoryLabel": "Toxicologic",
-      "categoryOrder": 3,
+      "categoryOrder": 4,
       "color": "teal",
       "description": "Titrate to respiration not consciousness, buprenorphine's unique dosing, re-narcotization and monitoring duration. StatPearls/ACMT-AACT-aligned.",
       "reviewTier": 1,
@@ -8960,7 +8985,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "serotonin-syndrome-vs-neuroleptic-malignant-syndrome",
@@ -8985,7 +9011,7 @@
       ],
       "category": "toxicologic",
       "categoryLabel": "Toxicologic",
-      "categoryOrder": 3,
+      "categoryOrder": 4,
       "color": "blue",
       "description": "Side-by-side signs table, why cyproheptadine's evidence is weaker than its reputation, the dual-track algorithm for undifferentiated cases. IAEM 2024-aligned.",
       "reviewTier": 1,
@@ -9338,7 +9364,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "tricyclic-antidepressant-overdose",
@@ -9363,14 +9390,14 @@
       ],
       "category": "toxicologic",
       "categoryLabel": "Toxicologic",
-      "categoryOrder": 3,
+      "categoryOrder": 4,
       "color": "purple",
       "description": "Sodium bicarbonate's dual mechanism, why phenytoin is specifically avoided, why respiratory acidosis is a second emergency. StatPearls/EMCrit-aligned.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-08",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "treatment",
@@ -9693,7 +9720,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Call your regional poison center for real-time guidance. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Call your regional poison center for real-time guidance. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "amniotic-fluid-embolism",
@@ -9718,14 +9746,14 @@
       ],
       "category": "obstetric",
       "categoryLabel": "Obstetric",
-      "categoryOrder": 4,
+      "categoryOrder": 5,
       "color": "red",
       "description": "Peripartum collapse and DIC, SMFM checklist-aligned, 4-minute resuscitative hysterotomy, 1:1:1 massive transfusion.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -10046,7 +10074,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event.",
+      "entryOrder": 50
     },
     {
       "id": "eclampsia-severe-preeclampsia",
@@ -10071,14 +10100,14 @@
       ],
       "category": "obstetric",
       "categoryLabel": "Obstetric",
-      "categoryOrder": 4,
+      "categoryOrder": 5,
       "color": "amber",
       "description": "Why magnesium and BP control are two separate tracks, clinical (not lab) toxicity monitoring, why delivery isn't delayed for magnesium. ACOG PB 222-aligned.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-08",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-08",
       "sections": [
         {
           "id": "treatment",
@@ -10409,7 +10438,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "postpartum-hemorrhage",
@@ -10434,14 +10464,14 @@
       ],
       "category": "obstetric",
       "categoryLabel": "Obstetric",
-      "categoryOrder": 4,
+      "categoryOrder": 5,
       "color": "teal",
       "description": "4 T's differential, why tamponade works best before shock, why quantitative blood loss measurement changed outcomes. ACOG/FIGO-aligned.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-22",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "treatment",
@@ -10752,7 +10782,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "shoulder-dystocia",
@@ -10777,14 +10808,14 @@
       ],
       "category": "obstetric",
       "categoryLabel": "Obstetric",
-      "categoryOrder": 4,
+      "categoryOrder": 5,
       "color": "blue",
       "description": "HELPERR sequence, why posterior arm delivery has the highest success rate despite not being first-line, why \"unpredictable and unpreventable\" shapes the whole prevention section. ACOG/RCOG-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -11099,7 +11130,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify sequence against your own institutional protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify sequence against your own institutional protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "uterine-rupture",
@@ -11124,14 +11156,14 @@
       ],
       "category": "obstetric",
       "categoryLabel": "Obstetric",
-      "categoryOrder": 4,
+      "categoryOrder": 5,
       "color": "purple",
       "description": "No reliable predictor, abnormal CTG as the most consistent finding, why surgery is the only treatment. RCOG/ACOG-aligned — Continuum case cited only as illustrative.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -11448,7 +11480,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. The case report cited above informs the transport-specific note only; core management reflects RCOG/ACOG society guidance."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. The case report cited above informs the transport-specific note only; core management reflects RCOG/ACOG society guidance.",
+      "entryOrder": 50
     },
     {
       "id": "croup-vs-epiglottitis",
@@ -11473,7 +11506,7 @@
       ],
       "category": "pediatric-neonatal",
       "categoryLabel": "Pediatric / Neonatal",
-      "categoryOrder": 5,
+      "categoryOrder": 6,
       "color": "red",
       "description": "Why the airway exam itself is dangerous in suspected epiglottitis, why dexamethasone goes to nearly all croup regardless of severity, epi's rebound explained. AAP/CPS-aligned.",
       "reviewTier": 1,
@@ -11812,7 +11845,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "neonatal-resuscitation-nrp",
@@ -11837,7 +11871,7 @@
       ],
       "category": "pediatric-neonatal",
       "categoryLabel": "Pediatric / Neonatal",
-      "categoryOrder": 5,
+      "categoryOrder": 6,
       "color": "amber",
       "description": "Why ventilation, not epinephrine, is the core intervention; real-world epi timing lags guideline targets by minutes. AHA/AAP 9th edition (Oct 2025)-aligned.",
       "reviewTier": 1,
@@ -12171,7 +12205,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "pediatric-septic-shock",
@@ -12196,7 +12231,7 @@
       ],
       "category": "pediatric-neonatal",
       "categoryLabel": "Pediatric / Neonatal",
-      "categoryOrder": 5,
+      "categoryOrder": 6,
       "color": "teal",
       "description": "Why fluid strategy genuinely diverges by resource setting, the FEAST trial's early-stopped-for-harm result, why hypotension is a late warning sign. 2026 SSC pediatric guidelines-aligned.",
       "reviewTier": 1,
@@ -12522,7 +12557,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and thresholds against your own institutional protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and thresholds against your own institutional protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "crush-syndrome",
@@ -12547,7 +12583,7 @@
       ],
       "category": "environmental-prehospital",
       "categoryLabel": "Environmental / Prehospital",
-      "categoryOrder": 6,
+      "categoryOrder": 7,
       "color": "blue",
       "description": "Why standard TCCC permissive hypotension doesn't apply here, MARCH-first sequencing, why calcium is given despite hypocalcemia. JTS/TCCC-aligned.",
       "reviewTier": 1,
@@ -12913,7 +12949,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary and current TCCC/JTS guidance before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing against your own pharmacy/formulary and current TCCC/JTS guidance before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "heat-stroke",
@@ -12938,14 +12975,14 @@
       ],
       "category": "environmental-prehospital",
       "categoryLabel": "Environmental / Prehospital",
-      "categoryOrder": 6,
+      "categoryOrder": 7,
       "color": "purple",
       "description": "Why immersion is 6-10x faster than any alternative, the specific ≥0.155°C/min target, why no drug (including dantrolene) helps. 2025 SCCM guideline-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -13295,7 +13332,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify protocol specifics against your own institutional/EMS guidance before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify protocol specifics against your own institutional/EMS guidance before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "severe-hypothermic-cardiac-arrest",
@@ -13320,14 +13358,14 @@
       ],
       "category": "environmental-prehospital",
       "categoryLabel": "Environmental / Prehospital",
-      "categoryOrder": 6,
+      "categoryOrder": 7,
       "color": "red",
       "description": "Primary vs. secondary hypothermia as the key judgment call, why real-world stop-decisions lag guideline criteria, the rewarming-rate debate. ERC/ELSO 2025-aligned.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-08-31",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-08-31",
       "sections": [
         {
           "id": "treatment",
@@ -13672,7 +13710,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and thresholds against your own institutional/EMS protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and thresholds against your own institutional/EMS protocol before clinical use.",
+      "entryOrder": 50
     },
     {
       "id": "massive-transfusion-protocol",
@@ -13697,14 +13736,14 @@
       ],
       "category": "trauma-resuscitation-procedures",
       "categoryLabel": "Trauma & Critical Care",
-      "categoryOrder": 7,
+      "categoryOrder": 8,
       "color": "amber",
       "description": "1:1:1 ratio-based resuscitation, TXA's 3-hour window, calcium/lethal-triad management, TEG/ROTEM as complement not replacement.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-22",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-23",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "treatment",
@@ -14007,7 +14046,8 @@
           ]
         }
       ],
-      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and ratios against your own institutional blood bank protocol before clinical use."
+      "footer": "The Critical Vector · Crisis Management series · Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify dosing and ratios against your own institutional blood bank protocol before clinical use.",
+      "entryOrder": 50
     }
   ],
   "pending": []
