@@ -42,7 +42,13 @@ function collectItems() {
 }
 
 function pick(item) {
-  return { reviewTier: item.reviewTier, reviewTierIsDefault: item.reviewTierIsDefault, lastVerified: item.lastVerified, reviewDue: item.reviewDue };
+  return {
+    reviewTier: item.reviewTier,
+    reviewTierIsDefault: item.reviewTierIsDefault,
+    lastVerified: item.lastVerified,
+    lastVerifiedIsInferred: item.lastVerifiedIsInferred,
+    reviewDue: item.reviewDue,
+  };
 }
 
 function main() {
@@ -51,7 +57,19 @@ function main() {
   const overdue = items.filter((i) => i.reviewDue < today).sort((a, b) => a.reviewDue.localeCompare(b.reviewDue));
   const overdueTier1 = overdue.filter((i) => i.reviewTier === 1);
 
+  const untagged = items.filter((i) => i.reviewTierIsDefault);
+  const inferred = items.filter((i) => i.lastVerifiedIsInferred);
+
   console.log(`Staleness check — ${items.length} items, today=${today}`);
+  const taggedT1 = items.filter((i) => i.reviewTier === 1 && !i.reviewTierIsDefault).length;
+  console.log(`  ${taggedT1} tagged Tier 1 · ${untagged.length} untagged (default tier applied)`);
+  // An inferred lastVerified is the date the file last changed, NOT a date on
+  // which a human checked the content. Saying so matters: without the
+  // distinction, a spelling fix reads as a clinical review.
+  if (inferred.length) {
+    console.log(`  ${inferred.length} item(s) have an INFERRED last-verified date (file last changed, not reviewed)`);
+  }
+
   if (overdue.length === 0) {
     console.log('Nothing overdue.');
     return;
@@ -61,7 +79,8 @@ function main() {
   for (const i of overdue) {
     const flag = i.reviewTier === 1 ? '[TIER 1]' : `[tier ${i.reviewTier}]`;
     const defaulted = i.reviewTierIsDefault ? ' (untagged — default tier applied)' : '';
-    console.log(`  ${flag} ${i.kind}/${i.id} — "${i.title}" — due ${i.reviewDue}, last verified ${i.lastVerified}${defaulted}`);
+    const inf = i.lastVerifiedIsInferred ? ' [inferred date]' : '';
+    console.log(`  ${flag} ${i.kind}/${i.id} — "${i.title}" — due ${i.reviewDue}, last verified ${i.lastVerified}${inf}${defaulted}`);
   }
 
   if (overdueTier1.length > 0) {

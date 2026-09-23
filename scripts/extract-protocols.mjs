@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 import { EXTRA_CATEGORY, PROTOCOL_CATEGORY_OVERRIDES } from './unified-categories.mjs';
-import { resolveReview } from './review-policy.mjs';
+import { resolveReview, lastChangedDate } from './review-policy.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SRC_DIR = path.resolve(__dirname, '../Protocols'); // crisis-content/Protocols/
@@ -183,7 +183,7 @@ function parseProtocol(filename, hubMeta) {
   const review = resolveReview({
     declaredTier: $('body').attr('data-review-tier'),
     declaredLastVerified: $('body').attr('data-last-verified'),
-    fallbackDate: statSync(filePath).mtime.toISOString().slice(0, 10),
+    fallbackDate: lastChangedDate(filePath),
   });
 
   return {
