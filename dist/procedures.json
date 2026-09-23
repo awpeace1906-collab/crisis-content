@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T04:52:01.187Z",
+  "generatedAt": "2026-09-23T04:53:30.936Z",
   "categories": [
     {
       "id": "airway",
@@ -72,6 +72,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-21",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-21",
       "sections": [
         {
@@ -369,6 +370,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-23",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-23",
       "sections": [
         {
@@ -832,6 +834,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-21",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-21",
       "sections": [
         {
@@ -1101,6 +1104,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-21",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-21",
       "sections": [
         {
@@ -1464,6 +1468,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -1739,6 +1744,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -2088,6 +2094,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -2397,6 +2404,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -2666,6 +2674,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -2988,6 +2997,7 @@
       "reviewTier": 1,
       "reviewTierIsDefault": false,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-03-22",
       "sections": [
         {
@@ -3317,8 +3327,9 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -3669,6 +3680,7 @@
       "reviewTier": 1,
       "reviewTierIsDefault": false,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-03-22",
       "sections": [
         {
@@ -4131,6 +4143,7 @@
       "reviewTier": 1,
       "reviewTierIsDefault": false,
       "lastVerified": "2026-09-23",
+      "lastVerifiedIsInferred": false,
       "reviewDue": "2027-03-23",
       "sections": [
         {
@@ -4511,8 +4524,9 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -4818,8 +4832,9 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -5212,8 +5227,9 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -5547,8 +5563,9 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -5912,8 +5929,9 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6244,8 +6262,9 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6584,8 +6603,9 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6890,6 +6910,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -7292,6 +7313,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -7681,8 +7703,9 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -8052,6 +8075,7 @@
       "reviewTier": 1,
       "reviewTierIsDefault": false,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": false,
       "reviewDue": "2027-03-22",
       "sections": [
         {
@@ -8498,8 +8522,9 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -8853,8 +8878,9 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -9190,6 +9216,7 @@
       "reviewTier": 1,
       "reviewTierIsDefault": false,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": false,
       "reviewDue": "2027-03-22",
       "sections": [
         {
@@ -9662,8 +9689,9 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -9999,6 +10027,7 @@
       "reviewTier": 2,
       "reviewTierIsDefault": true,
       "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
       "reviewDue": "2027-09-22",
       "sections": [
         {
@@ -10375,8 +10404,9 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "lastVerifiedIsInferred": true,
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
