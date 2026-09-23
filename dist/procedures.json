@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T23:31:02.403Z",
+  "generatedAt": "2026-09-23T02:32:39.496Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -3310,8 +3310,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3952,8 +3952,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4147,8 +4147,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4359,8 +4359,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4578,8 +4578,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4752,8 +4752,8 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-23",
+      "reviewDue": "2027-09-23",
       "sections": [
         {
           "id": "indications",
@@ -4763,9 +4763,19 @@
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "Full-thickness eschar is inelastic. Resuscitation edema underneath it turns the burn into a tourniquet."
+            },
+            {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Circumferential full-thickness (or near full-thickness) burns to an extremity with signs of vascular compromise (diminished/absent distal pulses, capillary refill delay, paresthesia, worsening pain)</li>\n      <li>Circumferential torso/chest burns causing restrictive impairment of ventilation (reduced chest wall compliance, rising peak airway pressures in a ventilated patient)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Circumferential or near-circumferential full-thickness limb burn with developing vascular compromise</b> — rising compartment pressure beneath a skin envelope that cannot expand</li>\n      <li><b>Circumferential chest or torso burn restricting ventilation</b> — falling chest wall compliance, rising peak airway pressures, falling tidal volumes on pressure-controlled ventilation, worsening hypercapnia</li>\n      <li><b>Circumferential neck burn</b> with airway compromise or venous congestion of the face</li>\n      <li><b>Abdominal compartment syndrome</b> from circumferential abdominal eschar, usually on a background of large-volume resuscitation</li>\n</ul>\n<p><b>Timing is the thing most often misunderstood.</b> The need for escharotomy usually develops <b>6 to 24 hours after the burn</b>, as resuscitation fluid accumulates in the tissue under a rigid eschar. A limb that is warm and well perfused on arrival can be threatened by morning. <b>This is a serially reassessed decision, not a one-time assessment at presentation</b> — and the corollary is that a patient with circumferential burns needs an hourly perfusion check written down, not a single note on admission.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Absent pulses are a late sign — do not wait for them",
+              "html": "By the time a radial pulse disappears, muscle has been ischemic for some time. The earlier and more useful signals are <b>loss of the Doppler signal in the palmar arch or digital vessels</b> (not just the named artery), a falling or lost pulse oximetry waveform on the affected digit, progressive pain, paresthesia, and tense, woody swelling distal to the burn. <b>Compartment pressures above about 30 mmHg</b> support the decision where the picture is unclear. Assess with a Doppler and a pulse oximeter, hourly, and act on the trend."
             }
           ]
         },
@@ -4773,13 +4783,13 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Contraindications — and What This Is Not",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute in the presence of true vascular or ventilatory compromise from constricting eschar</li>\n      <li>Partial-thickness burns without circumferential involvement or compromise (escharotomy is not indicated in the absence of compartment-type physiology)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None absolute</b> where there is genuine vascular or ventilatory compromise from constricting eschar.</li>\n      <li><b>Partial-thickness burns without circumferential involvement.</b> Superficial and superficial-partial burns retain elasticity and do not constrict. Cutting them creates a painful, bleeding, full-thickness wound in a patient who did not have one.</li>\n      <li><b>Distal ischemia with another explanation</b> — arterial injury, a tight dressing, positioning, hypotension, or hypothermic vasoconstriction. Take the dressings off and look before you reach for a blade.</li>\n</ul>\n<p><b>Escharotomy is not fasciotomy.</b> Escharotomy divides constricting <i>skin</i> and stops at the subcutaneous fat. Fasciotomy opens <i>muscle compartments</i>. They address different pressures at different depths, and the mistake goes in both directions:</p>\n<ul>\n  <li><b>Cutting too deep</b> in a simple thermal burn turns a clean release into a bleeding fasciotomy the patient did not need.</li>\n  <li><b>Stopping at escharotomy</b> when the muscle itself is the problem leaves the limb ischemic. <b>High-voltage electrical injury, crush, and deep thermal burns involving muscle need fasciotomy</b>, and escharotomy alone will not save them.</li>\n</ul>\n<p><b>If perfusion does not improve after an adequate escharotomy, measure compartment pressures.</b> That is the branch point.</p>"
             }
           ]
         },
@@ -4793,120 +4803,241 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Scalpel or electrocautery</li>\n      <li>Hemostatic agents/dressings for the resulting wound</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Electrocautery, if available</b> — strongly preferred over a scalpel. These incisions bleed from viable dermis and fat at the base, and the patient is frequently coagulopathic. Cautery cuts and controls in one pass.</li>\n      <li><b>Scalpel</b> (a No. 10 or 20 blade) as the alternative, plus hemostats and ties.</li>\n      <li><b>Doppler probe</b> — for assessing before, and for proving the release worked afterward. Have it before you start, not after.</li>\n      <li><b>Pulse oximeter</b> to put on a distal digit.</li>\n      <li><b>Skin marker</b> — mark the lines before cutting. See §04; the landmarks that matter are the ones you cannot see through eschar.</li>\n      <li><b>Analgesia and sedation.</b> The eschar is insensate; the patient is not. See the warning in §05.</li>\n      <li><b>Hemostatic dressings, bulky dressings, and a way to elevate the limb.</b></li>\n      <li><b>A phone.</b> Burn centers expect and welcome a call before an escharotomy, and most will talk you through the lines in real time. This is one of the few genuinely emergent burn procedures and also one where remote guidance is easy and routine.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "num": "04",
+          "color": "amber",
+          "title": "Where the Lines Go — and the Two Nerves",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Mid-medial and mid-lateral, full length. Two places deviate, and both are permanent if you get them wrong."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Region",
+                "Incisions",
+                "The hazard"
+              ],
+              "rows": [
+                [
+                  "<b>Arm and forearm</b>",
+                  "Mid-medial and mid-lateral, from proximal to distal end of the burn",
+                  "<b>Ulnar nerve at the elbow.</b> The medial line must pass <b>anterior to the medial epicondyle</b> — the nerve sits in the cubital tunnel just behind it, immediately subcutaneous."
+                ],
+                [
+                  "<b>Hand</b>",
+                  "Dorsal longitudinal incisions over the intermetacarpal spaces (typically 2nd and 4th)",
+                  "Extensor tendons. Stay in the valleys between metacarpals, not over the tendons."
+                ],
+                [
+                  "<b>Digits</b>",
+                  "Mid-axial, on the side that is not the working pinch surface (ulnar side of the thumb, radial side of the little finger)",
+                  "Digital neurovascular bundles. Value is debated — discuss with a burn center before cutting fingers."
+                ],
+                [
+                  "<b>Thigh and leg</b>",
+                  "Mid-medial and mid-lateral, full length of the burn",
+                  "<b>Common peroneal nerve at the fibular neck.</b> It wraps the neck just distal to the fibular head and is subcutaneous there. Route the lateral incision clear of it — conventionally passing <b>posterior to the fibular head</b>. Dividing it is a permanent foot drop."
+                ],
+                [
+                  "<b>Foot</b>",
+                  "Dorsal medial and lateral",
+                  "Dorsalis pedis and the extensor tendons."
+                ],
+                [
+                  "<b>Chest and torso</b>",
+                  "Bilateral <b>anterior axillary lines</b> from clavicle to costal margin, joined by <b>transverse incisions along the clavicles and along the costal margin</b> — producing a rectangular “shield” of released chest wall",
+                  "Nipple–areolar complex; in children, the breast bud. Stay lateral."
+                ],
+                [
+                  "<b>Abdomen</b>",
+                  "Extend the torso pattern inferiorly; a midline or transverse release as needed",
+                  "Consider true abdominal compartment syndrome — escharotomy may not be enough."
+                ],
+                [
+                  "<b>Neck</b>",
+                  "Lateral incisions, kept posterior",
+                  "Carotid, jugular, and the external jugular in particular. Rare and high-stakes — get help."
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>Cross the joints.</b> An incision that stops at the wrist or the ankle because the anatomy looks intimidating leaves the constriction exactly where it is tightest. <b>The incision runs the entire length of the circumferential burn, through normal-appearing skin at each end by 1–2 cm.</b> Incomplete length is the single commonest reason an escharotomy fails to restore perfusion.</p>\n<p><b>Mark before you cut.</b> Eschar obliterates the surface landmarks you would normally navigate by. Palpate the medial epicondyle and the fibular head <i>through</i> the burn, mark them, and draw the line around them.</p>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Technique",
           "tagline": null,
           "blocks": [
-            {
-              "type": "tagline",
-              "html": "Extremity escharotomy"
-            },
             {
               "type": "steps",
               "steps": [
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Identify the affected extremity with signs of vascular compromise distal to the circumferential burn."
+                  "title": "Document the deficit first",
+                  "html": "Record Doppler signals at the palmar arch or digital vessels, the pulse oximetry waveform, capillary refill, and sensation — <b>before</b> you cut. Without a baseline you cannot tell afterwards whether the release worked, and “it looks better” is not a finding you can hand over."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Mark the incision lines along the mid-medial and/or mid-lateral aspects of the limb, avoiding major neurovascular structures (e.g., staying anterior/posterior to the medial epicondyle at the elbow, avoiding the peroneal nerve at the fibular head)."
+                  "title": "Give real analgesia and sedation",
+                  "html": "Opioid plus ketamine, or formal procedural sedation. See the warning below — the widely repeated line that escharotomy needs no anesthesia is half-true and causes real suffering."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Incise through the full thickness of the eschar (this tissue is insensate in full-thickness burns, so anesthesia is often unnecessary directly over the eschar, though surrounding viable tissue may require analgesia) down to but not through the underlying fascia/subcutaneous fat."
+                  "title": "Position and mark",
+                  "html": "Limb in anatomic position, slightly extended. Palpate and mark the medial epicondyle or fibular head, then draw the full line including where it curves around them and where it extends into unburned skin at each end."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Extend the incision the full length of the circumferential burn, across joints if the burn crosses them."
+                  "title": "Cut through the eschar into fat — and stop",
+                  "html": "Full thickness of the burned skin, down to and just into the <b>subcutaneous fat</b>. <b>Do not cut the fascia.</b> The endpoint is visible and unmistakable: <b>the wound edges spring apart by a centimeter or more and the fat bulges out of the incision.</b> If the edges sit together, you are not through."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Confirm the release — the wound edges should visibly separate/gape, and distal perfusion (pulses, capillary refill) should improve."
+                  "title": "Expect bleeding — and use it",
+                  "html": "The base of a correct incision is <i>viable</i> tissue and will bleed. That bleeding is a useful confirmation of depth, not a sign you have gone too far. Control it as you go with cautery. <b>A completely bloodless incision means either that you are still within dead tissue, or that the tissue beneath is dead too</b> — both change what happens next."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Achieve hemostasis of the incised edges as needed and dress the wound."
-                }
-              ]
-            },
-            {
-              "type": "tagline",
-              "html": "Chest/torso escharotomy"
-            },
-            {
-              "type": "steps",
-              "steps": [
+                  "title": "Reassess immediately, with the Doppler",
+                  "html": "Signals should return or improve within minutes. Compliance should improve at once on a chest release, with a visible fall in peak airway pressure. <b>If nothing changes, the commonest reason is that the incision is not long enough</b> — extend it before you conclude the diagnosis was wrong."
+                },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Identify circumferential chest/torso burns with restrictive ventilatory compromise."
+                  "title": "Second line if needed, then reassess again",
+                  "html": "A single mid-medial incision is often sufficient. If perfusion is still inadequate, add the mid-lateral line. Only after <b>both</b> lines are complete and full-length should you move on to considering compartment pressures and fasciotomy."
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Mark incision lines along the anterior axillary lines bilaterally, connected by a transverse incision along the costal margin if needed to fully release the chest wall."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Incise through the full thickness of the eschar along the marked lines."
-                },
-                {
-                  "num": "10",
                   "color": "purple",
-                  "title": "",
-                  "html": "Reassess ventilatory mechanics (chest wall compliance, peak pressures if ventilated) after release."
+                  "title": "Dress, elevate, and set a reassessment interval",
+                  "html": "Hemostatic or bulky absorbent dressing, limb elevated above heart level. Then <b>hourly Doppler and perfusion checks, documented</b> — edema continues to accumulate for another day and a released limb can constrict again."
                 }
               ]
             },
             {
               "type": "alert",
-              "color": "amber",
-              "title": "Reassess immediately after the incision to confirm it worked",
-              "html": "An inadequate-length incision that doesn't extend across the full circumferential burn (or across an involved joint) is the most common reason for persistent vascular or ventilatory compromise after escharotomy."
+              "color": "red",
+              "title": "“The eschar is insensate” is only half the story",
+              "html": "Full-thickness burn is anesthetic, so the middle of the incision may be painless. But the incision <b>must extend into viable skin at both ends</b>, it passes through <b>sensate deep dermis</b> wherever the burn is not truly full thickness, and the patient beneath it is awake, frightened, and in pain from the burn already. <b>Give analgesia and sedation as a default.</b> The bedside myth that escharotomy needs none has produced a great deal of avoidable suffering."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Incision made, no improvement in Doppler",
+                  "<b>Incision not long enough</b> — by far the most common cause",
+                  "Extend it proximally and distally into unburned skin, and across the joints. Check this before anything else."
+                ],
+                [
+                  "Wound edges do not separate",
+                  "Not through the full thickness of eschar",
+                  "Deepen until the fat bulges. The edges springing apart is the endpoint; nothing else is."
+                ],
+                [
+                  "Both lines complete, limb still ischemic",
+                  "True muscle compartment syndrome, or arterial injury",
+                  "Measure compartment pressures. <b>Fasciotomy</b>, and consider vascular imaging. Think about electrical injury and crush."
+                ],
+                [
+                  "No bleeding at all from the incision",
+                  "Deeper tissue is also non-viable — or you are not deep enough",
+                  "Reassess depth. If the muscle beneath is dead, this is a different and much larger conversation, and it is a burn-center one."
+                ],
+                [
+                  "Brisk, hard-to-control bleeding",
+                  "Coagulopathy, or the incision has run into viable vascularized tissue",
+                  "Cautery, packing, correct the coagulopathy. Large-surface burns become coagulopathic and hypothermic quickly."
+                ],
+                [
+                  "Chest released, peak pressures unchanged",
+                  "The problem is not the chest wall",
+                  "Reconsider: pneumothorax, inhalation injury, bronchospasm, mucus plugging, ARDS, <b>or abdominal compartment syndrome pushing the diaphragm up.</b> Measure a bladder pressure."
+                ],
+                [
+                  "Foot drop after a leg escharotomy",
+                  "Common peroneal nerve divided at the fibular neck",
+                  "Preventable only by marking the landmark beforehand. Document and involve plastics/burns."
+                ],
+                [
+                  "Limb re-tightens overnight",
+                  "Ongoing resuscitation edema — entirely expected",
+                  "This is why the hourly check exists. Extend the incisions or add lines. It is not a failure of the first procedure."
+                ],
+                [
+                  "Needing escharotomy after escharotomy, everywhere",
+                  "Over-resuscitation — “fluid creep”",
+                  "Recheck the fluid plan (see §08). Escalating escharotomy requirements are a signal about the resuscitation, not only about the burn."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Bleeding from the incision, particularly if extended too deep into viable, vascularized tissue rather than staying within the eschar</li>\n      <li>Incomplete release if the incision doesn't extend the full length of the circumferential burn or across an involved joint</li>\n      <li>Injury to underlying neurovascular structures if incision lines are not planned correctly for the specific anatomic location</li>\n      <li>Missed compartment syndrome distinct from the eschar itself — escharotomy releases the burned skin's constriction; a true muscle compartment syndrome underneath may still require separate fasciotomy</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Hemorrhage</b> — from viable dermis and fat, and worse in the coagulopathic large-burn patient. The reason cautery is preferred.</li>\n      <li><b>Nerve injury</b> — ulnar at the medial epicondyle, common peroneal at the fibular neck, digital nerves in the fingers. All permanent, all avoidable by marking.</li>\n      <li><b>Incomplete release</b> with continuing ischemia — the commonest and most consequential technical failure.</li>\n      <li><b>Cutting too deep</b>, converting an escharotomy into an unintended fasciotomy with its attendant morbidity.</li>\n      <li><b>Escharotomy performed on a partial-thickness burn</b> — a full-thickness wound created where none existed, which now needs grafting.</li>\n      <li><b>Infection</b> — the incision opens a deep plane in a burn wound that will colonize.</li>\n      <li><b>Conversion of burn depth</b> from desiccation of the exposed wound bed.</li>\n      <li><b>Scarring and contracture</b>, particularly across joints, later requiring reconstruction.</li>\n      <li><b>Missed abdominal compartment syndrome</b>, treated as a chest wall problem.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "08",
+          "color": "blue",
+          "title": "Afterwards — and the Resuscitation Behind It",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Hourly documented perfusion checks</b> — Doppler signal, oximetry waveform, capillary refill, sensation, and compartment softness. Edema peaks well after the procedure.</li>\n  <li><b>Elevate</b> the limb above heart level and keep it there.</li>\n  <li><b>Transfer to a burn center.</b> Escharotomy is a temporizing procedure; the patient needs burn surgical care. Call early — before the procedure if time allows.</li>\n  <li><b>Revisit the fluid plan.</b> Resuscitation edema is what created the constriction. Standard resuscitation is roughly <span class=\"d\">2–4 mL/kg per %TBSA</span> of crystalloid over the first 24 hours, half in the first 8 hours from the <i>time of injury</i>, <b>titrated to urine output</b> — about <span class=\"d\">0.5 mL/kg/h</span> in adults and <span class=\"d\">1 mL/kg/h</span> in children. Formulas are a starting point, not a prescription. <b>Over-resuscitation drives escharotomy, abdominal compartment syndrome, and conversion of burn depth</b>, and it is a far more common error than under-resuscitation in modern practice.</li>\n  <li><b>Watch for rhabdomyolysis and hyperkalemia</b>, especially after electrical injury or a prolonged ischemic interval.</li>\n  <li><b>Tetanus and burn-center-directed wound care.</b> Prophylactic systemic antibiotics are not routine.</li>\n  <li><b>Document the incisions</b> — where, how long, what improved, and the Doppler findings before and after. The next team needs to know whether this has already been done adequately.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "09",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -4914,13 +5045,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>This procedure targets the eschar specifically, not the deeper fascia — don't confuse it with fasciotomy, which is a separate, deeper procedure for true compartment syndrome.</p>\n<p>Reassess distal perfusion or ventilatory mechanics immediately after the incision to confirm the release actually worked — an inadequate-length incision is a common reason for persistent compromise.</p>\n<p>The eschar itself is typically insensate in full-thickness injury, which is part of why this procedure can often be performed with minimal local anesthesia directly over the burned tissue.</p>"
+              "html": "<p><b>Not long enough is the usual failure.</b> Full length of the burn, across the joints, into normal skin at both ends.</p>\n<p><b>The endpoint is the edges springing apart and fat bulging.</b> If they sit together, you are not through the eschar.</p>\n<p><b>Absent pulses are late.</b> Use a Doppler on the palmar arch and a pulse oximeter on a digit, hourly, and act on the trend.</p>\n<p><b>Mark the medial epicondyle and the fibular head first.</b> Two nerves, two permanent deficits, both avoidable with a pen.</p>\n<p><b>Bleeding is confirmation.</b> A bloodless incision is telling you something, and it is not good news.</p>\n<p><b>Escharotomy is not fasciotomy.</b> Skin, into fat, stop. If perfusion does not return after adequate release, measure pressures — and think about electrical and crush injury.</p>\n<p><b>Give analgesia.</b> The eschar is insensate; the ends of the incision and the patient are not.</p>\n<p><b>This need develops overnight.</b> Circumferential burns get an hourly documented check, not a single admission assessment.</p>\n<p><b>Call the burn center before you cut</b> if there is any time at all. They do this often and will walk you through the lines.</p>\n<p><b>Repeated escharotomies are a message about the fluids.</b></p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "10",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -4929,12 +5060,28 @@
               "type": "sources",
               "items": [
                 {
-                  "tier": "REFERENCE",
-                  "html": "American Burn Association. Advanced Burn Life Support (ABLS) Provider Manual. ABA; current edition."
+                  "tier": "GUIDELINE",
+                  "html": "American Burn Association. <i>Advanced Burn Life Support (ABLS) Provider Manual.</i> ABA; current edition."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Orgill DP, Piccolo N. Escharotomy and decompressive therapies in burns. <i>J Burn Care Res.</i> 2009;30(5):759-768."
+                  "html": "Orgill DP, Piccolo N. Escharotomy and decompressive therapies in burns. <i>J Burn Care Res.</i> 2009;30(5):759–768."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "ISBI Practice Guidelines Committee. ISBI practice guidelines for burn care. <i>Burns.</i> 2016;42(5):953–1021."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Pruitt BA. Protection from excessive resuscitation: “pushing the pendulum back.” <i>J Trauma.</i> 2000;49(3):567–568."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Saffle JI. The phenomenon of “fluid creep” in acute burn resuscitation. <i>J Burn Care Res.</i> 2007;28(3):382–395."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Your regional burn center's referral line. Early telephone consultation is expected practice and is available before as well as after the procedure."
                 }
               ]
             }
@@ -4963,8 +5110,8 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-23",
+      "reviewDue": "2027-09-23",
       "sections": [
         {
           "id": "indications",
@@ -4974,9 +5121,13 @@
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "This is an extrication procedure, not a surgical one. The goal is a released patient, not a good stump."
+            },
+            {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Entrapment of a limb that cannot be extricated by any other means, where the limb is already unsalvageable (mangled, non-viable) and continued entrapment poses an immediate threat to the patient's life</li>\n      <li>Confined-space or structural collapse scenarios where standard extrication (cutting the entrapping structure rather than the patient) has been exhausted and is not feasible within a survivable timeframe</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Entrapment that cannot be relieved by any other means</b>, where remaining trapped will kill the patient — progressing structural collapse, fire, rising water, an unstable scene, or physiological deterioration that will not survive the extrication timeline</li>\n      <li><b>Completion of a near-total traumatic amputation</b> — a limb held by a bridge of skin, tendon, or a strip of muscle, where dividing that bridge frees the patient. <b>This is by far the most common version of this procedure</b>, and it is a fundamentally different and easier act than cutting through an intact limb.</li>\n      <li><b>An unsalvageable limb</b> whose continued attachment is itself the threat — extensive crush with a non-viable segment, in a patient deteriorating from that segment</li>\n      <li><b>Immediate scene danger</b> requiring evacuation now, where the entrapment is the only thing preventing it</li>\n</ul>\n<p><b>What makes this indicated is almost never the limb.</b> It is the clock, the scene, or the patient's physiology. A mangled limb in a stable patient at a safe scene, however dreadful it looks, is an operating-room problem.</p>"
             }
           ]
         },
@@ -4990,29 +5141,77 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Any scenario where standard extrication techniques (cutting away the entrapping material rather than the patient) remain feasible, even if slower — this is always the preferred approach</li>\n      <li>A potentially salvageable limb where extrication delay does not pose an immediate life threat</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Any remaining technical rescue option.</b> Cutting the environment beats cutting the patient, every time, even when it is slower. Hydraulic spreaders, cutting torches, airbags, cribbing, and concrete saws release far more patients than scalpels do. <b>Exhaust this first and say out loud that you have.</b></li>\n      <li><b>A salvageable limb in a patient who can wait.</b> If the delay is survivable, the limb goes to the operating room attached.</li>\n      <li><b>A scene too unsafe for the operator.</b> A second casualty helps nobody. This is the incident commander's call, not the clinician's.</li>\n      <li><b>No means of hemorrhage control.</b> Do not cut without a functioning tourniquet already applied and tightened. This is not a sequencing preference — it is the difference between an extrication and an exsanguination.</li>\n      <li><b>Death already declared.</b> Amputation to recover a body is a medical examiner and rescue decision, made outside this framework.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "decision",
+          "num": "03",
+          "color": "amber",
+          "title": "The Decision, and Who Makes It",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p>Field amputation is among the rarest procedures in this library, and most clinicians will never perform one. The single most useful preparation is <b>knowing your system's activation pathway before the day it is needed</b> — who carries the kit, who is credentialed, and what number summons them.</p>\n<ul>\n  <li><b>It is physician- or surgeon-led</b> in almost every system — a HEMS physician, an urban search-and-rescue medical team member, or a surgeon dispatched to the scene. It is not a standard prehospital scope of practice.</li>\n  <li><b>It is a joint decision</b> with technical rescue and the incident commander. The clinician owns the patient; the rescue team owns whether any other route out exists, and whether the scene will still be standing in twenty minutes.</li>\n  <li><b>Two clinicians if at all possible.</b> One to perform, one to manage the airway, sedation, and resuscitation. Doing both alone is possible and is much worse.</li>\n  <li><b>Consent is usually impossible.</b> Act under emergency doctrine. If the patient is awake and able, tell them what is happening and why — they are frequently conscious throughout, and that fact deserves acknowledging rather than avoiding.</li>\n  <li><b>Brief the team before you start</b> — including the rescue crew who will see it. Say what is about to happen, who does what, and what the signal to stop is. Then <b>debrief afterwards.</b> This is one of the small number of procedures where the psychological burden on the team is a foreseeable, plannable consequence rather than an afterthought.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "equipment",
-          "num": "03",
+          "num": "04",
           "color": "blue",
-          "title": "Equipment",
+          "title": "The Kit",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Amputation kit if available (surgical saw or heavy shears, hemostatic/tourniquet equipment, sedation/analgesia)</li>\n      <li>Whatever cutting instrument is available in a true improvised scenario</li>\n      <li>Tourniquet(s) for immediate hemorrhage control</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Two tourniquets</b> minimum, windlass-type, applied proximally and tightened <i>before</i> the incision. Two, because one can fail and there is no re-doing this.</li>\n      <li><b>Gigli saw</b> with handles — a flexible wire saw. The workhorse of field amputation: it needs no power, works in confined and awkward spaces where a rigid blade cannot be swung, packs into nothing, and cuts bone quickly. If your kit holds one instrument for bone, this is it.</li>\n      <li><b>Amputation knife or a large scalpel</b> (No. 22 blade), plus <b>heavy trauma shears</b> — which alone are often enough to complete a near-total amputation.</li>\n      <li><b>Bone cutters</b> for small bones and for trimming spicules.</li>\n      <li><b>Arterial clamps and ties</b> — large vessels should be secured rather than left to a tourniquet alone where the anatomy allows.</li>\n      <li><b>Hemostatic gauze and bulky dressings</b> for the stump.</li>\n      <li><b>Ketamine</b> (and a benzodiazepine), airway equipment, and a monitor. See §05.</li>\n      <li><b>IV/IO access, warmed crystalloid, and blood products if the system carries them.</b> Also <b>calcium</b> and the means to treat hyperkalemia — see §06.</li>\n      <li><b>Headlamp</b>, and eye protection for everyone within range.</li>\n      <li><b>A marker and a watch.</b> Tourniquet time starts the moment it is tightened.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "anesthesia",
+          "num": "05",
+          "color": "red",
+          "title": "Anesthesia at the Scene",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p>A trapped, hypothermic, hypovolemic patient in a confined space is among the worst environments imaginable for sedating someone. The plan has to fit that.</p>\n<ul>\n  <li><b>Ketamine is the agent of choice</b> — it preserves airway reflexes and respiratory drive, and it supports blood pressure rather than dropping it. Typical dissociative dosing is around <span class=\"d\">1–2 mg/kg IV</span> or <span class=\"d\">4–5 mg/kg IM</span> where no line exists, <b>reduced substantially in shock</b>, with repeat increments titrated to effect. Confirm against your own service's formulary.</li>\n  <li><b>Add a benzodiazepine</b> for amnesia and to blunt emergence, if the hemodynamics tolerate it.</li>\n  <li><b>Opioid</b> as an adjunct, with the usual caution about stacking respiratory depression on a patient you cannot reposition.</li>\n  <li><b>Have an airway plan you can actually execute in that space.</b> If the patient is head-down under a vehicle, ask honestly whether you could intubate them where they lie. If the answer is no, that constrains the sedation depth you can safely aim for.</li>\n  <li><b>Local anesthetic infiltration</b> at the incision line is a reasonable adjunct and costs nothing.</li>\n  <li><b>They may remain aware.</b> Talk to them. Have someone whose only job is to be at their head.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "crush",
+          "num": "06",
+          "color": "amber",
+          "title": "Crush Physiology — Treat Before You Release",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "The danger is the moment of release, not the cut",
+              "html": "A limb crushed for hours is an ischemic reservoir of <b>potassium, myoglobin, phosphate, and acid</b>. The instant circulation is restored or the compressing force is removed, that load reaches the heart — the phenomenon historically called “rescue death” or “smiling death,” in which a conscious, talking, apparently stable trapped patient arrests within minutes of being freed. <b>The resuscitation for this happens before extrication, not after.</b>"
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<ul>\n  <li><b>Fluids before release.</b> Start warmed crystalloid early and run it generously before the limb is freed — often <span class=\"d\">1–1.5 L/h</span> in an adult, begun while still entrapped and continued through extrication. Confirm rates against your own crush-injury protocol.</li>\n  <li><b>Have calcium drawn up</b> for hyperkalemic cardiac membrane stabilization, and have your hyperkalemia treatments ready rather than in a bag somewhere.</li>\n  <li><b>Monitor the ECG</b> through the release. Peaked T waves and a widening QRS are the warning.</li>\n  <li><b>Consider sodium bicarbonate</b> for the acid load and to alkalinize urine against myoglobin, per your protocol.</li>\n  <li><b>One genuine advantage of amputation over simple release:</b> the limb comes off <i>above</i> a tightened tourniquet, so the ischemic contents of the crushed segment leave with it rather than washing into the circulation. <b>Tourniquet-first is not only hemorrhage control — it is metabolic containment.</b></li>\n  <li><b>Watch for rhabdomyolysis and acute kidney injury</b> downstream: pigmented urine, rising CK, and the potassium trend.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "07",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Technique",
           "tagline": null,
           "blocks": [
             {
@@ -5021,66 +5220,156 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Exhaust all standard extrication options first — this procedure is a genuine last resort, typically performed by a physician or surgeon responding to the scene in coordination with technical rescue/fire services, not a routine field decision."
+                  "title": "Confirm no other route out, out loud",
+                  "html": "Ask the rescue lead directly: “<i>Is there any way to get this patient out without amputating?</i>” Get an explicit answer and note the time. This is the decision that will be examined afterwards, and the people who can answer it are standing next to you."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Confirm the limb is non-viable and that continued entrapment is an immediate threat to survival (structural collapse progression, fire, rising water, or physiologic deterioration from prolonged crush injury)."
+                  "title": "Resuscitate and sedate before you cut",
+                  "html": "Access, fluids running, calcium available, monitor on, ketamine given and working. Airway person at the head. Do not begin because the scene is loud and urgent — begin because the patient is as ready as they will be."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Provide maximal available analgesia/sedation given the circumstances."
+                  "title": "Two tourniquets, as proximal as the space allows, tight",
+                  "html": "Apply and <b>tighten</b> both — not staged, not loosely pre-positioned. Tighten to loss of distal arterial signal. <b>Write the time on the patient's skin.</b> Every downstream decision depends on that number and it is routinely lost at handover."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Apply a proximal tourniquet before amputation to control hemorrhage from the outset."
+                  "title": "Cut at the most distal point that achieves release",
+                  "html": "<b>Preserve every centimeter of length you can.</b> This is not a definitive amputation and no flaps are being planned — length preserved now is prosthetic function and reconstructive options later. Choose the level by what frees the patient, not by textbook amputation levels. <b>Through a joint is often faster and easier than through a shaft</b>, and disarticulation is entirely acceptable here."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Amputate through the most distal viable/accessible point that achieves extrication, using whatever surgical or improvised means are available."
+                  "title": "Guillotine: skin, then muscle, then bone",
+                  "html": "A single circumferential incision through skin and soft tissue at one level — <b>no flaps, no shaping.</b> Clamp or tie large vessels as you meet them if you can see them; the tourniquet covers what you cannot. Retract the soft tissue proximally and pass the <b>Gigli saw</b> around the bone, cutting with long, steady, full-length strokes rather than short fast ones. Divide any remaining attachments and the limb is free."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Complete extrication and immediately transition to standard trauma/hemorrhage resuscitation, including reassessment of tourniquet effectiveness and definitive surgical management planning."
+                  "title": "If it is a near-total amputation, this is much simpler",
+                  "html": "Most field amputations are the completion of an injury that has already happened. Tourniquet first as always, then divide the remaining skin, tendon, or muscle bridge with heavy shears or a scalpel. <b>No saw, no bone work.</b> Recognizing that you are in this situation rather than the other one is worth the ten seconds it takes to look."
+                },
+                {
+                  "num": "7",
+                  "color": "amber",
+                  "title": "Extricate immediately and reassess the tourniquets",
+                  "html": "Move the patient out. <b>Then look at the stump again</b> — tourniquets loosen during extrication, and bleeding that was controlled in situ can restart the moment the patient is moved. Add a third tourniquet or pack the stump if needed."
+                },
+                {
+                  "num": "8",
+                  "color": "purple",
+                  "title": "Dress, warm, and resuscitate properly",
+                  "html": "Hemostatic gauze and a bulky dressing over the stump. <b>Aggressive rewarming</b> — these patients are cold from prolonged exposure and the coagulopathy that follows is avoidable. Blood products, TXA within the window, calcium, and analgesia."
+                },
+                {
+                  "num": "9",
+                  "color": "red",
+                  "title": "Bring the amputated part with the patient",
+                  "html": "Wrapped in saline-moistened gauze, in a sealed bag, on ice — <b>never in direct contact with ice and never frozen.</b> Replantation is unlikely after a crush entrapment, but the decision belongs to the surgeon, and the part may also matter for identification and for tissue coverage."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
             {
-              "type": "alert",
-              "color": "red",
-              "title": "Every standard extrication option comes first",
-              "html": "This is one of the rarest procedures in the entire library for a reason — nearly every entrapment scenario resolves through cutting the environment, not the patient. Tourniquet control must be established before the cut, not improvised after."
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Cannot reach a proximal site for the tourniquet",
+                  "The entrapment itself is above your working space",
+                  "Do not cut. Junctional device, or direct compression held by a person, or reconsider whether extrication of the structure is truly exhausted."
+                ],
+                [
+                  "Bleeding heavily despite a tourniquet",
+                  "Not tight enough, or a second bone is splinting the vessels open",
+                  "Tighten to loss of signal. Add the second tourniquet immediately above the first. Forearm and lower leg frequently need two."
+                ],
+                [
+                  "Saw binds and will not advance",
+                  "Soft tissue caught in the wire, or the blade angle has changed",
+                  "Retract soft tissue proximally and protect it. Long full strokes, steady rate. A binding Gigli saw will snap."
+                ],
+                [
+                  "Gigli saw breaks",
+                  "Short jerky strokes, or a kinked wire",
+                  "Carry a spare — this is a foreseeable failure. Bone cutters as the fallback."
+                ],
+                [
+                  "Patient arrests at the moment of release",
+                  "<b>Hyperkalemia from reperfusion</b>",
+                  "Calcium immediately, then the rest of the hyperkalemia protocol. This is why the drugs are drawn up beforehand."
+                ],
+                [
+                  "Patient wakes and fights mid-procedure",
+                  "Ketamine under-dosed, or redistributed",
+                  "Re-dose. Have the next increment already drawn. An interrupted amputation is worse than a slower one."
+                ],
+                [
+                  "Scene deteriorating during the procedure",
+                  "Structural, fire, or water progression",
+                  "The incident commander's call, and it overrides yours. Agree the abort signal before starting."
+                ],
+                [
+                  "Limb free but patient still trapped",
+                  "Something else is holding them, or the level was wrong",
+                  "Reassess with the rescue team before cutting anything further. Confirm the amputation will actually achieve release <i>before</i> you make it."
+                ],
+                [
+                  "Stump bleeding restarts in transit",
+                  "Tourniquet loosened during movement",
+                  "Reassess after every move. Retighten, add another, pack the stump."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "09",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Massive hemorrhage if tourniquet control is not established before or immediately upon amputation</li>\n      <li>Profound psychological impact on both patient and providers — this is one of the most extreme interventions in emergency medicine and should be recognized as such for the entire team</li>\n      <li>Infection risk given the non-sterile, improvised nature of most field amputation scenarios</li>\n      <li>Crush syndrome/reperfusion physiology if a tourniquet is released or extrication occurs after prolonged entrapment without appropriate resuscitation first (see Crush Syndrome/Entrapment content elsewhere in Crisis Management)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Exsanguination</b> — the immediate risk, and almost entirely a function of whether the tourniquet was on and tight before the incision.</li>\n      <li><b>Hyperkalemic arrest on reperfusion</b> and crush syndrome — the most under-anticipated hazard of the whole procedure.</li>\n      <li><b>Rhabdomyolysis and acute kidney injury.</b></li>\n      <li><b>Hypothermia and trauma-induced coagulopathy</b> — prolonged entrapment, exposure, and cold fluids all compound.</li>\n      <li><b>Infection</b> — the field is filthy by definition. Broad antibiotics and tetanus prophylaxis; the stump needs formal surgical revision and washout.</li>\n      <li><b>Insufficient residual limb length</b>, restricting prosthetic options. The reason to cut as distally as release allows.</li>\n      <li><b>Nerve and vessel retraction</b> making later revision harder.</li>\n      <li><b>Awareness and recall</b> in an under-sedated patient, with lasting psychological consequences.</li>\n      <li><b>Psychological injury to the team and to the rescue crew.</b> Foreseeable, and therefore something to plan for rather than absorb.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "10",
+          "color": "blue",
+          "title": "After",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Pre-alert the receiving trauma center</b> with the specifics: the level, tourniquet times, the drugs given, the entrapment duration, and the potassium risk. They should have an operating room and blood ready.</li>\n  <li><b>Tourniquet times, written and spoken.</b> The single number most often lost and most consequential.</li>\n  <li><b>Entrapment duration</b> matters as much as tourniquet time for predicting the metabolic picture.</li>\n  <li><b>Serial potassium, CK, creatinine, lactate, and gas</b> — and urine color.</li>\n  <li><b>The stump goes to the operating room</b> for formal revision, washout, and a decision about closure. A field amputation is never definitive.</li>\n  <li><b>Debrief the whole team, including the rescue crew</b>, and follow up afterwards rather than only on the day. Make the offer specific and repeat it.</li>\n  <li><b>Document the decision-making</b> carefully: who was present, what extrication options were exhausted, who concurred, and the time each decision was made. This will be reviewed, and it should be.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "11",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -5088,13 +5377,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>This is one of the rarest procedures in the entire library for a reason — nearly every entrapment scenario resolves through cutting the environment, not the patient. Treat this as the true last resort it is.</p>\n<p>Tourniquet control before the cut, not after — hemorrhage control needs to be established as part of the plan, not improvised in the moment of extrication.</p>\n<p>This procedure is typically physician/surgeon-led when performed in the field (e.g., HEMS physician response, USAR medical team) rather than a standard paramedic-level intervention — know your scope and your system's activation pathway for this exact scenario before you ever need it.</p>"
+              "html": "<p><b>Cut the environment, not the patient</b> — until you genuinely cannot. Then say out loud that you cannot, and note who agreed.</p>\n<p><b>Most field amputations are completions.</b> A bridge of skin and tendon divided with heavy shears. Look before you assume you need a saw.</p>\n<p><b>Tourniquets on and tight before the blade.</b> Two of them, and write the time on the skin.</p>\n<p><b>The danger is the release, not the cut.</b> Fluids running and calcium drawn before the limb comes free.</p>\n<p><b>Amputating above a tourniquet contains the crush load</b> — the ischemic metabolites leave with the limb instead of reaching the heart.</p>\n<p><b>Keep every centimeter of length.</b> No flaps, no shaping, most distal level that frees them. Disarticulation is fine.</p>\n<p><b>The Gigli saw is the right tool</b> — no power, confined spaces, packs into nothing. Carry a spare wire.</p>\n<p><b>Ketamine, and someone whose only job is the patient's head.</b></p>\n<p><b>Take the limb with you</b>, cool but never frozen.</p>\n<p><b>Know your system's pathway before the day.</b> The best preparation for a procedure you will probably never do is knowing exactly who to call.</p>\n<p><b>Brief before, debrief after.</b> Including the rescue crew.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "12",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -5104,7 +5393,27 @@
               "items": [
                 {
                   "tier": "REFERENCE",
-                  "html": "Kucera J, Waseem M. Field amputation. In: <i>StatPearls</i>. Treasure Island, FL: StatPearls Publishing; updated 2023."
+                  "html": "Kucera J, Waseem M. Field amputation. In: <i>StatPearls.</i> Treasure Island, FL: StatPearls Publishing; updated 2023."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Macintyre A, Kramer EB, Petinaux B, Glass T, Tate CM. Extreme measures: field amputation on the living and dismemberment of the deceased to extricate individuals entrapped in collapsed structures. <i>Disaster Med Public Health Prep.</i> 2012;6(4):428–435."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Sharp CF, Mangram AJ, Lorenzo M, Dunn EL. A major metropolitan “field amputation” team: a call to arms … and legs. <i>J Trauma.</i> 2009;67(6):1158–1161."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Sever MS, Vanholder R; RDRTF of ISN Work Group on Recommendations for the Management of Crush Victims in Mass Disasters. Recommendations for the management of crush victims in mass disasters. <i>Nephrol Dial Transplant.</i> 2012;27(suppl 1):i1–i67."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Committee on Tactical Combat Casualty Care (CoTCCC). <i>Tactical Combat Casualty Care Guidelines for Medical Personnel.</i> Defense Health Agency; current revision — tourniquet application and conversion."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Your own system's field amputation activation pathway, kit location, and credentialed responders. Knowing this in advance is the single most useful preparation for this procedure."
                 }
               ]
             }
@@ -5133,8 +5442,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5335,8 +5644,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -6342,8 +6651,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7011,8 +7320,8 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-23",
+      "reviewDue": "2027-09-23",
       "sections": [
         {
           "id": "indications",
@@ -7024,7 +7333,7 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Severe, life-threatening hemorrhage at a junctional zone (proximal groin/inguinal, axilla, or pelvic/perineal region) not amenable to standard extremity tourniquet placement</li>\n      <li>Traumatic amputation or penetrating injury at the proximal thigh, groin, or axilla with uncontrolled bleeding</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Life-threatening hemorrhage in a junctional zone</b> — the groin and inguinal region, the axilla and shoulder girdle, the gluteal region, the perineum, and the base of the neck. Anatomy where there is no cylindrical limb for a standard tourniquet to squeeze.</li>\n      <li><b>Traumatic proximal amputation</b> — a high thigh or shoulder-level amputation leaves no residual limb above the injury to place a limb tourniquet on</li>\n      <li><b>Junctional bleeding that continues despite correct wound packing</b> and sustained direct pressure</li>\n      <li><b>As a bridge while a limb tourniquet is converted</b>, or while proximal surgical control is arranged</li>\n      <li><b>Abdominal aortic occlusion</b> (specific devices only) as a non-invasive analogue of Zone 3 REBOA in pelvic and high junctional hemorrhage</li>\n</ul>"
             }
           ]
         },
@@ -7038,29 +7347,83 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute in life-threatening junctional hemorrhage</li>\n      <li>Isolated distal extremity hemorrhage where a standard limb tourniquet is more appropriate and simpler to apply</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None absolute</b> in life-threatening junctional hemorrhage.</li>\n      <li><b>Bleeding a limb tourniquet can reach.</b> If there is a cylinder of limb above the wound, use a standard tourniquet — it is faster, better understood by everyone downstream, and does not require the specific device knowledge these do.</li>\n      <li><b>Pelvic fracture, for abdominal aortic compression devices.</b> An inflatable wedge pressed onto a disrupted pelvis can displace the fracture and is generally avoided; a pelvic binder plus a groin-targeted device is the better combination.</li>\n      <li><b>Abdominal aortic occlusion in penetrating abdominal trauma or suspected abdominal injury</b> — you are compressing bowel and a possibly injured aorta against the spine.</li>\n      <li><b>Pregnancy</b>, for abdominal devices.</li>\n      <li><b>Any device you have not used before, if manual pressure is working.</b> A fist held correctly on the femoral artery beats forty seconds spent reading a label.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "equipment",
+          "id": "devices",
           "num": "03",
-          "color": "blue",
-          "title": "Equipment",
+          "color": "amber",
+          "title": "The Devices Are Not Interchangeable",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Unlike limb tourniquets, these share almost no technique. This table is the reason this entry exists."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Device",
+                "Mechanism",
+                "Sites",
+                "Notes and limits"
+              ],
+              "rows": [
+                [
+                  "<b>CRoC</b><br>Combat Ready Clamp",
+                  "A rigid C-clamp bolted to a base plate, driving a pressure disc down onto the vessel by a threaded handle",
+                  "Inguinal; axilla with repositioning",
+                  "Needs a firm surface under the patient. Slow to assemble. Very effective once seated, and the pressure is directly and continuously adjustable."
+                ],
+                [
+                  "<b>JETT</b><br>Junctional Emergency Treatment Tool",
+                  "A belt with two screw-down pressure pads",
+                  "<b>Bilateral inguinal</b> simultaneously",
+                  "The only common device designed for both groins at once — the reason it exists is bilateral proximal amputation. Not for axilla."
+                ],
+                [
+                  "<b>SAM Junctional TQ</b>",
+                  "Pelvic belt with an <b>inflatable Target Compression Device</b> (one or two)",
+                  "Inguinal, axillary; the belt doubles as a pelvic binder",
+                  "Inflate to hemorrhage control. Cleared for up to <b>4 hours</b>. The dual-purpose pelvic function is genuinely useful in blunt trauma."
+                ],
+                [
+                  "<b>AAJT-S</b><br>Abdominal Aortic and Junctional TQ",
+                  "Inflatable wedge over the abdomen compressing the aorta against the spine",
+                  "<b>Distal aorta</b> (at the umbilicus); also axilla and groin",
+                  "<b>Abdominal application is limited to about 60 minutes</b> — this is whole-body distal ischemia, functionally non-invasive Zone 3 REBOA. Avoid with pelvic fracture, abdominal injury, or pregnancy."
+                ]
+              ]
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Know the device in your bag, today",
+              "html": "Limb tourniquets are close enough to one another that skill transfers. <b>These do not.</b> A CRoC and an AAJT share no motions, no landmarks, and no endpoints. The failure mode is specific and predictable: an operator meets an unfamiliar device during the two minutes it was bought to save, and reads the instructions while the patient exsanguinates. <b>Find out which one your service stocks and put your hands on it before you need it.</b> If you are improvising because you don't know the device, go back to a fist on the ramus."
+            }
+          ]
+        },
+        {
+          "id": "first",
+          "num": "04",
+          "color": "red",
+          "title": "Before the Device: the Things That Work Immediately",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
-              "color": "blue",
-              "html": "<ul>\n      <li>Commercial junctional tourniquet device (e.g., a pelvic/groin-specific compression device per your agency's stocked device)</li>\n      <li>Wound packing material and hemostatic gauze as an adjunct or backup</li>\n</ul>"
+              "color": "red",
+              "html": "<p>Every junctional device takes time to deploy. The bleeding does not pause for it, so something has to hold the line first — and these techniques are not a lesser substitute, they are the opening move.</p>\n<ul>\n  <li><b>A fist, a knee, or a heel on the femoral artery.</b> Press at the <b>midpoint of the inguinal ligament</b> — halfway between the anterior superior iliac spine and the pubic tubercle — driving straight down so the artery is compressed against the <b>superior pubic ramus</b>. Use body weight through a straight arm or a knee. This works, it works instantly, and it holds while everything else is organized. It is also exhausting, so rotate people.</li>\n  <li><b>Pack the wound at the same time</b> (see the wound packing entry). Packing and a junctional device are complementary: the pack controls what is bleeding in the wound, the device controls inflow from above. A device applied over an unpacked cavitating wound often fails.</li>\n  <li><b>Axillary compression</b> — push the axillary artery against the humeral head, or reach higher and compress the subclavian downward behind the clavicle against the first rib.</li>\n  <li><b>Abdominal aortic compression by fist</b> — a closed fist or the heel of the hand pressed hard just left of the umbilicus, directed posteriorly toward the spine, with the operator's weight over it. A crude and short-lived measure that can buy minutes in catastrophic pelvic or high groin bleeding.</li>\n  <li><b>Analgesia.</b> All of this is savagely painful. Ketamine, early.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "technique",
-          "num": "04",
+          "id": "groin",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Inguinal Application",
           "tagline": null,
           "blocks": [
             {
@@ -7069,60 +7432,177 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Expose the injury and identify the junctional zone requiring compression."
+                  "title": "Manual pressure first, and keep it there",
+                  "html": "One person holds the femoral artery against the pubic ramus and does not let go until the device is tightened and has taken over. Deploying a device while nobody is compressing means the patient bleeds throughout the assembly."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Position the device per its specific design — most junctional tourniquets use a target compression pad positioned directly over the vessel proximal to the injury, secured by a belt/strap system anchored around the pelvis or trunk."
+                  "title": "Expose fully and pack the wound",
+                  "html": "Cut the clothing away to bare skin — a pad over fabric slides. Pack the wound cavity firmly while pressure is maintained proximally."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Apply and tighten per the device's mechanism (pneumatic, mechanical windlass, or ratchet, depending on the specific device) until bleeding is controlled or a strong distal pulse is lost, whichever the device is designed to target."
+                  "title": "Place the pad over the artery, not over the wound",
+                  "html": "The target is <b>proximal inflow</b>: the femoral artery at the midpoint of the inguinal ligament, where it can be pressed onto the superior pubic ramus. <b>This is the single most common misapplication</b> — the pad is instinctively centered on the injury, which compresses a hole rather than the vessel feeding it. Find the landmark by bone, not by the wound."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Reassess for ongoing hemorrhage; if bleeding continues, adjust positioning or add direct wound packing as an adjunct."
+                  "title": "Anchor the belt around the pelvis and tension it",
+                  "html": "Belt-based devices need a firm circumferential anchor before the pad can generate force. Seat the belt, remove the slack, then apply pressure through the pad."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Document application time clearly — junctional tourniquets, like limb tourniquets, carry ischemic risk with prolonged application and should be addressed at the earliest safe opportunity by a receiving surgical team."
+                  "title": "Tighten to hemorrhage control — that is the endpoint",
+                  "html": "Screw down, ratchet, or inflate until <b>bleeding stops</b>. Unlike a limb tourniquet, <b>you cannot rely on loss of a distal pulse</b>: the collateral circulation around the pelvis and shoulder is rich, and a palpable distal pulse does not mean the device has failed. Watch the wound, not the foot."
+                },
+                {
+                  "num": "6",
+                  "color": "red",
+                  "title": "Verify after every movement",
+                  "html": "Recheck after each log-roll, lift, and transfer. These devices slip — they sit on a mobile, conical, blood-slick surface, and a pad that has migrated a couple of centimeters off the artery is doing nothing while looking correct."
+                },
+                {
+                  "num": "7",
+                  "color": "amber",
+                  "title": "Write the time on the patient",
+                  "html": "On the skin and on the device, in marker. Say it at handover. Ischemic time drives every downstream decision and is the number most often lost."
                 }
               ]
-            },
-            {
-              "type": "alert",
-              "color": "amber",
-              "title": "Know your specific device before you need it",
-              "html": "Junctional tourniquets vary significantly in mechanism between manufacturers, unlike the relatively standardized limb tourniquet — unfamiliarity in the moment costs the time the device exists to save."
             }
           ]
         },
         {
-          "id": "complications",
-          "num": "05",
+          "id": "axilla",
+          "num": "06",
+          "color": "blue",
+          "title": "Axillary Application",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p>Harder than the groin, and less often practiced. The axillary artery has no convenient flat bone beneath it and the shoulder girdle is mobile.</p>\n<ul>\n  <li><b>Target the axillary artery against the humeral head</b> with the arm adducted, or reach proximally and compress the <b>subclavian artery downward behind the clavicle onto the first rib</b>.</li>\n  <li><b>Anchor over the opposite shoulder</b> — axillary applications need a counter-anchor across the torso, because there is no circumference to grip. A belt that simply encircles the chest will ride.</li>\n  <li><b>Pack the wound as well</b>, always. Axillary bleeding has substantial collateral supply through the scapular anastomosis, and inflow control alone often leaves brisk back-bleeding.</li>\n  <li><b>Watch the airway and breathing.</b> A device anchored across the chest restricts ventilation, and high axillary wounds are close enough to the pleura that a pneumothorax should be actively excluded.</li>\n  <li><b>Brachial plexus injury</b> is a real consequence of sustained axillary compression. It is accepted in exchange for survival, and it is documented.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "aorta",
+          "num": "07",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Abdominal Aortic Occlusion — and Its Clock",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Device-specific misapplication — each junctional tourniquet has a distinct mechanism; unfamiliarity in the moment costs critical time</li>\n      <li>Incomplete hemorrhage control if compression is not directed precisely over the bleeding vessel's proximal course</li>\n      <li>Ischemic injury to the compressed region with prolonged application time</li>\n      <li>Difficulty applying in an uncooperative or actively hemorrhaging, combative patient — may require additional hands</li>\n</ul>"
+              "html": "<p>An inflatable wedge placed over the abdomen at the level of the umbilicus, compressing the infrarenal aorta against the vertebral column. Functionally a <b>non-invasive Zone 3 REBOA</b>: it stops inflow to the pelvis and both legs without any vascular access at all.</p>\n<ul>\n  <li><b>Indication:</b> catastrophic pelvic, perineal, or high bilateral groin hemorrhage not controllable by any other means.</li>\n  <li><b>Do not use with pelvic fracture, suspected abdominal injury, penetrating abdominal trauma, or pregnancy.</b></li>\n  <li><b>Time limit is approximately 60 minutes</b>, and it is a hard limit. Everything below the device is ischemic from the moment it is inflated, and the reperfusion load on release is the same problem REBOA has: potassium, acid, and vasoplegia arriving at once.</li>\n  <li><b>Announce the clock the way you would for a balloon.</b> Inflation time called out loud, repeated every five minutes, written down.</li>\n  <li><b>Prepare for release</b> exactly as for REBOA deflation — blood running, pressors connected, calcium drawn up, and a surgeon present. Release gradually, not by opening the valve.</li>\n  <li><b>Confirm effect</b> by loss of femoral pulses bilaterally and a rise in proximal blood pressure. If neither happens, the device is malpositioned or under-inflated — or the bleeding is above it.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Device on, still bleeding briskly",
+                  "Pad centered on the wound instead of on the proximal artery",
+                  "Move the pad to the bony landmark — midpoint of the inguinal ligament, onto the ramus. Check this before anything else."
+                ],
+                [
+                  "Still bleeding, pad correctly placed",
+                  "Insufficient pressure, or the wound cavity is bleeding independently",
+                  "Increase pressure to the device's limit. Pack the wound if you have not. Reassess for a second site."
+                ],
+                [
+                  "Bleeding controlled, then restarts",
+                  "Device migration — almost always after a move",
+                  "Re-seat and re-tension. Re-verify after every transfer, every time."
+                ],
+                [
+                  "Distal pulse still present",
+                  "Normal — collateral flow around the pelvis and shoulder",
+                  "<b>Not a failure.</b> The endpoint is a dry wound, not an absent pulse. Do not over-tighten chasing the pulse."
+                ],
+                [
+                  "Device will not seat / keeps sliding",
+                  "Applied over clothing, or blood-slick skin, or no firm surface beneath",
+                  "Strip to skin and dry it. Rigid clamp devices need a hard backboard under the patient."
+                ],
+                [
+                  "Patient fighting, unmanageable",
+                  "Pain — these are excruciating",
+                  "Ketamine. An incompletely applied device because the patient could not tolerate it is a preventable failure."
+                ],
+                [
+                  "Bilateral groin wounds, one device",
+                  "Only JETT covers both simultaneously",
+                  "Manual pressure on the second side, or a second device. Do not let one side go untreated while perfecting the other."
+                ],
+                [
+                  "Abdominal device on, pressure unchanged",
+                  "Under-inflated, malpositioned — or bleeding above the level of occlusion",
+                  "Inflate further and confirm both femoral pulses are gone. If still no response, look above the diaphragm."
+                ],
+                [
+                  "Collapse when the device comes off",
+                  "Reperfusion washout",
+                  "Re-apply. Calcium, product, pressors. Release slowly and only with a surgeon present."
+                ],
+                [
+                  "Nobody knows when it went on",
+                  "Time not recorded",
+                  "Preventable only up front — marker on skin, spoken at handover, written in the note."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "complications",
+          "num": "09",
+          "color": "red",
+          "title": "Complications",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<ul>\n      <li><b>Ischemia distal to compression</b>, scaling with dwell time — and with abdominal application, that means the pelvis, both legs, and the pelvic viscera.</li>\n      <li><b>Reperfusion injury on release</b> — hyperkalemia, acidemia, vasoplegia, arrhythmia and arrest. Identical in kind to REBOA deflation, and prepared for the same way.</li>\n      <li><b>Compartment syndrome</b> of the compressed limbs after reperfusion. Serial checks; low threshold for fasciotomy.</li>\n      <li><b>Nerve injury</b> — femoral nerve in the groin, brachial plexus in the axilla. Frequently accepted deliberately.</li>\n      <li><b>Pressure necrosis</b> of skin and underlying soft tissue at the pad.</li>\n      <li><b>Bowel injury and aortic injury</b> from abdominal compression, particularly in an already injured abdomen.</li>\n      <li><b>Ventilatory restriction</b> from abdominal or thoracic-anchored devices.</li>\n      <li><b>Fracture displacement</b> where a device is applied over an unstable pelvis.</li>\n      <li><b>Incomplete control creating false reassurance</b> — a device that is on and visible is easy to mistake for a problem solved.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "handover",
+          "num": "10",
+          "color": "blue",
+          "title": "Handover",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Name the device.</b> The receiving team may never have seen it. “Junctional tourniquet” is not enough information to release one safely.</li>\n  <li><b>Give the application time</b> — written on the patient, not only spoken.</li>\n  <li><b>Say what is packed underneath</b>, and how many rolls or sponges.</li>\n  <li><b>Say what has already failed</b>, so nobody repeats it.</li>\n  <li><b>These come off in an operating room</b>, with proximal control obtained and the team ready for reperfusion — not in a resuscitation bay to see whether the bleeding has stopped.</li>\n  <li><b>For abdominal aortic devices, state the clock as a deadline</b>, not as an elapsed time: “<i>inflated at 14:32, off by 15:32.</i>”</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "11",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -7130,13 +7610,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Know your specific issued device's mechanism before you need it — junctional tourniquets vary significantly between manufacturers, unlike the relatively standardized limb tourniquet.</p>\n<p>Wound packing with hemostatic gauze remains a critical adjunct or backup when a junctional tourniquet isn't available or isn't fully controlling hemorrhage.</p>\n<p>Document time of application prominently on the patient (write it on the device or the patient directly) so the receiving team can immediately assess dwell time.</p>"
+              "html": "<p><b>A fist on the ramus works right now.</b> Start there, keep it there, and let the device take over — never the other way around.</p>\n<p><b>The pad goes on the artery, not on the wound.</b> Find it by bone: midpoint of the inguinal ligament, onto the superior pubic ramus.</p>\n<p><b>Pack the wound too.</b> Inflow control and cavity control are different problems and you usually have both.</p>\n<p><b>The endpoint is a dry wound, not an absent pulse.</b> Collateral flow means the pulse can persist with the device working perfectly.</p>\n<p><b>Know your device before the day you need it.</b> Nothing transfers between a CRoC, a JETT and an AAJT except the intent.</p>\n<p><b>Re-check after every move.</b> These slip, and a slipped device looks applied.</p>\n<p><b>Abdominal aortic occlusion has a one-hour clock</b> — treat it exactly like a Zone 3 balloon, including how you come off it.</p>\n<p><b>Give ketamine.</b></p>\n<p><b>Write the time on the skin.</b></p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "12",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -7146,11 +7626,27 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Committee on Tactical Combat Casualty Care (CoTCCC). Tactical Combat Casualty Care Guidelines for Medical Personnel. Defense Health Agency; current revision."
+                  "html": "Committee on Tactical Combat Casualty Care (CoTCCC). <i>Tactical Combat Casualty Care Guidelines for Medical Personnel.</i> Defense Health Agency; current revision."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Kotwal RS, Butler FK. Junctional hemorrhage control for tactical combat casualty care. <i>Wilderness Environ Med.</i> 2017;28(2S):S33-S38."
+                  "html": "Kotwal RS, Butler FK. Junctional hemorrhage control for tactical combat casualty care. <i>Wilderness Environ Med.</i> 2017;28(2S):S33–S38."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Kragh JF, Dubick MA, Aden JK, et al. U.S. military use of tourniquets from 2001 to 2010. <i>Prehosp Emerg Care.</i> 2015;19(2):184–190."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Croushorn J. Abdominal aortic and junctional tourniquet controls hemorrhage from a gunshot wound of the left groin. <i>J Spec Oper Med.</i> 2014;14(2):6–8."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Smith S, White J, Wanis KN, Beckett A, McAlister VC, Hilsden R. The effectiveness of junctional tourniquets: a systematic review and meta-analysis. <i>J Trauma Acute Care Surg.</i> 2019;86(3):532–539."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "The instructions for use of the specific device your service stocks. Landmarks, tensioning method, and maximum application time are device-specific and are not transferable between them."
                 }
               ]
             }
@@ -7179,8 +7675,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7838,8 +8334,8 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-23",
+      "reviewDue": "2027-09-23",
       "sections": [
         {
           "id": "indications",
@@ -7851,7 +8347,7 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Suspected unstable pelvic fracture in a trauma patient, especially with hemodynamic instability or a mechanism concerning for pelvic ring disruption</li>\n      <li>Clinical signs: pelvic instability on gentle exam (perform only once, avoid repeated manipulation), leg length discrepancy, rotational deformity, perineal/scrotal hematoma</li>\n      <li>Should be applied empirically in any hemodynamically unstable blunt trauma patient with a concerning mechanism, even before imaging confirmation</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Any hemodynamically unstable blunt trauma patient with a mechanism that could break a pelvis.</b> This is the important one — it is an empiric indication, applied before imaging and before examination confirms anything.</li>\n      <li>Clinical signs of pelvic ring disruption: instability felt on a single gentle examination, leg-length discrepancy, external rotation of a limb, perineal or scrotal hematoma, blood at the urethral meatus, an open perineal wound</li>\n      <li>Radiographic pelvic ring disruption on a trauma film or CT, if one is not already on</li>\n      <li>Traumatic arrest or peri-arrest from blunt mechanism — part of the same reflex as bilateral thoracostomies</li>\n      <li><b>During transfer or extrication</b> of any patient with a suspected pelvic injury, whether or not they are currently unstable</li>\n</ul>\n<p>A binder costs almost nothing to apply and almost nothing to be wrong about. The asymmetry is the whole argument: <b>binding a pelvis that turns out to be intact is a non-event; failing to bind one that is disrupted is a preventable death.</b></p>"
             }
           ]
         },
@@ -7859,13 +8355,13 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Contraindications and Limits",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute in suspected unstable pelvic fracture with hemorrhagic shock</li>\n      <li>Confirmed pelvic fracture pattern where binder placement would worsen displacement (rare, and generally not distinguishable in the prehospital/initial resuscitation setting — default to binding when in doubt)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>None absolute</b> in suspected pelvic disruption with shock.</li>\n      <li><b>It will not help</b> an isolated hip dislocation, an isolated femoral neck fracture, or an acetabular fracture with an intact ring. A binder closes a ring; if the ring is not open, there is nothing to close.</li>\n      <li><b>Lateral compression (LC) patterns</b> are already internally rotated, so a binder adds little and could theoretically over-compress. In practice this is not distinguishable at the bedside or in the field, and <b>current guidance is to bind anyway</b> — the theoretical harm has not materialized in the literature, and the cost of withholding in an open-book injury is very real.</li>\n      <li><b>Vertical shear patterns</b> will not be reduced by circumferential compression alone; they need longitudinal traction and definitive fixation. Bind anyway, but know the binder is not the answer.</li>\n      <li><b>Skin already compromised</b> at the level of the trochanters — degloving, burn, open fracture. Apply anyway if the patient is bleeding, and flag it loudly for early removal.</li>\n</ul>"
             }
           ]
         },
@@ -7879,15 +8375,69 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Commercial pelvic binder device (preferred) or improvised binding (folded sheet)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A commercial binder</b> — SAM Pelvic Sling, T-POD, Prometheus, or your service's equivalent. The advantage is not the fabric; it is that these devices <b>self-limit tension at approximately 180 N</b>, which is enough to close a ring and not enough to cause pressure injury quickly. A buckle that clicks and stops is doing something a sheet cannot.</li>\n      <li><b>A folded bed sheet</b> as the improvised version — effective, universally available, and with one real drawback: <b>you cannot control or reproduce the tension.</b> Fold to about 20–25 cm wide, cross the ends, and secure with clamps or a tied knot.</li>\n      <li><b>Tape or a triangular bandage</b> to bind the knees and ankles together — this is part of the procedure, not an optional extra (see §05).</li>\n      <li><b>Trauma shears.</b> Everything comes off from under the binder first; see the warning below.</li>\n      <li><b>A marker</b> for the application time.</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Empty the pockets before you close the binder",
+              "html": "A phone, a set of keys, a belt buckle, a holster, or a wallet trapped under a binder at the trochanter becomes a focal pressure point on a shocked, hypoperfused, immobile patient. Pressure necrosis over that object can begin within a couple of hours and will not be found until the binder comes off. <b>Cut the clothing away and sweep the field with your hand before you tighten.</b>"
             }
           ]
         },
         {
-          "id": "technique",
+          "id": "level",
           "num": "04",
+          "color": "amber",
+          "title": "Why the Greater Trochanters",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "The most common application error, and it is not a small one."
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p>A binder works by <b>internally rotating both hemipelves around the femoral heads</b>, which closes an opened symphysis, reduces pelvic volume, and lets a tamponading hematoma reach a pressure at which it stops growing. That rotation is generated by squeezing at the widest transverse point of the pelvis — <b>the greater trochanters</b>.</p>\n<p><b>Placed at the iliac crests instead</b>, the binder squeezes above the axis of rotation. It does not close the symphysis — and it can <i>lever the ring further open</i>. It also sits on bone with almost no soft-tissue cover, so it produces skin injury faster while achieving less. A binder at the belt line looks correct in a photograph and does nothing.</p>\n<p><b>How to find the level without thinking:</b> the greater trochanters sit roughly in line with the <b>pubic symphysis</b>, which is far lower than instinct suggests — about the level of the front trouser pocket, not the waistband. Palpate the bony prominence on the lateral hip and put the middle of the binder there.</p>"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Pattern",
+                "Mechanism",
+                "Does a binder help?"
+              ],
+              "rows": [
+                [
+                  "<b>APC</b> — anteroposterior compression (“open book”)",
+                  "Symphysis sprung open, volume increased",
+                  "<b>Yes — this is the pattern it is designed for.</b> Reduces volume and restores tamponade."
+                ],
+                [
+                  "<b>LC</b> — lateral compression",
+                  "Hemipelvis driven inward, already internally rotated",
+                  "Limited mechanical benefit. Bind anyway — you cannot tell the patterns apart at the bedside and the harm is theoretical."
+                ],
+                [
+                  "<b>VS</b> — vertical shear",
+                  "Hemipelvis displaced cephalad",
+                  "Partially. Needs traction and external fixation. Bind, but escalate."
+                ],
+                [
+                  "<b>Combined</b>",
+                  "Mixed",
+                  "Bind."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "application",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Application",
           "tagline": null,
           "blocks": [
             {
@@ -7896,66 +8446,158 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Position the binder at the level of the greater trochanters (not the iliac crests) — this is the correct anatomic level to close the pelvic ring, and the most common placement error is positioning too high."
+                  "title": "Examine the pelvis once, gently — or not at all",
+                  "html": "One careful assessment, and only if it will change what you do. <b>Never spring the pelvis, and never re-check it.</b> Repeated manipulation shears the clot that is the only thing containing a pelvic venous hemorrhage. If a binder is going on regardless — which for an unstable patient it is — the examination adds risk and no information. <i>Assess once, bind, then leave it alone.</i>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Apply gentle internal rotation to the lower extremities if feasible before securing, which can help reduce certain fracture patterns."
+                  "title": "Strip and sweep the field",
+                  "html": "Cut clothing away from the hips. Sweep with your hand for phones, keys, buckles, and debris. Log-roll only if necessary and only once — or slide the binder under the natural hollow at the knees and walk it up beneath the buttocks, which avoids rolling entirely."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Wrap the binder circumferentially and secure per the device's mechanism (typically a self-tightening strap/buckle system), applying firm, even circumferential compression."
+                  "title": "Position at the greater trochanters",
+                  "html": "The middle of the binder sits over the trochanters, level with the pubic symphysis. Check both sides — a binder that is correct on one hip and rides up on the other is applying an asymmetric force. If the device has a marked center, put it on the symphysis."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Avoid over-tightening, which can cause skin injury or, rarely, worsen certain fracture patterns — snug and even compression is the goal, not maximal force."
+                  "title": "Internally rotate the legs and tie them together",
+                  "html": "Bring the legs into slight internal rotation — toes pointing at each other — and <b>bind the knees and ankles with tape or a bandage before tightening.</b> The femurs are levers on the femoral heads; internal rotation at the feet closes the ring from the other end. This step takes fifteen seconds, contributes real reduction, and is skipped almost every time."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Reassess distal pulses and skin integrity at the point of pressure after application."
+                  "title": "Tighten to the device's stop — not to maximum force",
+                  "html": "Pull the straps evenly from both sides and let the buckle click. <b>Snug and symmetric, not crushing.</b> Over-tightening does not close the ring any further once it is reduced; it just injures skin and, in lateral compression patterns, risks over-reduction. With an improvised sheet you have no stop, so aim for firm and even, and re-check the skin more often."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Do not remove or loosen the binder until definitive orthopedic evaluation, even for repeat imaging, unless specifically directed by the trauma/orthopedic team."
+                  "title": "Leave a window for the groin — deliberately",
+                  "html": "This patient will very likely need <b>femoral arterial or venous access</b>, and may need a REBOA sheath or angiography. Position the binder so the femoral triangles remain reachable, and say out loud that it is in place, because the next person to look will find the landmarks covered and lose time working out why."
+                },
+                {
+                  "num": "7",
+                  "color": "amber",
+                  "title": "Check distal perfusion, then write the time on it",
+                  "html": "Pulses, color, capillary refill in both legs. Then write the application time on the binder itself in marker. The dwell-time clock has started and nobody downstream will know when unless you record it now."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "ceiling",
+          "num": "06",
+          "color": "blue",
+          "title": "What the Binder Actually Stops — and What It Doesn't",
+          "tagline": null,
+          "blocks": [
             {
-              "type": "alert",
-              "color": "amber",
-              "title": "Level matters more than almost anything else here",
-              "html": "The correct placement is at the greater trochanters, not the belt line — positioning too high is the single most common application error and fails to close the pelvic ring effectively."
+              "type": "box",
+              "color": "blue",
+              "html": "<p><b>Most pelvic bleeding is venous and cancellous bone</b> — the presacral venous plexus and the raw fracture surfaces. That bleeding is low-pressure and self-tamponading <i>if the pelvic volume stays small enough for a hematoma to build pressure</i>. This is exactly what a binder restores, and it is why a binder works at all.</p>\n<p><b>Arterial bleeding does not care about a binder.</b> A torn internal iliac branch bleeds at systemic pressure into a space the binder has narrowed but not closed. If the patient remains unstable after the binder is on and other sources are excluded, the binder has done its job and reached its ceiling.</p>\n<p><b>The escalation ladder from there:</b></p>\n<ul>\n  <li><b>Angiography and embolization</b> — the definitive answer for arterial pelvic bleeding where it is available quickly</li>\n  <li><b>Preperitoneal pelvic packing</b> — surgical, fast, and the better option where angiography is slow or the patient cannot survive the trip. The binder stays on for it.</li>\n  <li><b>External fixation</b> — mechanical stability, usually alongside one of the above</li>\n  <li><b>REBOA Zone 3</b> — infrarenal occlusion as a bridge, sparing the kidneys and gut</li>\n  <li><b>Massive transfusion and TXA</b> running throughout</li>\n</ul>\n<p>The practical point: <b>a binder that is on and correct, in a patient who is still unstable, is not a reason to reapply the binder.</b> It is the signal to move to the next rung.</p>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "07",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Binder on, no improvement in pressure",
+                  "Placed at the iliac crests, not the trochanters",
+                  "Look at the level. This is the first thing to check and the most likely error. Reposition once, correctly."
+                ],
+                [
+                  "Correctly placed, still unstable",
+                  "Arterial pelvic bleeding, or a second source entirely",
+                  "Binder has reached its ceiling. Escalate (§06). Re-examine chest, abdomen, and long bones — and the floor."
+                ],
+                [
+                  "Binder keeps riding upward",
+                  "Applied over clothing, or the patient is being moved a lot",
+                  "Strip to skin. Re-seat at the trochanters and secure the legs together, which helps hold it."
+                ],
+                [
+                  "Asymmetric, tight on one side",
+                  "Uneven pull during tightening",
+                  "Release and re-tension evenly from both sides simultaneously. Asymmetric force can displace a fracture."
+                ],
+                [
+                  "Skin blistering under the binder",
+                  "Pressure injury — or an object trapped underneath",
+                  "If an object: it must come out. Otherwise this is a hard prompt to get to definitive fixation and off the binder."
+                ],
+                [
+                  "Team asks to remove it for CT",
+                  "Misconception — it stays on",
+                  "<b>Do not remove a binder for imaging.</b> Scan through it. A reduced pelvis on CT is the expected appearance and the radiologist should be told a binder is on."
+                ],
+                [
+                  "Cannot find the femoral pulse for access",
+                  "Binder covering the groin",
+                  "Reposition slightly caudad or use ultrasound through the available window. Plan the window when you apply it."
+                ],
+                [
+                  "Blood at the meatus, urine needed",
+                  "Possible urethral injury",
+                  "<b>Do not force a urethral catheter.</b> Urology input; suprapubic drainage if needed."
+                ],
+                [
+                  "Fracture looks worse on the post-binder film",
+                  "Almost always an LC pattern being over-compressed — rare",
+                  "Discuss with orthopedics before loosening anything. Do not loosen a binder in an unstable patient on imaging appearance alone."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "08",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Incorrect placement level (too high, at the iliac crests) failing to achieve effective pelvic ring closure</li>\n      <li>Skin breakdown or pressure injury with prolonged dwell time, particularly over bony prominences</li>\n      <li>Over-tightening causing local tissue injury</li>\n      <li>Repeated pelvic manipulation to \"check\" stability after binder placement, which can dislodge clot and worsen hemorrhage — assess pelvic stability once, then bind and stop manipulating</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Pressure necrosis over the trochanters and sacrum</b> — the dominant complication. In a shocked, hypothermic, immobile patient, skin injury can begin within <b>2–3 hours</b>. Objects trapped underneath accelerate it dramatically.</li>\n      <li><b>Ineffective reduction from incorrect level</b> — not a complication of the device so much as of its application, and the commonest reason a binder fails.</li>\n      <li><b>Over-compression of a lateral compression fracture</b> — theoretical, rarely demonstrated, and not a reason to withhold.</li>\n      <li><b>Delayed recognition of ongoing arterial bleeding</b>, because the binder is on and looks like an intervention that should have worked.</li>\n      <li><b>Obscured vascular access</b> and delayed femoral cannulation.</li>\n      <li><b>Missed injuries</b> under the binder — open perineal wounds and degloving are hidden the moment it goes on, which is an argument for a quick look before tightening.</li>\n      <li><b>Clot disruption from repeated pelvic examination</b> — a complication of the assessment, not the binder, and entirely avoidable.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "09",
+          "color": "blue",
+          "title": "Dwell Time and Removal",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>It stays on until orthopedics or trauma surgery removes it</b> — through the trauma bay, through CT, through transfer, and into the operating room. Nobody loosens it “to have a look.”</li>\n  <li><b>Target removal or conversion to definitive fixation within about 24 hours</b>, and sooner in a patient who is hypoperfused, since that is the window in which skin injury accumulates.</li>\n  <li><b>Inspect the skin at the first safe opportunity</b>, in a controlled setting, with orthopedics present and the ability to re-apply.</li>\n  <li><b>Handover the application time explicitly.</b> Written on the binder, stated out loud, and in the note. A binder whose start time is unknown gets managed as if it has been on longer than it has, or worse, shorter.</li>\n  <li><b>Tell the receiving team it is on at all.</b> Under a blanket, on a shocked patient in a busy resuscitation, a correctly applied binder is genuinely easy to miss.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "10",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -7963,13 +8605,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Level matters more than almost anything else in this procedure — greater trochanters, not the belt line.</p>\n<p>If pelvic fracture is even a reasonable concern in an unstable blunt trauma patient, bind empirically rather than waiting for imaging confirmation.</p>\n<p>Once bound, stop examining the pelvis repeatedly — each manipulation risks dislodging early clot formation.</p>"
+              "html": "<p><b>Greater trochanters, level with the symphysis.</b> Lower than instinct says. This single fact accounts for most binder failures.</p>\n<p><b>Bind empirically.</b> Unstable, blunt, plausible mechanism — that is enough. Do not wait for a film.</p>\n<p><b>Examine once, then never again.</b> Springing a pelvis buys no information and shears the clot holding the patient together.</p>\n<p><b>Tie the knees and ankles.</b> Fifteen seconds, real reduction, almost always skipped.</p>\n<p><b>Sweep the pockets.</b> A phone under a binder is a pressure ulcer with a start time.</p>\n<p><b>Snug, not crushing, and symmetric.</b> The commercial devices stop at the right tension on purpose.</p>\n<p><b>Leave the groin reachable.</b> This patient is going to need femoral access, and probably angiography.</p>\n<p><b>Do not take it off for the CT.</b></p>\n<p><b>Still unstable with a correct binder means escalate, not retighten.</b> Angiography, packing, external fixation, Zone 3.</p>\n<p><b>Write the time on it.</b></p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "11",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -7978,12 +8620,28 @@
               "type": "sources",
               "items": [
                 {
+                  "tier": "GUIDELINE",
+                  "html": "Coccolini F, Stahel PF, Montori G, et al. Pelvic trauma: WSES classification and guidelines. <i>World J Emerg Surg.</i> 2017;12:5."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Bottlang M, Krieg JC, Mohr M, Simpson TS, Madey SM. Emergent management of pelvic ring fractures with use of circumferential compression. <i>J Bone Joint Surg Am.</i> 2002;84-A(suppl 2):43–47."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Krieg JC, Mohr M, Ellis TJ, Simpson TS, Madey SM, Bottlang M. Emergent stabilization of pelvic ring injuries by controlled circumferential compression: a clinical trial. <i>J Trauma.</i> 2005;59(3):659–664."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Schweigkofler U, Wohlrath B, Trentzsch H, Horas K, Hoffmann R, Wincheringer D. Is there any benefit in the pre-hospital application of pelvic binders in patients with suspected pelvic injuries? <i>Eur J Trauma Emerg Surg.</i> 2021;47(2):493–498."
+                },
+                {
                   "tier": "REFERENCE",
                   "html": "American College of Surgeons Committee on Trauma. <i>Advanced Trauma Life Support (ATLS) Student Course Manual</i>, 10th ed. ACS; 2018."
                 },
                 {
                   "tier": "GUIDELINE",
-                  "html": "National Association of EMTs (NAEMT). <i>PHTLS: Prehospital Trauma Life Support</i>, 9th ed. Jones &amp; Bartlett; 2019."
+                  "html": "National Association of Emergency Medical Technicians. <i>PHTLS: Prehospital Trauma Life Support</i>, 9th ed. Jones &amp; Bartlett; 2019."
                 }
               ]
             }
@@ -8389,8 +9047,8 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
-      "reviewDue": "2027-09-22",
+      "lastVerified": "2026-09-23",
+      "reviewDue": "2027-09-23",
       "sections": [
         {
           "id": "indications",
@@ -8402,7 +9060,7 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Hemorrhage from a wound not amenable to tourniquet application (junctional zones, torso, neck) or where a tourniquet is not yet in place/not fully effective</li>\n      <li>Deep or cavitating wounds where surface pressure alone fails to control bleeding</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Junctional hemorrhage</b> — groin, axilla, gluteal, perineum, base of the neck. The anatomy where a limb tourniquet has nothing to squeeze against.</li>\n      <li><b>Deep or cavitating extremity wounds</b> where surface pressure closes the skin but not the vessel underneath</li>\n      <li><b>Bleeding that continues past a correctly applied limb tourniquet</b> — packing is an adjunct, not a competitor</li>\n      <li><b>A mangled or traumatically amputated limb stump</b>, packed above the tourniquet line</li>\n      <li><b>Scalp and facial wounds</b> that bleed briskly and are hard to compress against a curved skull</li>\n</ul>\n<p>The common thread is a <b>wound with a floor you can reach</b>. Packing works by putting material in direct contact with a torn vessel and holding it against something solid. If you cannot get to the vessel, packing will not find it for you.</p>"
             }
           ]
         },
@@ -8410,13 +9068,17 @@
           "id": "contraindications",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "What You Must Not Pack",
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "This is the section that matters most, and it is the one usually reduced to “none absolute.”"
+            },
+            {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute for life-threatening hemorrhage</li>\n      <li>Superficial wounds with easily controlled bleeding by direct pressure alone (packing is unnecessary escalation)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>An open chest wound.</b> There is nothing to tamponade against — the pleural space is not a cavity that packing can fill, and pushing gauze into it drives air and material toward the lung. An open chest wound gets a <b>vented chest seal</b> and a plan for decompression, not a pack.</li>\n      <li><b>An abdominal wound or evisceration.</b> The peritoneum is a non-compressible space. Packing achieves nothing, and gauze forced through the wall can perforate bowel. Cover eviscerated contents with a moist dressing and move toward an operating room.</li>\n      <li><b>The eye or the orbit.</b></li>\n      <li><b>An open skull fracture with visible brain.</b> Packing raises intracranial pressure and can drive fragments inward. Cover only.</li>\n      <li><b>Wounds where the source is clearly proximal and unreachable</b> — a groin wound whose vessel has retracted under the inguinal ligament. Packing the visible hole while the bleeding happens above it wastes the minutes you needed for a junctional device or proximal manual compression.</li>\n</ul>\n<p><b>Relative:</b> a <b>neck wound</b> can be packed, but never wrap the neck circumferentially — you will obstruct the airway and the contralateral carotid. Pack, then hold with a hand or secure over the shoulder and under the opposite axilla.</p>"
             }
           ]
         },
@@ -8424,21 +9086,35 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment — and Which Agents Are Obsolete",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Hemostatic gauze (e.g., agents impregnated with a topical hemostatic compound) preferred over plain gauze when available</li>\n      <li>Standard gauze as an acceptable substitute if hemostatic gauze is unavailable</li>\n      <li>Gloved hands for direct packing</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Kaolin-impregnated gauze</b> (Combat Gauze and equivalents) — the current first-line hemostatic dressing in Tactical Combat Casualty Care. Kaolin activates factor XII and the contact pathway. Non-exothermic.</li>\n      <li><b>Chitosan-based gauze</b> (Celox Gauze, ChitoGauze) — an accepted alternative. Chitosan works by a charge-based mucoadhesive mechanism that is <b>largely independent of the clotting cascade</b>, which makes it a rational choice in a patient who is anticoagulated or profoundly coagulopathic.</li>\n      <li><b>Compressed expanding sponges</b> (XStat) — injectable mini-sponges for narrow-tract junctional wounds that a hand cannot reach into. Each sponge carries a <b>radiopaque marker</b>, and the count must travel with the patient.</li>\n      <li><b>Plain gauze</b> — entirely acceptable. A correctly packed plain-gauze wound under sustained pressure outperforms a hemostatic dressing packed badly. Do not delay packing to hunt for the good stuff.</li>\n      <li><b>Analgesia.</b> Packing a deep wound in a conscious patient is among the most painful things done in prehospital care. <b>Ketamine</b> is the usual answer because it preserves airway and pressure. Plan it before you start, not after the patient fights you.</li>\n      <li><b>Pressure dressing</b> (elastic wrap or purpose-built) and a marker.</li>\n</ul>\n<p><b>What is no longer recommended:</b> <b>granular and powder agents poured into a wound.</b> The first-generation zeolite products were strongly exothermic and caused full-thickness burns in the wound and to the hands applying them. Granules also migrate, embolize, and are extremely difficult for a surgeon to debride. If a powder is what is in the bag, it is better than nothing — but gauze is the modern form factor for a reason.</p>"
+            }
+          ]
+        },
+        {
+          "id": "source",
+          "num": "04",
+          "color": "amber",
+          "title": "Find the Source Before You Fill the Hole",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p>The single conceptual error in wound packing is treating it as <i>filling a cavity</i>. It is not. It is <b>putting a thumb on a specific torn vessel</b> and then wedging the wound full so the thumb can leave.</p>\n<ul>\n  <li><b>Expose completely.</b> Cut the clothing away. A wound you are packing through a trouser leg is a wound you cannot see.</li>\n  <li><b>Sweep out pooled blood and loose clot</b> with a gloved hand. Established clot sitting in the cavity holds your packing away from the vessel and hides the jet you are looking for.</li>\n  <li><b>Look for the jet, then put a finger on it.</b> Pulsatile bleeding localizes itself if you clear the pool for a second and watch. Once you have it, <b>keep a finger there</b> while you bring the gauze in with the other hand.</li>\n  <li><b>Expect the wound to be deeper than it looks.</b> Skin defects are small; tracts are long. Your finger goes in to the knuckles, not to the fingernail.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Packing Technique",
           "tagline": null,
           "blocks": [
             {
@@ -8447,66 +9123,209 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Expose the wound fully; clear visible pooled blood/clot to identify the actual bleeding source if possible."
+                  "title": "Start at the source, not at the skin",
+                  "html": "Drive the first few inches of gauze <b>directly onto the bleeding vessel</b> with your fingertip, replacing your finger with the gauze in the same spot. This first contact is what stops the bleeding; everything after it is scaffolding that holds the contact in place."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Pack the gauze directly into the wound cavity, in continuous contact with the bleeding source, using firm and deliberate pressure as you pack — this is not a light fill, it's a firm, dense pack."
+                  "title": "Pack against bone wherever the anatomy allows",
+                  "html": "A vessel compressed between gauze and bone is occluded; a vessel compressed between gauze and soft tissue is merely pushed aside. See §07 for the specific targets — femoral against the superior pubic ramus, axillary against the humeral head or first rib."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Continue packing until the entire cavity is filled and no dead space remains."
+                  "title": "One continuous strip, fed in hard, no dead space",
+                  "html": "Feed the roll in progressively, using your fingers to ram each bight firmly into a corner before bringing in the next. <b>This is not gentle.</b> A loose pack with air in it is functionally an unpacked wound — and it looks fine from the outside while the patient bleeds into the dressing. Use as many rolls as the cavity takes."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Apply firm, sustained direct manual pressure over the packed wound for a minimum of 3 minutes (or per your hemostatic agent's specific instructions) without releasing to check."
+                  "title": "Fill to just proud of the skin",
+                  "html": "The last of the packing should sit slightly above the skin surface so the dressing on top transmits pressure into the wound rather than bridging across it."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "After the sustained pressure period, apply a pressure dressing over the packed wound to maintain compression."
+                  "title": "Three minutes of hard, uninterrupted pressure",
+                  "html": "Both hands, body weight over the wound, <b>no peeking</b>. See §06 — this is the step people get wrong."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Reassess for continued bleeding through or around the dressing; if hemorrhage continues, repack or escalate (additional packing, tourniquet if anatomically feasible, or surgical control)."
+                  "title": "Pressure dressing over the top, then watch it",
+                  "html": "Apply an elastic pressure dressing over the pack, firm enough to maintain compression. Then look at it again in a few minutes — and keep looking. <b>Mark the time and the number of rolls used on the dressing and on the patient.</b>"
                 }
               ]
             },
             {
               "type": "alert",
-              "color": "amber",
-              "title": "Sustained pressure means sustained",
-              "html": "The 3-minute hold before checking is not optional — releasing pressure early to check the wound is the most common reason a correctly packed wound still appears to keep bleeding."
+              "color": "red",
+              "title": "If it fails, remove and repack — do not pile on top",
+              "html": "This is the opposite of the rule for a soaked-through <i>dressing</i>, and the difference matters. A dressing is reinforced. <b>A failed pack is removed and replaced</b>, because its failure means the gauze never reached the bleeding vessel — and adding more material on top of a pack that missed just raises the pile. Pull it, find the source again, and pack it properly with fresh material."
+            }
+          ]
+        },
+        {
+          "id": "hold",
+          "num": "06",
+          "color": "teal",
+          "title": "The Three-Minute Hold",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "teal",
+              "html": "<p><b>Three minutes of continuous direct pressure, timed on a clock, without lifting to look.</b> Current TCCC guidance specifies a minimum of three minutes for hemostatic dressings; some chitosan products and some coagulopathic patients warrant five. Check the packet of what you are actually using.</p>\n<p><b>Why it is non-negotiable:</b> a clot takes minutes to form and seconds to shear off. Lifting the pack at ninety seconds to see how it is going destroys everything the ninety seconds achieved and resets the clock — and it is the commonest reason a correctly packed wound appears to keep bleeding. <i>The urge to check is strongest at exactly the moment checking is most destructive.</i></p>\n<p><b>Have someone time it out loud.</b> Three minutes with your weight on a wound feels far longer than three minutes, and untimed holds are consistently short. This is the same failure as the REBOA clock: a task nobody owns is a task that does not happen.</p>\n<p><b>Use the time.</b> It is three minutes in which the person holding pressure can do nothing else — so everyone else gets access, blood, TXA, and the transport decision moving.</p>"
+            }
+          ]
+        },
+        {
+          "id": "anatomy",
+          "num": "07",
+          "color": "amber",
+          "title": "What to Compress Against",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Site",
+                "Vessel",
+                "Compress it against",
+                "Note"
+              ],
+              "rows": [
+                [
+                  "Groin / inguinal",
+                  "Common femoral",
+                  "Superior pubic ramus, at the midpoint of the inguinal ligament",
+                  "The highest-yield target in junctional bleeding. A fist or a knee works while a device is found."
+                ],
+                [
+                  "Axilla",
+                  "Axillary",
+                  "Humeral head, or the first rib higher up",
+                  "Deep and awkward. Drive the pack toward the chest wall, not toward the arm."
+                ],
+                [
+                  "Neck",
+                  "Carotid / jugular / subclavian",
+                  "Cervical transverse processes",
+                  "<b>Never circumferential.</b> Consider an occlusive layer — a large open venous injury here can entrain air."
+                ],
+                [
+                  "Proximal thigh",
+                  "Femoral",
+                  "Femur shaft",
+                  "Pack toward the bone posteriorly, not just downward."
+                ],
+                [
+                  "Gluteal / buttock",
+                  "Superior gluteal",
+                  "Ilium and sacrum",
+                  "A deep and notoriously difficult pack; often needs angiography."
+                ],
+                [
+                  "Scalp",
+                  "Superficial temporal, occipital",
+                  "Skull",
+                  "Galeal vessels retract into the scalp — sutures or staples through the galea often beat packing."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Bleeding continues around the pack",
+                  "Dead space — the pack is not in contact with the vessel",
+                  "Remove it. Find the source with a finger. Repack from the source outward, harder."
+                ],
+                [
+                  "Bleeding stopped, then restarted in transit",
+                  "Clot sheared by movement, or the hold was too short",
+                  "Direct pressure again for a full timed three minutes. Secure better before the next move."
+                ],
+                [
+                  "Wound is too narrow for a hand",
+                  "A deep tract with a small skin defect",
+                  "Expanding sponges if you have them. Otherwise extend the skin opening — you cannot pack what you cannot reach."
+                ],
+                [
+                  "Groin pack fails repeatedly",
+                  "The vessel has retracted proximal to the inguinal ligament",
+                  "Stop packing. Proximal compression at the ramus, then a junctional device. This needs a surgeon."
+                ],
+                [
+                  "Patient fights you",
+                  "Untreated pain, or agitation from shock",
+                  "Ketamine. An incompletely packed wound because the patient could not tolerate it is a preventable failure."
+                ],
+                [
+                  "Oozing everywhere despite good packing",
+                  "Coagulopathy — hypothermia, acidosis, dilution, anticoagulants",
+                  "Packing cannot fix a clotting problem. Warm them, give TXA, activate massive transfusion, consider a chitosan agent that does not depend on the cascade."
+                ],
+                [
+                  "Neck pack, patient now stridulous",
+                  "Expanding hematoma or circumferential compression",
+                  "Secure the airway early — it will only get harder. Never wrap the neck all the way around."
+                ],
+                [
+                  "Packed limb now pale and pulseless",
+                  "Pressure dressing applied as a tourniquet",
+                  "If it is a tourniquet, make that a deliberate decision and mark it. If not, loosen the circumferential wrap while maintaining direct pressure over the pack."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "09",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Inadequate packing density leaving dead space where bleeding continues unseen beneath the dressing</li>\n      <li>Releasing pressure too early to \"check\" the wound, interrupting clot formation</li>\n      <li>Retained packing material if not clearly documented and communicated to the receiving team</li>\n      <li>Incomplete hemorrhage control in wounds with a bleeding source not reachable by packing alone (requires surgical or endovascular control)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Ongoing occult hemorrhage</b> beneath an intact-looking dressing — the failure mode of a loose pack, and the reason a packed wound gets looked at repeatedly rather than dressed and forgotten.</li>\n      <li><b>Retained packing material</b> — a foreign body and an infection source. Count and document.</li>\n      <li><b>Wound infection and tissue necrosis</b> from prolonged tight packing.</li>\n      <li><b>Nerve injury</b> from sustained pressure, particularly axillary and inguinal packs.</li>\n      <li><b>Thermal injury</b> — historical, from first-generation exothermic granular agents.</li>\n      <li><b>Distal ischemia</b> if the overlying pressure dressing becomes an unintended tourniquet.</li>\n      <li><b>Airway compromise</b> from a neck pack or a developing hematoma.</li>\n      <li><b>Air embolism</b> from an open large vein in the neck or axilla — an argument for an occlusive layer over a neck pack.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "handover",
+          "num": "10",
+          "color": "blue",
+          "title": "Handover",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Say what is in the wound and how much.</b> Agent, number of rolls or sponges, time packed. Write it on the dressing and on the patient's skin — verbal handover in a trauma bay is lost.</li>\n  <li><b>Expanding sponges must be counted</b>, and the count must be spoken to the surgeon. They are radiopaque for exactly this reason, but a film is a slower way to learn a number you already had.</li>\n  <li><b>Do not unwrap it to show anyone.</b> The receiving team does not need to see the wound; they need to know what you found and what you did. The pack comes out in an operating room.</li>\n  <li><b>Flag coagulopathy and anticoagulants explicitly</b> — a pack in a patient on a DOAC is holding a line that will not hold itself.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "11",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -8514,13 +9333,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>Pack it like you mean it — a light or loose pack that leaves dead space is functionally no better than no packing at all.</p>\n<p>The 3-minute sustained pressure interval is not optional; resist the urge to check the wound before that time has passed.</p>\n<p>Hemostatic gauze improves outcomes over plain gauze, but plain gauze packed correctly and held under sustained pressure is still far better than no packing.</p>\n<p>Clearly document what was packed and where — retained packing material needs to be tracked and removed appropriately downstream.</p>"
+              "html": "<p><b>Pack onto the vessel, not into the hole.</b> The first inch of gauze does the work; the rest holds it there.</p>\n<p><b>Compress against bone.</b> Soft tissue on both sides means the vessel just moves.</p>\n<p><b>Three minutes, timed out loud, no peeking.</b> The urge to check peaks exactly when checking is most destructive.</p>\n<p><b>A failed pack is removed and replaced — not reinforced.</b> Opposite rule to a soaked dressing, and the distinction is the whole point.</p>\n<p><b>Never pack a chest or an abdomen.</b> Seal the chest, cover the abdomen, and go.</p>\n<p><b>Never wrap a neck circumferentially.</b></p>\n<p><b>Plain gauze packed well beats hemostatic gauze packed badly.</b> Do not spend thirty seconds hunting for the right packet.</p>\n<p><b>Give ketamine before you start.</b> This hurts more than almost anything else you will do to a conscious patient.</p>\n<p><b>Count what goes in, and say the number out loud at handover.</b></p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "12",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -8530,11 +9349,23 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Committee on Tactical Combat Casualty Care (CoTCCC). Tactical Combat Casualty Care Guidelines for Medical Personnel. Defense Health Agency; current revision."
+                  "html": "Committee on Tactical Combat Casualty Care (CoTCCC). <i>Tactical Combat Casualty Care Guidelines for Medical Personnel.</i> Defense Health Agency; current revision. Confirm the current hemostatic dressing recommendations and hold times against the live document."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Bulger EM, Snyder D, Schoelles K, et al. An evidence-based prehospital guideline for external hemorrhage control: American College of Surgeons Committee on Trauma. <i>Prehosp Emerg Care.</i> 2014;18(2):163–173."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Bennett BL, Littlejohn LF. Review of new topical hemostatic dressings for combat casualty care. <i>Mil Med.</i> 2014;179(5):497–514."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Kragh JF, Dubick MA. Bleeding control with limb tourniquet use in the wilderness setting: review of science. <i>Wilderness Environ Med.</i> 2017;28(2S):S25–S32."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Bennett BL, Littlejohn LF. Review of new topical hemostatic dressings for combat casualty care. <i>Mil Med.</i> 2014;179(5):497-514."
+                  "html": "American College of Surgeons. <i>Stop the Bleed</i> course materials. ACS; current edition."
                 }
               ]
             }
