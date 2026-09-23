@@ -111,11 +111,15 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 <nav class="quicknav">
   <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
-    <a class="qn pinned" href="#technique">&#9889; TECHNIQUE</a>
+    <a class="qn pinned" href="#technique">&#9889; CANNULATION</a>
     <a class="qn" href="#indications">Indications</a>
-    <a class="qn" href="#contraindications">Contraindications</a>
-    <a class="qn" href="#equipment">Equipment</a>
-    <a class="qn" href="#complications">Complications &amp; Pitfalls</a>
+    <a class="qn" href="#selection">Selection &mdash; Especially for ECPR</a>
+    <a class="qn" href="#equipment">Equipment and Cannula Sizing</a>
+    <a class="qn" href="#technique">Peripheral VA Cannulation</a>
+    <a class="qn" href="#physiology">Two Problems Unique to Peripheral VA</a>
+    <a class="qn" href="#troubleshooting">Troubleshooting &amp; Failure Modes</a>
+    <a class="qn" href="#complications">Complications</a>
+    <a class="qn" href="#after">Immediately After Flow</a>
     <a class="qn" href="#pearls">Pearls</a>
     <a class="qn" href="#refs">References</a>
   </div>
@@ -124,90 +128,158 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 <div class="page">
 
 <div class="sec-head c-teal" id="indications"><span class="sec-num">01</span><h2>Indications</h2></div>
+<div class="tagline">VA-ECMO &mdash; circulatory support</div>
 <div class="box t-teal">
-<p><b>VA-ECMO</b></p>
 <ul>
-      <li>Refractory cardiogenic shock</li>
-      <li>ECPR for witnessed arrest with high-quality CPR and a reversible/treatable cause</li>
-      <li>Post-cardiotomy shock</li>
-      <li>Massive PE with hemodynamic collapse</li>
-      <li>Severe hypothermia with cardiac instability (rewarming crossover)</li>
+      <li>Refractory cardiogenic shock &mdash; infarction, myocarditis, decompensated cardiomyopathy, post-cardiotomy</li>
+      <li><b>ECPR</b> &mdash; refractory cardiac arrest with a plausibly reversible cause</li>
+      <li>Massive pulmonary embolism with hemodynamic collapse</li>
+      <li>Severe hypothermic arrest &mdash; ECMO is both the support and the rewarming method, and outcomes here are far better than for other arrest etiologies</li>
+      <li>Refractory arrhythmia; massive poisoning with cardiotoxic drugs; peripartum cardiomyopathy</li>
+      <li>Bridge to recovery, to a durable device, to transplant &mdash; or to a decision</li>
 </ul>
 </div>
-<div class="box t-teal">
-<p><b>VV-ECMO</b></p>
-<ul>
-      <li>Severe refractory hypoxemic and/or hypercapnic respiratory failure despite optimized mechanical ventilation and adjuncts (proning, paralysis, inhaled pulmonary vasodilators)</li>
-</ul>
-</div>
-<div class="box t-teal">
-<p><b>General</b></p>
-<ul>
-      <li>Bridge to recovery, bridge to durable device/transplant, or bridge to decision</li>
-</ul>
-</div>
-<div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications</h2></div>
-<div class="box t-red">
-<ul>
-      <li>Unwitnessed arrest or prolonged downtime with no ROSC and poor CPR quality (for ECPR specifically)</li>
-      <li>Irreversible/non-survivable underlying condition</li>
-      <li>Severe pre-existing multi-organ failure incompatible with meaningful recovery</li>
-      <li>Uncontrolled hemorrhage (relative &mdash; requires concurrent source control planning)</li>
-      <li>Lack of institutional capability to manage ECMO post-cannulation (relative to transfer feasibility)</li>
-</ul>
-</div>
-<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment</h2></div>
+<div class="tagline">VV-ECMO &mdash; respiratory support</div>
 <div class="box t-blue">
 <ul>
-      <li>ECMO cannulation kit (arterial and venous cannulae, sized per patient)</li>
-      <li>Ultrasound (vascular access, cannula tip confirmation)</li>
-      <li>Guidewires, dilators, introducer sheaths</li>
-      <li>Circuit primed and de-aired (pump, oxygenator, tubing) per institutional protocol</li>
-      <li>Anticoagulation (heparin) and ACT monitoring capability</li>
-      <li>Fluoroscopy or TEE if available for cannula positioning confirmation</li>
-      <li>Full cannulation team: proceduralist, circuit specialist/perfusion, nursing, airway/code team continuing resuscitation in parallel for ECPR</li>
+      <li>Severe refractory hypoxemic respiratory failure &mdash; typically <span class="d">P/F &lt;80</span> for more than 6 hours, or <span class="d">&lt;50</span> for more than 3 hours, <b>despite optimized ventilation, proning, and neuromuscular blockade</b></li>
+      <li>Refractory hypercapnia with <span class="d">pH &lt;7.20</span> despite optimal settings</li>
+      <li>Inability to ventilate within lung-protective limits &mdash; severe asthma, airway obstruction, bronchopleural fistula</li>
+</ul>
+<p><b>VV-ECMO supports gas exchange; it does nothing for the circulation.</b> A hypoxemic patient who is also in shock from right heart failure is a VA or VAV question, not a VV one.</p>
+</div>
+<div class="alert red"><div class="alert-t">Activation delay is the biggest modifiable factor &mdash; by a wide margin</div><p>For ECPR, survival is driven by <b>time from arrest to flow</b> far more than by any technical detail of the cannulation. Every additional interval of conventional CPR before flow costs outcome. <b>The target is flow within about 60 minutes of arrest</b>, which means the call goes out when ECMO first becomes a real possibility &mdash; not once every other option has visibly failed. <b>An activation that turns out to be unnecessary costs almost nothing. One that comes twenty minutes late costs everything.</b></p></div>
+<div class="sec-head c-red" id="selection"><span class="sec-num">02</span><h2>Selection &mdash; Especially for ECPR</h2></div>
+<div class="box t-red">
+<p><b>Favorable ECPR criteria</b> (thresholds are institutional &mdash; know yours):</p>
+<ul>
+  <li><b>Witnessed arrest with immediate bystander CPR</b> &mdash; short or no no-flow interval</li>
+  <li><b>Initial shockable rhythm</b>, or a clearly reversible cause such as hypothermia, poisoning, or massive PE</li>
+  <li><b>Low-flow time under roughly 60 minutes</b> with high-quality, minimally interrupted compressions</li>
+  <li><b>Age within the program's limit</b>, commonly under 65&ndash;70</li>
+  <li><b>ETCO<sub>2</sub> above about 10 mmHg</b> during CPR &mdash; a marker of both compression quality and residual viability</li>
+  <li><b>Signs of life during resuscitation</b>, intermittent ROSC, or preserved neurologic signs</li>
+  <li><b>No known terminal illness</b>, and an acceptable baseline functional state</li>
+</ul>
+<p><b>Contraindications:</b> unwitnessed arrest with prolonged downtime and poor CPR; an irreversible or non-survivable underlying condition; severe pre-existing multi-organ failure; known severe aortic regurgitation or aortic dissection (for VA); uncontrolled hemorrhage or recent intracranial hemorrhage (relative, and dependent on a source-control plan); severe peripheral vascular disease precluding femoral cannulation; and <b>no institutional capacity to manage the patient afterwards.</b></p>
+<p><b>Hypothermic arrest deserves separate mention:</b> the usual downtime limits do not apply, neurologically intact survival is documented after hours of CPR, and ECMO is the definitive rewarming modality. <b>Nobody is dead until they are warm and dead</b> &mdash; and ECMO is how they get warm.</p>
+</div>
+<div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment and Cannula Sizing</h2></div>
+<table class="rt">
+  <tr><th>Configuration</th><th>Drainage (venous)</th><th>Return</th><th>Notes</th></tr>
+  <tr><td><b>Peripheral VA</b></td><td>21&ndash;25 Fr multistage, femoral vein &rarr; cavoatrial junction</td><td>15&ndash;19 Fr, femoral artery (retrograde)</td><td>Fastest to establish. Retrograde aortic flow is the source of most of its specific problems &mdash; see &sect;06.</td></tr>
+  <tr><td><b>Peripheral VV</b></td><td>23&ndash;25 Fr, femoral vein</td><td>19&ndash;21 Fr, internal jugular</td><td>Separate the tips to limit recirculation.</td></tr>
+  <tr><td><b>VV, dual-lumen</b></td><td colspan="2">Single cannula via right IJ, spanning SVC to IVC with the return port aimed at the tricuspid valve</td><td>One site, permits mobility. <b>Requires echo or fluoroscopic guidance</b> &mdash; malposition is easy and consequential.</td></tr>
+  <tr><td><b>VAV</b></td><td colspan="2">Adds a jugular return limb to a VA circuit</td><td>The answer to differential hypoxia (&sect;06).</td></tr>
+</table>
+<div class="box t-blue">
+<ul>
+      <li><b>Size by the vessel, not by the patient.</b> Measure the femoral artery with ultrasound. A common rule is that the arterial cannula's outer diameter should not exceed about two-thirds to three-quarters of the vessel's internal diameter &mdash; oversizing is how limbs are lost.</li>
+      <li><b>Flow follows the fourth power of the radius and falls with length.</b> Full support is roughly <span class="d">60&ndash;80 mL/kg/min</span>. <b>Drainage is almost always the limiting side</b>, so do not undersize the venous cannula to save time.</li>
+      <li><b>A distal perfusion catheter</b> &mdash; 5&ndash;7 Fr, antegrade into the superficial femoral artery, connected to the arterial limb. <b>Plan it at cannulation.</b> See &sect;06.</li>
+      <li><b>Ultrasound</b> for access, and <b>TEE or fluoroscopy</b> for wire and cannula tip confirmation.</li>
+      <li><b>Primed, de-aired circuit</b> &mdash; pump, oxygenator, tubing, heater-cooler.</li>
+      <li><b>Heparin</b>, and ACT or anti-Xa monitoring.</li>
+      <li><b>A mechanical CPR device</b> for ECPR. It makes cannulation during ongoing compressions genuinely feasible, and it frees a person.</li>
+      <li><b>NIRS probes</b> for the calves, for limb monitoring.</li>
 </ul>
 </div>
-<div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Stepwise Technique</h2></div>
-<div class="tagline">Peripheral VA cannulation &amp;mdash; general framework</div>
+<div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Peripheral VA Cannulation</h2></div>
 <div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-desc">Activate ECMO team early &mdash; call the moment criteria are anticipated, not once decompensation is complete.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-desc">Continue resuscitation (compressions, ventilation, vasopressors) uninterrupted during setup for ECPR cases.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-desc">Prime and de-air circuit in parallel with access &mdash; do not let circuit prep be the bottleneck.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-desc">Obtain venous access (typically femoral vein) via ultrasound-guided Seldinger technique; serially dilate to accommodate venous cannula.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-desc">Obtain arterial access (typically femoral artery) via ultrasound-guided Seldinger technique; consider a distal perfusion catheter to mitigate limb ischemia.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-desc">Advance venous cannula to the cavoatrial junction; advance arterial cannula per sizing/institutional target.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-desc">Confirm cannula position (fluoroscopy, TEE, or venous blood gas from the venous limb as a surrogate) before connecting to circuit.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">8</div><div class="step-body"><div class="step-desc">Connect cannulae to primed circuit, eliminating air at every connection.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">9</div><div class="step-body"><div class="step-desc">Initiate flow at low RPM, titrate up while monitoring hemodynamics, oxygenation, and circuit pressures.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">10</div><div class="step-body"><div class="step-desc">Anticoagulate per protocol once bleeding risk is assessed; establish ACT/anti-Xa monitoring.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">11</div><div class="step-body"><div class="step-desc">Secure cannulae, obtain confirmatory imaging (CXR, or fluoroscopy if not already done), and transition to ICU-level ECMO management.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Activate early, and run everything in parallel</div><div class="step-desc">Call the moment ECMO is plausible. <b>Circuit priming is frequently the rate-limiting step, not the cannulation</b> &mdash; so perfusion starts priming at minute one, while access is being obtained. Two operators work the two vessels simultaneously. Resuscitation does not pause for any of it.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Assign the roles out loud before anyone touches the groin</div><div class="step-desc">Venous operator, arterial operator, perfusionist, airway and compressions, drugs, and a scribe on the clock. ECPR fails on choreography more often than on technique.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Ultrasound-guided access to the common femoral vessels</div><div class="step-desc">Below the inguinal ligament, above the bifurcation &mdash; the same narrow window as any femoral access, and it matters more here because the sheath is enormous. <b>Measure the artery before you choose the cannula.</b> Vein and artery on the same side is conventional; using opposite groins is an option when anatomy demands it.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Confirm both wires before any dilation</div><div class="step-desc"><b>The venous wire must be seen in the right atrium or IVC, and the arterial wire in the descending aorta</b> &mdash; on TEE or fluoroscopy. Serial dilation over a misplaced wire creates a hole the size of the dilator in a structure that cannot tolerate one. <b>This is the single most important safety step in the procedure</b>, and under ECPR time pressure it is the one most likely to be skipped.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Place the distal perfusion catheter now</div><div class="step-desc">Antegrade into the superficial femoral artery distal to the arterial cannula, before the leg is committed. <b>Doing it at cannulation takes a few minutes; doing it later means doing it on a leg that is already ischemic</b>, and limb complications are among the commonest serious harms of peripheral VA support.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">Dilate serially and place the cannulae</div><div class="step-desc">Step up in sequence, keeping a hand on the wire throughout. Venous cannula tip at the <b>cavoatrial junction</b>; arterial cannula to the institutional depth. Confirm both positions before connecting.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-title">Connect wet-to-wet, and hunt every bubble</div><div class="step-desc">Make each connection with both ends flooded. <b>Air on the arterial side goes to the brain and the coronaries.</b> Clamp, connect, de-air, unclamp &mdash; deliberately, in that order, spoken aloud each time.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">8</div><div class="step-body"><div class="step-title">Start low and climb</div><div class="step-desc">Begin at low revolutions and increase while watching circuit pressures, the drainage line for chatter, the arterial waveform, and the patient. <b>Line chatter means the drainage cannula is sucking against a wall or the patient is underfilled</b> &mdash; reduce flow and give volume rather than driving the pump harder.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">9</div><div class="step-body"><div class="step-title">Anticoagulate, image, and hand over properly</div><div class="step-desc">Heparin per protocol once bleeding risk is assessed &mdash; commonly a bolus at cannulation then an infusion to ACT or anti-Xa targets, and sometimes deliberately withheld initially after traumatic or surgical ECPR. Secure the cannulae to the skin robustly. Chest film, echo, lactate, and limb checks. Then drop the ventilator to rest settings &mdash; the lungs have just stopped being the priority.</div></div></div>
 </div>
-<div class="alert red"><div class="alert-t">Activation delay is the single biggest modifiable factor</div><p>For ECPR specifically, time from arrest to flow drives outcome more than any technical detail of the cannulation itself &mdash; call for activation the moment ECMO becomes a real possibility, not once every other option has failed.</p></div>
-<div class="sec-head c-red" id="complications"><span class="sec-num">05</span><h2>Complications &amp; Pitfalls</h2></div>
+<div class="sec-head c-amber" id="physiology"><span class="sec-num">05</span><h2>Two Problems Unique to Peripheral VA</h2></div>
+<div class="box t-amber">
+<p><b>Differential hypoxia (&ldquo;harlequin&rdquo; or north&ndash;south syndrome).</b> Retrograde ECMO flow from the femoral artery meets antegrade native output from a recovering heart somewhere in the aorta &mdash; the &ldquo;watershed.&rdquo; If the lungs are still bad, that native blood is poorly oxygenated, and it is the blood supplying the <b>aortic root and arch: the coronaries and the brain.</b> The lower body is pink on ECMO blood while the heart and brain are hypoxic.</p>
+<ul>
+  <li><b>Monitor the right radial artery</b> &mdash; it arises most proximally and best reflects what the brain is receiving. A pulse oximeter on the right hand is the cheap version of the same idea.</li>
+  <li><b>The fix:</b> improve native lung function and ventilation, reduce flow competition, add a jugular return limb (VAV), or move to a central or axillary arterial return.</li>
+  <li>Paradoxically, <b>a recovering heart is what causes this</b>, so it appears just as things seem to be improving.</li>
+</ul>
+<p><b>Left ventricular distension.</b> Retrograde flow raises afterload on a ventricle that may not be able to eject against it. The LV dilates, the aortic valve stops opening, pulmonary edema develops, and stasis risks intracardiac thrombus.</p>
+<ul>
+  <li><b>Recognize it:</b> a flat, non-pulsatile arterial waveform; worsening pulmonary edema on the film; frank pulmonary hemorrhage; and on echo, a dilated LV with an aortic valve that is not opening and spontaneous contrast.</li>
+  <li><b>Vent it:</b> inotropic support, reduced ECMO flow, an intra-aortic balloon pump, an Impella, atrial septostomy, or a surgical vent. <b>Pulsatility on the arterial trace is the bedside sign to protect</b> &mdash; losing it is the warning.</li>
+</ul>
+</div>
+<div class="sec-head c-red" id="troubleshooting"><span class="sec-num">06</span><h2>Troubleshooting &amp; Failure Modes</h2></div>
+<table class="rt">
+  <tr><th>What you see</th><th>What it usually is</th><th>What to do</th></tr>
+  <tr><td>Everyone waiting for a decision</td><td><b>Delayed activation &mdash; the dominant failure</b></td><td>Call it. An unnecessary activation is cheap; a late one is not.</td></tr>
+  <tr><td>Cannulae in, circuit not ready</td><td>Priming started too late</td><td>Perfusion primes from minute one, in parallel. Never sequentially.</td></tr>
+  <tr><td>Drainage line chattering, flow dropping</td><td>Hypovolemia, or the cannula tip against a wall</td><td><b>Reduce revolutions and give volume.</b> Increasing pump speed makes suction worse and hemolyzes blood.</td></tr>
+  <tr><td>Low flow despite high revolutions</td><td>Undersized or kinked drainage cannula; tamponade; obstruction</td><td>Check the tubing, image the tip, echo for tamponade. Drainage is usually the limit.</td></tr>
+  <tr><td>Right hand or right radial desaturating</td><td><b>Differential hypoxia</b></td><td>Optimize ventilation; consider VAV or a different return site. Do not be reassured by a good saturation from the left side or a foot.</td></tr>
+  <tr><td>Arterial waveform flattens</td><td><b>LV distension</b> &mdash; the ventricle has stopped ejecting</td><td>Echo now. Vent the LV: inotrope, reduce flow, IABP, Impella, septostomy.</td></tr>
+  <tr><td>Frothy pink secretions from the tube</td><td>Pulmonary edema from LV distension</td><td>Same answer, urgently.</td></tr>
+  <tr><td>Leg mottled, cool, NIRS falling</td><td>Limb ischemia from the arterial cannula</td><td>Distal perfusion catheter now if not already placed. Vascular surgery. This is limb-threatening and common.</td></tr>
+  <tr><td>Good circuit saturations, patient still hypoxic (VV)</td><td><b>Recirculation</b> &mdash; oxygenated blood being drained straight back</td><td>Separate the cannula tips; reposition under echo; reduce flow. High premembrane saturation with a hypoxic patient is the signature.</td></tr>
+  <tr><td>Dark blood post-oxygenator, rising pressure gradient</td><td>Oxygenator failing or clotting</td><td>Post-membrane gas, trend the gradient, plan a circuit change before it fails outright.</td></tr>
+  <tr><td>Pink plasma, rising free hemoglobin</td><td>Hemolysis &mdash; usually excessive negative drainage pressure or pump thrombus</td><td>Reduce suction, give volume, inspect the pump head.</td></tr>
+  <tr><td>Falling platelets with clotting</td><td>Heparin-induced thrombocytopenia</td><td>Send the assay, change anticoagulant.</td></tr>
+  <tr><td>New unexplained shock or a falling hematocrit</td><td>Retroperitoneal hemorrhage from a high puncture</td><td>Image it. Cannulation site bleeding is the commonest complication of all.</td></tr>
+</table>
+<div class="sec-head c-red" id="complications"><span class="sec-num">07</span><h2>Complications</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Limb ischemia distal to arterial cannula &mdash; have a distal perfusion catheter plan ready, not as an afterthought</li>
-      <li>Air embolism during cannulation or connection &mdash; de-air meticulously at every step</li>
-      <li>Malposition (venous cannula against a wall, arterial cannula too proximal/distal) &mdash; confirm before committing flow</li>
-      <li>Bleeding at access sites, worsened once anticoagulated</li>
-      <li>Delayed activation &mdash; the single biggest modifiable factor in ECPR outcomes is time from arrest to flow</li>
-      <li>Harlequin syndrome (differential hypoxia) in peripheral VA-ECMO with native cardiac recovery and poor lung function &mdash; may require venous cannula repositioning or conversion to VAV</li>
+      <li><b>Bleeding</b> &mdash; the most frequent complication overall: cannulation sites, retroperitoneum, gastrointestinal, and <b>intracranial hemorrhage</b>, which is among the most feared and carries very poor outcomes.</li>
+      <li><b>Limb ischemia</b> distal to the arterial cannula, up to and including amputation. Preventable, mostly, by a distal perfusion catheter placed at cannulation.</li>
+      <li><b>Vessel injury</b> &mdash; dissection, perforation, retroperitoneal hemorrhage &mdash; usually from dilating over an unconfirmed wire.</li>
+      <li><b>Air embolism</b>, catastrophic on the arterial limb.</li>
+      <li><b>Differential hypoxia and LV distension</b> (&sect;05).</li>
+      <li><b>Stroke</b>, both ischemic and hemorrhagic; and <b>watershed injury</b> from the arrest itself.</li>
+      <li><b>Hemolysis</b>, and <b>acquired von Willebrand syndrome</b> from shear across the circuit.</li>
+      <li><b>Thrombosis</b> &mdash; circuit, oxygenator, or intracardiac &mdash; and <b>heparin-induced thrombocytopenia</b>.</li>
+      <li><b>Infection</b>, and <b>acute kidney injury</b> frequently requiring renal replacement integrated into the circuit.</li>
+      <li><b>Recirculation</b> in VV, limiting effective oxygen delivery.</li>
+      <li><b>A bridge to nowhere</b> &mdash; support established in a patient with no recovery, no device candidacy and no transplant route. This is a real and foreseeable harm, and the way to avoid it is to ask what the bridge leads to <i>before</i> cannulating.</li>
 </ul>
 </div>
-<div class="sec-head c-purple" id="pearls"><span class="sec-num">06</span><h2>Pearls</h2></div>
+<div class="sec-head c-blue" id="after"><span class="sec-num">08</span><h2>Immediately After Flow</h2></div>
+<div class="box t-blue">
+<ul>
+  <li><b>Chest film and echo.</b> Cannula positions, LV function and distension, valve opening, tamponade.</li>
+  <li><b>Rest the lungs.</b> Lung-protective or rest settings, low driving pressure, modest PEEP. The ventilator is no longer doing the work and continuing aggressive settings adds injury.</li>
+  <li><b>Check the limb and set up monitoring for it</b> &mdash; pulses or Doppler, NIRS, hourly documented assessment.</li>
+  <li><b>Follow lactate, urine output, and mixed venous saturation</b> as the markers of whether flow is adequate.</li>
+  <li><b>Right radial arterial line or right-hand oximetry</b> for VA, so differential hypoxia is detectable.</li>
+  <li><b>Treat the underlying cause.</b> ECMO buys time and treats nothing &mdash; coronary angiography, thrombolysis or embolectomy for PE, rewarming, antidote, source control.</li>
+  <li><b>Set the exit strategy explicitly, and write it down.</b> Recovery, durable device, transplant, or a defined time-limited trial with agreed criteria. Answering this on day four is far harder than answering it on day zero.</li>
+  <li><b>Talk to the family early</b> about what the support does and does not do.</li>
+</ul>
+</div>
+<div class="sec-head c-purple" id="pearls"><span class="sec-num">09</span><h2>Pearls</h2></div>
 <div class="box t-purple">
-<p>The clock starts at low-flow/no-flow time, not at the decision to cannulate &mdash; activate the team the moment ECMO is a real possibility.</p>
-<p>Two operators working access sites simultaneously (one venous, one arterial) meaningfully shortens time to flow.</p>
-<p>Circuit priming is often the rate-limiting step, not the cannulation itself &mdash; get perfusion/circuit specialist moving in parallel from minute one.</p>
-<p>Have your distal perfusion strategy decided before you need it, not while a limb is turning white on the table.</p>
+<p><b>Call early.</b> Time from arrest to flow is the outcome variable. Nothing about the technique matters as much.</p>
+<p><b>Prime in parallel.</b> The circuit, not the cannulation, is usually the bottleneck.</p>
+<p><b>Confirm both wires before you dilate.</b> The most important safety step, and the first one sacrificed to urgency.</p>
+<p><b>Place the distal perfusion catheter at cannulation</b> &mdash; not when the leg is already turning.</p>
+<p><b>Measure the artery and size to the vessel.</b> Oversizing costs limbs.</p>
+<p><b>Drainage is the limit.</b> Chatter means give volume, not more revolutions.</p>
+<p><b>Watch the right hand.</b> Differential hypoxia appears exactly when the heart starts recovering.</p>
+<p><b>Protect pulsatility.</b> A flattening arterial trace means the LV has stopped ejecting and needs venting.</p>
+<p><b>Nobody is dead until they are warm and dead</b> &mdash; and in hypothermic arrest, ECMO is how they get warm.</p>
+<p><b>Know what the bridge leads to before you build it.</b></p>
 </div>
-<div class="sec-head c-amber" id="refs"><span class="sec-num">07</span><h2>References</h2></div>
+<div class="sec-head c-amber" id="refs"><span class="sec-num">10</span><h2>References</h2></div>
 <ul class="sources">
-  <li><span class="tier">GUIDELINE</span>Extracorporeal Life Support Organization (ELSO). General Guidelines for all ECLS Cases, version 1.4. Ann Arbor, MI: ELSO; 2017.</li>
-  <li><span class="tier">GUIDELINE</span>Richardson ASC, Tonna JE, Nanjayya V, et al. Extracorporeal cardiopulmonary resuscitation in adults: interim guideline consensus statement from the Extracorporeal Life Support Organization. <i>ASAIO J.</i> 2021;67(3):221-228.</li>
-  <li><span class="tier">REFERENCE</span>Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S366-S468.</li>
+  <li><span class="tier">GUIDELINE</span>Extracorporeal Life Support Organization. <i>ELSO General Guidelines for All ECLS Cases</i>, version 1.4. Ann Arbor, MI: ELSO; 2017.</li>
+  <li><span class="tier">GUIDELINE</span>Richardson ASC, Tonna JE, Nanjayya V, et al. Extracorporeal cardiopulmonary resuscitation in adults: interim guideline consensus statement from the Extracorporeal Life Support Organization. <i>ASAIO J.</i> 2021;67(3):221&ndash;228.</li>
+  <li><span class="tier">EVIDENCE</span>Yannopoulos D, Bartos J, Raveendran G, et al. Advanced reperfusion strategies for patients with out-of-hospital cardiac arrest and refractory ventricular fibrillation (ARREST). <i>Lancet.</i> 2020;396(10265):1807&ndash;1816.</li>
+  <li><span class="tier">EVIDENCE</span>Suverein MM, Delnoij TSR, Lorusso R, et al. Early extracorporeal CPR for refractory out-of-hospital cardiac arrest (INCEPTION). <i>N Engl J Med.</i> 2023;388(4):299&ndash;309.</li>
+  <li><span class="tier">EVIDENCE</span>Combes A, Hajage D, Capellier G, et al. Extracorporeal membrane oxygenation for severe acute respiratory distress syndrome (EOLIA). <i>N Engl J Med.</i> 2018;378(21):1965&ndash;1975.</li>
+  <li><span class="tier">GUIDELINE</span>Panchal AR, Bartos JA, Caba&ntilde;as JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S366&ndash;S468.</li>
+  <li><span class="tier">REFERENCE</span>Your own program's cannula inventory, sizing chart, anticoagulation protocol, and activation number. None of these transfer between institutions.</li>
 </ul>
+
 <div class="footer">Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and equipment against your own institution's protocol before clinical use.</div>
 </div>
 </body>

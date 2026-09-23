@@ -111,11 +111,15 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 
 <nav class="quicknav">
   <div class="page quicknav-inner" style="padding-left:32px;padding-right:32px;">
-    <a class="qn pinned" href="#technique">&#9889; TECHNIQUE</a>
+    <a class="qn pinned" href="#technique">&#9889; RUNNING IT</a>
     <a class="qn" href="#indications">Indications</a>
     <a class="qn" href="#contraindications">Contraindications</a>
     <a class="qn" href="#equipment">Equipment</a>
-    <a class="qn" href="#complications">Complications &amp; Pitfalls</a>
+    <a class="qn" href="#shivering">Shivering &mdash; the Thing That Defeats This</a>
+    <a class="qn" href="#physiology">What Cooling Does to the Rest of the Patient</a>
+    <a class="qn" href="#technique">Running It</a>
+    <a class="qn" href="#bundle">The Rest of Post-Arrest Care</a>
+    <a class="qn" href="#troubleshooting">Troubleshooting &amp; Failure Modes</a>
     <a class="qn" href="#pearls">Pearls</a>
     <a class="qn" href="#refs">References</a>
   </div>
@@ -126,59 +130,122 @@ table.rt{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:16px
 <div class="sec-head c-teal" id="indications"><span class="sec-num">01</span><h2>Indications</h2></div>
 <div class="box t-teal">
 <ul>
-      <li>Return of spontaneous circulation (ROSC) after cardiac arrest with persistent coma/lack of purposeful response to verbal commands</li>
-      <li>Applies to both shockable and non-shockable initial rhythms per current post-arrest care guidelines</li>
+      <li><b>Comatose after ROSC</b> from cardiac arrest &mdash; not following commands, no purposeful response to voice. Out-of-hospital or in-hospital, <b>shockable or non-shockable initial rhythm.</b></li>
+      <li>The practical test is the motor response: a patient who localizes to voice or follows a command does not need this. Everyone else does.</li>
+      <li>Start as soon as ROSC is established and the patient is stabilized &mdash; airway, hemodynamics, and a 12-lead first, then temperature.</li>
 </ul>
 </div>
+<div class="alert amber"><div class="alert-t">What the trials actually changed</div><p>The field has moved, and the entry point has moved with it. <b>TTM (2013)</b> found 33 &deg;C no better than 36 &deg;C. <b>TTM2 (2021)</b> found 33 &deg;C no better than normothermia with active fever prevention. <b>HYPERION (2019)</b> suggested possible benefit at 33 &deg;C specifically in non-shockable rhythms. The result is that <b>current guidance has shifted from &ldquo;cool everyone to 33&rdquo; to &ldquo;actively prevent fever in everyone, and 33 remains a permitted option.&rdquo;</b></p><p>The consensus that survived all of it: <b>continuous core temperature monitoring and active prevention of fever above about 37.5&nbsp;&deg;C for at least 72 hours.</b> That is the part not to get wrong. Post-arrest fever is independently associated with worse neurologic outcome, and it is common, and it is preventable.</p></div>
 <div class="sec-head c-red" id="contraindications"><span class="sec-num">02</span><h2>Contraindications</h2></div>
 <div class="box t-red">
 <ul>
-      <li>Patient following commands/purposeful movement after ROSC (TTM is not indicated in a patient who is neurologically intact or rapidly recovering)</li>
-      <li>Active, uncontrolled major hemorrhage where induced hypothermia's coagulopathic effects would be dangerous (relative, favoring strict normothermia target over deeper cooling)</li>
-      <li>Pre-existing terminal condition where the goals of care do not support aggressive post-arrest intervention</li>
+      <li><b>Following commands after ROSC.</b> Not indicated &mdash; though fever avoidance still applies.</li>
+      <li><b>Goals of care that do not support ongoing intensive treatment.</b></li>
+      <li><b>Major uncontrolled hemorrhage</b> &mdash; a reason to choose strict normothermia rather than 33 &deg;C, since hypothermia impairs platelet function and enzyme kinetics. Rarely a reason to permit fever.</li>
+      <li><b>Sepsis, recent major surgery, or established coagulopathy</b> &mdash; the same reasoning: target higher, not warmer than normal.</li>
+      <li><b>Already hypothermic on arrival</b> &mdash; do not actively rewarm to a target. Hypothermic arrest is a different pathway entirely and drowning or environmental exposure changes the prognosis.</li>
 </ul>
 </div>
 <div class="sec-head c-blue" id="equipment"><span class="sec-num">03</span><h2>Equipment</h2></div>
 <div class="box t-blue">
 <ul>
-      <li>Temperature management device (surface cooling pads/wraps or intravascular cooling catheter system)</li>
-      <li>Continuous core temperature monitoring (esophageal, bladder, or rectal probe)</li>
-      <li>Sedation and, if needed, neuromuscular blockade to prevent shivering</li>
-      <li>Continuous cardiac and hemodynamic monitoring</li>
+      <li><b>A device with closed-loop feedback</b> &mdash; surface pads or an intravascular catheter. Both work. Feedback control is what keeps you at target instead of oscillating, and manual ice packs cannot do it.</li>
+      <li><b>Continuous core temperature probe.</b> <b>Esophageal is the most accurate and most responsive</b>; bladder is acceptable but lags badly when urine output is low; rectal lags. Tympanic and axillary are not adequate for this. <b>Two sites is better than one</b>, because a single failed probe is otherwise invisible.</li>
+      <li><b>Sedation and analgesia</b>, titratable and short-acting where possible.</li>
+      <li><b>Neuromuscular blockade</b> available &mdash; but as the last anti-shivering step, not the first.</li>
+      <li><b>Continuous EEG</b>, or at least access to it. Essential if the patient is paralyzed.</li>
+      <li><b>Arterial line, and frequent electrolytes and glucose.</b></li>
+      <li><b>What not to use: cold intravenous fluid boluses in the prehospital setting.</b> Trials of prehospital cold saline showed increased pulmonary edema and re-arrest without benefit. Cool in hospital, with a device.</li>
 </ul>
 </div>
-<div class="sec-head c-red" id="technique"><span class="sec-num">04</span><h2>Stepwise Technique</h2></div>
-<div class="box" style="padding:4px 18px;">
-  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-desc">Confirm the indication: comatose, non-purposeful patient after ROSC.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-desc">Place continuous core temperature monitoring immediately.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-desc">Initiate the cooling device per your institutional target &mdash; current guidelines support a target range generally between 32-36&deg;C, with an increasing emphasis on strict normothermia (around 36-37.5&deg;C) with fever avoidance as an accepted alternative strategy at many centers; follow your institution's specific protocol.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-desc">Sedate adequately and add neuromuscular blockade if shivering occurs and is not controlled by sedation alone &mdash; shivering generates heat and undermines the target temperature.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-desc">Maintain the target temperature for the protocol-defined duration (commonly 24 hours at target, per most published protocols).</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-desc">Rewarm slowly and in a controlled fashion per protocol (typically no faster than 0.25-0.5&deg;C per hour) to avoid rebound hyperthermia, electrolyte shifts, and hemodynamic instability.</div></div></div>
-  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-desc">Maintain strict normothermia and fever avoidance for an extended period after the active cooling/rewarming phase, as post-arrest fever is independently associated with worse neurologic outcomes.</div></div></div>
-</div>
-<div class="alert amber"><div class="alert-t">Fever avoidance is the one point of broad consensus</div><p>Whatever specific temperature target the institution uses, post-arrest fever is independently associated with worse neurologic outcomes &mdash; treat shivering aggressively and early since it both signals and obstructs reaching target.</p></div>
-<div class="sec-head c-red" id="complications"><span class="sec-num">05</span><h2>Complications &amp; Pitfalls</h2></div>
+<div class="sec-head c-red" id="shivering"><span class="sec-num">04</span><h2>Shivering &mdash; the Thing That Defeats This</h2></div>
+<p class="tagline">Shivering raises metabolic rate and oxygen consumption sharply, defeats the target, and is treated in the wrong order almost everywhere.</p>
 <div class="box t-red">
+<p><b>Assess it formally and repeatedly</b> using a structured scale &mdash; the Bedside Shivering Assessment Scale grades it 0 (none) to 3 (generalized). Shivering is often missed because it starts in the masseter and neck and can be felt on the jaw or chest before it is visible.</p>
+<p><b>Escalate in this order:</b></p>
 <ul>
-      <li>Shivering, which increases metabolic demand and can undermine target temperature achievement &mdash; treat proactively with sedation/paralysis rather than reactively</li>
-      <li>Electrolyte shifts (hypokalemia during cooling, rebound hyperkalemia during rewarming)</li>
-      <li>Coagulopathy and increased bleeding risk at deeper hypothermia targets</li>
-      <li>Arrhythmia risk, particularly bradycardia, at lower temperature targets</li>
-      <li>Rebound hyperthermia if rewarming is too rapid or fever isn't proactively managed afterward</li>
+  <li><b>1. Counterwarm the skin.</b> Warm the face, hands and feet with a forced-air blanket <i>while cooling the core</i>. This is the most underused intervention in temperature management: shivering thresholds are driven substantially by skin temperature, so warming the periphery raises the threshold and lets you cool the core with far less sedation.</li>
+  <li><b>2. Acetaminophen</b>, plus <b>buspirone</b> &mdash; both lower the shivering threshold and are non-sedating.</li>
+  <li><b>3. Magnesium infusion</b> to a level around 3&ndash;4 mg/dL &mdash; lowers the threshold and is generally well tolerated.</li>
+  <li><b>4. Opioids</b> &mdash; fentanyl, or meperidine, which lowers the shivering threshold more than any other opioid but accumulates a proconvulsant metabolite.</li>
+  <li><b>5. Sedation</b> &mdash; propofol or dexmedetomidine.</li>
+  <li><b>6. Neuromuscular blockade &mdash; last.</b> It abolishes shivering without treating it, and it does something worse: <b>it masks seizures.</b> A paralyzed post-arrest patient needs continuous EEG, and if you cannot provide that, think hard before paralyzing.</li>
 </ul>
 </div>
-<div class="sec-head c-purple" id="pearls"><span class="sec-num">06</span><h2>Pearls</h2></div>
+<div class="sec-head c-amber" id="physiology"><span class="sec-num">05</span><h2>What Cooling Does to the Rest of the Patient</h2></div>
+<table class="rt">
+  <tr><th>System</th><th>During cooling</th><th>During rewarming</th></tr>
+  <tr><td><b>Potassium</b></td><td>Shifts <i>into</i> cells &rarr; hypokalemia. <b>Do not chase it aggressively</b>; a level of 3.0&ndash;3.5 is acceptable at target.</td><td><b>Shifts back out &rarr; rebound hyperkalemia.</b> Stop replacement several hours before rewarming begins. This is the classic and avoidable harm.</td></tr>
+  <tr><td><b>Glucose</b></td><td>Insulin resistance &rarr; hyperglycemia, often needing an infusion</td><td>Insulin sensitivity returns &rarr; <b>hypoglycemia.</b> Reduce insulin as you rewarm.</td></tr>
+  <tr><td><b>Heart rate</b></td><td>Bradycardia is expected and, if perfusion is adequate, <b>is not treated.</b> Prolonged QT; Osborn J waves.</td><td>Rate recovers.</td></tr>
+  <tr><td><b>Volume</b></td><td>Cold diuresis &rarr; hypovolemia, often substantial</td><td>Vasodilation &rarr; <b>hypotension.</b> Anticipate needing volume or pressors.</td></tr>
+  <tr><td><b>Coagulation</b></td><td>Platelet dysfunction and slowed enzyme kinetics &rarr; bleeding risk</td><td>Normalizes.</td></tr>
+  <tr><td><b>Drugs</b></td><td>Hepatic and renal clearance fall; <b>sedatives and opioids accumulate</b></td><td>Accumulated drug is why neuroprognostication is confounded for days &mdash; see &sect;07.</td></tr>
+  <tr><td><b>Magnesium, phosphate, calcium</b></td><td>All fall</td><td>All rebound. Recheck through the transition.</td></tr>
+  <tr><td><b>Immunity</b></td><td>Suppressed &mdash; pneumonia is common and fever may be blunted</td><td>Watch for infection unmasked by rewarming.</td></tr>
+  <tr><td><b>Cerebral metabolism</b></td><td>CMRO<sub>2</sub> falls roughly 6&ndash;8% per &deg;C</td><td>&mdash;</td></tr>
+</table>
+<div class="sec-head c-red" id="technique"><span class="sec-num">06</span><h2>Running It</h2></div>
+<div class="box" style="padding:4px 18px;">
+  <div class="step-row"><div class="step-num" style="background:var(--red)">1</div><div class="step-body"><div class="step-title">Stabilize first, then cool</div><div class="step-desc">Airway secured, hemodynamics supported, 12-lead done and the decision made about urgent coronary angiography. Temperature control is important and it is not the first thing.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">2</div><div class="step-body"><div class="step-title">Core probe in before the device goes on</div><div class="step-desc">Esophageal where possible. Record the starting temperature &mdash; many post-arrest patients arrive spontaneously hypothermic, and knowing that changes what the device needs to do.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--teal)">3</div><div class="step-body"><div class="step-title">Set the target your institution uses, and reach it</div><div class="step-desc">Somewhere in the <span class="d">32&ndash;37.5 &deg;C</span> band depending on local protocol &mdash; commonly strict normothermia at <span class="d">36&ndash;37.5 &deg;C</span>, or <span class="d">33 &deg;C</span> where that is the chosen strategy. <b>Choosing a number is less important than holding it</b>: the failure that matters is drifting into fever.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--blue)">4</div><div class="step-body"><div class="step-title">Get ahead of shivering</div><div class="step-desc">Counterwarm the skin from the start. Assess formally every hour. Escalate up the ladder in &sect;04 rather than reaching for paralysis.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--purple)">5</div><div class="step-body"><div class="step-title">Maintain for 24 hours, and watch the chemistry</div><div class="step-desc">Electrolytes and glucose every 4&ndash;6 hours. Potassium at the lower end of normal, deliberately. Continuous EEG if paralyzed, and a low threshold for it otherwise &mdash; non-convulsive seizures after arrest are common and invisible.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--red)">6</div><div class="step-body"><div class="step-title">Rewarm slowly &mdash; no faster than 0.25&ndash;0.5 &deg;C per hour</div><div class="step-desc">Use the device to control the rate; do not simply switch it off. <b>This is the most dangerous phase.</b> Expect hyperkalemia, hypoglycemia, and vasodilatory hypotension arriving together. Stop potassium replacement before you start, reduce insulin as you go, and have volume and a pressor available.</div></div></div>
+  <div class="step-row"><div class="step-num" style="background:var(--amber)">7</div><div class="step-body"><div class="step-title">Then keep them out of fever for at least 72 hours</div><div class="step-desc">Leave the device on in normothermia mode. <b>Rebound hyperthermia after rewarming is extremely common and is the part everyone stops watching for</b>, because the protocol feels finished. It is not.</div></div></div>
+</div>
+<div class="sec-head c-blue" id="bundle"><span class="sec-num">07</span><h2>The Rest of Post-Arrest Care</h2></div>
+<div class="box t-blue">
+<p>Temperature is one element of a bundle, and the others are what the patient is most likely to be harmed by in the first hours.</p>
+<ul>
+  <li><b>Oxygen:</b> avoid hypoxia <i>and</i> hyperoxia. Titrate to <span class="d">SpO<sub>2</sub> 92&ndash;98%</span>. Leaving the FiO<sub>2</sub> at 1.0 after ROSC is a real and common harm.</li>
+  <li><b>Ventilation:</b> normocapnia, <span class="d">PaCO<sub>2</sub> 35&ndash;45 mmHg</span>. Hyperventilation causes cerebral vasoconstriction; hypercapnia raises intracranial pressure.</li>
+  <li><b>Blood pressure:</b> <span class="d">MAP &ge;65 mmHg</span>, and many units target 80&ndash;100 in the hope of better cerebral perfusion through impaired autoregulation. Avoid hypotension above all.</li>
+  <li><b>Coronary angiography:</b> immediately for ST elevation. For patients without ST elevation and no shock, early routine angiography has not shown benefit, so it becomes a case-by-case decision.</li>
+  <li><b>Glucose:</b> roughly 140&ndash;180 mg/dL. Avoid hypoglycemia more than you chase tight control.</li>
+  <li><b>Seizures:</b> treat electrographic seizures. Distinguish myoclonic status from post-hypoxic myoclonus &mdash; they are not prognostically equivalent and the distinction needs EEG.</li>
+  <li><b>Neuroprognostication: not before 72 hours after return to normothermia, and not while sedation is on board.</b> Hypothermia and accumulated drug both suppress the examination. Use <b>multiple modalities</b> &mdash; clinical examination, bilaterally absent N20 on SSEP, EEG pattern, neuron-specific enolase, and imaging &mdash; and never a single test. <b>Early pessimistic prognostication is a self-fulfilling prophecy</b>, and it remains one of the commonest serious errors in post-arrest care.</li>
+</ul>
+</div>
+<div class="sec-head c-red" id="troubleshooting"><span class="sec-num">08</span><h2>Troubleshooting &amp; Failure Modes</h2></div>
+<table class="rt">
+  <tr><th>What you see</th><th>What it usually is</th><th>What to do</th></tr>
+  <tr><td>Cannot reach target</td><td>Shivering &mdash; usually subclinical</td><td>Feel the jaw and chest wall. Counterwarm the skin, then escalate the ladder. Do not simply turn the device colder.</td></tr>
+  <tr><td>Temperature oscillating</td><td>Manual cooling, or a probe reading a lagging compartment</td><td>Use closed-loop feedback. Switch to an esophageal probe.</td></tr>
+  <tr><td>Two probes disagree</td><td>One is lagging or displaced</td><td>Trust the esophageal reading. Check the bladder probe against urine output &mdash; it is unreliable when oliguric.</td></tr>
+  <tr><td>Potassium falling during cooling</td><td>Intracellular shift &mdash; expected</td><td>Replace sparingly to 3.0&ndash;3.5. <b>Stop replacing before rewarming.</b></td></tr>
+  <tr><td>Hyperkalemia during rewarming</td><td>Potassium returning from cells, usually on top of replacement given at target</td><td>Treat it, and learn the sequencing lesson. This is why replacement stops early.</td></tr>
+  <tr><td>Hypotension as you rewarm</td><td>Vasodilation on a volume-depleted patient</td><td>Anticipate it. Slow the rewarming, give volume, add a pressor.</td></tr>
+  <tr><td>Bradycardia at 33 &deg;C</td><td>Expected physiology</td><td><b>Do not treat</b> if perfusion and lactate are adequate. It is not a complication.</td></tr>
+  <tr><td>Fever on day 2 or 3</td><td>Rebound hyperthermia, or infection</td><td>Keep the device on in normothermia mode for 72 h. Look for pneumonia &mdash; cooled patients aspirate and their fever response is blunted.</td></tr>
+  <tr><td>Paralyzed and &ldquo;settled&rdquo;</td><td>Possible unrecognized seizures</td><td>Continuous EEG. Paralysis hides status epilepticus completely.</td></tr>
+  <tr><td>Team discussing withdrawal at 24 h</td><td>Premature prognostication</td><td><b>Stop.</b> Not before 72 h after normothermia and off sedation, and never on one modality.</td></tr>
+</table>
+<div class="sec-head c-purple" id="pearls"><span class="sec-num">09</span><h2>Pearls</h2></div>
 <div class="box t-purple">
-<p>The single most important actionable step is avoiding fever, whatever specific temperature target your institution uses &mdash; this is the one point of broad consensus across the evolving TTM literature.</p>
-<p>Start temperature management as early as possible after ROSC is confirmed; delayed initiation is associated with reduced benefit.</p>
-<p>Treat shivering aggressively and early &mdash; it is both a sign the target isn't being met and an active obstacle to reaching it.</p>
+<p><b>Prevent fever.</b> If only one thing survives from this page, it is that &mdash; it is the element every trial still supports, and it lasts 72 hours.</p>
+<p><b>Holding the target matters more than which target.</b> Drift into fever is the failure; the exact number is institutional.</p>
+<p><b>Warm the skin while you cool the core.</b> The single most underused anti-shivering measure, and it saves sedation.</p>
+<p><b>Paralysis is last, and it hides seizures.</b> If you paralyze, you need EEG.</p>
+<p><b>Stop replacing potassium before you rewarm.</b> It comes back out of the cells.</p>
+<p><b>Rewarming is the dangerous phase.</b> Hyperkalemia, hypoglycemia and hypotension arrive together, and switching the machine off is not rewarming.</p>
+<p><b>Do not leave the FiO<sub>2</sub> at 1.0.</b> Hyperoxia after arrest is a harm, not a safety margin.</p>
+<p><b>Bradycardia at target is physiology.</b> Leave it alone if the patient is perfusing.</p>
+<p><b>Esophageal probe.</b> Bladder lags when it matters most.</p>
+<p><b>No prognosis before 72 hours off sedation and at normothermia</b> &mdash; and never from a single test.</p>
 </div>
-<div class="sec-head c-amber" id="refs"><span class="sec-num">07</span><h2>References</h2></div>
+<div class="sec-head c-amber" id="refs"><span class="sec-num">10</span><h2>References</h2></div>
 <ul class="sources">
-  <li><span class="tier">EVIDENCE</span>Dankiewicz J, Cronberg T, Lilja G, et al. Hypothermia versus normothermia after out-of-hospital cardiac arrest (TTM2 trial). <i>N Engl J Med.</i> 2021;384(24):2283-2294.</li>
-  <li><span class="tier">GUIDELINE</span>Panchal AR, Bartos JA, Cabañas JG, et al. 2020 AHA Guidelines for CPR and ECC &mdash; Post-Cardiac Arrest Care. <i>Circulation.</i> 2020;142(16_suppl_2).</li>
+  <li><span class="tier">EVIDENCE</span>Dankiewicz J, Cronberg T, Lilja G, et al. Hypothermia versus normothermia after out-of-hospital cardiac arrest (TTM2). <i>N Engl J Med.</i> 2021;384(24):2283&ndash;2294.</li>
+  <li><span class="tier">EVIDENCE</span>Nielsen N, Wetterslev J, Cronberg T, et al. Targeted temperature management at 33&deg;C versus 36&deg;C after cardiac arrest. <i>N Engl J Med.</i> 2013;369(23):2197&ndash;2206.</li>
+  <li><span class="tier">EVIDENCE</span>Lascarrou JB, Merdji H, Le Gouge A, et al. Targeted temperature management for cardiac arrest with nonshockable rhythm (HYPERION). <i>N Engl J Med.</i> 2019;381(24):2327&ndash;2337.</li>
+  <li><span class="tier">GUIDELINE</span>Sandroni C, Nolan JP, B&ouml;ttiger BW, et al. ERC-ESICM guidelines on temperature control after cardiac arrest in adults. <i>Intensive Care Med.</i> 2022;48(3):261&ndash;269.</li>
+  <li><span class="tier">GUIDELINE</span>Nolan JP, Sandroni C, B&ouml;ttiger BW, et al. European Resuscitation Council and European Society of Intensive Care Medicine Guidelines 2021: Post-resuscitation care. <i>Resuscitation.</i> 2021;161:220&ndash;269.</li>
+  <li><span class="tier">GUIDELINE</span>Panchal AR, Bartos JA, Caba&ntilde;as JG, et al. 2020 AHA Guidelines for CPR and ECC &mdash; Post-Cardiac Arrest Care. <i>Circulation.</i> 2020;142(16_suppl_2).</li>
+  <li><span class="tier">EVIDENCE</span>Bernard SA, Smith K, Finn J, et al. Induction of therapeutic hypothermia during out-of-hospital cardiac arrest using a rapid infusion of cold saline (RINSE). <i>Circulation.</i> 2016;134(11):797&ndash;805.</li>
 </ul>
+
 <div class="footer">Built for rapid recall under pressure, not as a substitute for institutional protocol or real-time specialist consultation during a live event. Verify technique and equipment against your own institution's protocol before clinical use.</div>
 </div>
 </body>
