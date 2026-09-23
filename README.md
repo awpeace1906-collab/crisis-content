@@ -34,6 +34,29 @@ Tier meanings:
 | 2 (default) | 12 months | An algorithm/sequence/decision pathway where order or criteria matter, but no single number is the failure point. |
 | 3 | 24 months | Background, rationale, epidemiology, historical framing — lowest drift risk. |
 
+## Repo labels this depends on
+
+Two labels, and they fail in different ways if missing:
+
+| Label | Used by | If it does not exist |
+|---|---|---|
+| `flagged-from-app` | The app's flag-as-outdated button, via a `github.com/.../issues/new?labels=` URL | **Silently dropped.** The issue is still created, just unlabeled — so the filter you would use to find reader reports returns nothing, and nothing anywhere says why. |
+| `content-staleness` | The CI staleness job, via the REST API | Self-heals. The API auto-creates a missing label when it creates the issue. |
+
+So only `flagged-from-app` has to be created by hand. The asymmetry is the
+whole reason this section exists: the web `issues/new` URL form ignores unknown
+labels without complaint, while the API creates them.
+
+```bash
+gh label create flagged-from-app \
+  --repo awpeace1906-collab/crisis-content \
+  --color D93F0B --description "Reader flagged this entry as possibly outdated, from inside the app" --force
+
+gh label create content-staleness \
+  --repo awpeace1906-collab/crisis-content \
+  --color FBCA04 --description "Tier 1 content past its review-due date (opened by CI)" --force
+```
+
 ## Local workflow
 
 ```bash
