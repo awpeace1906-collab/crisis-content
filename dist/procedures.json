@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T03:00:36.223Z",
+  "generatedAt": "2026-09-23T03:21:54.842Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -368,8 +368,8 @@
       "description": "Surgical, percutaneous, and needle techniques for CICO.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1456,8 +1456,8 @@
       "description": "Wire-guided backup when fiberoptic/video fails.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -1731,8 +1731,8 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2080,8 +2080,8 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2389,8 +2389,8 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2658,8 +2658,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2980,8 +2980,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-03-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
@@ -3323,7 +3323,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Return of spontaneous circulation (ROSC) after cardiac arrest with persistent coma/lack of purposeful response to verbal commands</li>\n      <li>Applies to both shockable and non-shockable initial rhythms per current post-arrest care guidelines</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Comatose after ROSC</b> from cardiac arrest — not following commands, no purposeful response to voice. Out-of-hospital or in-hospital, <b>shockable or non-shockable initial rhythm.</b></li>\n      <li>The practical test is the motor response: a patient who localizes to voice or follows a command does not need this. Everyone else does.</li>\n      <li>Start as soon as ROSC is established and the patient is stabilized — airway, hemodynamics, and a 12-lead first, then temperature.</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "What the trials actually changed",
+              "html": "The field has moved, and the entry point has moved with it. <b>TTM (2013)</b> found 33 °C no better than 36 °C. <b>TTM2 (2021)</b> found 33 °C no better than normothermia with active fever prevention. <b>HYPERION (2019)</b> suggested possible benefit at 33 °C specifically in non-shockable rhythms. The result is that <b>current guidance has shifted from “cool everyone to 33” to “actively prevent fever in everyone, and 33 remains a permitted option.”</b>"
             }
           ]
         },
@@ -3337,7 +3343,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Patient following commands/purposeful movement after ROSC (TTM is not indicated in a patient who is neurologically intact or rapidly recovering)</li>\n      <li>Active, uncontrolled major hemorrhage where induced hypothermia's coagulopathic effects would be dangerous (relative, favoring strict normothermia target over deeper cooling)</li>\n      <li>Pre-existing terminal condition where the goals of care do not support aggressive post-arrest intervention</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Following commands after ROSC.</b> Not indicated — though fever avoidance still applies.</li>\n      <li><b>Goals of care that do not support ongoing intensive treatment.</b></li>\n      <li><b>Major uncontrolled hemorrhage</b> — a reason to choose strict normothermia rather than 33 °C, since hypothermia impairs platelet function and enzyme kinetics. Rarely a reason to permit fever.</li>\n      <li><b>Sepsis, recent major surgery, or established coagulopathy</b> — the same reasoning: target higher, not warmer than normal.</li>\n      <li><b>Already hypothermic on arrival</b> — do not actively rewarm to a target. Hypothermic arrest is a different pathway entirely and drowning or environmental exposure changes the prognosis.</li>\n</ul>"
             }
           ]
         },
@@ -3351,15 +3357,97 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Temperature management device (surface cooling pads/wraps or intravascular cooling catheter system)</li>\n      <li>Continuous core temperature monitoring (esophageal, bladder, or rectal probe)</li>\n      <li>Sedation and, if needed, neuromuscular blockade to prevent shivering</li>\n      <li>Continuous cardiac and hemodynamic monitoring</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A device with closed-loop feedback</b> — surface pads or an intravascular catheter. Both work. Feedback control is what keeps you at target instead of oscillating, and manual ice packs cannot do it.</li>\n      <li><b>Continuous core temperature probe.</b> <b>Esophageal is the most accurate and most responsive</b>; bladder is acceptable but lags badly when urine output is low; rectal lags. Tympanic and axillary are not adequate for this. <b>Two sites is better than one</b>, because a single failed probe is otherwise invisible.</li>\n      <li><b>Sedation and analgesia</b>, titratable and short-acting where possible.</li>\n      <li><b>Neuromuscular blockade</b> available — but as the last anti-shivering step, not the first.</li>\n      <li><b>Continuous EEG</b>, or at least access to it. Essential if the patient is paralyzed.</li>\n      <li><b>Arterial line, and frequent electrolytes and glucose.</b></li>\n      <li><b>What not to use: cold intravenous fluid boluses in the prehospital setting.</b> Trials of prehospital cold saline showed increased pulmonary edema and re-arrest without benefit. Cool in hospital, with a device.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "shivering",
+          "num": "04",
+          "color": "red",
+          "title": "Shivering — the Thing That Defeats This",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "tagline",
+              "html": "Shivering raises metabolic rate and oxygen consumption sharply, defeats the target, and is treated in the wrong order almost everywhere."
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p><b>Assess it formally and repeatedly</b> using a structured scale — the Bedside Shivering Assessment Scale grades it 0 (none) to 3 (generalized). Shivering is often missed because it starts in the masseter and neck and can be felt on the jaw or chest before it is visible.</p>\n<p><b>Escalate in this order:</b></p>\n<ul>\n  <li><b>1. Counterwarm the skin.</b> Warm the face, hands and feet with a forced-air blanket <i>while cooling the core</i>. This is the most underused intervention in temperature management: shivering thresholds are driven substantially by skin temperature, so warming the periphery raises the threshold and lets you cool the core with far less sedation.</li>\n  <li><b>2. Acetaminophen</b>, plus <b>buspirone</b> — both lower the shivering threshold and are non-sedating.</li>\n  <li><b>3. Magnesium infusion</b> to a level around 3–4 mg/dL — lowers the threshold and is generally well tolerated.</li>\n  <li><b>4. Opioids</b> — fentanyl, or meperidine, which lowers the shivering threshold more than any other opioid but accumulates a proconvulsant metabolite.</li>\n  <li><b>5. Sedation</b> — propofol or dexmedetomidine.</li>\n  <li><b>6. Neuromuscular blockade — last.</b> It abolishes shivering without treating it, and it does something worse: <b>it masks seizures.</b> A paralyzed post-arrest patient needs continuous EEG, and if you cannot provide that, think hard before paralyzing.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "num": "05",
+          "color": "amber",
+          "title": "What Cooling Does to the Rest of the Patient",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "System",
+                "During cooling",
+                "During rewarming"
+              ],
+              "rows": [
+                [
+                  "<b>Potassium</b>",
+                  "Shifts <i>into</i> cells → hypokalemia. <b>Do not chase it aggressively</b>; a level of 3.0–3.5 is acceptable at target.",
+                  "<b>Shifts back out → rebound hyperkalemia.</b> Stop replacement several hours before rewarming begins. This is the classic and avoidable harm."
+                ],
+                [
+                  "<b>Glucose</b>",
+                  "Insulin resistance → hyperglycemia, often needing an infusion",
+                  "Insulin sensitivity returns → <b>hypoglycemia.</b> Reduce insulin as you rewarm."
+                ],
+                [
+                  "<b>Heart rate</b>",
+                  "Bradycardia is expected and, if perfusion is adequate, <b>is not treated.</b> Prolonged QT; Osborn J waves.",
+                  "Rate recovers."
+                ],
+                [
+                  "<b>Volume</b>",
+                  "Cold diuresis → hypovolemia, often substantial",
+                  "Vasodilation → <b>hypotension.</b> Anticipate needing volume or pressors."
+                ],
+                [
+                  "<b>Coagulation</b>",
+                  "Platelet dysfunction and slowed enzyme kinetics → bleeding risk",
+                  "Normalizes."
+                ],
+                [
+                  "<b>Drugs</b>",
+                  "Hepatic and renal clearance fall; <b>sedatives and opioids accumulate</b>",
+                  "Accumulated drug is why neuroprognostication is confounded for days — see §07."
+                ],
+                [
+                  "<b>Magnesium, phosphate, calcium</b>",
+                  "All fall",
+                  "All rebound. Recheck through the transition."
+                ],
+                [
+                  "<b>Immunity</b>",
+                  "Suppressed — pneumonia is common and fever may be blunted",
+                  "Watch for infection unmasked by rewarming."
+                ],
+                [
+                  "<b>Cerebral metabolism</b>",
+                  "CMRO<sub>2</sub> falls roughly 6–8% per °C",
+                  "—"
+                ]
+              ]
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "06",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Running It",
           "tagline": null,
           "blocks": [
             {
@@ -3368,72 +3456,135 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Confirm the indication: comatose, non-purposeful patient after ROSC."
+                  "title": "Stabilize first, then cool",
+                  "html": "Airway secured, hemodynamics supported, 12-lead done and the decision made about urgent coronary angiography. Temperature control is important and it is not the first thing."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Place continuous core temperature monitoring immediately."
+                  "title": "Core probe in before the device goes on",
+                  "html": "Esophageal where possible. Record the starting temperature — many post-arrest patients arrive spontaneously hypothermic, and knowing that changes what the device needs to do."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Initiate the cooling device per your institutional target — current guidelines support a target range generally between 32-36°C, with an increasing emphasis on strict normothermia (around 36-37.5°C) with fever avoidance as an accepted alternative strategy at many centers; follow your institution's specific protocol."
+                  "title": "Set the target your institution uses, and reach it",
+                  "html": "Somewhere in the <span class=\"d\">32–37.5 °C</span> band depending on local protocol — commonly strict normothermia at <span class=\"d\">36–37.5 °C</span>, or <span class=\"d\">33 °C</span> where that is the chosen strategy. <b>Choosing a number is less important than holding it</b>: the failure that matters is drifting into fever."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Sedate adequately and add neuromuscular blockade if shivering occurs and is not controlled by sedation alone — shivering generates heat and undermines the target temperature."
+                  "title": "Get ahead of shivering",
+                  "html": "Counterwarm the skin from the start. Assess formally every hour. Escalate up the ladder in §04 rather than reaching for paralysis."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Maintain the target temperature for the protocol-defined duration (commonly 24 hours at target, per most published protocols)."
+                  "title": "Maintain for 24 hours, and watch the chemistry",
+                  "html": "Electrolytes and glucose every 4–6 hours. Potassium at the lower end of normal, deliberately. Continuous EEG if paralyzed, and a low threshold for it otherwise — non-convulsive seizures after arrest are common and invisible."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Rewarm slowly and in a controlled fashion per protocol (typically no faster than 0.25-0.5°C per hour) to avoid rebound hyperthermia, electrolyte shifts, and hemodynamic instability."
+                  "title": "Rewarm slowly — no faster than 0.25–0.5 °C per hour",
+                  "html": "Use the device to control the rate; do not simply switch it off. <b>This is the most dangerous phase.</b> Expect hyperkalemia, hypoglycemia, and vasodilatory hypotension arriving together. Stop potassium replacement before you start, reduce insulin as you go, and have volume and a pressor available."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Maintain strict normothermia and fever avoidance for an extended period after the active cooling/rewarming phase, as post-arrest fever is independently associated with worse neurologic outcomes."
+                  "title": "Then keep them out of fever for at least 72 hours",
+                  "html": "Leave the device on in normothermia mode. <b>Rebound hyperthermia after rewarming is extremely common and is the part everyone stops watching for</b>, because the protocol feels finished. It is not."
                 }
               ]
-            },
-            {
-              "type": "alert",
-              "color": "amber",
-              "title": "Fever avoidance is the one point of broad consensus",
-              "html": "Whatever specific temperature target the institution uses, post-arrest fever is independently associated with worse neurologic outcomes — treat shivering aggressively and early since it both signals and obstructs reaching target."
             }
           ]
         },
         {
-          "id": "complications",
-          "num": "05",
-          "color": "red",
-          "title": "Complications & Pitfalls",
+          "id": "bundle",
+          "num": "07",
+          "color": "blue",
+          "title": "The Rest of Post-Arrest Care",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
-              "color": "red",
-              "html": "<ul>\n      <li>Shivering, which increases metabolic demand and can undermine target temperature achievement — treat proactively with sedation/paralysis rather than reactively</li>\n      <li>Electrolyte shifts (hypokalemia during cooling, rebound hyperkalemia during rewarming)</li>\n      <li>Coagulopathy and increased bleeding risk at deeper hypothermia targets</li>\n      <li>Arrhythmia risk, particularly bradycardia, at lower temperature targets</li>\n      <li>Rebound hyperthermia if rewarming is too rapid or fever isn't proactively managed afterward</li>\n</ul>"
+              "color": "blue",
+              "html": "<p>Temperature is one element of a bundle, and the others are what the patient is most likely to be harmed by in the first hours.</p>\n<ul>\n  <li><b>Oxygen:</b> avoid hypoxia <i>and</i> hyperoxia. Titrate to <span class=\"d\">SpO<sub>2</sub> 92–98%</span>. Leaving the FiO<sub>2</sub> at 1.0 after ROSC is a real and common harm.</li>\n  <li><b>Ventilation:</b> normocapnia, <span class=\"d\">PaCO<sub>2</sub> 35–45 mmHg</span>. Hyperventilation causes cerebral vasoconstriction; hypercapnia raises intracranial pressure.</li>\n  <li><b>Blood pressure:</b> <span class=\"d\">MAP ≥65 mmHg</span>, and many units target 80–100 in the hope of better cerebral perfusion through impaired autoregulation. Avoid hypotension above all.</li>\n  <li><b>Coronary angiography:</b> immediately for ST elevation. For patients without ST elevation and no shock, early routine angiography has not shown benefit, so it becomes a case-by-case decision.</li>\n  <li><b>Glucose:</b> roughly 140–180 mg/dL. Avoid hypoglycemia more than you chase tight control.</li>\n  <li><b>Seizures:</b> treat electrographic seizures. Distinguish myoclonic status from post-hypoxic myoclonus — they are not prognostically equivalent and the distinction needs EEG.</li>\n  <li><b>Neuroprognostication: not before 72 hours after return to normothermia, and not while sedation is on board.</b> Hypothermia and accumulated drug both suppress the examination. Use <b>multiple modalities</b> — clinical examination, bilaterally absent N20 on SSEP, EEG pattern, neuron-specific enolase, and imaging — and never a single test. <b>Early pessimistic prognostication is a self-fulfilling prophecy</b>, and it remains one of the commonest serious errors in post-arrest care.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Cannot reach target",
+                  "Shivering — usually subclinical",
+                  "Feel the jaw and chest wall. Counterwarm the skin, then escalate the ladder. Do not simply turn the device colder."
+                ],
+                [
+                  "Temperature oscillating",
+                  "Manual cooling, or a probe reading a lagging compartment",
+                  "Use closed-loop feedback. Switch to an esophageal probe."
+                ],
+                [
+                  "Two probes disagree",
+                  "One is lagging or displaced",
+                  "Trust the esophageal reading. Check the bladder probe against urine output — it is unreliable when oliguric."
+                ],
+                [
+                  "Potassium falling during cooling",
+                  "Intracellular shift — expected",
+                  "Replace sparingly to 3.0–3.5. <b>Stop replacing before rewarming.</b>"
+                ],
+                [
+                  "Hyperkalemia during rewarming",
+                  "Potassium returning from cells, usually on top of replacement given at target",
+                  "Treat it, and learn the sequencing lesson. This is why replacement stops early."
+                ],
+                [
+                  "Hypotension as you rewarm",
+                  "Vasodilation on a volume-depleted patient",
+                  "Anticipate it. Slow the rewarming, give volume, add a pressor."
+                ],
+                [
+                  "Bradycardia at 33 °C",
+                  "Expected physiology",
+                  "<b>Do not treat</b> if perfusion and lactate are adequate. It is not a complication."
+                ],
+                [
+                  "Fever on day 2 or 3",
+                  "Rebound hyperthermia, or infection",
+                  "Keep the device on in normothermia mode for 72 h. Look for pneumonia — cooled patients aspirate and their fever response is blunted."
+                ],
+                [
+                  "Paralyzed and “settled”",
+                  "Possible unrecognized seizures",
+                  "Continuous EEG. Paralysis hides status epilepticus completely."
+                ],
+                [
+                  "Team discussing withdrawal at 24 h",
+                  "Premature prognostication",
+                  "<b>Stop.</b> Not before 72 h after normothermia and off sedation, and never on one modality."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "09",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -3441,13 +3592,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The single most important actionable step is avoiding fever, whatever specific temperature target your institution uses — this is the one point of broad consensus across the evolving TTM literature.</p>\n<p>Start temperature management as early as possible after ROSC is confirmed; delayed initiation is associated with reduced benefit.</p>\n<p>Treat shivering aggressively and early — it is both a sign the target isn't being met and an active obstacle to reaching it.</p>"
+              "html": "<p><b>Prevent fever.</b> If only one thing survives from this page, it is that — it is the element every trial still supports, and it lasts 72 hours.</p>\n<p><b>Holding the target matters more than which target.</b> Drift into fever is the failure; the exact number is institutional.</p>\n<p><b>Warm the skin while you cool the core.</b> The single most underused anti-shivering measure, and it saves sedation.</p>\n<p><b>Paralysis is last, and it hides seizures.</b> If you paralyze, you need EEG.</p>\n<p><b>Stop replacing potassium before you rewarm.</b> It comes back out of the cells.</p>\n<p><b>Rewarming is the dangerous phase.</b> Hyperkalemia, hypoglycemia and hypotension arrive together, and switching the machine off is not rewarming.</p>\n<p><b>Do not leave the FiO<sub>2</sub> at 1.0.</b> Hyperoxia after arrest is a harm, not a safety margin.</p>\n<p><b>Bradycardia at target is physiology.</b> Leave it alone if the patient is perfusing.</p>\n<p><b>Esophageal probe.</b> Bladder lags when it matters most.</p>\n<p><b>No prognosis before 72 hours off sedation and at normothermia</b> — and never from a single test.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "10",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -3457,11 +3608,31 @@
               "items": [
                 {
                   "tier": "EVIDENCE",
-                  "html": "Dankiewicz J, Cronberg T, Lilja G, et al. Hypothermia versus normothermia after out-of-hospital cardiac arrest (TTM2 trial). <i>N Engl J Med.</i> 2021;384(24):2283-2294."
+                  "html": "Dankiewicz J, Cronberg T, Lilja G, et al. Hypothermia versus normothermia after out-of-hospital cardiac arrest (TTM2). <i>N Engl J Med.</i> 2021;384(24):2283–2294."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Nielsen N, Wetterslev J, Cronberg T, et al. Targeted temperature management at 33°C versus 36°C after cardiac arrest. <i>N Engl J Med.</i> 2013;369(23):2197–2206."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Lascarrou JB, Merdji H, Le Gouge A, et al. Targeted temperature management for cardiac arrest with nonshockable rhythm (HYPERION). <i>N Engl J Med.</i> 2019;381(24):2327–2337."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Sandroni C, Nolan JP, Böttiger BW, et al. ERC-ESICM guidelines on temperature control after cardiac arrest in adults. <i>Intensive Care Med.</i> 2022;48(3):261–269."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Nolan JP, Sandroni C, Böttiger BW, et al. European Resuscitation Council and European Society of Intensive Care Medicine Guidelines 2021: Post-resuscitation care. <i>Resuscitation.</i> 2021;161:220–269."
                 },
                 {
                   "tier": "GUIDELINE",
                   "html": "Panchal AR, Bartos JA, Cabañas JG, et al. 2020 AHA Guidelines for CPR and ECC — Post-Cardiac Arrest Care. <i>Circulation.</i> 2020;142(16_suppl_2)."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Bernard SA, Smith K, Finn J, et al. Induction of therapeutic hypothermia during out-of-hospital cardiac arrest using a rapid infusion of cold saline (RINSE). <i>Circulation.</i> 2016;134(11):797–805."
                 }
               ]
             }
@@ -3490,8 +3661,8 @@
       "description": "Bridging unstable bradycardia to a definitive rhythm.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-03-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
@@ -5047,111 +5218,256 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Severe hypothermia (core temperature typically &lt;28°C) with cardiac instability, arrhythmia (including ventricular fibrillation), or cardiac arrest</li>\n      <li>Hypothermic cardiac arrest, where standard resuscitation and defibrillation are often ineffective until adequate rewarming is achieved — extracorporeal rewarming is the definitive management in this population</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Hypothermic cardiac arrest</b> — extracorporeal rewarming is the definitive management, and outcomes here are unlike any other arrest population</li>\n      <li><b>Severe hypothermia (below about 28 °C) with cardiac instability</b> — ventricular arrhythmia, profound bradycardia, or hypotension unresponsive to volume</li>\n      <li><b>Hypothermia with a core temperature that will not rise</b> despite adequate external and minimally invasive rewarming</li>\n      <li><b>Hypothermia complicated by a condition requiring circulatory support</b> in its own right</li>\n</ul>"
+            },
+            {
+              "type": "alert",
+              "color": "amber",
+              "title": "Why this population is different",
+              "html": "Cooling that occurs <i>before</i> hypoxia is profoundly neuroprotective: cerebral oxygen consumption falls roughly 6–8% per degree, and intact neurologic survival has been documented after <b>hours</b> of CPR and core temperatures below 15 °C. <b>Nobody is dead until they are warm and dead.</b>"
             }
           ]
         },
         {
-          "id": "contraindications",
+          "id": "staging",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Staging, and Measuring the Temperature Properly",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Stage",
+                "Clinical picture",
+                "Core temp (approx.)"
+              ],
+              "rows": [
+                [
+                  "<b>HT I</b>",
+                  "Conscious, shivering",
+                  "35–32 °C"
+                ],
+                [
+                  "<b>HT II</b>",
+                  "Impaired consciousness, <b>shivering has stopped</b>",
+                  "32–28 °C"
+                ],
+                [
+                  "<b>HT III</b>",
+                  "Unconscious, vital signs present but may be barely detectable",
+                  "28–24 °C"
+                ],
+                [
+                  "<b>HT IV</b>",
+                  "No detectable vital signs — apparent death",
+                  "Below ~24 °C"
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<p><b>Take the pulse for a full minute</b>, with ECG and ideally ultrasound. A profoundly hypothermic patient may have a rate of 10 with a barely palpable pulse, and being wrongly declared pulseless leads to chest compressions on a perfusing, irritable myocardium.</p>\n<p><b>Measure the core temperature correctly, because everything depends on it.</b></p>\n<ul>\n  <li><b>Esophageal probe in the lower third of the esophagus</b> — the standard in an intubated patient. Accurate and responsive.</li>\n  <li><b>Epitympanic probe with the ear canal insulated</b> — acceptable in a non-intubated patient, and only if there is no snow or water in the canal and a pulse is present.</li>\n  <li><b>Rectal and bladder lag substantially</b>, and lag most during active rewarming — exactly when you need accuracy.</li>\n  <li><b>Infrared tympanic thermometers are not adequate</b>, and most standard clinical thermometers do not read low enough to be useful at all.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "handling",
+          "num": "03",
+          "color": "red",
+          "title": "Handling — Rescue Collapse and Afterdrop",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute in hypothermic cardiac arrest with a survivable overall clinical picture (the guiding principle: \"nobody is dead until warm and dead\")</li>\n      <li>Injuries or comorbidities incompatible with survival regardless of rewarming (as with any ECMO candidacy decision)</li>\n</ul>"
+              "html": "<p><b>Rescue collapse:</b> arrest during or shortly after extrication. The cold myocardium is exquisitely irritable and will fibrillate with mechanical stimulation, and standing a patient up removes the hydrostatic support their vasoconstricted, volume-depleted circulation depends on.</p>\n<ul>\n  <li><b>Keep them horizontal</b> throughout extrication and transport.</li>\n  <li><b>Move them as little and as gently as possible.</b> No rough handling, no sitting up, no unnecessary transfers.</li>\n  <li><b>Remove wet clothing by cutting</b>, and insulate with a vapor barrier plus insulation.</li>\n</ul>\n<p><b>Afterdrop:</b> the core temperature continues to fall after rescue, as cold peripheral blood returns centrally and heat continues to equilibrate inward. <b>Do not massage or actively warm the limbs</b>; direct external warming at the trunk — axillae, chest, groin, neck. Keep the periphery still.</p>"
             }
           ]
         },
         {
-          "id": "equipment",
-          "num": "03",
+          "id": "acls",
+          "num": "04",
+          "color": "amber",
+          "title": "Resuscitating a Cold Heart",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p>Below roughly 30 °C the myocardium responds poorly to both electricity and drugs, and drugs given are not metabolized — they accumulate and then act all at once as the patient warms.</p>\n<ul>\n  <li><b>Defibrillation:</b> attempt up to <b>three shocks</b>. If unsuccessful, defer further attempts until the core is above 30 °C. Below that, repeated shocks achieve nothing.</li>\n  <li><b>Drugs:</b> European and mountain-medicine guidance is to <b>withhold epinephrine and other ACLS drugs until above 30 °C</b>, then <b>double the dosing interval between 30 and 35 °C</b>, returning to standard intervals above 35 °C. American guidance is more permissive, allowing that drugs may be reasonable to consider. <b>The reason for caution is accumulation, not futility</b> — know which protocol your service follows.</li>\n  <li><b>Compressions continue.</b> The chest is stiff; a mechanical device is a substantial advantage over a long transport.</li>\n  <li><b>Where continuous CPR is genuinely impossible</b> — a technical rescue, a long carry off a mountain — guidelines permit intermittent CPR: below 28 °C, alternating 5 minutes of CPR with pauses of no more than 5 minutes; below 20 °C, pauses of up to 10 minutes. <b>This is an explicit concession to terrain, not a general license to interrupt.</b></li>\n  <li><b>Intubate if indicated.</b> Fear of triggering fibrillation should not prevent airway management; careful technique is enough.</li>\n  <li><b>They are profoundly volume depleted</b> from cold diuresis. Give warmed crystalloid generously.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "triage",
+          "num": "05",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Who Goes on a Circuit — and Where",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>ECMO or cardiopulmonary bypass (CPB) circuit and cannulation equipment (see ECMO Cannulation entry)</li>\n      <li>Continuous core temperature monitoring</li>\n      <li>Full resuscitation equipment, as CPR and standard ACLS measures continue in parallel during cannulation</li>\n</ul>"
+              "html": "<ul>\n  <li><b>Serum potassium is the single most useful triage marker.</b> A markedly elevated potassium indicates cell lysis that preceded the cooling — that is, death before hypothermia. <b>Thresholds vary: above 12 mmol/L is widely used as indicating non-survivability, with a lower threshold around 8 mmol/L applied after avalanche burial.</b> Confirm the figure your regional protocol uses.</li>\n  <li><b>The HOPE score</b> is the modern validated tool estimating survival probability with extracorporeal rewarming, and it has largely replaced potassium alone as the decision instrument where it is available.</li>\n  <li><b>Asphyxia before cooling</b> — airway obstruction in an avalanche burial beyond about 60 minutes without an air pocket, or submersion in non-icy water — carries a poor prognosis regardless of temperature.</li>\n  <li><b>Obvious lethal injury, a chest that will not compress, or ice within the airway</b> are the findings that justify not resuscitating. Rigidity and fixed dilated pupils are <b>not</b> — both are expected in deep hypothermia.</li>\n  <li><b>Take them to a center with extracorporeal capability, bypassing closer hospitals.</b> This is a declared bypass decision in the same category as trauma or STEMI, and it needs to be made prehospital, by protocol, rather than discovered after arrival at a hospital that cannot help.</li>\n  <li><b>Call ahead early.</b> The receiving team needs to assemble a cannulation team and prime a circuit before the patient arrives.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "technique",
-          "num": "04",
+          "id": "methods",
+          "num": "06",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Rewarming Methods, by Rate",
           "tagline": null,
           "blocks": [
             {
-              "type": "steps",
-              "steps": [
-                {
-                  "num": "1",
-                  "color": "red",
-                  "title": "",
-                  "html": "Continue high-quality CPR and standard resuscitation measures throughout — do not withhold compressions while awaiting rewarming capability."
-                },
-                {
-                  "num": "2",
-                  "color": "amber",
-                  "title": "",
-                  "html": "Recognize that standard defibrillation and many ACLS medications are often ineffective below a core temperature threshold (commonly cited around 30°C) — limit repeated defibrillation attempts and medication administration per hypothermia-specific arrest protocols until adequate rewarming is underway."
-                },
-                {
-                  "num": "3",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Activate ECMO/CPB team and cannulate per the standard ECMO cannulation framework (see the ECMO Cannulation Prep &amp; Activation entry), using this specifically as both circulatory support and a rewarming method."
-                },
-                {
-                  "num": "4",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Once on circuit, rewarm gradually and per protocol — controlled rewarming rate, avoiding the afterdrop and rewarming shock associated with overly rapid temperature correction."
-                },
-                {
-                  "num": "5",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Continue resuscitation efforts as core temperature rises, reattempting defibrillation and standard ACLS interventions once temperature thresholds are crossed per protocol."
-                },
-                {
-                  "num": "6",
-                  "color": "red",
-                  "title": "",
-                  "html": "Monitor closely for reperfusion/rewarming complications: arrhythmia, electrolyte shifts, and hemodynamic instability as peripheral vasodilation occurs with rewarming."
-                }
+              "type": "table",
+              "headers": [
+                "Method",
+                "Approximate rate",
+                "Use for"
+              ],
+              "rows": [
+                [
+                  "<b>Passive external</b> — dry clothing removed, insulation, vapor barrier, warm room",
+                  "0.5–2 °C/h <i>if still shivering</i>",
+                  "HT I. Shivering is the patient's own heat engine — protect it."
+                ],
+                [
+                  "<b>Active external</b> — forced-air warming, radiant heat, heat packs to the trunk",
+                  "1–2.5 °C/h",
+                  "HT I–II. Trunk only; never the limbs."
+                ],
+                [
+                  "<b>Warmed IV fluid</b> (38–42 °C)",
+                  "Prevents further cooling more than it warms",
+                  "All stages — essential, but do not expect it to rewarm anyone on its own."
+                ],
+                [
+                  "<b>Warmed humidified oxygen</b>",
+                  "Small",
+                  "Adjunct. Harmless, modest."
+                ],
+                [
+                  "<b>Body cavity lavage</b> — bladder, gastric, colonic",
+                  "Slow, low surface area",
+                  "Largely superseded; low yield for the effort."
+                ],
+                [
+                  "<b>Thoracic lavage</b> — warmed saline via two chest tubes, in one and out the other",
+                  "<b>3–6 °C/h</b>",
+                  "<b>The best option when no circuit is available.</b> Substantially more effective than other lavage routes, and deliverable in any hospital with chest tubes."
+                ],
+                [
+                  "<b>VA-ECMO or cardiopulmonary bypass</b>",
+                  "<b>6–10 °C/h</b>",
+                  "<b>Definitive</b> for arrest or refractory instability. See §07."
+                ]
               ]
-            },
-            {
-              "type": "alert",
-              "color": "red",
-              "title": "Nobody is dead until warm and dead",
-              "html": "Profound hypothermia is neuroprotective, and standard defibrillation/ACLS medications are often ineffective below roughly 30°C — don't burn through hypothermia-specific attempt limits before rewarming capability is underway."
             }
           ]
         },
         {
-          "id": "complications",
-          "num": "05",
+          "id": "ecls",
+          "num": "07",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Extracorporeal Rewarming",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Afterdrop (continued core temperature decline immediately after rewarming initiation) from cold peripheral blood returning centrally</li>\n      <li>Rewarming shock from peripheral vasodilation outpacing volume status</li>\n      <li>Arrhythmia during the rewarming process, particularly as temperature crosses certain thresholds</li>\n      <li>Delayed recognition that standard resuscitation measures are unlikely to succeed without rewarming capability, delaying ECMO/CPB activation</li>\n</ul>"
+              "html": "<p>Cannulation follows the standard peripheral VA pathway — see the ECMO cannulation entry for technique, sizing, wire confirmation, and the distal perfusion catheter. What differs here is the intent and the pacing.</p>\n<ul>\n  <li><b>VA-ECMO is generally preferred over cardiopulmonary bypass</b>: it needs less anticoagulation, and crucially it can <i>continue</i> supporting the circulation after rewarming is complete — which matters, because a rewarmed myocardium is often stunned and not immediately able to sustain an output.</li>\n  <li><b>Rewarm gradually.</b> Keep the blood-to-core gradient modest — commonly no more than about 10 °C — and many centers now deliberately rewarm slowly, on the order of 1–2 °C per hour after arrest, to limit reperfusion injury rather than racing to normothermia.</li>\n  <li><b>Re-attempt defibrillation and standard drugs as thresholds are crossed</b> — a rhythm that was refractory at 26 °C often converts readily at 30.</li>\n  <li><b>Expect enormous volume requirements</b> as the periphery vasodilates. Hypotension on rewarming is anticipated, not a surprise.</li>\n  <li><b>Consider deliberate normothermia rather than overshoot</b> — these patients have had a cardiac arrest, and the post-arrest fever-avoidance principles apply once they are warm.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "08",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Arrest during or just after extrication",
+                  "<b>Rescue collapse</b>",
+                  "Prevent it: horizontal, gentle, minimal movement. Once it happens, CPR and move toward a circuit."
+                ],
+                [
+                  "Temperature still falling after rescue",
+                  "<b>Afterdrop</b> — expected",
+                  "Trunk warming only, keep the limbs still, warmed fluids. Do not massage the extremities."
+                ],
+                [
+                  "Shocks not working",
+                  "Myocardium too cold to respond",
+                  "Stop after three. Rewarm, then try again. Repeated shocks below 30 °C achieve nothing."
+                ],
+                [
+                  "Nothing improving despite drugs",
+                  "Drugs not being metabolized — accumulating",
+                  "Withhold further doses until above 30 °C, then lengthen intervals. Expect a delayed effect from what has already been given."
+                ],
+                [
+                  "Rigid, fixed dilated pupils, no reflexes",
+                  "<b>Expected at this temperature — not death</b>",
+                  "Continue. These findings have no prognostic value while cold."
+                ],
+                [
+                  "Rectal temperature not rising on the circuit",
+                  "Probe lag, not treatment failure",
+                  "Use an esophageal probe. Rectal readings lag most exactly during active rewarming."
+                ],
+                [
+                  "Profound hypotension as they warm",
+                  "Rewarming shock — vasodilation onto a depleted circulation",
+                  "Anticipate it. Warmed volume, slow the rewarming rate, pressors."
+                ],
+                [
+                  "Hyperkalemia, arrhythmia, dark urine during rewarming",
+                  "Reperfusion and rhabdomyolysis",
+                  "Treat the potassium, fluids for myoglobin, monitor renal function."
+                ],
+                [
+                  "Bleeding from everywhere",
+                  "Hypothermic coagulopathy plus DIC",
+                  "It corrects with temperature. Product support meanwhile."
+                ],
+                [
+                  "Taken to the nearest hospital, no circuit available",
+                  "Bypass decision not made",
+                  "Preventable only by protocol. Transfer urgently and start thoracic lavage in the meantime."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "complications",
+          "num": "09",
+          "color": "red",
+          "title": "Complications",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "red",
+              "html": "<ul>\n      <li><b>Rescue collapse and ventricular fibrillation</b> from handling a cold, irritable myocardium.</li>\n      <li><b>Afterdrop</b> and continued cooling after rescue.</li>\n      <li><b>Rewarming shock</b> — vasodilation outpacing a profoundly volume-depleted circulation.</li>\n      <li><b>Hyperkalemia and arrhythmia</b> during reperfusion.</li>\n      <li><b>Rhabdomyolysis and acute kidney injury.</b></li>\n      <li><b>Coagulopathy and DIC</b> — hypothermia impairs both platelet function and enzyme kinetics, and laboratory clotting studies run at 37 °C look deceptively normal.</li>\n      <li><b>Pulmonary edema and ARDS.</b></li>\n      <li><b>Pancreatitis</b> — classically described after severe hypothermia and easily missed.</li>\n      <li><b>Frostbite</b> of the extremities, needing its own management once the core is safe.</li>\n      <li><b>All the complications of extracorporeal support</b> — bleeding, limb ischemia, and the rest.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "10",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -5159,13 +5475,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>\"Nobody is dead until warm and dead\" is the governing principle — profound hypothermia is neuroprotective, and patients have survived prolonged arrest with intact neurologic outcomes after extracorporeal rewarming.</p>\n<p>This is functionally the same activation and cannulation process as standard ECPR (see the ECMO Cannulation Prep &amp; Activation entry), applied specifically to the hypothermic arrest population where the circuit does double duty as both circulatory support and the rewarming method itself.</p>\n<p>Don't burn through your hypothermia-specific ACLS medication/defibrillation allowances early — most hypothermia protocols cap attempts below a temperature threshold precisely because they're unlikely to work until the myocardium is warm enough to respond.</p>"
+              "html": "<p><b>Nobody is dead until they are warm and dead</b> — unless they were asphyxiated first. That sequence is the prognosis.</p>\n<p><b>Feel for a pulse for a full minute.</b> A rate of 10 is easy to miss and compressions on a perfusing cold heart cause fibrillation.</p>\n<p><b>Esophageal probe.</b> Rectal and bladder lag most during rewarming, which is when you are relying on them.</p>\n<p><b>Horizontal and gentle.</b> Rescue collapse is a handling complication.</p>\n<p><b>Warm the trunk, never the limbs.</b></p>\n<p><b>Three shocks, then stop until 30 °C.</b> And be cautious with drugs that will not be cleared.</p>\n<p><b>Fixed pupils and rigidity mean nothing while cold.</b></p>\n<p><b>Potassium is your triage test</b>, and the HOPE score where you have it.</p>\n<p><b>Bypass to a center with a circuit</b>, and call them before you leave the scene.</p>\n<p><b>No circuit? Two chest tubes.</b> Thoracic lavage is far better than the alternatives and available almost anywhere.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "11",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -5178,8 +5494,24 @@
                   "html": "Paal P, Gordon L, Strapazzon G, et al. Accidental hypothermia–an update: the content of this review is endorsed by the International Commission for Mountain Emergency Medicine (ICAR MEDCOM). <i>Scand J Trauma Resusc Emerg Med.</i> 2016;24:111."
                 },
                 {
+                  "tier": "GUIDELINE",
+                  "html": "Lott C, Truhlář A, Alfonzo A, et al. European Resuscitation Council Guidelines 2021: Cardiac arrest in special circumstances. <i>Resuscitation.</i> 2021;161:152–219."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Pasquier M, Hugli O, Paal P, et al. Hypothermia outcome prediction after extracorporeal life support for hypothermic cardiac arrest patients: the HOPE score. <i>Resuscitation.</i> 2018;126:58–64."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Walpoth BH, Walpoth-Aslan BN, Mattle HP, et al. Outcome of survivors of accidental deep hypothermia and circulatory arrest treated with extracorporeal blood warming. <i>N Engl J Med.</i> 1997;337(21):1500–1505."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Dow J, Giesbrecht GG, Danzl DF, et al. Wilderness Medical Society clinical practice guidelines for the out-of-hospital evaluation and treatment of accidental hypothermia. <i>Wilderness Environ Med.</i> 2019;30(4S):S47–S69."
+                },
+                {
                   "tier": "REFERENCE",
-                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. 2020 AHA Guidelines for CPR and ECC — Special Circumstances of Resuscitation (Hypothermia). <i>Circulation.</i> 2020;142(16_suppl_2)."
+                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. 2020 AHA Guidelines for CPR and ECC — Special Circumstances of Resuscitation. <i>Circulation.</i> 2020;142(16_suppl_2)."
                 }
               ]
             }
@@ -5918,13 +6250,77 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Decompression sickness (Type I — pain/limb, or Type II — neurologic, cardiopulmonary, cutis marmorata)</li>\n      <li>Arterial gas embolism from diving, iatrogenic sources (surgery, central line, hemodialysis), or barotrauma</li>\n      <li>Severe carbon monoxide poisoning with neurologic findings or loss of consciousness (frequent co-management pathway with the same chambers/teams)</li>\n      <li>Any diver with new neurologic, pulmonary, or cardiovascular symptoms after a dive, regardless of dive profile — err toward treatment when suspicion exists</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Decompression sickness</b>, Type I (musculoskeletal, cutaneous, lymphatic) or Type II (neurologic, inner ear, cardiopulmonary)</li>\n      <li><b>Arterial gas embolism</b> — from diving barotrauma, or iatrogenic: central line insertion or removal, cardiac and neurosurgery, hemodialysis, lung biopsy, contrast injection</li>\n      <li><b>Any diver with new symptoms after a dive</b>, however vague — fatigue, a rash, an odd ache. Dive profiles that look safe do not exclude it.</li>\n      <li><b>Severe carbon monoxide poisoning</b> — managed by the same chambers and teams, though the evidence is more contested than for DCS</li>\n      <li>Related chamber indications: <b>clostridial myonecrosis, necrotizing soft tissue infection, crush injury with compartment syndrome, compromised flaps and grafts</b></li>\n</ul>"
+            },
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<p><b>Why pressure treats this — three separate mechanisms:</b></p>\n<ul>\n  <li><b>Boyle's law:</b> bubble volume falls as pressure rises. At 2.8 ATA a bubble is roughly a third of its surface volume, which mechanically relieves vascular obstruction and tissue distortion.</li>\n  <li><b>Inert gas washout:</b> breathing 100% oxygen removes nitrogen from the breathing mixture, creating a steep diffusion gradient that drives nitrogen out of the bubble and out of the tissue.</li>\n  <li><b>Dissolved oxygen delivery:</b> by Henry's law, plasma-dissolved oxygen rises enough at treatment pressures to meet resting tissue metabolic demand <i>without hemoglobin at all</i>, oxygenating tissue downstream of an obstruction.</li>\n</ul>\n<p>The first two of these begin the moment you put on a non-rebreather. <b>That is why oxygen is not a holding measure — it is the same treatment at lower intensity.</b></p>"
+            }
+          ]
+        },
+        {
+          "id": "recognition",
+          "num": "02",
+          "color": "amber",
+          "title": "Recognizing It — and the Ten-Minute Rule",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Presentation",
+                "Features",
+                "Note"
+              ],
+              "rows": [
+                [
+                  "<b>Arterial gas embolism</b>",
+                  "Sudden stroke-like deficit, loss of consciousness, seizure, or arrest — typically <b>within 10 minutes of surfacing</b>, often immediately on surfacing",
+                  "<b>Symptoms within 10 minutes of surfacing are AGE until proven otherwise.</b> Classically follows breath-holding during ascent. Can occur after a very shallow dive."
+                ],
+                [
+                  "<b>DCS Type II — spinal</b>",
+                  "Low back or girdle pain, band-like paresthesia, ascending weakness, <b>urinary retention</b>",
+                  "The commonest serious neurologic DCS. Urinary retention is easy to miss and should be asked about directly."
+                ],
+                [
+                  "<b>DCS Type II — cerebral</b>",
+                  "Confusion, visual disturbance, ataxia, personality change",
+                  "Often attributed to fatigue or alcohol."
+                ],
+                [
+                  "<b>DCS Type II — inner ear</b>",
+                  "Vertigo, tinnitus, hearing loss",
+                  "Distinguish from inner ear barotrauma — the treatments differ, and this needs specialist input."
+                ],
+                [
+                  "<b>DCS Type II — “chokes”</b>",
+                  "Chest pain, dyspnea, cough — massive venous gas load",
+                  "Uncommon and serious."
+                ],
+                [
+                  "<b>DCS Type I — bends</b>",
+                  "Deep aching joint pain, typically shoulder or elbow, unrelieved by movement",
+                  "Full neurologic examination anyway — Type I and Type II coexist often."
+                ],
+                [
+                  "<b>Cutis marmorata</b>",
+                  "Marbled, mottled violaceous rash, usually trunk",
+                  "<b>Not a trivial skin finding.</b> It is now regarded as a marker of substantial bubble load and serious DCS."
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>The dive history to take, and to hand over verbatim:</b> maximum depth and bottom time; number of dives and surface intervals; ascent rate and any missed decompression stops; gas mixture; any rapid or uncontrolled ascent or breath-hold; <b>the exact time of surfacing and the exact time of symptom onset</b>; and any flying or altitude exposure afterwards. The onset interval is what separates AGE from DCS, and it is the detail most often lost.</p>"
             }
           ]
         },
         {
           "id": "contraindications",
-          "num": "02",
+          "num": "03",
           "color": "red",
           "title": "Contraindications",
           "tagline": null,
@@ -5932,29 +6328,29 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Untreated pneumothorax — absolute contraindication until a chest tube is placed (pressure changes in the chamber can convert to tension physiology)</li>\n      <li>Relative: certain chemotherapy agents, uncontrolled seizure disorder, severe COPD with bullae, claustrophobia (multiplace chambers can accommodate with support)</li>\n      <li>None of these should delay initial stabilization and 100% oxygen while transport/chamber access is arranged</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Untreated pneumothorax — absolute.</b> Gas trapped in the pleural space expands on decompression at the end of treatment and will tension. <b>A chest tube goes in before the chamber door closes</b>, and the drainage arrangement must be one the chamber team can manage under pressure. This is the hard gate on the whole pathway.</li>\n      <li><b>Relative — and rarely enough to withhold treatment for a serious injury:</b> bleomycin and certain other chemotherapy agents (pulmonary toxicity), disulfiram, uncontrolled seizure disorder, severe COPD with bullae and CO<sub>2</sub> retention, untreated middle ear or sinus pathology preventing equalization, and claustrophobia — which a multiplace chamber with an attendant usually accommodates.</li>\n      <li><b>Pregnancy</b> is a relative consideration for elective indications; for DCS and AGE it is not a barrier.</li>\n      <li><b>None of these delays 100% oxygen</b>, fluids, or the phone call.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "equipment",
-          "num": "03",
+          "num": "04",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment and the Phone Numbers",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>High-flow 100% oxygen delivery (non-rebreather or demand valve) for immediate use before and during transport</li>\n      <li>IV access and isotonic fluids (dehydration worsens bubble formation/tissue injury)</li>\n      <li>Monitoring: continuous pulse oximetry, cardiac monitor</li>\n      <li>Communication line to nearest hyperbaric chamber (know your regional chamber contact before you need it — DAN emergency line 919-684-9111 for diving-specific consultation)</li>\n      <li>Transport plan that avoids further altitude exposure (ground transport preferred; if air transport unavoidable, lowest safe cabin altitude, ideally pressurized to sea level)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>A tight-fitting non-rebreather with a reservoir, or a demand valve.</b> The distinction matters — a loosely applied mask delivers perhaps 60–70% oxygen, and the treatment depends on the inspired fraction being as close to 100% as you can manage. Check the seal and the reservoir.</li>\n      <li><b>IV access and isotonic crystalloid.</b> Divers are dehydrated by immersion diuresis and DCS causes capillary leak. <b>Avoid glucose-containing fluid</b> in suspected neurologic injury.</li>\n      <li><b>Continuous oximetry and cardiac monitoring.</b></li>\n      <li><b>A urinary catheter</b> if there is any spinal involvement — retention is common and the bladder gets forgotten in a chamber.</li>\n      <li><b>Chest imaging or ultrasound</b> to exclude pneumothorax before transfer.</li>\n      <li><b>The numbers, saved in advance:</b> your nearest operational chamber, and the <b>Divers Alert Network emergency line, +1 919-684-9111</b>, which provides 24-hour diving medical consultation and knows which chambers are actually open.</li>\n      <li><b>A transport plan that does not gain altitude</b> — see §06.</li>\n</ul>\n<p><b>Not every chamber can take every patient.</b> A <b>monoplace</b> chamber holds one patient and limits what can be done to them inside; a <b>multiplace</b> chamber is pressurized with an attendant inside and can manage a ventilated, unstable, or critically ill patient. <b>An intubated patient needs a multiplace chamber</b>, and many chambers are elective-hours only. Confirm capability on the phone before committing to a destination.</p>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "What to Do, in Order",
           "tagline": null,
           "blocks": [
             {
@@ -5963,90 +6359,152 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Place patient supine or left lateral for AGE (historical Trendelenburg positioning is no longer recommended — it can worsen cerebral edema)."
+                  "title": "100% oxygen now — before anything is arranged",
+                  "html": "The single highest-yield intervention available to you, free, immediate, and already in the room. It shrinks bubbles and washes out nitrogen by the same mechanisms the chamber uses. <b>Start it while someone else makes the phone calls</b>, and do not stop it because symptoms improve — improvement on oxygen confirms the diagnosis, it does not treat it."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Start 100% oxygen immediately via non-rebreather or demand valve, regardless of transport time — the single highest-yield intervention before chamber arrival."
+                  "title": "Lie them flat — supine, not head-down",
+                  "html": "<b>Trendelenburg is no longer recommended.</b> The old rationale was to keep bubbles out of the cerebral circulation; the position worsens cerebral edema and raises intracranial pressure, and the bubbles have already arrived. <b>Supine and flat.</b> The left lateral decubitus position belongs to venous air embolism trapping gas in the right ventricle — a different entity from arterial gas embolism."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Establish IV access; begin isotonic fluid resuscitation to address hemoconcentration."
+                  "title": "Fluids",
+                  "html": "Isotonic crystalloid, generously — orally if fully alert, intravenously otherwise. Hemoconcentration worsens bubble-related tissue injury, and these patients are dry before they are ever injured."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Perform a focused neurologic exam and document it — serial exams matter for tracking response and guiding chamber protocol."
+                  "title": "Document a full neurologic examination, with the time",
+                  "html": "Cranial nerves, power, sensation, coordination, gait if safe, and <b>bladder function</b>. <b>Serial examinations are how response to treatment is judged</b>, and without a recorded baseline the chamber team cannot tell whether the patient is improving. This is worth the five minutes."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Rule out or address pneumothorax before any chamber transport — this is a hard gate."
+                  "title": "Exclude a pneumothorax — the hard gate",
+                  "html": "Imaging or ultrasound. If present, it is drained before the chamber. Do not send an undrained pneumothorax to be pressurized."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Contact the nearest operational hyperbaric chamber directly — describe presentation, dive/exposure history, and confirm chamber availability and readiness."
+                  "title": "Call the chamber and DAN, in parallel with everything above",
+                  "html": "Describe the presentation, the dive profile, the onset timing, and what you have given. <b>Confirm the chamber is staffed, open, and able to take this specific patient</b> — ventilated, or unstable, or not. This call also gets you expert advice on a condition most clinicians see rarely."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Arrange transport that avoids altitude gain; if fixed-wing transport is required, coordinate cabin pressurization to sea level or the lowest achievable altitude."
+                  "title": "Transport without gaining altitude",
+                  "html": "Ground transport by preference. If air transport is unavoidable, the cabin must be <b>pressurized to sea level, or the aircraft kept below about 1000 feet</b>. Altitude reduces ambient pressure, and by Boyle's law every bubble in the patient expands. <b>This is the error that turns a treatable injury into a catastrophic one.</b>"
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Continue 100% oxygen and monitoring throughout transport."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "On arrival, hand off directly to hyperbaric medicine team with full history: dive profile (depth/time), symptom onset timing, treatments given en route."
-                },
-                {
-                  "num": "10",
                   "color": "purple",
-                  "title": "",
-                  "html": "Anticipate treatment via a US Navy Treatment Table (e.g., Table 6) or institutional equivalent — this decision belongs to the hyperbaric team."
+                  "title": "Hand over the profile, the times, and the examination",
+                  "html": "The hyperbaric team chooses the treatment table — commonly a <b>US Navy Table 6</b> at 2.8 ATA for serious DCS and AGE, with shorter tables for resolved pain-only presentations, and repeat sessions daily until improvement plateaus. That decision is theirs; the history and the serial examination are yours."
                 }
               ]
             },
             {
               "type": "alert",
               "color": "amber",
-              "title": "Oxygen first, logistics in parallel",
-              "html": "100% oxygen is free and immediate — start it before chamber transport is even confirmed, and never let arranging transport delay the one intervention that's already available at the bedside."
+              "title": "Late presentation is not a reason to withhold treatment",
+              "html": "Recompression benefits patients who present <b>hours or even days</b> after the event, particularly with neurologic symptoms. A diver who flew home, or spent a day hoping the numbness would settle, is still a candidate. <b>“It has been too long” is a misconception</b> — make the call anyway and let the hyperbaric physician decide."
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Oxygen not started while transport is arranged",
+                  "<b>The commonest and most costly error</b>",
+                  "Oxygen first, logistics in parallel. One person starts oxygen, another makes calls."
+                ],
+                [
+                  "Symptoms resolve on oxygen, everyone relaxes",
+                  "Improvement does not mean cure — relapse is common",
+                  "Continue oxygen, continue the referral. This confirms the diagnosis rather than removing the indication."
+                ],
+                [
+                  "Saturation is 100% on the mask, but no better",
+                  "Pulse oximetry says nothing about dissolved nitrogen or inspired fraction",
+                  "Check the mask seal and reservoir. Oximetry cannot tell you whether the treatment is working."
+                ],
+                [
+                  "Deteriorating during air transport",
+                  "<b>Altitude — bubble expansion</b>",
+                  "Descend. Pressurize to sea level. This is predictable and preventable."
+                ],
+                [
+                  "Sudden deterioration in the chamber on ascent",
+                  "Expanding gas — pneumothorax tensioning",
+                  "Why the pre-chamber exclusion is absolute."
+                ],
+                [
+                  "Severe ear pain on compression",
+                  "Middle ear barotrauma — the commonest chamber complication",
+                  "Slow the compression, teach equalization. An unconscious patient cannot equalize and may need myringotomy or tubes."
+                ],
+                [
+                  "Seizure in the chamber",
+                  "<b>CNS oxygen toxicity</b> — preceded by visual changes, tinnitus, nausea, facial twitching, irritability, dizziness",
+                  "A chamber-team problem: reduce the inspired oxygen fraction with an air break. Self-limiting, and not a reason to abandon treatment."
+                ],
+                [
+                  "Chamber declines the patient",
+                  "Monoplace, or no critical care capability, or unstaffed",
+                  "Ask about capability on the first call, before the ambulance leaves."
+                ],
+                [
+                  "“The dive profile was within limits”",
+                  "DCS occurs within tables and computers routinely",
+                  "A safe-looking profile excludes nothing. Treat the patient."
+                ],
+                [
+                  "Presenting days later",
+                  "Delayed presentation",
+                  "Still treat. Benefit persists well after the event."
+                ],
+                [
+                  "Given nitrous oxide for analgesia",
+                  "<b>Nitrous diffuses into bubbles and expands them</b>",
+                  "Never use nitrous oxide in a patient with suspected gas bubbles. Use another analgesic."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications of Treatment",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Delaying oxygen while arranging chamber logistics — start O2 first, coordinate transport in parallel, not sequentially</li>\n      <li>Missing a pneumothorax before pressurization — converts a treatable emergency into a chamber-induced tension physiology crisis</li>\n      <li>Air transport at altitude without addressing cabin pressurization, which worsens bubble expansion (Boyle's law)</li>\n      <li>Underestimating symptom severity in early/mild presentations that later progress — low threshold to treat empirically</li>\n      <li>Losing time locating a chamber — this should be a pre-identified resource, not a search performed during the emergency</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Middle ear barotrauma</b> — the most frequent, and a particular problem in the sedated or unconscious patient who cannot equalize.</li>\n      <li><b>Sinus squeeze</b> and dental barotrauma.</li>\n      <li><b>CNS oxygen toxicity seizure</b> — managed with an air break, self-limiting.</li>\n      <li><b>Pulmonary oxygen toxicity</b> with repeated or prolonged exposures.</li>\n      <li><b>Pneumothorax converting to tension</b> on decompression — the reason for the absolute contraindication.</li>\n      <li><b>Confinement anxiety</b>, and reversible myopia with repeated treatment.</li>\n      <li><b>Hypoglycemia</b> in diabetic patients during long tables.</li>\n      <li><b>Risk to the inside attendant</b> in a multiplace chamber, who is also being exposed and has their own decompression obligation.</li>\n      <li><b>Fire.</b> An oxygen-enriched pressurized environment is a serious fire risk, which is why chamber teams control absolutely everything that goes through the door.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "08",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -6054,13 +6512,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>100% oxygen is free, immediate, and works — start it before you've even confirmed chamber transport, and never stop it while awaiting or during transport.</p>\n<p>Have your regional chamber's contact number and DAN's line saved before you ever need them.</p>\n<p>Ground transport beats air transport unless the ground time is prohibitively long — altitude is the enemy in both DCS and AGE.</p>\n<p>This is a “call early, treat now” pathway — engage hyperbaric medicine as soon as suspicion is reasonable.</p>"
+              "html": "<p><b>Oxygen first, logistics in parallel.</b> It is the same treatment the chamber gives, at lower intensity, and it is already in the room.</p>\n<p><b>Supine and flat.</b> Trendelenburg is obsolete and harmful.</p>\n<p><b>Symptoms within ten minutes of surfacing means arterial gas embolism.</b> Later onset means decompression sickness. Both get recompressed.</p>\n<p><b>Ask about urinary retention.</b> Spinal DCS is the common serious form and the bladder is the sign people forget to look for.</p>\n<p><b>Cutis marmorata is not a rash to reassure about.</b></p>\n<p><b>Exclude a pneumothorax before the chamber.</b> The only absolute gate.</p>\n<p><b>Never gain altitude.</b> Ground transport, or sea-level cabin pressure.</p>\n<p><b>No nitrous oxide.</b></p>\n<p><b>Improvement on oxygen is not a reason to cancel the chamber.</b></p>\n<p><b>Late is still treatable.</b> Days later, make the call anyway.</p>\n<p><b>Save the numbers now</b> — your regional chamber and DAN. Searching for a chamber during the emergency is a predictable and avoidable delay.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "09",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -6070,15 +6528,27 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Undersea and Hyperbaric Medical Society (UHMS). Hyperbaric Oxygen Therapy Indications, 14th ed. Best Publishing; 2019."
+                  "html": "Moon RE, ed. <i>Hyperbaric Oxygen Therapy Indications</i>, 14th ed. Undersea and Hyperbaric Medical Society / Best Publishing; 2019."
                 },
                 {
                   "tier": "GUIDELINE",
-                  "html": "Moon RE, ed. U.S. Navy Diving Manual, Revision 7 — Treatment of Decompression Sickness. Naval Sea Systems Command; 2016."
+                  "html": "Naval Sea Systems Command. <i>U.S. Navy Diving Manual</i>, Revision 7 — Diagnosis and Treatment of Decompression Sickness and Arterial Gas Embolism. NAVSEA; 2016."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Vann RD, Butler FK, Mitchell SJ, Moon RE. Decompression illness. <i>Lancet.</i> 2011;377(9760):153–164."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Moon RE. Hyperbaric treatment of air or gas embolism: current recommendations. <i>Undersea Hyperb Med.</i> 2019;46(5):673–683."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Divers Alert Network (DAN). Emergency evaluation and management of diving injuries. DAN Medical Information Line, 919-684-9111."
+                  "html": "Divers Alert Network. Emergency evaluation and management of diving injuries. DAN 24-hour emergency line: +1 919-684-9111."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Your nearest operational hyperbaric chamber — its number, its hours, and whether it is monoplace or multiplace. Establish this before you need it."
                 }
               ]
             }
@@ -6114,154 +6584,232 @@
           "id": "indications",
           "num": "01",
           "color": "teal",
-          "title": "Indications",
+          "title": "When This Applies",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Any incident where the number of casualties exceeds immediately available resources (mass casualty incident, MCI)</li>\n      <li>Applies at the scene during the initial sorting pass, before individualized patient care begins</li>\n      <li>START (Simple Triage and Rapid Treatment) is the most widely used initial sort in the US prehospital system; SALT (Sort, Assess, Lifesaving interventions, Treatment/transport) is the current national model integrating a global sort step and limited lifesaving interventions</li>\n</ul>"
-            }
-          ]
-        },
-        {
-          "id": "contraindications",
-          "num": "02",
-          "color": "red",
-          "title": "Contraindications",
-          "tagline": null,
-          "blocks": [
+              "html": "<ul>\n      <li><b>Any incident where casualties exceed immediately available resources.</b> That ratio, not a headcount, is what defines a mass casualty incident — four critical patients is an MCI for a two-ambulance service.</li>\n      <li><b>The initial sorting pass at the scene</b>, before individualized care begins</li>\n      <li><b>Again, repeatedly</b>, as resources arrive and patients change — triage is a process, not a single pass</li>\n</ul>\n<p><b>START</b> (Simple Triage and Rapid Treatment) remains the most widely used initial sort in US prehospital systems. <b>SALT</b> (Sort, Assess, Lifesaving interventions, Treatment/transport) is the national model recommended under the Model Uniform Core Criteria, adding a global voice sort and a short list of interventions performed during the sort. Both do the same job; use whichever your region has adopted.</p>\n<p><b>The governing principle is uncomfortable and has to be stated plainly:</b> the goal changes from doing everything possible for each patient to <b>doing the most good for the greatest number</b>. Resources go to the salvageable, which means some patients who would receive maximal effort on an ordinary day will not. Making that shift deliberately, and saying so out loud, is what separates triage from chaos.</p>"
+            },
             {
-              "type": "box",
+              "type": "alert",
               "color": "red",
-              "html": "<ul>\n      <li>None — the framework applies whenever resources are outstripped by casualty volume; the judgment call is whether an MCI declaration is warranted, not whether to triage once declared</li>\n</ul>"
+              "title": "Scene safety comes before any of this",
+              "html": "Triage does not begin until the scene is safe. <b>Secondary devices are deliberately timed for the arrival of responders</b>; structural collapse continues; active threats move. Unstable structures, fire, traffic, hazardous materials and contamination all take precedence, and a contaminated scene requires decontamination before or alongside triage. <b>A responder who becomes a casualty subtracts twice</b> — one fewer rescuer and one more patient."
             }
           ]
         },
         {
           "id": "equipment",
-          "num": "03",
+          "num": "02",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment and Roles",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Triage tags/tape (color-coded: Red/Immediate, Yellow/Delayed, Green/Minor, Black/Expectant or deceased)</li>\n      <li>Simple airway adjuncts for lifesaving interventions only (oral airway, occlusive dressing for open chest wound, tourniquet)</li>\n      <li>No diagnostic equipment, no IV starts, no detailed exams during the initial sort — this is a rapid pass, not treatment</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Triage tags or tape</b> — Red/Immediate, Yellow/Delayed, Green/Minor, Gray or Black for Expectant and Deceased. Tape is faster to apply than tags and easier to see; tags carry information. Know which your system uses.</li>\n      <li><b>Tourniquets</b> — several, carried on the person doing the sort.</li>\n      <li><b>Basic airway adjuncts</b>, occlusive dressings, and decompression needles.</li>\n      <li><b>Antidote auto-injectors</b> where the incident involves nerve agents or cyanide.</li>\n      <li><b>Nothing else.</b> No monitors, no IV starts, no detailed examination. Diagnostic equipment during the sort is a trap: it slows the pass and it does not change the category.</li>\n</ul>\n<p><b>The roles, assigned explicitly and early:</b> <b>Incident command</b> (owns the scene and the whole picture) · <b>Triage officer</b> (sorts and moves, and treats nobody) · <b>Treatment officer</b> (runs the casualty collection areas) · <b>Transport officer</b> (decides who goes where, and in what order) · <b>Staging</b> (holds and assigns incoming units).</p>\n<p><b>The triage officer's job is to sort, not to treat.</b> This is the hardest discipline in the whole framework and the one that fails most often — the pull to stop and fully manage the first critically injured person found is enormous, and giving in to it means the rest of the scene goes unsorted.</p>"
             }
           ]
         },
         {
-          "id": "technique",
-          "num": "04",
+          "id": "start",
+          "num": "03",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "START — Adult",
           "tagline": null,
           "blocks": [
             {
               "type": "tagline",
-              "html": "START"
+              "html": "Under 60 seconds per patient. Respirations, perfusion, mental status — in that order, stopping at the first Red."
             },
             {
               "type": "steps",
               "steps": [
                 {
                   "num": "1",
-                  "color": "red",
-                  "title": "",
-                  "html": "Direct all ambulatory patients to a designated area and tag them <b>Green (Minor)</b> — this immediately reduces the pool requiring individual assessment."
+                  "color": "teal",
+                  "title": "Clear the walking wounded first",
+                  "html": "Call out for anyone who can walk to move to a designated area. <b>Tag them Green.</b> This removes a large fraction of the scene from individual assessment in a single sentence — and it is why you say it before you touch anyone. Someone must go with them: <b>Green patients are not unassessed forever</b>, and occasionally one of them is deteriorating."
                 },
                 {
                   "num": "2",
-                  "color": "amber",
-                  "title": "",
-                  "html": "For each remaining patient, assess <b>Respirations</b> first: not breathing → open airway; still not breathing → <b>Black (Expectant/Deceased)</b>. Breathing after repositioning, or RR &gt;30/min → <b>Red (Immediate)</b>. RR &lt;30/min → proceed to perfusion."
+                  "color": "red",
+                  "title": "Respirations",
+                  "html": "<b>Not breathing</b> → open the airway with a single positioning maneuver. Breathing now → <b>Red</b>. Still not breathing → <b>Black</b>. <br><b>Rate above 30/min</b> → <b>Red</b>. Below 30 → go on to perfusion."
                 },
                 {
                   "num": "3",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Assess <b>Perfusion</b> (radial pulse present/absent, or cap refill): absent (or &gt;2 sec) → control major hemorrhage if present, tag <b>Red (Immediate)</b>. Present → proceed to mental status."
+                  "color": "amber",
+                  "title": "Perfusion",
+                  "html": "<b>No radial pulse</b> (or capillary refill beyond 2 seconds) → <b>control major hemorrhage</b> and tag <b>Red</b>. Radial pulse present → go on to mental status. <i>The radial pulse is the more reliable of the two in cold, dark, or dirty conditions.</i>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Assess <b>Mental status</b> (only if respirations and perfusion are within limits): unable to follow simple commands → <b>Red (Immediate)</b>. Able to follow commands → <b>Yellow (Delayed)</b>."
+                  "title": "Mental status",
+                  "html": "<b>Cannot follow a simple command</b> → <b>Red</b>. Can follow commands → <b>Yellow</b>."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Move to the next patient — the entire assessment should take under 60 seconds per patient."
+                  "title": "Tag, say it out loud, and move on",
+                  "html": "The only interventions permitted during START are <b>opening an airway and stopping catastrophic hemorrhage</b> — both take seconds and both save lives that would otherwise be lost before the treatment phase. Anything further waits."
                 }
               ]
             },
             {
-              "type": "tagline",
-              "html": "SALT"
-            },
-            {
-              "type": "steps",
-              "steps": [
-                {
-                  "num": "6",
-                  "color": "red",
-                  "title": "",
-                  "html": "<b>Sort:</b> Global voice sort — call out for anyone who can walk to move to one area (assess last), then anyone who can wave or purposefully move to another area (assess second), leaving non-purposeful movers/obviously injured to be assessed first."
-                },
-                {
-                  "num": "7",
-                  "color": "amber",
-                  "title": "",
-                  "html": "<b>Assess</b> each patient in that priority order (still, then waving, then walking), applying lifesaving interventions as you go rather than deferring."
-                },
-                {
-                  "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "<b>Lifesaving interventions</b> performed during assessment, not withheld: open airway, control major hemorrhage (tourniquet/wound packing), chest decompression for tension physiology, auto-injector antidotes if indicated (e.g., nerve agent exposure)."
-                },
-                {
-                  "num": "9",
-                  "color": "blue",
-                  "title": "",
-                  "html": "Assign <b>triage category</b> after interventions: obeys commands, has a pulse, no respiratory distress, hemorrhage controlled → likely to survive with current resources → <b>Immediate</b> or <b>Delayed</b> based on injury severity. Injuries incompatible with survival given available resources → <b>Expectant</b>. No signs of life after airway opened, no obvious reason for futility → <b>Dead</b>."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Reassess and re-triage as resources or patient status change — MCI triage is dynamic, not a single pass."
-                }
-              ]
-            },
-            {
-              "type": "alert",
+              "type": "box",
               "color": "amber",
-              "title": "Global sort before individual assessment",
-              "html": "The walk/wave/still voice sort does most of the categorization work before hands ever touch a patient — resist the pull to fully manage the first critical patient found at the expense of sorting the rest of the scene."
+              "html": "<p><b>JumpSTART — for children, and the differences matter.</b> A child's normal respiratory rate would be tagged Red by adult criteria, and children are far more likely to arrest from a primary respiratory cause and to respond to rescue breaths.</p>\n<ul>\n  <li><b>Respiratory rate:</b> Red if <b>below 15 or above 45</b> per minute — not the adult threshold of 30.</li>\n  <li><b>If apneic: check for a pulse.</b> No pulse → Black. <b>Pulse present → give 5 rescue breaths.</b> If breathing resumes → <b>Red</b>. If not → Black. <i>This rescue-breath step has no adult equivalent and is the heart of JumpSTART.</i></li>\n  <li><b>Mental status</b> by AVPU: inappropriate response to pain, posturing, or unresponsive → Red.</li>\n  <li><b>Infants and children who cannot walk</b> are carried to the Green area and assessed there — the walking sort does not work for them.</li>\n</ul>"
             }
           ]
         },
         {
-          "id": "complications",
-          "num": "05",
+          "id": "salt",
+          "num": "04",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "SALT",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "steps",
+              "steps": [
+                {
+                  "num": "1",
+                  "color": "teal",
+                  "title": "Sort — the global voice sort",
+                  "html": "Two instructions, shouted, before anyone is touched: <b>“If you can hear me and can walk, come to [place].”</b> Then, to those remaining: <b>“If you can hear me, wave or move a limb.”</b><br>That produces three groups and their assessment order, in reverse: <b>still or obviously in extremis → assessed first; waving or purposefully moving → second; walking → last.</b> <b>Most of the categorization work is done before a single hand is laid on anyone.</b>"
+                },
+                {
+                  "num": "2",
+                  "color": "red",
+                  "title": "Assess, and perform lifesaving interventions as you go",
+                  "html": "Working in that priority order, assess each patient individually — and unlike START, <b>perform the interventions during the pass rather than deferring them.</b> The permitted list is deliberately short: <b>open the airway</b> (and in a child, two rescue breaths), <b>control major hemorrhage</b> with a tourniquet or packing, <b>decompress a tension pneumothorax</b>, and <b>give auto-injector antidotes</b>. Each takes seconds. Anything beyond belongs to the treatment phase."
+                },
+                {
+                  "num": "3",
+                  "color": "amber",
+                  "title": "Assign a category, after the intervention",
+                  "html": "Four questions, in order:<br><b>Breathing?</b> No, after the airway is opened → <b>Dead</b>.<br><b>Obeys commands or makes purposeful movements? Has a peripheral pulse? Not in respiratory distress? Major hemorrhage controlled?</b> — if <i>any</i> is a no → <b>Immediate</b>, provided survival is likely with the resources available; if survival is unlikely given those resources → <b>Expectant</b>.<br>All yes, with injuries → <b>Delayed</b>. All yes, minor injuries only → <b>Minimal</b>."
+                },
+                {
+                  "num": "4",
+                  "color": "purple",
+                  "title": "Treatment and transport — then re-triage",
+                  "html": "Move patients to collection areas by category, and <b>reassess at every stage.</b> Categories are a snapshot of the patient against the resources available at that moment, and both change."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "expectant",
+          "num": "05",
+          "color": "amber",
+          "title": "The Expectant Category",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
-              "color": "red",
-              "html": "<ul>\n      <li>Getting pulled into treating one patient at the expense of the global sort — the initial pass is deliberately superficial</li>\n      <li>Failing to reassess — Yellow/Delayed patients can deteriorate; triage is iterative through the incident</li>\n      <li>Over-triage saturating resources — tagging too many patients Red degrades the ability to treat the truly immediate</li>\n      <li>Under-triage from anchoring on scene chaos — a quiet, still patient may be worse off than a loud one</li>\n      <li>Confusing the triage officer role with the treatment role — the job is to sort and move, not provide ongoing care to any single patient</li>\n</ul>"
+              "color": "amber",
+              "html": "<p>The category people avoid using, and misusing it in either direction causes harm.</p>\n<ul>\n  <li><b>Expectant is not a synonym for dead, and it is not abandonment.</b> It means: injuries unlikely to be survivable <i>given the resources presently available</i>, so those resources go elsewhere first.</li>\n  <li><b>It is explicitly resource-relative.</b> The same patient is Immediate in a fully staffed trauma center and Expectant at a rural scene with two crews. As resources arrive, <b>Expectant patients are reassessed and can be re-categorized upward.</b> Build that reassessment into the plan rather than leaving it to conscience.</li>\n  <li><b>Comfort care is still care.</b> Analgesia, a blanket, a place out of the rain, and somebody with them if anyone can be spared. Assign it when the surge subsides.</li>\n  <li><b>Name the decision out loud</b> and share it with incident command. Individual responders should not be silently carrying it alone, and it is the part of an MCI that responders carry longest afterwards.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "red",
+          "title": "Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What goes wrong",
+                "Why",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "<b>The triage officer starts treating</b>",
+                  "Every instinct and all prior training pulls that way",
+                  "The single most important discipline. Tag and move. Say it aloud before starting: “I am triaging, not treating.”"
+                ],
+                [
+                  "<b>Over-triage</b> — too many tagged Red",
+                  "Caution, and discomfort with the categories",
+                  "It is not a safe default: over-triage dilutes resources and, in the bombing literature, correlates with higher mortality. Around 25–35% over-triage is tolerated; under-triage should stay under about 5%."
+                ],
+                [
+                  "<b>Under-triage</b> — a quiet patient missed",
+                  "Attention follows noise",
+                  "The screaming patient has an airway and perfusion. <b>The silent, still one is the one to reach first.</b>"
+                ],
+                [
+                  "<b>No reassessment</b>",
+                  "The first pass feels like the job finished",
+                  "Yellow patients deteriorate. Re-triage at every stage and whenever resources change."
+                ],
+                [
+                  "<b>Nearest hospital overwhelmed</b>",
+                  "<b>Most casualties self-transport</b>, and they arrive before the ambulances",
+                  "A predictable pattern, not a surprise. Distribute deliberately across the region, and expect the closest facility to be saturated with walking wounded before the first ambulance leaves the scene."
+                ],
+                [
+                  "Convergent responders taking patients ad hoc",
+                  "No transport officer, or nobody obeying one",
+                  "Establish the role early and route everything through it."
+                ],
+                [
+                  "Green area unattended",
+                  "Sorted and then forgotten",
+                  "Assign someone. Occult injuries and deterioration happen there, and patients wander off unaccounted for."
+                ],
+                [
+                  "Children triaged on adult criteria",
+                  "START applied to a pediatric scene",
+                  "Use JumpSTART. Adult respiratory thresholds mislabel normal children as Immediate and miss the ones who need rescue breaths."
+                ],
+                [
+                  "Contaminated patients moved before decontamination",
+                  "Urge to treat overrides the hazard",
+                  "Contamination spreads to the receiving hospital and can close it. Decontaminate first."
+                ],
+                [
+                  "Nobody knows who is where",
+                  "Tracking never started",
+                  "Tag numbers recorded at transport. Family reunification is a real and large part of the response."
+                ],
+                [
+                  "CPR started on a pulseless patient",
+                  "Ordinary practice applied to an extraordinary situation",
+                  "In an MCI, a pulseless traumatic arrest is Black or Expectant. One CPR attempt consumes the responders who could sort thirty people."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "07",
+          "color": "blue",
+          "title": "Afterwards",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Account for everyone</b> — tag numbers, destinations, and the Green area. Reunification and identification begin immediately and take far more effort than anyone expects.</li>\n  <li><b>Hand over triage categories and their reasoning</b> to receiving facilities, and tell them the total scene picture — a hospital that knows forty more are coming behaves differently from one that does not.</li>\n  <li><b>Debrief the responders, properly and more than once.</b> The expectant decisions are what people carry, and the effect is delayed. Make specific offers of support rather than general ones, and repeat them weeks later.</li>\n  <li><b>Review honestly.</b> Over- and under-triage rates, time to first transport, distribution across hospitals, and where the process broke. Every MCI review finds the same three things — communications, tracking, and distribution — which means they are fixable in advance.</li>\n  <li><b>Drill it.</b> Triage decisions are made under conditions that make deliberation impossible, so the algorithm has to be automatic. A card in a pocket is not a substitute for having done it.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "08",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -6269,13 +6817,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The global voice sort in SALT (walk/wave/still) does most of the categorization work before you ever lay hands on a patient.</p>\n<p>Lifesaving interventions during SALT are deliberately limited to airway, hemorrhage, decompression, and antidotes — anything beyond belongs in the treatment phase.</p>\n<p>Speak your tag category out loud as you assign it — this creates a running verbal count for incident command and catches your own errors in real time.</p>\n<p>Whichever system your agency/region has adopted, the discipline is identical: sort fast, intervene minimally, keep moving.</p>"
+              "html": "<p><b>Sort, do not treat.</b> The pull to stay with the first critical patient is the failure mode that costs the most lives, and knowing that in advance is the only defense.</p>\n<p><b>The voice sort does most of the work.</b> Two shouted sentences categorize most of a scene before you touch anyone.</p>\n<p><b>Go to the quiet one.</b> Noise means an airway and perfusion.</p>\n<p><b>Over-triage is not the safe option.</b> Tagging everyone Red degrades care for the people who actually need it.</p>\n<p><b>Children need JumpSTART</b> — different rates, and rescue breaths before you call an apneic child Black.</p>\n<p><b>Only four interventions during the sort:</b> airway, hemorrhage, decompression, antidote. Nothing else.</p>\n<p><b>Expectant is resource-relative and reversible.</b> Reassess when help arrives, and give comfort care when you can spare it.</p>\n<p><b>Don't send everyone to the nearest hospital</b> — the walking wounded have already filled it.</p>\n<p><b>Say your tag out loud.</b> It gives command a running count and catches your own errors as you go.</p>\n<p><b>Re-triage.</b> One pass is not triage; it is the first pass.</p>\n<p><b>Scene safety first.</b> Secondary devices target responders.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "09",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -6285,15 +6833,27 @@
               "items": [
                 {
                   "tier": "PRIMARY",
-                  "html": "Lerner EB, Schwartz RB, Coule PL, et al. Mass casualty triage: an evaluation of the data and development of a proposed national guideline. <i>Disaster Med Public Health Prep.</i> 2008;2(Suppl 1):S25-S34."
+                  "html": "Lerner EB, Schwartz RB, Coule PL, et al. Mass casualty triage: an evaluation of the data and development of a proposed national guideline. <i>Disaster Med Public Health Prep.</i> 2008;2(Suppl 1):S25–S34."
                 },
                 {
                   "tier": "EVIDENCE",
-                  "html": "Lerner EB, Cone DC, Weinstein ES, et al. Mass casualty triage: an evaluation of the science and refinement of a national guideline. <i>Disaster Med Public Health Prep.</i> 2011;5(2):129-137."
+                  "html": "Lerner EB, Cone DC, Weinstein ES, et al. Mass casualty triage: an evaluation of the science and refinement of a national guideline. <i>Disaster Med Public Health Prep.</i> 2011;5(2):129–137."
                 },
                 {
                   "tier": "GUIDELINE",
-                  "html": "National Implementation of the Model Uniform Core Criteria (MUCC) for Mass Casualty Incident Triage. U.S. Department of Health and Human Services / ASPR; 2014."
+                  "html": "U.S. Department of Health and Human Services / ASPR. <i>National Implementation of the Model Uniform Core Criteria (MUCC) for Mass Casualty Incident Triage.</i> 2014."
+                },
+                {
+                  "tier": "PRIMARY",
+                  "html": "Romig LE. Pediatric triage: a system to JumpSTART your triage of young patients at MCIs. <i>JEMS.</i> 2002;27(7):52–63."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Frykberg ER. Medical management of disasters and mass casualties from terrorist bombings: how can we cope? <i>J Trauma.</i> 2002;53(2):201–212 — the over-triage and mortality relationship."
+                },
+                {
+                  "tier": "REFERENCE",
+                  "html": "Your region's adopted triage system, tag format, and MCI activation thresholds. These differ between neighboring agencies more often than people expect."
                 }
               ]
             }
@@ -6322,8 +6882,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6724,8 +7284,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -7125,33 +7685,42 @@
           "tagline": null,
           "blocks": [
             {
-              "type": "box",
-              "color": "teal",
-              "html": "<p><b>VA-ECMO</b></p>\n<ul>\n      <li>Refractory cardiogenic shock</li>\n      <li>ECPR for witnessed arrest with high-quality CPR and a reversible/treatable cause</li>\n      <li>Post-cardiotomy shock</li>\n      <li>Massive PE with hemodynamic collapse</li>\n      <li>Severe hypothermia with cardiac instability (rewarming crossover)</li>\n</ul>"
+              "type": "tagline",
+              "html": "VA-ECMO — circulatory support"
             },
             {
               "type": "box",
               "color": "teal",
-              "html": "<p><b>VV-ECMO</b></p>\n<ul>\n      <li>Severe refractory hypoxemic and/or hypercapnic respiratory failure despite optimized mechanical ventilation and adjuncts (proning, paralysis, inhaled pulmonary vasodilators)</li>\n</ul>"
+              "html": "<ul>\n      <li>Refractory cardiogenic shock — infarction, myocarditis, decompensated cardiomyopathy, post-cardiotomy</li>\n      <li><b>ECPR</b> — refractory cardiac arrest with a plausibly reversible cause</li>\n      <li>Massive pulmonary embolism with hemodynamic collapse</li>\n      <li>Severe hypothermic arrest — ECMO is both the support and the rewarming method, and outcomes here are far better than for other arrest etiologies</li>\n      <li>Refractory arrhythmia; massive poisoning with cardiotoxic drugs; peripartum cardiomyopathy</li>\n      <li>Bridge to recovery, to a durable device, to transplant — or to a decision</li>\n</ul>"
+            },
+            {
+              "type": "tagline",
+              "html": "VV-ECMO — respiratory support"
             },
             {
               "type": "box",
-              "color": "teal",
-              "html": "<p><b>General</b></p>\n<ul>\n      <li>Bridge to recovery, bridge to durable device/transplant, or bridge to decision</li>\n</ul>"
+              "color": "blue",
+              "html": "<ul>\n      <li>Severe refractory hypoxemic respiratory failure — typically <span class=\"d\">P/F &lt;80</span> for more than 6 hours, or <span class=\"d\">&lt;50</span> for more than 3 hours, <b>despite optimized ventilation, proning, and neuromuscular blockade</b></li>\n      <li>Refractory hypercapnia with <span class=\"d\">pH &lt;7.20</span> despite optimal settings</li>\n      <li>Inability to ventilate within lung-protective limits — severe asthma, airway obstruction, bronchopleural fistula</li>\n</ul>\n<p><b>VV-ECMO supports gas exchange; it does nothing for the circulation.</b> A hypoxemic patient who is also in shock from right heart failure is a VA or VAV question, not a VV one.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "Activation delay is the biggest modifiable factor — by a wide margin",
+              "html": "For ECPR, survival is driven by <b>time from arrest to flow</b> far more than by any technical detail of the cannulation. Every additional interval of conventional CPR before flow costs outcome. <b>The target is flow within about 60 minutes of arrest</b>, which means the call goes out when ECMO first becomes a real possibility — not once every other option has visibly failed. <b>An activation that turns out to be unnecessary costs almost nothing. One that comes twenty minutes late costs everything.</b>"
             }
           ]
         },
         {
-          "id": "contraindications",
+          "id": "selection",
           "num": "02",
           "color": "red",
-          "title": "Contraindications",
+          "title": "Selection — Especially for ECPR",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Unwitnessed arrest or prolonged downtime with no ROSC and poor CPR quality (for ECPR specifically)</li>\n      <li>Irreversible/non-survivable underlying condition</li>\n      <li>Severe pre-existing multi-organ failure incompatible with meaningful recovery</li>\n      <li>Uncontrolled hemorrhage (relative — requires concurrent source control planning)</li>\n      <li>Lack of institutional capability to manage ECMO post-cannulation (relative to transfer feasibility)</li>\n</ul>"
+              "html": "<p><b>Favorable ECPR criteria</b> (thresholds are institutional — know yours):</p>\n<ul>\n  <li><b>Witnessed arrest with immediate bystander CPR</b> — short or no no-flow interval</li>\n  <li><b>Initial shockable rhythm</b>, or a clearly reversible cause such as hypothermia, poisoning, or massive PE</li>\n  <li><b>Low-flow time under roughly 60 minutes</b> with high-quality, minimally interrupted compressions</li>\n  <li><b>Age within the program's limit</b>, commonly under 65–70</li>\n  <li><b>ETCO<sub>2</sub> above about 10 mmHg</b> during CPR — a marker of both compression quality and residual viability</li>\n  <li><b>Signs of life during resuscitation</b>, intermittent ROSC, or preserved neurologic signs</li>\n  <li><b>No known terminal illness</b>, and an acceptable baseline functional state</li>\n</ul>\n<p><b>Contraindications:</b> unwitnessed arrest with prolonged downtime and poor CPR; an irreversible or non-survivable underlying condition; severe pre-existing multi-organ failure; known severe aortic regurgitation or aortic dissection (for VA); uncontrolled hemorrhage or recent intracranial hemorrhage (relative, and dependent on a source-control plan); severe peripheral vascular disease precluding femoral cannulation; and <b>no institutional capacity to manage the patient afterwards.</b></p>\n<p><b>Hypothermic arrest deserves separate mention:</b> the usual downtime limits do not apply, neurologically intact survival is documented after hours of CPR, and ECMO is the definitive rewarming modality. <b>Nobody is dead until they are warm and dead</b> — and ECMO is how they get warm.</p>"
             }
           ]
         },
@@ -7159,13 +7728,46 @@
           "id": "equipment",
           "num": "03",
           "color": "blue",
-          "title": "Equipment",
+          "title": "Equipment and Cannula Sizing",
           "tagline": null,
           "blocks": [
             {
+              "type": "table",
+              "headers": [
+                "Configuration",
+                "Drainage (venous)",
+                "Return",
+                "Notes"
+              ],
+              "rows": [
+                [
+                  "<b>Peripheral VA</b>",
+                  "21–25 Fr multistage, femoral vein → cavoatrial junction",
+                  "15–19 Fr, femoral artery (retrograde)",
+                  "Fastest to establish. Retrograde aortic flow is the source of most of its specific problems — see §06."
+                ],
+                [
+                  "<b>Peripheral VV</b>",
+                  "23–25 Fr, femoral vein",
+                  "19–21 Fr, internal jugular",
+                  "Separate the tips to limit recirculation."
+                ],
+                [
+                  "<b>VV, dual-lumen</b>",
+                  "Single cannula via right IJ, spanning SVC to IVC with the return port aimed at the tricuspid valve",
+                  "One site, permits mobility. <b>Requires echo or fluoroscopic guidance</b> — malposition is easy and consequential."
+                ],
+                [
+                  "<b>VAV</b>",
+                  "Adds a jugular return limb to a VA circuit",
+                  "The answer to differential hypoxia (§06)."
+                ]
+              ]
+            },
+            {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>ECMO cannulation kit (arterial and venous cannulae, sized per patient)</li>\n      <li>Ultrasound (vascular access, cannula tip confirmation)</li>\n      <li>Guidewires, dilators, introducer sheaths</li>\n      <li>Circuit primed and de-aired (pump, oxygenator, tubing) per institutional protocol</li>\n      <li>Anticoagulation (heparin) and ACT monitoring capability</li>\n      <li>Fluoroscopy or TEE if available for cannula positioning confirmation</li>\n      <li>Full cannulation team: proceduralist, circuit specialist/perfusion, nursing, airway/code team continuing resuscitation in parallel for ECPR</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Size by the vessel, not by the patient.</b> Measure the femoral artery with ultrasound. A common rule is that the arterial cannula's outer diameter should not exceed about two-thirds to three-quarters of the vessel's internal diameter — oversizing is how limbs are lost.</li>\n      <li><b>Flow follows the fourth power of the radius and falls with length.</b> Full support is roughly <span class=\"d\">60–80 mL/kg/min</span>. <b>Drainage is almost always the limiting side</b>, so do not undersize the venous cannula to save time.</li>\n      <li><b>A distal perfusion catheter</b> — 5–7 Fr, antegrade into the superficial femoral artery, connected to the arterial limb. <b>Plan it at cannulation.</b> See §06.</li>\n      <li><b>Ultrasound</b> for access, and <b>TEE or fluoroscopy</b> for wire and cannula tip confirmation.</li>\n      <li><b>Primed, de-aired circuit</b> — pump, oxygenator, tubing, heater-cooler.</li>\n      <li><b>Heparin</b>, and ACT or anti-Xa monitoring.</li>\n      <li><b>A mechanical CPR device</b> for ECPR. It makes cannulation during ongoing compressions genuinely feasible, and it frees a person.</li>\n      <li><b>NIRS probes</b> for the calves, for limb monitoring.</li>\n</ul>"
             }
           ]
         },
@@ -7173,109 +7775,199 @@
           "id": "technique",
           "num": "04",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Peripheral VA Cannulation",
           "tagline": null,
           "blocks": [
-            {
-              "type": "tagline",
-              "html": "Peripheral VA cannulation &amp;mdash; general framework"
-            },
             {
               "type": "steps",
               "steps": [
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Activate ECMO team early — call the moment criteria are anticipated, not once decompensation is complete."
+                  "title": "Activate early, and run everything in parallel",
+                  "html": "Call the moment ECMO is plausible. <b>Circuit priming is frequently the rate-limiting step, not the cannulation</b> — so perfusion starts priming at minute one, while access is being obtained. Two operators work the two vessels simultaneously. Resuscitation does not pause for any of it."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Continue resuscitation (compressions, ventilation, vasopressors) uninterrupted during setup for ECPR cases."
+                  "title": "Assign the roles out loud before anyone touches the groin",
+                  "html": "Venous operator, arterial operator, perfusionist, airway and compressions, drugs, and a scribe on the clock. ECPR fails on choreography more often than on technique."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Prime and de-air circuit in parallel with access — do not let circuit prep be the bottleneck."
+                  "title": "Ultrasound-guided access to the common femoral vessels",
+                  "html": "Below the inguinal ligament, above the bifurcation — the same narrow window as any femoral access, and it matters more here because the sheath is enormous. <b>Measure the artery before you choose the cannula.</b> Vein and artery on the same side is conventional; using opposite groins is an option when anatomy demands it."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Obtain venous access (typically femoral vein) via ultrasound-guided Seldinger technique; serially dilate to accommodate venous cannula."
+                  "title": "Confirm both wires before any dilation",
+                  "html": "<b>The venous wire must be seen in the right atrium or IVC, and the arterial wire in the descending aorta</b> — on TEE or fluoroscopy. Serial dilation over a misplaced wire creates a hole the size of the dilator in a structure that cannot tolerate one. <b>This is the single most important safety step in the procedure</b>, and under ECPR time pressure it is the one most likely to be skipped."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Obtain arterial access (typically femoral artery) via ultrasound-guided Seldinger technique; consider a distal perfusion catheter to mitigate limb ischemia."
+                  "title": "Place the distal perfusion catheter now",
+                  "html": "Antegrade into the superficial femoral artery distal to the arterial cannula, before the leg is committed. <b>Doing it at cannulation takes a few minutes; doing it later means doing it on a leg that is already ischemic</b>, and limb complications are among the commonest serious harms of peripheral VA support."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Advance venous cannula to the cavoatrial junction; advance arterial cannula per sizing/institutional target."
+                  "title": "Dilate serially and place the cannulae",
+                  "html": "Step up in sequence, keeping a hand on the wire throughout. Venous cannula tip at the <b>cavoatrial junction</b>; arterial cannula to the institutional depth. Confirm both positions before connecting."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Confirm cannula position (fluoroscopy, TEE, or venous blood gas from the venous limb as a surrogate) before connecting to circuit."
+                  "title": "Connect wet-to-wet, and hunt every bubble",
+                  "html": "Make each connection with both ends flooded. <b>Air on the arterial side goes to the brain and the coronaries.</b> Clamp, connect, de-air, unclamp — deliberately, in that order, spoken aloud each time."
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Connect cannulae to primed circuit, eliminating air at every connection."
+                  "color": "purple",
+                  "title": "Start low and climb",
+                  "html": "Begin at low revolutions and increase while watching circuit pressures, the drainage line for chatter, the arterial waveform, and the patient. <b>Line chatter means the drainage cannula is sucking against a wall or the patient is underfilled</b> — reduce flow and give volume rather than driving the pump harder."
                 },
                 {
                   "num": "9",
                   "color": "blue",
-                  "title": "",
-                  "html": "Initiate flow at low RPM, titrate up while monitoring hemodynamics, oxygenation, and circuit pressures."
-                },
-                {
-                  "num": "10",
-                  "color": "purple",
-                  "title": "",
-                  "html": "Anticoagulate per protocol once bleeding risk is assessed; establish ACT/anti-Xa monitoring."
-                },
-                {
-                  "num": "11",
-                  "color": "red",
-                  "title": "",
-                  "html": "Secure cannulae, obtain confirmatory imaging (CXR, or fluoroscopy if not already done), and transition to ICU-level ECMO management."
+                  "title": "Anticoagulate, image, and hand over properly",
+                  "html": "Heparin per protocol once bleeding risk is assessed — commonly a bolus at cannulation then an infusion to ACT or anti-Xa targets, and sometimes deliberately withheld initially after traumatic or surgical ECPR. Secure the cannulae to the skin robustly. Chest film, echo, lactate, and limb checks. Then drop the ventilator to rest settings — the lungs have just stopped being the priority."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "num": "05",
+          "color": "amber",
+          "title": "Two Problems Unique to Peripheral VA",
+          "tagline": null,
+          "blocks": [
             {
-              "type": "alert",
-              "color": "red",
-              "title": "Activation delay is the single biggest modifiable factor",
-              "html": "For ECPR specifically, time from arrest to flow drives outcome more than any technical detail of the cannulation itself — call for activation the moment ECMO becomes a real possibility, not once every other option has failed."
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>Differential hypoxia (“harlequin” or north–south syndrome).</b> Retrograde ECMO flow from the femoral artery meets antegrade native output from a recovering heart somewhere in the aorta — the “watershed.” If the lungs are still bad, that native blood is poorly oxygenated, and it is the blood supplying the <b>aortic root and arch: the coronaries and the brain.</b> The lower body is pink on ECMO blood while the heart and brain are hypoxic.</p>\n<ul>\n  <li><b>Monitor the right radial artery</b> — it arises most proximally and best reflects what the brain is receiving. A pulse oximeter on the right hand is the cheap version of the same idea.</li>\n  <li><b>The fix:</b> improve native lung function and ventilation, reduce flow competition, add a jugular return limb (VAV), or move to a central or axillary arterial return.</li>\n  <li>Paradoxically, <b>a recovering heart is what causes this</b>, so it appears just as things seem to be improving.</li>\n</ul>\n<p><b>Left ventricular distension.</b> Retrograde flow raises afterload on a ventricle that may not be able to eject against it. The LV dilates, the aortic valve stops opening, pulmonary edema develops, and stasis risks intracardiac thrombus.</p>\n<ul>\n  <li><b>Recognize it:</b> a flat, non-pulsatile arterial waveform; worsening pulmonary edema on the film; frank pulmonary hemorrhage; and on echo, a dilated LV with an aortic valve that is not opening and spontaneous contrast.</li>\n  <li><b>Vent it:</b> inotropic support, reduced ECMO flow, an intra-aortic balloon pump, an Impella, atrial septostomy, or a surgical vent. <b>Pulsatility on the arterial trace is the bedside sign to protect</b> — losing it is the warning.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Everyone waiting for a decision",
+                  "<b>Delayed activation — the dominant failure</b>",
+                  "Call it. An unnecessary activation is cheap; a late one is not."
+                ],
+                [
+                  "Cannulae in, circuit not ready",
+                  "Priming started too late",
+                  "Perfusion primes from minute one, in parallel. Never sequentially."
+                ],
+                [
+                  "Drainage line chattering, flow dropping",
+                  "Hypovolemia, or the cannula tip against a wall",
+                  "<b>Reduce revolutions and give volume.</b> Increasing pump speed makes suction worse and hemolyzes blood."
+                ],
+                [
+                  "Low flow despite high revolutions",
+                  "Undersized or kinked drainage cannula; tamponade; obstruction",
+                  "Check the tubing, image the tip, echo for tamponade. Drainage is usually the limit."
+                ],
+                [
+                  "Right hand or right radial desaturating",
+                  "<b>Differential hypoxia</b>",
+                  "Optimize ventilation; consider VAV or a different return site. Do not be reassured by a good saturation from the left side or a foot."
+                ],
+                [
+                  "Arterial waveform flattens",
+                  "<b>LV distension</b> — the ventricle has stopped ejecting",
+                  "Echo now. Vent the LV: inotrope, reduce flow, IABP, Impella, septostomy."
+                ],
+                [
+                  "Frothy pink secretions from the tube",
+                  "Pulmonary edema from LV distension",
+                  "Same answer, urgently."
+                ],
+                [
+                  "Leg mottled, cool, NIRS falling",
+                  "Limb ischemia from the arterial cannula",
+                  "Distal perfusion catheter now if not already placed. Vascular surgery. This is limb-threatening and common."
+                ],
+                [
+                  "Good circuit saturations, patient still hypoxic (VV)",
+                  "<b>Recirculation</b> — oxygenated blood being drained straight back",
+                  "Separate the cannula tips; reposition under echo; reduce flow. High premembrane saturation with a hypoxic patient is the signature."
+                ],
+                [
+                  "Dark blood post-oxygenator, rising pressure gradient",
+                  "Oxygenator failing or clotting",
+                  "Post-membrane gas, trend the gradient, plan a circuit change before it fails outright."
+                ],
+                [
+                  "Pink plasma, rising free hemoglobin",
+                  "Hemolysis — usually excessive negative drainage pressure or pump thrombus",
+                  "Reduce suction, give volume, inspect the pump head."
+                ],
+                [
+                  "Falling platelets with clotting",
+                  "Heparin-induced thrombocytopenia",
+                  "Send the assay, change anticoagulant."
+                ],
+                [
+                  "New unexplained shock or a falling hematocrit",
+                  "Retroperitoneal hemorrhage from a high puncture",
+                  "Image it. Cannulation site bleeding is the commonest complication of all."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Limb ischemia distal to arterial cannula — have a distal perfusion catheter plan ready, not as an afterthought</li>\n      <li>Air embolism during cannulation or connection — de-air meticulously at every step</li>\n      <li>Malposition (venous cannula against a wall, arterial cannula too proximal/distal) — confirm before committing flow</li>\n      <li>Bleeding at access sites, worsened once anticoagulated</li>\n      <li>Delayed activation — the single biggest modifiable factor in ECPR outcomes is time from arrest to flow</li>\n      <li>Harlequin syndrome (differential hypoxia) in peripheral VA-ECMO with native cardiac recovery and poor lung function — may require venous cannula repositioning or conversion to VAV</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Bleeding</b> — the most frequent complication overall: cannulation sites, retroperitoneum, gastrointestinal, and <b>intracranial hemorrhage</b>, which is among the most feared and carries very poor outcomes.</li>\n      <li><b>Limb ischemia</b> distal to the arterial cannula, up to and including amputation. Preventable, mostly, by a distal perfusion catheter placed at cannulation.</li>\n      <li><b>Vessel injury</b> — dissection, perforation, retroperitoneal hemorrhage — usually from dilating over an unconfirmed wire.</li>\n      <li><b>Air embolism</b>, catastrophic on the arterial limb.</li>\n      <li><b>Differential hypoxia and LV distension</b> (§05).</li>\n      <li><b>Stroke</b>, both ischemic and hemorrhagic; and <b>watershed injury</b> from the arrest itself.</li>\n      <li><b>Hemolysis</b>, and <b>acquired von Willebrand syndrome</b> from shear across the circuit.</li>\n      <li><b>Thrombosis</b> — circuit, oxygenator, or intracardiac — and <b>heparin-induced thrombocytopenia</b>.</li>\n      <li><b>Infection</b>, and <b>acute kidney injury</b> frequently requiring renal replacement integrated into the circuit.</li>\n      <li><b>Recirculation</b> in VV, limiting effective oxygen delivery.</li>\n      <li><b>A bridge to nowhere</b> — support established in a patient with no recovery, no device candidacy and no transplant route. This is a real and foreseeable harm, and the way to avoid it is to ask what the bridge leads to <i>before</i> cannulating.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "08",
+          "color": "blue",
+          "title": "Immediately After Flow",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Chest film and echo.</b> Cannula positions, LV function and distension, valve opening, tamponade.</li>\n  <li><b>Rest the lungs.</b> Lung-protective or rest settings, low driving pressure, modest PEEP. The ventilator is no longer doing the work and continuing aggressive settings adds injury.</li>\n  <li><b>Check the limb and set up monitoring for it</b> — pulses or Doppler, NIRS, hourly documented assessment.</li>\n  <li><b>Follow lactate, urine output, and mixed venous saturation</b> as the markers of whether flow is adequate.</li>\n  <li><b>Right radial arterial line or right-hand oximetry</b> for VA, so differential hypoxia is detectable.</li>\n  <li><b>Treat the underlying cause.</b> ECMO buys time and treats nothing — coronary angiography, thrombolysis or embolectomy for PE, rewarming, antidote, source control.</li>\n  <li><b>Set the exit strategy explicitly, and write it down.</b> Recovery, durable device, transplant, or a defined time-limited trial with agreed criteria. Answering this on day four is far harder than answering it on day zero.</li>\n  <li><b>Talk to the family early</b> about what the support does and does not do.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "09",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -7283,13 +7975,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The clock starts at low-flow/no-flow time, not at the decision to cannulate — activate the team the moment ECMO is a real possibility.</p>\n<p>Two operators working access sites simultaneously (one venous, one arterial) meaningfully shortens time to flow.</p>\n<p>Circuit priming is often the rate-limiting step, not the cannulation itself — get perfusion/circuit specialist moving in parallel from minute one.</p>\n<p>Have your distal perfusion strategy decided before you need it, not while a limb is turning white on the table.</p>"
+              "html": "<p><b>Call early.</b> Time from arrest to flow is the outcome variable. Nothing about the technique matters as much.</p>\n<p><b>Prime in parallel.</b> The circuit, not the cannulation, is usually the bottleneck.</p>\n<p><b>Confirm both wires before you dilate.</b> The most important safety step, and the first one sacrificed to urgency.</p>\n<p><b>Place the distal perfusion catheter at cannulation</b> — not when the leg is already turning.</p>\n<p><b>Measure the artery and size to the vessel.</b> Oversizing costs limbs.</p>\n<p><b>Drainage is the limit.</b> Chatter means give volume, not more revolutions.</p>\n<p><b>Watch the right hand.</b> Differential hypoxia appears exactly when the heart starts recovering.</p>\n<p><b>Protect pulsatility.</b> A flattening arterial trace means the LV has stopped ejecting and needs venting.</p>\n<p><b>Nobody is dead until they are warm and dead</b> — and in hypothermic arrest, ECMO is how they get warm.</p>\n<p><b>Know what the bridge leads to before you build it.</b></p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "10",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -7299,15 +7991,31 @@
               "items": [
                 {
                   "tier": "GUIDELINE",
-                  "html": "Extracorporeal Life Support Organization (ELSO). General Guidelines for all ECLS Cases, version 1.4. Ann Arbor, MI: ELSO; 2017."
+                  "html": "Extracorporeal Life Support Organization. <i>ELSO General Guidelines for All ECLS Cases</i>, version 1.4. Ann Arbor, MI: ELSO; 2017."
                 },
                 {
                   "tier": "GUIDELINE",
-                  "html": "Richardson ASC, Tonna JE, Nanjayya V, et al. Extracorporeal cardiopulmonary resuscitation in adults: interim guideline consensus statement from the Extracorporeal Life Support Organization. <i>ASAIO J.</i> 2021;67(3):221-228."
+                  "html": "Richardson ASC, Tonna JE, Nanjayya V, et al. Extracorporeal cardiopulmonary resuscitation in adults: interim guideline consensus statement from the Extracorporeal Life Support Organization. <i>ASAIO J.</i> 2021;67(3):221–228."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Yannopoulos D, Bartos J, Raveendran G, et al. Advanced reperfusion strategies for patients with out-of-hospital cardiac arrest and refractory ventricular fibrillation (ARREST). <i>Lancet.</i> 2020;396(10265):1807–1816."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Suverein MM, Delnoij TSR, Lorusso R, et al. Early extracorporeal CPR for refractory out-of-hospital cardiac arrest (INCEPTION). <i>N Engl J Med.</i> 2023;388(4):299–309."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Combes A, Hajage D, Capellier G, et al. Extracorporeal membrane oxygenation for severe acute respiratory distress syndrome (EOLIA). <i>N Engl J Med.</i> 2018;378(21):1965–1975."
+                },
+                {
+                  "tier": "GUIDELINE",
+                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 AHA Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S366–S468."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Panchal AR, Bartos JA, Cabañas JG, et al. Part 3: Adult Basic and Advanced Life Support: 2020 American Heart Association Guidelines for CPR and ECC. <i>Circulation.</i> 2020;142(16_suppl_2):S366-S468."
+                  "html": "Your own program's cannula inventory, sizing chart, anticoagulation protocol, and activation number. None of these transfer between institutions."
                 }
               ]
             }
@@ -8149,29 +8857,93 @@
           "tagline": null,
           "blocks": [
             {
+              "type": "tagline",
+              "html": "The orbit is a closed cone with one soft wall. Cutting that wall is the entire procedure."
+            },
+            {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li>Orbital compartment syndrome from retrobulbar hemorrhage or rapidly expanding orbital process, typically presenting with proptosis, decreased visual acuity, elevated intraocular pressure, and an afferent pupillary defect</li>\n      <li>Clinical diagnosis with a time-critical window — permanent vision loss can occur within approximately 90-120 minutes of sustained elevated intraocular pressure</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Orbital compartment syndrome</b> — a tense, proptotic orbit with threatened vision, from retrobulbar hemorrhage or any rapidly expanding orbital process</li>\n      <li><b>After orbital or facial trauma</b>, especially with a fracture and an anticoagulated patient</li>\n      <li><b>Iatrogenic retrobulbar hemorrhage</b> — after a retrobulbar or peribulbar block, blepharoplasty, or orbital surgery</li>\n      <li><b>Spontaneous retrobulbar hemorrhage</b> — anticoagulation, vascular malformation, Valsalva</li>\n      <li><b>Rapidly expanding orbital emphysema, abscess, or edema</b> with the same physiology</li>\n</ul>\n<p><b>The mechanism:</b> the orbit is bone on four sides. The only structure that can give is the front — the orbital septum, held in place by the medial and lateral canthal tendons. Blood accumulating behind the globe pushes it forward until those tendons tether it, at which point pressure rises steeply, the central retinal artery perfusion pressure is overcome, and the retina becomes ischemic. <b>Canthotomy and cantholysis release the anterior tether.</b> Nothing else available at the bedside does.</p>"
+            },
+            {
+              "type": "alert",
+              "color": "red",
+              "title": "This is a clinical diagnosis and a 90-minute problem",
+              "html": "Retinal ischemia becomes irreversible somewhere around <b>90 to 120 minutes</b>, and there are reports of loss sooner. <b>Do not send the patient to CT to confirm it.</b> Do not wait for ophthalmology to arrive from home, and do not wait for a formal visual acuity. The diagnosis is made with a light, a hand, and a tonometer if one is nearby, and the treatment takes about two minutes. <b>Vision is lost to delay in recognition, essentially never to technical difficulty.</b>"
+            }
+          ]
+        },
+        {
+          "id": "diagnosis",
+          "num": "02",
+          "color": "amber",
+          "title": "Making the Diagnosis in Ninety Seconds",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "Sign",
+                "How to check it",
+                "Note"
+              ],
+              "rows": [
+                [
+                  "<b>Proptosis</b>",
+                  "Look from above and behind the patient's head, down across both eyes — asymmetry is obvious from this angle and easy to miss from the front",
+                  "May be masked by massive lid swelling."
+                ],
+                [
+                  "<b>Resistance to retropulsion</b>",
+                  "Gentle pressure on the closed lid with a thumb. A normal globe gives slightly; <b>this one feels like a marble set in concrete</b>",
+                  "The most useful bedside sign, and the fastest. Do not press hard."
+                ],
+                [
+                  "<b>Relative afferent pupillary defect</b>",
+                  "Swinging flashlight test",
+                  "The key objective sign of optic nerve compromise. Present early."
+                ],
+                [
+                  "<b>Reduced visual acuity</b>",
+                  "Counting fingers, hand motion, light perception — whatever they can manage",
+                  "Document it. It is the number everyone will ask about afterwards."
+                ],
+                [
+                  "<b>Intraocular pressure</b>",
+                  "Tono-Pen or equivalent",
+                  "Normal 10–21 mmHg. <b>Above 40 with visual compromise is decompression territory.</b> A tonometer is helpful, not required — its absence is not a reason to wait."
+                ],
+                [
+                  "<b>Pain, ophthalmoplegia, chemosis</b>",
+                  "Examination",
+                  "Severe deep orbital pain out of proportion is typical."
+                ],
+                [
+                  "<b>Fundus</b>",
+                  "Ophthalmoscope, if there is time",
+                  "Retinal arterial pulsations or a pale retina are <b>late</b>. Their absence reassures you about nothing."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "contraindications",
-          "num": "02",
+          "num": "03",
           "color": "red",
-          "title": "Contraindications",
+          "title": "The One Real Contraindication",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>None absolute given the time-critical, vision-threatening nature of true orbital compartment syndrome</li>\n      <li>Globe rupture — canthotomy technique should be adapted with caution, avoiding any additional pressure on the globe itself; some sources still support proceeding if compartment syndrome is confirmed, but extra care is warranted</li>\n</ul>"
+              "html": "<p><b>Globe rupture.</b> A ruptured globe has already decompressed itself; there is no compartment to release, and manipulating the orbit risks extruding intraocular contents. <b>Look for it before you cut:</b></p>\n<ul>\n  <li><b>Teardrop or peaked pupil</b> pointing toward the rupture</li>\n  <li><b>Extruded dark uveal tissue</b> at the limbus or under the conjunctiva</li>\n  <li><b>Seidel sign</b> — aqueous streaming through fluorescein</li>\n  <li><b>Shallow or flat anterior chamber</b>, hyphema, marked hypotony</li>\n  <li><b>360° bullous subconjunctival hemorrhage</b>, or a visible full-thickness laceration</li>\n</ul>\n<p>If the globe is ruptured: <b>rigid shield, no pressure, no further examination, antiemetics, analgesia, antibiotics, and ophthalmology now.</b> A patient can have both a ruptured globe and a tense orbit — that is a specialist decision, not a bedside one.</p>\n<p><b>Not contraindications:</b> anticoagulation, thrombocytopenia, an uncooperative patient, or the absence of an ophthalmologist. Each of these is a reason to proceed more carefully, not to wait.</p>"
             }
           ]
         },
         {
           "id": "equipment",
-          "num": "03",
+          "num": "04",
           "color": "blue",
           "title": "Equipment",
           "tagline": null,
@@ -8179,15 +8951,15 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li>Local anesthetic with epinephrine</li>\n      <li>Straight (Mayo/suture) scissors</li>\n      <li>Toothed forceps</li>\n      <li>Hemostat (for the crush technique on the lateral canthal tendon prior to cutting, optional but reduces bleeding)</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Local anesthetic with epinephrine</b> — 1–2 mL of lidocaine 1–2% with 1:100,000 epinephrine. The vasoconstriction genuinely helps in a field that will bleed.</li>\n      <li><b>Straight scissors</b> — iris scissors, tenotomy scissors, or straight Mayo. Curved scissors make the cantholysis harder to direct.</li>\n      <li><b>Toothed forceps</b> — Adson or similar. You need to grip and pull the lid firmly; smooth forceps will slip.</li>\n      <li><b>A straight hemostat</b> — for the crush step, which both reduces bleeding and marks the line.</li>\n      <li><b>Gauze, saline, and a rigid eye shield</b> for afterwards.</li>\n      <li><b>Tonometer</b> if available, before and after.</li>\n      <li><b>Nothing else.</b> This does not need a tray, an operating room, or sterile drapes. A prepped skin surface and clean instruments are sufficient.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "technique",
-          "num": "04",
+          "num": "05",
           "color": "red",
-          "title": "Stepwise Technique",
+          "title": "Technique",
           "tagline": null,
           "blocks": [
             {
@@ -8196,78 +8968,156 @@
                 {
                   "num": "1",
                   "color": "red",
-                  "title": "",
-                  "html": "Confirm the clinical diagnosis: elevated intraocular pressure, proptosis, decreased vision, in the setting of trauma or rapid orbital swelling."
+                  "title": "Document vision, pupil and pressure — fast",
+                  "html": "Acuity at whatever level they can give, the presence of an afferent defect, and IOP if a tonometer is at hand. <b>Thirty seconds, not five minutes.</b> These numbers establish both the indication and the response."
                 },
                 {
                   "num": "2",
                   "color": "amber",
-                  "title": "",
-                  "html": "Infiltrate local anesthetic with epinephrine at the lateral canthus."
+                  "title": "Infiltrate laterally, away from the globe",
+                  "html": "Inject 1–2 mL into the lateral canthus, directing the needle <b>laterally toward the orbital rim</b>, never medially toward the eye. Adding anesthetic adds volume to a compartment that is already over-pressurized, so use the smallest volume that will work."
                 },
                 {
                   "num": "3",
                   "color": "teal",
-                  "title": "",
-                  "html": "Using a hemostat, crush the lateral canthal tendon area for several seconds to reduce bleeding (optional step, improves hemostasis)."
+                  "title": "Crush with the hemostat for 30–60 seconds",
+                  "html": "Clamp from the lateral commissure horizontally out to the orbital rim, and hold. This crushes the tissue you are about to cut, which reduces bleeding into a field you need to see — and it leaves a <b>visible blanched line that is exactly your incision</b>. Optional in principle; worth the minute in practice."
                 },
                 {
                   "num": "4",
                   "color": "blue",
-                  "title": "",
-                  "html": "Using straight scissors, perform a lateral canthotomy — a horizontal incision through the lateral canthus, extending from the lateral commissure toward the orbital rim."
+                  "title": "Canthotomy — cut horizontally to the rim",
+                  "html": "Place one blade in front of and one behind the lateral canthus, and cut <b>full thickness, horizontally, about 1–2 cm out to the lateral orbital rim</b>. Skin, muscle, conjunctiva — all of it. <b>This step alone relieves almost nothing.</b> It is the exposure, not the treatment."
                 },
                 {
                   "num": "5",
                   "color": "purple",
-                  "title": "",
-                  "html": "Identify the inferior crus of the lateral canthal tendon by palpating/pulling the lower lid laterally with forceps."
+                  "title": "Cantholysis — this is the procedure",
+                  "html": "Grasp the lower lid at its cut edge with toothed forceps and pull it <b>anteriorly and superiorly, away from the face</b>. That tension puts the <b>inferior crus of the lateral canthal tendon</b> on stretch. Point the scissors <b>inferiorly and slightly posteriorly — toward the patient's chin, roughly 45°</b> — and strum the tissue with the blade tips. <b>You will feel a taut band like a guitar string.</b> Cut it. There is a distinct release, and the lower lid becomes completely floppy."
                 },
                 {
                   "num": "6",
                   "color": "red",
-                  "title": "",
-                  "html": "Cut the inferior crus of the lateral canthal tendon (cantholysis) — this is the step that actually releases the compartment pressure; the canthotomy incision alone is often insufficient."
+                  "title": "Test the release before you stop",
+                  "html": "Pull the lower lid away from the globe. <b>If it comes freely, with no tethering at all, the crus is divided.</b> If anything still holds it back, you have not cut the tendon — go back and strum again. <b>Failing to complete the cantholysis is the classic technical error</b>, and it leaves an orbit that has been cut but not decompressed."
                 },
                 {
                   "num": "7",
                   "color": "amber",
-                  "title": "",
-                  "html": "Reassess intraocular pressure and visual function after cantholysis; if inadequate improvement, consider releasing the superior crus as well."
+                  "title": "Reassess — and release the superior crus if needed",
+                  "html": "Recheck pressure, proptosis, and vision. If improvement is inadequate, <b>release the superior crus</b> using the same technique with the upper lid, scissors pointing superiorly. Do this without hesitation — the risk is ptosis from levator injury, which is trivial against blindness."
                 },
                 {
                   "num": "8",
-                  "color": "teal",
-                  "title": "",
-                  "html": "Arrange urgent ophthalmology follow-up/consultation regardless of immediate improvement."
+                  "color": "purple",
+                  "title": "Still tense? Keep going.",
+                  "html": "If both crura are released and the orbit is still hard, the septum may need dividing (septolysis), or the hematoma may need direct drainage. <b>Get ophthalmology or oculoplastics now</b> — but do not stop at a half-measure while waiting."
+                },
+                {
+                  "num": "9",
+                  "color": "blue",
+                  "title": "Shield it, and recheck the vision",
+                  "html": "Saline gauze and a rigid shield — not a pressure patch, which is the opposite of what this orbit needs. Then <b>document acuity, pupil and pressure again.</b> Serial checks, because a hemorrhage can continue and re-tension the orbit."
                 }
               ]
             },
             {
-              "type": "alert",
-              "color": "red",
-              "title": "The canthotomy incision alone is not the therapeutic step",
-              "html": "Cutting the inferior crus of the lateral canthal tendon (cantholysis) is what actually relieves compartment pressure — stopping after the skin incision is a common technical error that leaves the orbit undecompressed."
+              "type": "box",
+              "color": "amber",
+              "html": "<p><b>Medical adjuncts — alongside, never instead:</b> head of bed up 30–45°, acetazolamide <span class=\"d\">500 mg IV</span>, mannitol <span class=\"d\">1–2 g/kg IV</span>, and a topical agent such as timolol. Reverse anticoagulation where relevant. <b>Each of these lowers pressure by a modest amount over tens of minutes. None of them opens a closed compartment.</b> Start them on the way to the cut, not as an alternative to it.</p>"
+            }
+          ]
+        },
+        {
+          "id": "troubleshooting",
+          "num": "06",
+          "color": "red",
+          "title": "Troubleshooting & Failure Modes",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "What you see",
+                "What it usually is",
+                "What to do"
+              ],
+              "rows": [
+                [
+                  "Cut made, orbit still hard",
+                  "<b>Cantholysis not completed</b> — only the skin was divided",
+                  "Test the lid: it must be completely floppy. If it tethers, the crus is intact. Go back, tension the lid, and strum for the band."
+                ],
+                [
+                  "Cannot feel the tendon",
+                  "Not enough tension on the lid, or the scissors are pointing the wrong way",
+                  "Pull the lid firmly <i>anteriorly and superiorly</i>. Aim the scissors toward the chin, not laterally. The band appears under tension and vanishes without it."
+                ],
+                [
+                  "Inferior crus released, still tense",
+                  "Inadequate release",
+                  "Take the superior crus. Then consider septolysis. Do not stop halfway."
+                ],
+                [
+                  "Field filling with blood",
+                  "Expected — this is a vascular area",
+                  "Use the crush step. Pressure with gauze between cuts. Do not abandon the procedure for bleeding; it settles."
+                ],
+                [
+                  "Improved, then tense again an hour later",
+                  "Ongoing hemorrhage",
+                  "Serial checks exist for this. Re-examine, reverse anticoagulation, escalate to ophthalmology for drainage."
+                ],
+                [
+                  "Vision does not improve after good release",
+                  "Ischemia already established, or a different diagnosis",
+                  "Optic nerve injury, traumatic optic neuropathy, or central retinal artery occlusion. The decompression was still correct. Ophthalmology, and imaging <i>now</i> that the emergency is treated."
+                ],
+                [
+                  "Peaked pupil noticed after the incision",
+                  "<b>Unrecognized globe rupture</b>",
+                  "Stop. Shield, no pressure, antiemetics, antibiotics, ophthalmology immediately."
+                ],
+                [
+                  "Nobody willing to do it",
+                  "Unfamiliarity — the real failure mode",
+                  "It is two cuts with straight scissors, it takes about two minutes, and the wound heals remarkably well. The alternative is a blind eye."
+                ]
+              ]
             }
           ]
         },
         {
           "id": "complications",
-          "num": "05",
+          "num": "07",
           "color": "red",
-          "title": "Complications & Pitfalls",
+          "title": "Complications",
           "tagline": null,
           "blocks": [
             {
               "type": "box",
               "color": "red",
-              "html": "<ul>\n      <li>Performing the canthotomy incision alone without cantholysis — this is a common technical error and does not adequately decompress the orbit</li>\n      <li>Bleeding at the incision site</li>\n      <li>Inadequate pressure relief requiring release of the superior crus as well</li>\n      <li>Delayed recognition/intervention — the biggest driver of permanent vision loss is time, not technical difficulty of the procedure itself</li>\n</ul>"
+              "html": "<ul>\n      <li><b>Incomplete decompression</b> — by a wide margin the most important, and always from stopping at the canthotomy.</li>\n      <li><b>Bleeding</b> at the incision — common, self-limiting, and mitigated by the crush step.</li>\n      <li><b>Injury to the globe or lateral rectus</b> — avoided by directing the scissors away from the eye and staying at the rim.</li>\n      <li><b>Lacrimal gland injury</b> with superior crus release.</li>\n      <li><b>Ptosis</b> from levator damage during superior cantholysis — an accepted trade.</li>\n      <li><b>Ectropion, lid malposition, or scarring</b>, usually correctable later.</li>\n      <li><b>Infection</b> — uncommon; the periorbital blood supply is excellent.</li>\n      <li><b>Cutting an eye that did not need it</b> — a small harm, and a far better error than the other one.</li>\n</ul>"
+            }
+          ]
+        },
+        {
+          "id": "after",
+          "num": "08",
+          "color": "blue",
+          "title": "Afterwards",
+          "tagline": null,
+          "blocks": [
+            {
+              "type": "box",
+              "color": "blue",
+              "html": "<ul>\n  <li><b>Do not suture it acutely.</b> The wound is left open and heals by secondary intention with surprisingly good cosmetic results. Formal canthoplasty, if wanted, happens later and electively.</li>\n  <li><b>Rigid shield, never a pressure patch.</b></li>\n  <li><b>Serial visual acuity, pupil and pressure checks</b> — hourly at first. Re-accumulation happens.</li>\n  <li><b>Ophthalmology review for every patient</b>, regardless of how well it went.</li>\n  <li><b>CT orbits now</b>, once the emergency is treated — for fracture, foreign body, and the extent of the hemorrhage.</li>\n  <li><b>Reverse the anticoagulation</b> where one is responsible, and stop antiplatelet agents pending review.</li>\n  <li><b>Antibiotics</b> in the setting of trauma or fracture; tetanus.</li>\n  <li><b>Document the before-and-after numbers.</b> Acuity, afferent defect, and IOP at both time points, with times. This is the record that shows the procedure was both indicated and effective.</li>\n</ul>"
             }
           ]
         },
         {
           "id": "pearls",
-          "num": "06",
+          "num": "09",
           "color": "purple",
           "title": "Pearls",
           "tagline": null,
@@ -8275,13 +9125,13 @@
             {
               "type": "box",
               "color": "purple",
-              "html": "<p>The canthotomy is not the therapeutic step — the cantholysis (cutting the inferior crus of the tendon) is what actually relieves the compartment pressure. Don't stop after the skin incision.</p>\n<p>This procedure is time-critical in a way few others in this library are — roughly a 90-120 minute window before vision loss becomes permanent, so recognition speed matters as much as technique.</p>\n<p>Reassess after the inferior crus release; if pressure and proptosis haven't adequately improved, proceed to the superior crus without hesitation.</p>"
+              "html": "<p><b>The canthotomy is the exposure; the cantholysis is the treatment.</b> If you stop after the skin incision you have done nothing for the pressure.</p>\n<p><b>The endpoint is a floppy lid.</b> Pull it away from the globe — if it tethers at all, the crus is still intact.</p>\n<p><b>Pull the lid up and out, and point the scissors at the chin.</b> The tendon only becomes findable under tension.</p>\n<p><b>Do not go to CT first.</b> This is a clinical diagnosis with a ninety-minute clock.</p>\n<p><b>Retropulsion is the fastest sign.</b> A globe that feels like a marble is the whole examination when time is short.</p>\n<p><b>Look for a ruptured globe before you cut.</b> Teardrop pupil, extruded uvea, Seidel sign.</p>\n<p><b>Acetazolamide and mannitol are adjuncts.</b> They do not open a closed compartment.</p>\n<p><b>If one crus is not enough, take the other.</b> Ptosis is a trivial price.</p>\n<p><b>Leave it open.</b> It heals well and it is not a repair you make at 3 a.m.</p>\n<p><b>Recheck it in an hour.</b> Hemorrhage can continue.</p>"
             }
           ]
         },
         {
           "id": "refs",
-          "num": "07",
+          "num": "10",
           "color": "amber",
           "title": "References",
           "tagline": null,
@@ -8291,11 +9141,19 @@
               "items": [
                 {
                   "tier": "REFERENCE",
-                  "html": "Vassallo S, Hartstein M, Howard D, Stetz J. Traumatic retrobulbar hemorrhage: emergent decompression by lateral canthotomy and cantholysis. <i>J Emerg Med.</i> 2002;22(3):251-256."
+                  "html": "Vassallo S, Hartstein M, Howard D, Stetz J. Traumatic retrobulbar hemorrhage: emergent decompression by lateral canthotomy and cantholysis. <i>J Emerg Med.</i> 2002;22(3):251–256."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "McCallum E, Keren S, Lapira M, Norris JH. Orbital compartment syndrome: an update with review of the literature. <i>Clin Ophthalmol.</i> 2019;13:2189–2194."
+                },
+                {
+                  "tier": "EVIDENCE",
+                  "html": "Lima V, Burt B, Leibovitch I, Prabhakaran V, Goldberg RA, Selva D. Orbital compartment syndrome: the ophthalmic surgical emergency. <i>Surv Ophthalmol.</i> 2009;54(4):441–449."
                 },
                 {
                   "tier": "REFERENCE",
-                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Lateral Canthotomy chapter."
+                  "html": "Roberts JR, Custalow CB, Thomsen TW, eds. <i>Roberts and Hedges' Clinical Procedures in Emergency Medicine and Acute Care</i>, 7th ed. Elsevier; 2019 — Lateral Canthotomy."
                 }
               ]
             }
@@ -9133,8 +9991,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
