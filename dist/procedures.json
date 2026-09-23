@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T02:32:53.366Z",
+  "generatedAt": "2026-09-23T02:35:35.025Z",
   "categories": [
     {
       "id": "airway",
@@ -71,8 +71,8 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -368,8 +368,8 @@
       "description": "Surgical, percutaneous, and needle techniques for CICO.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -824,8 +824,8 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1093,8 +1093,8 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-21",
+      "reviewDue": "2027-09-21",
       "sections": [
         {
           "id": "indications",
@@ -1456,8 +1456,8 @@
       "description": "Wire-guided backup when fiberoptic/video fails.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -1731,8 +1731,8 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2080,8 +2080,8 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2389,8 +2389,8 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2658,8 +2658,8 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -2980,8 +2980,8 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-03-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
@@ -3310,8 +3310,8 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -3490,8 +3490,8 @@
       "description": "Bridging unstable bradycardia to a definitive rhythm.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-03-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-03-22",
       "sections": [
         {
           "id": "indications",
@@ -3952,8 +3952,8 @@
       "description": "First-line mechanical management of uterine atony.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4147,8 +4147,8 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4359,8 +4359,8 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4578,8 +4578,8 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -4817,6 +4817,13 @@
             {
               "type": "tagline",
               "html": "Mid-medial and mid-lateral, full length. Two places deviate, and both are permanent if you get them wrong."
+            },
+            {
+              "type": "figure",
+              "figureId": "escharotomy-incision-map-anterior-view",
+              "svg": "<svg viewBox=\"0 0 520 552\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Escharotomy incision map, anterior view. Limb incisions run mid-medial and mid-lateral along both sides of each arm and leg, the full length of the burn and across every joint, ending one to two centimeters into unburned skin. The chest release is a rectangular shield: bilateral anterior axillary lines joined by transverse incisions along the clavicles and along the costal margin. Two nerves change the line. At the elbow the medial incision passes anterior to the medial epicondyle, because the ulnar nerve lies subcutaneously behind it. At the knee the lateral incision passes clear of the fibular neck, where the common peroneal nerve wraps around it and division causes a permanent foot drop. Hand incisions run dorsally between the metacarpals and digital incisions are mid-axial, off the pinch surface.\">\n<style>\n  .h{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:14px}\n  .s{fill:#8a9ab5;font-family:'IBM Plex Mono',monospace;font-size:11.5px}\n  .t{fill:#e8edf5;font-family:Syne,sans-serif;font-weight:700;font-size:17px}\n  .c{fill:#4a5670;font-family:'IBM Plex Mono',monospace;font-size:10.5px}\n  .body{fill:#182030;stroke:#8a9ab5;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}\n  .limb{fill:none;stroke:#182030;stroke-linejoin:round;stroke-linecap:round}\n  .limbe{fill:none;stroke:#8a9ab5;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}\n  .inc{fill:none;stroke:#00d4aa;stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round}\n  .ld{stroke:#4a5670;stroke-width:1}\n</style>\n\n<text class=\"t\" x=\"0\" y=\"17\">Escharotomy incision map</text>\n<text class=\"c\" x=\"0\" y=\"34\">Mid-medial and mid-lateral. Two nerves change the line.</text>\n\n<!-- limbs drawn as thick strokes: fill layer then outline -->\n<polyline class=\"limb\" stroke-width=\"26\" points=\"142,134 102,206 90,278\"></polyline>\n<polyline class=\"limb\" stroke-width=\"26\" points=\"218,134 258,206 270,278\"></polyline>\n<polyline class=\"limb\" stroke-width=\"32\" points=\"160,294 154,364 148,492\"></polyline>\n<polyline class=\"limb\" stroke-width=\"32\" points=\"200,294 206,364 212,492\"></polyline>\n<polyline class=\"limbe\" stroke-width=\"26\" points=\"142,134 102,206 90,278\" opacity=\"0.55\"></polyline>\n<polyline class=\"limbe\" stroke-width=\"26\" points=\"218,134 258,206 270,278\" opacity=\"0.55\"></polyline>\n<polyline class=\"limbe\" stroke-width=\"32\" points=\"160,294 154,364 148,492\" opacity=\"0.55\"></polyline>\n<polyline class=\"limbe\" stroke-width=\"32\" points=\"200,294 206,364 212,492\" opacity=\"0.55\"></polyline>\n\n<!-- head, neck, torso, pelvis, hands, feet -->\n<circle class=\"body\" cx=\"180\" cy=\"86\" r=\"22\"></circle>\n<rect class=\"body\" x=\"170\" y=\"104\" width=\"20\" height=\"20\"></rect>\n<rect class=\"body\" x=\"138\" y=\"120\" width=\"84\" height=\"152\" rx=\"14\"></rect>\n<rect class=\"body\" x=\"142\" y=\"264\" width=\"76\" height=\"34\" rx=\"10\"></rect>\n<circle class=\"body\" cx=\"86\" cy=\"286\" r=\"11\"></circle>\n<circle class=\"body\" cx=\"274\" cy=\"286\" r=\"11\"></circle>\n<ellipse class=\"body\" cx=\"144\" cy=\"500\" rx=\"15\" ry=\"9\"></ellipse>\n<ellipse class=\"body\" cx=\"216\" cy=\"500\" rx=\"15\" ry=\"9\"></ellipse>\n\n<!-- INCISION LINES -->\n<polyline class=\"inc\" points=\"133,134 93,206 81,278\"></polyline>\n<polyline class=\"inc\" points=\"151,134 111,206 99,278\"></polyline>\n<polyline class=\"inc\" points=\"227,134 267,206 279,278\"></polyline>\n<polyline class=\"inc\" points=\"209,134 249,206 261,278\"></polyline>\n<polyline class=\"inc\" points=\"148,294 142,364 136,492\"></polyline>\n<polyline class=\"inc\" points=\"172,294 166,364 160,492\"></polyline>\n<polyline class=\"inc\" points=\"212,294 218,364 224,492\"></polyline>\n<polyline class=\"inc\" points=\"188,294 194,364 200,492\"></polyline>\n<!-- dorsal hand incisions -->\n<polyline class=\"inc\" stroke-width=\"2\" points=\"82,277 80,295\"></polyline>\n<polyline class=\"inc\" stroke-width=\"2\" points=\"91,277 89,295\"></polyline>\n<polyline class=\"inc\" stroke-width=\"2\" points=\"270,277 268,295\"></polyline>\n<polyline class=\"inc\" stroke-width=\"2\" points=\"279,277 277,295\"></polyline>\n<!-- chest shield -->\n<polyline class=\"inc\" points=\"146,140 214,140 214,252 146,252 146,140\"></polyline>\n\n<!-- nerve hazards -->\n<circle cx=\"249\" cy=\"206\" r=\"6\" fill=\"#f59e0b\"></circle>\n<line class=\"ld\" x1=\"316\" y1=\"244\" x2=\"254\" y2=\"210\" stroke=\"#f59e0b\" opacity=\"0.7\"></line>\n<circle cx=\"219\" cy=\"378\" r=\"6\" fill=\"#f59e0b\"></circle>\n<line class=\"ld\" x1=\"316\" y1=\"378\" x2=\"226\" y2=\"378\" stroke=\"#f59e0b\" opacity=\"0.7\"></line>\n\n<!-- right column -->\n<text class=\"s\" x=\"320\" y=\"84\" style=\"fill:#00d4aa\">MID-MEDIAL + MID-LATERAL</text>\n<text class=\"c\" x=\"320\" y=\"100\">Both lines, the full length</text>\n<text class=\"c\" x=\"320\" y=\"114\">of the burn, across every</text>\n<text class=\"c\" x=\"320\" y=\"128\">joint, ending 1–2 cm into</text>\n<text class=\"c\" x=\"320\" y=\"142\">unburned skin.</text>\n\n<text class=\"s\" x=\"320\" y=\"172\" style=\"fill:#00d4aa\">CHEST SHIELD</text>\n<line class=\"ld\" x1=\"316\" y1=\"168\" x2=\"220\" y2=\"152\"></line>\n<text class=\"c\" x=\"320\" y=\"188\">Anterior axillary lines,</text>\n<text class=\"c\" x=\"320\" y=\"202\">joined at the clavicle</text>\n<text class=\"c\" x=\"320\" y=\"216\">and the costal margin.</text>\n\n<text class=\"s\" x=\"320\" y=\"250\" style=\"fill:#f59e0b\">ULNAR NERVE</text>\n<text class=\"c\" x=\"320\" y=\"266\" style=\"fill:#f59e0b\">Medial line passes</text>\n<text class=\"c\" x=\"320\" y=\"280\" style=\"fill:#f59e0b\">ANTERIOR to the</text>\n<text class=\"c\" x=\"320\" y=\"294\" style=\"fill:#f59e0b\">medial epicondyle.</text>\n\n<text class=\"s\" x=\"320\" y=\"330\" style=\"fill:#f59e0b\">COMMON PERONEAL</text>\n<text class=\"c\" x=\"320\" y=\"346\" style=\"fill:#f59e0b\">Lateral line passes clear</text>\n<text class=\"c\" x=\"320\" y=\"360\" style=\"fill:#f59e0b\">of the fibular neck.</text>\n<text class=\"c\" x=\"320\" y=\"374\" style=\"fill:#f59e0b\">Division is a permanent</text>\n<text class=\"c\" x=\"320\" y=\"388\" style=\"fill:#f59e0b\">foot drop.</text>\n\n<!-- left column -->\n<line class=\"ld\" x1=\"36\" y1=\"300\" x2=\"74\" y2=\"292\"></line>\n<text class=\"s\" x=\"0\" y=\"304\">HAND</text>\n<text class=\"c\" x=\"0\" y=\"320\">Dorsal, between</text>\n<text class=\"c\" x=\"0\" y=\"334\">the metacarpals.</text>\n<text class=\"s\" x=\"0\" y=\"364\">DIGITS</text>\n<text class=\"c\" x=\"0\" y=\"380\">Mid-axial, off the</text>\n<text class=\"c\" x=\"0\" y=\"394\">pinch surface.</text>\n\n<text class=\"s\" x=\"0\" y=\"526\" style=\"fill:#00d4aa\">Endpoint: the edges spring apart and fat bulges.</text>\n<text class=\"c\" x=\"0\" y=\"544\">Stop at the fat. Cutting fascia is a fasciotomy — a different procedure.</text>\n</svg>",
+              "alt": "Escharotomy incision map, anterior view. Limb incisions run mid-medial and mid-lateral along both sides of each arm and leg, the full length of the burn and across every joint, ending one to two centimeters into unburned skin. The chest release is a rectangular shield: bilateral anterior axillary lines joined by transverse incisions along the clavicles and along the costal margin. Two nerves change the line. At the elbow the medial incision passes anterior to the medial epicondyle, because the ulnar nerve lies subcutaneously behind it. At the knee the lateral incision passes clear of the fibular neck, where the common peroneal nerve wraps around it and division causes a permanent foot drop. Hand incisions run dorsally between the metacarpals and digital incisions are mid-axial, off the pinch surface.",
+              "caption": "Length is what fails, not placement: an incision that stops short of the joint or ends inside burned skin leaves the constriction where it is tightest. The two amber points are the only places the line deviates, and both are marked on the skin <i>before</i> cutting, because eschar hides the landmarks you would normally navigate by."
             },
             {
               "type": "table",
@@ -5442,8 +5449,8 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5644,8 +5651,8 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -5859,8 +5866,8 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6261,8 +6268,8 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
@@ -6651,8 +6658,8 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -7675,8 +7682,8 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-08-25",
+      "reviewDue": "2027-08-25",
       "sections": [
         {
           "id": "indications",
@@ -8670,8 +8677,8 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
-      "reviewDue": "2027-09-23",
+      "lastVerified": "2026-09-22",
+      "reviewDue": "2027-09-22",
       "sections": [
         {
           "id": "indications",
