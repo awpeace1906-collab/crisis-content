@@ -118,6 +118,37 @@ export const ENTRY_ORDER = {
   'percutaneous-surgical-tracheostomy': 16,
 };
 
+// Cross-listing. An entry has one primary category (what it IS) and may also
+// surface under others (where people go looking for it).
+//
+// Added 2026-09-24. Splitting Airway out of Anesthesia & Perioperative Crises
+// took all five of that category's procedures with it — airway *was* the whole
+// of Anesthesia's procedural content — so Anesthesia went protocol-only and a
+// surgical airway stopped being reachable from the heading an anesthesiologist
+// looks under first. Single-category assignment is what forced that trade;
+// this removes it.
+//
+// Primary stays Airway, so the CICO ordering and the category colour are
+// unaffected. These are additional placements, not moves.
+export const SECONDARY_CATEGORIES = {
+  'front-of-neck-rescue-airway-in-cico': ['anesthesia-perioperative-crises'],
+  'cricothyrotomy-surgical-percutaneous-needle': ['anesthesia-perioperative-crises'],
+  'retrograde-intubation': ['anesthesia-perioperative-crises'],
+  'awake-fiberoptic-intubation': ['anesthesia-perioperative-crises'],
+  'percutaneous-surgical-tracheostomy': ['anesthesia-perioperative-crises'],
+  'difficult-failed-airway': ['anesthesia-perioperative-crises'],
+  'laryngospasm': ['anesthesia-perioperative-crises'],
+};
+
+/** Resolves an entry's secondary categories to {id,label,order}, or []. */
+export function resolveSecondaryCategories(entryId) {
+  return (SECONDARY_CATEGORIES[entryId] ?? []).map((id) => {
+    const c = UNIFIED_CATEGORIES.find((x) => x.id === id);
+    if (!c) throw new Error(`SECONDARY_CATEGORIES["${entryId}"] references unknown category "${id}"`);
+    return { id: c.id, label: c.label, order: c.order };
+  });
+}
+
 // Full unified list, for lookups by id (label/color/order). Kept in sync
 // with the Crisis hub's 6 by hand — see the note on EXTRA_CATEGORY above.
 export const UNIFIED_CATEGORIES = [

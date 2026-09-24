@@ -10,6 +10,7 @@ import {
   UNIFIED_CATEGORIES,
   ENTRY_ORDER,
   DEFAULT_ENTRY_ORDER,
+  resolveSecondaryCategories,
 } from './unified-categories.mjs';
 import { resolveReview, lastChangedDate } from './review-policy.mjs';
 
@@ -272,7 +273,10 @@ function main() {
     if (!files.includes(file)) missing.push({ file, ...meta });
   }
 
-  for (const p of protocols) p.entryOrder = ENTRY_ORDER[p.id] ?? DEFAULT_ENTRY_ORDER;
+  for (const p of protocols) {
+    p.entryOrder = ENTRY_ORDER[p.id] ?? DEFAULT_ENTRY_ORDER;
+    p.secondaryCategories = resolveSecondaryCategories(p.id);
+  }
   protocols.sort(
     (a, b) => a.categoryOrder - b.categoryOrder || a.entryOrder - b.entryOrder || a.title.localeCompare(b.title),
   );
@@ -287,10 +291,23 @@ function main() {
     p.color = PALETTE[i % PALETTE.length];
   });
 
-  // Includes EXTRA_CATEGORY even though no protocol belongs to it — Home's
-  // category tile grid renders from this list, and that 7th tile exists to
-  // hold procedures only (see unified-categories.mjs).
-  const categoryList = [...categories.map((c) => ({ id: c.id, label: c.label, color: c.color, order: c.order })), EXTRA_CATEGORY];
+  // Home's category tile grid renders from this list. It used to be the hub's
+  // own sections plus EXTRA_CATEGORY appended by hand — which meant any unified
+  // category the hub has no section for silently got no tile. Airway was
+  // exactly that (2026-09-24): it existed in every entry and rendered in the
+  // HALO and Protocols lists, but Home had no Airway tile, so from Home you
+  // tapped Anesthesia and found no procedures at all.
+  //
+  // Now built from UNIFIED_CATEGORIES, the same list that owns label and order
+  // for every entry. The hub's colour is kept where the hub defines the
+  // category, since it mirrors the live site.
+  const hubColor = new Map(categories.map((c) => [c.id, c.color]));
+  const categoryList = UNIFIED_CATEGORIES.map((c) => ({
+    id: c.id,
+    label: c.label,
+    color: hubColor.get(c.id) ?? c.color,
+    order: c.order,
+  })).sort((a, b) => a.order - b.order);
 
   writeFileSync(
     OUT_FILE,

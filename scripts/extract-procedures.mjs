@@ -17,6 +17,7 @@ import {
   PROCEDURE_CATEGORY_OVERRIDES,
   ENTRY_ORDER,
   DEFAULT_ENTRY_ORDER,
+  resolveSecondaryCategories,
 } from './unified-categories.mjs';
 import { resolveReview, lastChangedDate } from './review-policy.mjs';
 
@@ -296,7 +297,10 @@ function main() {
   }
 
   // entryOrder lets a category override alphabetical — see ENTRY_ORDER.
-  for (const p of procedures) p.entryOrder = ENTRY_ORDER[p.id] ?? DEFAULT_ENTRY_ORDER;
+  for (const p of procedures) {
+    p.entryOrder = ENTRY_ORDER[p.id] ?? DEFAULT_ENTRY_ORDER;
+    p.secondaryCategories = resolveSecondaryCategories(p.id);
+  }
   procedures.sort(
     (a, b) => a.categoryOrder - b.categoryOrder || a.entryOrder - b.entryOrder || a.title.localeCompare(b.title),
   );
