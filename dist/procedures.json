@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T23:57:59.089Z",
+  "generatedAt": "2026-09-24T23:58:16.882Z",
   "categories": [
     {
       "id": "airway",
@@ -71,9 +71,9 @@
       "description": "The decision framework above the individual techniques.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-21",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -349,9 +349,9 @@
       "description": "Surgical, percutaneous, and needle techniques for CICO.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-23",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-23",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -821,9 +821,9 @@
       "description": "Wire-guided backup when fiberoptic/video fails.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -1105,9 +1105,9 @@
       "description": "Controlled airway access preserving spontaneous ventilation.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-21",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -1411,9 +1411,9 @@
       "description": "Definitive long-term airway, not a rescue technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-21",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-21",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -1783,9 +1783,9 @@
       "description": "Full open technique for hemo/pneumothorax.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -2135,9 +2135,9 @@
       "description": "Immediate tension pneumothorax decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -2447,9 +2447,9 @@
       "description": "Subxiphoid needle decompression of tamponade.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -2719,9 +2719,9 @@
       "description": "Last-resort direct cardiac and hilar access.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -3044,9 +3044,9 @@
       "description": "Timing the shock relative to the QRS — and why it matters.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-22",
+      "reviewDue": "2027-03-24",
       "sections": [
         {
           "id": "indications",
@@ -3377,9 +3377,9 @@
       "description": "Post-ROSC neuroprotection protocol.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -3731,9 +3731,9 @@
       "description": "Bridging unstable bradycardia to a definitive rhythm.",
       "reviewTier": 1,
       "reviewTierIsDefault": false,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-03-22",
+      "reviewDue": "2027-03-24",
       "sections": [
         {
           "id": "indications",
@@ -4580,9 +4580,9 @@
       "description": "The 4-minute rule — maternal resuscitation first.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -4890,9 +4890,9 @@
       "description": "The escalation ladder, ending in a rare last resort.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -5287,9 +5287,9 @@
       "description": "Core rewarming for hypothermic cardiac instability.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -5625,9 +5625,9 @@
       "description": "Releasing constricting burn eschar from limb or chest.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -5993,9 +5993,9 @@
       "description": "Rare last-resort extrication technique.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -6328,9 +6328,9 @@
       "description": "DCS/AGE — 100% oxygen first, altitude avoided.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -6671,9 +6671,9 @@
       "description": "The initial sort when casualties outstrip resources.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -6979,9 +6979,9 @@
       "description": "Real-time hemodynamics when non-invasive monitoring lags.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -7384,9 +7384,9 @@
       "description": "Femoral-first access without interrupting compressions.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -7777,9 +7777,9 @@
       "description": "VA/VV framework from activation call to first flow.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -8600,9 +8600,9 @@
       "description": "Hemorrhage control at groin, axilla, pelvis.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -8958,9 +8958,9 @@
       "description": "Vision-saving orbital compartment decompression.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -9773,9 +9773,9 @@
       "description": "Circumferential stabilization at the greater trochanters.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -10112,9 +10112,9 @@
       "description": "Zone 1/3 aortic occlusion for non-compressible torso hemorrhage.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
@@ -10492,9 +10492,9 @@
       "description": "Direct pressure taken into the wound cavity itself.",
       "reviewTier": 2,
       "reviewTierIsDefault": true,
-      "lastVerified": "2026-09-22",
+      "lastVerified": "2026-09-24",
       "lastVerifiedIsInferred": true,
-      "reviewDue": "2027-09-22",
+      "reviewDue": "2027-09-24",
       "sections": [
         {
           "id": "indications",
