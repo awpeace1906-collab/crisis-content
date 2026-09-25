@@ -90,7 +90,15 @@ function checkBounds(fig) {
     const text = inner.replace(/<[^>]+>/g, '').replace(/&[a-z]+;|&#\d+;/gi, 'x').trim();
     const mono = /mono/i.test(fig.svg.slice(Math.max(0, fig.svg.indexOf(`.${cls.split(/\s+/)[0]}{`)), fig.svg.indexOf(`.${cls.split(/\s+/)[0]}{`) + 200));
     const perChar = mono ? 0.62 : 0.54;
-    const endX = x + text.length * size * perChar;
+    // Right- or center-anchored text extends LEFT of x (or both ways), so
+    // measuring from x as if it were start-anchored is a false positive.
+    const anchor = /text-anchor="(end|middle)"/.exec(tag)?.[1];
+    const len = text.length * size * perChar;
+    const endX = anchor === 'end' ? x : anchor === 'middle' ? x + len / 2 : x + len;
+    const startX = anchor === 'end' ? x - len : anchor === 'middle' ? x - len / 2 : x;
+    if (startX < -2) {
+      problems.push(`text "${text.slice(0, 34)}${text.length > 34 ? '…' : ''}" starts at x≈${Math.round(startX)}, left of 0`);
+    }
     if (endX > w + 2) {
       problems.push(`text "${text.slice(0, 34)}${text.length > 34 ? '…' : ''}" runs to x≈${Math.round(endX)}, past ${w}`);
     }

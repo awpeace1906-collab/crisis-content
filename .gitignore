@@ -3,3 +3,4 @@ node_modules/
 
 # leftover zip backups of the unzipped source folders, not needed in git
 *.zip
+dist/plate-previews/

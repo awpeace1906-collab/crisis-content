@@ -31,9 +31,28 @@ and I'll compress them into the asset budget.
 |---|---|---|---|
 | 6 | Balloon-tipped pacing wire, balloon inflated vs deflated | Transvenous pacing | Supports "up going in, down coming out." |
 | 7 | Alligator clip attached to the **distal** wire terminal | Transvenous pacing | The proximal/distal distinction is the teaching; a photo settles it. |
-| 8 | Pacing pads in true anterior-posterior placement, on a manikin | Pacing | Diagram probably suffices, but a photo shows realistic pad size vs. torso. |
+| 8 | ~~Pacing pads in true anterior-posterior placement, on a manikin~~ | Pacing | **Covered by a Gray's plate figure** (figs. 1218 + 1211, front and back). A manikin photo would add nothing the figure lacks. |
 | 9 | Finger thoracostomy / chest tube tray | Chest tube | Lower priority — a well-known setup. |
-| 10 | Pelvic binder correctly positioned at greater trochanters | Pelvic binder | "Too high" is the classic error and is very visible in a photo. |
+| 10 | Pelvic binder correctly positioned at greater trochanters | Pelvic binder | **Level now shown on a Gray's plate** (fig. 1219: trochanters and symphysis vs. iliac crests). A photo of your own binder in place is still worth having: it shows the device, which an engraving cannot. |
+
+## Checked against the Gray's Anatomy plates (2026-09-25)
+
+Every item was checked against the public-domain 1918 Gray's plates on
+Wikimedia Commons (see `assets/plates/README.md`).
+
+- **#1–7 and #9 cannot come from Gray's.** They are equipment: a sleeve, a
+  kit, a cart, a generator's dials, a wire, a tray. A 1918 anatomy text has
+  none of it. These still need photos of your own kit.
+- **#8 (pad placement): done** as an anatomy figure.
+- **#10 (binder level): the level is done** as an anatomy figure. A photo of
+  the device in place is still useful.
+
+Gray's plates also went into places that were not on this list, where the
+text described anatomy but no figure showed it: the cricothyroid membrane on
+a real neck, the safe triangle and rib slope (chest tube, finger
+thoracostomy), the subxiphoid approach (pericardiocentesis), the femoral vein
+from bone landmarks (central line in arrest) and the lateral canthal tendon
+(lateral canthotomy).
 
 ## Already sourced — no photo needed
 

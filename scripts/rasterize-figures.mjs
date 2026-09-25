@@ -10,6 +10,11 @@
 //    SwiftUI scales with .resizable().scaledToFit(), the figures are flat
 //    line art, and three variants would triple the asset weight for no
 //    visible gain on any current device.
+//  - PNG for line art, JPEG for any figure that embeds a raster <image> (a
+//    Gray's plate, an ultrasound). Engraving hatching and speckle are
+//    photographic content: as PNG those figures ran 400 KB-1.3 MB each and
+//    blew the budget below; as JPEG they are about a third of that with no
+//    visible loss. iOS looks for <figureId>.png, then .jpg.
 //
 // Fonts fall back to generic sans/mono, because librsvg resolves fonts from
 // the host and CI (Linux) has neither Syne nor IBM Plex Mono. A consistent
@@ -58,17 +63,18 @@ async function main() {
     const [, , vbW] = vb[1].trim().split(/\s+/).map(Number);
     const density = Math.round((TARGET_WIDTH / vbW) * 72);
 
-    const png = await sharp(svg, { density })
-      .flatten({ background: SURFACE })
-      .png({ compressionLevel: 9 })
-      .toBuffer();
+    const photographic = /<image\b/.test(svg.toString());
+    const base = sharp(svg, { density }).flatten({ background: SURFACE });
+    const png = photographic
+      ? await base.jpeg({ quality: 82, mozjpeg: true }).toBuffer()
+      : await base.png({ compressionLevel: 9 }).toBuffer();
 
-    const outPath = path.join(OUT, file.replace(/\.svg$/, '.png'));
+    const outPath = path.join(OUT, file.replace(/\.svg$/, photographic ? '.jpg' : '.png'));
     writeFileSync(outPath, png);
     const kb = statSync(outPath).size / 1024;
     totalBytes += statSync(outPath).size;
     const meta = await sharp(png).metadata();
-    console.log(`  ${file.replace(/\.svg$/, '.png')}  ${meta.width}x${meta.height}  ${kb.toFixed(0)} KB`);
+    console.log(`  ${path.basename(outPath)}  ${meta.width}x${meta.height}  ${kb.toFixed(0)} KB`);
   }
 
   const totalKB = totalBytes / 1024;
