@@ -98,13 +98,25 @@ function parseHub() {
 }
 
 // ---- 2. Parse a single procedure page into structured blocks (shared vocabulary with protocols) ----
+/** Placeholder for a column covered by the previous cell's colspan. An HTML
+ *  comment, so a renderer that doesn't know about it still shows nothing. */
+const COLSPAN = '<!--colspan-->';
+
 function parseTable($, $table) {
   const headers = [];
   $table.find('tr').first().find('th').each((_, th) => headers.push(textOf($(th))));
   const rows = [];
   $table.find('tr').slice(1).each((_, tr) => {
     const cells = [];
-    $(tr).find('td').each((__, td) => cells.push(htmlOf($, $(td))));
+    $(tr).find('td').each((__, td) => {
+      cells.push(htmlOf($, $(td)));
+      // A cell spanning columns is followed by COLSPAN placeholders so every
+      // later cell stays under its own header. Dropping the span shifted
+      // them one column left: in the phone card layout an ECMO note came out
+      // labeled "Return". Renderers read the placeholder back as a span.
+      const span = Number($(td).attr('colspan')) || 1;
+      for (let i = 1; i < span; i++) cells.push(COLSPAN);
+    });
     if (cells.length) rows.push(cells);
   });
   return { type: 'table', headers, rows };
