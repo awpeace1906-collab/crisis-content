@@ -6,8 +6,9 @@ see it — not just recorded in this file. Do not move an image out of this
 folder into general use without carrying its credit line with it.
 
 **In use:** `us-transverse-cricothyroid.jpg` (Fig 5) ships in the Cricothyrotomy
-entry, §04 "Finding the Membrane", as of 2026-09-23. The other three are still
-unused — see "Why the other three are still unused" below.
+entry, §04 "Finding the Membrane", as of 2026-09-23. The other three are
+**not being used — decided 2026-09-26.** They stay here for reference only;
+see "Why the other three are unused" below.
 
 ---
 
@@ -55,7 +56,13 @@ be shown as the rasterized PNG, and a PNG that can be screenshotted or shared
 must carry its own attribution. If you ever re-crop or re-export, keep the
 in-SVG credit.
 
-## Why the other three are still unused
+## Why the other three are unused
+
+**Decision (2026-09-26): Figs 6, 7 and 10 will not be used.** This is closed,
+not pending. Fig 5 covers the view that matters for finding the membrane, and
+the others would need the paper's captions to be labeled safely. The history
+below is kept for context; revisit only if a new clinical need appears.
+
 
 `us-transverse-tracheal-rings.jpg` (Fig 7), `us-transverse-cricoid.jpg` (Fig 6)
 and `us-longitudinal-string-of-pearls.jpg` (Fig 10) carry the paper's own
