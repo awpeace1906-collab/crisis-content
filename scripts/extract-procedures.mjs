@@ -37,6 +37,25 @@ function slugify(title) {
 function textOf($el) {
   return $el.text().replace(/\s+/g, ' ').trim();
 }
+/**
+ * An alert's body: everything after its .alert-t title. One paragraph comes
+ * through as bare inline HTML, which is the shape every existing alert has.
+ * Several come through as <p>…</p><p>…</p>, and both apps lay those out as
+ * separate paragraphs.
+ *
+ * This used to be `htmlOf($, $node.find('p'))`. Cheerio's .html() returns
+ * only the FIRST matched element, so every paragraph after the first was
+ * silently dropped. Four alerts were losing their second paragraph in both
+ * apps (REBOA, TTM, uterine massage, active rewarming).
+ */
+function alertBodyHtml($, $node) {
+  const $body = $node.clone();
+  $body.find('.alert-t').remove();
+  const $ps = $body.children('p');
+  if ($ps.length === 1 && $body.children().length === 1) return htmlOf($, $ps.first());
+  return htmlOf($, $body);
+}
+
 function htmlOf($, $el) {
   return $el.html()?.trim() ?? '';
 }
@@ -171,7 +190,7 @@ function parseSection($, $secHead) {
         type: 'alert',
         color: colorC || 'red',
         title: textOf($node.find('.alert-t')),
-        html: htmlOf($, $node.find('p')),
+        html: alertBodyHtml($, $node),
       });
     } else if ($node.is('table.rt')) {
       section.blocks.push(parseTable($, $node));
