@@ -156,7 +156,7 @@ export const FIGURES = [
         { kind: 'line', from: [226, 388], to: [238, 393], stroke: 'outline', sw: 1 },
         { kind: 'label', at: [238, 378], lines: [{ t: 'ENTRY: just below and', bold: true, fill: 'good' }, { t: 'left of the xiphoid', bold: true, fill: 'good' }, 'the patient&rsquo;s left'] },
         { kind: 'line', from: [270, 222], to: [262, 238], stroke: 'outline', sw: 1 },
-        { kind: 'label', at: [272, 196], lines: [{ t: 'AIM: left shoulder,', bold: true, fill: 'good' }, 'about 45&deg; to the skin'] },
+        { kind: 'label', at: [272, 196], lines: [{ t: 'AIM: left shoulder,', bold: true, fill: 'good' }, 'about 30&deg; to the skin'] },
         { kind: 'line', from: [322, 327], to: [330, 336], stroke: 'outline', sw: 1 },
         { kind: 'label', at: [316, 336], lines: [{ t: 'Apical window', bold: true, fill: 'vessel' }, 'ultrasound-guided'] },
         { kind: 'label', at: [64, 134], lines: [{ t: 'patient&rsquo;s right', size: 9.5 }] },
@@ -170,7 +170,7 @@ export const FIGURES = [
     ],
     credit: [credit(1218)],
     aria: 'Gray\'s Anatomy engraving of the heart projected onto the front of the chest wall. The xiphoid tip is circled. The entry point lies just below and to the patient\'s left of the xiphoid, with an arrow passing under the costal margin toward the left shoulder, continuing as a dashed line over the inferior surface of the heart. An apical window, for ultrasound-guided puncture, is circled at the cardiac apex. Plate by Henry Vandyke Carter, Gray\'s Anatomy 1918, public domain.',
-    caption: 'Blind or landmark-guided: enter <b>just left of and below the xiphoid</b>, pass under the costal margin at about 45&deg; to the skin, and aim for the <b>left shoulder</b>, aspirating as you go. The needle meets the inferior surface of the heart, mostly right ventricle. With ultrasound, scan every window and use the one where the fluid is largest and closest.',
+    caption: 'Blind or landmark-guided: enter <b>just left of and below the xiphoid</b>, pass under the costal margin at <b>about 30&deg; to the skin</b>, and aim for the <b>left shoulder</b>, aspirating as you go; steepen only if the first pass returns no fluid. The needle meets the inferior surface of the heart, mostly right ventricle. With ultrasound, scan every window and use the one where the fluid is largest and closest.',
   },
   // ---------------------------------------------------------------------------
   {
