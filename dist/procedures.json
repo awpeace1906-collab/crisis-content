@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T13:37:28.932Z",
+  "generatedAt": "2026-09-26T13:50:03.368Z",
   "categories": [
     {
       "id": "airway",
@@ -7908,11 +7908,13 @@
                 [
                   "<b>VV, dual-lumen</b>",
                   "Single cannula via right IJ, spanning SVC to IVC with the return port aimed at the tricuspid valve",
+                  "<!--colspan-->",
                   "One site, permits mobility. <b>Requires echo or fluoroscopic guidance</b> — malposition is easy and consequential."
                 ],
                 [
                   "<b>VAV</b>",
                   "Adds a jugular return limb to a VA circuit",
+                  "<!--colspan-->",
                   "The answer to differential hypoxia (§06)."
                 ]
               ]
