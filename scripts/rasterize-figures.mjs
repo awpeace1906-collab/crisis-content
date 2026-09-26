@@ -23,6 +23,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, statSync }
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import sharp from 'sharp';
+import { createHash } from 'node:crypto';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const FIG_DIR = path.resolve(__dirname, '../dist/figures');
@@ -49,6 +50,10 @@ async function main() {
   mkdirSync(OUT, { recursive: true });
 
   let totalBytes = 0;
+  // figureId -> { file, sha1, bytes }. The iOS app fetches this after each
+  // content refresh and downloads only figures whose sha1 differs from the
+  // copy it already has, so a figure fix ships without an app release.
+  const index = {};
   for (const file of svgs) {
     const svgPath = path.join(FIG_DIR, file);
     const svg = readFileSync(svgPath);
@@ -71,11 +76,23 @@ async function main() {
 
     const outPath = path.join(OUT, file.replace(/\.svg$/, photographic ? '.jpg' : '.png'));
     writeFileSync(outPath, png);
+    index[file.replace(/\.svg$/, '')] = {
+      file: path.basename(outPath),
+      sha1: createHash('sha1').update(png).digest('hex'),
+      bytes: png.length,
+    };
     const kb = statSync(outPath).size / 1024;
     totalBytes += statSync(outPath).size;
     const meta = await sharp(png).metadata();
     console.log(`  ${path.basename(outPath)}  ${meta.width}x${meta.height}  ${kb.toFixed(0)} KB`);
   }
+
+  // Not index.json: iOS flattens bundled resources to the bundle root, where
+  // a generic name could collide with some other file.
+  writeFileSync(
+    path.join(OUT, 'figures-index.json'),
+    JSON.stringify({ generatedAt: new Date().toISOString(), figures: index }, null, 2),
+  );
 
   const totalKB = totalBytes / 1024;
   console.log(`\nRasterized ${svgs.length} figure(s) — ${totalKB.toFixed(0)} KB total -> ${OUT}`);
