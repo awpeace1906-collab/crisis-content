@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T13:29:45.762Z",
+  "generatedAt": "2026-09-26T13:37:28.932Z",
   "categories": [
     {
       "id": "airway",
@@ -3202,37 +3202,37 @@
                   "num": "1",
                   "color": "red",
                   "title": "Confirm instability and a synchronizable rhythm",
-                  "html": "Pulse present, organized QRS, and symptoms attributable to the rate. Print or freeze a strip — you want to be certain this is monomorphic before choosing sync."
+                  "html": "<p>Pulse present, organized QRS, and symptoms attributable to the rate.</p>\n<p>Print or freeze a strip — you want to be certain this is monomorphic before choosing sync.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Prepare the skin and place pads",
-                  "html": "Dry the chest, clip dense hair, remove transdermal patches. <b>Anteroposterior placement</b> is generally preferred for atrial fibrillation and for patients with implanted devices; anterolateral is acceptable and faster. Keep pads ≥8&nbsp;cm from any device generator."
+                  "html": "<p>Dry the chest, clip dense hair, remove transdermal patches.</p>\n<ul>\n<li><b>Anteroposterior placement</b> is generally preferred for atrial fibrillation and for patients with implanted devices;</li>\n<li>anterolateral is acceptable and faster.</li>\n</ul>\n<p>Keep pads ≥8&nbsp;cm from any device generator.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Sedate — this is a conscious patient about to be shocked",
-                  "html": "If there is any time at all, provide procedural sedation and analgesia. Titrate carefully: the blood pressure you are worried about is already low. Small doses, pre-oxygenation, airway equipment and a vasopressor within reach."
+                  "html": "<p>If there is any time at all, provide procedural sedation and analgesia.</p>\n<p>Titrate carefully: the blood pressure you are worried about is already low.</p>\n<p>Small doses, pre-oxygenation, airway equipment and a vasopressor within reach.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Press SYNC, then look at the screen",
-                  "html": "Activate synchronization and <b>visually confirm a marker sitting on every R wave</b> — and only on R waves. If markers are landing on T waves or appearing intermittently, increase the ECG gain or switch to a lead with a taller R. <b>Do not shock until the markers are right.</b> This look at the screen is the entire safety mechanism of the procedure."
+                  "html": "<p>Activate synchronization and <b>visually confirm a marker sitting on every R wave</b> — and only on R waves.</p>\n<p>If markers are landing on T waves or appearing intermittently, increase the ECG gain or switch to a lead with a taller R.</p>\n<p><b>Do not shock until the markers are right.</b> This look at the screen is the entire safety mechanism of the procedure.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Charge, clear, and hold the button",
-                  "html": "Announce and confirm everyone is clear. <b>Hold the shock button down</b> — in sync mode the machine waits for the next R wave, so there is a perceptible delay between pressing and discharge. Releasing early is a common reason “the shock didn't work.”"
+                  "html": "<p>Announce and confirm everyone is clear.</p>\n<p><b>Hold the shock button down</b> — in sync mode the machine waits for the next R wave, so there is a perceptible delay between pressing and discharge.</p>\n<p>Releasing early is a common reason “the shock didn't work.”</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Reassess — and re-arm SYNC before the next shock",
-                  "html": "Check rhythm and pulse. If still unstable and unconverted, escalate energy and shock again — but first <b>re-confirm sync is active</b>. Most defibrillators revert to unsynchronized after every delivery, by design, so that a patient who arrests can be defibrillated immediately."
+                  "html": "<p>Check rhythm and pulse.</p>\n<p>If still unstable and unconverted, escalate energy and shock again — but first <b>re-confirm sync is active</b>.</p>\n<p>Most defibrillators revert to unsynchronized after every delivery, by design, so that a patient who arrests can be defibrillated immediately.</p>"
                 }
               ]
             },
@@ -3247,13 +3247,13 @@
                   "num": "7",
                   "color": "teal",
                   "title": "Confirm pulselessness, charge during compressions",
-                  "html": "Keep compressions going while the machine charges — this is the single biggest modifiable factor in minimizing the peri-shock pause. Ensure sync is <b>off</b>."
+                  "html": "<p>Keep compressions going while the machine charges — this is the single biggest modifiable factor in minimizing the peri-shock pause.</p>\n<p>Ensure sync is <b>off</b>.</p>"
                 },
                 {
                   "num": "8",
                   "color": "blue",
                   "title": "Clear, shock, and resume compressions immediately",
-                  "html": "Brief clear, deliver, and go straight back to compressions <b>without</b> a pulse or rhythm check. Reassess at the next scheduled rhythm check. A perfusing rhythm rarely appears instantly after a shock, and pausing to look costs coronary perfusion pressure that took a minute to build."
+                  "html": "<p>Brief clear, deliver, and go straight back to compressions <b>without</b> a pulse or rhythm check.</p>\n<p>Reassess at the next scheduled rhythm check.</p>\n<p>A perfusing rhythm rarely appears instantly after a shock, and pausing to look costs coronary perfusion pressure that took a minute to build.</p>"
                 }
               ]
             },
@@ -3261,7 +3261,7 @@
               "type": "alert",
               "color": "red",
               "title": "Check SYNC every single time",
-              "html": "Two failures, opposite directions, both common. <b>Sync left off</b> when cardioverting a patient with a pulse: the shock can land on the T wave and induce VF — the R-on-T phenomenon that synchronization exists to prevent. <b>Sync left on</b> when the patient has arrested into VF: the machine hunts for an R wave it will never find and <b>refuses to discharge</b>, and precious seconds are lost to a defibrillator that appears broken. Look at the mode indicator before every shock."
+              "html": "<p>Two failures, opposite directions, both common.</p>\n<ul>\n<li><b>Sync left off</b> when cardioverting a patient with a pulse: the shock can land on the T wave and induce VF — the R-on-T phenomenon that synchronization exists to prevent.</li>\n<li><b>Sync left on</b> when the patient has arrested into VF: the machine hunts for an R wave it will never find and <b>refuses to discharge</b>, and precious seconds are lost to a defibrillator that appears broken.</li>\n</ul>\n<p><b>Look at the mode indicator before every shock.</b></p>"
             }
           ]
         },
@@ -3432,7 +3432,7 @@
               "type": "alert",
               "color": "amber",
               "title": "What the trials actually changed",
-              "html": "<p>The field has moved, and the entry point has moved with it. <b>TTM (2013)</b> found 33 °C no better than 36 °C. <b>TTM2 (2021)</b> found 33 °C no better than normothermia with active fever prevention. <b>HYPERION (2019)</b> suggested possible benefit at 33 °C specifically in non-shockable rhythms. The result is that <b>current guidance has shifted from “cool everyone to 33” to “actively prevent fever in everyone, and 33 remains a permitted option.”</b></p><p>The consensus that survived all of it: <b>continuous core temperature monitoring and active prevention of fever above about 37.5&nbsp;°C for at least 72 hours.</b> That is the part not to get wrong. Post-arrest fever is independently associated with worse neurologic outcome, and it is common, and it is preventable.</p>"
+              "html": "<p>The field has moved, and the entry point has moved with it.</p>\n<ul>\n<li><b>TTM (2013)</b> found 33 °C no better than 36 °C.</li>\n<li><b>TTM2 (2021)</b> found 33 °C no better than normothermia with active fever prevention.</li>\n<li><b>HYPERION (2019)</b> suggested possible benefit at 33 °C specifically in non-shockable rhythms.</li>\n</ul>\n<p>The result is that <b>current guidance has shifted from “cool everyone to 33” to “actively prevent fever in everyone, and 33 remains a permitted option.”</b></p><p>The consensus that survived all of it: <b>continuous core temperature monitoring and active prevention of fever above about 37.5&nbsp;°C for at least 72 hours.</b> That is the part not to get wrong.</p>\n<p>Post-arrest fever is independently associated with worse neurologic outcome, and it is common, and it is preventable.</p>"
             }
           ]
         },
@@ -3560,43 +3560,43 @@
                   "num": "1",
                   "color": "red",
                   "title": "Stabilize first, then cool",
-                  "html": "Airway secured, hemodynamics supported, 12-lead done and the decision made about urgent coronary angiography. Temperature control is important and it is not the first thing."
+                  "html": "<ul>\n<li>Airway secured,</li>\n<li>hemodynamics supported,</li>\n<li>12-lead done and the decision made about urgent coronary angiography.</li>\n</ul>\n<p>Temperature control is important and it is not the first thing.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Core probe in before the device goes on",
-                  "html": "Esophageal where possible. Record the starting temperature — many post-arrest patients arrive spontaneously hypothermic, and knowing that changes what the device needs to do."
+                  "html": "<p>Esophageal where possible.</p>\n<p>Record the starting temperature — many post-arrest patients arrive spontaneously hypothermic, and knowing that changes what the device needs to do.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Set the target your institution uses, and reach it",
-                  "html": "Somewhere in the <span class=\"d\">32–37.5 °C</span> band depending on local protocol — commonly strict normothermia at <span class=\"d\">36–37.5 °C</span>, or <span class=\"d\">33 °C</span> where that is the chosen strategy. <b>Choosing a number is less important than holding it</b>: the failure that matters is drifting into fever."
+                  "html": "<p>Somewhere in the <span class=\"d\">32–37.5 °C</span> band depending on local protocol — commonly strict normothermia at <span class=\"d\">36–37.5 °C</span>, or <span class=\"d\">33 °C</span> where that is the chosen strategy.</p>\n<p><b>Choosing a number is less important than holding it</b>: the failure that matters is drifting into fever.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Get ahead of shivering",
-                  "html": "Counterwarm the skin from the start. Assess formally every hour. Escalate up the ladder in §04 rather than reaching for paralysis."
+                  "html": "<p>Counterwarm the skin from the start.</p>\n<p>Assess formally every hour.</p>\n<p>Escalate up the ladder in §04 rather than reaching for paralysis.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Maintain for 24 hours, and watch the chemistry",
-                  "html": "Electrolytes and glucose every 4–6 hours. Potassium at the lower end of normal, deliberately. Continuous EEG if paralyzed, and a low threshold for it otherwise — non-convulsive seizures after arrest are common and invisible."
+                  "html": "<ul>\n<li>Electrolytes and glucose every 4–6 hours.</li>\n<li>Potassium at the lower end of normal, deliberately.</li>\n<li>Continuous EEG if paralyzed, and a low threshold for it otherwise — non-convulsive seizures after arrest are common and invisible.</li>\n</ul>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Rewarm slowly — no faster than 0.25–0.5 °C per hour",
-                  "html": "Use the device to control the rate; do not simply switch it off. <b>This is the most dangerous phase.</b> Expect hyperkalemia, hypoglycemia, and vasodilatory hypotension arriving together. Stop potassium replacement before you start, reduce insulin as you go, and have volume and a pressor available."
+                  "html": "<p>Use the device to control the rate; do not simply switch it off.</p>\n<p><b>This is the most dangerous phase.</b> Expect hyperkalemia, hypoglycemia, and vasodilatory hypotension arriving together.</p>\n<ul>\n<li>Stop potassium replacement before you start,</li>\n<li>reduce insulin as you go, and</li>\n<li>have volume and a pressor available.</li>\n</ul>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Then keep them out of fever for at least 72 hours",
-                  "html": "Leave the device on in normothermia mode. <b>Rebound hyperthermia after rewarming is extremely common and is the part everyone stops watching for</b>, because the protocol feels finished. It is not."
+                  "html": "<p>Leave the device on in normothermia mode.</p>\n<p><b>Rebound hyperthermia after rewarming is extremely common and is the part everyone stops watching for</b>, because the protocol feels finished. It is not.</p>"
                 }
               ]
             }
@@ -3804,7 +3804,7 @@
               "type": "alert",
               "color": "amber",
               "title": "Don't pace a bradycardia the patient needs",
-              "html": "Sinus bradycardia with a normal blood pressure and mentation in a fit patient, an athlete at rest, or a patient on a rate-controlling drug at steady state does not need pacing. The indication is <i>symptomatic</i> or <i>peri-arrest</i> bradycardia — hypotension, altered mentation, ischemic chest pain, or acute heart failure attributable to the rate. Rate alone is not the indication."
+              "html": "<p>Sinus bradycardia with a normal blood pressure and mentation in a fit patient, an athlete at rest, or a patient on a rate-controlling drug at steady state does not need pacing.</p>\n<p>The indication is <i>symptomatic</i> or <i>peri-arrest</i> bradycardia — hypotension, altered mentation, ischemic chest pain, or acute heart failure attributable to the rate.</p>\n<p><b>Rate alone is not the indication.</b></p>"
             }
           ]
         },
@@ -3829,7 +3829,7 @@
               "type": "alert",
               "color": "red",
               "title": "Load the sterile sleeve onto the wire before it ever enters the patient",
-              "html": "The protective sleeve only slides on from the proximal end. Once the wire is in the vein, it is too late — you now have a wire you cannot reposition without breaking sterility, and lead dislodgement is the single most common late failure of transvenous pacing. This is the classic, universally-taught error, and it is made by experienced operators in a hurry. Sleeve first."
+              "html": "<p>The protective sleeve only slides on from the proximal end.</p>\n<p>Once the wire is in the vein, it is too late — you now have a wire you cannot reposition without breaking sterility, and lead dislodgement is the single most common late failure of transvenous pacing.</p>\n<p>This is the classic, universally-taught error, and it is made by experienced operators in a hurry. <b>Sleeve first.</b></p>"
             }
           ]
         },
@@ -3858,37 +3858,37 @@
                   "num": "1",
                   "color": "red",
                   "title": "Prepare the skin",
-                  "html": "Clip (don't shave raw) dense chest hair, wipe the skin dry, and remove any transdermal patches. Diaphoresis and hair are the two most common causes of a pad that will not capture, and both are trivially fixable in ten seconds — before you conclude the myocardium is refractory."
+                  "html": "<ul>\n<li>Clip (don't shave raw) dense chest hair,</li>\n<li>wipe the skin dry, and</li>\n<li>remove any transdermal patches.</li>\n</ul>\n<p>Diaphoresis and hair are the two most common causes of a pad that will not capture, and both are trivially fixable in ten seconds — before you conclude the myocardium is refractory.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Place pads anterior-posterior",
-                  "html": "Anterior pad over the left precordium (roughly V2–V3 position, just left of the sternum); posterior pad on the left infrascapular back, lateral to the spine. This sandwiches the ventricle in the current path. Avoid bone — sternum and spine both shunt current. Anterolateral placement also works and is acceptable if the patient cannot be turned, but A-P generally captures at lower output."
+                  "html": "<ul>\n<li><b>Anterior</b> pad over the left precordium (roughly V2–V3 position, just left of the sternum);</li>\n<li><b>posterior</b> pad on the left infrascapular back, lateral to the spine.</li>\n</ul>\n<p>This sandwiches the ventricle in the current path.</p>\n<p>Avoid bone — sternum and spine both shunt current.</p>\n<p>Anterolateral placement also works and is acceptable if the patient cannot be turned, but A-P generally captures at lower output.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Set mode and rate",
-                  "html": "Demand (synchronous) mode for any patient with an intrinsic rhythm — it paces only when the patient doesn't. Use fixed/asynchronous mode only for asystole or when artifact is causing the pacer to oversense and inhibit itself. Set rate 60–80/min for most adults; higher (90–100) if you are overdrive-pacing pause-dependent torsades."
+                  "html": "<ul>\n<li><b>Demand (synchronous) mode</b> for any patient with an intrinsic rhythm — it paces only when the patient doesn't.</li>\n<li>Use <b>fixed/asynchronous mode</b> only for asystole or when artifact is causing the pacer to oversense and inhibit itself.</li>\n</ul>\n<p>Set rate 60–80/min for most adults; higher (90–100) if you are overdrive-pacing pause-dependent torsades.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Find capture — choose your direction deliberately",
-                  "html": "Two accepted approaches. <b>Ramp up</b> from the lowest output and climb until capture appears: better tolerated in a conscious, marginally stable patient. <b>Start at maximum</b> and dial down until you lose capture, then set above that: faster, and the right choice in a peri-arrest patient where you cannot afford to spend thirty seconds hunting. Typical capture thresholds are wide — commonly around 40–90&nbsp;mA — and depend heavily on body habitus, pad contact, and effusion."
+                  "html": "<p>Two accepted approaches.</p>\n<ul>\n<li><b>Ramp up</b> from the lowest output and climb until capture appears: better tolerated in a conscious, marginally stable patient.</li>\n<li><b>Start at maximum</b> and dial down until you lose capture, then set above that: faster, and the right choice in a peri-arrest patient where you cannot afford to spend thirty seconds hunting.</li>\n</ul>\n<p>Typical capture thresholds are wide — commonly around 40–90&nbsp;mA — and depend heavily on body habitus, pad contact, and effusion.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Set a safety margin",
-                  "html": "Once you identify the capture threshold, run the output roughly 10&nbsp;mA above it. Thresholds drift with position, sweat, and pad gel drying out; running at exactly threshold means intermittent loss of capture you may not notice immediately."
+                  "html": "<p>Once you identify the capture threshold, run the output roughly 10&nbsp;mA above it.</p>\n<p>Thresholds drift with position, sweat, and pad gel drying out; running at exactly threshold means intermittent loss of capture you may not notice immediately.</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Sedate — and understand what hurts",
-                  "html": "The pain is skeletal muscle contraction of the chest wall, not the heart. It is genuinely severe and patients describe it as the worst part of their resuscitation. Analgesia plus anxiolysis, titrated carefully — you are sedating a patient whose blood pressure depends on the thing causing the pain, so small doses, frequent reassessment, and a vasopressor within reach."
+                  "html": "<p>The pain is skeletal muscle contraction of the chest wall, not the heart. It is genuinely severe and patients describe it as the worst part of their resuscitation.</p>\n<p><b>Analgesia plus anxiolysis</b>, titrated carefully — you are sedating a patient whose blood pressure depends on the thing causing the pain, so small doses, frequent reassessment, and a vasopressor within reach.</p>"
                 }
               ]
             }
@@ -3908,7 +3908,7 @@
             {
               "type": "box",
               "color": "amber",
-              "html": "<p><b>Electrical capture</b> means each pacing spike is followed by a genuine, wide paced QRS with a <b>discordant T wave</b> — the T deflects <i>opposite</i> to the main QRS vector, the same repolarization pattern you expect in LBBB. That discordance is a feature, not a problem: it is evidence the complex is a genuinely paced depolarization rather than artifact. (<b>Concordant</b> ST/T changes in a paced rhythm are the abnormal finding — one of the Sgarbossa criteria for ischemia.) <b>Mechanical capture</b> means that complex generated an actual contraction.</p>\n<p><b>False capture</b> is the trap: every pacing spike is followed by a wide squiggle on the monitor that looks exactly like a paced complex but is chest-wall muscle artifact, and the pacer is doing nothing to the heart. Operators declare success, stop escalating, and the patient stays in a perfusionless bradycardia with a monitor that looks reassuring. This is common enough that you should assume it until disproven.</p>"
+              "html": "<p><b>Electrical capture</b> means each pacing spike is followed by a genuine, wide paced QRS with a <b>discordant T wave</b> — the T deflects <i>opposite</i> to the main QRS vector, the same repolarization pattern you expect in LBBB. That discordance is a feature, not a problem: it is evidence the complex is a genuinely paced depolarization rather than artifact. (<b>Concordant</b> ST/T changes in a paced rhythm are the abnormal finding — one of the Sgarbossa criteria for ischemia.) <b>Mechanical capture</b> means that complex generated an actual contraction.</p>\n<p><b>False capture</b> is the trap: every pacing spike is followed by a wide squiggle on the monitor that looks exactly like a paced complex but is chest-wall muscle artifact, and the pacer is doing nothing to the heart.</p>\n<p>Operators declare success, stop escalating, and the patient stays in a perfusionless bradycardia with a monitor that looks reassuring.</p>\n<p>This is common enough that you should assume it until disproven.</p>"
             },
             {
               "type": "box",
@@ -3926,7 +3926,7 @@
               "type": "alert",
               "color": "red",
               "title": "Pacing spikes with no pulse is still PEA",
-              "html": "If you have convincing electrical capture and no mechanical capture, the problem is no longer the conduction system — it is pump, volume, or obstruction. Pacing faster will not fix tamponade, a massive PE, profound hyperkalemia, or an empty ventricle. Go back to the arrest algorithm and the reversible causes."
+              "html": "<p>If you have convincing electrical capture and no mechanical capture, the problem is no longer the conduction system — it is pump, volume, or obstruction.</p>\n<p>Pacing faster will not fix tamponade, a massive PE, profound hyperkalemia, or an empty ventricle. Go back to the arrest algorithm and the reversible causes.</p>"
             }
           ]
         },
@@ -3948,31 +3948,31 @@
                   "num": "1",
                   "color": "teal",
                   "title": "Test the balloon, then fully deflate it",
-                  "html": "Inflate to the labeled volume with air and look for symmetric inflation and no leak — some operators submerge it in sterile saline to check for bubbles. Then deflate completely and leave the syringe attached. A balloon you discover is ruptured <i>after</i> the wire is in the SVC costs you the entire insertion."
+                  "html": "<p>Inflate to the labeled volume with air and look for symmetric inflation and no leak — some operators submerge it in sterile saline to check for bubbles.</p>\n<p>Then deflate completely and leave the syringe attached.</p>\n<p>A balloon you discover is ruptured <i>after</i> the wire is in the SVC costs you the entire insertion.</p>"
                 },
                 {
                   "num": "2",
                   "color": "blue",
                   "title": "Load the sterile sleeve onto the wire",
-                  "html": "Slide it on from the proximal end and push it back out of your way toward the connector end. It gets extended and locked onto the sheath hub at the end of the procedure. This step cannot be done later."
+                  "html": "<p>Slide it on from the proximal end and push it back out of your way toward the connector end.</p>\n<p>It gets extended and locked onto the sheath hub at the end of the procedure.</p>\n<p><b>This step cannot be done later.</b></p>"
                 },
                 {
                   "num": "3",
                   "color": "purple",
                   "title": "Know your polarity: distal tip = negative",
-                  "html": "The <b>distal tip electrode is the cathode (negative)</b>; the proximal ring is the anode (positive). Every connection downstream depends on this — the ECG clip, and later the generator cable. Identify which pin on your wire's connector corresponds to the distal tip <i>now</i>, on the field, with the packaging still in front of you."
+                  "html": "<ul>\n<li>The <b>distal tip electrode is the cathode (negative)</b>;</li>\n<li>the proximal ring is the anode (positive).</li>\n</ul>\n<p>Every connection downstream depends on this — the ECG clip, and later the generator cable.</p>\n<p>Identify which pin on your wire's connector corresponds to the distal tip <i>now</i>, on the field, with the packaging still in front of you.</p>"
                 },
                 {
                   "num": "4",
                   "color": "red",
                   "title": "Clip the V lead to the distal electrode",
-                  "html": "Attach an alligator clip from the <b>distal/negative</b> pin to the <b>V1 lead</b> of the ECG machine. The wire's tip now functions as a roving intracardiac electrode, and V1 on your ECG becomes a live readout of where the tip is. <b>Only the distal tip completes this circuit usefully</b> — clip the proximal ring by mistake and you will not get a clean injury pattern, and you will float the wire blind while believing you have guidance."
+                  "html": "<p>Attach an alligator clip from the <b>distal/negative</b> pin to the <b>V1 lead</b> of the ECG machine.</p>\n<p>The wire's tip now functions as a roving intracardiac electrode, and V1 on your ECG becomes a live readout of where the tip is.</p>\n<p><b>Only the distal tip completes this circuit usefully</b> — clip the proximal ring by mistake and you will not get a clean injury pattern, and you will float the wire blind while believing you have guidance.</p>"
                 },
                 {
                   "num": "5",
                   "color": "amber",
                   "title": "Power up and pre-set the generator — but don't connect it yet",
-                  "html": "Confirm the battery, set rate 70–80/min, output toward maximum (commonly ~10–20&nbsp;mA to start), sensitivity to asynchronous/fixed for the float. Leave it off or disconnected. <b>You connect the generator after you have your target position</b> — ECG guidance and pacing output on the same wire at the same time interfere with each other."
+                  "html": "<ul>\n<li>Confirm the battery,</li>\n<li>set rate 70–80/min,</li>\n<li>output toward maximum (commonly ~10–20&nbsp;mA to start),</li>\n<li>sensitivity to asynchronous/fixed for the float.</li>\n</ul>\n<p>Leave it off or disconnected.</p>\n<p><b>You connect the generator after you have your target position</b> — ECG guidance and pacing output on the same wire at the same time interfere with each other.</p>"
                 }
               ]
             },
@@ -4000,55 +4000,55 @@
                   "num": "1",
                   "color": "teal",
                   "title": "Place the introducer sheath",
-                  "html": "Right internal jugular is the most direct, straightest path to the right ventricle and is the preferred site when you have a choice; left subclavian is the next most forgiving curve. Femoral works but usually requires fluoroscopy. Ultrasound-guided, full barrier, and confirm venous placement before dilating."
+                  "html": "<ul>\n<li><b>Right internal jugular</b> is the most direct, straightest path to the right ventricle and is the preferred site when you have a choice;</li>\n<li><b>left subclavian</b> is the next most forgiving curve.</li>\n<li><b>Femoral</b> works but usually requires fluoroscopy.</li>\n</ul>\n<p>Ultrasound-guided, full barrier, and confirm venous placement before dilating.</p>"
                 },
                 {
                   "num": "2",
                   "color": "blue",
                   "title": "Insert the wire to roughly 15–20 cm, balloon down",
-                  "html": "Advance the deflated wire through the hemostatic valve until the tip is safely past the sheath tip and sitting in the vein — about 15–20&nbsp;cm from a neck site. Use the wire's depth markings."
+                  "html": "<p>Advance the deflated wire through the hemostatic valve until the tip is safely past the sheath tip and sitting in the vein — about 15–20&nbsp;cm from a neck site.</p>\n<p>Use the wire's depth markings.</p>"
                 },
                 {
                   "num": "3",
                   "color": "purple",
                   "title": "Now inflate the balloon",
-                  "html": "<b>Never inflate inside the sheath</b> — you will rupture the balloon against the introducer, and you will not know until the wire refuses to float. Once past the sheath tip, inflate to the labeled volume and lock the stopcock if your wire has one. The inflated balloon is what lets venous flow carry the tip in the right direction."
+                  "html": "<p><b>Never inflate inside the sheath</b> — you will rupture the balloon against the introducer, and you will not know until the wire refuses to float.</p>\n<p>Once past the sheath tip, inflate to the labeled volume and lock the stopcock if your wire has one.</p>\n<p>The inflated balloon is what lets venous flow carry the tip in the right direction.</p>"
                 },
                 {
                   "num": "4",
                   "color": "red",
                   "title": "Advance and read the V1 waveform as a map",
-                  "html": "Advance in smooth, unhurried increments and watch V1. <b>SVC:</b> large negative P wave, small QRS. <b>Right atrium:</b> P wave becomes very large, often biphasic — the P is bigger than the QRS. <b>Crossing the tricuspid into the RV:</b> the P wave abruptly shrinks and the <b>QRS becomes large</b>. <b>Tip against RV endocardium:</b> <b>ST-segment elevation — the current of injury.</b> That is your endpoint. It means the electrode is in contact with ventricular wall, which is exactly what you need for capture."
+                  "html": "<p>Advance in smooth, unhurried increments and watch V1.</p>\n<ol>\n<li><b>SVC:</b> large negative P wave, small QRS.</li>\n<li><b>Right atrium:</b> P wave becomes very large, often biphasic — the P is bigger than the QRS.</li>\n<li><b>Crossing the tricuspid into the RV:</b> the P wave abruptly shrinks and the <b>QRS becomes large</b>.</li>\n<li><b>Tip against RV endocardium:</b> <b>ST-segment elevation — the current of injury.</b></li>\n</ol>\n<p><b>That is your endpoint.</b> It means the electrode is in contact with ventricular wall, which is exactly what you need for capture.</p>"
                 },
                 {
                   "num": "5",
                   "color": "amber",
                   "title": "Recognize the depth you should be at",
-                  "html": "From a right IJ, the RV is typically reached around 30–35&nbsp;cm; from a left subclavian, a few centimeters more. Treat these as a sanity check, not a target — <b>the waveform and capture tell you where you are; the centimeter markings only tell you when something is wrong.</b> If you are at 45–50&nbsp;cm with no ventricular signal, you are coiling in the atrium or have gone down the IVC. Withdraw and start again rather than pushing."
+                  "html": "<ul>\n<li>From a right IJ, the RV is typically reached around 30–35&nbsp;cm;</li>\n<li>from a left subclavian, a few centimeters more.</li>\n</ul>\n<p>Treat these as a sanity check, not a target — <b>the waveform and capture tell you where you are; the centimeter markings only tell you when something is wrong.</b></p>\n<p>If you are at 45–50&nbsp;cm with no ventricular signal, you are coiling in the atrium or have gone down the IVC. Withdraw and start again rather than pushing.</p>"
                 },
                 {
                   "num": "6",
                   "color": "teal",
                   "title": "Deflate the balloon, then connect the generator",
-                  "html": "Deflate once you have the injury pattern. Connect the cable with <b>distal/tip to negative, proximal ring to positive</b>. Turn the generator on and confirm capture."
+                  "html": "<ol>\n<li>Deflate once you have the injury pattern.</li>\n<li>Connect the cable with <b>distal/tip to negative, proximal ring to positive</b>.</li>\n<li>Turn the generator on and confirm capture.</li>\n</ol>"
                 },
                 {
                   "num": "7",
                   "color": "blue",
                   "title": "Find the true capture threshold",
-                  "html": "With capture established, <i>reduce</i> output until capture is lost — that value is the threshold. A well-positioned wire captures at a low threshold, commonly under 1&nbsp;mA; a threshold above ~2&nbsp;mA suggests the tip is not well apposed and you should consider repositioning now rather than at 3&nbsp;a.m. Then set the running output at roughly 2–3× threshold."
+                  "html": "<p>With capture established, <i>reduce</i> output until capture is lost — that value is the threshold.</p>\n<ul>\n<li>A well-positioned wire captures at a low threshold, commonly under 1&nbsp;mA;</li>\n<li>a threshold above ~2&nbsp;mA suggests the tip is not well apposed and you should consider repositioning now rather than at 3&nbsp;a.m.</li>\n</ul>\n<p>Then set the running output at roughly <b>2–3× threshold</b>.</p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Set sensitivity and switch to demand",
-                  "html": "Move off asynchronous to demand mode for any patient with an underlying rhythm. Remember the counterintuitive direction: on most generators a <i>lower</i> mV number means <i>more</i> sensitive. Undersensing (spikes landing on intrinsic beats, with R-on-T risk) means you should lower the number; oversensing (inappropriate inhibition and pauses) means raise it."
+                  "html": "<p>Move off asynchronous to demand mode for any patient with an underlying rhythm.</p>\n<p>Remember the counterintuitive direction: on most generators a <i>lower</i> mV number means <i>more</i> sensitive.</p>\n<ul>\n<li><b>Undersensing</b> (spikes landing on intrinsic beats, with R-on-T risk) means you should lower the number;</li>\n<li><b>oversensing</b> (inappropriate inhibition and pauses) means raise it.</li>\n</ul>"
                 },
                 {
                   "num": "9",
                   "color": "red",
                   "title": "Lock the sleeve, secure, and confirm with imaging",
-                  "html": "Extend the sterile sleeve and lock it to the sheath hub, suture/secure the sheath, and tape the generator to the patient — not to the bed, where a transfer will avulse the wire. Obtain a chest radiograph to confirm the tip sits at the RV apex and to look for a pneumothorax from the access itself."
+                  "html": "<ul>\n<li>Extend the sterile sleeve and lock it to the sheath hub,</li>\n<li>suture/secure the sheath, and</li>\n<li>tape the generator to the patient — not to the bed, where a transfer will avulse the wire.</li>\n</ul>\n<p>Obtain a chest radiograph to confirm the tip sits at the RV apex and to look for a pneumothorax from the access itself.</p>"
                 }
               ]
             },
@@ -4063,7 +4063,7 @@
               "type": "alert",
               "color": "amber",
               "title": "Balloon up going in, balloon down coming out — always",
-              "html": "Advance only with the balloon inflated; withdraw only with it deflated. Dragging an inflated balloon backward across the tricuspid apparatus can entangle or damage chordae and valve leaflets. If you need to pull back even a centimeter, deflate first, every single time."
+              "html": "<p><b>Advance only with the balloon inflated; withdraw only with it deflated.</b></p>\n<p>Dragging an inflated balloon backward across the tricuspid apparatus can entangle or damage chordae and valve leaflets. If you need to pull back even a centimeter, deflate first, every single time.</p>"
             }
           ]
         },
@@ -4258,7 +4258,7 @@
               "type": "alert",
               "color": "red",
               "title": "You are underestimating the blood loss — everyone does",
-              "html": "Visual estimation of obstetric blood loss under-reads by <b>30–50%</b>, and the error grows as the volume grows. <b>Quantify it:</b> weigh pads, drapes and sponges (1 g = 1 mL, minus dry weight) and use a graduated under-buttocks drape. And remember that a healthy pregnant woman's blood volume is <b>up 40–50%</b>, so she compensates beautifully and then collapses: vital signs can stay near-normal until 1500 mL is gone. <b>Watch the shock index (HR ÷ SBP) — above 0.9 to 1.0 is an early and validated trigger</b>, well before hypotension appears."
+              "html": "<p>Visual estimation of obstetric blood loss under-reads by <b>30–50%</b>, and the error grows as the volume grows.</p>\n<p><b>Quantify it:</b> weigh pads, drapes and sponges (1 g = 1 mL, minus dry weight) and use a graduated under-buttocks drape.</p>\n<p>And remember that a healthy pregnant woman's blood volume is <b>up 40–50%</b>, so she compensates beautifully and then collapses: vital signs can stay near-normal until 1500 mL is gone.</p>\n<p><b>Watch the shock index (HR ÷ SBP) — above 0.9 to 1.0 is an early and validated trigger</b>, well before hypotension appears.</p>"
             }
           ]
         },
@@ -4308,19 +4308,19 @@
                   "num": "1",
                   "color": "red",
                   "title": "Empty the bladder first",
-                  "html": "Catheterize. A distended bladder displaces the uterus and physically prevents contraction, and this single step sometimes resolves the problem. It also gives you urine output as a perfusion marker for everything that follows."
+                  "html": "<p><b>Catheterize.</b></p>\n<p>A distended bladder displaces the uterus and physically prevents contraction, and this single step sometimes resolves the problem.</p>\n<p>It also gives you urine output as a perfusion marker for everything that follows.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Support the lower segment with the second hand",
-                  "html": "Cup the fundus with one hand and place the other just above the symphysis, pressing back and supporting the lower uterine segment. <b>Vigorous one-handed massage of an atonic uterus can invert it.</b> The lower hand is a guard, not an afterthought."
+                  "html": "<p>Cup the fundus with one hand and place the other just above the symphysis, pressing back and supporting the lower uterine segment.</p>\n<p><b>Vigorous one-handed massage of an atonic uterus can invert it.</b> The lower hand is a guard, not an afterthought.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Massage firmly — and know what you are feeling for",
-                  "html": "A deep, firm, kneading circular motion, not a light rub. <b>The endpoint is a uterus that feels like a clenched fist</b>, globular and hard, at or below the umbilicus. Boggy, wide, and doughy means atony continues. Express retained clot from the lower segment as tone returns — clot in the cavity perpetuates atony."
+                  "html": "<p>A deep, firm, kneading circular motion, not a light rub.</p>\n<ul>\n<li><b>The endpoint is a uterus that feels like a clenched fist</b>, globular and hard, at or below the umbilicus.</li>\n<li>Boggy, wide, and doughy means atony continues.</li>\n</ul>\n<p>Express retained clot from the lower segment as tone returns — clot in the cavity perpetuates atony.</p>"
                 }
               ]
             },
@@ -4335,31 +4335,31 @@
                   "num": "4",
                   "color": "blue",
                   "title": "Vaginal hand into the anterior fornix, as a fist",
-                  "html": "Insert the whole hand, make a fist in the anterior fornix, and press <b>upward and forward</b> against the anterior wall of the uterus. Say what you are about to do — she is awake, and this is frightening as well as painful."
+                  "html": "<p>Insert the whole hand, make a fist in the anterior fornix, and press <b>upward and forward</b> against the anterior wall of the uterus.</p>\n<p>Say what you are about to do — she is awake, and this is frightening as well as painful.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Abdominal hand behind the fundus, pulling it forward",
-                  "html": "Reach behind the uterus abdominally, cup the posterior wall, and draw the fundus <b>down and forward onto the vaginal fist</b>. You are not pressing straight down — you are bringing the two hands together."
+                  "html": "<p>Reach behind the uterus abdominally, cup the posterior wall, and draw the fundus <b>down and forward onto the vaginal fist</b>.</p>\n<p>You are not pressing straight down — you are bringing the two hands together.</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Compress and hold",
-                  "html": "Squeeze the whole uterus between your hands, hard, and sustain it. This works two ways: it compresses the myometrium directly, and it kinks the uterine arteries in the broad ligament. <b>It is exhausting within minutes — plan to rotate operators before anyone weakens.</b> Do not release intermittently to check; hold, while the drugs and the team catch up."
+                  "html": "<p>Squeeze the whole uterus between your hands, hard, and sustain it.</p>\n<p>This works two ways:</p>\n<ul>\n<li>it compresses the myometrium directly, and</li>\n<li>it kinks the uterine arteries in the broad ligament.</li>\n</ul>\n<p><b>It is exhausting within minutes — plan to rotate operators before anyone weakens.</b></p>\n<p>Do not release intermittently to check; hold, while the drugs and the team catch up.</p>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Everything else happens around you",
-                  "html": "Compression is a holding action. While it is held: uterotonics given, TXA given, two lines in, blood ordered, bladder emptied, the genital tract inspected, and the next step being prepared. <b>Bimanual compression that continues for twenty minutes with nothing else happening is not a plan.</b>"
+                  "html": "<p>Compression is a holding action. While it is held:</p>\n<ul>\n<li>uterotonics given,</li>\n<li>TXA given,</li>\n<li>two lines in,</li>\n<li>blood ordered,</li>\n<li>bladder emptied,</li>\n<li>the genital tract inspected, and</li>\n<li>the next step being prepared.</li>\n</ul>\n<p><b>Bimanual compression that continues for twenty minutes with nothing else happening is not a plan.</b></p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Aortic compression, if it is catastrophic",
-                  "html": "In torrential hemorrhage, a closed fist pressed hard just above the umbilicus, directed posteriorly onto the vertebral column, compresses the abdominal aorta. Confirm by loss of femoral pulses. A crude, tiring, temporary measure — and it buys minutes when nothing else is working."
+                  "html": "<p>In torrential hemorrhage, a closed fist pressed hard just above the umbilicus, directed posteriorly onto the vertebral column, compresses the abdominal aorta.</p>\n<p>Confirm by loss of femoral pulses.</p>\n<p>A crude, tiring, temporary measure — and it buys minutes when nothing else is working.</p>"
                 }
               ]
             }
@@ -4419,7 +4419,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<p><b>The two that catch people:</b> methylergonovine in a preeclamptic woman, and carboprost in an asthmatic. Both are given in a rush by someone reaching for the next ampoule, and both patient groups are common on a labor ward. <b>Say the contraindication out loud as you draw it up.</b></p>\n<p><b>Uterine artery blood flow at term is roughly 500–700 mL/min.</b> Hemostasis after delivery is <i>mechanical</i> — contracted myometrium strangling the spiral arteries, the “living ligatures” — not clot formation. That is why a woman with normal coagulation can exsanguinate from an atonic uterus in minutes, and why a profoundly coagulopathic woman stops bleeding once the uterus contracts.</p>"
+              "html": "<p><b>The two that catch people:</b></p>\n<ul>\n<li>methylergonovine in a preeclamptic woman, and</li>\n<li>carboprost in an asthmatic.</li>\n</ul>\n<p>Both are given in a rush by someone reaching for the next ampoule, and both patient groups are common on a labor ward. <b>Say the contraindication out loud as you draw it up.</b></p>\n<p><b>Uterine artery blood flow at term is roughly 500–700 mL/min.</b> </p>\n<p>Hemostasis after delivery is <i>mechanical</i> — contracted myometrium strangling the spiral arteries, the “living ligatures” — not clot formation.</p>\n<p>That is why a woman with normal coagulation can exsanguinate from an atonic uterus in minutes, and why a profoundly coagulopathic woman stops bleeding once the uterus contracts.</p>"
             }
           ]
         },
@@ -4640,13 +4640,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li><b>Maternal cardiac arrest with a uterus palpable at or above the umbilicus</b> — roughly 20 weeks — without ROSC in the first few minutes of high-quality resuscitation</li>\n      <li><b>Peri-arrest with profound, refractory shock</b> in late pregnancy, where aortocaval compression is plausibly the limiting factor</li>\n      <li><b>Fundal height is the trigger, not a documented gestational age.</b> Nobody has dates in an arrest, and a stated LMP is not a reason to wait. Put a hand on the abdomen.</li>\n</ul>\n<p><b>This is a maternal resuscitation maneuver.</b> The gravid uterus at term can sequester a substantial fraction of cardiac output and compresses both the inferior vena cava and the aorta against the spine. Chest compressions already generate only a fraction of normal output; against aortocaval obstruction they may generate almost nothing. <b>Emptying the uterus restores venous return, and it is frequently the intervention that makes the rest of the resuscitation work.</b></p>\n<p><b>It is indicated even when the fetus is already dead, and even below the threshold of fetal viability</b>, if the uterus is large enough to obstruct. Between about 20 and 24 weeks the procedure is performed for the mother alone. Framing this out loud to the team — “<i>we are decompressing the aorta and vena cava</i>” rather than “<i>we are delivering a baby</i>” — measurably reduces hesitation, and hesitation is the main failure mode.</p>"
+              "html": "<ul>\n      <li><b>Maternal cardiac arrest with a uterus palpable at or above the umbilicus</b> — roughly 20 weeks — without ROSC in the first few minutes of high-quality resuscitation</li>\n      <li><b>Peri-arrest with profound, refractory shock</b> in late pregnancy, where aortocaval compression is plausibly the limiting factor</li>\n      <li><b>Fundal height is the trigger, not a documented gestational age.</b> Nobody has dates in an arrest, and a stated LMP is not a reason to wait. Put a hand on the abdomen.</li>\n</ul>\n<p><b>This is a maternal resuscitation maneuver.</b></p>\n<p>The gravid uterus at term can sequester a substantial fraction of cardiac output and compresses both the inferior vena cava and the aorta against the spine. Chest compressions already generate only a fraction of normal output; against aortocaval obstruction they may generate almost nothing.</p>\n<p><b>Emptying the uterus restores venous return, and it is frequently the intervention that makes the rest of the resuscitation work.</b></p>\n<p><b>It is indicated even when the fetus is already dead, and even below the threshold of fetal viability</b>, if the uterus is large enough to obstruct. Between about 20 and 24 weeks the procedure is performed for the mother alone.</p>\n<p>Framing this out loud to the team — “<i>we are decompressing the aorta and vena cava</i>” rather than “<i>we are delivering a baby</i>” — measurably reduces hesitation, and hesitation is the main failure mode.</p>"
             },
             {
               "type": "alert",
               "color": "amber",
               "title": "The four-minute rule is a prompt, not a deadline",
-              "html": "Katz's 1986 recommendation — incision at 4 minutes, delivery by 5 — was derived from case reports, and it remains the right thing to aim for. But its modern misuse is the opposite of its intent: <b>teams look at a clock reading eleven minutes and conclude they have missed the window.</b> They have not. Maternal ROSC and intact neonatal survival are both documented well beyond 5 minutes, including past 15. <b>If the mother is still in arrest and the uterus is still obstructing, the procedure is still indicated.</b> Aim for four minutes; never use having passed it as a reason not to act."
+              "html": "<p>Katz's 1986 recommendation — incision at 4 minutes, delivery by 5 — was derived from case reports, and it remains the right thing to aim for.</p>\n<p>But its modern misuse is the opposite of its intent: <b>teams look at a clock reading eleven minutes and conclude they have missed the window.</b> They have not. Maternal ROSC and intact neonatal survival are both documented well beyond 5 minutes, including past 15.</p>\n<p><b>If the mother is still in arrest and the uterus is still obstructing, the procedure is still indicated.</b></p>\n<p>Aim for four minutes; never use having passed it as a reason not to act.</p>"
             }
           ]
         },
@@ -4674,7 +4674,7 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li><b>A scalpel.</b> A No. 10 blade. That is the whole essential list, and saying so out loud helps people start.</li>\n      <li><b>Two cord clamps and scissors</b> — or any two clamps and anything that cuts.</li>\n      <li><b>Bandage or Mayo scissors</b> for extending the uterine incision, if reaching for them costs nothing.</li>\n      <li><b>Abdominal packs and towels</b> for after ROSC.</li>\n      <li><b>Suction</b>, if it is already in the room.</li>\n      <li><b>Neonatal resuscitation equipment and a separate team</b> — warmer, bag-mask with a neonatal mask, towels, cord clamp. This is a second resuscitation and it needs its own people. Where there is any warning at all, stage them before incision.</li>\n      <li><b>Oxytocin</b>, drawn and ready for the moment ROSC is achieved — see §07.</li>\n</ul>\n<p><b>A pre-assembled pack helps, but only if it is where the patient is.</b> Many units keep a resuscitative hysterotomy tray on the maternal arrest trolley. If yours does, know where it lives. If it does not, the scalpel on the intubation trolley is sufficient, and the procedure has been done with less.</p>"
+              "html": "<ul>\n      <li><b>A scalpel.</b> A No. 10 blade. That is the whole essential list, and saying so out loud helps people start.</li>\n      <li><b>Two cord clamps and scissors</b> — or any two clamps and anything that cuts.</li>\n      <li><b>Bandage or Mayo scissors</b> for extending the uterine incision, if reaching for them costs nothing.</li>\n      <li><b>Abdominal packs and towels</b> for after ROSC.</li>\n      <li><b>Suction</b>, if it is already in the room.</li>\n      <li><b>Neonatal resuscitation equipment and a separate team</b> — warmer, bag-mask with a neonatal mask, towels, cord clamp. This is a second resuscitation and it needs its own people. Where there is any warning at all, stage them before incision.</li>\n      <li><b>Oxytocin</b>, drawn and ready for the moment ROSC is achieved — see §07.</li>\n</ul>\n<p><b>A pre-assembled pack helps, but only if it is where the patient is.</b> Many units keep a resuscitative hysterotomy tray on the maternal arrest trolley.</p>\n<ul>\n<li>If yours does, know where it lives.</li>\n<li>If it does not, the scalpel on the intubation trolley is sufficient, and the procedure has been done with less.</li>\n</ul>"
             }
           ]
         },
@@ -4710,49 +4710,49 @@
                   "num": "1",
                   "color": "red",
                   "title": "Announce the arrest time, and have someone call the clock",
-                  "html": "“<i>Arrest at 14:06. I want the time called every minute. If there is no ROSC at 14:10 we are doing a hysterotomy.</i>” Naming the decision in advance is what converts a four-minute target into something that actually happens, because in the moment nobody wants to be the person who says it."
+                  "html": "<p>“<i>Arrest at 14:06. I want the time called every minute. If there is no ROSC at 14:10 we are doing a hysterotomy.</i>”</p>\n<p>Naming the decision in advance is what converts a four-minute target into something that actually happens, because in the moment nobody wants to be the person who says it.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Compressions and displacement continue throughout",
-                  "html": "Nothing stops for this. Not for the incision, not for the delivery. Someone maintains left uterine displacement until the uterus is open."
+                  "html": "<p>Nothing stops for this. Not for the incision, not for the delivery.</p>\n<p>Someone maintains left uterine displacement until the uterus is open.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Vertical midline, umbilicus to symphysis, through everything",
-                  "html": "A single firm stroke from just above the umbilicus down to the pubic symphysis, through skin, fat, and fascia. <b>There is very little bleeding in arrest</b> — no perfusion pressure — and this surprises people the first time. Do not creep through the layers. Vertical is chosen because it is fast and forgiving of anatomy you cannot see."
+                  "html": "<p>A single firm stroke from just above the umbilicus down to the pubic symphysis, through skin, fat, and fascia.</p>\n<p><b>There is very little bleeding in arrest</b> — no perfusion pressure — and this surprises people the first time. Do not creep through the layers.</p>\n<p>Vertical is chosen because it is fast and forgiving of anatomy you cannot see.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Open the peritoneum, sweep the bladder down",
-                  "html": "Enter bluntly with fingers where you can, to avoid bowel and bladder. The bladder sits over the lower uterine segment and is often distended — push it inferiorly out of the way rather than cutting through it."
+                  "html": "<p>Enter bluntly with fingers where you can, to avoid bowel and bladder.</p>\n<p>The bladder sits over the lower uterine segment and is often distended — push it inferiorly out of the way rather than cutting through it.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Vertical uterine incision — start small, extend with fingers",
-                  "html": "Make a short vertical incision in the lower uterine segment and continue until you are through the myometrium and into the cavity. <b>Then put the scalpel down.</b> Extend the opening upward with your fingers, or with bandage scissors advanced between two fingers held inside the uterus as a shield. <b>Scalpel extension is how fetuses get lacerated</b>, and it is entirely avoidable."
+                  "html": "<p>Make a short vertical incision in the lower uterine segment and continue until you are through the myometrium and into the cavity.</p>\n<p><b>Then put the scalpel down.</b></p>\n<p>Extend the opening upward with your fingers, or with bandage scissors advanced between two fingers held inside the uterus as a shield.</p>\n<p><b>Scalpel extension is how fetuses get lacerated</b>, and it is entirely avoidable.</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Deliver, clamp, cut, hand off",
-                  "html": "Deliver the fetus by whatever presentation you find — a hand under the head, or by the feet if breech. Double-clamp and cut the cord and <b>hand the neonate to a different person with a different job.</b> The mother remains your patient. If no neonatal team exists yet, that is a hard reality to state out loud and then work within."
+                  "html": "<p>Deliver the fetus by whatever presentation you find — a hand under the head, or by the feet if breech.</p>\n<p>Double-clamp and cut the cord and <b>hand the neonate to a different person with a different job.</b></p>\n<p><b>The mother remains your patient.</b> If no neonatal team exists yet, that is a hard reality to state out loud and then work within.</p>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Remove the placenta, then keep resuscitating",
-                  "html": "Deliver the placenta manually if it comes easily; do not spend time on it if it does not. <b>The decompression has already happened.</b> Reassess rhythm and continue the algorithm — venous return may now be dramatically better, and this is the point at which arrests sometimes convert."
+                  "html": "<p>Deliver the placenta manually if it comes easily; do not spend time on it if it does not.</p>\n<p><b>The decompression has already happened.</b></p>\n<p>Reassess rhythm and continue the algorithm — venous return may now be dramatically better, and this is the point at which arrests sometimes convert.</p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Record every time",
-                  "html": "Arrest, decision, incision, delivery. Someone writes these down as they happen. They will be needed for the neonatal team, for the debrief, and for the review that follows."
+                  "html": "<p>Arrest, decision, incision, delivery.</p>\n<p>Someone writes these down as they happen. They will be needed for the neonatal team, for the debrief, and for the review that follows.</p>"
                 }
               ]
             }
@@ -4952,7 +4952,7 @@
               "type": "alert",
               "color": "red",
               "title": "The clock is the whole problem",
-              "html": "Once the head is out, the chest cannot expand and the cord is compressed against the pelvis. Fetal pH falls by roughly <b>0.04 units per minute</b> from that moment. Beyond about <b>5 minutes</b>, the risk of hypoxic-ischemic injury rises steeply. <b>Announce the time the head delivered and have someone call it out every 30 seconds.</b> Under pressure, teams consistently believe far less time has elapsed than actually has — a called clock is the only reliable correction for that."
+              "html": "<p>Once the head is out, the chest cannot expand and the cord is compressed against the pelvis. </p>\n<ul>\n<li>Fetal pH falls by roughly <b>0.04 units per minute</b> from that moment.</li>\n<li>Beyond about <b>5 minutes</b>, the risk of hypoxic-ischemic injury rises steeply.</li>\n</ul>\n<p><b>Announce the time the head delivered and have someone call it out every 30 seconds.</b> Under pressure, teams consistently believe far less time has elapsed than actually has — a called clock is the only reliable correction for that.</p>"
             }
           ]
         },
@@ -5009,49 +5009,49 @@
                   "num": "1",
                   "color": "red",
                   "title": "Call for help. Note the time. Stop pushing.",
-                  "html": "Say the words “<i>shoulder dystocia</i>” out loud — it summons a specific response that “<i>I need a hand</i>” does not. Ask the mother to stop pushing for the moment; maternal effort against an impacted shoulder achieves nothing and makes the maneuvers harder. Flatten the bed and bring her buttocks to its edge."
+                  "html": "<p>Say the words “<i>shoulder dystocia</i>” out loud — it summons a specific response that “<i>I need a hand</i>” does not.</p>\n<p>Ask the mother to stop pushing for the moment; maternal effort against an impacted shoulder achieves nothing and makes the maneuvers harder.</p>\n<p>Flatten the bed and bring her buttocks to its edge.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "McRoberts — hyperflex the hips",
-                  "html": "One person per leg, hips sharply flexed onto the abdomen and slightly abducted. <b>This does not enlarge the pelvis.</b> It rotates the symphysis cephalad and flattens the sacral promontory, which frees the anterior shoulder from behind the pubic bone. Simple, non-invasive, and it resolves a large share of cases on its own."
+                  "html": "<p>One person per leg, hips sharply flexed onto the abdomen and slightly abducted.</p>\n<p><b>This does not enlarge the pelvis.</b> It rotates the symphysis cephalad and flattens the sacral promontory, which frees the anterior shoulder from behind the pubic bone.</p>\n<p>Simple, non-invasive, and it resolves a large share of cases on its own.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Suprapubic pressure — downward and lateral, from the fetal back",
-                  "html": "Stand on a stool. Heel of the hand just above the symphysis, over the <b>anterior shoulder</b>, pressing <b>downward and toward the fetal chest</b> — that is, from the side the baby's back is on. The aim is to <b>adduct the shoulder</b>, narrowing the bisacromial diameter, and nudge it into the oblique. Steady pressure first; a rocking CPR-like motion if steady fails. <b>McRoberts plus suprapubic pressure resolves the majority of dystocias.</b>"
+                  "html": "<p>Stand on a stool.</p>\n<p>Heel of the hand just above the symphysis, over the <b>anterior shoulder</b>, pressing <b>downward and toward the fetal chest</b> — that is, from the side the baby's back is on.</p>\n<p>The aim is to <b>adduct the shoulder</b>, narrowing the bisacromial diameter, and nudge it into the oblique.</p>\n<p>Steady pressure first; a rocking CPR-like motion if steady fails.</p>\n<p><b>McRoberts plus suprapubic pressure resolves the majority of dystocias.</b></p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Consider an episiotomy — for access, not for space",
-                  "html": "The obstruction is bone against bone, and cutting the perineum does not relieve it. What it can do is give your hand room for the internal maneuvers that follow. <b>Not routine</b>; a judgment call when you cannot get a hand in."
+                  "html": "<p>The obstruction is bone against bone, and cutting the perineum does not relieve it.</p>\n<p>What it can do is give your hand room for the internal maneuvers that follow.</p>\n<p><b>Not routine</b>; a judgment call when you cannot get a hand in.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Internal rotation — get a hand in posteriorly",
-                  "html": "Enter alongside the posterior shoulder, where the sacral hollow gives you room. Then either: <b>Rubin II</b> — fingers behind the <i>anterior</i> shoulder, pushing it toward the fetal chest to adduct and rotate it; or <b>Woods screw</b> — fingers on the front of the <i>posterior</i> shoulder, rotating the opposite way. <b>Combining Rubin II with Woods on opposite shoulders, turning them like a screw, is more effective than either alone.</b> The aim is to move the shoulders out of the anteroposterior plane into the oblique. If one direction fails, try the reverse."
+                  "html": "<p>Enter alongside the posterior shoulder, where the sacral hollow gives you room. Then either:</p>\n<ul>\n<li><b>Rubin II</b> — fingers behind the <i>anterior</i> shoulder, pushing it toward the fetal chest to adduct and rotate it; or</li>\n<li><b>Woods screw</b> — fingers on the front of the <i>posterior</i> shoulder, rotating the opposite way.</li>\n</ul>\n<p><b>Combining Rubin II with Woods on opposite shoulders, turning them like a screw, is more effective than either alone.</b></p>\n<p>The aim is to move the shoulders out of the anteroposterior plane into the oblique. If one direction fails, try the reverse.</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Deliver the posterior arm — the highest-yield internal maneuver",
-                  "html": "Reach into the sacral hollow, follow the posterior humerus to the elbow, and press the antecubital fossa to <b>flex the forearm</b>. Grasp the forearm or hand — <b>never the upper arm, which fractures</b> — and sweep it across the chest and out over the face. Removing one arm reduces the shoulder diameter by around 20% and usually frees the impaction immediately. <b>A humeral or clavicular fracture during this maneuver is an accepted cost</b>; it heals, and hypoxic brain injury does not."
+                  "html": "<ol>\n<li>Reach into the sacral hollow, follow the posterior humerus to the elbow, and press the antecubital fossa to <b>flex the forearm</b>.</li>\n<li>Grasp the forearm or hand — <b>never the upper arm, which fractures</b> — and sweep it across the chest and out over the face.</li>\n</ol>\n<p>Removing one arm reduces the shoulder diameter by around 20% and usually frees the impaction immediately.</p>\n<p><b>A humeral or clavicular fracture during this maneuver is an accepted cost</b>; it heals, and hypoxic brain injury does not.</p>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Gaskin — roll her onto all fours",
-                  "html": "Onto hands and knees. The change in pelvic geometry and the effect of gravity frees a proportion of dystocias on its own, and the shoulder that was posterior becomes the accessible one. <b>Underused</b>, because it looks disruptive mid-emergency. It is quick, it needs no equipment, and the internal maneuvers can all be repeated in this position. Impractical with an epidural or in an exhausted woman — but worth attempting when it is not."
+                  "html": "<p>Onto hands and knees.</p>\n<p>The change in pelvic geometry and the effect of gravity frees a proportion of dystocias on its own, and the shoulder that was posterior becomes the accessible one.</p>\n<p><b>Underused</b>, because it looks disruptive mid-emergency. It is quick, it needs no equipment, and the internal maneuvers can all be repeated in this position.</p>\n<p>Impractical with an epidural or in an exhausted woman — but worth attempting when it is not.</p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Then the last resorts — and say so out loud",
-                  "html": "If the sequence has been worked through twice without success, you are in genuinely rare territory: deliberate clavicular fracture, the Zavanelli maneuver, abdominal rescue, or symphysiotomy (§06). <b>All carry major morbidity, all are rarely performed, and the choice depends entirely on whether an operating room is reachable.</b> Get the most senior help available and state clearly what you are about to do."
+                  "html": "<p>If the sequence has been worked through twice without success, you are in genuinely rare territory:</p>\n<ul>\n<li>deliberate clavicular fracture,</li>\n<li>the Zavanelli maneuver,</li>\n<li>abdominal rescue, or</li>\n<li>symphysiotomy (§06).</li>\n</ul>\n<p><b>All carry major morbidity, all are rarely performed, and the choice depends entirely on whether an operating room is reachable.</b></p>\n<p>Get the most senior help available and state clearly what you are about to do.</p>"
                 }
               ]
             }
@@ -5110,7 +5110,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<p><b>Where it belongs.</b> Symphysiotomy retains a narrow place in settings where cesarean delivery is not available in the time the fetus has. Where an operating room is reachable, <b>Zavanelli and abdominal rescue are the correct last resorts and symphysiotomy is not.</b> The procedure was historically performed on women without consent and without adequate analgesia, and it left many with lifelong disability — that history is a reason to hold the indication narrowly and to obtain consent wherever it is possible, not a reason to pretend the procedure does not exist.</p>"
+              "html": "<p><b>Where it belongs.</b> Symphysiotomy retains a narrow place in settings where cesarean delivery is not available in the time the fetus has.</p>\n<p>Where an operating room is reachable, <b>Zavanelli and abdominal rescue are the correct last resorts and symphysiotomy is not.</b></p>\n<p>The procedure was historically performed on women without consent and without adequate analgesia, and it left many with lifelong disability — that history is a reason to hold the indication narrowly and to obtain consent wherever it is possible, not a reason to pretend the procedure does not exist.</p>"
             },
             {
               "type": "steps",
@@ -5119,37 +5119,37 @@
                   "num": "1",
                   "color": "red",
                   "title": "Confirm there is no surgical option in time",
-                  "html": "State it aloud and record it. All standard maneuvers must have failed, and cesarean must be genuinely unreachable — not merely inconvenient or slow to organize."
+                  "html": "<p>State it aloud and record it.</p>\n<p>All standard maneuvers must have failed, and cesarean must be genuinely unreachable — not merely inconvenient or slow to organize.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Catheterize, and displace the urethra",
-                  "html": "Place an indwelling catheter — it both empties the bladder and lets you feel where the urethra is. <b>An assistant's fingers in the vagina push the urethra laterally, away from the midline, and stay there throughout the cut.</b> Urethral and bladder injury is the characteristic complication and this is what prevents it."
+                  "html": "<p>Place an indwelling catheter — it both empties the bladder and lets you feel where the urethra is.</p>\n<p><b>An assistant's fingers in the vagina push the urethra laterally, away from the midline, and stay there throughout the cut.</b></p>\n<p>Urethral and bladder injury is the characteristic complication and this is what prevents it.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Two assistants on the legs — and a hard limit on abduction",
-                  "html": "One assistant per leg, supporting the thigh. <b>Total abduction must not exceed about 80–90°.</b> Once the symphysis is divided the pelvis is a hinge, and over-abduction tears the sacroiliac joints and the urethra. This limit is the difference between a recoverable injury and a permanently disabled woman, and it is the instruction most easily lost in the urgency."
+                  "html": "<p>One assistant per leg, supporting the thigh.</p>\n<p><b>Total abduction must not exceed about 80–90°.</b></p>\n<p>Once the symphysis is divided the pelvis is a hinge, and over-abduction tears the sacroiliac joints and the urethra.</p>\n<p>This limit is the difference between a recoverable injury and a permanently disabled woman, and it is the instruction most easily lost in the urgency.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Infiltrate local anesthetic",
-                  "html": "Over and into the joint. Seconds well spent, and she is awake."
+                  "html": "<p>Over and into the joint.</p>\n<p>Seconds well spent, and she is awake.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Divide the fibrocartilage in the midline",
-                  "html": "A stab incision over the symphysis, then divide the joint from front to back with the blade under the guiding finger. <b>The aim is partial division and roughly 2–2.5 cm of separation — measured, not maximal.</b> Complete division does not help further and worsens the injury."
+                  "html": "<p>A stab incision over the symphysis, then divide the joint from front to back with the blade under the guiding finger.</p>\n<p><b>The aim is partial division and roughly 2–2.5 cm of separation — measured, not maximal.</b></p>\n<p>Complete division does not help further and worsens the injury.</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Deliver, then close and support the pelvis",
-                  "html": "Deliver immediately with the maneuvers that previously failed — they will now usually succeed. Then close the skin, <b>keep the catheter in for several days</b>, apply a firm pelvic binder or strapping, and arrange bed rest with gradual mobilization. She needs analgesia, follow-up, and an honest explanation of what was done and why."
+                  "html": "<p>Deliver immediately with the maneuvers that previously failed — they will now usually succeed.</p>\n<p>Then:</p>\n<ul>\n<li>close the skin,</li>\n<li><b>keep the catheter in for several days</b>,</li>\n<li>apply a firm pelvic binder or strapping, and</li>\n<li>arrange bed rest with gradual mobilization.</li>\n</ul>\n<p>She needs analgesia, follow-up, and an honest explanation of what was done and why.</p>"
                 }
               ]
             }
@@ -5349,7 +5349,7 @@
               "type": "alert",
               "color": "amber",
               "title": "Why this population is different",
-              "html": "<p>Cooling that occurs <i>before</i> hypoxia is profoundly neuroprotective: cerebral oxygen consumption falls roughly 6–8% per degree, and intact neurologic survival has been documented after <b>hours</b> of CPR and core temperatures below 15 °C. <b>Nobody is dead until they are warm and dead.</b></p><p>The critical qualifier is the <i>order of events</i>. A patient who cooled first and then arrested has an excellent prognosis. A patient who was asphyxiated first — a prolonged avalanche burial with an obstructed airway, or a warm-water drowning — and cooled afterwards does not. <b>That sequence, not the temperature, is what the prognosis turns on.</b></p>"
+              "html": "<p>Cooling that occurs <i>before</i> hypoxia is profoundly neuroprotective: cerebral oxygen consumption falls roughly 6–8% per degree, and intact neurologic survival has been documented after <b>hours</b> of CPR and core temperatures below 15 °C. <b>Nobody is dead until they are warm and dead.</b></p><p>The critical qualifier is the <i>order of events</i>.</p>\n<ul>\n<li>A patient who cooled first and then arrested has an excellent prognosis.</li>\n<li>A patient who was asphyxiated first — a prolonged avalanche burial with an obstructed airway, or a warm-water drowning — and cooled afterwards does not.</li>\n</ul>\n<p><b>That sequence, not the temperature, is what the prognosis turns on.</b></p>"
             }
           ]
         },
@@ -5407,7 +5407,7 @@
             {
               "type": "box",
               "color": "red",
-              "html": "<p><b>Rescue collapse:</b> arrest during or shortly after extrication. The cold myocardium is exquisitely irritable and will fibrillate with mechanical stimulation, and standing a patient up removes the hydrostatic support their vasoconstricted, volume-depleted circulation depends on.</p>\n<ul>\n  <li><b>Keep them horizontal</b> throughout extrication and transport.</li>\n  <li><b>Move them as little and as gently as possible.</b> No rough handling, no sitting up, no unnecessary transfers.</li>\n  <li><b>Remove wet clothing by cutting</b>, and insulate with a vapor barrier plus insulation.</li>\n</ul>\n<p><b>Afterdrop:</b> the core temperature continues to fall after rescue, as cold peripheral blood returns centrally and heat continues to equilibrate inward. <b>Do not massage or actively warm the limbs</b>; direct external warming at the trunk — axillae, chest, groin, neck. Keep the periphery still.</p>"
+              "html": "<p><b>Rescue collapse:</b> arrest during or shortly after extrication. The cold myocardium is exquisitely irritable and will fibrillate with mechanical stimulation, and standing a patient up removes the hydrostatic support their vasoconstricted, volume-depleted circulation depends on.</p>\n<ul>\n  <li><b>Keep them horizontal</b> throughout extrication and transport.</li>\n  <li><b>Move them as little and as gently as possible.</b> No rough handling, no sitting up, no unnecessary transfers.</li>\n  <li><b>Remove wet clothing by cutting</b>, and insulate with a vapor barrier plus insulation.</li>\n</ul>\n<p><b>Afterdrop:</b> the core temperature continues to fall after rescue, as cold peripheral blood returns centrally and heat continues to equilibrate inward.</p>\n<p><b>Do not massage or actively warm the limbs</b>; direct external warming at the trunk — axillae, chest, groin, neck. Keep the periphery still.</p>"
             }
           ]
         },
@@ -5685,13 +5685,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li><b>Circumferential or near-circumferential full-thickness limb burn with developing vascular compromise</b> — rising compartment pressure beneath a skin envelope that cannot expand</li>\n      <li><b>Circumferential chest or torso burn restricting ventilation</b> — falling chest wall compliance, rising peak airway pressures, falling tidal volumes on pressure-controlled ventilation, worsening hypercapnia</li>\n      <li><b>Circumferential neck burn</b> with airway compromise or venous congestion of the face</li>\n      <li><b>Abdominal compartment syndrome</b> from circumferential abdominal eschar, usually on a background of large-volume resuscitation</li>\n</ul>\n<p><b>Timing is the thing most often misunderstood.</b> The need for escharotomy usually develops <b>6 to 24 hours after the burn</b>, as resuscitation fluid accumulates in the tissue under a rigid eschar. A limb that is warm and well perfused on arrival can be threatened by morning. <b>This is a serially reassessed decision, not a one-time assessment at presentation</b> — and the corollary is that a patient with circumferential burns needs an hourly perfusion check written down, not a single note on admission.</p>"
+              "html": "<ul>\n      <li><b>Circumferential or near-circumferential full-thickness limb burn with developing vascular compromise</b> — rising compartment pressure beneath a skin envelope that cannot expand</li>\n      <li><b>Circumferential chest or torso burn restricting ventilation</b> — falling chest wall compliance, rising peak airway pressures, falling tidal volumes on pressure-controlled ventilation, worsening hypercapnia</li>\n      <li><b>Circumferential neck burn</b> with airway compromise or venous congestion of the face</li>\n      <li><b>Abdominal compartment syndrome</b> from circumferential abdominal eschar, usually on a background of large-volume resuscitation</li>\n</ul>\n<p><b>Timing is the thing most often misunderstood.</b> The need for escharotomy usually develops <b>6 to 24 hours after the burn</b>, as resuscitation fluid accumulates in the tissue under a rigid eschar.</p>\n<p>A limb that is warm and well perfused on arrival can be threatened by morning.</p>\n<p><b>This is a serially reassessed decision, not a one-time assessment at presentation</b> — and the corollary is that a patient with circumferential burns needs an hourly perfusion check written down, not a single note on admission.</p>"
             },
             {
               "type": "alert",
               "color": "amber",
               "title": "Absent pulses are a late sign — do not wait for them",
-              "html": "By the time a radial pulse disappears, muscle has been ischemic for some time. The earlier and more useful signals are <b>loss of the Doppler signal in the palmar arch or digital vessels</b> (not just the named artery), a falling or lost pulse oximetry waveform on the affected digit, progressive pain, paresthesia, and tense, woody swelling distal to the burn. <b>Compartment pressures above about 30 mmHg</b> support the decision where the picture is unclear. Assess with a Doppler and a pulse oximeter, hourly, and act on the trend."
+              "html": "<p>By the time a radial pulse disappears, muscle has been ischemic for some time. The earlier and more useful signals are:</p>\n<ul>\n<li><b>loss of the Doppler signal in the palmar arch or digital vessels</b> (not just the named artery),</li>\n<li>a falling or lost pulse oximetry waveform on the affected digit,</li>\n<li>progressive pain,</li>\n<li>paresthesia, and</li>\n<li>tense, woody swelling distal to the burn.</li>\n</ul>\n<p><b>Compartment pressures above about 30 mmHg</b> support the decision where the picture is unclear.</p>\n<p>Assess with a Doppler and a pulse oximeter, hourly, and act on the trend.</p>"
             }
           ]
         },
@@ -5794,7 +5794,7 @@
             {
               "type": "box",
               "color": "amber",
-              "html": "<p><b>Cross the joints.</b> An incision that stops at the wrist or the ankle because the anatomy looks intimidating leaves the constriction exactly where it is tightest. <b>The incision runs the entire length of the circumferential burn, through normal-appearing skin at each end by 1–2 cm.</b> Incomplete length is the single commonest reason an escharotomy fails to restore perfusion.</p>\n<p><b>Mark before you cut.</b> Eschar obliterates the surface landmarks you would normally navigate by. Palpate the medial epicondyle and the fibular head <i>through</i> the burn, mark them, and draw the line around them.</p>"
+              "html": "<p><b>Cross the joints.</b> An incision that stops at the wrist or the ankle because the anatomy looks intimidating leaves the constriction exactly where it is tightest.</p>\n<p><b>The incision runs the entire length of the circumferential burn, through normal-appearing skin at each end by 1–2 cm.</b> </p>\n<p>Incomplete length is the single commonest reason an escharotomy fails to restore perfusion.</p>\n<p><b>Mark before you cut.</b> Eschar obliterates the surface landmarks you would normally navigate by. Palpate the medial epicondyle and the fibular head <i>through</i> the burn, mark them, and draw the line around them.</p>"
             }
           ]
         },
@@ -5812,49 +5812,49 @@
                   "num": "1",
                   "color": "red",
                   "title": "Document the deficit first",
-                  "html": "Record Doppler signals at the palmar arch or digital vessels, the pulse oximetry waveform, capillary refill, and sensation — <b>before</b> you cut. Without a baseline you cannot tell afterwards whether the release worked, and “it looks better” is not a finding you can hand over."
+                  "html": "<p>Record — <b>before</b> you cut:</p>\n<ul>\n<li>Doppler signals at the palmar arch or digital vessels,</li>\n<li>the pulse oximetry waveform,</li>\n<li>capillary refill, and</li>\n<li>sensation.</li>\n</ul>\n<p>Without a baseline you cannot tell afterwards whether the release worked, and “it looks better” is not a finding you can hand over.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Give real analgesia and sedation",
-                  "html": "Opioid plus ketamine, or formal procedural sedation. See the warning below — the widely repeated line that escharotomy needs no anesthesia is half-true and causes real suffering."
+                  "html": "<p>Opioid plus ketamine, or formal procedural sedation.</p>\n<p>See the warning below — the widely repeated line that escharotomy needs no anesthesia is half-true and causes real suffering.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Position and mark",
-                  "html": "Limb in anatomic position, slightly extended. Palpate and mark the medial epicondyle or fibular head, then draw the full line including where it curves around them and where it extends into unburned skin at each end."
+                  "html": "<p>Limb in anatomic position, slightly extended.</p>\n<p>Palpate and mark the medial epicondyle or fibular head, then draw the full line including where it curves around them and where it extends into unburned skin at each end.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Cut through the eschar into fat — and stop",
-                  "html": "Full thickness of the burned skin, down to and just into the <b>subcutaneous fat</b>. <b>Do not cut the fascia.</b> The endpoint is visible and unmistakable: <b>the wound edges spring apart by a centimeter or more and the fat bulges out of the incision.</b> If the edges sit together, you are not through."
+                  "html": "<p>Full thickness of the burned skin, down to and just into the <b>subcutaneous fat</b>.</p>\n<p><b>Do not cut the fascia.</b></p>\n<p>The endpoint is visible and unmistakable: <b>the wound edges spring apart by a centimeter or more and the fat bulges out of the incision.</b></p>\n<p>If the edges sit together, you are not through.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Expect bleeding — and use it",
-                  "html": "The base of a correct incision is <i>viable</i> tissue and will bleed. That bleeding is a useful confirmation of depth, not a sign you have gone too far. Control it as you go with cautery. <b>A completely bloodless incision means either that you are still within dead tissue, or that the tissue beneath is dead too</b> — both change what happens next."
+                  "html": "<p>The base of a correct incision is <i>viable</i> tissue and will bleed. That bleeding is a useful confirmation of depth, not a sign you have gone too far.</p>\n<p>Control it as you go with cautery.</p>\n<p><b>A completely bloodless incision means either that you are still within dead tissue, or that the tissue beneath is dead too</b> — both change what happens next.</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Reassess immediately, with the Doppler",
-                  "html": "Signals should return or improve within minutes. Compliance should improve at once on a chest release, with a visible fall in peak airway pressure. <b>If nothing changes, the commonest reason is that the incision is not long enough</b> — extend it before you conclude the diagnosis was wrong."
+                  "html": "<ul>\n<li>Signals should return or improve within minutes.</li>\n<li>Compliance should improve at once on a chest release, with a visible fall in peak airway pressure.</li>\n</ul>\n<p><b>If nothing changes, the commonest reason is that the incision is not long enough</b> — extend it before you conclude the diagnosis was wrong.</p>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Second line if needed, then reassess again",
-                  "html": "A single mid-medial incision is often sufficient. If perfusion is still inadequate, add the mid-lateral line. Only after <b>both</b> lines are complete and full-length should you move on to considering compartment pressures and fasciotomy."
+                  "html": "<ol>\n<li>A single mid-medial incision is often sufficient.</li>\n<li>If perfusion is still inadequate, add the mid-lateral line.</li>\n</ol>\n<p>Only after <b>both</b> lines are complete and full-length should you move on to considering compartment pressures and fasciotomy.</p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Dress, elevate, and set a reassessment interval",
-                  "html": "Hemostatic or bulky absorbent dressing, limb elevated above heart level. Then <b>hourly Doppler and perfusion checks, documented</b> — edema continues to accumulate for another day and a released limb can constrict again."
+                  "html": "<p>Hemostatic or bulky absorbent dressing, limb elevated above heart level.</p>\n<p>Then <b>hourly Doppler and perfusion checks, documented</b> — edema continues to accumulate for another day and a released limb can constrict again.</p>"
                 }
               ]
             },
@@ -5862,7 +5862,7 @@
               "type": "alert",
               "color": "red",
               "title": "“The eschar is insensate” is only half the story",
-              "html": "Full-thickness burn is anesthetic, so the middle of the incision may be painless. But the incision <b>must extend into viable skin at both ends</b>, it passes through <b>sensate deep dermis</b> wherever the burn is not truly full thickness, and the patient beneath it is awake, frightened, and in pain from the burn already. <b>Give analgesia and sedation as a default.</b> The bedside myth that escharotomy needs none has produced a great deal of avoidable suffering."
+              "html": "<p>Full-thickness burn is anesthetic, so the middle of the incision may be painless. But:</p>\n<ul>\n<li>the incision <b>must extend into viable skin at both ends</b>,</li>\n<li>it passes through <b>sensate deep dermis</b> wherever the burn is not truly full thickness, and</li>\n<li>the patient beneath it is awake, frightened, and in pain from the burn already.</li>\n</ul>\n<p><b>Give analgesia and sedation as a default.</b> The bedside myth that escharotomy needs none has produced a great deal of avoidable suffering.</p>"
             }
           ]
         },
@@ -6124,7 +6124,7 @@
               "type": "alert",
               "color": "red",
               "title": "The danger is the moment of release, not the cut",
-              "html": "A limb crushed for hours is an ischemic reservoir of <b>potassium, myoglobin, phosphate, and acid</b>. The instant circulation is restored or the compressing force is removed, that load reaches the heart — the phenomenon historically called “rescue death” or “smiling death,” in which a conscious, talking, apparently stable trapped patient arrests within minutes of being freed. <b>The resuscitation for this happens before extrication, not after.</b>"
+              "html": "<p>A limb crushed for hours is an ischemic reservoir of <b>potassium, myoglobin, phosphate, and acid</b>. The instant circulation is restored or the compressing force is removed, that load reaches the heart — the phenomenon historically called “rescue death” or “smiling death,” in which a conscious, talking, apparently stable trapped patient arrests within minutes of being freed.</p>\n<p><b>The resuscitation for this happens before extrication, not after.</b></p>"
             },
             {
               "type": "box",
@@ -6147,55 +6147,55 @@
                   "num": "1",
                   "color": "red",
                   "title": "Confirm no other route out, out loud",
-                  "html": "Ask the rescue lead directly: “<i>Is there any way to get this patient out without amputating?</i>” Get an explicit answer and note the time. This is the decision that will be examined afterwards, and the people who can answer it are standing next to you."
+                  "html": "<p>Ask the rescue lead directly: “<i>Is there any way to get this patient out without amputating?</i>”</p>\n<p>Get an explicit answer and note the time.</p>\n<p>This is the decision that will be examined afterwards, and the people who can answer it are standing next to you.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Resuscitate and sedate before you cut",
-                  "html": "Access, fluids running, calcium available, monitor on, ketamine given and working. Airway person at the head. Do not begin because the scene is loud and urgent — begin because the patient is as ready as they will be."
+                  "html": "<ul>\n<li>Access,</li>\n<li>fluids running,</li>\n<li>calcium available,</li>\n<li>monitor on,</li>\n<li>ketamine given and working.</li>\n<li>Airway person at the head.</li>\n</ul>\n<p>Do not begin because the scene is loud and urgent — begin because the patient is as ready as they will be.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Two tourniquets, as proximal as the space allows, tight",
-                  "html": "Apply and <b>tighten</b> both — not staged, not loosely pre-positioned. Tighten to loss of distal arterial signal. <b>Write the time on the patient's skin.</b> Every downstream decision depends on that number and it is routinely lost at handover."
+                  "html": "<p>Apply and <b>tighten</b> both — not staged, not loosely pre-positioned.</p>\n<p>Tighten to loss of distal arterial signal.</p>\n<p><b>Write the time on the patient's skin.</b> Every downstream decision depends on that number and it is routinely lost at handover.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Cut at the most distal point that achieves release",
-                  "html": "<b>Preserve every centimeter of length you can.</b> This is not a definitive amputation and no flaps are being planned — length preserved now is prosthetic function and reconstructive options later. Choose the level by what frees the patient, not by textbook amputation levels. <b>Through a joint is often faster and easier than through a shaft</b>, and disarticulation is entirely acceptable here."
+                  "html": "<p><b>Preserve every centimeter of length you can.</b></p>\n<p>This is not a definitive amputation and no flaps are being planned — length preserved now is prosthetic function and reconstructive options later.</p>\n<p>Choose the level by what frees the patient, not by textbook amputation levels.</p>\n<p><b>Through a joint is often faster and easier than through a shaft</b>, and disarticulation is entirely acceptable here.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Guillotine: skin, then muscle, then bone",
-                  "html": "A single circumferential incision through skin and soft tissue at one level — <b>no flaps, no shaping.</b> Clamp or tie large vessels as you meet them if you can see them; the tourniquet covers what you cannot. Retract the soft tissue proximally and pass the <b>Gigli saw</b> around the bone, cutting with long, steady, full-length strokes rather than short fast ones. Divide any remaining attachments and the limb is free."
+                  "html": "<ol>\n<li>A single circumferential incision through skin and soft tissue at one level — <b>no flaps, no shaping.</b></li>\n<li>Clamp or tie large vessels as you meet them if you can see them; the tourniquet covers what you cannot.</li>\n<li>Retract the soft tissue proximally and pass the <b>Gigli saw</b> around the bone, cutting with long, steady, full-length strokes rather than short fast ones.</li>\n<li>Divide any remaining attachments and the limb is free.</li>\n</ol>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "If it is a near-total amputation, this is much simpler",
-                  "html": "Most field amputations are the completion of an injury that has already happened. Tourniquet first as always, then divide the remaining skin, tendon, or muscle bridge with heavy shears or a scalpel. <b>No saw, no bone work.</b> Recognizing that you are in this situation rather than the other one is worth the ten seconds it takes to look."
+                  "html": "<p>Most field amputations are the completion of an injury that has already happened.</p>\n<p>Tourniquet first as always, then divide the remaining skin, tendon, or muscle bridge with heavy shears or a scalpel.</p>\n<p><b>No saw, no bone work.</b></p>\n<p>Recognizing that you are in this situation rather than the other one is worth the ten seconds it takes to look.</p>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Extricate immediately and reassess the tourniquets",
-                  "html": "Move the patient out. <b>Then look at the stump again</b> — tourniquets loosen during extrication, and bleeding that was controlled in situ can restart the moment the patient is moved. Add a third tourniquet or pack the stump if needed."
+                  "html": "<p>Move the patient out.</p>\n<p><b>Then look at the stump again</b> — tourniquets loosen during extrication, and bleeding that was controlled in situ can restart the moment the patient is moved.</p>\n<p>Add a third tourniquet or pack the stump if needed.</p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Dress, warm, and resuscitate properly",
-                  "html": "Hemostatic gauze and a bulky dressing over the stump. <b>Aggressive rewarming</b> — these patients are cold from prolonged exposure and the coagulopathy that follows is avoidable. Blood products, TXA within the window, calcium, and analgesia."
+                  "html": "<p>Hemostatic gauze and a bulky dressing over the stump.</p>\n<p><b>Aggressive rewarming</b> — these patients are cold from prolonged exposure and the coagulopathy that follows is avoidable.</p>\n<p>Blood products, TXA within the window, calcium, and analgesia.</p>"
                 },
                 {
                   "num": "9",
                   "color": "red",
                   "title": "Bring the amputated part with the patient",
-                  "html": "Wrapped in saline-moistened gauze, in a sealed bag, on ice — <b>never in direct contact with ice and never frozen.</b> Replantation is unlikely after a crush entrapment, but the decision belongs to the surgeon, and the part may also matter for identification and for tissue coverage."
+                  "html": "<p>Wrapped in saline-moistened gauze, in a sealed bag, on ice — <b>never in direct contact with ice and never frozen.</b></p>\n<p>Replantation is unlikely after a crush entrapment, but the decision belongs to the surgeon, and the part may also matter for identification and for tissue coverage.</p>"
                 }
               ]
             }
@@ -6476,7 +6476,7 @@
             {
               "type": "box",
               "color": "blue",
-              "html": "<ul>\n      <li><b>A tight-fitting non-rebreather with a reservoir, or a demand valve.</b> The distinction matters — a loosely applied mask delivers perhaps 60–70% oxygen, and the treatment depends on the inspired fraction being as close to 100% as you can manage. Check the seal and the reservoir.</li>\n      <li><b>IV access and isotonic crystalloid.</b> Divers are dehydrated by immersion diuresis and DCS causes capillary leak. <b>Avoid glucose-containing fluid</b> in suspected neurologic injury.</li>\n      <li><b>Continuous oximetry and cardiac monitoring.</b></li>\n      <li><b>A urinary catheter</b> if there is any spinal involvement — retention is common and the bladder gets forgotten in a chamber.</li>\n      <li><b>Chest imaging or ultrasound</b> to exclude pneumothorax before transfer.</li>\n      <li><b>The numbers, saved in advance:</b> your nearest operational chamber, and the <b>Divers Alert Network emergency line, +1 919-684-9111</b>, which provides 24-hour diving medical consultation and knows which chambers are actually open.</li>\n      <li><b>A transport plan that does not gain altitude</b> — see §06.</li>\n</ul>\n<p><b>Not every chamber can take every patient.</b> A <b>monoplace</b> chamber holds one patient and limits what can be done to them inside; a <b>multiplace</b> chamber is pressurized with an attendant inside and can manage a ventilated, unstable, or critically ill patient. <b>An intubated patient needs a multiplace chamber</b>, and many chambers are elective-hours only. Confirm capability on the phone before committing to a destination.</p>"
+              "html": "<ul>\n      <li><b>A tight-fitting non-rebreather with a reservoir, or a demand valve.</b> The distinction matters — a loosely applied mask delivers perhaps 60–70% oxygen, and the treatment depends on the inspired fraction being as close to 100% as you can manage. Check the seal and the reservoir.</li>\n      <li><b>IV access and isotonic crystalloid.</b> Divers are dehydrated by immersion diuresis and DCS causes capillary leak. <b>Avoid glucose-containing fluid</b> in suspected neurologic injury.</li>\n      <li><b>Continuous oximetry and cardiac monitoring.</b></li>\n      <li><b>A urinary catheter</b> if there is any spinal involvement — retention is common and the bladder gets forgotten in a chamber.</li>\n      <li><b>Chest imaging or ultrasound</b> to exclude pneumothorax before transfer.</li>\n      <li><b>The numbers, saved in advance:</b> your nearest operational chamber, and the <b>Divers Alert Network emergency line, +1 919-684-9111</b>, which provides 24-hour diving medical consultation and knows which chambers are actually open.</li>\n      <li><b>A transport plan that does not gain altitude</b> — see §06.</li>\n</ul>\n<p><b>Not every chamber can take every patient.</b></p>\n<ul>\n<li>A <b>monoplace</b> chamber holds one patient and limits what can be done to them inside;</li>\n<li>a <b>multiplace</b> chamber is pressurized with an attendant inside and can manage a ventilated, unstable, or critically ill patient.</li>\n</ul>\n<p><b>An intubated patient needs a multiplace chamber</b>, and many chambers are elective-hours only.</p>\n<p>Confirm capability on the phone before committing to a destination.</p>"
             }
           ]
         },
@@ -6494,49 +6494,49 @@
                   "num": "1",
                   "color": "red",
                   "title": "100% oxygen now — before anything is arranged",
-                  "html": "The single highest-yield intervention available to you, free, immediate, and already in the room. It shrinks bubbles and washes out nitrogen by the same mechanisms the chamber uses. <b>Start it while someone else makes the phone calls</b>, and do not stop it because symptoms improve — improvement on oxygen confirms the diagnosis, it does not treat it."
+                  "html": "<p>The single highest-yield intervention available to you, free, immediate, and already in the room.</p>\n<p>It shrinks bubbles and washes out nitrogen by the same mechanisms the chamber uses.</p>\n<p><b>Start it while someone else makes the phone calls</b>, and do not stop it because symptoms improve — improvement on oxygen confirms the diagnosis, it does not treat it.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Lie them flat — supine, not head-down",
-                  "html": "<b>Trendelenburg is no longer recommended.</b> The old rationale was to keep bubbles out of the cerebral circulation; the position worsens cerebral edema and raises intracranial pressure, and the bubbles have already arrived. <b>Supine and flat.</b> The left lateral decubitus position belongs to venous air embolism trapping gas in the right ventricle — a different entity from arterial gas embolism."
+                  "html": "<p><b>Trendelenburg is no longer recommended.</b> The old rationale was to keep bubbles out of the cerebral circulation; the position worsens cerebral edema and raises intracranial pressure, and the bubbles have already arrived.</p>\n<p><b>Supine and flat.</b></p>\n<p>The left lateral decubitus position belongs to venous air embolism trapping gas in the right ventricle — a different entity from arterial gas embolism.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Fluids",
-                  "html": "Isotonic crystalloid, generously — orally if fully alert, intravenously otherwise. Hemoconcentration worsens bubble-related tissue injury, and these patients are dry before they are ever injured."
+                  "html": "<p>Isotonic crystalloid, generously — orally if fully alert, intravenously otherwise.</p>\n<p>Hemoconcentration worsens bubble-related tissue injury, and these patients are dry before they are ever injured.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Document a full neurologic examination, with the time",
-                  "html": "Cranial nerves, power, sensation, coordination, gait if safe, and <b>bladder function</b>. <b>Serial examinations are how response to treatment is judged</b>, and without a recorded baseline the chamber team cannot tell whether the patient is improving. This is worth the five minutes."
+                  "html": "<ul>\n<li>Cranial nerves,</li>\n<li>power,</li>\n<li>sensation,</li>\n<li>coordination,</li>\n<li>gait if safe, and</li>\n<li><b>bladder function</b>.</li>\n</ul>\n<p><b>Serial examinations are how response to treatment is judged</b>, and without a recorded baseline the chamber team cannot tell whether the patient is improving.</p>\n<p>This is worth the five minutes.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Exclude a pneumothorax — the hard gate",
-                  "html": "Imaging or ultrasound. If present, it is drained before the chamber. Do not send an undrained pneumothorax to be pressurized."
+                  "html": "<p>Imaging or ultrasound.</p>\n<p>If present, it is drained before the chamber. <b>Do not send an undrained pneumothorax to be pressurized.</b></p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Call the chamber and DAN, in parallel with everything above",
-                  "html": "Describe the presentation, the dive profile, the onset timing, and what you have given. <b>Confirm the chamber is staffed, open, and able to take this specific patient</b> — ventilated, or unstable, or not. This call also gets you expert advice on a condition most clinicians see rarely."
+                  "html": "<p>Describe:</p>\n<ul>\n<li>the presentation,</li>\n<li>the dive profile,</li>\n<li>the onset timing, and</li>\n<li>what you have given.</li>\n</ul>\n<p><b>Confirm the chamber is staffed, open, and able to take this specific patient</b> — ventilated, or unstable, or not.</p>\n<p>This call also gets you expert advice on a condition most clinicians see rarely.</p>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Transport without gaining altitude",
-                  "html": "Ground transport by preference. If air transport is unavoidable, the cabin must be <b>pressurized to sea level, or the aircraft kept below about 1000 feet</b>. Altitude reduces ambient pressure, and by Boyle's law every bubble in the patient expands. <b>This is the error that turns a treatable injury into a catastrophic one.</b>"
+                  "html": "<p>Ground transport by preference.</p>\n<p>If air transport is unavoidable, the cabin must be <b>pressurized to sea level, or the aircraft kept below about 1000 feet</b>.</p>\n<p>Altitude reduces ambient pressure, and by Boyle's law every bubble in the patient expands. <b>This is the error that turns a treatable injury into a catastrophic one.</b></p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Hand over the profile, the times, and the examination",
-                  "html": "The hyperbaric team chooses the treatment table — commonly a <b>US Navy Table 6</b> at 2.8 ATA for serious DCS and AGE, with shorter tables for resolved pain-only presentations, and repeat sessions daily until improvement plateaus. That decision is theirs; the history and the serial examination are yours."
+                  "html": "<p>The hyperbaric team chooses the treatment table — commonly a <b>US Navy Table 6</b> at 2.8 ATA for serious DCS and AGE, with shorter tables for resolved pain-only presentations, and repeat sessions daily until improvement plateaus.</p>\n<p>That decision is theirs; the history and the serial examination are yours.</p>"
                 }
               ]
             },
@@ -6727,13 +6727,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li><b>Any incident where casualties exceed immediately available resources.</b> That ratio, not a headcount, is what defines a mass casualty incident — four critical patients is an MCI for a two-ambulance service.</li>\n      <li><b>The initial sorting pass at the scene</b>, before individualized care begins</li>\n      <li><b>Again, repeatedly</b>, as resources arrive and patients change — triage is a process, not a single pass</li>\n</ul>\n<p><b>START</b> (Simple Triage and Rapid Treatment) remains the most widely used initial sort in US prehospital systems. <b>SALT</b> (Sort, Assess, Lifesaving interventions, Treatment/transport) is the national model recommended under the Model Uniform Core Criteria, adding a global voice sort and a short list of interventions performed during the sort. Both do the same job; use whichever your region has adopted.</p>\n<p><b>The governing principle is uncomfortable and has to be stated plainly:</b> the goal changes from doing everything possible for each patient to <b>doing the most good for the greatest number</b>. Resources go to the salvageable, which means some patients who would receive maximal effort on an ordinary day will not. Making that shift deliberately, and saying so out loud, is what separates triage from chaos.</p>"
+              "html": "<ul>\n      <li><b>Any incident where casualties exceed immediately available resources.</b> That ratio, not a headcount, is what defines a mass casualty incident — four critical patients is an MCI for a two-ambulance service.</li>\n      <li><b>The initial sorting pass at the scene</b>, before individualized care begins</li>\n      <li><b>Again, repeatedly</b>, as resources arrive and patients change — triage is a process, not a single pass</li>\n</ul>\n<p><b>START</b> (Simple Triage and Rapid Treatment) remains the most widely used initial sort in US prehospital systems. <b>SALT</b> (Sort, Assess, Lifesaving interventions, Treatment/transport) is the national model recommended under the Model Uniform Core Criteria, adding a global voice sort and a short list of interventions performed during the sort. Both do the same job; use whichever your region has adopted.</p>\n<p><b>The governing principle is uncomfortable and has to be stated plainly:</b> the goal changes from doing everything possible for each patient to <b>doing the most good for the greatest number</b>. Resources go to the salvageable, which means some patients who would receive maximal effort on an ordinary day will not.</p>\n<p>Making that shift deliberately, and saying so out loud, is what separates triage from chaos.</p>"
             },
             {
               "type": "alert",
               "color": "red",
               "title": "Scene safety comes before any of this",
-              "html": "Triage does not begin until the scene is safe. <b>Secondary devices are deliberately timed for the arrival of responders</b>; structural collapse continues; active threats move. Unstable structures, fire, traffic, hazardous materials and contamination all take precedence, and a contaminated scene requires decontamination before or alongside triage. <b>A responder who becomes a casualty subtracts twice</b> — one fewer rescuer and one more patient."
+              "html": "<p>Triage does not begin until the scene is safe. </p>\n<ul>\n<li><b>Secondary devices are deliberately timed for the arrival of responders</b>;</li>\n<li>structural collapse continues;</li>\n<li>active threats move.</li>\n</ul>\n<p>Unstable structures, fire, traffic, hazardous materials and contamination all take precedence, and a contaminated scene requires decontamination before or alongside triage.</p>\n<p><b>A responder who becomes a casualty subtracts twice</b> — one fewer rescuer and one more patient.</p>"
             }
           ]
         },
@@ -6769,31 +6769,31 @@
                   "num": "1",
                   "color": "teal",
                   "title": "Clear the walking wounded first",
-                  "html": "Call out for anyone who can walk to move to a designated area. <b>Tag them Green.</b> This removes a large fraction of the scene from individual assessment in a single sentence — and it is why you say it before you touch anyone. Someone must go with them: <b>Green patients are not unassessed forever</b>, and occasionally one of them is deteriorating."
+                  "html": "<p>Call out for anyone who can walk to move to a designated area. <b>Tag them Green.</b></p>\n<p>This removes a large fraction of the scene from individual assessment in a single sentence — and it is why you say it before you touch anyone.</p>\n<p>Someone must go with them: <b>Green patients are not unassessed forever</b>, and occasionally one of them is deteriorating.</p>"
                 },
                 {
                   "num": "2",
                   "color": "red",
                   "title": "Respirations",
-                  "html": "<b>Not breathing</b> → open the airway with a single positioning maneuver. Breathing now → <b>Red</b>. Still not breathing → <b>Black</b>. <br><b>Rate above 30/min</b> → <b>Red</b>. Below 30 → go on to perfusion."
+                  "html": "<p><b>Not breathing</b> → open the airway with a single positioning maneuver.</p>\n<ul>\n<li>Breathing now → <b>Red</b>.</li>\n<li>Still not breathing → <b>Black</b>.</li>\n</ul>\n<p>Breathing:</p>\n<ul>\n<li><b>Rate above 30/min</b> → <b>Red</b>.</li>\n<li>Below 30 → go on to perfusion.</li>\n</ul>"
                 },
                 {
                   "num": "3",
                   "color": "amber",
                   "title": "Perfusion",
-                  "html": "<b>No radial pulse</b> (or capillary refill beyond 2 seconds) → <b>control major hemorrhage</b> and tag <b>Red</b>. Radial pulse present → go on to mental status. <i>The radial pulse is the more reliable of the two in cold, dark, or dirty conditions.</i>"
+                  "html": "<ul>\n<li><b>No radial pulse</b> (or capillary refill beyond 2 seconds) → <b>control major hemorrhage</b> and tag <b>Red</b>.</li>\n<li>Radial pulse present → go on to mental status.</li>\n</ul>\n<p><i>The radial pulse is the more reliable of the two in cold, dark, or dirty conditions.</i></p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Mental status",
-                  "html": "<b>Cannot follow a simple command</b> → <b>Red</b>. Can follow commands → <b>Yellow</b>."
+                  "html": "<ul>\n<li><b>Cannot follow a simple command</b> → <b>Red</b>.</li>\n<li>Can follow commands → <b>Yellow</b>.</li>\n</ul>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Tag, say it out loud, and move on",
-                  "html": "The only interventions permitted during START are <b>opening an airway and stopping catastrophic hemorrhage</b> — both take seconds and both save lives that would otherwise be lost before the treatment phase. Anything further waits."
+                  "html": "<p>The only interventions permitted during START are <b>opening an airway and stopping catastrophic hemorrhage</b> — both take seconds and both save lives that would otherwise be lost before the treatment phase.</p>\n<p>Anything further waits.</p>"
                 }
               ]
             },
@@ -6818,25 +6818,25 @@
                   "num": "1",
                   "color": "teal",
                   "title": "Sort — the global voice sort",
-                  "html": "Two instructions, shouted, before anyone is touched: <b>“If you can hear me and can walk, come to [place].”</b> Then, to those remaining: <b>“If you can hear me, wave or move a limb.”</b><br>That produces three groups and their assessment order, in reverse: <b>still or obviously in extremis → assessed first; waving or purposefully moving → second; walking → last.</b> <b>Most of the categorization work is done before a single hand is laid on anyone.</b>"
+                  "html": "<p>Two instructions, shouted, before anyone is touched:</p>\n<ol>\n<li><b>“If you can hear me and can walk, come to [place].”</b></li>\n<li>Then, to those remaining: <b>“If you can hear me, wave or move a limb.”</b></li>\n</ol>\n<p>That produces three groups and their assessment order, in reverse:</p>\n<ul>\n<li><b>still or obviously in extremis → assessed first;</b></li>\n<li><b>waving or purposefully moving → second;</b></li>\n<li><b>walking → last.</b></li>\n</ul>\n<p><b>Most of the categorization work is done before a single hand is laid on anyone.</b></p>"
                 },
                 {
                   "num": "2",
                   "color": "red",
                   "title": "Assess, and perform lifesaving interventions as you go",
-                  "html": "Working in that priority order, assess each patient individually — and unlike START, <b>perform the interventions during the pass rather than deferring them.</b> The permitted list is deliberately short: <b>open the airway</b> (and in a child, two rescue breaths), <b>control major hemorrhage</b> with a tourniquet or packing, <b>decompress a tension pneumothorax</b>, and <b>give auto-injector antidotes</b>. Each takes seconds. Anything beyond belongs to the treatment phase."
+                  "html": "<p>Working in that priority order, assess each patient individually — and unlike START, <b>perform the interventions during the pass rather than deferring them.</b></p>\n<p>The permitted list is deliberately short:</p>\n<ul>\n<li><b>open the airway</b> (and in a child, two rescue breaths),</li>\n<li><b>control major hemorrhage</b> with a tourniquet or packing,</li>\n<li><b>decompress a tension pneumothorax</b>, and</li>\n<li><b>give auto-injector antidotes</b>.</li>\n</ul>\n<p>Each takes seconds. Anything beyond belongs to the treatment phase.</p>"
                 },
                 {
                   "num": "3",
                   "color": "amber",
                   "title": "Assign a category, after the intervention",
-                  "html": "Four questions, in order:<br><b>Breathing?</b> No, after the airway is opened → <b>Dead</b>.<br><b>Obeys commands or makes purposeful movements? Has a peripheral pulse? Not in respiratory distress? Major hemorrhage controlled?</b> — if <i>any</i> is a no → <b>Immediate</b>, provided survival is likely with the resources available; if survival is unlikely given those resources → <b>Expectant</b>.<br>All yes, with injuries → <b>Delayed</b>. All yes, minor injuries only → <b>Minimal</b>."
+                  "html": "<p>Four questions, in order:</p>\n<ol>\n<li><b>Breathing?</b> No, after the airway is opened → <b>Dead</b>.</li>\n<li><b>Obeys commands or makes purposeful movements? Has a peripheral pulse? Not in respiratory distress? Major hemorrhage controlled?</b> — if <i>any</i> is a no:\n<ul>\n<li>→ <b>Immediate</b>, provided survival is likely with the resources available;</li>\n<li>if survival is unlikely given those resources → <b>Expectant</b>.</li>\n</ul>\n</li>\n</ol>\n<ul>\n<li>All yes, with injuries → <b>Delayed</b>.</li>\n<li>All yes, minor injuries only → <b>Minimal</b>.</li>\n</ul>"
                 },
                 {
                   "num": "4",
                   "color": "purple",
                   "title": "Treatment and transport — then re-triage",
-                  "html": "Move patients to collection areas by category, and <b>reassess at every stage.</b> Categories are a snapshot of the patient against the resources available at that moment, and both change."
+                  "html": "<p>Move patients to collection areas by category, and <b>reassess at every stage.</b></p>\n<p>Categories are a snapshot of the patient against the resources available at that moment, and both change.</p>"
                 }
               ]
             }
@@ -9025,13 +9025,13 @@
             {
               "type": "box",
               "color": "teal",
-              "html": "<ul>\n      <li><b>Orbital compartment syndrome</b> — a tense, proptotic orbit with threatened vision, from retrobulbar hemorrhage or any rapidly expanding orbital process</li>\n      <li><b>After orbital or facial trauma</b>, especially with a fracture and an anticoagulated patient</li>\n      <li><b>Iatrogenic retrobulbar hemorrhage</b> — after a retrobulbar or peribulbar block, blepharoplasty, or orbital surgery</li>\n      <li><b>Spontaneous retrobulbar hemorrhage</b> — anticoagulation, vascular malformation, Valsalva</li>\n      <li><b>Rapidly expanding orbital emphysema, abscess, or edema</b> with the same physiology</li>\n</ul>\n<p><b>The mechanism:</b> the orbit is bone on four sides. The only structure that can give is the front — the orbital septum, held in place by the medial and lateral canthal tendons. Blood accumulating behind the globe pushes it forward until those tendons tether it, at which point pressure rises steeply, the central retinal artery perfusion pressure is overcome, and the retina becomes ischemic. <b>Canthotomy and cantholysis release the anterior tether.</b> Nothing else available at the bedside does.</p>"
+              "html": "<ul>\n      <li><b>Orbital compartment syndrome</b> — a tense, proptotic orbit with threatened vision, from retrobulbar hemorrhage or any rapidly expanding orbital process</li>\n      <li><b>After orbital or facial trauma</b>, especially with a fracture and an anticoagulated patient</li>\n      <li><b>Iatrogenic retrobulbar hemorrhage</b> — after a retrobulbar or peribulbar block, blepharoplasty, or orbital surgery</li>\n      <li><b>Spontaneous retrobulbar hemorrhage</b> — anticoagulation, vascular malformation, Valsalva</li>\n      <li><b>Rapidly expanding orbital emphysema, abscess, or edema</b> with the same physiology</li>\n</ul>\n<p><b>The mechanism:</b> the orbit is bone on four sides.</p>\n<p>The only structure that can give is the front — the orbital septum, held in place by the medial and lateral canthal tendons.</p>\n<p>Blood accumulating behind the globe pushes it forward until those tendons tether it, at which point pressure rises steeply, the central retinal artery perfusion pressure is overcome, and the retina becomes ischemic.</p>\n<p><b>Canthotomy and cantholysis release the anterior tether.</b> Nothing else available at the bedside does.</p>"
             },
             {
               "type": "alert",
               "color": "red",
               "title": "This is a clinical diagnosis and a 90-minute problem",
-              "html": "Retinal ischemia becomes irreversible somewhere around <b>90 to 120 minutes</b>, and there are reports of loss sooner. <b>Do not send the patient to CT to confirm it.</b> Do not wait for ophthalmology to arrive from home, and do not wait for a formal visual acuity. The diagnosis is made with a light, a hand, and a tonometer if one is nearby, and the treatment takes about two minutes. <b>Vision is lost to delay in recognition, essentially never to technical difficulty.</b>"
+              "html": "<p>Retinal ischemia becomes irreversible somewhere around <b>90 to 120 minutes</b>, and there are reports of loss sooner.</p>\n<ul>\n<li><b>Do not send the patient to CT to confirm it.</b></li>\n<li>Do not wait for ophthalmology to arrive from home, and</li>\n<li>do not wait for a formal visual acuity.</li>\n</ul>\n<p>The diagnosis is made with a light, a hand, and a tonometer if one is nearby, and the treatment takes about two minutes.</p>\n<p><b>Vision is lost to delay in recognition, essentially never to technical difficulty.</b></p>"
             }
           ]
         },
@@ -9138,62 +9138,62 @@
                   "num": "1",
                   "color": "red",
                   "title": "Document vision, pupil and pressure — fast",
-                  "html": "Acuity at whatever level they can give, the presence of an afferent defect, and IOP if a tonometer is at hand. <b>Thirty seconds, not five minutes.</b> These numbers establish both the indication and the response."
+                  "html": "<ul>\n<li>Acuity at whatever level they can give,</li>\n<li>the presence of an afferent defect, and</li>\n<li>IOP if a tonometer is at hand.</li>\n</ul>\n<p><b>Thirty seconds, not five minutes.</b> These numbers establish both the indication and the response.</p>"
                 },
                 {
                   "num": "2",
                   "color": "amber",
                   "title": "Infiltrate laterally, away from the globe",
-                  "html": "Inject 1–2 mL into the lateral canthus, directing the needle <b>laterally toward the orbital rim</b>, never medially toward the eye. Adding anesthetic adds volume to a compartment that is already over-pressurized, so use the smallest volume that will work."
+                  "html": "<p>Inject 1–2 mL into the lateral canthus, directing the needle <b>laterally toward the orbital rim</b>, never medially toward the eye.</p>\n<p>Adding anesthetic adds volume to a compartment that is already over-pressurized, so use the smallest volume that will work.</p>"
                 },
                 {
                   "num": "3",
                   "color": "teal",
                   "title": "Crush with the hemostat for 30–60 seconds",
-                  "html": "Clamp from the lateral commissure horizontally out to the orbital rim, and hold. This crushes the tissue you are about to cut, which reduces bleeding into a field you need to see — and it leaves a <b>visible blanched line that is exactly your incision</b>. Optional in principle; worth the minute in practice."
+                  "html": "<p>Clamp from the lateral commissure horizontally out to the orbital rim, and hold.</p>\n<p>This crushes the tissue you are about to cut, which reduces bleeding into a field you need to see — and it leaves a <b>visible blanched line that is exactly your incision</b>.</p>\n<p>Optional in principle; worth the minute in practice.</p>"
                 },
                 {
                   "num": "4",
                   "color": "blue",
                   "title": "Canthotomy — cut horizontally to the rim",
-                  "html": "Place one blade in front of and one behind the lateral canthus, and cut <b>full thickness, horizontally, about 1–2 cm out to the lateral orbital rim</b>. Skin, muscle, conjunctiva — all of it. <b>This step alone relieves almost nothing.</b> It is the exposure, not the treatment."
+                  "html": "<p>Place one blade in front of and one behind the lateral canthus, and cut <b>full thickness, horizontally, about 1–2 cm out to the lateral orbital rim</b>.</p>\n<p>Skin, muscle, conjunctiva — all of it.</p>\n<p><b>This step alone relieves almost nothing.</b> It is the exposure, not the treatment.</p>"
                 },
                 {
                   "num": "5",
                   "color": "purple",
                   "title": "Cantholysis — this is the procedure",
-                  "html": "Grasp the lower lid at its cut edge with toothed forceps and pull it <b>anteriorly and superiorly, away from the face</b>. That tension puts the <b>inferior crus of the lateral canthal tendon</b> on stretch. Point the scissors <b>inferiorly and slightly posteriorly — toward the patient's chin, roughly 45°</b> — and strum the tissue with the blade tips. <b>You will feel a taut band like a guitar string.</b> Cut it. There is a distinct release, and the lower lid becomes completely floppy."
+                  "html": "<ol>\n<li>Grasp the lower lid at its cut edge with toothed forceps and pull it <b>anteriorly and superiorly, away from the face</b>. That tension puts the <b>inferior crus of the lateral canthal tendon</b> on stretch.</li>\n<li>Point the scissors <b>inferiorly and slightly posteriorly — toward the patient's chin, roughly 45°</b> — and strum the tissue with the blade tips. <b>You will feel a taut band like a guitar string.</b></li>\n<li>Cut it.</li>\n</ol>\n<p>There is a distinct release, and the lower lid becomes completely floppy.</p>"
                 },
                 {
                   "num": "6",
                   "color": "red",
                   "title": "Test the release before you stop",
-                  "html": "Pull the lower lid away from the globe. <b>If it comes freely, with no tethering at all, the crus is divided.</b> If anything still holds it back, you have not cut the tendon — go back and strum again. <b>Failing to complete the cantholysis is the classic technical error</b>, and it leaves an orbit that has been cut but not decompressed."
+                  "html": "<p>Pull the lower lid away from the globe.</p>\n<ul>\n<li><b>If it comes freely, with no tethering at all, the crus is divided.</b></li>\n<li>If anything still holds it back, you have not cut the tendon — go back and strum again.</li>\n</ul>\n<p><b>Failing to complete the cantholysis is the classic technical error</b>, and it leaves an orbit that has been cut but not decompressed.</p>"
                 },
                 {
                   "num": "7",
                   "color": "amber",
                   "title": "Reassess — and release the superior crus if needed",
-                  "html": "Recheck pressure, proptosis, and vision. If improvement is inadequate, <b>release the superior crus</b> using the same technique with the upper lid, scissors pointing superiorly. Do this without hesitation — the risk is ptosis from levator injury, which is trivial against blindness."
+                  "html": "<p>Recheck pressure, proptosis, and vision.</p>\n<p>If improvement is inadequate, <b>release the superior crus</b> using the same technique with the upper lid, scissors pointing superiorly.</p>\n<p>Do this without hesitation — the risk is ptosis from levator injury, which is trivial against blindness.</p>"
                 },
                 {
                   "num": "8",
                   "color": "purple",
                   "title": "Still tense? Keep going.",
-                  "html": "If both crura are released and the orbit is still hard, the septum may need dividing (septolysis), or the hematoma may need direct drainage. <b>Get ophthalmology or oculoplastics now</b> — but do not stop at a half-measure while waiting."
+                  "html": "<p>If both crura are released and the orbit is still hard, the septum may need dividing (septolysis), or the hematoma may need direct drainage.</p>\n<p><b>Get ophthalmology or oculoplastics now</b> — but do not stop at a half-measure while waiting.</p>"
                 },
                 {
                   "num": "9",
                   "color": "blue",
                   "title": "Shield it, and recheck the vision",
-                  "html": "Saline gauze and a rigid shield — not a pressure patch, which is the opposite of what this orbit needs. Then <b>document acuity, pupil and pressure again.</b> Serial checks, because a hemorrhage can continue and re-tension the orbit."
+                  "html": "<p>Saline gauze and a rigid shield — not a pressure patch, which is the opposite of what this orbit needs.</p>\n<p>Then <b>document acuity, pupil and pressure again.</b> Serial checks, because a hemorrhage can continue and re-tension the orbit.</p>"
                 }
               ]
             },
             {
               "type": "box",
               "color": "amber",
-              "html": "<p><b>Medical adjuncts — alongside, never instead:</b> head of bed up 30–45°, acetazolamide <span class=\"d\">500 mg IV</span>, mannitol <span class=\"d\">1–2 g/kg IV</span>, and a topical agent such as timolol. Reverse anticoagulation where relevant. <b>Each of these lowers pressure by a modest amount over tens of minutes. None of them opens a closed compartment.</b> Start them on the way to the cut, not as an alternative to it.</p>"
+              "html": "<p><b>Medical adjuncts — alongside, never instead:</b></p>\n<ul>\n<li>head of bed up 30–45°,</li>\n<li>acetazolamide <span class=\"d\">500 mg IV</span>,</li>\n<li>mannitol <span class=\"d\">1–2 g/kg IV</span>, and</li>\n<li>a topical agent such as timolol.</li>\n<li>Reverse anticoagulation where relevant.</li>\n</ul>\n<p><b>Each of these lowers pressure by a modest amount over tens of minutes. None of them opens a closed compartment.</b> Start them on the way to the cut, not as an alternative to it.</p>"
             }
           ]
         },
