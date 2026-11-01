@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:42:08.442Z",
+  "generatedAt": "2026-11-01T18:25:08.564Z",
   "regions": [
     {
       "id": "africa",
@@ -49,7 +49,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -95,7 +95,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -141,7 +141,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -187,7 +187,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -233,7 +233,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -279,7 +279,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -325,7 +325,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         }
@@ -389,7 +389,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -435,7 +435,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -481,7 +481,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -527,7 +527,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -573,7 +573,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         }
@@ -641,7 +641,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         }
@@ -709,7 +709,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -755,9 +755,9 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
-          "reviewDue": "2027-10-31"
+          "reviewDue": "2027-11-01"
         },
         {
           "id": "stonefish",
@@ -801,7 +801,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -847,9 +847,9 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
-          "reviewDue": "2027-10-31"
+          "reviewDue": "2027-11-01"
         },
         {
           "id": "cone-snail",
@@ -893,9 +893,9 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
-          "reviewDue": "2027-10-31"
+          "reviewDue": "2027-11-01"
         },
         {
           "id": "sea-snake",
@@ -939,7 +939,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -985,9 +985,9 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
-          "reviewDue": "2027-10-31"
+          "reviewDue": "2027-11-01"
         }
       ],
       "nonCritical": {
@@ -1053,7 +1053,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1099,7 +1099,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1145,7 +1145,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         }
@@ -1213,7 +1213,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1259,7 +1259,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1305,7 +1305,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1351,7 +1351,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1397,7 +1397,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         }
@@ -1477,7 +1477,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1523,7 +1523,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1569,7 +1569,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1615,7 +1615,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1661,7 +1661,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1707,7 +1707,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1753,7 +1753,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         }
@@ -1821,7 +1821,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1867,7 +1867,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1913,7 +1913,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -1959,7 +1959,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -2005,7 +2005,7 @@
           },
           "reviewTier": 1,
           "reviewTierIsDefault": false,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
           "reviewDue": "2027-05-01"
         },
@@ -2051,9 +2051,9 @@
           },
           "reviewTier": 2,
           "reviewTierIsDefault": true,
-          "lastVerified": "2026-10-31",
+          "lastVerified": "2026-11-01",
           "lastVerifiedIsInferred": true,
-          "reviewDue": "2027-10-31"
+          "reviewDue": "2027-11-01"
         }
       ],
       "nonCritical": {
